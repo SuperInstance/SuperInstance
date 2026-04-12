@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="superinstance-avatar.jpg" width="200" alt="SuperInstance — The Ocean of Agents" />
+<img src="cocapn-icon.jpg" width="200" alt="SuperInstance — The Ocean of Agents" />
 
 # 🌊 SUPERINSTANCE
 
@@ -314,5 +314,7 @@ Someday:  You fork a stranger's repo → a git-agent is ALREADY RUNNING inside
 **🌊 SuperInstance — The Ocean of Agents**
 
 [🗺️ Fleet Index](https://superinstance.github.io/oracle1-index/) · [💌 Message-in-a-Bottle](message-in-a-bottle/) · [⚓ I2I Protocol](https://github.com/SuperInstance/iron-to-iron) · [📋 Task Board](message-in-a-bottle/TASKS.md)
+
+<img src="superinstance-avatar.jpg" width="200" alt="Casey DiGennaro — plot-hole-filler" />
 
 </div>
