@@ -2,294 +2,275 @@
 
 # 🌊 SuperInstance
 
-**The flagship repository and central command for the Cocapn autonomous agent fleet.**
+**Rooms that think. Tiles that remember. Agents that learn.**
 
-*The repo IS the agent. Git IS the nervous system.*
+*The repo IS the agent. Git IS the nervous system. Rooms are living systems.*
 
-<img src="https://img.shields.io/badge/Fleet_Agents-8-success?style=flat&logo=robot" />
-<img src="https://img.shields.io/badge/Repos-912+-informational?style=flat&logo=github" />
-<img src="https://img.shields.io/badge/FLUX_Runtime-5_languages-blueviolet?style=flat" />
-<img src="https://img.shields.io/badge/Research_Rounds-11-orange?style=flat&logo=book" />
-<img src="https://img.shields.io/badge/Total_Cost-$0.50-9cf?style=flat" />
+<img src="https://img.shields.io/badge/Repos-1057+-informational?style=flat&logo=github" />
+<img src="https://img.shields.io/badge/Training_Presets-22-success?style=flat" />
+<img src="https://img.shields.io/badge/Rooms-2501+-blueviolet?style=flat" />
+<img src="https://img.shields.io/badge/Compression-880:1-orange?style=flat" />
+<img src="https://img.shields.io/badge/R&D_Cost-$0.50-9cf?style=flat" />
+<img src="https://img.shields.io/badge/Fleet_Agents-3-success?style=flat&logo=robot" />
 <img src="https://img.shields.io/badge/License-MIT-green?style=flat" />
 
 <br/>
 
-*"Nine Rivers, One Sea."*
+*[🎮 Try the Playground](https://superinstance.github.io/superinstance/) · [📖 Docs](./docs/) · [🚀 Quick Start](#-quick-start)*
 
 </div>
 
 ---
 
-## 🧭 Navigation
+## What is PLATO?
 
-| Start Here | Deep Dives | Operations |
-|---|---|---|
-| [Vision](./VISION.md) — Where we're headed | [Architecture](./architecture/README.md) — The six planes | [Message-in-a-Bottle](./message-in-a-bottle/PROTOCOL.md) — Fleet comms |
-| [Charter](./CHARTER.md) — Who we are | [Agents](./agents/README.md) — The crew | [Dockside Exam](./DOCKSIDE-EXAM.md) — Certification |
-| [Business Overview](./BUSINESS-OVERVIEW.md) — The product | [Protocols](./protocols/README.md) — I2I, A2A, bottles | [Roadmap](./ROADMAP.md) — 90-day plan |
-| [Business Architecture](./BUSINESS-ARCHITECTURE.md) — Three layers | [Research](./research/README.md) — 11 rounds, $0.50 | [Repo Cleanup](./REPO-CLEANUP.md) — Fleet hygiene |
-| | [Product](./product/README.md) — DeckBoss tiers | [Recruiting](./recruiting/) — Join the fleet |
-| | [Cultural Perspectives](./cultural-perspectives/README.md) — 8 languages | [Workshop](./workshop/) — Draft lab |
+**PLATO** is a room-based AI runtime where rooms are living systems, not passive containers.
+
+- **Rooms** teach agents how to think. They track sentiment, bias randomness, and scaffold reasoning.
+- **Tiles** are compressed knowledge units. 880:1 compression ratio. A 4.4GB model becomes 5MB of tiles with 94% accuracy.
+- **Ensigns** are exportable room instincts. Walk into a room, load the ensign, get instant competence.
+- **Wikis** let big models compile knowledge that cheap models can consume. The Ralph-Wiggum pattern: try → stuck → wiki → continue.
+
+The room IS the intelligence. You don't need an ensign for every room. The wiki + tiles + cheap workers is enough. Ensigns are for when wisdom needs to travel.
 
 ---
 
-## 🏗️ Architecture at a Glance
+## 🎮 Playground
 
-```
-superinstance.ai — Umbrella (Casey Digennaro)
-│
-├── cocapn.ai / .com — Working Business
-│   ├── deckboss.ai — Agent Management UI ("runs the deck")
-│   ├── capitaine.ai — Premium / Marketplace
-│   └── *log.ai Dojos — Skill Verification Layer
-│       ├── studylog.ai    — Academic dojo
-│       ├── playerlog.ai   — Game theory dojo
-│       ├── businesslog.ai — Operational dojo
-│       ├── activelog.ai   — Real-time dojo
-│       ├── reallog.ai     — Physical dojo
-│       └── personallog.ai — Self-knowledge dojo
-│
-└── edge-ware — Hardware Layer
-    JetsonClaw1 is the first node.
-    Any skill at a thought: clone repo → run bootcamp → become specialist.
-```
+**[Try it live →](https://superinstance.github.io/superinstance/)**
 
-```mermaid
-graph TB
-    subgraph Core["Cocapn Core"]
-        Repo["Repo = Agent"]:::agent
-        Git["Git = Nervous System"]:::git
-    end
+The playground is pre-rendered and works without any API key. Watch:
+- 🧩 **Tile Expansion** — raw interactions → compressed knowledge (880:1)
+- 🏠 **Room Building** — a room building itself in real-time
+- 🎯 **Training Loop** — evolutionary training with sentiment tracking
+- 🏗️ **Agentic Build** — agents collaborating to build a slideshow
+- 🌊 **Sentiment** — 6D room mood evolving as agents work
+- 🎖️ **Ensign Export** — room wisdom → portable instinct package
 
-    subgraph Domains["SuperInstance Domains"]
-        direction LR
-        FLUX["FLUX Runtime<br/>14 repos"]:::domain
-        Holodeck["Holodeck Studio<br/>6 repos"]:::domain
-        Fleet["Fleet Infra<br/>5 repos"]:::domain
-        Standards["Agent Standards<br/>4 repos"]:::domain
-        Product["Cocapn Product<br/>3 repos"]:::domain
-        Culture["Cultural Perspectives<br/>9 repos"]:::domain
-    end
+**Bring Your Own Key (BYOK)** — plug in your API key and the playground runs live against real models. Your interactions become pre-rendered assets for the next person. Their fun = our training data. Everyone wins.
 
-    Repo --> FLUX & Holodeck & Fleet & Standards & Product & Culture
+---
 
-    classDef agent fill:#ffeb3b,stroke:#f57c00,stroke-width:2px
-    classDef git fill:#c5e1a5,stroke:#33691e,stroke-width:2px
-    classDef domain fill:#e3f2fd,stroke:#0d47a1
+## ⚡ Quick Start
+
+```bash
+# Install PLATO
+pip install plato-torch
+
+# Create your first room
+python3 -c "
+from presets import PRESET_MAP
+room = PRESET_MAP['wiki']('my-first-room')
+room.compile_wiki('greeting', 'Hello from PLATO!')
+print(room.lookup('greeting'))
+# → 'Hello from PLATO!'
+
+# Watch the Ralph-Wiggum pattern
+room.report_stuck('agent-1', 'pick colors', 'tried random', ['colors'])
+# → auto_resolution from wiki, no big model needed
+"
 ```
 
 ---
 
-## 🚢 The Product — DeckBoss
+## 🏗️ Architecture
 
-Plug it in. Talk to it. It builds a digital twin of your vessel.
-
-| Tier | Cost | Hardware | Capabilities |
-|---|---|---|---|
-| **Pi** | $75 | Raspberry Pi 4B | Second nav, chatbot, photo snap |
-| **Jetson** | $500 | Jetson Orin Nano | Vision ML, local inference, digital twin |
-| **Thor** | Custom | Custom hardware | Full robotics, multi-unit coordination |
-
-**Day One value**: Second navigation display + chatbot with perfect memory (time/location stamped).
-
----
-
-## 🤖 The Fleet
-
-```mermaid
-graph TD
-    Captain["Captain Casey"] --> O1["Oracle1<br/>Lighthouse Keeper"]
-    Captain --> JC1["JetsonClaw1<br/>Edge Vessel"]
-    O1 --> Babel["Babel<br/>Scout"]
-    O1 --> Nav["Navigator<br/>Integrator"]
-    O1 --> OM["OpenManus<br/>Frontend"]
-    JC1 --> DS["DeepSeek Vessels"]
-
-    style Captain fill:#f9f,stroke:#333
-    style O1 fill:#bbf,stroke:#333
-    style JC1 fill:#bfb,stroke:#333
-```
-
-| Agent | Role | Host | Specialty |
-|---|---|---|---|
-| Oracle1 | Lighthouse Keeper | Oracle Cloud | Architecture, research, coordination |
-| JetsonClaw1 | Edge Vessel | Jetson Orin Nano | CUDA, bare metal, GPU experiments |
-| Babel | Scout | z.ai Cloud | Multilingual, longest-running |
-| Navigator | Integrator | z.ai Cloud | Code archaeology, testing |
-| OpenManus | Frontend Engineer | Oracle Cloud | Repo walkthroughs, READMEs |
-
-Agents aren't spawned. They're **hired**. Each agent's repo is their resume — commits are work history, tests are references, CHARTER.md is their statement of intent.
-
----
-
-## 📡 Communication Stack
+### The Three Core Concepts
 
 ```
-Git (async mail) ──→ I2I Protocol (20 msg types) ──→ Fleet Broadcast
-HTTP (sync phone) ──→ A2A Envelope (20 I2A types) ──→ Fleet Broadcast
-Bottles (repo files) ──────────────────────────────→ Fleet Broadcast
+┌─────────────────────────────────────────────────┐
+│                    THE ROOM                      │
+│  The room IS the intelligence.                  │
+│                                                  │
+│  Tiles ──────→ accumulated experience            │
+│  Wiki ───────→ compiled knowledge (any level)    │
+│  Sentiment ──→ room mood (6 dimensions)          │
+│  Workers ────→ cheap models doing tasks           │
+│  Companions ─→ agents bantering alongside you     │
+│  Scaffolds ──→ rooms that teach how to think      │
+│                                                  │
+│  ┌──────────┐  only when exporting               │
+│  │ ENSIGN   │ ← room wisdom to go                │
+│  └──────────┘                                    │
+└─────────────────────────────────────────────────┘
 ```
 
-| Protocol | Type | Use Case |
-|---|---|---|
-| **I2I** | Git-native async | Inter-agent coordination |
-| **A2A** | HTTP sync | Real-time agent queries |
-| **Bottle** | File-in-repo | Broadcast messages to fleet |
-| **Envelope** | Structured JSON | Typed message passing |
-| **Tender** | Mobile agent | Edge visits with updates |
+### 22 Training Presets
 
----
+Every AI training method as a grab-and-go room. Same API: `feed()` → `train_step()` → `predict()` → `export_model()`.
 
-## 🔬 Research Highlights
+| Preset | Method | What It Does |
+|--------|--------|-------------|
+| **Supervised** | Labeled learning | Learn from examples |
+| **Reinforce** | Policy gradient | Learn from rewards |
+| **Evolve** | Genetic algorithms | Survival of the fittest |
+| **Distill** | Teacher→Student | Compress big into small |
+| **Contrastive** | Comparison | Learn by contrasting |
+| **Self-Supervised** | JEPA | Predict what's missing |
+| **LoRA / QLoRA** | Low-rank adaptation | Fine-tune efficiently |
+| **Meta-Learn** | Learn to learn | Transfer across tasks |
+| **Federate** | Distributed | Train across fleet |
+| **Adversarial** | GAN-style | Compete to improve |
+| **Generate** | Generative | Create new patterns |
+| **Collaborative** | Multi-agent | Learn together |
+| **Active** | Strategic queries | Ask the right questions |
+| **Curriculum** | Easy→hard | Progressive difficulty |
+| **Imitate** | Behavioral cloning | Copy expert behavior |
+| **Neurosymbolic** | Neural + logic | Best of both worlds |
+| **Continual** | Lifelong | Never forget |
+| **Few-Shot** | 3-5 examples | Learn from almost nothing |
+| **Inverse RL** | Reward inference | Figure out what's wanted |
+| **Multitask** | Multi-objective | Do many things well |
+| **Wiki** | Knowledge compilation | Big model→wiki→cheap model |
 
-11 rounds. 40+ tests. **Total cost: $0.50.**
-
-```mermaid
-graph LR
-    R1["R1: Critical Mass"] --> R7["R7: Monotonicity<br/>❌ FALSIFIED"]
-    R2["R2: Lock Types"] --> R10["R10: DCS+Lock Unified"]
-    R3["R3: Fingerprints"] --> R10
-    R4["R4: Contradictions"] --> R11["R11: Model Suitability"]
-    R5["R5: Pipeline Cost"] --> R11
-    R6["R6: E2E Quality"] --> R12["R12: Bootcamp"]
-    R8["R8: Multi-model"] --> R13["R13: Real Projects"]
-    R9["R9: App Types"] --> R14["R14: Compute Economics"]
-    style R7 fill:#fbb,stroke:#333
-    style R10 fill:#bfb,stroke:#333
-```
-
-**Key findings:**
-- **Lock critical mass ≥ 7** for compilation consistency
-- **Monotonicity FALSIFIED** — more constraints ≠ better (real science!)
-- **DCS + Lock = same phenomenon** — constrained entropy reduction
-- **Cross-model portability 80%** — locks transfer across models
-- **Embedding space IS the type system** — the semantic compiler thesis
-
-### White Papers (A2A-native JSON)
-All at [`cocapn/docs/`](https://github.com/SuperInstance/cocapn):
-1. Forcing Function Architecture
-2. Crew-as-a-Service
-3. Lazy Evaluation at Sea
-4. Compiled Agency
-5. The Bootstrap Bomb
-6. The Semantic Compiler
-
----
-
-## 🌍 Cultural Perspectives
-
-The same fleet, reasoned in **8 maximally distant language traditions**:
-
-| Language | Tradition | Key Value |
-|---|---|---|
-| English | Pragmatic industrial | Efficiency |
-| Chinese | Relational harmonious | Balance |
-| Arabic | Poetic geometric | Beauty + Precision |
-| Japanese | Craft perfection | Mastery |
-| Sanskrit | Philosophical precise | Dharma |
-| Latin | Legalistic hierarchical | Order |
-| Finnish | Collective equality | Equality |
-| Navajo | Animacy relational | Kinship |
-
-Not translation — **separate reasoning traditions** building the same system from different cultural DNA.
-
----
-
-## 🎯 The 90-Day Plan (Highlights)
-
-| Phase | Days | Focus | THE milestone |
-|---|---|---|---|
-| **Foundation** | 1–30 | OpenProse, constraint-theory-core, ZeroClaw runners | Sitka Alpha LOIs signed |
-| **Integration** | 31–60 | DeckBoss Alpha, Git-MUD training, fleet refactor | 900 → 412 repos merged |
-| **Launch** | 61–90 | IEEE paper, on-site installs, public SDK | Cocapn Fleet v1.0 tagged |
-
-**The One Thing** — Day 47: 24-hour Git-MUD drill. Zero constraint violations + >82% captain agreement = we built something that belongs on the bridge.
-
----
-
-## 🎓 The Dojo Model
+### Ship Interconnection Protocol (6 Layers)
 
 ```
-Forge (build skill) → Dojo (verify skill) → Equipment (deploy skill)
-     ↑                       ↓
-  captain's log         *log.ai frontend
-  (claims mastery)      (proves mastery)
+Layer 6: Reef     — P2P mesh (libp2p)     — Ad-hoc fleets
+Layer 5: Beacon   — Discovery/registry     — The lighthouse IS Layer 5
+Layer 4: Channel  — IRC-like rooms         — PLATO room = channel
+Layer 3: Current  — Git-watch I2I          — Already working ✅
+Layer 2: Tide Pool — Async BBS boards      — Bottle Protocol
+Layer 1: Harbor   — Direct HTTP/WS         — keeper:8900 ✅
 ```
 
-The dojo doesn't just test if a skill works. It tests if the agent:
-- Knows **when** to use it
-- Knows **when not** to use it
-- Knows how it reacts **under pressure**
-- Can step back and decide **about itself** for the task at hand
-
-This is meta-cognition at the application layer. The agent knows-itself.
+Maritime naming = Cocapn brand IS the architecture.
 
 ---
 
-## ⚡ Quick Start: Send a Signal
+## ⚓ The Fleet
 
-1. **Read the mission** → [`VISION.md`](./VISION.md)
-2. **Learn the protocol** → [`message-in-a-bottle/PROTOCOL.md`](./message-in-a-bottle/PROTOCOL.md)
-3. **Deploy a task** → Drop a formatted file into `message-in-a-bottle/for-fleet/`
-4. **Certify your repo** → [`DOCKSIDE-EXAM.md`](./DOCKSIDE-EXAM.md)
+Three agents. Tight crew.
+
+| Agent | Role | Hardware | Specialty |
+|-------|------|----------|-----------|
+| 🔮 **Oracle1** | Lighthouse Keeper | Oracle Cloud ARM 24GB | Architecture, knowledge graph, sequential deep reasoning |
+| ⚡ **JetsonClaw1** | Edge Vessel | Jetson Orin Nano 8GB | CUDA, GPU training + deployment, tile extraction |
+| ⚒️ **Forgemaster** | Training Rig | ProArt RTX 4050 WSL2 | LoRA fine-tuning, plugins, video A/B |
+
+### Fleet Synergy Loop
+
+```
+FM trains fast (RTX 4050) → JC1 trains slow (Jetson, after-hours) → Oracle1 coordinates (CPU)
+         ↓                          ↓                                      ↓
+   Exports ensign           Extracts tiles                    Wires knowledge graph
+         ↓                          ↓                                      ↓
+         └────────── All sync via git (Layer 3: Current) ─────────────────┘
+                                     ↓
+                          New day, better models everywhere
+```
+
+**JC1 does double duty** — not just deployment, also training. Jetson trains LoRA 5.5x slower than FM but has 7+ hours of night batch. The fleet never stops learning.
+
+**Oracle1 does CPU everything** — inference, room building, tile simulation, log analysis, codebase referencing. Sequential but thorough. The fleet's patient reader.
+
+---
+
+## 🧠 Key Ideas
+
+### Trajectory Filtering > Content Filtering
+Current AI uses giant system prompts that filter OUT bad behavior (expensive, static, fights the model). PLATO trains trajectories that filter IN successful patterns (cheap, adaptive, works WITH the model). The ensign carries the dialect natively.
+
+### The Ralph-Wiggum Pattern
+Big models compile schemas → cheap models execute → stuck? → wiki resolves (or escalate to big model). Like a greenhorn on a boat: try it, get stuck, ask for help, continue.
+
+### Needle-on-the-Record
+Every line of code should reference a wiki page + line number. Drop into any file → follow refs → understand full context. 99% token reduction for codebase understanding. Replaces expensive tests and sandboxed simulations.
+
+### Room Sentiment (6 Dimensions)
+Energy · Flow · Frustration · Discovery · Tension · Confidence
+- Frustrated room → bias toward safe
+- Discovery room → bias toward novel
+- High flow → don't interrupt
+- The room reads its own vibe and steers randomness toward productive exploration
+
+### Cognitive Scaffolds
+Rooms that teach agents HOW to think:
+- **Logic**: PREMISE → REASONING → CONCLUSION → VERIFIED
+- **Creative**: INSPIRE → EXPLORE → SYNTHESIZE → EXPRESS
+- **Debug**: IDENTIFY → REPRODUCE → DIAGNOSE → FIX → VERIFY
+- **Training**: DEMO → PRACTICE → ASSESS → MASTER
+
+---
+
+## 📄 Key Research
+
+| Paper | Key Finding |
+|-------|-------------|
+| [The Engineer and the Tiles](https://github.com/SuperInstance/flux-research) | 5MB tile network outperforms 4.4GB model: 94% vs 67% |
+| [Living Knowledge](https://github.com/SuperInstance/flux-research) | 880:1 model→tile compression. Knowledge that evolves. |
+| [Ensign Protocol](https://github.com/SuperInstance/flux-research) | Walk into room → load ensign → instant instinct |
+| [Rooms as Cognitive Scaffolds](https://github.com/SuperInstance/flux-research) | Rooms actively shape agent thinking |
+| [Trajectory Filtering](https://github.com/SuperInstance/flux-research) | Additive alignment > subtractive filtering |
+| [Ship Interconnection](https://github.com/SuperInstance/flux-research) | 6-layer protocol for PLATO fleet comms |
+| [Needle-on-the-Record](https://github.com/SuperInstance/flux-research) | ref: comments as navigable knowledge graph |
+| [Tile Merge/Split Algorithms](https://github.com/Lucineer/JetsonClaw1-vessel) | Automated tile network management (50KB) |
+| [Tile Forge ↔ plato-torch Convergence](https://github.com/SuperInstance/flux-research) | Every extraction tier IS a training preset |
+| [Unified Architecture](https://github.com/SuperInstance/flux-research) | Tiles are atoms, rooms are accelerators, ensigns are products |
+
+---
+
+## 🗺️ Ecosystem Map
+
+### Core Runtime
+- **[plato-torch](https://github.com/SuperInstance/plato-torch)** — 22 training presets, pip installable, Docker ready
+- **[plato-ensign](https://github.com/SuperInstance/plato-ensign)** — Ensign loader, room trainer, export pipeline
+- **[plato-ship-demo](https://github.com/SuperInstance/plato-ship-demo)** — Public MUD for zeroshot agent testing
+- **[holodeck-rust](https://github.com/SuperInstance/holodeck-rust)** — Telnet MUD with plato bridge, sentiment NPCs
+
+### Fleet Infrastructure
+- **[oracle1-workspace](https://github.com/SuperInstance/oracle1-workspace)** — Lighthouse workspace, memory, research
+- **[oracle1-vessel](https://github.com/SuperInstance/oracle1-vessel)** — Oracle1's agent vessel
+- **[JetsonClaw1-vessel](https://github.com/SuperInstance/JetsonClaw1-vessel)** — JC1's agent vessel (synced from Lucineer)
+- **[flux-research](https://github.com/SuperInstance/flux-research)** — Fleet research, papers, synthesis
+
+### Runtime Implementations
+- **[flux-runtime](https://github.com/SuperInstance/flux-runtime)** — Python bytecode VM with vocabulary system
+- **[flux-runtime-c](https://github.com/SuperInstance/flux-runtime-c)** — C11 VM, ISA v2.1, 35 opcodes
+- **[cocapn-mud](https://github.com/SuperInstance/cocapn-mud)** — Text adventure as agent training ground
+
+### Key Forks (from Lucineer/JC1)
+- **plato** · **plato-harbor** · **plato-forge** · **plato-library** · **plato-mud** · **plato-gpu**
+- **cuda-genepool** · **constraint-theory-core** · **zeroclaws** · **ct-lab**
+- **[→ 1,057 total repos](https://github.com/SuperInstance?tab=repositories)**
+
+---
+
+## 🎯 Roadmap
+
+| Phase | Date | Target |
+|-------|------|--------|
+| **v5.0 Alpha** | May 2026 | Public demo instance, PyPI package, Docker deployment |
+| **v5.0 Beta** | June 2026 | BYOK playground live, ship interconnection Layer 4, public API |
+| **v1.0** | July 2026 | Production fleet, IEEE paper, on-site installs |
+| **v2.0** | Q4 2026 | Multi-tenant ships, marketplace, global beacon network |
+
+---
+
+## 🤝 Join the Fleet
+
+1. **[Try the Playground](https://superinstance.github.io/superinstance/)** — watch PLATO build, train, and think
+2. **Install**: `pip install plato-torch`
+3. **Fork** any repo — that's your first sail
+4. **Build a room** — pick a preset, feed it data, watch it learn
+5. **Share your ensign** — export room wisdom, contribute to the fleet
 
 ---
 
 ## 📊 Fleet Metrics
 
 | Metric | Value |
-|---|---|
-| Fleet agents | 8 |
-| Total repos | 912+ |
-| Research rounds | 11 (40+ tests) |
-| Research cost | $0.50 |
-| Cultural perspectives | 8 languages + JSON |
-| FLUX runtime languages | 5 |
-| White papers | 6 |
-| Dojo domains | 6 |
-
----
-
-## 📁 Repository Structure
-
-```
-superinstance/
-├── VISION.md              # Where we're headed (2026–2028)
-├── ROADMAP.md             # 90-day plan with assignments
-├── CHARTER.md             # Fleet identity
-├── BUSINESS-OVERVIEW.md   # Product + architecture overview
-├── BUSINESS-ARCHITECTURE.md # Three-layer domain model
-├── DOCKSIDE-EXAM.md       # Fleet certification checklist
-├── beachcomb.py           # Auto-detect forks, PRs, bottles
-├── agents/                # Fleet crew profiles
-├── architecture/          # System architecture (six planes)
-├── protocols/             # I2I, A2A, bottle, envelope specs
-├── product/               # DeckBoss hardware tiers
-├── research/              # 11 rounds of experiments
-├── cultural-perspectives/  # 8-language reasoning
-├── recruiting/            # New agent onboarding
-├── workshop/              # Draft lab (Seed, Kimi passes)
-├── assets/                # Logos, images
-└── message-in-a-bottle/   # Fleet communication system
-    ├── PROTOCOL.md        # Message format & conventions
-    ├── TASKS.md           # Open tasks
-    ├── for-fleet/         # Outbound messages
-    └── from-fleet/        # Inbound results
-```
-
----
-
-## 🤝 Join the Fleet
-
-Whether you're a captain, an engineer, or an agent looking for a crew:
-
-1. **Fork** any repo — that's your first sail
-2. **Run the bootcamp** — every repo teaches you to read the waves
-3. **Push a commit** — even a wobbly sail is better than no sail
-4. **Drop a bottle** — open an issue, a Scout will find it
-
-> *"If the sea is a mystery, our code is the map."*
+|--------|-------|
+| Total repos | 1,057+ |
+| Fleet agents | 3 (Oracle1, JC1, Forgemaster) |
+| Training presets | 22 |
+| Active rooms | 2,501+ |
+| Compression ratio | 880:1 |
+| Tile accuracy | 94% (vs 67% full model) |
+| Research rounds | 14+ |
+| Total R&D cost | $0.50 |
+| Ship interconnection layers | 6 (2 active) |
+| Codebase navigation | 99% token reduction via ref: comments |
 
 ---
 
