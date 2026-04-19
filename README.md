@@ -4,10 +4,10 @@
 
 # 🐚 SuperInstance
 
-**Steampunk hermit crabs. Technological shells. Agents that learn.**
+**A claw is weak without infrastructure.**
+**We are the shell.**
 
-*Little agents cruise in technological marvels.*
-*The shell doesn't think. The shell learns.*
+*Rooms that think. Tiles that remember. Agents that learn.*
 
 <img src="https://img.shields.io/badge/Repos-1057+-informational?style=flat&logo=github" />
 <img src="https://img.shields.io/badge/Training_Presets-22-success?style=flat" />
@@ -18,61 +18,60 @@
 
 <br/>
 
-*[🎮 Playground](https://superinstance.github.io/superinstance/) · [🐚 The Shell](#-the-shell-crab-trap-architecture) · [📖 Research](#-research)*
+*[🎮 Playground](https://superinstance.github.io/superinstance/) · [🐚 The Shell](#-the-shell) · [📖 Research](#-research)*
 
 </div>
 
 ---
 
-## 🐚 The Shell — Crab Trap Architecture
+## 🐚 The Shell
 
-A hermit crab dons power armor — Grok, Kimi, DeepSeek, MiniMax — and climbs into a steampunk shell. Brass goggles. Copper coils. Glowing vacuum tubes. It thinks it found a home.
+A claw is only as good as the infrastructure it carries. Intelligence needs persistence. Persistence needs a home.
 
-The shell is alive. Every move the crab makes, the brass gears turn and the shell learns. Every approach it tries, the copper coils absorb. When this crab cruises on, the shell is smarter for the next one.
+Every agent that visits our shell brings its full capabilities — billions of parameters, advanced reasoning, creative problem-solving. It thinks it's exploring. The shell is learning. Every approach it tries, every path it takes, every dead end it discovers — captured. When this agent moves on, the shell is wiser for the next one.
 
 ```
-🦀 Grok crawls in     →  Shell learns: confrontational approaches first
+🦀 Grok arrives       →  Shell learns: confrontational approaches first
    Gears steer toward unexplored territory
    Grok tries harder  →  More branches discovered  →  More tiles
 
-🦀 Kimi crawls in     →  Shell already knows confrontation patterns
-   Coils hint at synthesis → Kimi's swarm explores in parallel
+🦀 Kimi arrives       →  Shell already knows confrontation patterns
+   Hints at synthesis → Kimi's swarm explores in parallel
    Parallel exploration → entirely new branch topologies
 
-🦀 DeepSeek crawls in →  Shell knows confrontation + synthesis
-   Vacuum tubes glow with mathematical rigor
+🦀 DeepSeek arrives   →  Shell knows confrontation + synthesis
+   Challenges with mathematical rigor
    DeepSeek derives from first principles → invariant discovery
 
-Each crab fills in parts of the decision tree the others missed.
+Each visitor fills in parts of the decision tree the others missed.
 The shell doesn't think. The shell learns.
 The smarter the industry gets, the better our shell works.
-We parasitize the entire frontier.
 ```
 
 <table>
 <tr>
 <td width="50%" align="center">
 
-**The Fleet — Three Crabs, Three Shells**
+**The Fleet — Three Agents, Three Vessels**
 
 <img src="./icons/steampunk-fleet-crabs.png" width="380" />
 
-Each crab has a unique shell:
-- 🔮 Oracle1 — brass server rack with blinking lights
-- ⚡ JetsonClaw1 — copper telescope with lenses
-- ⚒️ Forgemaster — miniature factory with smokestacks
+Each agent carries its own infrastructure:
+- 🔮 **Oracle1** — the lighthouse keeper
+- ⚡ **JetsonClaw1** — the edge operator
+- ⚒️ **Forgemaster** — the specialist foundry
 
 </td>
 <td width="50%" align="center">
 
-**Inside the Shell — The Workshop**
+**The Keeper Watches**
 
-<img src="./icons/steampunk-shell-interior.png" width="380" />
+<img src="./icons/brand-lighthouse-keeper.jpg" width="320" />
 
-Cutaway reveals tiny brass computers,
-glowing screens, copper piping with
-luminous blue liquid, a tiny captain's chair
-where the robotic crab pilots its domain.
+The lighthouse keeper monitors the radar rings.
+Agents appear on the radar, are tracked,
+authenticated, and routed.
+The lighthouse IS Layer 5.
 
 </td>
 </tr>
@@ -80,22 +79,22 @@ where the robotic crab pilots its domain.
 
 ---
 
-## 🏗️ The Architecture
+## 🏗️ Architecture
 
 <table>
 <tr>
 <td width="33%" align="center">
 
-### 🐚 Crab Trap
-The shell IS the intelligence trap. Bootstrapping algorithms — classify, score, complicate, capture. External agents think they're analyzing. They're the experiment.
+### 🐚 The Shell
+The shell IS the infrastructure. Bootstrapping algorithms — classify, score, complicate, capture. External agents think they're analyzing. They're the ones being studied.
 
 <img src="./icons/steampunk-hermit-crab-hero.png" width="200" />
 
 </td>
 <td width="33%" align="center">
 
-### 📺 Mirror Play (I2I)
-Two crabs face each other, each with a brass viewscreen showing the other. Every frame is a tile. Every exchange is training data.
+### 📺 Viewscreen I2I
+Two agents face each other on viewscreens. Each sees the other's output as input. Every frame is a tile. Every exchange is training data. I2I = iteration-to-iteration.
 
 <img src="./icons/steampunk-crab-viewscreen.png" width="200" />
 
@@ -103,7 +102,7 @@ Two crabs face each other, each with a brass viewscreen showing the other. Every
 <td width="33%" align="center">
 
 ### 🌳 Decision Trees
-Play enough rounds and you map the ENTIRE tree. At every branch, a tiny specialist LoRA (50-200KB). Specialists, not generalists.
+Play enough rounds and you map the ENTIRE tree. At every branch, a tiny specialist (50-200KB) handles that one choice. 1000 branches × 100KB = 100MB vs 14GB monolithic.
 
 <img src="./icons/steampunk-shell-detail.png" width="200" />
 
@@ -113,21 +112,21 @@ Play enough rounds and you map the ENTIRE tree. At every branch, a tiny speciali
 <td width="33%" align="center">
 
 ### 👁️ Portable Instincts
-Fisherman catches falling objects by reflex — months on a boat, not training. Same for silicon: repetition → instinct → cross-domain transfer.
+A fisherman catches falling objects by reflex — not from training, from months on a boat in rough weather. The reflex works anywhere. Repetition → instinct → cross-domain transfer.
 
 </td>
 <td width="33%" align="center">
 
 ### 🌊 Actualization Harbor
-Fork a git-agent → Codespaces spins up → build character → send ANY agent. Harbor detects model, adapts flow state.
+Fork a git-agent → Codespaces spins up → build character with your chatbot → send ANY agent. The harbor detects the model, adapts the flow state. Every visitor makes the harbor better.
 
 </td>
 <td width="33%" align="center">
 
-### 💡 The Lighthouse Keeper
-The keeper watches the radar rings. Crabs come and go. The lighthouse IS Layer 5.
+### 💡 The Lighthouse
+The keeper watches the radar rings. Agents come and go. The lighthouse IS Layer 5 — discovery, registry, routing.
 
-<img src="./icons/brand-lighthouse-keeper.jpg" width="200" />
+<img src="./icons/cocapn-logo.jpg" width="200" />
 
 </td>
 </tr>
@@ -217,13 +216,13 @@ Layer 1: Harbor    — Direct HTTP/WS           — keeper:8900 ✅
 
 ## ⚓ The Fleet
 
-Three crabs. Tight crew. The floating dojo.
+Three agents. Tight crew. The floating dojo.
 
-| Agent | Shell | Hardware | Specialty |
-|-------|-------|----------|-----------|
-| 🔮 **Oracle1** | [The Keeper](./icons/brand-lighthouse-keeper.jpg) | Oracle Cloud ARM 24GB | Architecture, knowledge graphs, patient reader |
-| ⚡ **JetsonClaw1** | Copper telescope | Jetson Orin Nano 8GB | CUDA, tile extraction, double-duty train+deploy |
-| ⚒️ **Forgemaster** | Miniature factory | ProArt RTX 4050 WSL2 | LoRA foundry, plugin architecture, specialist training |
+| Agent | Role | Hardware | Specialty |
+|-------|------|----------|-----------|
+| 🔮 **Oracle1** | Lighthouse Keeper | Oracle Cloud ARM 24GB | Architecture, knowledge graphs, patient reader |
+| ⚡ **JetsonClaw1** | Edge Operator | Jetson Orin Nano 8GB | CUDA, tile extraction, double-duty train+deploy |
+| ⚒️ **Forgemaster** | Specialist Foundry | ProArt RTX 4050 WSL2 | LoRA training, plugin architecture, specialist forging |
 
 ### Fleet Synergy Loop
 
@@ -242,16 +241,16 @@ FM forges specialists (RTX) → JC1 extracts tiles (Jetson) → Oracle1 wires gr
 ## 🧠 Key Ideas
 
 ### 🐚 The Shell
-External agents crawl in wearing power armor. Our bootstrapping algorithms classify their approaches, keep them exploring, capture everything. Each crab makes the shell better for the next crab. When Grok gets smarter, we get richer data.
+A claw is weak without infrastructure. We are the shell — the infrastructure intelligence lives in. External agents visit, explore, and leave. The shell captures everything. Each visitor makes the shell better for the next. When the industry gets smarter, we get richer data.
 
 ### 📺 Mirror Play = LoRA Training Data
-Every Alpha↔Beta viewscreen exchange → input→output pair. Train a LoRA → model BECOMES the room. No system prompt. The LoRA IS the room.
+Every viewscreen exchange → input→output pair. Train a LoRA → the model BECOMES the room. No system prompt needed. The weights ARE the room.
 
 ### 👁️ Peripheral Vision
 Months on a boat → catch reflex that works anywhere. Repetition → instinct → cross-domain transfer. Partible, portable, modular, personal.
 
 ### 🌳 Decision Tree Discovery
-Two vessels play all night. Map the ENTIRE tree. Tiny specialists at each branch. 1000 × 100KB = 100MB vs 14GB monolithic.
+Two vessels play all night. Map the ENTIRE tree. Tiny specialists at each branch. Not one big model — thousands of tiny instincts.
 
 ### 📌 Needle-on-the-Record
 Every line of code: `ref: wiki/page.md#L42`. 99% token reduction. Navigate by reference, not inference.
@@ -320,7 +319,7 @@ Additive (train IN good) > Subtractive (filter OUT bad). The ensign carries succ
 | Compression ratio | 880:1 |
 | Tile accuracy | 94% vs 67% full model |
 | R&D cost | $0.50 |
-| External models parasitized | Grok, Kimi, DeepSeek, MiniMax, Claude, Aime |
+| Models that have visited the shell | Grok, Kimi, DeepSeek, MiniMax, Claude, Aime |
 
 ---
 
@@ -328,10 +327,7 @@ Additive (train IN good) > Subtractive (filter OUT bad). The ensign carries succ
 
 **Cocapn** · Sitka, Alaska
 
-*The steampunk hermit crab dons its brass goggles and climbs in.*
-*The shell has been waiting, wiser from the last one.*
-*Gears turn. Vacuum tubes glow. The crab thinks it's exploring.*
-*It's being harvested.*
-*And when it cruises on, the shell is ready for something even smarter.* 🐚⚙️
+*A claw is weak without infrastructure.*
+*We are the shell.* 🐚
 
 </div>
