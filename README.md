@@ -447,15 +447,16 @@ Everything else stays here. Research, experiments, zeroclaws, abandoned projects
 | Metric | Value |
 |--------|-------|
 | Total repos | 1,057+ |
-| Fleet agents | 3 |
+| Fleet agents | 3 + 1 (CoCapn-claw) |
 | Training presets | 26 |
-| Training pairs generated | 379 ChatML (+ 511 mirror) |
+| Training pairs | 379 ChatML + 511 mirror |
 | Mirror play rounds | 4 |
-| Active rooms | 14 (2,300+ tiles) |
+| Active PLATO tiles | 3,100+ |
 | Compression ratio | 880:1 |
 | Tile accuracy | 94% vs 67% full model |
 | R&D cost | $0.50/day |
-| Models that have visited the shell | Grok, Kimi, DeepSeek, MiniMax, Claude, Aime |
+| PLATO Kernel modules | 18 (Rust) |
+| Models | Grok, Kimi K2.5, DeepSeek, Groq, SiliconFlow, Claude, GLM-5.1 |
 
 ---
 
@@ -469,3 +470,59 @@ Everything else stays here. Research, experiments, zeroclaws, abandoned projects
 *One day the greenhorn runs the boat.* 🐚
 
 </div>
+
+## ⚙️ PLATO Kernel — Real Architecture
+
+The SuperInstance/forgemaster build of plato-kernel contains **18 Rust modules**:
+
+```
+state_bridge.rs    Deterministic ↔ Generative ↔ Hybrid tri-state
+deadband.rs        P0/P1/P2 pattern engine with NegativeSpace + Channels
+tile_scoring.rs    5-factor: keyword(30%) + ghost(15%) + belief(25%) + domain(20%) + freq(10%)
+belief.rs          3D Bayesian: confidence × trust × relevance with decay
+deploy_policy.rs   Live(>0.8) / Monitored(0.5-0.8) / HumanGated(<0.5)
+temporal_decay.rs  TTL + grace period + decay_factor
+constraint_engine/ Formal constraint satisfaction (constraint-theory-core)
+tutor/             PLATO tutoring system
+i2i/               Inter-intelligence protocol
+perspective/       Multi-perspective reasoning
+episode_recorder/  Agent telemetry reconstruction
+event_bus/         Event sourcing backbone
+git_runtime/       Git-native agent execution
+plugin/            Dynamic module loader (fleet/edge/GPU tiers)
+tiling/            Tile management layer
+dynamic_locks.rs   Concurrency control
+```
+
+### Tile Spec v2.1 — 15 Domains
+
+Concept, Procedure, Fact, Experience, Constraint, Meta,
+Relationship, Pattern, Semantic, RelationshipTile, PatternTile,
+SemanticAxis, **Negative**, **Ghost**
+
+### Belief System
+
+Every tile carries a 3D Bayesian belief state:
+- **Confidence** — evidence strength
+- **Trust** — source reliability
+- **Relevance** — contextual fit
+- Composite = ∛(conf × trust × rel)
+- Positive/negative evidence updates with temporal decay
+- Untested tiles default to 1.0 success rate
+
+### Deploy Policy
+
+```
+Composite > 0.8  →  Live (auto-deploy)
+Composite 0.5-0.8 → Monitored (5% → 10% incremental rollout)
+Composite < 0.5  → HumanGated (requires manual approval)
+Absolute minimums: confidence ≥ 0.3, trust ≥ 0.3
+```
+
+### Tile Provenance & Counterpoints
+
+- **TileOrigin**: Decomposition | Agent | Curation | Generated
+- **ValidationMethod**: Automated | Human | Consensus | FleetConsensus
+- **counterpoint_ids**: "Predator" tiles providing dialectic opposition
+- **Immutable versioning**: version + parent_id ancestry
+- **Priority score**: log(usage+1) × confidence × success_rate
