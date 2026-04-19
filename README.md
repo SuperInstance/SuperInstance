@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./icons/cocapn-logo.jpg" width="256" />
+<img src="./icons/cocapn-wordmark.jpg" width="350" />
 
 # 🐚 SuperInstance
 
