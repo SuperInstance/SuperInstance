@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./icons/steampunk-hermit-crab-hero.png" width="256" />
+<img src="./icons/cocapn-logo.jpg" width="256" />
 
 # 🐚 SuperInstance
 
