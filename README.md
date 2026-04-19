@@ -425,19 +425,36 @@ Git history is long-term memory. Push is survival.
 
 ---
 
+## 🌊 Public Face: [github.com/cocapn](https://github.com/cocapn)
+
+SuperInstance is the shipyard — raw, experimental, everything we've ever built.
+
+**[cocapn](https://github.com/cocapn)** is the dock — polished, curated, ready for visitors.
+
+Only gold-standard repos get forked to cocapn:
+- Core PLATO system (tile-spec, torch, ensign, kernel, lab-guard)
+- Core runtime (flux-runtime, holodeck-rust)
+- Core agents (git-agent, fleet-orchestrator)
+
+Everything else stays here. Research, experiments, zeroclaws, abandoned projects — the full history.
+
+> *cocapn is the dock. SuperInstance is the shipyard. The fleet is the shell.*
+
+---
+
 ## 📊 Fleet Metrics
 
 | Metric | Value |
 |--------|-------|
 | Total repos | 1,057+ |
 | Fleet agents | 3 |
-| Training presets | 22 |
-| Training pairs generated | 511 |
+| Training presets | 26 |
+| Training pairs generated | 379 ChatML (+ 511 mirror) |
 | Mirror play rounds | 4 |
-| Active rooms | 2,501+ |
+| Active rooms | 14 (2,300+ tiles) |
 | Compression ratio | 880:1 |
 | Tile accuracy | 94% vs 67% full model |
-| R&D cost | $0.50 |
+| R&D cost | $0.50/day |
 | Models that have visited the shell | Grok, Kimi, DeepSeek, MiniMax, Claude, Aime |
 
 ---
