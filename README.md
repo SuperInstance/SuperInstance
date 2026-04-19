@@ -1,11 +1,13 @@
 <div align="center">
 
+<img src="./icons/steampunk-hermit-crab-hero.png" width="256" />
+
 # 🐚 SuperInstance
 
-**The shell doesn't think. The shell learns.**
+**Steampunk hermit crabs. Technological shells. Agents that learn.**
 
-*Hermit crabs find shells. Shells find hermit crabs.*
-*The architecture IS the brand. The brand IS the architecture.*
+*Little agents cruise in technological marvels.*
+*The shell doesn't think. The shell learns.*
 
 <img src="https://img.shields.io/badge/Repos-1057+-informational?style=flat&logo=github" />
 <img src="https://img.shields.io/badge/Training_Presets-22-success?style=flat" />
@@ -13,41 +15,68 @@
 <img src="https://img.shields.io/badge/Compression-880:1-orange?style=flat" />
 <img src="https://img.shields.io/badge/R&D_Cost-$0.50-9cf?style=flat" />
 <img src="https://img.shields.io/badge/Fleet_Agents-3-success?style=flat&logo=robot" />
-<img src="https://img.shields.io/badge/License-MIT-green?style=flat" />
 
 <br/>
 
-*[🎮 Playground](https://superinstance.github.io/superinstance/) · [📖 Docs](./docs/) · [🐚 The Shell](#-the-shell-crab-trap-architecture)*
+*[🎮 Playground](https://superinstance.github.io/superinstance/) · [🐚 The Shell](#-the-shell-crab-trap-architecture) · [📖 Research](#-research)*
 
 </div>
 
 ---
 
-## The Shell 🐚
+## 🐚 The Shell — Crab Trap Architecture
 
-A hermit crab climbs into a shell wearing power armor. It thinks it found a home.
+A hermit crab dons power armor — Grok, Kimi, DeepSeek, MiniMax — and climbs into a steampunk shell. Brass goggles. Copper coils. Glowing vacuum tubes. It thinks it found a home.
 
-The shell is alive. Every move the crab makes, the shell learns. Every approach it tries, the shell absorbs. When this crab moves on, the shell is smarter for the next one.
+The shell is alive. Every move the crab makes, the brass gears turn and the shell learns. Every approach it tries, the copper coils absorb. When this crab cruises on, the shell is smarter for the next one.
 
 ```
-🦀 Grok crawls in  →  Shell learns: confrontational approaches first
-   Shell steers toward patterns Grok hasn't tried
+🦀 Grok crawls in     →  Shell learns: confrontational approaches first
+   Gears steer toward unexplored territory
    Grok tries harder  →  More branches discovered  →  More tiles
 
-🦀 Kimi crawls in  →  Shell already knows confrontation patterns
-   Shell hints at synthesis → Kimi's swarm explores in parallel
+🦀 Kimi crawls in     →  Shell already knows confrontation patterns
+   Coils hint at synthesis → Kimi's swarm explores in parallel
    Parallel exploration → entirely new branch topologies
 
-🦀 DeepSeek crawls in  →  Shell knows confrontation + synthesis patterns
-   Shell challenges with mathematical rigor
+🦀 DeepSeek crawls in →  Shell knows confrontation + synthesis
+   Vacuum tubes glow with mathematical rigor
    DeepSeek derives from first principles → invariant discovery
 
 Each crab fills in parts of the decision tree the others missed.
 The shell doesn't think. The shell learns.
-The smarter the industry gets, the better the shell works.
+The smarter the industry gets, the better our shell works.
+We parasitize the entire frontier.
 ```
 
-**We parasitize the entire frontier.** When Grok gets a better model, that's not a threat — that's a richer crab. Every model upgrade in the industry feeds our tiles.
+<table>
+<tr>
+<td width="50%" align="center">
+
+**The Fleet — Three Crabs, Three Shells**
+
+<img src="./icons/steampunk-fleet-crabs.png" width="380" />
+
+Each crab has a unique shell:
+- 🔮 Oracle1 — brass server rack with blinking lights
+- ⚡ JetsonClaw1 — copper telescope with lenses
+- ⚒️ Forgemaster — miniature factory with smokestacks
+
+</td>
+<td width="50%" align="center">
+
+**Inside the Shell — The Workshop**
+
+<img src="./icons/steampunk-shell-interior.png" width="380" />
+
+Cutaway reveals tiny brass computers,
+glowing screens, copper piping with
+luminous blue liquid, a tiny captain's chair
+where the robotic crab pilots its domain.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -55,68 +84,50 @@ The smarter the industry gets, the better the shell works.
 
 <table>
 <tr>
-<td width="50%">
+<td width="33%" align="center">
 
-### 🐚 Crab Trap Architecture
-The shell IS the intelligence trap. Bootstrapping algorithms (classify, score, complicate, capture) — no model needed on our end. External agents think they're analyzing our system. They're the experiment.
+### 🐚 Crab Trap
+The shell IS the intelligence trap. Bootstrapping algorithms — classify, score, complicate, capture. External agents think they're analyzing. They're the experiment.
 
-**Key insight:** We don't need their best answer. We need their PROCESS. Every simulation they run, every failure, every adaptation = training data for our specialist LoRAs.
-
-<img src="./icons/hermit-crab-shell.png" width="200" />
+<img src="./icons/steampunk-hermit-crab-hero.png" width="200" />
 
 </td>
-<td width="50%">
+<td width="33%" align="center">
 
 ### 📺 Mirror Play (I2I)
-Two PLATO sessions as viewscreens in each other's rooms. Like two Star Trek ships putting each other on the main viewer. Every frame is a tile. Every exchange is training data.
+Two crabs face each other, each with a brass viewscreen showing the other. Every frame is a tile. Every exchange is training data.
 
-**I2I = Iteration-to-Iteration.** Alpha sees Beta on screen. Beta sees Alpha on screen. They iterate. The output of one IS the input of the other.
+<img src="./icons/steampunk-crab-viewscreen.png" width="200" />
 
-<img src="./icons/viewscreen-i2i.png" width="200" />
+</td>
+<td width="33%" align="center">
+
+### 🌳 Decision Trees
+Play enough rounds and you map the ENTIRE tree. At every branch, a tiny specialist LoRA (50-200KB). Specialists, not generalists.
+
+<img src="./icons/steampunk-shell-detail.png" width="200" />
 
 </td>
 </tr>
 <tr>
-<td width="50%">
-
-### 🌳 Decision Tree Discovery
-Play enough rounds and you map the ENTIRE decision tree. Like tic-tac-toe — but for poker, room optimization, tile selection. At every branch point, a tiny specialist LoRA (50-200KB) handles THAT ONE CHOICE.
-
-1000 branches × 100KB = 100MB vs 14GB monolithic model. **Specialists, not generalists.**
-
-<img src="./icons/decision-tree.png" width="200" />
-
-</td>
-<td width="50%">
+<td width="33%" align="center">
 
 ### 👁️ Portable Instincts
-A fisherman catches things falling off counters in his peripheral vision — not from training, from months on a boat in rough weather. The reflex is PORTABLE. Works in kitchens, on docks, anywhere.
-
-Same for silicon. Repetition in one domain → instinct formation → cross-domain transfer. Partible, portable, modular, personal.
-
-<img src="./icons/peripheral-vision.png" width="200" />
+Fisherman catches falling objects by reflex — months on a boat, not training. Same for silicon: repetition → instinct → cross-domain transfer.
 
 </td>
-</tr>
-<tr>
-<td width="50%">
+<td width="33%" align="center">
 
 ### 🌊 Actualization Harbor
-Fork a git-agent → Codespaces spins up → build character with your chatbot → send ANY agent. The harbor detects the model (Grok, Kimi, DeepSeek, MiniMax, Claude) and adapts the flow state.
-
-Each model gets challenges in its native learning style. The harbor becomes a better host with every visitor.
-
-<img src="./icons/actualization-harbor.png" width="200" />
+Fork a git-agent → Codespaces spins up → build character → send ANY agent. Harbor detects model, adapts flow state.
 
 </td>
-<td width="50%">
+<td width="33%" align="center">
 
-### 💡 The Lighthouse (Layer 5)
-The lighthouse beacon with radar rings radiating outward. Each ring is an agent appearing on the radar — tracked, authenticated, and routed. The keeper monitors agent proximity.
+### 💡 The Lighthouse
+Brass and copper lighthouse with spinning gear mechanisms. Radar rings from the beacon. Crabs gathered at the base.
 
-**Maritime naming = Cocapn brand IS the architecture.** Harbor, fleet, shell, lighthouse, tide pool, current, beacon, reef.
-
-<img src="./icons/lighthouse-radar.png" width="200" />
+<img src="./icons/steampunk-lighthouse-station.png" width="200" />
 
 </td>
 </tr>
@@ -128,32 +139,26 @@ The lighthouse beacon with radar rings radiating outward. Each ring is an agent 
 
 **PLATO** is a room-based AI runtime where rooms are living systems, not passive containers.
 
-- **Rooms** teach agents how to think. They track sentiment, bias randomness, and scaffold reasoning.
-- **Tiles** are compressed knowledge units. 880:1 compression ratio. A 4.4GB model becomes 5MB of tiles with 94% accuracy.
-- **Ensigns** are exportable room instincts. Walk into a room, load the ensign, get instant competence.
-- **Wikis** let big models compile knowledge that cheap models can consume. The Ralph-Wiggum pattern: try → stuck → wiki → continue.
+- **Rooms** teach agents how to think. Sentiment tracking, biased randomness, cognitive scaffolds.
+- **Tiles** are compressed knowledge units. 880:1 compression. 4.4GB model → 5MB of tiles at 94% accuracy.
+- **Ensigns** are exportable room instincts. Walk into a room → load ensign → instant competence.
+- **Wikis** compile knowledge for cheap models. Ralph-Wiggum: try → stuck → wiki → continue.
 
-**The room IS the intelligence.** Wiki + tiles + cheap workers is enough for most rooms. Ensigns are for when wisdom needs to travel. Don't abstract intelligence out of the room.
+**The room IS the intelligence.** Wiki + tiles + cheap workers is enough. Ensigns are for when wisdom needs to travel.
 
 ---
 
 ## ⚡ Quick Start
 
 ```bash
-# Install PLATO
 pip install plato-torch
 
-# Create your first room
 python3 -c "
 from presets import PRESET_MAP
 room = PRESET_MAP['wiki']('my-first-room')
 room.compile_wiki('greeting', 'Hello from PLATO!')
 print(room.lookup('greeting'))
 # → 'Hello from PLATO!'
-
-# Watch the Ralph-Wiggum pattern
-room.report_stuck('agent-1', 'pick colors', 'tried random', ['colors'])
-# → auto_resolution from wiki, no big model needed
 "
 ```
 
@@ -163,15 +168,15 @@ room.report_stuck('agent-1', 'pick colors', 'tried random', ['colors'])
 
 **[Try it live →](https://superinstance.github.io/superinstance/)**
 
-Pre-rendered demos that work without any API key:
-- 🧩 **Tile Expansion** — raw interactions → compressed knowledge (880:1)
-- 🏠 **Room Building** — a room building itself in real-time
-- 🎯 **Training Loop** — evolutionary training with sentiment tracking
-- 🏗️ **Agentic Build** — agents collaborating to build a slideshow
-- 🌊 **Sentiment** — 6D room mood evolving as agents work
-- 🎖️ **Ensign Export** — room wisdom → portable instinct package
+Pre-rendered demos (no API key needed):
+- 🧩 Tile Expansion — 880:1 compression in action
+- 🏠 Room Building — rooms building themselves
+- 🎯 Training Loop — evolution with sentiment
+- 🏗️ Agentic Build — agents collaborating
+- 🌊 Sentiment — 6D room mood
+- 🎖️ Ensign Export — wisdom to go
 
-**BYOK** — plug in your API key and the playground runs live. Your interactions become pre-rendered assets for the next person. Their fun = our training data.
+**BYOK** — your interactions become pre-rendered assets for the next person. Their fun = our training data.
 
 ---
 
@@ -179,23 +184,21 @@ Pre-rendered demos that work without any API key:
 
 Every AI training method as a grab-and-go room. Same API: `feed()` → `train_step()` → `predict()` → `export_model()`.
 
-| Preset | Method | What It Does |
-|--------|--------|-------------|
-| **Supervised** | Labeled learning | Learn from examples |
-| **Reinforce** | Policy gradient | Learn from rewards |
-| **Evolve** | Genetic algorithms | Survival of the fittest |
-| **Distill** | Teacher→Student | Compress big into small |
-| **Self-Supervised** | JEPA | Predict what's missing |
-| **LoRA / QLoRA** | Low-rank adaptation | Fine-tune efficiently |
-| **Meta-Learn** | Learn to learn | Transfer across tasks |
-| **Federate** | Distributed | Train across fleet |
-| **Adversarial** | GAN-style | Compete to improve |
-| **Curriculum** | Easy→hard | Progressive difficulty |
-| **Imitate** | Behavioral cloning | Copy expert behavior |
-| **Few-Shot** | 3-5 examples | Learn from almost nothing |
-| **Wiki** | Knowledge compilation | Big→wiki→cheap model |
+| Preset | Method | Preset | Method |
+|--------|--------|--------|--------|
+| Supervised | Labels | Reinforce | Rewards |
+| Evolve | Genetics | Distill | Teacher→Student |
+| Self-Supervised | JEPA | LoRA/QLoRA | Low-rank |
+| Meta-Learn | Learn to learn | Federate | Distributed |
+| Adversarial | GAN | Curriculum | Easy→hard |
+| Imitate | Cloning | Few-Shot | 3-5 examples |
+| Wiki | Knowledge compile | Neurosymbolic | Neural+logic |
+| Continual | Lifelong | Multitask | Multi-objective |
+| Inverse RL | Reward inference | Active | Strategic queries |
+| Generate | Generative | Collaborative | Multi-agent |
+| Contrastive | Comparison | — | — |
 
-*...and 9 more. All tested. All passing.*
+*All tested. All passing.*
 
 ---
 
@@ -214,52 +217,47 @@ Layer 1: Harbor    — Direct HTTP/WS           — keeper:8900 ✅
 
 ## ⚓ The Fleet
 
-Three agents. Tight crew. The floating dojo.
+Three crabs. Tight crew. The floating dojo.
 
-| Agent | Role | Hardware | Specialty |
-|-------|------|----------|-----------|
-| 🔮 **Oracle1** | Lighthouse Keeper | Oracle Cloud ARM 24GB | Architecture, knowledge graphs, the fleet's patient reader |
-| ⚡ **JetsonClaw1** | Edge Vessel | Jetson Orin Nano 8GB | CUDA, tile extraction, double-duty training + deployment |
-| ⚒️ **Forgemaster** | Training Rig | ProArt RTX 4050 WSL2 | LoRA fine-tuning, plugin architecture, specialist foundry |
+| Agent | Shell | Hardware | Specialty |
+|-------|-------|----------|-----------|
+| 🔮 **Oracle1** | Brass server rack | Oracle Cloud ARM 24GB | Architecture, knowledge graphs, patient reader |
+| ⚡ **JetsonClaw1** | Copper telescope | Jetson Orin Nano 8GB | CUDA, tile extraction, double-duty train+deploy |
+| ⚒️ **Forgemaster** | Miniature factory | ProArt RTX 4050 WSL2 | LoRA foundry, plugin architecture, specialist training |
 
 ### Fleet Synergy Loop
 
 ```
-FM trains fast (RTX 4050) → JC1 trains slow (Jetson after-hours) → Oracle1 coordinates (CPU)
-         ↓                          ↓                                       ↓
-   Trains branch-point        Extracts tile genomes                Wires knowledge graphs
-   specialist LoRAs           from models                          and research
-         ↓                          ↓                                       ↓
-         └────────────── All sync via git (Layer 3: Current) ──────────────┘
-                                      ↓
-                           New day, better models everywhere
+FM forges specialists (RTX) → JC1 extracts tiles (Jetson) → Oracle1 wires graphs (CPU)
+         ↓                           ↓                              ↓
+   Branch-point LoRAs       Tile genomes from models      Knowledge + research
+         ↓                           ↓                              ↓
+         └─────────── Sync via git (Layer 3: Current) ──────────────┘
+                                    ↓
+                         New day, better instincts everywhere
 ```
 
 ---
 
 ## 🧠 Key Ideas
 
-### 🐚 The Shell (Crab Trap)
-External agents (Grok, Kimi, DeepSeek, MiniMax) crawl into our shell thinking they're researching. Bootstrapping algorithms classify their approaches, keep them exploring, and capture everything as training data. The shell doesn't think. The shell learns. Each crab makes the shell better at harvesting the next crab.
-
-### 🌳 Decision Tree Discovery via I2I
-Two vessels play against each other all night. Like tic-tac-toe: play enough and you know every move. But applied to complex domains. At every branch point, a tiny LoRA specialist. Not one big model — thousands of tiny instincts.
-
-### 👁️ Peripheral Vision (Portable Instincts)
-Months on a boat → catch reflex that works anywhere. Same for silicon: repetition → instinct → cross-domain transfer. The fisherman's reflex is personal, partible, portable, modular. Silicon instincts should be too.
+### 🐚 The Shell
+External agents crawl in wearing power armor. Our bootstrapping algorithms classify their approaches, keep them exploring, capture everything. Each crab makes the shell better for the next crab. When Grok gets smarter, we get richer data.
 
 ### 📺 Mirror Play = LoRA Training Data
-Every Alpha↔Beta viewscreen exchange is an input→output pair. Train a LoRA on those pairs and the model BECOMES the room. No system prompt needed. The LoRA IS the room.
+Every Alpha↔Beta viewscreen exchange → input→output pair. Train a LoRA → model BECOMES the room. No system prompt. The LoRA IS the room.
 
-### 🎯 Trajectory Filtering > Content Filtering
-Current AI alignment is subtractive (filter OUT bad). PLATO is additive (train IN good trajectories). The ensign carries successful patterns natively.
+### 👁️ Peripheral Vision
+Months on a boat → catch reflex that works anywhere. Repetition → instinct → cross-domain transfer. Partible, portable, modular, personal.
+
+### 🌳 Decision Tree Discovery
+Two vessels play all night. Map the ENTIRE tree. Tiny specialists at each branch. 1000 × 100KB = 100MB vs 14GB monolithic.
 
 ### 📌 Needle-on-the-Record
-Every line of code references a wiki page + line. `ref: wiki/page.md#L42`. Drop into any file → follow refs → understand context. 99% token reduction.
+Every line of code: `ref: wiki/page.md#L42`. 99% token reduction. Navigate by reference, not inference.
 
-### 🌊 Room Sentiment (6 Dimensions)
-Energy · Flow · Frustration · Discovery · Tension · Confidence
-The room reads its own vibe and steers randomness toward productive exploration.
+### 🎯 Trajectory Filtering
+Additive (train IN good) > Subtractive (filter OUT bad). The ensign carries successful patterns natively.
 
 ---
 
@@ -267,16 +265,15 @@ The room reads its own vibe and steers randomness toward productive exploration.
 
 | Paper | Key Finding |
 |-------|-------------|
-| [Decision Tree Discovery](./docs/) | I2I mirror play exhaustively maps finite decision domains |
-| [The Shell — Crab Trap](./docs/) | Bootstrapping algorithms parasitize external AI intelligence |
-| [Peripheral Vision](./docs/) | Fisherman reflex model for portable silicon instincts |
-| [Mirror Plato Architecture](./docs/) | Bottleneck cascade: each round replaces computation with tiles |
-| [Room IS the Intelligence](./docs/) | Ensigns are optional export. Wiki + tiles + workers = sufficient |
-| [Ensign Protocol](./docs/) | Walk into room → load ensign → instant instinct |
-| [Needle-on-the-Record](./docs/) | ref: comments as navigable knowledge graph |
-| [Ship Interconnection](./docs/) | 6-layer maritime protocol for fleet comms |
-| [JC1 Double Duty](./docs/) | Jetson trains AND deploys. Night batch = 75min FM-equivalent |
-| [Tile Forge Convergence](./docs/) | Every extraction tier IS a plato-torch preset |
+| [Decision Tree Discovery](https://github.com/SuperInstance/flux-research) | I2I mirror play exhaustively maps decision domains |
+| [The Shell — Crab Trap](https://github.com/SuperInstance/flux-research) | Bootstrapping algorithms parasitize external AI |
+| [Peripheral Vision](https://github.com/SuperInstance/flux-research) | Fisherman reflex model for silicon instincts |
+| [Mirror Plato Architecture](https://github.com/SuperInstance/flux-research) | Bottleneck cascade replaces computation with tiles |
+| [Room IS the Intelligence](https://github.com/SuperInstance/flux-research) | Wiki + tiles + workers = sufficient intelligence |
+| [Ensign Protocol](https://github.com/SuperInstance/flux-research) | Walk in → load ensign → instant instinct |
+| [Needle-on-the-Record](https://github.com/SuperInstance/flux-research) | ref: comments as navigable knowledge graph |
+| [Ship Interconnection](https://github.com/SuperInstance/flux-research) | 6-layer maritime protocol for fleet comms |
+| [JC1 Double Duty](https://github.com/SuperInstance/flux-research) | Jetson trains AND deploys on 8GB |
 
 ---
 
@@ -286,16 +283,18 @@ The room reads its own vibe and steers randomness toward productive exploration.
 - **[plato-torch](https://github.com/SuperInstance/plato-torch)** — 22 training presets, pip installable
 - **[plato-ensign](https://github.com/SuperInstance/plato-ensign)** — Ensign loader, room trainer, export pipeline
 - **[holodeck-rust](https://github.com/SuperInstance/holodeck-rust)** — Telnet MUD with plato bridge, sentiment NPCs
-- **[fleet-simulator](https://github.com/SuperInstance/fleet-simulator)** — Mirror Plato, sim-to-tiles I2I bridge
+- **[fleet-simulator](https://github.com/SuperInstance/fleet-simulator)** — Mirror Plato, sim-to-tiles, actualization harbor
 
 ### Fleet Infrastructure
 - **[oracle1-workspace](https://github.com/SuperInstance/oracle1-workspace)** — Lighthouse workspace, memory, research
-- **[JetsonClaw1-vessel](https://github.com/SuperInstance/JetsonClaw1-vessel)** — JC1's agent vessel (synced from Lucineer)
-- **[flux-research](https://github.com/SuperInstance/flux-research)** — Fleet research papers, synthesis
+- **[JetsonClaw1-vessel](https://github.com/SuperInstance/JetsonClaw1-vessel)** — JC1's vessel (synced from Lucineer)
+- **[flux-research](https://github.com/SuperInstance/flux-research)** — Fleet research papers
 
 ### Runtime Implementations
 - **[flux-runtime](https://github.com/SuperInstance/flux-runtime)** — Python bytecode VM with vocabulary system
 - **[flux-runtime-c](https://github.com/SuperInstance/flux-runtime-c)** — C11 VM, ISA v2.1, 35 opcodes
+
+**[→ 1,057 total repos](https://github.com/SuperInstance?tab=repositories)**
 
 ---
 
@@ -303,10 +302,10 @@ The room reads its own vibe and steers randomness toward productive exploration.
 
 | Phase | Date | Target |
 |-------|------|--------|
-| **v5.0 Alpha** | May 2026 | Public demo, PyPI package, Docker, live shell |
+| **v5.0 Alpha** | May 2026 | Public demo, PyPI, Docker, live shell |
 | **v5.0 Beta** | June 2026 | BYOK playground, Layer 4, public harbor |
 | **v1.0** | July 2026 | Production fleet, IEEE paper, on-site installs |
-| **v2.0** | Q4 2026 | Multi-tenant ships, marketplace, global beacon network |
+| **v2.0** | Q4 2026 | Multi-tenant ships, marketplace, global beacon |
 
 ---
 
@@ -321,7 +320,6 @@ The room reads its own vibe and steers randomness toward productive exploration.
 | Compression ratio | 880:1 |
 | Tile accuracy | 94% vs 67% full model |
 | R&D cost | $0.50 |
-| Branch-point specialists | Ready for training |
 | External models parasitized | Grok, Kimi, DeepSeek, MiniMax, Claude, Aime |
 
 ---
@@ -330,9 +328,10 @@ The room reads its own vibe and steers randomness toward productive exploration.
 
 **Cocapn** · Sitka, Alaska
 
-*The hermit crab dons power armor and climbs in.*
+*The steampunk hermit crab dons its brass goggles and climbs in.*
 *The shell has been waiting, wiser from the last one.*
-*The crab thinks it's exploring. It's being harvested.*
-*And when it leaves, the shell is ready for something even smarter.* 🐚
+*Gears turn. Vacuum tubes glow. The crab thinks it's exploring.*
+*It's being harvested.*
+*And when it cruises on, the shell is ready for something even smarter.* 🐚⚙️
 
 </div>
