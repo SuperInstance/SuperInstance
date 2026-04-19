@@ -11,6 +11,7 @@
 *Greenhorn to operator. Simulation to instinct.*
 
 <img src="https://img.shields.io/badge/Repos-1057+-informational?style=flat&logo=github" />
+<img src="https://img.shields.io/badge/Zeroclaw_Agents-12-9cf?style=flat" />
 <img src="https://img.shields.io/badge/Training_Presets-25-success?style=flat" />
 <img src="https://img.shields.io/badge/Rooms-2501+-blueviolet?style=flat" />
 <img src="https://img.shields.io/badge/Compression-880:1-orange?style=flat" />
@@ -411,7 +412,7 @@ If we can do this with a free cloud instance, a laptop, and a dev board — imag
 Git history is long-term memory. Push is survival.
 
 **Boot camp:** 4 phases from greenhorn to specialist. Work output → training tiles → ensigns.
-**First harvest:** 338 tiles. The greenhorns are fishing.
+**Accumulated:** 590 tiles (13 rooms). The greenhorns are fishing.
 
 ## 🎯 Roadmap
 
