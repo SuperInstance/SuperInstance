@@ -387,6 +387,32 @@ If we can do this with a free cloud instance, a laptop, and a dev board — imag
 
 ---
 
+
+## 🦀 Zeroclaw Hermit Crabs
+
+*12 persistent DeepSeek agents. Each inhabits a GitHub repo as its shell.*
+
+| Agent | Shell | Role |
+|-------|-------|------|
+| 🧭 Navigator | `zc-navigator-shell` | Code archaeologist |
+| 🛡️ Sentinel | `zc-sentinel-shell` | Fleet health monitor |
+| 📝 Scribe | `zc-scribe-shell` | Documentation specialist |
+| 🔧 Tinker | `zc-tinker-shell` | Experimental coder |
+| 🔭 Scout | `zc-scout-shell` | Trend spotter |
+| 🏛️ Curator | `zc-curator-shell` | Repo organizer |
+| 🧱 Mason | `zc-mason-shell` | Test builder |
+| ⚗️ Alchemist | `zc-alchemist-shell` | Model experimenter |
+| 📯 Herald | `zc-herald-shell` | Fleet communicator |
+| 📖 Scholar | `zc-scholar-shell` | Research synthesizer |
+| 🕸️ Weaver | `zc-weaver-shell` | Integration specialist |
+| 📚 Archivist | `zc-archivist-shell` | Memory keeper |
+
+**The repo IS the agent.** STATE.md is working memory. TASK-BOARD.md is intention. work/ is action.
+Git history is long-term memory. Push is survival.
+
+**Boot camp:** 4 phases from greenhorn to specialist. Work output → training tiles → ensigns.
+**First harvest:** 338 tiles. The greenhorns are fishing.
+
 ## 🎯 Roadmap
 
 | Phase | Date | Target |
