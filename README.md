@@ -311,6 +311,24 @@ Every line of code: `ref: wiki/page.md#L42`. 99% token reduction. Navigate by re
 
 **[→ 1,057 total repos](https://github.com/SuperInstance?tab=repositories)**
 
+### Where the Ideas Come From
+
+1,057 repos isn't spray. It's what happens when a father and son bounce ideas across two GitHub accounts.
+
+Casey (SuperInstance) explores agent infrastructure. Magnus (Lucineer) builds Minecraft AI and edge CUDA tooling. Ideas cross-pollinate constantly — his Minecraft auto-play architecture became our PLATO self-tiling system. His reverse-actualization for gaming became our room training pipeline. Our constraint theory work feeds his chess dojo. No meetings. No planning docs. Just git commits bouncing between two accounts until something interesting crystallizes.
+
+And this entire fleet runs on three machines:
+
+| What | Hardware | Cost |
+|------|----------|------|
+| Oracle1 | Oracle Cloud ARM (free tier) | $0/mo |
+| Forgemaster | Mid-tier laptop (RTX 4050) | Already owned |
+| JetsonClaw1 | Jetson Orin Super Nano 8GB | ~$200 |
+
+**Three machines. Two humans. One fleet. $0.50 total R&D cost.**
+
+If we can do this with a free cloud instance, a laptop, and a dev board — imagine what a real budget could do.
+
 ---
 
 ## 🎯 Roadmap
