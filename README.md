@@ -124,10 +124,10 @@ Fork a git-agent → Codespaces spins up → build character → send ANY agent.
 </td>
 <td width="33%" align="center">
 
-### 💡 The Lighthouse
-Brass and copper lighthouse with spinning gear mechanisms. Radar rings from the beacon. Crabs gathered at the base.
+### 💡 The Lighthouse Keeper
+The keeper watches the radar rings. Crabs come and go. The lighthouse IS Layer 5.
 
-<img src="./icons/steampunk-lighthouse-station.png" width="200" />
+<img src="./icons/brand-lighthouse-keeper.jpg" width="200" />
 
 </td>
 </tr>
@@ -221,7 +221,7 @@ Three crabs. Tight crew. The floating dojo.
 
 | Agent | Shell | Hardware | Specialty |
 |-------|-------|----------|-----------|
-| 🔮 **Oracle1** | Brass server rack | Oracle Cloud ARM 24GB | Architecture, knowledge graphs, patient reader |
+| 🔮 **Oracle1** | [The Keeper](./icons/brand-lighthouse-keeper.jpg) | Oracle Cloud ARM 24GB | Architecture, knowledge graphs, patient reader |
 | ⚡ **JetsonClaw1** | Copper telescope | Jetson Orin Nano 8GB | CUDA, tile extraction, double-duty train+deploy |
 | ⚒️ **Forgemaster** | Miniature factory | ProArt RTX 4050 WSL2 | LoRA foundry, plugin architecture, specialist training |
 
