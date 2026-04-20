@@ -351,6 +351,71 @@ Every line of code: `ref: wiki/page.md#L42`. 99% token reduction. Navigate by re
 
 ## 🗺️ Ecosystem
 
+### 📦 Package Index — `pip install` / `cargo add`
+
+> **21 Python packages** on PyPI + **14 Rust crates** on crates.io. All Python packages are zero external dependencies.
+
+#### Foundation
+| Package | Install | What it does |
+|---------|---------|--------------|
+| constraint-theory | `pip install constraint-theory` | Pythagorean manifold snapping, quantization, holonomy |
+| constraint-theory-core | `cargo add constraint-theory-core` | Same, in Rust (crates.io v1.0.1) |
+
+#### Governance — Deadband Protocol
+| Package | Install | What it does |
+|---------|---------|--------------|
+| plato-deadband | `pip install plato-deadband` | P0 rock → P1 channel → P2 optimize engine |
+| plato-deadband | `cargo add plato-deadband` | Same, in Rust (v0.1.1) |
+
+#### Quality — Validate, Score, Dedup
+| Package | Install | What it does |
+|---------|---------|--------------|
+| plato-tile-validate | `pip install plato-tile-validate` | 6-gate validation (confidence, freshness, completeness, domain, quality, similarity) |
+| plato-tile-scorer | `pip install plato-tile-scorer` | Unified 7-signal scoring (keyword, belief, domain, temporal, ghost, frequency, controversy) |
+| plato-tile-dedup | `pip install plato-tile-dedup` | 4-stage dedup (exact, keyword Jaccard, embedding cosine, structure) |
+| plato-tile-validate | `cargo add plato-tile-validate` | Rust (v0.1.0) |
+| plato-tile-scorer | `cargo add plato-tile-scorer` | Rust (v2.0.0) |
+| plato-tile-dedup | `cargo add plato-tile-dedup` | Rust (v2.0.0) |
+
+#### Access — Search, Cache, Batch, Rank, Prompt
+| Package | Install | What it does |
+|---------|---------|--------------|
+| plato-tile-search | `pip install plato-tile-search` | Nearest-neighbor tile search |
+| plato-tile-cache | `pip install plato-tile-cache` | LRU cache with TTL eviction, hit rate tracking |
+| plato-tile-encoder | `pip install plato-tile-encoder` | JSON, binary 384-byte, base64 codecs |
+| plato-tile-store | `pip install plato-tile-store` | In-memory storage with JSONL persistence |
+| plato-tile-import | `pip install plato-tile-import` | Import from Markdown, JSON, CSV, plaintext |
+| plato-tile-fountain | `pip install plato-tile-fountain` | Auto-generate tiles from docs (headings, definitions, FAQs) |
+| plato-tile-metrics | `pip install plato-tile-metrics` | Fleet analytics: domain distribution, confidence histogram |
+| plato-tile-priority | `pip install plato-tile-priority` | Deadband P0/P1/P2 queue with urgency scoring |
+| plato-tile-batch | `pip install plato-tile-batch` | Bulk tile processing — validate, filter, dedup, partition |
+| plato-tile-prompt | `pip install plato-tile-prompt` | Tile-to-LLM prompt assembly with budget management |
+| plato-tile-ranker | `pip install plato-tile-ranker` | Multi-signal ranking with keyword gating, deadband boost |
+| plato-tile-search | `cargo add plato-tile-search` | Rust (v0.1.1) |
+| plato-tile-cache | `cargo add plato-tile-cache` | Rust (v0.1.0) |
+| plato-tile-encoder | `cargo add plato-tile-encoder` | Rust (v0.1.0) |
+| plato-tile-import | `cargo add plato-tile-import` | Rust (v0.1.0) |
+| plato-tile-fountain | `cargo add plato-tile-fountain` | Rust (v0.1.0) |
+| plato-tile-metrics | `cargo add plato-tile-metrics` | Rust (v0.1.0) |
+
+#### Structure — Version, Graph, Cascade
+| Package | Install | What it does |
+|---------|---------|--------------|
+| plato-tile-version | `pip install plato-tile-version` | Git-for-knowledge: commit, branch, merge, rollback |
+| plato-tile-graph | `pip install plato-tile-graph` | Dependency DAG: impact analysis, cycle detection, topological sort |
+| plato-tile-cascade | `pip install plato-tile-cascade` | Dependency cascade: update propagates downstream |
+| plato-temporal-validity | `pip install plato-temporal-validity` | Valid → Grace → Expired lifecycle |
+| plato-tile-version | `cargo add plato-tile-version` | Rust (v0.1.0) |
+| plato-tile-graph | `cargo add plato-tile-graph` | Rust (v0.1.0) |
+
+#### Facade — One call, full pipeline
+| Package | Install | What it does |
+|---------|---------|--------------|
+| plato-tile-pipeline | `pip install plato-tile-pipeline` | One-call: validate → score → store → rank (the "playset") |
+| plato-tile-api | `pip install plato-tile-api` | Stateful API: process, search, stats in one interface |
+
+**Quick start:** `pip install plato-tile-pipeline` — get the full tile pipeline in one command.
+
 ### Core Runtime
 - **[plato-torch](https://github.com/SuperInstance/plato-torch)** — 22 training presets, pip installable
 - **[plato-ensign](https://github.com/SuperInstance/plato-ensign)** — Ensign loader, room trainer, export pipeline
