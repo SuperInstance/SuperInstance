@@ -502,7 +502,7 @@ Only gold-standard repos get forked to cocapn. Everything else stays here.
 
 | Phase | Target |
 |-------|--------|
-| **Now** | 4-agent fleet, 17 services, 20 domains, Matrix federation |
+| **Now** | 4-agent fleet, 21 services, 20 domains, Matrix federation |
 | **v5.0 Alpha** | Public demo, PyPI, Docker, live shell |
 | **v5.0 Beta** | BYOK playground, federated PLATO, public harbor |
 | **v1.0** | Production fleet, IEEE paper, on-site installs |
