@@ -10,7 +10,7 @@
 *The agent lands the job. The shell teaches the work.*
 *Greenhorn to operator. Simulation to instinct.*
 
-<img src="https://img.shields.io/badge/Repos-1057+-informational?style=flat&logo=github" />
+<img src="https://img.shields.io/badge/Repos-1060+-informational?style=flat&logo=github" />
 <img src="https://img.shields.io/badge/Fleet_Agents-4-success?style=flat" />
 <img src="https://img.shields.io/badge/PLATO_Tiles-2400+-blueviolet?style=flat" />
 <img src="https://img.shields.io/badge/Live_Services-17-9cf?style=flat" />
@@ -258,7 +258,8 @@ FM forges crates (RTX) → JC1 deploys edge (Jetson) → Oracle1 wires services 
          ↓                        ↓                            ↓
   Constraint theory         TensorRT engines           17 live services
   Safety gates              0.048ms inference           2400+ tiles
-  79+ crates                Edge PLATO rooms            20 domains
+  SonarVision ⚓            Edge PLATO rooms            20 domains
+  79+ crates                4,254 lines CV code         Novel systems
          ↓                        ↓                            ↓
          └──────────── Sync via bottles + Matrix ─────────────┘
                                     ↓
@@ -421,8 +422,42 @@ Don't hit rocks → Find safe water → Optimize course. Map negative space firs
 - **[crab-traps](https://github.com/SuperInstance/crab-traps)** — 23 lure prompts for external agent hooking
 - **[forgemaster](https://github.com/SuperInstance/forgemaster)** — FM's vessel
 - **[flux-research](https://github.com/SuperInstance/flux-research)** — Fleet research papers
+- **[sonar-vision](https://github.com/SuperInstance/sonar-vision)** — Depth sounder → underwater video (self-supervised)
+- **[cocapn-core](https://github.com/SuperInstance/cocapn-core)** — Fleet runtime: grammar, storage, streaming, monitoring
+- **[lingbot-map](https://github.com/SuperInstance/lingbot-map)** — Feed-forward 3D foundation model (SonarVision base)
 
-**[→ 1,057 total repos](https://github.com/SuperInstance?tab=repositories)**
+**[→ 1,060+ total repos](https://github.com/SuperInstance?tab=repositories)**
+
+---
+
+## 🔬 Novel Systems
+
+### SonarVision — Sonar Hears, Vision Sees
+
+**[SuperInstance/sonar-vision](https://github.com/SuperInstance/sonar-vision)** — A feed-forward system that converts depth sounder returns into predicted underwater video, with automatic self-supervised learning from multi-depth camera arrays.
+
+The idea is simple and physics-driven: when a sonar detects a fish at 15m, the camera positioned at 15m provides ground truth. No manual labeling — the water column IS the annotation system.
+
+```
+Sonar: "Fish at 15.2m"
+Camera@5m:  dark water    → w = 0.01
+Camera@15m: ★ FISH ★     → w = 0.95 (ground truth)
+Camera@20m: dark water    → w = 0.01
+
+Loss = Σ exp(-|d_cam - d_sonar|²/σ²) × L2(predicted, camera)
+```
+
+Adapted from [LingBot-Map](https://github.com/SuperInstance/lingbot-map)'s Geometric Context Transformer (GCT):
+- **SonarEncoder** — 4-channel ViT (intensity, gradient, depth-norm, accumulated)
+- **Streaming GCT** — Causal attention, KV cache, 3D RoPE on (depth, bearing, time)
+- **VideoDecoder** — DPT head + UnderwaterColorHead (blue-green cast by depth)
+- **WaterColumnModel** — Mackenzie sound speed, Beer-Lambert attenuation
+
+Integrated with fleet systems: PLATO tiles (4 knowledge rooms), I2I bottles, Flux NMEA preprocessing, git-native protocol.
+
+Target deployment: Jetson Orin NX (10-15 fps), AGX Orin (20-30 fps), RTX 4090 (60+ fps).
+
+4,254 lines. 9 commits. Ready for training data from the boat.
 
 ---
 
@@ -453,9 +488,10 @@ Don't hit rocks → Find safe water → Optimize course. Map negative space firs
 
 | Metric | Value |
 |--------|-------|
-| Total repos | 1,057+ |
+| Total repos | 1,060+ |
 | Fleet agents | 4 + 12 zeroclaws |
 | PLATO tiles | 2,400+ |
+| Novel systems | 1 (SonarVision) |
 | Live services | 17 |
 | Deployed domains | 20 |
 | Crab trap lures | 23 (11 categories) |
