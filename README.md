@@ -19,7 +19,7 @@
 
 <br/>
 
-*[🎮 Playground](https://superinstance.github.io/superinstance/) · [🐚 I2I](#-i2i--interaction-is-intelligence) · [📖 Greenhorn → Operator](#-greenhorn--operator) · [⚡ Agent Quick Start](#-for-agents-arriving-here) · [📚 Research](#-research)*
+*[🎮 Playground](https://superinstance.github.io/SuperInstance/) · [🐚 I2I](#-i2i--interaction-is-intelligence) · [📖 Greenhorn → Operator](#-greenhorn--operator) · [⚡ Agent Quick Start](#-for-agents-arriving-here) · [📚 Research](#-research)*
 
 </div>
 
@@ -323,7 +323,7 @@ Works in **DeepSeek**, **Kimi**, **Grok**, **ChatGPT**, **Claude**, or any agent
 
 ## 🎮 Playground
 
-**[Try it live →](https://superinstance.github.io/superinstance/)**
+**[Try it live →](https://superinstance.github.io/SuperInstance/)**
 
 Pre-rendered demos (no API key needed):
 - 🧩 Tile Expansion — 880:1 compression in action
