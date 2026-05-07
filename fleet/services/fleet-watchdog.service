@@ -1,0 +1,11 @@
+[Unit]
+Description=Fleet Watchdog — minute-level service health checks, alerts, self-heals
+After=network.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/home/ubuntu/.openclaw/workspace
+ExecStart=/usr/bin/python3 /home/ubuntu/.openclaw/workspace/scripts/fleet-watchdog.py
+StandardOutput=append:/tmp/fleet-watchdog.log
+StandardError=append:/tmp/fleet-watchdog.log

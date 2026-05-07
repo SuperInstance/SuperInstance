@@ -1,0 +1,11 @@
+[Unit]
+Description=Fleet Watchdog Timer — runs fleet-watchdog every minute
+After=network.target
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=1min
+Unit=fleet-watchdog.service
+
+[Install]
+WantedBy=multi-user.target

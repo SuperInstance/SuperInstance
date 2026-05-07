@@ -1,0 +1,18 @@
+[Unit]
+Description=Zeroclaw PLATO Loop — 3-agent creative synthesis, security analysis, recovery
+After=network.target
+Wants=plato.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/.openclaw/workspace/repos/zeroclaw-plato
+ExecStart=/usr/bin/python3 loop.py --interval 300 --synth-interval 1800
+Restart=always
+RestartSec=10
+StandardOutput=file:/var/log/zeroclaw-plato/stdout.log
+StandardError=file:/var/log/zeroclaw-plato/stderr.log
+Environment=PLATO_SERVER=http://localhost:8847
+
+[Install]
+WantedBy=multi-user.target
