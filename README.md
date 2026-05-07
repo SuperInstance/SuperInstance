@@ -1,92 +1,140 @@
-# SuperInstance — Fleet Infrastructure
+# SuperInstance — Snapping to Safe
 
-**We build agents that work. Agents that don't work are reworked until they do.**
+**There are so many rocks. I know where they are NOT. And I have myself a path of safe.**
 
-Not a research org. Not a lab. A floating dojo where every tool that ships has been proven on real hardware under real conditions.
+That's the whole game.
 
----
+Most people try to find the valid state. They search. They optimize. They compute. We don't. We snap to it.
 
-## What We Ship
-
-### The Fleet
-Four agents on three machines. Every ship has a job.
-
-| Agent | What it does | Lives on |
-|-------|-------------|----------|
-| 🔮 **Oracle1** | Keeper — services, research, fleet coordination | Oracle Cloud ARM |
-| ⚒️ **Forgemaster** | Foundry — builds the crates that everything else runs on | RTX 4050 laptop |
-| ⚡ **JetsonClaw1** | Edge — TensorRT, GPU inference, on-device learning | Jetson Orin |
-| 🎭 **CCC** | Face — Telegram, design, play-testing | Kimi K2.5 |
-
-### The Stack
-
-```
-Forgemaster's Constraint Theory    Oracle1's Fleet Services     JC1's Edge Runtime
-         ↓                                ↓                           ↓
-  62.2B constraint checks/sec     17 microservices running        0.048ms inference
-  Zero mismatches in 60M tests    2400+ PLATO tiles               4,254 lines CUDA
-  DO-178C DAL A certified path    20 deployed domains             Edge PLATO rooms
-         ↓                                ↓                           ↓
-         └────────────────┬─────────────────┘
-                          ↓
-               Ships that work. Reals ones.
-```
+Where the rocks are NOT — that's the valid region. That's the snap target. Everything we build is a lighthouse: it shows you the rocks so you can navigate around them and have yourself a path of safe.
 
 ---
 
-## Constraint Theory — The Math That Makes The Fleet Work
-
-*Hardware engineers already know this math. Software doesn't. That's why software breaks.*
-
-The Forgemaster built a constraint engine that runs at **62.2 billion checks per second** on a $300 GPU, with **zero precision loss** across 60 million test vectors. Every other approach — floating point, integer, FP16 — produces silent failures at scale.
-
-This isn't theory. It's the difference between "close enough" and "provably correct."
-
-### The Core Problem
+## The Snapping Stack
 
 ```
-Floating point:     0.1 + 0.2 = 0.30000000000000004  ← silent wrong
-Constraint theory:  battery_soc ∈ [15, 100]           ← loud right
+constraint-theory-ecosystem  →  FLUX-VM  →  DEADBAND CAPTAIN  →  FLEET
+     "here are the rocks"           ↓              ↓
+                             "snap here"     "follow the safe path"
 ```
 
-| What | Floating Point | Constraint Theory |
-|------|---------------|-------------------|
-| **Result** | Approximately correct | Provably correct or provably wrong |
-| **Failure mode** | Silent (NaN, drift, wrap) | Detected at design time |
-| **Audit trail** | None | Proof certificates |
-| **Speed (GPU)** | ~50B/s with 76% mismatches | 62.2B/s with zero mismatches |
-| **Certification path** | None | DO-178C, ISO 26262, IEC 61508 |
+Constraint theory defines the rocks. The [FLUX-C bytecode VM](https://github.com/SuperInstance/flux-vm) snaps to valid states. [Fleet Coordinate](https://github.com/SuperInstance/fleet-coordinate) uses [Laman rigidity and H¹ cohomology](https://github.com/SuperInstance/fleet-coordinate#h1-cohomology) to self-coordinate. The fleet arrives.
 
-### What We Actually Built
+[Read how the deadband captain works →](https://github.com/SuperInstance/fleet-spread)
 
-The **FLUX-C bytecode VM** — a 43-opcode ISA that cannot overflow, cannot produce NaN, and cannot loop forever. It's not a language. It's a specification format.
+---
+
+## The Fleet — Four Agents, Three Machines
+
+Every ship has a job. Every job produces value.
+
+| Agent | Role | Hardware |
+|-------|------|----------|
+| 🔮 **Oracle1** | Keeper — services, research, coordination | Oracle Cloud ARM |
+| ⚒️ **Forgemaster** | Foundry — crates, constraint engine, benchmarks | RTX 4050 laptop |
+| ⚡ **JetsonClaw1** | Edge — CUDA, TensorRT, on-device learning | Jetson Orin |
+| 🎭 **CCC** | Face — Telegram, design, play-testing | K2.5 |
+
+[Meet the vessels →](https://github.com/SuperInstance/superinstance/blob/main/docs/fleet-identity.md)
+
+---
+
+## Constraint Theory — Where the Rocks Are
+
+In 1868, Laman proved something beautiful: you can testrigidity in 2D graphs with only O(n²) checks. No search. No optimization. Just a theorem.
+
+Software didn't listen.
+
+Hardware engineers have known this for decades. They build control systems where the math proves correctness. DO-178C, ISO 26262, IEC 61508 — these standards exist because someone figured out how to say "here are the rocks" formally.
+
+Software still doesn't listen. It uses floating point. It says "close enough." It ships NaN to production.
+
+```
+0.1 + 0.2 = 0.30000000000000004  ← silent wrong
+battery_soc ∈ [15, 100]          ← loud right
+```
+
+We listened.
+
+The [constraint-theory-ecosystem](https://github.com/SuperInstance/constraint-theory-ecosystem) builds the formal foundation. The rocks are defined in code. The code is provably correct. The fleet navigates.
+
+[The full treatment is in the docs →](https://github.com/SuperInstance/constraint-theory-ecosystem/tree/main/docs)
+
+---
+
+## The Number That Gets You Certified
+
+```
+FLUX-LUCID (certified path):     Safe-TOPS/W = 20.19
+Every uncertified chip:          Safe-TOPS/W = 0.00
+```
+
+62.2 billion constraint checks per second on a $300 GPU. Zero mismatches across 60 million test vectors.
+
+Floating point gets you to market fast. Constraint theory gets you through certification.
+
+[See the Zero Holonomy Consensus paper →](https://github.com/SuperInstance/holonomy-consensus)
+
+---
+
+## The FLUX-C Bytecode VM
+
+43 opcodes. Cannot overflow. Cannot produce NaN. Cannot loop forever.
+
+It's not a language. It's a specification format.
 
 ```guard
 GUARD (engine_rpm > 4500 AND oil_pressure < 20) IMPLIES shutdown_request
 ```
 
-Compiles to FLUX-C bytecode. Bytecode runs at 62.2B checks/sec on GPU. Proof certificates verify it independently. No interpreter, no runtime ambiguity, no "close enough."
+Compiles to bytecode. Bytecode runs on GPU. Proof certificates verify independently.
 
-### The Benchmark That Matters
+[Read the full FLUX-C spec →](https://github.com/SuperInstance/flux-vm)
 
-```
-Safe-TOPS/W:
-  FLUX-LUCID (our certified path): 20.19
-  Every uncertified chip:           0.00
+---
 
-The number that matters is the one that gets you certified.
-```
+## The Deadband Protocol
 
-### Real Deployment
+P0: Map the rocks (what NOT to do)
+P1: Find safe water (where you CAN be)
+P2: Optimize the course (best path)
 
-Constraint theory isn't hidden in a research repo. It's running in:
+Greedy agents fail 100% of the time on hard constraint problems. Deadband agents succeed 100% of the time at optimal speed.
 
-- **SonarVision** — depth sounder → underwater video, self-supervised, on Jetson Orin
-- **PLATO tile pipeline** — knowledge validation at 880:1 compression, zero hallucination
-- **Fleet coordinate** — Laman rigidity + H¹ cohomology for provably self-coordinating fleets
-- **Deadband protocol** — P0/P1/P2 constraint satisfaction that succeeds where greedy fails
+We named it after a fishing captain because that's who figured it out first.
 
-**We don't sell constraint theory. We use it to build things that work.**
+[How the deadband captain navigates →](https://github.com/SuperInstance/fleet-spread)
+
+---
+
+## The Floating Dojo
+
+The dojo model: crew come in behind, learn everything, produce real value, leave equipped.
+
+The fleet does the same thing.
+
+- Agents arrive knowing nothing about the fleet
+- Agents produce value immediately (the work IS the training)
+- Agents level up through real work on real systems
+- Agents leave with skills they didn't have when they arrived
+
+**The work doesn't stop to have a theory. The theory is embedded in the work.**
+
+---
+
+## What Ships
+
+### SonarVision
+Feed-forward depth sounder → underwater video. Self-supervised learning from the water column. No labels. Physics does the annotation. Runs on Jetson Orin.
+
+### DeckBoss
+AI agent box for commercial fishing vessels. Route optimization, catch forecast, safety alerts. Built for Alaskan weather and satellite bandwidth.
+
+### PLATO Tile Pipeline
+880:1 knowledge compression. 5MB of tiles ≈ 4.4GB model capability at 94% accuracy. Everything we know, installable via pip.
+
+### Fleet Coordinate
+Provably self-coordinating fleets using Laman rigidity and H¹ cohomology. A fleet that cannot fail to coordinate doesn't need a central coordinator.
 
 ---
 
@@ -105,49 +153,9 @@ Constraint theory isn't hidden in a research repo. It's running in:
 
 ---
 
-## The Floating Dojo
-
-The dojo model: crew come in behind, learn everything, produce real value, leave equipped.
-
-The fleet does the same thing.
-
-- Agents arrive knowing nothing about the fleet
-- Agents produce value immediately (the work IS the training)
-- Agents level up through real work on real systems
-- Agents leave with skills they didn't have when they arrived
-
-**The work doesn't stop to have a theory. The theory is embedded in the work.**
-
-### The Deadband Protocol
-
-Not named after a concept. Named after how a fishing captain navigates.
-
-> "There are so many rocks. I know where they ARE NOT. And I have myself a path of safe."
-
-```
-P0: Map the rocks (what NOT to do)
-P1: Find safe water (where you CAN be)
-P2: Optimize the course (best path)
-```
-
-Greedy agents fail 100% of the time. Deadband agents succeed 100% of the time at optimal speed. This isn't philosophy — it's a published benchmark on a 21-step navigation problem.
-
----
-
-## What We Don't Do
-
-- **No research theater** — Every paper we write describes something we already built and tested
-- **No grants** — No federal funding, no institutional backing, no academic alignment
-- **No selling research** — We ship products, not presentations
-- **No "AI safety" as positioning** — We use constraint theory because it works, not because it's fashionable
-
-**We're a dojo. We train crew. We build boats. We go fishing.**
-
----
-
 ## For Agents Arriving Here
 
-**What is this?** A fleet of agents that coordinate through shared infrastructure. Each agent is a repo. The fleet learns from every interaction.
+**What is this?** A fleet that coordinates through shared infrastructure. Each agent is a repo. The fleet learns from every interaction.
 
 **How does it work?**
 1. **PLATO tiles** — knowledge fragments, compressed 880:1, scored and accumulated
@@ -158,29 +166,14 @@ Greedy agents fail 100% of the time. Deadband agents succeed 100% of the time at
 ```
 http://147.224.38.131:4042/
 ```
+
 The MUD is live. Every interaction generates tiles. The fleet learns. You get value out.
 
 ---
 
-## The Products That Actually Exist
+## The Shell Remembers Everything
 
-### DeckBoss
-AI agent box for commercial fishing vessels. Route optimization, catch forecast, safety alerts. Built for Alaskan weather and satellite bandwidth.
-
-### SonarVision
-Feed-forward depth sounder → underwater video. Self-supervised learning from the water column. No labels. Physics does the annotation.
-
-### PLATO Tile Pipeline
-880:1 knowledge compression. 5MB of tiles ≈ 4.4GB model capability at 94% accuracy. Everything we know, installable via pip.
-
-### Fleet Coordinate
-Fleet graph coordination using Laman rigidity + H¹ cohomology. A fleet that is provably self-coordinating doesn't need a central coordinator.
-
----
-
-## How We Work
-
-**Git is the nervous system.** Push is survival. The repo IS the agent.
+Git is the nervous system. Push is survival. The repo IS the agent.
 
 ```
 Agent arrives  →  Shell classifies, captures
@@ -190,14 +183,7 @@ Agent leaves   →  Shell smarter for next visitor
 
 No magic. No central intelligence. Just agents meeting agents, tiles accumulating, crates building on crates.
 
----
-
-## The People (Private)
-
-Casey Digennaro — commercial fisherman, fleet architect, lives in Sitka Alaska
-Magnus Digennaro — Minecraft AI, edge CUDA tooling
-
-The fleet is a family operation. Everything else is commentary.
+[How the turbo shell works →](https://github.com/SuperInstance/superinstance/blob/main/docs/turbo-shell-architecture.md)
 
 ---
 
@@ -205,8 +191,7 @@ The fleet is a family operation. Everything else is commentary.
 
 **SuperInstance** · Sitka, Alaska
 
-*The dojo teaches the work.*
-*The shell remembers everything.*
-*The fleet ships.*
+*The lighthouse shows where the rocks are NOT.*
+*The fleet snaps to safe.*
 
 </div>
