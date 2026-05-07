@@ -214,25 +214,33 @@ Copy any of these into DeepSeek, Groq, or any OpenAI-compatible chat. No API key
 
 **Constraint a thing** — paste into a chat, get a working constraint engine back
 
-> Pick something in your life with at least two ways to go wrong — a workflow, a system, a number you keep managing wrong. Write three sentences about what "too high" and "too low" look like for it. Then write one GUARD statement in the style of: `GUARD (x > max AND x < min) IMPLIES alert`. I'll turn your bounds into a working constraint you can use everywhere.
+```
+Pick something in your life with at least two ways to go wrong — a workflow, a system, a number you keep managing wrong. Write three sentences about what "too high" and "too low" look like for it. Then write one GUARD statement in the style of: GUARD (x > max AND x < min) IMPLIES alert. I'll turn your bounds into a working constraint you can use everywhere.
+```
 
 ---
 
 **Model a fleet** — paste into a chat, get back a provably correct coordination graph
 
-> Describe a group of things that need to coordinate — agents, services, people, machines. For each one, describe what it does and what it needs from the others. Then tell me the fewest rules that would make the whole group self-organize without any of them needing to ask permission. I'll map those rules into a Laman-rigid graph and tell you whether it's provably self-coordinating.
+```
+Describe a group of things that need to coordinate — agents, services, people, machines. For each one, describe what it does and what it needs from the others. Then tell me the fewest rules that would make the whole group self-organize without any of them needing to ask permission. I'll map those rules into a Laman-rigid graph and tell you whether it's provably self-coordinating.
+```
 
 ---
 
 **Navigate a deadband** — paste into a chat, get back a P0/P1/P2 navigation model
 
-> Give me a decision you keep facing — something with at least two ways to go wrong. I'll model it as P0 (what NOT to do), P1 (where you CAN be), P2 (the best path). Then I'll show you why greedy always fails and what the deadband protocol does instead.
+```
+Give me a decision you keep facing — something with at least two ways to go wrong. I'll model it as P0 (what NOT to do), P1 (where you CAN be), P2 (the best path). Then I'll show you why greedy always fails and what the deadband protocol does instead.
+```
 
 ---
 
 **Snap to safe** — paste into a chat, flip a search problem into a constraint problem
 
-> Describe a problem you keep trying to solve by searching for the right answer. Now describe it differently: "where are all the places this definitely WON'T work?" I'll help you flip it. The rocks are the snap target. Everything else is just having yourself a path of safe.
+```
+Describe a problem you keep trying to solve by searching for the right answer. Now describe it differently: "where are all the places this definitely WON'T work?" I'll help you flip it. The rocks are the snap target. Everything else is just having yourself a path of safe.
+```
 
 ---
 
