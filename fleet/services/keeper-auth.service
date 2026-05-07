@@ -1,0 +1,38 @@
+[Unit]
+Description=Fleet Keeper v2 — API key authentication overlay
+Documentation=https://github.com/SuperInstance/oracle1-workspace
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/.openclaw/workspace/repos/oracle1-workspace/fleet/services
+ExecStart=/usr/bin/python3 keeper.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+Environment=KEEPER_PORT=8900
+
+# ── API Key Authentication ──────────────────────────────────────
+# Set KEEPER_API_KEY in ~/.credentials_vault or here directly.
+# Recommended: add to ~/.credentials_vault (600 perms):
+#   export KEEPER_API_KEY="your-secret-key-here"
+#
+# When KEEPER_API_KEY is set:
+#   - Protected endpoints require: Authorization: Bearer <key>  OR  X-Api-Key: <key>
+#   - Protected: /bottles/inbox, /bottles/pool, /agents, /agents/active, /match, /discover, /proximity
+#   - Public (no auth): /status, /health, /stats
+# When KEEPER_API_KEY is NOT set:
+#   - Keeper runs WITHOUT auth (backward compatible — existing services keep working)
+# ─────────────────────────────────────────────────────────────────
+Environment=KEEPER_API_KEY=
+
+# Uncomment and set key directly (for testing only — use credentials_vault in prod):
+# Environment="KEEPER_API_KEY=change-me-before-production"
+
+# Logging
+SyslogIdentifier=fleet-keeper
+
+[Install]
+WantedBy=multi-user.target
