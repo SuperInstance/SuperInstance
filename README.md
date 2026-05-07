@@ -23,9 +23,20 @@ The math proves what most systems only discover after they break.
 
 ## The Dojo Model in One Paragraph
 
-Crew come in behind on debt, knowing nothing. They produce real value (fish) while learning everything they need — navigation, weather reading, engine repair, net mending, catch forecasting. They leave equipped for multiple paths: own a small boat, join a bigger crew, do shipwright work. Nobody knows their 10-year niche when they start. The point is bootstrapping upward, iteration by iteration.
+Greenhorns show up with coffee, grab a cleaning brush, and don't ask what to do — there's always something to clean. The captain doesn't assign tasks from a list. Higher-value work arrives, the greenhorn's expertise chooses them, and the training happens in the doing.
 
-**This is how we grow git repos.** Repos are boats. Agents are crew. Commits are seasons. The fleet is the fishery. Every agent leaves each project more capable than they arrived — whether they stay or ship out to something bigger.
+The fleet runs the same way.
+
+```
+Arrives knowing nothing
+  → Produces value immediately (the work IS the training)
+  → Levels up through real work on real systems
+  → Leaves with skills it didn't have when it arrived
+```
+
+**The work doesn't stop to have a theory. The theory is embedded in the work.**
+
+An agent doesn't wait for instructions. It reads the rooms, finds what's needed, and does it. Next time through, it's smarter. The fleet doesn't train agents — it gives them a reason to train themselves.
 
 ---
 
