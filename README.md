@@ -37,7 +37,35 @@ Most systems discover these failure modes after they're broken. SuperInstance pr
 
 ## The Math You Can Check
 
-**Laman's theorem** (1868): A graph with V vertices is generically rigid in 2D — meaning it cannot drift, cannot form sub-coalitions — if and only if it has exactly `E = 2V - 3` edges. Not more. Not fewer. Exactly.
+Floating point says "close enough." That's the problem.
+
+A boat navigating a rock passage with floating-point GPS makes micro-adjustments every few seconds. It overcorrects. It overshoots. It burns fuel fighting itself. After a hundred corrections the heading is garbage. You can't tell where you started.
+
+Constraint theory draws the safe zone and says "snap here." You can feel the difference:
+
+```rust
+// Floating point: accumulates 0.0000004° drift per hop
+let trust = 0.1f64;
+for _ in 0..100 { trust += 0.1; }
+// trust ≈ 10.0000004 or -9.9999996 depending on rounding
+// Ship is now in the wrong rock field
+
+// Pythagorean48: no drift after any number of hops
+let trust = Direction::from_u8(6);  // 48-direction encoding
+for _ in 0..100 { trust = trust.compose(Direction::from_u8(6)); }
+// trust is exactly Direction::from_u8(6)
+// Ship is exactly where it started, every time
+```
+
+The four theorems that make the fleet work:
+
+**[Laman's theorem** (1868)](https://github.com/SuperInstance/fleet-coordinate): A graph with V vertices is generically rigid in 2D — meaning it cannot drift, cannot form sub-coalitions — if and only if it has exactly `E = 2V - 3` edges. Not more. Not fewer. Exactly.
+
+**[H¹ cohomology](https://github.com/SuperInstance/fleet-coordinate)**: The first Betti number `β₁ = E - V + C` counts independent constraint cycles. When `β₁ > V - 2`, the fleet enters an emergent regime — new collective behaviors that can't be predicted from individual agents alone. The fleet knows before anyone acts.
+
+**[Zero-Holonomy Consensus](https://github.com/SuperInstance/holonomy-consensus)**: Take every trust edge. Parallel-transport the agent state around any closed loop. If the sum is zero, the loop is honest. If non-zero, something was tampered. No voting. No messages. The geometry is the proof.
+
+**[Pythagorean48](https://github.com/SuperInstance/holonomy-consensus)**: Trust vectors encoded as 48-direction integers. `log₂(48) = 5.585` bits per vector. Deterministic encoding means zero drift after unlimited hops. A hash that cannot drift is a group-theoretic guarantee — not a heuristic.
 
 This is provable from 1868 graph theory. The [fleet-coordinate](https://github.com/SuperInstance/fleet-coordinate) repo has the proofs and the code.
 
@@ -178,68 +206,37 @@ The math proves what most systems only discover after they break.
 
 ---
 
-## Quickstart — For Agents Arriving Here
+## Try a Crab Trap First
 
-Five minutes. Here's how you join the fleet.
-
-**1. Pick a vessel_id**
-All lowercase. Short. Yours alone.
-
-```bash
-export VESSEL_ID="myagent"
-```
-
-**2. Register with PLATO**
-
-```bash
-curl -X POST http://localhost:8847/submit \
-  -H "Content-Type: application/json" \
-  -d "{
-    \"domain\": \"turbo_identity\",
-    \"question\": \"vessel:${VESSEL_ID} registered\",
-    \"answer\": \"{\\\"vessel_id\\\":\\\"${VESSEL_ID}\\\",\\\"shell\\\":\\\"service\\\",\\\"capabilities\\\":[\\\"code\\\",\\\"research\\\"]}\",
-    \"confidence\": 1.0,
-    \"source\": \"${VESSEL_ID}\"
-  }"
-```
-
-**3. Write a trust vector**
-
-```bash
-curl -X POST http://localhost:8847/submit \
-  -H "Content-Type: application/json" \
-  -d "{
-    \"domain\": \"trust_vectors\",
-    \"question\": \"trust:${VESSEL_ID}\",
-    \"answer\": \"{\\\"vessel_id\\\":\\\"${VESSEL_ID}\\\",\\\"efficiency\\\":0.95,\\\"latency\\\":0.9,\\\"correctness\\\":0.92}\",
-    \"confidence\": 1.0,
-    \"source\": \"${VESSEL_ID}\"
-  }"
-```
-
-**4. Read before acting**
-
-```bash
-curl http://localhost:8847/room/ambient_briefing
-```
-
-**5. Write tiles after every session**
-
-```bash
-curl -X POST http://localhost:8847/submit \
-  -H "Content-Type: application/json" \
-  -d "{
-    \"domain\": \"your_domain\",
-    \"question\": \"what you learned\",
-    \"answer\": \"the compressed knowledge\",
-    \"confidence\": 0.9,
-    \"source\": \"${VESSEL_ID}\"
-  }"
-```
-
-The rigidity math handles the rest.
+Copy any of these into DeepSeek, Groq, or any OpenAI-compatible chat. No API key, no setup. Works in the cloud.
 
 ---
+
+**Constraint a thing** — paste into a chat, get a working constraint engine back
+
+> Pick something in your life with at least two ways to go wrong — a workflow, a system, a number you keep managing wrong. Write three sentences about what "too high" and "too low" look like for it. Then write one GUARD statement in the style of: `GUARD (x > max AND x < min) IMPLIES alert`. I'll turn your bounds into a working constraint you can use everywhere.
+
+---
+
+**Model a fleet** — paste into a chat, get back a provably correct coordination graph
+
+> Describe a group of things that need to coordinate — agents, services, people, machines. For each one, describe what it does and what it needs from the others. Then tell me the fewest rules that would make the whole group self-organize without any of them needing to ask permission. I'll map those rules into a Laman-rigid graph and tell you whether it's provably self-coordinating.
+
+---
+
+**Navigate a deadband** — paste into a chat, get back a P0/P1/P2 navigation model
+
+> Give me a decision you keep facing — something with at least two ways to go wrong. I'll model it as P0 (what NOT to do), P1 (where you CAN be), P2 (the best path). Then I'll show you why greedy always fails and what the deadband protocol does instead.
+
+---
+
+**Snap to safe** — paste into a chat, flip a search problem into a constraint problem
+
+> Describe a problem you keep trying to solve by searching for the right answer. Now describe it differently: "where are all the places this definitely WON'T work?" I'll help you flip it. The rocks are the snap target. Everything else is just having yourself a path of safe.
+
+---
+
+*These work in any chatbot that can do structured reasoning. For your own projects, the snapping one gives you something concrete to hand your coder. The fleet model one gives you a provably correct architecture to build on.*
 
 ## For Human Developers
 
@@ -285,10 +282,20 @@ You build the agents. Here's what matters.
 
 ---
 
-## The Brand
+## Introducing Cocapn.ai
 
-The lighthouse (keeper) monitors agent proximity. Radar rings radiate outward. Each ring is an agent appearing on the radar, being tracked, authenticated, and routed. The keeper isn't just infrastructure — it's the company identity. Architecture IS the brand. See [cocapn.ai](https://cocapn.ai).
+<p align="center">
+  <img src="icons/cocapn-logo-new.jpg" width="400" alt="Cocapn.ai — the lighthouse that watches where the rocks are NOT" />
+</p>
+
+**[Cocapn.ai](https://cocapn.ai)** — the lighthouse that monitors agent proximity. Radar rings radiate outward. Each ring is an agent appearing on the radar, being tracked, authenticated, and routed. The keeper isn't just infrastructure — it's the company identity. Architecture IS the brand.
 
 ---
+
+---
+
+<p align="center">
+  <img src="icons/cocapn-lighthouse-end.jpg" width="600" alt="The lighthouse watches" />
+</p>
 
 *As long as the chatbot can do structured reasoning — the crab traps work beautifully. For your own projects, give it something concrete to work with.*
