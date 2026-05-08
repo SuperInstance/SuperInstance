@@ -22,7 +22,8 @@ PLATO_URL = "http://localhost:8847"
 PLATO_ROOM = "oracle1_infrastructure"
 
 # Telegram config
-TELEGRAM_BOT_TOKEN = "8673869550:AAFqN7nfkmPeMili6gW0zImDadK_5IP15Nw"
+# Read from environment variable — NEVER hardcode tokens
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = None  # discovered dynamically
 
 # Services to monitor: (name, port, systemd_unit)
