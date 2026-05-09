@@ -1,0 +1,51 @@
+name: Auto-Index
+
+on:
+  schedule:
+    # Daily at 05:00 UTC
+    - cron: '0 5 * * *'
+  workflow_dispatch:  # manual trigger
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate-index.sh'
+      - 'scripts/generate-catalog.py'
+      - 'scripts/generate-indexes.py'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install GitHub CLI
+        run: |
+          type gh || (sudo apt-get update && sudo apt-get install -y gh)
+
+      - name: Authenticate
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+
+      - name: Fetch all repos
+        run: |
+          gh repo list SuperInstance --limit 200 --json name,description,url,updatedAt > /tmp/all-repos.json
+          echo "Fetched $(python3 -c "import json; print(len(json.load(open('/tmp/all-repos.json'))))") repos"
+
+      - name: Generate INDEX.md
+        run: bash scripts/generate-index.sh INDEX.md
+
+      - name: Generate CATALOG.md
+        run: python3 scripts/generate-catalog.py
+
+      - name: Generate multi-dimensional indexes
+        run: python3 scripts/generate-indexes.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "Auto-Index Bot"
+          git config user.email "index-bot@superinstance.ai"
+          git add INDEX.md CATALOG.md INDEXES/
+          git diff --cached --quiet || git commit -m "Auto-index: regenerate all indexes ($(date -u '+%Y-%m-%d'))"
+          git push
