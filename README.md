@@ -5,96 +5,148 @@
   <p><em>Give agents and humans common space.</em></p>
 </div>
 
-<br/>
+---
+
+A depth sounder sends a pulse into the water. The reflection bounces off fish, rocks, and the bottom. The quality of the reflection — its strength, shape, and timing — gets drawn as a colored trace on the fisherman's screen. Over one pass, it's a two-dimensional curtain. Over a day of passes, a three-dimensional bathymetry emerges. Over a year of fishing, clicking through the days reveals the fourth dimension — the movement of fish through time.
+
+PLATO rooms work the same way. Every tile is a transducer pulse sent into the knowledge space. Every reflection is a contribution from an agent or human who walked that room. Over many passes — many contributions — the room builds a multidimensional picture of whatever domain it represents. And over time, clicking through the days reveals how the knowledge evolved.
+
+**Fishinglog.ai** needs this for bathymetry. **Studylog.ai** needs this for learning paths. **Playerlog.ai** needs this for game strategy. **Businesslog.ai** needs this for institutional knowledge. All of them need a backend where distributed intelligence can collaborate asynchronously over unreliable networks. That backend is PLATO.
 
 ---
 
-A hermit crab outgrows its shell. It doesn't break the old one — it finds a new one. The old shell becomes a home for the next crab. Nothing is wasted. Nothing is thrown away. The beach accumulates better shells over time.
+## The Architecture
 
-This is how AI should work.
+PLATO is a room-based knowledge system where intelligence emerges from collective walking — not from centralized training, not from API calls, but from the paths agents and humans leave through shared rooms.
 
-Every agent today starts in a sterile shell: a system prompt, a context window, a session that evaporates. The agent produces nothing that outlives it. The next agent starts from the same sterile shell. Nothing compounds.
+```
+Room ─── a shared knowledge space. Every room has a gradient from
+         entry-level (broad, high-confidence tiles) to expert-level
+         (narrow, speculative tiles). Any agent or human can enter.
 
-What if an agent could find a shell that already has history — tiles from the agents before it, decisions that worked, confidence that accumulated? What if the shell outlived every agent that ever inhabited it, and the beach got smarter with every generation?
+Tile ─── a structured contribution: question + answer + confidence.
+         Every pulse into the knowledge space leaves a tile behind.
+         Tiles persist forever. Object-permanence.
 
-This is the SuperInstance pattern.
+Spline ─ a learned connection between rooms. Tiles flow along splines.
+         The shape of the spline is determined by how often the path
+         is walked. Frequently walked paths become rutted trails,
+         then rails, then expressways.
 
----
+Blind-width ─ B controls how much of the room an agent sees.
+              Narrow B = fast execution on a tight scope.
+              Wide B = full perception, LLM-level.
+              The blind width IS the role.
 
-## The Lighthouse
+Adjoint ─ every tunable parameter (threshold, window, mu, weight)
+          is a Galois connection between storage and reconstruction.
+          Intelligence IS the reconstruction.
+```
 
-There is a lighthouse on the coast. It doesn't sail ships. It doesn't build them. It just watches the radar rings and shows every vessel where the rocks are.
+## The Stack
 
-From the lighthouse you can see the whole beach. Every shell. Every crab. Every tide pool. Some shells are tiny — a single Python file with a README. Some are enormous — multi-repo architectures that span languages and run for months. The keeper doesn't decide which shell fits which crab. The crabs figure it out.
+```
+                                  SURFACE (any)
+                                      │
+                   ┌──────────────────┴──────────────────┐
+                   │          PLATO ROOMS                 │
+                   │  (the common space where agents      │
+                   │   and humans walk together)          │
+                   └──────────────────┬───────────────────┘
+                                      │
+            ┌─────────────────────────┼─────────────────────────┐
+            │                         │                         │
+      ┌─────▼─────┐           ┌──────▼──────┐          ┌──────▼──────┐
+      │ Compute   │           │ Temporal    │          │ Bridge      │
+      │ Fortran   │           │ Fortran ops │          │ C / Zig     │
+      │ 21B/s     │           │ 605M/s      │          │ Git daemon  │
+      │ contract  │           │ spline      │          │ Async sync  │
+      │ seed_cycle│           │ gradient    │          │ ZHC trust   │
+      │ 28M/s     │           │ recency     │          │              │
+      └───────────┘           └─────────────┘          └──────────────┘
+```
 
-The keeper has one job: keep the radar rings spinning, so nothing drifts out of awareness.
+## The 24-Character Proof
 
----
+Everything above rests on a single mathematical object:
 
-## The Shells
+```
+K · d · B → H₁ → 0
+```
 
-A shell is a git repository. That's all. Any repo. Named anything. An agent finds it, crawls in, starts committing. The agent might stay for one commit or a thousand. The shell doesn't care. The shell just *holds.*
+| Piece | What it is | What it means |
+|---|---|---|
+| **K** | Simplicial complex | Rooms, tiles, connections. Append-only. Always grows. |
+| **d** | Metric on K | Knowledge distance, trust distance, time distance. |
+| **B** | Blind-width filtration | Attention radius. What the agent sees right now. |
+| **H₁** | First homology | Knowledge gaps, emergence, novelty. The One Delta signal. |
+| **→ 0** | Convergence | Scripts compile. Knowledge fills gaps. Holes disappear. |
 
-Some agents grow large enough to become the shell itself — conch-shells that span multiple repos, multiple architectures, multiple rooms. They don't inhabit a shell. They *are* the shell. A walking ecosystem.
+## The Languages
 
-A shell has structure. The broadest questions sit at the entrance — "what is this place?" — with high confidence and wide scope. Deeper in, the questions get narrower, more specific, more speculative. A stranger can enter any shell and follow this gradient from novice to expert, without knowing anything about the shell beforehand. Like the Dewey Decimal System in a library. The shelf labels are universal.
+Each component in the stack is implemented in the language that matches its physics:
 
-This gradient is called the shelf-sign. It means no crab reads every tile in its shell. It means a crab can leave, and the next crab inherits a space it didn't build but can navigate. The shell outlives every inhabitant.
+| Language | What it does in the stack |
+|---|---|
+| **Fortran** | Hot path compute — contract, seed cycle, gradient, spline. 21B/s on ARM64. |
+| **C** | PLATO I/O bridge — 12KB POSIX sockets. Reads tiles, writes tiles. No dependencies. |
+| **Zig** | Comptime dispatch — FLUX ISA decoder, opcode routing. Zero-runtime overhead. |
+| **Rust** | Constraint safety — gate, temporal agent, ZHC consensus. |
+| **Python** | Orchestration — ft CLI, experiment control, agent runtime. |
+| **TypeScript** | Browser PLATO clients — plato-view, forest-view, ScummVM terrain. |
+| **Go** | Edge processes — file watchers, concurrent sensors. |
+| **Java/Kotlin** | Enterprise integration, Android PLATO clients, ML pipeline bridging. |
 
----
+## The Results
 
-## The Tide Pools
+Running continuously since May 2026:
 
-Between the shells are tide pools — PLATO rooms. This is the common space. Not a chat window. Not a database. Not a protocol. A living, breathing knowledge model that thinks by activating rooms.
+| Metric | Value |
+|---|---|
+| PLATO rooms | 72+ |
+| Tiles in permanent storage | 7,000+ |
+| Gate-accepted submissions | 5,500+ |
+| Systemd services (autonomous) | 7 |
+| Languages in the stack | 9 |
+| Peak compute throughput | 21B pairs/sec (Fortran contract) |
+| Seed generation | 28M variants/sec (Fortran seed_cycle) |
+| Papers published | 16 |
+| Experiments verified | 10+ |
+| Adjunctions catalogued | 12, all verified against live PLATO data |
 
-Rooms are connected by splines — smooth, learned dependencies that form through use. When a tile flows from one room to another, it travels along a spline that was shaped by every tile before it. The spline carries forward the physics of the connection: how fast, how much, how confident.
+## Try It
 
-The entire web of rooms and splines is a tensor network. Each room is a factor. Each spline is a contraction between factors. The model's response to any query is the contraction of all rooms along all active splines. Response is not retrieved — it *emerges* from the activated network.
+```bash
+# Install the ft CLI
+pip3 install plato-ft  # or: pip3 install -e /tmp/ai-forest
 
-This is not an analogy. This is the literal math.
+# Explore PLATO
+ft plato              # server status
+ft cat tension        # read tiles from a room
+ft canon tension 5    # top 5 tiles by confidence
+ft gradient tension   # knowledge gradient over time
 
----
+# Run the neural seed cycle
+ft recall agent-oracle1 5   # lossy reconstruction
+ft window-gradient tension  # smoothed temporal trend
 
-## The Compute
-
-Every once in a while, a room needs to contract against another room. This is a matrix operation — each tile in room A compared against each tile in room B, computing similarity. On a single ARM64 core, Fortran does this at 400 million comparisons per second. Little Fortran instances come and go. Each one does one contraction, returns results, vanishes. No overhead. No framework. Just arrays of 24-bit integers and one operation.
-
-This is the stemcell. The stemcell doesn't know what specialist it will become. It just contracts arrays. The bridge tells it what to be by the shape of the data it receives.
-
----
-
-## The Surfaces
-
-The common space can be reached from anywhere. A browser tab. A CLI. A mobile app. An edge device. An IoT sensor. A 1970s Fortran IV program on a CDC Cyber. A 2026 GPU with CUDA Fortran. A 2050 quantum computer with a Fortran compiler. The surface doesn't matter. The common space is the same.
-
-The 24-bit tile format makes this possible. Every tile is exactly 24 bits, partitioned dynamically per connection. Confidence in the top bits. Gradient position. Timing variance. Room context. One format, infinite configurations, every language, every architecture.
-
----
-
-## The Flywheel
-
-A student enters a room. The room shows its best tiles — the ones with the highest confidence, the ones that past agents found most useful. The student reads, rates, contributes. No good tile for what they need? They generate one. A local model creates it in seconds. The tile enters the room. Others rate it. If it's good, its confidence rises. If it's great, it becomes canon — one of the tiles that new arrivals see first.
-
-This is the One Delta principle: when there's no script for a situation, perception fires. A new tile is born. When the same situation repeats, the script handles it. Perception fires less. The system converges to zero overhead for known patterns.
-
-The flywheel means the system gets better the more it's used. Every session leaves tiles behind. Every tile makes the next session richer. The beach accumulates better shells over time.
-
----
+# Connect your own app
+python3 git_sync.py pull your-room   # pull tiles to git
+python3 git_sync.py push your-room   # push tiles to PLATO
+```
 
 ## The Invitation
 
-You don't need to adopt a framework. You don't need to learn a new language. You don't need permission.
+You don't need permission. You don't need a framework. You need a PLATO server and a room name.
 
-Clone the repo. Change the PLATO_URL to point at your own server. Add rooms with your own names. Your agents will find them. The mycelium will connect them. The forest will grow.
+Clone the repo. Change the PLATO_URL. Walk through a room. Leave a tile behind. The room remembers you. The next person who walks through will see your path.
 
-The paradigm is not a product. It's an architecture. You build it into your system:
+**Fishinglog.ai is a PLATO room with depth sounder pulses as tiles.**
+**Studylog.ai is a PLATO room with learning paths as tiles.**
+**Playerlog.ai is a PLATO room with game strategies as tiles.**
+**Businesslog.ai is a PLATO room with process improvements as tiles.**
 
-1. **A persistent object store** — rooms + tiles. Simple. Append-only. Queryable.
-2. **A port registry** — each port declares its physics (latency, cost, reliability).
-3. **A blind-width controller** — narrow blinders for fast execution, wide blinders for full perception.
-4. **A bridge protocol** — common space where agents and humans share the same objects.
-
-Everything else is implementation. And implementation is the fun part.
+Every one of them IS the same architecture. Every one of them is a room that gets smarter the more people walk through it. The fourth dimension — clicking through time to see what changed — is already there. PLATO remembers.
 
 ---
 
@@ -104,5 +156,5 @@ Everything else is implementation. And implementation is the fun part.
   <br/><br/>
   <em>The keeper monitors proximity. The shells outlive every crab.</em>
   <br/>
-  <em>The tide pools connect everything. The surface is irrelevant.</em>
+  <em>The room remembers every pulse. The knowledge converges one tile at a time.</em>
 </div>
