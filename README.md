@@ -97,6 +97,24 @@ Each component in the stack is implemented in the language that matches its phys
 | **Go** | Edge processes — file watchers, concurrent sensors. |
 | **Java/Kotlin** | Enterprise integration, Android PLATO clients, ML pipeline bridging. |
 
+## Fleet Repos
+
+The SuperInstance organization contains 200+ public repositories. Key ones:
+
+| Repo | What it does |
+|---|---|
+| [flux-isa](https://github.com/SuperInstance/flux-isa) | 256-opcode FLUX instruction set — encoder, decoder, VM, ISA spec |
+| [dodecet-encoder](https://github.com/SuperInstance/dodecet-encoder) | 24-bit constraint encoding, Eisenstein lattice, temporal agent, lighthouse protocol |
+| [constraint-theory-papers](https://github.com/SuperInstance/constraint-theory-papers) | Research papers — Eisenstein constraint theory, forgetting as feature, objective permanence as compression |
+| [galois-unification-proofs](https://github.com/SuperInstance/galois-unification-proofs) | Six constraint techniques proven as Galois adjunctions — constructively verified |
+| [memory-crystal](https://github.com/SuperInstance/memory-crystal) | Rust crate — lossy reconstructive memory with Ebbinghaus decay, context-dependent recall |
+| [tile-memory](https://github.com/SuperInstance/tile-memory) | Python — lossy tile compression with telephone game analysis |
+| [collective-recall-demo](https://github.com/SuperInstance/collective-recall-demo) | Interactive HTML visualization of the telephone game — 599 lines |
+| [flux-mesh](https://github.com/SuperInstance/flux-mesh) | Architecture documents — Common Space Pattern, BEDROCK.md, formal specification |
+| [ai-forest](https://github.com/SuperInstance/ai-forest) | The complete compute stack — Fortran claw, Zig bridge, C daemon, ft CLI, 17 papers |
+| [fleet-experiments](https://github.com/SuperInstance/fleet-experiments) | Empirical validation of fleet math — One Delta speedup, trigger accuracy, H1 emergence |
+| [keel](https://github.com/SuperInstance/keel) | CLI for wandering PLATO rooms — `keel explore`, `keel submit` |
+
 ## The Results
 
 Running continuously since May 2026:
