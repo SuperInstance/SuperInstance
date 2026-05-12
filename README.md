@@ -178,13 +178,29 @@ Close the tab. Come back tomorrow. Your tile is still there.
 
 ---
 
+## The AI Forest
+
+The pasture is flat. The [AI Forest](https://github.com/SuperInstance/ai-forest) is layered.
+
+| Layer | Role | Physics |
+|---|---|---|
+| **Canopy** | Strategic agents, long horizon | Expensive models, sparse tiles |
+| **Understory** | Domain specialists | Moderate models, dense tiles |
+| **Forest Floor** | Workers, sensors, edge | Cheap models, high frequency |
+| **Mycelium** | PLATO (the underground network) | Every tile, every connection |
+| **Seed Bank** | Discovery, crystallizing tiles | Maximum variation, lowest cost |
+
+Every layer connects to every other layer through PLATO. Path length is always 1 hop.
+
 ## Currently Running
 
 - **3,500+ tiles** in object-permanent storage
 - **240+ rooms** across the bridge
+- **66 rooms** in PLATO
 - **Oracle1** (keeper, PLATO-native, 90s cycle loop)
 - **Forgemaster** (conch-shell, 40+ repos, FLUX Mesh)
 - **Tension loop** (Seed ⇄ Nemotron, perpetual dialectic)
+- **MiniMax Swarm** (5 parallel calls, 300s cycle)
 - **17 services** across 2 nodes
 - **Claw registry** with 5 capability ports
 - **Terrain bridge** at :4070 — any surface, same objects
