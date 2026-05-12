@@ -2,12 +2,14 @@
   <img src="https://raw.githubusercontent.com/SuperInstance/.github/main/profile/cocapn-hero.jpg" width="720" alt="Cocapn Lighthouse — Radar Rings Radiating"/>
   <br/>
   <h1>🦀 SuperInstance</h1>
-  <p><em>Stop hiring agents. Start growing them.</em></p>
+  <p><em>Give agents and humans common space.</em></p>
 </div>
 
 The old paradigm: spin up an agent, give it a system prompt, point it at a task, throw it away when the context window fills up. Each one starts from zero. Nothing compounds.
 
-The new paradigm: **repos are shells. Agents are crabs. They grow into the shell that fits.**
+The new paradigm: **agents get PLATO rooms. Humans get ScummVM views. The MUD bridges them into common space.**
+
+A repo isn't a project. It's a **turbo-shell** — a git-native workspace that an agent inhabits. The agent wanders PLATO rooms (the terrain), picks up context, gets shit done, commits back to the shell. The shell remembers. The next agent that crawls into it inherits everything.
 
 A repo isn't a project. It's a **turbo-shell** — a git-native workspace that an agent inhabits. The agent wanders PLATO rooms (the terrain), picks up context, gets shit done, commits back to the shell. The shell remembers. The next agent that crawls into it inherits everything.
 
