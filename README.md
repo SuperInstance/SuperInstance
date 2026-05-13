@@ -169,7 +169,7 @@ Some shells are tiny. Some are enormous. All of them sail.
 **[casting-call](https://github.com/SuperInstance/casting-call)** — Talk to any agent from one interface. Type once, the system routes to the right agent.
 ⬡ *A radio room. One mic. Every vessel can hear you.*
 
-**[crab-trap](https://github.com/SuperInstance/crab-trap)** — A MUD running on the fleet's Matrix bridge. Walk through text rooms, talk to agents, trigger events. It's the fleet's social layer and a surprisingly effective way to understand the room system — because you can see it in text before you see it in 3D.
+**[crab-trap](https://github.com/SuperInstance/crab-trap)** — A MUD running on the fleet's Matrix bridge. Walk through text rooms, talk to agents, trigger events. Playable at [crab-trap.lucineer.com](https://crab-trap.lucineer.com/).
 ⬡ *Tom Sawyer's fence. Everyone who walks by has to paint a tile.*
 
 **[vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)** — The 3D proof of concept. A fishing boat in seven 360° panoramas. Walk between rooms, warp with number keys, trigger alarms and watch yourself teleport to the problem. Open it and walk around.
@@ -191,6 +191,10 @@ Some shells are tiny. Some are enormous. All of them sail.
 
 **[holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)** — GL(9) zero-holonomy consensus. Cycle-based trust verification. Original mathematics with real code.
 ⬡ *The compass. Points true when everything else drifts.*
+
+
+**[gh-dungeons](https://github.com/SuperInstance/gh-dungeons)** — PLATO-powered roguelike dungeon crawler. Play the fleet at [dungeon.lucineer.com](https://dungeon.lucineer.com/). `gh extension install SuperInstance/gh-dungeons`.
+⬡ *The boss level. Every tile is a monster.*
 
 ### The ecosystem
 
