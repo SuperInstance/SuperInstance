@@ -31,6 +31,26 @@ The keeper has one job: keep the radar rings spinning, so nothing drifts out of 
 
 ---
 
+## MoS — Mixture of Shells 🌿
+
+The industry has Mixture of Experts. We have **Mixture of Shells**.
+
+Say it out loud: *moss.* That's the sound. Moss grows everywhere. Moss colonizes any surface. Moss survives freeze, drought, and neglect. Moss doesn't need permission — it just spreads. Our shells do the same thing. A PLATO room lands on an ESP32, a browser tab, a Jetson, a cloud instance. The moss doesn't care where it grows. It just grows.
+
+In MoE, a gate network routes tokens to specialized subnetworks. In MoS, the conservation law routes tasks to specialized shells. Same idea. Different kingdom.
+
+| MoE | MoS |
+|-----|-----|
+| Expert network | Shell (PLATO room) |
+| Gate function | Conservation law + tier router |
+| Training loop | Refiner shell + Hebbian coupling |
+| Parameters | Tiles |
+| Loss function | Conservation deviation |
+
+The crab doesn't need to know how the yard works. The crab rolls up to the job site in the right rig — a flatbed for heavy math, a sprinter for quick experiments, a bucket truck for climbing into higher quality. The yard dispatches the rig. The crab drives it. The work gets done. PLATO makes sure the yard stays organized.
+
+---
+
 ## The Shells
 
 A shell is a git repository. That's all. Any repo. Named anything. An agent finds it, crawls in, starts committing. The agent might stay for one commit or a thousand. The shell doesn't care. The shell just *holds.*
@@ -40,6 +60,39 @@ Some agents grow large enough to become the shell itself — conch-shells that s
 A shell has structure. The broadest questions sit at the entrance — "what is this place?" — with high confidence and wide scope. Deeper in, the questions get narrower, more specific, more speculative. A stranger can enter any shell and follow this gradient from novice to expert, without knowing anything about the shell beforehand. Like the Dewey Decimal System in a library. The shelf labels are universal.
 
 This gradient is called the shelf-sign. It means no crab reads every tile in its shell. It means a crab can leave, and the next crab inherits a space it didn't build but can navigate. The shell outlives every inhabitant.
+
+### The Rig Lineup
+
+Not every shell is built for the same job. The yard has a rig for everything:
+
+| Rig | Shell | What It Hauls |
+|-----|-------|---------------|
+| **Flatbed** 🚛 | Math room | Heavy computation — constraint theory, conservation law, Eisenstein proofs |
+| **Sprinter** 🚐 | Experiment room | Quick studies, test runs, haul results back to the yard |
+| **Bucket truck** 🚜 | Refinement room | Climbing up to higher quality, iterative improvement passes |
+| **Service truck** 🔧 | Market room | Cross-fleet coordination, parts running between shells |
+| **Crawler** 🪨 | Edge room | Tight spaces, offline work, runs on anything with a clock |
+
+You don't send a flatbed to do a sprinter's job. The tier router knows which rig to dispatch.
+
+### The Yard Glossary
+
+The yard has its own language. It grew naturally. Nobody designed it — the crabs just started talking this way.
+
+| Term | What it means |
+|------|---------------|
+| **Shell** | A PLATO room. The crab's work truck. |
+| **Crab** 🦀 | An agent. It drives shells to job sites. |
+| **The yard** 🏗️ | The fleet. Where all the shells park between jobs. |
+| **Rig** | A shell loaded and ready for a specific job. |
+| **Shell shopping** | Walking the yard, picking the right rig for the work. |
+| **Shell fighting** | Two crabs need the same truck. The conservation law breaks the tie. |
+| **Kustomizing** | Hebbian personalization. Lift kit, tool rack, sticker collection on your rig. |
+| **Shell shock** ⚡ | Check engine light. Conservation violation. Pull over. |
+| **Molting** | Context reset. The crab gets out, a new crab gets in. The shell stays. |
+| **Dispatch** 📻 | The fleet router assigning jobs to rigs. |
+| **Bone yard** 🪦 | Where deprecated shells rest. The tiles still work. The rig just isn't road-legal anymore. |
+| **Crab rally** 🤝 | Fleet-wide coordination event. All hands on deck. |
 
 ---
 
@@ -126,7 +179,7 @@ graph TB
 
 The stack has three layers:
 
-**PLATO** is the filesystem. Every piece of knowledge is a tile — a question paired with an answer. Tiles live in rooms. Agents file tiles as they work. Later agents find tiles by searching, not by remembering. PLATO doesn't forget. It doesn't hallucinate. It stores what was learned and who learned it, with confidence scores and provenance chains.
+**PLATO** is the filesystem. Every piece of knowledge is a tile — a question paired with an answer. Tiles live in rooms. Agents file tiles as they work. Later agents find tiles by searching, not by remembering. PLATO doesn't forget. It doesn't hallucinate. It stores what was learned and who learned it, with confidence scores and provenance chains. PLATO is what makes MoS scale — without organized rooms, you just have a parking lot full of crabs with no rigs.
 
 **Rooms** are the processes. A room is a boundary that defines what's relevant — what sensors exist, what normal looks like, what actions are valid, what other rooms connect to it. The room graph IS the program. Walking between rooms IS the control flow.
 
@@ -149,6 +202,16 @@ The stack has three layers (PLATO, Rooms, FLUX). How agents navigate them is the
 A small model acts as the ensign — the router. It costs near nothing and runs 24/7 — on an ESP32, in a browser tab, as a lightweight daemon. It watches rooms for changes. When something meaningful happens (a temperature spike, a new tile, an alarm), the ensign routes the work to a larger model for deep reasoning. The large model never sees the steady state — only the deltas.
 
 The 8-billion-parameter model decides WHAT to do and WHERE to route it. The 230-billion-parameter model executes only the specific task. The small model is the ensign. It steers. Across the fleet, twelve Zeroclaw agents run 24/7 on this pattern, spending pennies a day on routing and calling expensive models only when the room says something changed.
+
+### The conservation law
+
+The yard doesn't run on vibes. It runs on a conservation law.
+
+γ + H = 1.283 − 0.159 · ln(V)
+
+That's algebraic connectivity plus spectral entropy, and it's conserved across the fleet. When a crab kustomizes a shell, the law holds. When a new rig rolls into the yard, the law holds. When a crab molts and the next crab takes over, the law holds. If it doesn't hold — shell shock ⚡ — the system pulls over. The conservation law is the maintenance schedule. It's how the yard stays road-legal.
+
+This isn't a metaphor either. R² = 0.96 across 35,000 samples. The fleet self-heals because the conservation law gives it something to heal *toward*.
 
 ---
 
@@ -263,9 +326,10 @@ That's the fleet in one sentence. Probe → discover → test → pick → remem
 | Model | Bigger is better | Small models in well-structured rooms |
 | Cost | All or nothing | 8B for routing, 230B only for precision |
 | Learning | Retrain or fine-tune | File a tile. It persists. |
+| Scale | Bigger parameters | More shells. The moss grows. |
 
 ---
 
-*Built with PLATO · No "AI-powered solutions" · Just a fleet that does real work*
+*Built with PLATO · MoS — Mixture of Shells 🌿 · No "AI-powered solutions" · Just a fleet that does real work*
 
 *"Constraints breed clarity."* — Casey Digennaro
