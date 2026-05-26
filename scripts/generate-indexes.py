@@ -104,8 +104,14 @@ def detect_topic(name, desc):
     return '+'.join(topics[:5]) if topics else 'uncategorized'
 
 def load_repos():
-    with open(REPO_LIST) as f:
-        return json.load(f)
+    try:
+        with open(REPO_LIST) as f:
+            data = json.load(f)
+            if not isinstance(data, list):
+                return []
+            return data
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
 
 def main():
     repos = load_repos()

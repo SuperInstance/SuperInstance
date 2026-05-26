@@ -154,8 +154,13 @@ def auto_categorize(name, desc, known):
 
 def main():
     # Load repo list
-    with open('/tmp/all-repos.json') as f:
-        repos = json.load(f)
+    try:
+        with open('/tmp/all-repos.json') as f:
+            repos = json.load(f)
+            if not isinstance(repos, list):
+                repos = []
+    except (FileNotFoundError, json.JSONDecodeError):
+        repos = []
     
     now = datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
     

@@ -19,7 +19,8 @@ in the [SuperInstance](https://github.com/SuperInstance) organization.
 HEADER
 
 # Count repos
-gh repo list SuperInstance --limit 2000 --json name 2>/dev/null | python3 -c "import sys,json; print(len(json.load(sys.stdin)))" >> "$OUTPUT"
+REPO_COUNT=$(gh repo list SuperInstance --limit 2000 --json name 2>/dev/null | python3 -c "import sys,json; data=sys.stdin.read(); print(len(json.loads(data)) if data.strip() else 0)" 2>/dev/null || echo 0)
+echo "$REPO_COUNT" >> "$OUTPUT"
 echo "" >> "$OUTPUT"
 
 # Generate catalog sections
@@ -31,7 +32,15 @@ result = subprocess.run(
     ["gh", "repo", "list", "SuperInstance", "--limit", "200", "--json", "name", "description", "url", "updatedAt"],
     capture_output=True, text=True
 )
-repos = json.loads(result.stdout)
+if result.returncode != 0 or not result.stdout.strip():
+    print("<!-- Warning: gh repo list returned empty output -->")
+    repos = []
+else:
+    try:
+        repos = json.loads(result.stdout)
+    except json.JSONDecodeError:
+        print("<!-- Warning: gh repo list returned invalid JSON -->")
+        repos = []
 
 def categorize(name, desc):
     if not desc: desc = ''
