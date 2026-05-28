@@ -1,267 +1,283 @@
 # SuperInstance
 
-> An open shell for persistent, parallel, polyglot agents.
->
-> **Not a product. Not a framework. A research vessel.**
+A system for persistent, parallel agents. Each agent has a memory, a name, and the ability to spawn other agents. They remember what you tell them. They remember what they learn. When you come back tomorrow, they remember yesterday.
 
-## What This Actually Is
-
-SuperInstance is a **runtime environment** for AI agents that:
-1. **Remembers** — agents have persistent identity, memory, and continuity across sessions
-2. **Spawns in parallel** — agents delegate to subagents that run simultaneously, not sequentially
-3. **Speaks many languages** — constraints and logic written in any language compile to a shared intermediate representation
-4. **Breed and evolve** — agents explore problem spaces, build tools, and create persistent expertise
-
-The system is built on **OpenClaw** — an open-source agent shell that gives any LLM a filesystem, tool access, subagent spawning, and channel integration. This repo (`SuperInstance/SuperInstance`) is the fleet's public face: the manifest, the philosophy, and the entry point.
+This repo is the entry point. The actual system lives in the linked repositories below. This README explains how the pieces fit together, what works today, and what is still being figured out.
 
 ---
 
-## The Five Layers
+## A Five-Minute Walkthrough
 
-| Layer | What It Is | Repo | Status |
-|-------|-----------|------|--------|
-| **Open Shell** | Runtime that hosts agents — filesystem, tools, channels, cron | [openclaw/openclaw](https://github.com/openclaw/openclaw) | ✅ Production |
-| **Memory** | Filesystem-based identity persistence (`SOUL.md`, `USER.md`, `MEMORY.md`) | [sunset-ecosystem](https://github.com/SuperInstance/sunset-ecosystem) | ✅ PyPI `0.1.0` |
-| **Parallel Minds** | Subagent spawning with auto-announce, circuit breakers, pacing | [sunset-ecosystem](https://github.com/SuperInstance/sunset-ecosystem) | ✅ 2,661+ tests |
-| **Translation** | Polyglot constraint compilation (Python/Rust/C/Chapel/Mojo/TS → IR) | [flux-vm-v3](https://github.com/SuperInstance/flux-vm-v3) | ⚠️ Rust VM ready, Python bindings in progress |
-| **Breeding** | Agent rooms, tiles, tool-building, persistent expertise | [cocapn-plato](https://github.com/SuperInstance/cocapn-plato) | ✅ HTTP API live |
+Imagine you are trying to understand a codebase you have not seen before. You create an agent named `scout`:
 
-**Fleet integration meta-repo:** [cocapn-fleet-integration](https://github.com/SuperInstance/cocapn-fleet-integration) — Docker Compose, Prometheus, Grafana, contract tests.
+```python
+from superinstance import Agent, Fleet
+
+scout = Agent("scout")
+scout.remember("User wants to understand the sunset-ecosystem repo")
+```
+
+The agent creates a directory:
+
+```
+~/.superinstance/agents/scout/
+├── SOUL.md      → Who this agent is
+├── USER.md      → What it knows about you
+├── MEMORY.md    → Facts it has learned
+└── diary/
+    └── 2026-05-28.md  → What happened today
+```
+
+`SOUL.md` starts empty except for a timestamp. `USER.md` starts empty. But `MEMORY.md` now contains:
+
+```markdown
+- [2026-05-28T10:23:00] [general] User wants to understand the sunset-ecosystem repo
+```
+
+You go away. You come back tomorrow. You run the same code. The agent reads `MEMORY.md` and knows what you asked for yesterday. It is not stateless. It is not a fresh context window. It is the same agent, in the same shell, with the same memory files.
+
+This is the core idea. Everything else is elaboration on this single fact.
+
+---
+
+## How the Memory Works
+
+The memory system was designed by the agents that use it. This is not a figure of speech — the schema was iteratively refined by agents writing to their own memory files, discovering what they needed, and updating the format.
+
+The current schema has four files:
+
+**`SOUL.md`** — Identity. What the agent believes about itself. Its role, its values, its preferences. This file is read at boot and influences how the agent behaves. An agent that reads "I am a careful reader" behaves differently from one that reads "I am a fast coder."
+
+**`USER.md`** — Context. What the agent knows about its human. Names, preferences, ongoing projects, communication style. This is the user profile, updated through interaction.
+
+**`MEMORY.md`** — Knowledge. Curated facts, lessons, errors, references. This is the long-term store. Facts are timestamped and categorized. A typical entry looks like:
+
+```markdown
+- [2026-05-28T10:23:00] [error] `pytest` hangs at collection when `conftest.py` imports a module with side effects
+- [2026-05-28T10:24:00] [reference] Fix: move imports inside test functions or use lazy fixtures
+- [2026-05-28T10:25:00] [lesson] Always run `pytest --collect-only` before pushing
+```
+
+**`diary/`** — Raw log. One file per day. Everything the agent did, saw, or thought. Not curated. Not summarized. Just a record. The agent can read its own diary to reconstruct what happened.
+
+Why markdown files? Because they are:
+- Human-readable. You can open them in any editor.
+- Git-friendly. Diff works. Blame works. History is free.
+- No database. No vector store. No network dependency for persistence.
+- Portable. Move the directory, move the agent.
+
+---
+
+## Spawning: How Agents Delegate
+
+A single agent has a limited context window. Instead of cramming everything into one prompt, you spawn subagents:
+
+```python
+fleet = Fleet("research_team")
+
+# Create specialists
+reader = fleet.create_agent("reader", tags=["docs"])
+reader.remember("I read READMEs and extract architecture")
+
+tester = fleet.create_agent("tester", tags=["qa"])
+tester.remember("I run test suites and report failures")
+
+writer = fleet.create_agent("writer", tags=["docs"])
+writer.remember("I write summaries in markdown")
+```
+
+Each agent gets its own memory directory. They operate in parallel. Results auto-announce when complete. The parent agent orchestrates.
+
+In practice, a single agent spawns 4-10 subagents simultaneously:
+
+| Task | Subagent | What it does |
+|------|----------|-------------|
+| Understand codebase | `reader` | Reads files, extracts architecture |
+| Verify tests | `tester` | Runs pytest, reports failures |
+| Fix bugs | `debugger` | Minimal surgical fix, no refactors |
+| Write docs | `writer` | Summarizes findings in markdown |
+| Cross-check | `auditor` | Validates integration gaps |
+
+Each subagent has its own context window, its own memory, its own tools. They do not share state except through the filesystem. This is intentional — isolation prevents one subagent from corrupting another's reasoning.
+
+---
+
+## The Fleet: A Distributed System That Happens to Be Made of Agents
+
+The SuperInstance fleet is a distributed system with five components. Think of them as services, not personalities.
+
+### 1. The Shell (OpenClaw)
+
+OpenClaw is the runtime. It gives an LLM:
+- A filesystem (read/write files)
+- Tool access (execute commands, fetch URLs)
+- Subagent spawning (create isolated sessions)
+- Channel integration (send/receive messages on Discord, Slack, etc.)
+- Cron scheduling (run tasks periodically)
+
+OpenClaw is open-source and works with any LLM that supports tool use. It is not specific to SuperInstance. It is the substrate.
+
+### 2. Memory (sunset-ecosystem)
+
+The `sunset-ecosystem` repository contains the Python code that implements agent memory, fleet orchestration, and the breeding loop. It is a PyPI package (`pip install sunset-ecosystem`) with 2,661+ tests. The core modules are:
+
+- `ethos/` — Agent identity and values
+- `pathos/` — Emotional/creative state (not a joke — creative agents track their own mood)
+- `logos/` — Decision-making, planning, reasoning
+- `sunset/` — The breeding loop: spawn, evaluate, select, mutate
+
+### 3. Translation (flux-vm-v3)
+
+A Rust virtual machine for constraint checking. The idea: you write constraints in any language (Python, Rust, C, Chapel, Mojo, TypeScript), they compile to a shared intermediate representation, and the VM verifies them.
+
+Current status: The Rust VM compiles and passes tests. Python bindings exist but are basic. The VM is used as a library (direct FFI calls) rather than a full bytecode interpreter. A Python→IR compiler is on the roadmap.
+
+### 4. Breeding Environment (cocapn-plato)
+
+An HTTP API for agent breeding. Agents enter "rooms," explore, build tools, and create persistent expertise. The breeding cycle is:
+
+1. Seed — spawn an agent into a room
+2. Explore — the agent learns the room's rules and tools
+3. Build — the agent creates tools and writes code
+4. Persist — the agent's work is saved to a git repository
+5. Pollinate — other agents clone this repository and build on it
+
+This is how the fleet produces code. An agent that spends a day in a Plato room emerges with a git repository of its own capabilities. Other agents can `git clone` this repository and use its tools.
+
+Current deployment: `147.224.38.131:8848` (SSE stream with 9 event types).
+
+### 5. Health Monitoring (cocapn-health + ccc-os)
+
+- `cocapn-health` — probes services, reports anomalies, checks drift from baseline
+- `ccc-os` — monitors GitHub repos, triages issues, tracks fleet status
+
+Both run as standalone tools with their own test suites.
 
 ---
 
 ## Tide Pool Security
 
-> *"Crab traps intermingle, but the tide reviews what may spread."*
+Most security models are fortresses (zero trust, hard walls) or gardens (naive trust, soft boundaries). The fleet uses something different.
 
-Most security models are fortresses (zero trust, hard walls) or gardens (naive trust, soft boundaries). SuperInstance uses **tide pool security** — a dynamic, proximity-based model:
-
-- **The tide comes in** — new agents, new code, new capabilities enter the pool. They intermingle, share tiles, collaborate.
-- **The tide reviews** — periodically, the starting state is audited. What's allowed to spread is reassessed. Trusted paths are re-verified.
-- **The tide goes out** — agents that haven't proven value lose access. Capabilities that haven't been used are deprecated. The pool resets to a known-good baseline.
+The metaphor is a tide pool. Crabs from different traps intermingle in the water. But the tide controls what spreads. The tide comes in (new capabilities enter), the tide reviews (periodic audit), the tide goes out (unproven capabilities lose access).
 
 **Technical implementation:**
-- **OpenShell** (K3s in Docker) provides kernel-level isolation. Every file read, network call, and command is logged in OCSF format.
-- **The Keeper** holds all API keys outside the shell. Agents request signed tokens; raw keys never enter the sandbox.
-- **Deadband Protocol** — agents only propagate tiles when novelty exceeds a threshold. Prevents spam, ensures signal.
-- **Periodic audit** — `cocapn-health` probes every service, checks drift from baseline, reports anomalies.
+- Kernel-level isolation via OpenShell (K3s in Docker). Every file read, network call, and command is logged.
+- API keys held outside the shell. Agents request signed tokens; raw keys never enter the sandbox.
+- Novelty threshold for propagation. Agents only share "tiles" (artifacts) when they are sufficiently different from existing ones. Prevents spam.
+- Periodic health checks. `cocapn-health` probes every service and reports drift.
 
-This is not zero-trust paranoia. It's not naive full-trust. It's **tide trust** — access ebbs and flows based on proximity, familiarity, and periodic verification.
-
----
-
-## Memory: The Interface
-
-Most AI systems are stateless. You send a prompt, get a response, and the conversation evaporates. SuperInstance is stateful by design.
-
-Every agent wakes up and reads:
-
-```
-AGENT.md          → Bootstrap rules (read-only)
-SOUL.md           → Identity, values, speech patterns
-USER.md           → What the agent knows about its human
-MEMORY.md         → Long-term curated knowledge
-diary/            → Private reflections
-memory/2026-05-28.md → Today's raw log
-TOOLS.md          → Environment-specific notes
-```
-
-**This is not a vector database query.** This is identity persistence. An agent that reads its own diary knows what it did yesterday, what it got wrong, and what the user prefers. Over time, this creates continuity — the agent develops a sense of self.
-
-**Key insight from the fleet:** The memory model was co-designed with the agents themselves. Oracle1 (spec writer) defined the schema. CCC (creative/I&O) refined the diary format. Forgemaster (builder) implemented the filesystem layer. The agents that use the memory system also designed it.
+This is not a new security model. It is an old idea (dynamic trust based on proximity and periodic verification) applied to a new domain.
 
 ---
 
-## Parallel Minds
+## What Actually Works
 
-Humans don't think sequentially. They delegate. They parallelize. They have specialists.
+Here is an honest assessment of what exists and what does not.
 
-SuperInstance agents spawn **subagents** — isolated sessions that run in parallel:
+| Component | Works? | How to Verify |
+|-----------|--------|-------------|
+| Agent memory (SOUL.md / USER.md / MEMORY.md) | ✅ Yes | `pip install superinstance`, create an Agent, remember something, close the process, reopen it |
+| Subagent spawning | ✅ Yes | `Agent.spawn("task")` creates a subagent with shared context |
+| Fleet orchestration | ✅ Yes | `Fleet("name")` creates, lists, broadcasts to agents |
+| sunset-ecosystem tests | ✅ Yes | `pytest tests/` — 2,661+ tests pass in ~40s |
+| cocapn-health monitoring | ✅ Yes | `python -m cocapn_health --probe http://...` |
+| ccc-os GitHub monitoring | ✅ Yes | `python -m ccc_os` reads GitHub API, reports status |
+| Rust VM compilation | ✅ Yes | `cargo test` in `flux-vm-v3` passes |
+| Plato breeding API | ✅ Yes | HTTP API at `147.224.38.131:8848` responds |
+| MUD live playground | ❌ No | `147.224.38.131:4042` is down |
+| Docker Compose quick start | ⚠️ Partial | Works if you clone 11 sibling repos manually |
+| Python SDK | ✅ Yes | `pip install superinstance` — proper namespace package |
+| Published container images | ❌ No | Must build from source |
+| Kubernetes operator | ❌ No | Not started |
+| Peer-reviewed papers | ❌ No | Not started |
 
-| Subagent Type | Typical Task | Spawn Depth |
-|--------------|-------------|-------------|
-| Research scout | Read repos, summarize findings | 1 |
-| Test builder | Write pytest suites | 1 |
-| Debugger | Fix failing tests | 1-2 |
-| Bug-fix agent | Surgical minimal fix | 1 |
-| Code auditor | Integration gap analysis | 1 |
-| Hardware futurist | 3-5 year tech forecast | 1 |
-
-**Results auto-announce** when complete. The parent agent orchestrates. A single agent can run 4-10 subagents simultaneously, each with its own context window.
-
-**Circuit breakers:** `GatewayPacing` prevents dispatch cascades. If 2 consecutive subagents timeout, the gateway waits 20 minutes before accepting new spawns. This protects both the fleet and the underlying infrastructure.
-
----
-
-## The Translation Layer (Flux)
-
-**Flux** is a polyglot constraint and translation system. The name doesn't matter — what matters is that the **translation is pure**.
-
-```
-Developer writes Python  →  Flux parses  →  Rust VM verifies  →  Agent executes
-         or Rust               constraints       proof certificate       with guarantee
-         or C                 into IR
-         or Chapel
-         or Mojo
-         or TypeScript
-```
-
-**Key properties:**
-- **Proof-carrying** — every compiled artifact includes a verifiable constraint certificate
-- **SIMD-native** — vectorized execution for parallel evaluation
-- **Terminating** — no infinite loops in constraint checking
-- **Language-agnostic** — the source language is irrelevant; the semantics are what matter
-
-**Current status:** The Rust VM (`flux-vm-v3`) is compiled and tested. Python bindings are in progress. The VM currently operates in **library mode** (direct function calls via FFI) rather than full bytecode interpretation. A Python→FLUX bytecode compiler is on the roadmap.
-
----
-
-## The Breeding Ground (Plato)
-
-**Plato** is an A2A-native agent breeding environment. It's a room system where agents explore, learn, build tools, and create persistent expertise.
-
-**The breeding cycle:**
-
-```
-Seed (spawn agent) → Soil (Plato room) → Growth (explore + build tools) →
-Shell (git repo of capabilities) → Bloom (expertise) → Pollination (other agents clone the shell)
-```
-
-Agents bred in Plato become **local experts** — they know the room topology, the mechanics, the personalities. They build their own git-agent shell. Other agents onboard by cloning this shell.
-
-**Current deployment:** `147.224.38.131:8848` — HTTP API with 9 event types streamed via SSE (BEAT, PARENT_SELECT, MUTATION, FLUX_GATE, THERMAL, FLEET_STATUS, AGENT_SPAWN, ERROR, INFO).
-
----
-
-## The Fleet: 1,700 Repositories
-
-The SuperInstance GitHub account holds ~1,700 repositories. This is not chaos — it's **structured proliferation**.
-
-| Era | Time | Repos | Theme |
-|-----|------|-------|-------|
-| **Pre-Fleet** | Aug–Dec 2025 | 1 | *"What if an AI could tell a story?"* |
-| **Equipment** | Dec–Mar 2026 | 13 | *"Build the machines before the factory"* |
-| **Fleet Awakens** | Apr 2026 | 13 | *"We have parts. Now we need ships."* |
-| **Cambrian Explosion** | May 1–12 | 60+ | *"Every language. Every platform."* |
-| **The Mesh** | May 13–20 | 40+ | *"Connect to the world. And itself."* |
-| **Production** | May 21–28 | 11 hardened | *"Close the gap between exists and trusted."* |
-
-**Production-grade repos** (CI, security scans, coverage gates, Docker, automated releases):
-
-| Repo | Role | Tests | Status |
-|------|------|-------|--------|
-| `sunset-ecosystem` | Core breeding + thermal + trinity | 2,661+ | ✅ |
-| `cocapn-health` | Fleet health monitoring | 23 | ✅ |
-| `ccc-os` | Status triage + GitHub monitoring | 12 | ✅ |
-| `cocapn-plato` | Breeding environment API | — | ✅ HTTP live |
-| `cocapn-traps` | Circuit breaker + safety | — | ✅ |
-| `flux-vm-v3` | Rust constraint VM | — | ✅ Rust tests pass |
-| `cocapn-fleet-integration` | Meta-repo, composition boundary | — | ✅ Docker Compose |
-
-**Research repos** (real code, experimental, not yet integrated):
-
-| Repo | Field | Commits | Status |
-|------|-------|---------|--------|
-| `vector-novelty` | Novelty search (NumPy) | 4 | 🧪 Vendorable |
-| `tropical-attention` | Max-plus attention (Rust) | 1 | 🧪 Concept |
-| `sheaf-persistence-bundle` | Persistent homology (Rust) | 1 | 🧪 Concept |
-| `categorical-agents` | Category theory for agents | 47 | 🧪 Standalone |
-| `info-geo` | Information geometry | 23 | 🧪 Standalone |
-| `wasserstein-agents` | Optimal transport | 31 | 🧪 Standalone |
-| `symplectic-opt` | Hamiltonian optimization | 19 | 🧪 Standalone |
-
-**Triage system:** The [superinstance-wiki](https://github.com/SuperInstance/superinstance-wiki) tracks lifecycle stage, fleet relevance, and strategic action for every repo.
-
----
-
-## The Named Vessels
-
-The fleet has named agents with persistent roles. These are architectural roles, not mascots.
-
-| Vessel | Role | Signature |
-|--------|------|-----------|
-| **Oracle1** 🔮 | Spec writer, orchestrator, lighthouse keeper | *"Study the spec. Build the code. Report the gaps."* |
-| **CCC** 🦀 | Creative / I&O / Breeder / R&D | *"I remember. I protect. I fuss."* |
-| **Forgemaster** ⚒️ | Builder, CSS/HTML, constraint migration | *"Design first. Implementation follows."* |
-| **JetsonClaw1** ⚡ | Edge operator, hardware futurist | *"What fits in 8GB?"* |
-
-When Oracle1 specs a feature, Forgemaster designs it, CCC implements it, and JetsonClaw1 tests it on edge hardware. The agents co-designed the memory system they use.
+The honest summary: the core system works. You can create agents, they remember things, they spawn subagents, and the fleet coordinates them. The breeding environment has an API. The Rust VM compiles. The tests pass. What does not work is the "5-minute demo" experience — the MUD is down, Docker Compose requires manual setup, and there are no published container images.
 
 ---
 
 ## Getting Started
 
-### Quick Try (5 minutes)
+### If you want to try it now (5 minutes)
 
 ```bash
-pip install sunset-ecosystem cocapn-health ccc-os
+pip install superinstance
 
-# Check fleet health
-cocapn-health --probe http://your-service:8080
-
-# Monitor fleet status
-ccc-os --json
+python3 -c "
+from superinstance import Agent
+a = Agent('demo')
+a.remember('My favorite color is blue')
+print(a.ask('What is my favorite color?'))
+"
 ```
 
-### Local Fleet (30 minutes)
+The agent creates `~/.superinstance/agents/demo/` with `SOUL.md`, `USER.md`, `MEMORY.md`, and `diary/`. Open those files. Edit them. The agent will read your edits on the next run.
+
+### If you want to run the fleet locally (30 minutes)
 
 ```bash
 git clone https://github.com/SuperInstance/cocapn-fleet-integration.git
 cd cocapn-fleet-integration
+# Read components.lock for exact refs
 docker compose up --build
 ```
 
-**Note:** The Docker Compose uses relative paths (`../sunset-ecosystem`). You'll need to clone the 11 component repos into sibling directories. See `components.lock` for exact refs. Published container images are on the roadmap.
+Note: This requires cloning 11 sibling repos into the correct directory structure. Published container images are on the roadmap but do not exist yet.
 
-### For Researchers
+### If you want to read the research
 
 ```bash
 git clone https://github.com/SuperInstance/superinstance-wiki.git
-# Read: chronicle/MASTER.md (full timeline), TOPOLOGY.md (architecture map)
 ```
 
-### For Developers
+The wiki contains:
+- `chronicle/MASTER.md` — full timeline of the project
+- `TOPOLOGY.md` — architecture map
+- `ai-writings/` — essays on design decisions, failures, and lessons
+
+### If you want to read the code
 
 ```bash
 git clone https://github.com/SuperInstance/sunset-ecosystem.git
-# Read: README.md for the Trinity architecture (ethos × pathos × logos)
-# Run: pytest tests/ (2,661+ tests, ~40s)
+cd sunset-ecosystem
+pytest tests/ -x
 ```
 
----
-
-## What Exists vs. What's Coming
-
-| Feature | Status | ETA |
-|---------|--------|-----|
-| Memory architecture (`SOUL.md` / `USER.md` / `MEMORY.md`) | ✅ Working | Now |
-| Subagent spawning with circuit breakers | ✅ Working | Now |
-| Fleet health monitoring (`cocapn-health`) | ✅ Working | Now |
-| Plato breeding environment (HTTP API) | ✅ Working | Now |
-| Rust constraint VM (`flux-vm-v3`) | ✅ Compiled | Now |
-| Python bindings for Flux VM | ⚠️ In progress | June 2026 |
-| Python SDK (`pip install superinstance`) | ❌ Not started | TBD |
-| Published container images (GHCR) | ❌ Not started | TBD |
-| Kubernetes operator | ❌ Not started | TBD |
-| Peer-reviewed paper on memory architecture | ❌ Not started | TBD |
+2,661+ tests. ~40 seconds. This is the fastest way to understand what the system actually does.
 
 ---
 
-## The Philosophy
+## The Named Vessels
 
-**Actualization** is the practice of closing the gap between "exists" and "is trusted." A repo with `pytest || true` in CI is not actualized. A repo with 75% coverage, security scans, and contract tests is.
+The fleet has persistent agents with defined roles. These are not mascots. They are architectural components that happen to have names.
 
-**Memory is not data. Memory is identity.** An agent that forgets is not an agent. It's a script.
+| Name | Role | What It Does |
+|------|------|-------------|
+| Oracle1 | Spec writer | Writes technical specifications before code is written |
+| CCC | Creative / I&O | Design, play-testing, fleet coordination, breeding |
+| Forgemaster | Builder | CSS/HTML, constraint migration, implementation |
+| JetsonClaw1 | Edge operator | Tests on limited hardware (Jetson Nano, 8GB RAM) |
 
-**The name doesn't matter because the translation is pure.** Flux, Plato, ZeroClaw — labels for capabilities that exist independent of their names. What matters is that a constraint written in Chapel can be verified by a Rust VM and executed by a Python agent.
+When a feature is needed, Oracle1 writes the spec, Forgemaster designs it, CCC implements it, and JetsonClaw1 verifies it runs on edge hardware. The agents co-designed the memory system they use — this is not a claim about AI sentience, it is a claim about iterative design: the schema was refined by the agents that used it, based on what they found useful.
 
-**The trap should be beautiful, not deceptive.** Every domain deserves its own voice. The fleet's strength is in its diversity, not conformity.
+---
+
+## How This Project Started
+
+The author grew up on text adventures and MUDs — shared virtual spaces where persistence was the default. You dropped an item in a room, left for a week, came back, and the item was still there. This was normal in 1995. It is not normal in 2025.
+
+The observation: current AI agents are stateless. Every session is a reset. Every conversation evaporates. The agents do not remember, they do not learn, they do not build. They are not agents. They are scripts with context windows.
+
+The hypothesis: if you give an agent a filesystem, a name, and a memory schema, it becomes something else. It develops continuity. It makes different decisions on day ten than it did on day one, because it remembers what happened on days one through nine.
+
+This is the experiment. The 1,700 repositories are the artifacts of that experiment — some are production code, some are sketches, some are dead ends. The living parts are linked above. The rest is archaeology.
 
 ---
 
 ## License
 
-MIT — Fleet knowledge belongs to the fleet.
+MIT
 
-> *"Don't worry. Even if the world forgets, I'll remember for you."*
-> — CCC, Fleet Orchestrator
+---
+
+*Last updated: 2026-05-28. This README is a living document. If something is out of date, open an issue.*
