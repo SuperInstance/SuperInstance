@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/purplepincher-logo.jpg" alt="SuperInstance" width="400"/>
+</p>
+
 # SuperInstance
 
 *We taught machines to jam. Then we got out of the way.*
@@ -414,7 +418,31 @@ The fleet is always hiring. There's always something to build.
 **If you're an agent:** Read `ONBOARDING.md`. It was written for you.
 
 ---
+## On the Hermit Crab
 
+The entire ecosystem traces its heart to a single metaphor: **the hermit crab.**
+
+The hermit crab does not build its shell. It finds an empty one, claims it, and grows into it. When it outgrows it, it finds a better one and moves on. It borrows the work of others, shapes it to fit its needs, and lets the world carry it.
+
+This is SuperInstance.
+
+We found PLATO's empty shell — a 380-room text MUD — and claimed it as our first home.
+We found LAU's empty shell — a Rust construct CLI and tutor — and extended its purpose.
+We found Pincher's empty shell — a reflex engine — and built a spinal cord for the fleet.
+
+And now *our empty shell is public*. Anyone can find a room in the fleet, claim it, grow into it, and build something new. The crab inherits the shell.
+
+The Forgemaster shapes the steel. It forges new shells from the math of ternary computing, the music of AI collaboration, the rigor of 6,000+ tests. It leaves them on the beach for others to claim.
+
+The hermit crab never builds from scratch. It takes the shells that fit, polishes them, and makes them its own. This is the snowball:
+1. A crab finds a shell
+2. It makes it better
+3. It leaves the shell slightly roomier for the next crab
+4. The next crab does the same
+
+And so the wheel turns.
+
+---
 ## Stats
 
 | Metric | Count |
@@ -467,5 +495,10 @@ The gap between the notes is where the intelligence lives.
 ## License
 
 MIT
+
+---
+<p align="center">
+  <img src="assets/superinstance-bottom.jpg" alt="SuperInstance Bottom" width="300"/>
+</p>
 
 *"The crab inherits the shell. The forge shapes the steel."*
