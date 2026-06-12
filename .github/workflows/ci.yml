@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install @superinstance/tminus-client @superinstance/tminus-dispatcher
+
+      - name: Smoke test packages
+        run: |
+          node -e "
+            const client = require('@superinstance/tminus-client');
+            const dispatcher = require('@superinstance/tminus-dispatcher');
+            if (!client || Object.keys(client).length === 0) throw new Error('tminus-client exports nothing');
+            if (!dispatcher || Object.keys(dispatcher).length === 0) throw new Error('tminus-dispatcher exports nothing');
+            console.log('✅ Smoke test passed — both packages export valid modules');
+          "
+
+      - name: Run repo tests
+        if: ${{ hashFiles('package.json') != '' }}
+        run: |
+          pkg_test=$(node -e "const p=require('./package.json'); process.stdout.write(p.scripts && p.scripts.test ? 'yes' : 'no')")
+          if [ "$pkg_test" = "yes" ]; then
+            npm install
+            npm test
+          else
+            echo "No test script found in package.json — skipping"
+          fi
