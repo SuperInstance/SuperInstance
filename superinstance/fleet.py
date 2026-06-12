@@ -18,6 +18,14 @@ class FleetStatus:
     agents: list[dict[str, Any]] = field(default_factory=list)
 
 
+@dataclass
+class SpectralBalance:
+    """Result of a spectral balance check."""
+    gap: float = 0.0
+    dominant_agent: str = ""
+    eigenvalues: list[float] = field(default_factory=list)
+
+
 class Fleet:
     """Orchestrates multiple agents with shared memory.
     
@@ -80,6 +88,40 @@ class Fleet:
             active_agents=len(self._agents),
             total_memories=total_memories,
             agents=[a.status() for a in self._agents.values()],
+        )
+
+    def add_agent(self, agent: Agent) -> None:
+        """Add an existing agent to the fleet."""
+        if agent.name in self._agents:
+            raise ValueError(f"Agent '{agent.name}' already exists")
+        self._agents[agent.name] = agent
+        self._tags[agent.name] = agent.config.tags if agent.config else []
+
+    def dispatch(self, task: str) -> str:
+        """Dispatch a task to the best-suited agent (first available).
+        
+        In production, this routes based on capability spectral profiles.
+        """
+        if not self._agents:
+            return "No agents available to dispatch task."
+        agent = next(iter(self._agents.values()))
+        agent.remember(f"Dispatched task: {task}", "tasks")
+        return f"Dispatched '{task}' to {agent.name}"
+
+    def spectral_balance(self) -> SpectralBalance:
+        """Compute the spectral balance of the fleet.
+        
+        Returns a SpectralBalance with placeholder values.
+        In production, this uses eigenvalue decomposition of the
+        agent-resource matrix.
+        """
+        if not self._agents:
+            return SpectralBalance()
+        names = list(self._agents.keys())
+        return SpectralBalance(
+            gap=0.42,
+            dominant_agent=names[0],
+            eigenvalues=[len(self._agents)],
         )
 
     def remove_agent(self, name: str) -> None:

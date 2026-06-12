@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
@@ -36,15 +37,25 @@ class Agent:
 
     def __init__(
         self,
-        name: str,
+        name: str | AgentConfig | None = None,
         memory_dir: str | Path | None = None,
         config: AgentConfig | None = None,
     ):
-        self.config = config or AgentConfig(name=name)
-        self.name = name
-        self.memory = AgentMemory(name, base_dir=memory_dir)
+        # Accept Agent(config) style: if name is an AgentConfig, treat as config
+        if isinstance(name, AgentConfig):
+            config = name
+            name = config.name
+        config = config or AgentConfig(name=name) if name else AgentConfig()
+        self.config = config
+        self.name = config.name
+        self.memory = AgentMemory(self.name, base_dir=memory_dir)
         self._spawned: list[Agent] = []
         self._created_at = datetime.now().isoformat()
+
+    def send(self, message: str) -> str:
+        """Send a message to the agent (memory-based response)."""
+        self.remember(f"Received message: {message}", "inbox")
+        return f"Agent {self.name} processed: {message}"
 
     def remember(self, fact: str, category: str = "general") -> None:
         """Store a fact in long-term memory."""
@@ -55,10 +66,23 @@ class Agent:
         return self.memory.recall(query)
 
     def ask(self, question: str) -> str:
-        """Answer based on memory (keyword search).
+        """Answer based on memory + optional LLM.
         
-        In production, this calls an LLM API with memory context.
+        Uses keyword search over stored facts. If DEEPINFRA_API_KEY
+        is set in the environment, routes through an LLM for real
+        reasoning. Otherwise falls back to memory-only.
         """
+        memories = self.memory.recall()
+        
+        # Try LLM if available
+        api_key = os.environ.get("DEEPINFRA_API_KEY") or os.environ.get("DEEPINFRA_KEY")
+        if api_key and memories and memories != "No memories yet.":
+            try:
+                return self._ask_llm(question, memories, api_key)
+            except Exception:
+                pass  # Fall through to keyword search
+        
+        # Fallback: keyword search
         stop_words = {"what", "does", "the", "user", "is", "are", "how", 
                       "why", "when", "where", "who", "a", "an", "do", 
                       "you", "have", "about", "that", "yet"}
@@ -66,10 +90,42 @@ class Agent:
                  if w.lower() not in stop_words and len(w) > 2]
         
         for word in words:
-            memory = self.memory.recall(word)
-            if memory and memory != "No memories match.":
-                return f"Based on my memory: {memory.strip()}"
+            match = self.memory.recall(word)
+            if match and match != "No memories match.":
+                return f"Based on my memory: {match.strip()}"
         return "I don't have any memories about that yet."
+
+    def _ask_llm(self, question: str, memories: str, api_key: str) -> str:
+        """Route question through DeepInfra LLM with memory context."""
+        import httpx
+        
+        # Build prompt with memory context
+        prompt = f"""You are {self.name}, an AI agent with persistent memory.
+
+Your memories:
+{memories.strip()}
+
+Human: {question}
+
+Answer concisely based on your memories. If you don't have relevant memories,
+say so."""
+        
+        resp = httpx.post(
+            "https://api.deepinfra.com/v1/openai/chat/completions",
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "messages": [{"role": "user", "content": prompt}],
+                "max_tokens": 512,
+                "temperature": 0.3,
+            },
+            timeout=15.0,
+        )
+        resp.raise_for_status()
+        return resp.json()["choices"][0]["message"]["content"].strip()
 
     def spawn(self, task: str, name: str | None = None) -> Agent:
         """Spawn a subagent for a specific task."""

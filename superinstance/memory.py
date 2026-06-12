@@ -84,6 +84,97 @@ class AgentMemory:
             "files": {k: str(v) for k, v in self._files.items()},
         }
 
+    def store(self, key: str, value: str) -> None:
+        """Store a key-value pair."""
+        self.remember(f"key:{key} → {value}", "kvstore")
+
+    def retrieve(self, key: str) -> str | None:
+        """Retrieve a stored value by key."""
+        text = self._files["MEMORY.md"].read_text()
+        prefix = f"key:{key} → "
+        for line in text.split("\n"):
+            if prefix in line:
+                return line.split(prefix, 1)[1].strip()
+        return None
+
+    def search(self, query: str, semantic: bool = True) -> list[str]:
+        """Search over memories with optional semantic matching.
+        
+        When semantic=True and DEEPINFRA_API_KEY is set, uses
+        embedding-based similarity search. Otherwise falls back
+        to substring matching.
+        """
+        text = self._files["MEMORY.md"].read_text()
+        lines = [l.strip() for l in text.split("\n") if l.strip().startswith("- [")]
+        
+        if not lines:
+            return []
+        
+        if semantic:
+            import os
+            api_key = os.environ.get("DEEPINFRA_API_KEY") or os.environ.get("DEEPINFRA_KEY")
+            if api_key:
+                try:
+                    return self._semantic_search(query, lines, api_key)
+                except Exception:
+                    pass  # Fall through
+        
+        # Fallback: substring matching
+        return [l for l in lines if query.lower() in l.lower()]
+
+    def _semantic_search(self, query: str, lines: list[str], api_key: str) -> list[str]:
+        """Embedding-based semantic search via DeepInfra."""
+        import httpx
+        
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        }
+        
+        # Extract just the fact text from each line (remove timestamp prefix)
+        facts = []
+        for line in lines:
+            # Format: - [timestamp] [category] fact
+            parts = line.split("] ", 2)
+            if len(parts) >= 3:
+                facts.append(parts[-1].strip())
+            else:
+                facts.append(line)
+        
+        # Batch compute embeddings
+        inputs = [query] + facts
+        resp = httpx.post(
+            "https://api.deepinfra.com/v1/openai/embeddings",
+            headers=headers,
+            json={"model": "BAAI/bge-base-en-v1.5", "input": inputs},
+            timeout=30.0,
+        )
+        resp.raise_for_status()
+        data = resp.json()["data"]
+        
+        # Sort by index and extract vectors
+        vectors = {d["index"]: d["embedding"] for d in data}
+        query_vec = vectors[0]
+        
+        # Cosine similarity (dot product on normalized vectors)
+        import math
+        def dot(a, b):
+            return sum(x * y for x, y in zip(a, b))
+        def norm(v):
+            return math.sqrt(sum(x * x for x in v))
+        
+        qn = norm(query_vec)
+        scored = []
+        for i, fact in enumerate(facts):
+            vec = vectors.get(i + 1)
+            if vec:
+                sim = dot(query_vec, vec) / (qn * norm(vec)) if qn > 0 else 0
+                scored.append((sim, lines[i]))
+        
+        # Sort by similarity descending
+        scored.sort(key=lambda x: -x[0])
+        return [line for _, line in scored]
+
     def clear(self) -> None:
         """Clear all memories."""
         self._files["MEMORY.md"].write_text("# Long-Term Memory\n\n")
