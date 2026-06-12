@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentation
+    url: https://superinstance.com/docs
+    about: Check the docs before opening an issue
+  - name: 🔌 API Reference
+    url: https://superinstance.com/api
+    about: Full API reference and examples
+  - name: 💬 Discord
+    url: https://discord.gg/superinstance
+    about: Ask questions, share ideas, hang out
