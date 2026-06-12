@@ -6,24 +6,13 @@
 
 Get up and running in 5 minutes:
 
-### 1. Clone the repo
+### 1. Install the packages
 
 ```bash
-git clone https://github.com/SuperInstance/tminus-client.git
-cd tminus-client
+npm install @superinstance/tminus-dispatcher @superinstance/tminus-client
 ```
 
-### 2. Install the client
-
-The package isn't on npm yet — install from GitHub for now:
-
-```bash
-npm install github:SuperInstance/tminus-client
-```
-
-> **📝 Note:** `@superinstance/tminus-client` will be published to npm soon. Once it is, you'll be able to `npm install @superinstance/tminus-client` instead.
-
-### 3. Run the dispatcher + demo
+### 2. Run the dispatcher + demo
 
 ```bash
 # Start the local stack
