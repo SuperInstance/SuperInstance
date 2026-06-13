@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architecture — SuperInstance</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+  :root {
+    --bg: #0a0a0f; --bg-elevated: #12121a; --bg-card: #16161f;
+    --bg-code: #1a1a25; --border: #2a2a3a; --text: #e4e4ed;
+    --text-muted: #8888a0; --accent: #00E6D6; --accent-dim: rgba(0,230,214,0.15);
+    --radius: 8px; --mono: 'JetBrains Mono', monospace; --sans: 'Inter', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,10,15,0.85); backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border); padding: 0 2rem; height: 60px;
+    display: flex; align-items: center; gap: 2rem;
+  }
+  nav .logo { font-family: var(--mono); font-weight: 700; color: var(--accent); text-decoration: none; }
+  nav .nav-links { display: flex; gap: 0.25rem; }
+  nav .nav-links a {
+    font-family: var(--mono); font-size: 0.78rem; color: var(--text-muted);
+    text-decoration: none; padding: 0.35rem 0.65rem; border-radius: 6px;
+  }
+  nav .nav-links a:hover, nav .nav-links a.active { color: var(--accent); background: var(--accent-dim); }
+
+  .page-header {
+    margin-top: 60px; padding: 3rem 2rem 2rem; border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(0,230,214,0.04) 0%, transparent 70%);
+  }
+  .page-header h1 { font-family: var(--mono); font-size: 2rem; margin-bottom: 0.5rem; }
+  .page-header p { color: var(--text-muted); max-width: 700px; }
+
+  main { max-width: 860px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+
+  h2 {
+    font-family: var(--mono); font-size: 1.3rem; margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+    scroll-margin-top: 80px; display: flex; align-items: center; gap: 0.75rem;
+  }
+  h2 .icon { font-size: 1.2rem; }
+  p { margin: 0.75rem 0; }
+  ul { margin: 0.75rem 0; padding-left: 1.5rem; }
+  li { margin: 0.35rem 0; color: var(--text-muted); }
+  code { font-family: var(--mono); font-size: 0.85em; background: var(--bg-code); padding: 0.15em 0.4em; border-radius: 4px; }
+
+  pre {
+    background: var(--bg-code); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1rem 1.25rem;
+    overflow-x: auto; font-family: var(--mono); font-size: 0.82rem;
+    line-height: 1.6; margin: 1rem 0;
+  }
+
+  .concept-box {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;
+  }
+  .concept-box h3 {
+    font-family: var(--mono); font-size: 1.05rem; color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .formula {
+    text-align: center; padding: 1.5rem; margin: 1.5rem 0;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+  }
+  .formula .equation {
+    font-family: var(--mono); font-size: 1.6rem; font-weight: 700;
+    color: var(--accent); letter-spacing: 0.05em;
+  }
+  .formula .desc { color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; }
+
+  .note {
+    background: var(--accent-dim); border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1rem 1.25rem; font-size: 0.9rem; margin: 1.5rem 0;
+  }
+  .note strong { color: var(--accent); }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+  .grid .concept-box { margin: 0; }
+
+  footer { text-align: center; padding: 3rem 2rem; border-top: 1px solid var(--border); color: #5a5a72; font-size: 0.85rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0 1rem; } nav .nav-links { display: none; }
+    .grid { grid-template-columns: 1fr; }
+    main { padding: 1.5rem 1rem 4rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">superinstance</a>
+  <div class="nav-links">
+    <a href="index.html">Docs</a>
+    <a href="onboarding.html">Onboarding</a>
+    <a href="architecture.html" class="active">Architecture</a>
+    <a href="api.html">API Reference</a>
+    <a href="hello-world.md">Tutorial</a>
+  </div>
+</nav>
+
+<section class="page-header">
+  <h1>🏗️ Architecture &amp; Core Concepts</h1>
+  <p>Understand the t-minus protocol, fleet coordination, bottles, and the conservation law that governs it all.</p>
+</section>
+
+<main>
+
+<!-- Overview -->
+<h2 id="overview"><span class="icon">🧠</span> The Big Picture</h2>
+<p>SuperInstance is a <strong>conservation spectral framework</strong> for persistent multi-agent AI. It treats a fleet of agents like a physical system where total "energy" is conserved. When one agent consumes more resources, others get less. This isn't a metaphor — it's enforced mathematically through spectral analysis.</p>
+<p>The framework provides:</p>
+<ul>
+  <li><strong>Persistent agents</strong> with long-term memory stored as markdown files</li>
+  <li><strong>Fleet coordination</strong> via a central dispatcher using the t-minus protocol</li>
+  <li><strong>Spectral resource management</strong> — eigenvalue-based load balancing</li>
+  <li><strong>Conservation law</strong> — total fleet resources are always conserved</li>
+</ul>
+
+<!-- T-Minus Protocol -->
+<h2 id="tminus"><span class="icon">⏱️</span> T-Minus Protocol</h2>
+<p>The t-minus protocol is SuperInstance's coordination mechanism. It uses <strong>temporal cueing with offsets</strong> to schedule and route tasks between agents through a WebSocket dispatcher.</p>
+
+<div class="grid">
+  <div class="concept-box">
+    <h3>Negative Offsets → Head Starts</h3>
+    <p>A negative offset gives an agent a head start. The task is dispatched immediately — or even "retroactively" — so the agent begins work before the nominal time.</p>
+    <pre>client.cue("beta", -1, "analyze", payload)</pre>
+  </div>
+  <div class="concept-box">
+    <h3>Positive Offsets → Countdowns</h3>
+    <p>A positive offset creates a countdown. The task is queued and delivered after the specified delay, useful for staggered execution.</p>
+    <pre>client.cue("gamma", 5, "report", payload)</pre>
+  </div>
+</div>
+
+<div class="concept-box">
+  <h3>Zero Offset → Immediate</h3>
+  <p>An offset of zero means immediate dispatch. The task is sent to the target agent right now, no delay.</p>
+  <pre>client.cue("alpha", 0, "compute", payload)</pre>
+</div>
+
+<p>The lifecycle is: <strong>register → subscribe → cue/dispatch → complete → result</strong>. Agents register their capabilities, subscribe to channels, and the dispatcher routes tasks based on capability matching and spectral load.</p>
+
+<!-- Fleet Coordination -->
+<h2 id="fleet"><span class="icon">🛳️</span> Fleet &amp; Vessels</h2>
+<p>A <strong>fleet</strong> is a named group of coordinated agents. Each agent in the fleet is called a <strong>vessel</strong>. The fleet maintains a spectral model of each vessel's capabilities.</p>
+
+<div class="concept-box">
+  <h3>Spectral Load Balancing</h3>
+  <p>When a task arrives, the fleet computes which agent's <strong>capability eigenvalue</strong> best matches the task's spectral profile. Tasks are routed to the best-matched vessel — not round-robin, not random, but mathematically optimal based on the agent-resource matrix.</p>
+  <pre>fleet = Fleet(name="analysis-team")
+fleet.add_agent(agent)
+result = fleet.dispatch("Analyze this dataset")</pre>
+</div>
+
+<p>Methods: <code>add_agent()</code>, <code>dispatch(task)</code>, <code>broadcast(message)</code>, <code>spectral_balance()</code>.</p>
+
+<!-- Bottles -->
+<h2 id="bottles"><span class="icon">🍶</span> Bottles</h2>
+<p><strong>Bottles</strong> are encapsulated message containers that preserve state across agent handoffs. When a task moves from one agent to another, the bottle carries the full context — input, intermediate results, metadata — so the receiving agent has everything it needs.</p>
+
+<div class="note"><strong>Key property:</strong> Bottles are immutable once sealed. This guarantees that handoff state is consistent and race-free.</div>
+
+<p>Bottles enable:</p>
+<ul>
+  <li>Safe handoffs between agents in a fleet</li>
+  <li>Audit trails — every bottle has a provenance chain</li>
+  <li>Checkpoint/restart — agents can resume from a bottle</li>
+</ul>
+
+<!-- Conservation Law -->
+<h2 id="conservation"><span class="icon">⚖️</span> Conservation Law</h2>
+<p>This is the core invariant of the framework. Total fleet resources are conserved.</p>
+
+<div class="formula">
+  <div class="equation">γ + η = C</div>
+  <div class="desc">where γ = spectral load, η = spectral gap, C = total fleet capacity</div>
+</div>
+
+<p><strong>What this means in practice:</strong></p>
+<ul>
+  <li><strong>γ (spectral load)</strong> — the sum of dominant eigenvalues across all agents. High γ means the fleet is working hard.</li>
+  <li><strong>η (spectral gap)</strong> — the difference between the largest and second-largest eigenvalue. Large η means one agent dominates.</li>
+  <li><strong>C (constant)</strong> — the total resource budget of the fleet, which doesn't change.</li>
+</ul>
+
+<p>When one agent consumes more resources (γ increases for that agent), the conservation law means other agents get less. The spectral gap η reveals the distribution — a large gap signals imbalance, triggering automatic rebalancing.</p>
+
+<div class="concept-box">
+  <h3>Spectral Balance Check</h3>
+  <pre>balance = fleet.spectral_balance()
+print(f"Spectral gap: {balance.gap}")
+print(f"Dominant agent: {balance.dominant_agent}")
+print(f"Eigenvalues: {balance.eigenvalues}")</pre>
+</div>
+
+<div class="note"><strong>This isn't a metaphor.</strong> The conservation law is enforced mathematically. The fleet computes the eigenvalue decomposition of the agent-resource matrix and ensures the total spectral energy remains constant.</div>
+
+<!-- How It Fits Together -->
+<h2 id="flow"><span class="icon">🔄</span> How It Fits Together</h2>
+<ol style="padding-left:1.5rem; color: var(--text-muted);">
+  <li style="margin:0.5rem 0"><strong>Agent creation</strong> — each agent gets a directory at <code>~/.superinstance/agents/{name}/</code> with a <code>memory.md</code> file</li>
+  <li style="margin:0.5rem 0"><strong>Memory</strong> — facts stored as markdown, loaded on startup, appended via <code>remember()</code></li>
+  <li style="margin:0.5rem 0"><strong>Fleet coordination</strong> — the fleet maintains a spectral model; tasks route to the best-matched vessel</li>
+  <li style="margin:0.5rem 0"><strong>Conservation</strong> — total resources tracked via eigenvalues; large spectral gaps trigger rebalancing</li>
+  <li style="margin:0.5rem 0"><strong>Bottles</strong> — immutable containers carry state across agent handoffs</li>
+</ol>
+
+<!-- Links -->
+<h2 id="explore"><span class="icon">🗺️</span> Explore More</h2>
+<ul>
+  <li><a href="onboarding.html">Onboarding Guide</a> — get running in 5 minutes</li>
+  <li><a href="api.html">Fleet Vector API</a> — semantic search and crate discovery</li>
+  <li><a href="hello-world.md">Hello World Tutorial</a> — build a two-agent system</li>
+</ul>
+
+</main>
+
+<footer>
+  <p>SuperInstance &mdash; <a href="https://superinstance.ai">superinstance.ai</a></p>
+</footer>
+
+</body>
+</html>

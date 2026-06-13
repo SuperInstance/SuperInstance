@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onboarding — SuperInstance</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+  :root {
+    --bg: #0a0a0f; --bg-elevated: #12121a; --bg-card: #16161f;
+    --bg-code: #1a1a25; --border: #2a2a3a; --text: #e4e4ed;
+    --text-muted: #8888a0; --accent: #00E6D6; --accent-dim: rgba(0,230,214,0.15);
+    --radius: 8px; --mono: 'JetBrains Mono', monospace; --sans: 'Inter', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,10,15,0.85); backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border); padding: 0 2rem; height: 60px;
+    display: flex; align-items: center; gap: 2rem;
+  }
+  nav .logo { font-family: var(--mono); font-weight: 700; color: var(--accent); text-decoration: none; }
+  nav .nav-links { display: flex; gap: 0.25rem; }
+  nav .nav-links a {
+    font-family: var(--mono); font-size: 0.78rem; color: var(--text-muted);
+    text-decoration: none; padding: 0.35rem 0.65rem; border-radius: 6px;
+  }
+  nav .nav-links a:hover, nav .nav-links a.active { color: var(--accent); background: var(--accent-dim); }
+
+  .page-header {
+    margin-top: 60px; padding: 3rem 2rem 2rem; border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(0,230,214,0.04) 0%, transparent 70%);
+  }
+  .page-header h1 { font-family: var(--mono); font-size: 2rem; margin-bottom: 0.5rem; }
+  .page-header p { color: var(--text-muted); max-width: 640px; }
+
+  main { max-width: 860px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+
+  h2 {
+    font-family: var(--mono); font-size: 1.3rem; margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+    scroll-margin-top: 80px;
+  }
+  h3 { font-family: var(--mono); font-size: 1.05rem; margin: 1.5rem 0 0.75rem; color: var(--accent); }
+  p { margin: 0.75rem 0; }
+  ul { margin: 0.75rem 0; padding-left: 1.5rem; }
+  li { margin: 0.35rem 0; color: var(--text-muted); }
+  code { font-family: var(--mono); font-size: 0.85em; background: var(--bg-code); padding: 0.15em 0.4em; border-radius: 4px; }
+
+  pre {
+    background: var(--bg-code); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1rem 1.25rem;
+    overflow-x: auto; font-family: var(--mono); font-size: 0.82rem;
+    line-height: 1.6; margin: 1rem 0;
+  }
+  pre .comment { color: #5a5a72; }
+
+  .note {
+    background: var(--accent-dim); border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1rem 1.25rem; font-size: 0.9rem; margin: 1.5rem 0;
+  }
+  .note strong { color: var(--accent); }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+  th { text-align: left; font-family: var(--mono); color: var(--accent); padding: 0.5rem; border-bottom: 1px solid var(--border); }
+  td { padding: 0.5rem; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+
+  .step-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent-dim); color: var(--accent);
+    font-family: var(--mono); font-size: 0.85rem; font-weight: 700;
+    margin-right: 0.5rem;
+  }
+
+  footer { text-align: center; padding: 3rem 2rem; border-top: 1px solid var(--border); color: #5a5a72; font-size: 0.85rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0 1rem; } nav .nav-links { display: none; }
+    main { padding: 1.5rem 1rem 4rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">superinstance</a>
+  <div class="nav-links">
+    <a href="index.html">Docs</a>
+    <a href="onboarding.html" class="active">Onboarding</a>
+    <a href="architecture.html">Architecture</a>
+    <a href="api.html">API Reference</a>
+    <a href="hello-world.md">Tutorial</a>
+  </div>
+</nav>
+
+<section class="page-header">
+  <h1>🚀 Onboarding Guide</h1>
+  <p>Install the SDK, start a dispatcher, and build your first agent in 5 minutes.</p>
+</section>
+
+<main>
+
+<h2 id="prereqs">Prerequisites</h2>
+<ul>
+  <li><strong>Node.js 18+</strong> — check with <code>node -v</code></li>
+  <li><strong>npm</strong> or <strong>pnpm</strong></li>
+  <li><em>(Optional)</em> Docker + Docker Compose for the full fleet stack</li>
+</ul>
+
+<h2 id="step1"><span class="step-num">1</span> Install the Client</h2>
+<pre>npm install @superinstance/tminus-client</pre>
+
+<h2 id="step2"><span class="step-num">2</span> Start a Local Dispatcher</h2>
+
+<h3>Option A — Docker (full stack)</h3>
+<pre>docker compose up -d</pre>
+
+<h3>Option B — Standalone dispatcher</h3>
+<pre>npm install @superinstance/tminus-dispatcher
+npx tminus-dispatcher
+<span class="comment"># → ws://localhost:8765</span></pre>
+
+<div class="note"><strong>Tip:</strong> Leave this running in a separate terminal.</div>
+
+<h2 id="step3"><span class="step-num">3</span> Your First Agent</h2>
+<p>Save as <code>agent.mjs</code> and run with <code>node agent.mjs</code>:</p>
+<pre>import { TminusClient } from "@superinstance/tminus-client";
+
+const client = new TminusClient("ws://localhost:8765");
+
+client.on("open", () =&gt; {
+  client.register({ name: "hello-agent", capabilities: ["greeting"] });
+  client.subscribe("greeting");
+});
+
+client.on("task", (task) =&gt; {
+  console.log(`Received task: ${task.description}`);
+  client.complete(task.id, { reply: `Hello! You said: ${task.description}` });
+});
+
+client.connect();</pre>
+
+<p>Expected output: <code>State update: { "status": "registered", "agent": "hello-agent" }</code></p>
+
+<h2 id="step4"><span class="step-num">4</span> Two Agents Coordinating</h2>
+<p>A <strong>coordinator</strong> dispatches a task; a <strong>worker</strong> picks it up and responds.</p>
+<pre>import { TminusClient } from "@superinstance/tminus-client";
+const URL = "ws://localhost:8765";
+
+const worker = new TminusClient(URL);
+worker.on("open", () =&gt; {
+  worker.register({ name: "worker-1", capabilities: ["compute"] });
+  worker.subscribe("compute");
+});
+worker.on("task", (task) =&gt; {
+  console.log(`Worker got: ${task.description}`);
+  worker.complete(task.id, { result: eval(task.description) });
+});
+worker.connect();
+
+const coordinator = new TminusClient(URL);
+coordinator.on("open", () =&gt; {
+  coordinator.register({ name: "coordinator", capabilities: ["orchestrate"] });
+  setTimeout(() =&gt; {
+    coordinator.dispatch({ to: "compute", description: "6 * 7" });
+  }, 1000);
+});
+coordinator.on("result", (r) =&gt; {
+  console.log(`Result: ${JSON.stringify(r.result)}`); <span class="comment">// 42</span>
+});
+coordinator.connect();</pre>
+
+<div class="note"><strong>Lifecycle:</strong> register → subscribe → dispatch → complete → result</div>
+
+<h2 id="step5"><span class="step-num">5</span> Explore the Fleet API</h2>
+<pre><span class="comment"># Search crates semantically</span>
+curl -X POST https://fleet-vector-api.casey-digennaro.workers.dev/search \
+  -H "Content-Type: application/json" \
+  -d '{"query": "web framework", "topK": 5}'
+
+<span class="comment"># Get index stats</span>
+curl https://fleet-vector-api.casey-digennaro.workers.dev/stats</pre>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+  <tr><th>Problem</th><th>Fix</th></tr>
+  <tr><td><code>Connection refused</code> on ws://localhost:8765</td><td>Dispatcher isn't running. Start it (Step 2).</td></tr>
+  <tr><td><code>npm install</code> fails with 404</td><td>Use the GitHub install URL from Step 1.</td></tr>
+  <tr><td><code>SyntaxError: Cannot use import statement</code></td><td>Use <code>.mjs</code> extension or add <code>"type": "module"</code> to package.json.</td></tr>
+  <tr><td>Docker ports already in use</td><td><code>docker compose down</code> then <code>docker compose up -d</code>.</td></tr>
+  <tr><td>Agent not receiving tasks</td><td>Check subscribed capability matches the dispatch target exactly.</td></tr>
+</table>
+
+<h2 id="next">Next Steps</h2>
+<ul>
+  <li><a href="architecture.html">Architecture &amp; Core Concepts</a> — understand the t-minus protocol and conservation law</li>
+  <li><a href="api.html">Fleet Vector API</a> — semantic crate search and gap analysis</li>
+  <li><a href="hello-world.md">Hello World Tutorial</a> — build a two-agent system</li>
+  <li><strong>Python SDK</strong> — <code>pip install superinstance</code> for persistent memory and spectral balance</li>
+</ul>
+
+</main>
+
+<footer>
+  <p>SuperInstance &mdash; <a href="https://superinstance.ai">superinstance.ai</a></p>
+</footer>
+
+</body>
+</html>
