@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fleet Vector API — Playground</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0f;
+    --bg-raised: #111118;
+    --bg-input: #16161f;
+    --bg-hover: #1a1a28;
+    --border: #1e1e2e;
+    --border-active: #2e2e44;
+    --fg: #e0e0ec;
+    --fg-muted: #6b6b80;
+    --fg-dim: #44445a;
+    --accent: #00E6D6;
+    --accent-dim: rgba(0,230,214,0.12);
+    --accent-glow: rgba(0,230,214,0.25);
+    --green: #4ade80;
+    --yellow: #facc15;
+    --red: #f87171;
+    --blue: #60a5fa;
+    --orange: #fb923c;
+    --purple: #c084fc;
+    --pink: #f472b6;
+    --font: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', monospace;
+    --radius: 8px;
+    --sidebar-w: 280px;
+    --transition: 150ms ease;
+  }
+
+  html, body { height: 100%; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--fg);
+    font-size: 13px;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+
+  /* Layout */
+  .app {
+    display: flex;
+    height: 100vh;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: var(--sidebar-w);
+    min-width: var(--sidebar-w);
+    background: var(--bg-raised);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  .sidebar-header {
+    padding: 20px 18px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar-header h1 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--fg);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sidebar-header h1 span {
+    color: var(--accent);
+  }
+
+  .sidebar-header .subtitle {
+    font-size: 11px;
+    color: var(--fg-muted);
+    margin-top: 4px;
+    font-weight: 400;
+  }
+
+  .sidebar-nav {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px 10px;
+  }
+
+  .sidebar-nav::-webkit-scrollbar { width: 4px; }
+  .sidebar-nav::-webkit-scrollbar-track { background: transparent; }
+  .sidebar-nav::-webkit-scrollbar-thumb { background: var(--border-active); border-radius: 4px; }
+
+  .nav-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--fg-dim);
+    padding: 12px 10px 6px;
+  }
+
+  .endpoint-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 12.5px;
+    cursor: pointer;
+    transition: all var(--transition);
+    text-align: left;
+    margin-bottom: 2px;
+  }
+
+  .endpoint-btn:hover {
+    background: var(--bg-hover);
+    border-color: var(--border);
+  }
+
+  .endpoint-btn.active {
+    background: var(--accent-dim);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .method-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+  }
+
+  .method-POST { background: rgba(0,230,214,0.15); color: var(--accent); }
+  .method-GET { background: rgba(74,222,128,0.15); color: var(--green); }
+
+  .endpoint-path {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sidebar-footer {
+    padding: 12px 18px;
+    border-top: 1px solid var(--border);
+    font-size: 10px;
+    color: var(--fg-dim);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 6px var(--green);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* Main */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-width: 0;
+  }
+
+  /* Top bar */
+  .topbar {
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--bg-raised);
+    flex-shrink: 0;
+  }
+
+  .topbar-method {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 5px;
+    flex-shrink: 0;
+  }
+
+  .topbar-path {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--fg);
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .topbar-desc {
+    font-size: 11px;
+    color: var(--fg-muted);
+    flex-shrink: 0;
+  }
+
+  /* Panels */
+  .panels {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .panel + .panel {
+    border-left: 1px solid var(--border);
+  }
+
+  .panel-header {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg);
+    flex-shrink: 0;
+  }
+
+  .panel-title {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--fg-muted);
+  }
+
+  .panel-body {
+    flex: 1;
+    overflow: auto;
+    position: relative;
+  }
+
+  /* Request editor */
+  .editor-wrap {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editor-textarea {
+    flex: 1;
+    width: 100%;
+    padding: 16px 20px;
+    background: var(--bg);
+    border: none;
+    outline: none;
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 12.5px;
+    line-height: 1.65;
+    resize: none;
+    tab-size: 2;
+  }
+
+  .editor-textarea::placeholder {
+    color: var(--fg-dim);
+  }
+
+  .editor-textarea::-webkit-scrollbar { width: 6px; }
+  .editor-textarea::-webkit-scrollbar-track { background: transparent; }
+  .editor-textarea::-webkit-scrollbar-thumb { background: var(--border-active); border-radius: 4px; }
+
+  .editor-actions {
+    padding: 12px 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--bg);
+    flex-shrink: 0;
+  }
+
+  .btn-send {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: var(--radius);
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all var(--transition);
+    letter-spacing: 0.3px;
+  }
+
+  .btn-send:hover {
+    background: #33ece0;
+    box-shadow: 0 0 20px var(--accent-glow);
+  }
+
+  .btn-send:active {
+    transform: scale(0.97);
+  }
+
+  .btn-send:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .btn-secondary {
+    padding: 8px 14px;
+    background: var(--bg-input);
+    color: var(--fg-muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-family: var(--font);
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--border-active);
+    color: var(--fg);
+  }
+
+  /* Response */
+  .response-meta {
+    padding: 8px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 11px;
+    background: var(--bg);
+    flex-shrink: 0;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .meta-label {
+    color: var(--fg-dim);
+  }
+
+  .meta-value {
+    font-weight: 600;
+  }
+
+  .status-ok { color: var(--green); }
+  .status-err { color: var(--red); }
+  .status-warn { color: var(--yellow); }
+
+  .response-body {
+    flex: 1;
+    overflow: auto;
+    padding: 16px 20px;
+    background: var(--bg);
+  }
+
+  .response-body::-webkit-scrollbar { width: 6px; }
+  .response-body::-webkit-scrollbar-track { background: transparent; }
+  .response-body::-webkit-scrollbar-thumb { background: var(--border-active); border-radius: 4px; }
+
+  .response-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--fg-dim);
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .response-empty .icon {
+    font-size: 32px;
+    opacity: 0.3;
+  }
+
+  /* JSON Syntax Highlighting */
+  .json {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: var(--font);
+    font-size: 12.5px;
+    line-height: 1.7;
+  }
+
+  .json-key { color: var(--blue); }
+  .json-string { color: var(--green); }
+  .json-number { color: var(--orange); }
+  .json-boolean { color: var(--purple); }
+  .json-null { color: var(--pink); }
+  .json-bracket { color: var(--fg-muted); }
+  .json-colon { color: var(--fg-dim); }
+
+  /* Loading */
+  .loading-spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--accent-dim);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* Welcome state */
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    gap: 12px;
+  }
+
+  .welcome-icon {
+    font-size: 48px;
+    opacity: 0.15;
+  }
+
+  .welcome h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--fg);
+  }
+
+  .welcome p {
+    color: var(--fg-muted);
+    font-size: 12px;
+    max-width: 400px;
+  }
+
+  .kbd {
+    display: inline-block;
+    padding: 2px 6px;
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: var(--font);
+    color: var(--fg-muted);
+  }
+
+  /* Resizer */
+  .panel-resizer {
+    width: 4px;
+    cursor: col-resize;
+    background: transparent;
+    transition: background var(--transition);
+    flex-shrink: 0;
+  }
+
+  .panel-resizer:hover {
+    background: var(--accent);
+  }
+
+  /* Mobile */
+  .mobile-toggle {
+    display: none;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 100;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius);
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    color: var(--fg);
+    font-size: 18px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-100%);
+      transition: transform 0.25s ease;
+      z-index: 20;
+    }
+
+    .sidebar.open {
+      transform: translateX(0);
+    }
+
+    .overlay.open {
+      display: block;
+    }
+
+    .mobile-toggle {
+      display: flex;
+    }
+
+    .panels {
+      flex-direction: column;
+    }
+
+    .panel + .panel {
+      border-left: none;
+      border-top: 1px solid var(--border);
+    }
+
+    .panel-resizer {
+      display: none;
+    }
+
+    .topbar {
+      padding-left: 56px;
+    }
+  }
+
+  /* Scrollbar global */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border-active); border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Mobile toggle -->
+  <button class="mobile-toggle" onclick="toggleSidebar()" title="Toggle sidebar">☰</button>
+  <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h1><span>⚡</span> Fleet Vector API</h1>
+      <div class="subtitle">Interactive Playground</div>
+    </div>
+    <nav class="sidebar-nav" id="nav">
+      <div class="nav-label">Search & Discovery</div>
+      <!-- Endpoints injected by JS -->
+    </nav>
+    <div class="sidebar-footer">
+      <div class="status-dot"></div>
+      fleet-vector-api.casey-digennaro.workers.dev
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <div class="main" id="main">
+    <div class="welcome" id="welcome">
+      <div class="welcome-icon">⚡</div>
+      <h2>Fleet Vector API Playground</h2>
+      <p>Select an endpoint from the sidebar to start exploring. Edit the request body and hit <strong style="color:var(--accent)">Send</strong>.</p>
+      <p><kbd>Ctrl</kbd> + <kbd>Enter</kbd> to send &nbsp;·&nbsp; <kbd>Ctrl</kbd> + <kbd>L</kbd> to format</p>
+    </div>
+
+    <div id="workspace" style="display:none;flex:1;display:none;flex-direction:column;overflow:hidden;">
+      <!-- Top bar -->
+      <div class="topbar" id="topbar">
+        <span class="topbar-method method-POST" id="topbar-method">POST</span>
+        <span class="topbar-path" id="topbar-path">/search</span>
+        <span class="topbar-desc" id="topbar-desc"></span>
+      </div>
+
+      <!-- Panels -->
+      <div class="panels">
+        <!-- Request panel -->
+        <div class="panel" id="request-panel">
+          <div class="panel-header">
+            <span class="panel-title">Request Body</span>
+            <button class="btn-secondary" onclick="formatJSON()" title="Format JSON">Format</button>
+          </div>
+          <div class="editor-wrap">
+            <textarea class="editor-textarea" id="editor" placeholder="Enter JSON request body…" spellcheck="false"></textarea>
+            <div class="editor-actions">
+              <button class="btn-send" id="sendBtn" onclick="sendRequest()">
+                ▶ Send
+              </button>
+              <button class="btn-secondary" onclick="resetBody()">Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resizer -->
+        <div class="panel-resizer" id="resizer"></div>
+
+        <!-- Response panel -->
+        <div class="panel" id="response-panel">
+          <div class="panel-header">
+            <span class="panel-title">Response</span>
+            <button class="btn-secondary" onclick="copyResponse()" id="copyBtn" style="display:none">Copy</button>
+          </div>
+          <div class="response-meta" id="responseMeta" style="display:none">
+            <div class="meta-item">
+              <span class="meta-label">Status:</span>
+              <span class="meta-value" id="metaStatus">—</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Time:</span>
+              <span class="meta-value" id="metaTime">—</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Size:</span>
+              <span class="meta-value" id="metaSize">—</span>
+            </div>
+          </div>
+          <div class="response-body" id="responseBody">
+            <div class="response-empty">
+              <div class="icon">↩</div>
+              <div>Response will appear here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const BASE_URL = 'https://fleet-vector-api.casey-digennaro.workers.dev';
+
+const ENDPOINTS = [
+  {
+    id: 'search',
+    method: 'POST',
+    path: '/search',
+    section: 'Search & Discovery',
+    desc: 'Semantic search across crates',
+    body: {
+      query: "javascript testing framework",
+      topK: 10,
+      filters: {
+        category: "testing",
+        minStars: 50
+      }
+    }
+  },
+  {
+    id: 'recommend',
+    method: 'POST',
+    path: '/recommend',
+    section: 'Search & Discovery',
+    desc: 'Get crate recommendations based on context',
+    body: {
+      currentStack: ["express", "jest", "typeorm"],
+      goal: "improve testing coverage and performance",
+      excludeOwn: true,
+      limit: 5
+    }
+  },
+  {
+    id: 'similar',
+    method: 'POST',
+    path: '/similar',
+    section: 'Search & Discovery',
+    desc: 'Find crates similar to a given crate',
+    body: {
+      crate: "next",
+      topK: 8,
+      includeDetails: true
+    }
+  },
+  {
+    id: 'gap-analysis',
+    method: 'POST',
+    path: '/gap-analysis',
+    section: 'Analysis',
+    desc: 'Analyze gaps in a project\'s dependencies',
+    body: {
+      dependencies: [
+        "express",
+        "prisma",
+        "zod",
+        "dotenv"
+      ],
+      projectType: "backend-api",
+      framework: "express"
+    }
+  },
+  {
+    id: 'stats',
+    method: 'GET',
+    path: '/stats',
+    section: 'Info',
+    desc: 'Get index statistics and metadata',
+    body: null
+  },
+  {
+    id: 'clusters',
+    method: 'GET',
+    path: '/clusters',
+    section: 'Info',
+    desc: 'Get crate cluster/group information',
+    body: null
+  },
+  {
+    id: 'dashboard',
+    method: 'GET',
+    path: '/dashboard',
+    section: 'Info',
+    desc: 'Dashboard overview data',
+    body: null
+  }
+];
+
+let activeEndpoint = null;
+let lastResponse = '';
+
+// Build sidebar
+function buildNav() {
+  const nav = document.getElementById('nav');
+  const sections = {};
+  ENDPOINTS.forEach(ep => {
+    if (!sections[ep.section]) sections[ep.section] = [];
+    sections[ep.section].push(ep);
+  });
+
+  let html = '';
+  for (const [label, eps] of Object.entries(sections)) {
+    html += `<div class="nav-label">${label}</div>`;
+    eps.forEach(ep => {
+      html += `
+        <button class="endpoint-btn" data-id="${ep.id}" onclick="selectEndpoint('${ep.id}')">
+          <span class="method-badge method-${ep.method}">${ep.method}</span>
+          <span class="endpoint-path">${ep.path}</span>
+        </button>
+      `;
+    });
+  }
+  nav.innerHTML = html;
+}
+
+function selectEndpoint(id) {
+  const ep = ENDPOINTS.find(e => e.id === id);
+  if (!ep) return;
+  activeEndpoint = ep;
+
+  // Update sidebar active state
+  document.querySelectorAll('.endpoint-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.id === id);
+  });
+
+  // Show workspace
+  document.getElementById('welcome').style.display = 'none';
+  const ws = document.getElementById('workspace');
+  ws.style.display = 'flex';
+
+  // Top bar
+  const methodEl = document.getElementById('topbar-method');
+  methodEl.textContent = ep.method;
+  methodEl.className = `topbar-method method-${ep.method}`;
+  document.getElementById('topbar-path').textContent = ep.path;
+  document.getElementById('topbar-desc').textContent = ep.desc;
+
+  // Editor
+  const editor = document.getElementById('editor');
+  if (ep.body) {
+    editor.value = JSON.stringify(ep.body, null, 2);
+    editor.disabled = false;
+  } else {
+    editor.value = '';
+    editor.placeholder = 'This endpoint has no request body (GET request)';
+    editor.disabled = true;
+  }
+
+  // Clear response
+  clearResponse();
+
+  // Close mobile sidebar
+  closeSidebar();
+
+  editor.focus();
+}
+
+async function sendRequest() {
+  if (!activeEndpoint) return;
+
+  const btn = document.getElementById('sendBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="loading-spinner"></span> Sending…';
+
+  const ep = activeEndpoint;
+  const url = BASE_URL + ep.path;
+  const start = performance.now();
+  let response, status, statusText, data;
+
+  try {
+    const opts = { method: ep.method, headers: { 'Content-Type': 'application/json' } };
+    if (ep.method === 'POST') {
+      const body = document.getElementById('editor').value.trim();
+      if (body) {
+        try { JSON.parse(body); } catch (e) {
+          throw new Error('Invalid JSON: ' + e.message);
+        }
+        opts.body = body;
+      }
+    }
+
+    response = await fetch(url, opts);
+    const elapsed = Math.round(performance.now() - start);
+    status = response.status;
+    statusText = response.statusText;
+
+    const text = await response.text();
+    lastResponse = text;
+
+    try {
+      data = JSON.parse(text);
+    } catch {
+      data = text;
+    }
+
+    showResponse(data, status, statusText, elapsed, text.length);
+  } catch (err) {
+    const elapsed = Math.round(performance.now() - start);
+    lastResponse = err.message;
+    showResponse({ error: err.message }, 0, 'Network Error', elapsed, err.message.length);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '▶ Send';
+  }
+}
+
+function showResponse(data, status, statusText, timeMs, sizeBytes) {
+  const meta = document.getElementById('responseMeta');
+  meta.style.display = 'flex';
+
+  // Status
+  const statusEl = document.getElementById('metaStatus');
+  statusEl.textContent = status ? `${status} ${statusText}` : statusText;
+  statusEl.className = 'meta-value ' + (status >= 200 && status < 300 ? 'status-ok' : status >= 400 ? 'status-err' : 'status-warn');
+
+  // Time
+  document.getElementById('metaTime').textContent = `${timeMs}ms`;
+
+  // Size
+  const size = sizeBytes > 1024 ? `${(sizeBytes / 1024).toFixed(1)} KB` : `${sizeBytes} B`;
+  document.getElementById('metaSize').textContent = size;
+
+  // Body
+  const body = document.getElementById('responseBody');
+  if (typeof data === 'string') {
+    body.innerHTML = `<div class="json">${escapeHtml(data)}</div>`;
+  } else {
+    body.innerHTML = `<div class="json">${highlightJSON(data)}</div>`;
+  }
+
+  document.getElementById('copyBtn').style.display = 'inline-flex';
+}
+
+function clearResponse() {
+  document.getElementById('responseMeta').style.display = 'none';
+  document.getElementById('responseBody').innerHTML = `
+    <div class="response-empty">
+      <div class="icon">↩</div>
+      <div>Response will appear here</div>
+    </div>`;
+  document.getElementById('copyBtn').style.display = 'none';
+  lastResponse = '';
+}
+
+function highlightJSON(obj) {
+  const json = JSON.stringify(obj, null, 2);
+  return json.replace(/("(\\.|[^"\\])*")\s*:/g, '<span class="json-key">$1</span><span class="json-colon">:</span>')
+    .replace(/:\s*("(\\.|[^"\\])*")/g, ': <span class="json-string">$1</span>')
+    .replace(/:\s*(-?\d+\.?\d*([eE][+-]?\d+)?)/g, ': <span class="json-number">$1</span>')
+    .replace(/:\s*(true|false)/g, ': <span class="json-boolean">$1</span>')
+    .replace(/:\s*(null)/g, ': <span class="json-null">$1</span>')
+    .replace(/([[\]{}])/g, '<span class="json-bracket">$1</span>');
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function formatJSON() {
+  const editor = document.getElementById('editor');
+  try {
+    const parsed = JSON.parse(editor.value);
+    editor.value = JSON.stringify(parsed, null, 2);
+  } catch (e) {
+    // Try to be helpful
+    alert('Cannot format: invalid JSON.\n' + e.message);
+  }
+}
+
+function resetBody() {
+  if (!activeEndpoint) return;
+  const editor = document.getElementById('editor');
+  if (activeEndpoint.body) {
+    editor.value = JSON.stringify(activeEndpoint.body, null, 2);
+  } else {
+    editor.value = '';
+  }
+}
+
+function copyResponse() {
+  navigator.clipboard.writeText(lastResponse).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+  });
+}
+
+// Sidebar mobile toggle
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('overlay').classList.toggle('open');
+}
+
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+    e.preventDefault();
+    sendRequest();
+  }
+  if ((e.ctrlKey || e.metaKey) && e.key === 'l') {
+    e.preventDefault();
+    formatJSON();
+  }
+});
+
+// Panel resizer
+(function initResizer() {
+  const resizer = document.getElementById('resizer');
+  const reqPanel = document.getElementById('request-panel');
+  const resPanel = document.getElementById('response-panel');
+  let startX, startReqW;
+
+  resizer.addEventListener('mousedown', (e) => {
+    startX = e.clientX;
+    startReqW = reqPanel.getBoundingClientRect().width;
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+    document.body.style.cursor = 'col-resize';
+    document.body.style.userSelect = 'none';
+  });
+
+  function onMove(e) {
+    const delta = e.clientX - startX;
+    const newW = Math.max(200, startReqW + delta);
+    const totalW = reqPanel.parentElement.getBoundingClientRect().width - 4;
+    reqPanel.style.flex = 'none';
+    reqPanel.style.width = newW + 'px';
+    resPanel.style.flex = '1';
+  }
+
+  function onUp() {
+    document.removeEventListener('mousemove', onMove);
+    document.removeEventListener('mouseup', onUp);
+    document.body.style.cursor = '';
+    document.body.style.userSelect = '';
+  }
+})();
+
+// Tab support in textarea
+document.getElementById('editor').addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') {
+    e.preventDefault();
+    const ta = e.target;
+    const start = ta.selectionStart;
+    const end = ta.selectionEnd;
+    ta.value = ta.value.substring(0, start) + '  ' + ta.value.substring(end);
+    ta.selectionStart = ta.selectionEnd = start + 2;
+  }
+});
+
+// Init
+buildNav();
+
+// Auto-select first endpoint on desktop
+if (window.innerWidth > 768) {
+  selectEndpoint('search');
+}
+</script>
+</body>
+</html>
