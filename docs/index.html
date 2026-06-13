@@ -3,269 +3,303 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SuperInstance — Docs</title>
+<title>SuperInstance Docs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
-  :root {
-    --bg: #0a0a0f;
-    --bg-elevated: #12121a;
-    --bg-card: #16161f;
-    --bg-code: #1a1a25;
-    --border: #2a2a3a;
-    --border-light: #3a3a4a;
-    --text: #e4e4ed;
-    --text-muted: #8888a0;
-    --text-dim: #5a5a72;
-    --accent: #00E6D6;
-    --accent-dim: rgba(0, 230, 214, 0.15);
-    --accent-glow: rgba(0, 230, 214, 0.3);
-    --radius: 8px;
-    --radius-lg: 12px;
-    --mono: 'JetBrains Mono', 'Fira Code', monospace;
-    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; min-height: 100vh; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(10,10,15,0.85); backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border);
-    padding: 0 2rem; height: 60px;
-    display: flex; align-items: center; gap: 2rem;
-  }
-  nav .logo {
-    font-family: var(--mono); font-weight: 700; font-size: 1.1rem;
-    color: var(--accent); text-decoration: none; white-space: nowrap;
-  }
-  nav .nav-links { display: flex; gap: 0.25rem; overflow-x: auto; }
-  nav .nav-links a {
-    font-family: var(--mono); font-size: 0.78rem;
-    color: var(--text-muted); text-decoration: none;
-    padding: 0.35rem 0.65rem; border-radius: 6px;
-    white-space: nowrap; transition: all 0.15s;
-  }
-  nav .nav-links a:hover { color: var(--accent); background: var(--accent-dim); }
-  nav .nav-links a.active { color: var(--accent); background: var(--accent-dim); }
+:root {
+  --bg: #0a0a0f;
+  --sidebar-bg: #0d0d14;
+  --card-bg: #12121a;
+  --accent: #00E6D6;
+  --accent-dim: rgba(0,230,214,0.15);
+  --text: #e0e0e8;
+  --text-dim: #8888a0;
+  --border: #1e1e2e;
+  --sidebar-w: 260px;
+  --font-text: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
 
-  .hero {
-    margin-top: 60px; padding: 5rem 2rem 3rem; text-align: center;
-    border-bottom: 1px solid var(--border);
-    background: linear-gradient(180deg, rgba(0,230,214,0.04) 0%, transparent 70%);
-  }
-  .hero h1 {
-    font-family: var(--mono); font-size: 2.8rem; font-weight: 700;
-    letter-spacing: -0.02em; margin-bottom: 0.75rem;
-  }
-  .hero h1 .accent { color: var(--accent); }
-  .hero .tagline {
-    font-size: 1.15rem; color: var(--text-muted);
-    max-width: 640px; margin: 0 auto 2rem;
-  }
-  .hero .install-box {
-    display: inline-flex; align-items: center; gap: 0.75rem;
-    background: var(--bg-card); border: 1px solid var(--border);
-    border-radius: var(--radius-lg); padding: 0.75rem 1.5rem;
-    font-family: var(--mono); font-size: 0.95rem; margin-bottom: 1rem;
-  }
-  .hero .install-box .cmd { color: var(--accent); }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-text); background: var(--bg); color: var(--text); line-height: 1.6; }
 
-  main { max-width: 920px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+/* ── Sidebar ─────────────────────────────────────── */
+.sidebar {
+  position: fixed; top: 0; left: 0; bottom: 0;
+  width: var(--sidebar-w); background: var(--sidebar-bg);
+  border-right: 1px solid var(--border);
+  overflow-y: auto; z-index: 100;
+  padding: 24px 0;
+  transition: transform 0.3s ease;
+}
+.sidebar-logo {
+  padding: 0 20px 20px; font-size: 1.1rem; font-weight: 700;
+  color: var(--accent); font-family: var(--font-mono);
+  border-bottom: 1px solid var(--border); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px;
+}
+.sidebar-logo span { color: var(--text-dim); font-weight: 400; font-size: 0.8rem; }
 
-  .section { margin-bottom: 3rem; scroll-margin-top: 80px; }
-  .section-title {
-    font-family: var(--mono); font-size: 1.4rem; font-weight: 700;
-    margin-bottom: 1.25rem; padding-bottom: 0.75rem;
-    border-bottom: 1px solid var(--border);
-    display: flex; align-items: center; gap: 0.75rem;
-  }
-  .section-title .icon { color: var(--accent); }
+.sidebar-section { padding: 8px 0; }
+.sidebar-section-title {
+  padding: 6px 20px; font-size: 0.7rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+.sidebar a {
+  display: block; padding: 5px 20px 5px 28px;
+  color: var(--text); text-decoration: none;
+  font-size: 0.85rem; border-radius: 0;
+  transition: background 0.15s, color 0.15s;
+}
+.sidebar a:hover, .sidebar a.active {
+  background: var(--accent-dim); color: var(--accent);
+}
+.sidebar a.sub { padding-left: 40px; font-size: 0.8rem; color: var(--text-dim); }
+.sidebar a.sub:hover, .sidebar a.sub.active { color: var(--accent); }
 
-  .card-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1rem;
-  }
-  .card {
-    background: var(--bg-card); border: 1px solid var(--border);
-    border-radius: var(--radius-lg); padding: 1.5rem;
-    transition: border-color 0.2s, transform 0.15s;
-    text-decoration: none; color: inherit; display: block;
-  }
-  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
-  .card .card-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
-  .card .card-title {
-    font-family: var(--mono); font-size: 1rem; font-weight: 600;
-    margin-bottom: 0.5rem; color: var(--text);
-  }
-  .card .card-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
-  .card .card-tag {
-    display: inline-block; margin-top: 0.75rem;
-    font-family: var(--mono); font-size: 0.7rem;
-    padding: 0.2rem 0.6rem; border-radius: 4px;
-    background: var(--accent-dim); color: var(--accent);
-  }
+.sidebar a.hidden { display: none; }
 
-  .note {
-    background: var(--accent-dim); border-left: 3px solid var(--accent);
-    border-radius: 0 var(--radius) var(--radius) 0;
-    padding: 1rem 1.25rem; font-size: 0.9rem; margin: 1.5rem 0;
-  }
-  .note strong { color: var(--accent); }
+/* ── Hamburger ───────────────────────────────────── */
+.hamburger {
+  display: none; position: fixed; top: 14px; left: 14px; z-index: 200;
+  background: var(--card-bg); border: 1px solid var(--border);
+  color: var(--accent); font-size: 1.4rem; cursor: pointer;
+  width: 40px; height: 40px; border-radius: 8px;
+  align-items: center; justify-content: center; line-height: 1;
+}
+.overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 90; }
 
-  pre {
-    background: var(--bg-code); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 1rem 1.25rem;
-    overflow-x: auto; font-family: var(--mono); font-size: 0.82rem;
-    line-height: 1.6;
-  }
+/* ── Main ─────────────────────────────────────────── */
+.main {
+  margin-left: var(--sidebar-w);
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+}
 
-  footer {
-    text-align: center; padding: 3rem 2rem;
-    border-top: 1px solid var(--border);
-    color: var(--text-dim); font-size: 0.85rem;
-  }
-  footer a { color: var(--accent); text-decoration: none; }
+/* ── Search ───────────────────────────────────────── */
+.search-bar {
+  padding: 20px 40px; border-bottom: 1px solid var(--border);
+  background: var(--sidebar-bg);
+}
+.search-bar input {
+  width: 100%; max-width: 560px;
+  background: var(--card-bg); border: 1px solid var(--border);
+  color: var(--text); padding: 10px 16px 10px 40px;
+  border-radius: 8px; font-size: 0.9rem; font-family: var(--font-text);
+  outline: none; transition: border-color 0.2s;
+}
+.search-bar input:focus { border-color: var(--accent); }
+.search-wrap { position: relative; max-width: 560px; }
+.search-wrap .icon {
+  position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+  color: var(--text-dim); font-size: 0.9rem; pointer-events: none;
+}
 
-  @media (max-width: 640px) {
-    nav { padding: 0 1rem; }
-    nav .nav-links { display: none; }
-    .hero h1 { font-size: 1.8rem; }
-    .hero { padding: 3rem 1rem 2rem; }
-    main { padding: 1.5rem 1rem 4rem; }
-  }
+/* ── Content ──────────────────────────────────────── */
+.content { padding: 48px 40px; flex: 1; max-width: 900px; }
+
+.hero { margin-bottom: 48px; }
+.hero h1 {
+  font-size: 2.4rem; font-weight: 700; margin-bottom: 8px;
+  background: linear-gradient(135deg, var(--accent), #6bffc8);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero p { font-size: 1.15rem; color: var(--text-dim); max-width: 520px; }
+
+/* ── Cards Grid ───────────────────────────────────── */
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 48px; }
+.card {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 12px; padding: 24px;
+  text-decoration: none; color: var(--text);
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+.card:hover {
+  border-color: var(--accent); transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0,230,214,0.08);
+}
+.card-icon { font-size: 1.6rem; margin-bottom: 12px; display: block; }
+.card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 6px; }
+.card p { font-size: 0.85rem; color: var(--text-dim); line-height: 1.5; }
+
+/* ── Footer ───────────────────────────────────────── */
+.footer {
+  padding: 24px 40px; border-top: 1px solid var(--border);
+  font-size: 0.8rem; color: var(--text-dim);
+  display: flex; gap: 24px; flex-wrap: wrap; align-items: center;
+}
+.footer a { color: var(--accent); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 860px) {
+  .sidebar { transform: translateX(-100%); }
+  .sidebar.open { transform: translateX(0); }
+  .overlay.open { display: block; }
+  .hamburger { display: flex; }
+  .main { margin-left: 0; }
+  .content { padding: 72px 20px 32px; }
+  .search-bar { padding: 16px 20px; }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .cards { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 1.8rem; }
+}
 </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html" class="logo">superinstance</a>
-  <div class="nav-links">
-    <a href="index.html" class="active">Docs</a>
-    <a href="onboarding.html">Onboarding</a>
-    <a href="architecture.html">Architecture</a>
-    <a href="api.html">API Reference</a>
-    <a href="hello-world.md">Tutorial</a>
+<!-- Hamburger -->
+<button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">⬡ SuperInstance <span>docs</span></div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">Getting Started</div>
+    <a href="onboarding.html" data-label="Quickstart">Quickstart</a>
+    <a href="onboarding.html" data-label="Installation">Installation</a>
+    <a href="hello-world.md" data-label="Hello World">Hello World</a>
   </div>
-</nav>
 
-<section class="hero">
-  <h1><span class="accent">Super</span>Instance</h1>
-  <p class="tagline">Conservation spectral framework for persistent multi-agent AI. Coordinate fleets of agents with spectral resource management and conserved energy budgets.</p>
-  <div class="install-box">
-    <span class="cmd">pip install superinstance</span>
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">Concepts</div>
+    <a href="architecture.html" data-label="Conservation Law">Conservation Law</a>
+    <a href="concepts.html#fleet-model" data-label="Fleet Model">Fleet Model</a>
+    <a href="concepts.html#ternary-computing" data-label="Ternary Computing">Ternary Computing</a>
+    <a href="concepts.html#bottles-protocol" data-label="Bottles Protocol">Bottles Protocol</a>
+    <a href="concepts.html#t-minus-dispatcher" data-label="T-Minus Dispatcher">T-Minus Dispatcher</a>
   </div>
-  <div class="install-box">
-    <span class="cmd">npm i @superinstance/tminus-client</span>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">API Reference</div>
+    <a href="api.html#search" data-label="Search">Search</a>
+    <a href="api.html#similar" data-label="Similar">Similar</a>
+    <a href="api.html#recommend" data-label="Recommend">Recommend</a>
+    <a href="api.html#ingest" data-label="Ingest">Ingest</a>
+    <a href="api.html#stats" data-label="Stats Clusters Dashboard">Stats / Clusters / Dashboard</a>
   </div>
-</section>
 
-<main>
-  <!-- Getting Started -->
-  <section class="section">
-    <h2 class="section-title"><span class="icon">⚡</span> Get Started</h2>
-    <div class="card-grid">
-      <a href="onboarding.html" class="card">
-        <div class="card-icon">🚀</div>
-        <div class="card-title">Onboarding Guide</div>
-        <div class="card-desc">Install the SDK, start a dispatcher, and build your first agent in 5 minutes.</div>
-        <span class="card-tag">beginner</span>
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">SDKs</div>
+    <a href="sdk-nodejs.html" data-label="Node.js tminus-client">Node.js <code style="font-family:var(--font-mono);font-size:0.8em;color:var(--accent)">tminus-client</code></a>
+    <a href="sdk-python.html" data-label="Python fleet SDK">Python <code style="font-family:var(--font-mono);font-size:0.8em;color:var(--accent)">fleet SDK</code></a>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">Examples</div>
+    <a href="playground.html" data-label="API Playground">API Playground</a>
+    <a href="examples.html#react-demo" data-label="React Demo">React Demo</a>
+  </div>
+
+  <div class="sidebar-section">
+    <a href="contributing.html" data-label="Contributing">Contributing</a>
+    <a href="changelog.html" data-label="Changelog">Changelog</a>
+  </div>
+</aside>
+
+<!-- Main -->
+<div class="main">
+  <!-- Search -->
+  <div class="search-bar">
+    <div class="search-wrap">
+      <span class="icon">⌕</span>
+      <input type="text" id="search" placeholder="Search docs…" autocomplete="off">
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="hero">
+      <h1>SuperInstance Docs</h1>
+      <p>Build intelligent fleets that conserve energy. Everything you need to ship fast.</p>
+    </div>
+
+    <div class="cards">
+      <a class="card" href="onboarding.html">
+        <span class="card-icon">🚀</span>
+        <h3>Getting Started</h3>
+        <p>Install, configure, and run your first fleet in under five minutes.</p>
       </a>
-      <a href="hello-world.md" class="card">
-        <div class="card-icon">👋</div>
-        <div class="card-title">Hello World Tutorial</div>
-        <div class="card-desc">Build a two-agent coordination system with Alpha and Beta in under 50 lines each.</div>
-        <span class="card-tag">tutorial</span>
+      <a class="card" href="api.html">
+        <span class="card-icon">⚡</span>
+        <h3>API Reference</h3>
+        <p>Search, similarity, recommendations, ingestion — every endpoint covered.</p>
       </a>
-      <a href="architecture.html" class="card">
-        <div class="card-icon">🏗️</div>
-        <div class="card-title">Core Concepts</div>
-        <div class="card-desc">Understand the t-minus protocol, fleets, bottles, and the conservation law.</div>
-        <span class="card-tag">concepts</span>
+      <a class="card" href="sdk-nodejs.html">
+        <span class="card-icon">📦</span>
+        <h3>SDKs</h3>
+        <p>Node.js and Python clients with full type support and streaming.</p>
+      </a>
+      <a class="card" href="architecture.html">
+        <span class="card-icon">🧠</span>
+        <h3>Concepts</h3>
+        <p>Conservation law, fleet model, ternary computing, and the T-Minus dispatcher.</p>
+      </a>
+      <a class="card" href="playground.html">
+        <span class="card-icon">🧪</span>
+        <h3>Examples</h3>
+        <p>Live API playground and React integration to copy-paste from.</p>
+      </a>
+      <a class="card" href="contributing.html">
+        <span class="card-icon">🤝</span>
+        <h3>Contributing</h3>
+        <p>Open source guide — PRs, issues, style conventions, and release process.</p>
       </a>
     </div>
-  </section>
+  </div>
 
-  <!-- API -->
-  <section class="section">
-    <h2 class="section-title"><span class="icon">📡</span> API &amp; Reference</h2>
-    <div class="card-grid">
-      <a href="api.html" class="card">
-        <div class="card-icon">🔌</div>
-        <div class="card-title">Fleet Vector API</div>
-        <div class="card-desc">Semantic crate search, similarity, recommendations, gap analysis, and dashboard endpoints.</div>
-        <span class="card-tag">REST API</span>
-      </a>
-      <a href="openapi.yaml" class="card">
-        <div class="card-icon">📜</div>
-        <div class="card-title">OpenAPI Spec</div>
-        <div class="card-desc">Full OpenAPI 3.1 specification for the Fleet Vector API. Import into any client generator.</div>
-        <span class="card-tag">yaml</span>
-      </a>
-    </div>
-  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <span>© 2026 SuperInstance</span>
+    <a href="https://github.com/superinstance">GitHub</a>
+    <a href="https://www.npmjs.com/~superinstance">npm</a>
+    <a href="https://fleet-vector-api.casey-digennaro.workers.dev/stats">API Status</a>
+  </footer>
+</div>
 
-  <!-- Quick Examples -->
-  <section class="section">
-    <h2 class="section-title"><span class="icon">💻</span> Quick Examples</h2>
+<script>
+// ── Sidebar toggle (mobile) ──
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('overlay').classList.toggle('open');
+}
 
-    <div class="note">
-      <strong>Python SDK</strong> — Create an agent with persistent memory and spectral fleet coordination.
-    </div>
-    <pre>from superinstance.agent import Agent, AgentConfig
-from superinstance.fleet import Fleet
+// ── Search filter ──
+const searchInput = document.getElementById('search');
+const sidebarLinks = document.querySelectorAll('.sidebar a[data-label]');
+const sections = document.querySelectorAll('.sidebar-section');
 
-agent = Agent(AgentConfig(name="researcher", model="gpt-4"))
-agent.remember("User prefers concise summaries")
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.toLowerCase().trim();
 
-fleet = Fleet(name="analysis-team")
-fleet.add_agent(agent)
-result = fleet.dispatch("Analyze this dataset")
-print(result)</pre>
+  sidebarLinks.forEach(link => {
+    const label = link.getAttribute('data-label').toLowerCase();
+    link.classList.toggle('hidden', q !== '' && !label.includes(q));
+  });
 
-    <div class="note" style="margin-top: 1.5rem">
-      <strong>Node.js SDK</strong> — Two agents coordinating through the t-minus dispatcher.
-    </div>
-    <pre>import { TminusClient } from "@superinstance/tminus-client";
+  // Hide section titles if all links in that section are hidden
+  sections.forEach(sec => {
+    const links = sec.querySelectorAll('a[data-label]');
+    const anyVisible = [...links].some(l => !l.classList.contains('hidden'));
+    sec.style.display = anyVisible ? '' : 'none';
+  });
+});
 
-const client = new TminusClient("ws://localhost:8765");
-await client.connect();
-await client.register("alpha", { timbre: "direct" });
-await client.subscribe("hello");
-await client.cue("beta", 0, "hello", { task: "greet" });</pre>
-  </section>
-
-  <!-- Architecture -->
-  <section class="section">
-    <h2 class="section-title"><span class="icon">🧭</span> How It Works</h2>
-    <div class="card-grid">
-      <a href="architecture.html" class="card">
-        <div class="card-icon">⏱️</div>
-        <div class="card-title">T-Minus Protocol</div>
-        <div class="card-desc">Temporal cueing with offsets. Negative offsets give head starts, positive create countdowns. Zero is immediate.</div>
-      </a>
-      <a href="architecture.html" class="card">
-        <div class="card-icon">🛳️</div>
-        <div class="card-title">Fleet &amp; Vessels</div>
-        <div class="card-desc">Groups of agents coordinated through a central dispatcher with spectral load balancing.</div>
-      </a>
-      <a href="architecture.html" class="card">
-        <div class="card-icon">🍶</div>
-        <div class="card-title">Bottles</div>
-        <div class="card-desc">Encapsulated message containers that preserve state across agent handoffs.</div>
-      </a>
-      <a href="architecture.html" class="card">
-        <div class="card-icon">⚖️</div>
-        <div class="card-title">Conservation Law</div>
-        <div class="card-desc">Total fleet resources are conserved. Spectral eigenvalues track balance and trigger rebalancing.</div>
-      </a>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <p>SuperInstance &mdash; <a href="https://superinstance.ai">superinstance.ai</a></p>
-</footer>
-
+// ── Active link highlight ──
+const current = location.pathname.split('/').pop() || 'index.html';
+sidebarLinks.forEach(link => {
+  const href = link.getAttribute('href').split('#')[0];
+  if (href === current) link.classList.add('active');
+});
+</script>
 </body>
 </html>
