@@ -1,6 +1,34 @@
 # SuperInstance
 
-> Conservation spectral framework: persistent multi-agent AI with spectral resource management
+<!-- badges -->
+<a href="docs/status.html"><img src="https://img.shields.io/badge/API-operational-00E6D6?style=flat-square&labelColor=0a0a0f" alt="API Status"></a>
+<a href="https://www.npmjs.com/package/@superinstance/tminus-client"><img src="https://img.shields.io/badge/npm-%40superinstance%2Ftminus--client-0a0a0f?style=flat-square&logo=npm&logoColor=white&labelColor=0a0a0f" alt="npm"></a>
+<a href="docs/index.html"><img src="https://img.shields.io/badge/docs-live-00E6D6?style=flat-square&labelColor=0a0a0f" alt="Docs"></a>
+<img src="https://img.shields.io/badge/license-MIT-00E6D6?style=flat-square&labelColor=0a0a0f" alt="License">
+
+> Conservation spectral framework: persistent multi-agent AI with spectral resource management.
+> Ship fleets of coordinated agents with enforced resource conservation and spectral load balancing.
+
+## 🚀 Getting Started
+
+Install the SDK in your language of choice:
+
+```bash
+# Node.js
+npm install @superinstance/tminus-client
+
+# Python
+pip install superinstance
+
+# cURL (one-liner dispatch)
+curl -X POST https://api.superinstance.dev/v1/dispatch \
+  -H "Authorization: Bearer $SI_TOKEN" \
+  -d '{"task": "analyze", "fleet": "default"}'
+```
+
+📖 **[Full documentation →](docs/index.html)**
+
+---
 
 ## ⚡ Quick Start
 

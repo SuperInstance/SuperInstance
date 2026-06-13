@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Signal Lost | SuperInstance</title>
+<link rel="icon" href="https://superinstance-assets.casey-digennaro.workers.dev/favicon.svg" type="image/svg+xml">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #0a0a0f;
+    --bg-subtle: #0f0f18;
+    --accent: #00E6D6;
+    --accent-dim: #00E6D644;
+    --text: #c8c8d4;
+    --text-muted: #6b6b80;
+    --card: #12121c;
+    --border: #1e1e2e;
+  }
+
+  html { font-size: 16px; }
+
+  body {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 60px 60px;
+    opacity: 0.3;
+    animation: gridDrift 20s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  @keyframes gridDrift {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(60px, 60px); }
+  }
+
+  /* Scanline overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 230, 214, 0.015) 2px,
+      rgba(0, 230, 214, 0.015) 4px
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+  }
+
+  /* 404 glitch */
+  .glitch-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .glitch {
+    font-size: 8rem;
+    font-weight: 700;
+    color: var(--accent);
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 20px var(--accent-dim);
+  }
+
+  .glitch::before,
+  .glitch::after {
+    content: '404';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .glitch::before {
+    color: #ff0040;
+    animation: glitch1 3s infinite linear alternate-reverse;
+    clip-path: inset(0 0 60% 0);
+  }
+
+  .glitch::after {
+    color: #00aaff;
+    animation: glitch2 2.5s infinite linear alternate-reverse;
+    clip-path: inset(60% 0 0 0);
+  }
+
+  @keyframes glitch1 {
+    0%, 85% { transform: translate(0); }
+    86% { transform: translate(-4px, -2px); }
+    88% { transform: translate(4px, 2px); }
+    90% { transform: translate(-2px, 1px); }
+    92% { transform: translate(0); }
+    94% { transform: translate(3px, -1px); }
+    96% { transform: translate(-1px, 2px); }
+    100% { transform: translate(0); }
+  }
+
+  @keyframes glitch2 {
+    0%, 80% { transform: translate(0); }
+    82% { transform: translate(3px, 1px); }
+    84% { transform: translate(-3px, -1px); }
+    86% { transform: translate(0); }
+    88% { transform: translate(2px, -2px); }
+    90% { transform: translate(-2px, 2px); }
+    92% { transform: translate(0); }
+    100% { transform: translate(1px, -1px); }
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .subtitle strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* Ship SVG */
+  .ship-container {
+    margin: 0 auto 2.5rem;
+    width: 120px;
+    height: 80px;
+    animation: drift 6s ease-in-out infinite;
+    opacity: 0.7;
+  }
+
+  @keyframes drift {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(8px, -4px) rotate(2deg); }
+    50% { transform: translate(-3px, -8px) rotate(-1deg); }
+    75% { transform: translate(5px, -2px) rotate(1.5deg); }
+  }
+
+  /* Search */
+  .search-box {
+    display: flex;
+    gap: 0;
+    max-width: 420px;
+    margin: 0 auto 2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--card);
+    transition: border-color 0.2s;
+  }
+
+  .search-box:focus-within {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-dim);
+  }
+
+  .search-box input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    outline: none;
+  }
+
+  .search-box input::placeholder {
+    color: var(--text-muted);
+  }
+
+  .search-box button {
+    padding: 0.75rem 1.25rem;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .search-box button:hover {
+    opacity: 0.85;
+  }
+
+  /* Return button */
+  .return-btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    margin-bottom: 2.5rem;
+  }
+
+  .return-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  /* Popular links */
+  .popular-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .popular-links a {
+    padding: 0.4rem 0.9rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.78rem;
+    transition: all 0.2s;
+  }
+
+  .popular-links a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    .glitch { font-size: 5rem; }
+    .subtitle { font-size: 0.95rem; }
+    .container { padding: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="glitch-wrapper">
+      <div class="glitch">404</div>
+    </div>
+
+    <p class="subtitle">
+      <strong>Signal lost.</strong> This route doesn't exist in the fleet.
+    </p>
+
+    <!-- Drifting ship -->
+    <div class="ship-container">
+      <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+        <!-- Ship body -->
+        <path d="M60 10 L80 50 L75 55 L65 55 L65 70 L55 70 L55 55 L45 55 L40 50 Z"
+              fill="none" stroke="#00E6D6" stroke-width="1.5" opacity="0.9"/>
+        <!-- Window -->
+        <circle cx="60" cy="30" r="5" fill="none" stroke="#00E6D6" stroke-width="1" opacity="0.7"/>
+        <!-- Engine glow -->
+        <ellipse cx="60" cy="72" rx="6" ry="3" fill="#00E6D6" opacity="0.3">
+          <animate attributeName="opacity" values="0.2;0.5;0.2" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="rx" values="5;8;5" dur="2s" repeatCount="indefinite"/>
+        </ellipse>
+        <!-- Signal waves -->
+        <path d="M20 40 Q30 30 20 20" fill="none" stroke="#00E6D6" stroke-width="0.8" opacity="0.3">
+          <animate attributeName="opacity" values="0;0.4;0" dur="3s" repeatCount="indefinite"/>
+        </path>
+        <path d="M15 45 Q28 30 15 15" fill="none" stroke="#00E6D6" stroke-width="0.8" opacity="0.2">
+          <animate attributeName="opacity" values="0;0.3;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+        </path>
+        <!-- Stars -->
+        <circle cx="10" cy="15" r="1" fill="#fff" opacity="0.4"/>
+        <circle cx="105" cy="25" r="1" fill="#fff" opacity="0.3"/>
+        <circle cx="95" cy="65" r="0.8" fill="#fff" opacity="0.25"/>
+        <circle cx="25" cy="60" r="0.7" fill="#fff" opacity="0.3"/>
+      </svg>
+    </div>
+
+    <a href="index.html" class="return-btn">↩ Return to Base</a>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search the docs..." autocomplete="off">
+      <button onclick="doSearch()">Search</button>
+    </div>
+
+    <p class="label">Popular Destinations</p>
+    <div class="popular-links">
+      <a href="api.html">API Reference</a>
+      <a href="Getting-Started.html">Quickstart</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="playground.html">Playground</a>
+    </div>
+  </div>
+
+  <script>
+    function doSearch() {
+      const q = document.getElementById('searchInput').value.trim();
+      if (q) window.location.href = 'index.html?search=' + encodeURIComponent(q);
+    }
+    document.getElementById('searchInput').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') doSearch();
+    });
+  </script>
+</body>
+</html>
