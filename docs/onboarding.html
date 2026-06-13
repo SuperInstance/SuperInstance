@@ -32,7 +32,7 @@
   nav .nav-links a:hover, nav .nav-links a.active { color: var(--accent); background: var(--accent-dim); }
 
   .page-header {
-    margin-top: 60px; padding: 3rem 2rem 2rem; border-bottom: 1px solid var(--border);
+    margin-top: 52px; padding: 3rem 2rem 2rem; border-bottom: 1px solid var(--border);
     background: linear-gradient(180deg, rgba(0,230,214,0.04) 0%, transparent 70%);
   }
   .page-header h1 { font-family: var(--mono); font-size: 2rem; margin-bottom: 0.5rem; }
@@ -85,18 +85,62 @@
     nav { padding: 0 1rem; } nav .nav-links { display: none; }
     main { padding: 1.5rem 1rem 4rem; }
   }
+
+  /* Unified Top Nav */
+  .top-nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(10,10,15,0.92); backdrop-filter: blur(16px);
+    border-bottom: 1px solid #1a1a2e; height: 52px;
+    display: flex; align-items: center; padding: 0 1.5rem; gap: 1.5rem;
+  }
+  .top-nav .nav-logo {
+    font-family: 'JetBrains Mono', monospace; font-weight: 700;
+    color: #00E6D6; text-decoration: none; font-size: 1rem;
+  }
+  .top-nav .nav-links { display: flex; gap: 0.25rem; }
+  .top-nav .nav-links a {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+    color: #888; text-decoration: none; padding: 0.35rem 0.65rem;
+    border-radius: 6px; transition: all 0.15s;
+  }
+  .top-nav .nav-links a:hover, .top-nav .nav-links a.active {
+    color: #00E6D6; background: rgba(0,230,214,0.15);
+  }
+  .top-nav .nav-links a svg { vertical-align: middle; }
+  @media (max-width: 640px) {
+    .top-nav { padding: 0 0.75rem; gap: 0.5rem; }
+    .top-nav .nav-links { gap: 0; }
+    .top-nav .nav-links a { padding: 0.35rem 0.4rem; font-size: 0.7rem; }
+  }
+  /* Breadcrumb */
+  .breadcrumb {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+    color: #888; display: flex; gap: 0.5rem; align-items: center;
+  }
+  .breadcrumb a { color: #00E6D6; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb .sep { color: #1a1a2e; }
+  /* Unified Footer */
+  .site-footer {
+    padding: 1.5rem 2rem; border-top: 1px solid #1a1a2e;
+    font-size: 0.8rem; color: #888;
+    display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;
+  }
+  .site-footer a { color: #00E6D6; text-decoration: none; }
+  .site-footer a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html" class="logo">superinstance</a>
+<!-- Unified Top Nav -->
+<nav class="top-nav">
+  <a href="index.html" class="nav-logo">⬡ SuperInstance</a>
   <div class="nav-links">
     <a href="index.html">Docs</a>
-    <a href="onboarding.html" class="active">Onboarding</a>
-    <a href="architecture.html">Architecture</a>
-    <a href="api.html">API Reference</a>
-    <a href="hello-world.md">Tutorial</a>
+    <a href="api.html">API</a>
+    <a href="playground.html">Playground</a>
+    <a href="status.html">Status</a>
+    <a href="https://github.com/superinstance" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
   </div>
 </nav>
 
@@ -104,6 +148,7 @@
   <h1>🚀 Onboarding Guide</h1>
   <p>Install the SDK, start a dispatcher, and build your first agent in 5 minutes.</p>
 </section>
+<div class="breadcrumb"><a href="index.html">Docs</a> <span class="sep">›</span> Getting Started</div>
 
 <main>
 
@@ -208,8 +253,12 @@ curl https://fleet-vector-api.casey-digennaro.workers.dev/stats</pre>
 
 </main>
 
-<footer>
-  <p>SuperInstance &mdash; <a href="https://superinstance.ai">superinstance.ai</a></p>
+<!-- Unified Footer -->
+<footer class="site-footer">
+  <span>© 2026 SuperInstance</span>
+  <a href="https://github.com/superinstance">GitHub</a>
+  <a href="https://www.npmjs.com/~superinstance">npm</a>
+  <a href="status.html">API Status</a>
 </footer>
 
 </body>

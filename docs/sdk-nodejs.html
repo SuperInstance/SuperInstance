@@ -4,10 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Node.js SDK — SuperInstance Docs</title>
-<meta name="description" content="SuperInstance — Build intelligent agent fleets. Documentation, API reference, and SDKs.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700</title>
-<meta name="description" content="SuperInstance — Build intelligent agent fleets. Documentation, API reference, and SDKs.">display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="https://superinstance-assets.casey-digennaro.workers.dev/favicon.svg">
 <style>
   :root { --bg: #0a0a0f; --surface: #12121a; --border: #1e1e2e; --accent: #00E6D6; --text: #e0e0e8; --muted: #8888a0; --code-bg: #0e0e16; }
@@ -37,11 +35,67 @@
   td code { font-size: .82rem; }
   .kw { color: #c792ea; } .str { color: #c3e88d; } .fn { color: #82aaff; } .cm { color: #546e7a; } .tp { color: #ffcb6b; } .num { color: #f78c6c; }
   @media (max-width: 640px) { .container { padding: 1rem; } h1 { font-size: 1.5rem; } pre { padding: .8rem; font-size: .82rem; } }
+
+  /* Unified Top Nav */
+  .top-nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(10,10,15,0.92); backdrop-filter: blur(16px);
+    border-bottom: 1px solid #1a1a2e; height: 52px;
+    display: flex; align-items: center; padding: 0 1.5rem; gap: 1.5rem;
+  }
+  .top-nav .nav-logo {
+    font-family: 'JetBrains Mono', monospace; font-weight: 700;
+    color: #00E6D6; text-decoration: none; font-size: 1rem;
+  }
+  .top-nav .nav-links { display: flex; gap: 0.25rem; }
+  .top-nav .nav-links a {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+    color: #888; text-decoration: none; padding: 0.35rem 0.65rem;
+    border-radius: 6px; transition: all 0.15s;
+  }
+  .top-nav .nav-links a:hover, .top-nav .nav-links a.active {
+    color: #00E6D6; background: rgba(0,230,214,0.15);
+  }
+  .top-nav .nav-links a svg { vertical-align: middle; }
+  @media (max-width: 640px) {
+    .top-nav { padding: 0 0.75rem; gap: 0.5rem; }
+    .top-nav .nav-links { gap: 0; }
+    .top-nav .nav-links a { padding: 0.35rem 0.4rem; font-size: 0.7rem; }
+  }
+  /* Breadcrumb */
+  .breadcrumb {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+    color: #888; display: flex; gap: 0.5rem; align-items: center;
+  }
+  .breadcrumb a { color: #00E6D6; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb .sep { color: #1a1a2e; }
+  /* Unified Footer */
+  .site-footer {
+    padding: 1.5rem 2rem; border-top: 1px solid #1a1a2e;
+    font-size: 0.8rem; color: #888;
+    display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;
+  }
+  .site-footer a { color: #00E6D6; text-decoration: none; }
+  .site-footer a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
+<!-- Unified Top Nav -->
+<nav class="top-nav">
+  <a href="index.html" class="nav-logo">⬡ SuperInstance</a>
+  <div class="nav-links">
+    <a href="index.html">Docs</a>
+    <a href="api.html">API</a>
+    <a href="playground.html">Playground</a>
+    <a href="status.html">Status</a>
+    <a href="https://github.com/superinstance" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+  </div>
+</nav>
+<div class="page-wrapper" style="padding-top:52px">
+  <div class="breadcrumb"><a href="index.html">Docs</a> <span class="sep">›</span> SDKs <span class="sep">›</span> Node.js SDK</div>
+
 <div class="container">
-  <a class="back" href="index.html">← Back to Docs</a>
   <h1>Node.js SDK <span>Quickstart</span></h1>
   <p class="subtitle">@superinstance/tminus-client — Semantic crate discovery for your Node.js projects</p>
 
@@ -194,5 +248,14 @@ function copyCode(btn) {
   });
 }
 </script>
+
+<!-- Unified Footer -->
+<footer class="site-footer">
+  <span>© 2026 SuperInstance</span>
+  <a href="https://github.com/superinstance">GitHub</a>
+  <a href="https://www.npmjs.com/~superinstance">npm</a>
+  <a href="status.html">API Status</a>
+</footer>
+</div>
 </body>
 </html>
