@@ -1,394 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Python SDK Quickstart — T-Minus</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #0a0a0f;
-      --bg-card: #12121a;
-      --bg-code: #0e0e16;
-      --accent: #00E6D6;
-      --accent-dim: rgba(0,230,214,0.12);
-      --text: #e0e0e8;
-      --text-muted: #8888a0;
-      --border: #1e1e2e;
-      --font-body: 'Inter', system-ui, sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
-    }
-    html { scroll-behavior: smooth; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--font-body);
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
-
-    .back-link {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      font-size: 0.85rem; color: var(--text-muted); margin-bottom: 2rem;
-    }
-    .back-link:hover { color: var(--accent); }
-
-    .page-title {
-      font-size: 2.2rem; font-weight: 700; margin-bottom: 0.4rem;
-      background: linear-gradient(135deg, var(--accent), #6ee7b7);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    .page-subtitle { color: var(--text-muted); margin-bottom: 2.5rem; font-size: 1.05rem; }
-
-    .badge {
-      display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px;
-      background: var(--accent-dim); color: var(--accent); font-size: 0.75rem;
-      font-family: var(--font-mono); font-weight: 500; margin-left: 0.5rem;
-      vertical-align: middle;
-    }
-
-    h2 {
-      font-size: 1.4rem; font-weight: 600; margin: 2.5rem 0 1rem;
-      padding-bottom: 0.4rem; border-bottom: 1px solid var(--border);
-    }
-    h2:first-of-type { margin-top: 0; }
-    h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.6rem; color: var(--accent); }
-    p { margin-bottom: 0.8rem; }
-
-    .code-block {
-      position: relative; margin: 0.8rem 0 1.4rem; border-radius: 8px;
-      background: var(--bg-code); border: 1px solid var(--border); overflow: hidden;
-    }
-    .code-header {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0.5rem 1rem; background: rgba(255,255,255,0.03);
-      border-bottom: 1px solid var(--border);
-    }
-    .code-lang {
-      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);
-      text-transform: uppercase; letter-spacing: 0.5px;
-    }
-    .copy-btn {
-      background: none; border: 1px solid var(--border); border-radius: 4px;
-      color: var(--text-muted); cursor: pointer; font-size: 0.72rem;
-      font-family: var(--font-mono); padding: 0.2rem 0.5rem; transition: all 0.2s;
-    }
-    .copy-btn:hover { color: var(--accent); border-color: var(--accent); }
-    .copy-btn.copied { color: #4ade80; border-color: #4ade80; }
-    pre {
-      padding: 1rem 1.2rem; overflow-x: auto; font-family: var(--font-mono);
-      font-size: 0.85rem; line-height: 1.65; color: #c0c0d8;
-    }
-    .kw { color: #c792ea; }
-    .str { color: #c3e88d; }
-    .fn { color: #82aaff; }
-    .cm { color: #546e7a; }
-    .op { color: #89ddff; }
-    .num { color: #f78c6c; }
-    .type { color: #ffcb6b; }
-
-    .method-card {
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 8px; padding: 1.2rem 1.4rem; margin: 0.8rem 0 1.2rem;
-    }
-    .method-sig {
-      font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent);
-      margin-bottom: 0.6rem;
-    }
-    .method-desc { color: var(--text-muted); margin-bottom: 0.8rem; font-size: 0.92rem; }
-    .param-table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; }
-    .param-table th {
-      text-align: left; font-size: 0.75rem; text-transform: uppercase;
-      color: var(--text-muted); padding: 0.3rem 0.8rem; border-bottom: 1px solid var(--border);
-    }
-    .param-table td {
-      padding: 0.4rem 0.8rem; font-size: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.03);
-    }
-    .param-table code {
-      font-family: var(--font-mono); color: #ffcb6b; font-size: 0.82rem;
-    }
-
-    code {
-      font-family: var(--font-mono); background: var(--accent-dim);
-      padding: 0.15rem 0.4rem; border-radius: 3px; font-size: 0.88em;
-      color: var(--accent);
-    }
-    pre code { background: none; padding: 0; font-size: inherit; color: inherit; }
-
-    @media (max-width: 640px) {
-      .container { padding: 1.2rem 1rem 3rem; }
-      .page-title { font-size: 1.6rem; }
-      pre { font-size: 0.78rem; padding: 0.8rem; }
-      .param-table { font-size: 0.8rem; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python SDK — SuperInstance Docs</title>
+<style>
+  :root { --bg: #0a0a0f; --surface: #12121a; --border: #1e1e2e; --accent: #00E6D6; --text: #e0e0e8; --muted: #8888a0; --code-bg: #0e0e16; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .back { display: inline-block; margin-bottom: 1.5rem; font-size: .9rem; color: var(--muted); }
+  .back:hover { color: var(--accent); }
+  h1 { font-size: 2rem; margin-bottom: .5rem; }
+  h1 span { color: var(--accent); }
+  .subtitle { color: var(--muted); margin-bottom: 2.5rem; }
+  h2 { font-size: 1.35rem; margin: 2.5rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: .4rem; }
+  h3 { font-size: 1.1rem; margin: 1.5rem 0 .5rem; color: var(--accent); }
+  p { margin-bottom: 1rem; }
+  pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; overflow-x: auto; position: relative; margin-bottom: 1.2rem; }
+  code { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; font-size: .88rem; }
+  pre code { color: #c8c8d8; }
+  :not(pre) > code { background: var(--code-bg); padding: .15em .4em; border-radius: 4px; font-size: .88rem; }
+  .copy-btn { position: absolute; top: .6rem; right: .6rem; background: var(--border); color: var(--muted); border: none; border-radius: 4px; padding: .3rem .6rem; font-size: .75rem; cursor: pointer; font-family: inherit; transition: all .15s; }
+  .copy-btn:hover { background: var(--accent); color: var(--bg); }
+  .copy-btn.copied { background: var(--accent); color: var(--bg); }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 1.2rem; }
+  th, td { text-align: left; padding: .6rem .8rem; border-bottom: 1px solid var(--border); }
+  th { color: var(--accent); font-weight: 600; font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; }
+  td { font-size: .92rem; }
+  td code { font-size: .82rem; }
+  .kw { color: #c792ea; } .str { color: #c3e88d; } .fn { color: #82aaff; } .cm { color: #546e7a; } .tp { color: #ffcb6b; } .num { color: #f78c6c; } .dec { color: #89ddff; }
+  @media (max-width: 640px) { .container { padding: 1rem; } h1 { font-size: 1.5rem; } pre { padding: .8rem; font-size: .82rem; } }
+</style>
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back-link">← Back to Docs</a>
+<div class="container">
+  <a class="back" href="index.html">← Back to Docs</a>
+  <h1>Python SDK <span>Quickstart</span></h1>
+  <p class="subtitle">superinstance-fleet — Semantic crate discovery for your Python projects</p>
 
-    <h1 class="page-title">Python SDK <span class="badge">v1.x</span></h1>
-    <p class="page-subtitle">Quickstart guide for <code>superinstance-fleet</code> — search, discover, and integrate crates from the T-Minus index.</p>
+  <!-- Installation -->
+  <h2>Installation</h2>
+  <pre><code>pip install superinstance-fleet</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+  <p>Requires Python 3.8+. Uses <code>httpx</code> for async HTTP under the hood.</p>
 
-    <!-- Installation -->
-    <h2 id="installation">Installation</h2>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">bash</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code>pip install superinstance-fleet</code></pre>
-    </div>
-    <p>Or with Poetry:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">bash</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code>poetry add superinstance-fleet</code></pre>
-    </div>
+  <!-- Quick Start -->
+  <h2>Quick Start</h2>
+  <pre><code><span class="kw">from</span> superinstance_fleet <span class="kw">import</span> FleetClient
 
-    <!-- Quick Start -->
-    <h2 id="quick-start">Quick Start</h2>
-    <p>Minimal working example — search, find similar crates, and get AI-powered recommendations:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">python</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code><span class="kw">from</span> superinstance_fleet <span class="kw">import</span> FleetClient
-
-client = <span class="type">FleetClient</span>()
-
-<span class="cm"># Search the crate index</span>
-results = client.<span class="fn">search</span>(<span class="str">"actor concurrency"</span>, top_k=<span class="num">5</span>)
-<span class="kw">for</span> r <span class="kw">in</span> results:
-    <span class="fn">print</span>(<span class="str">f"  {r.name} (score: {r.score:.3f})"</span>)
-
-<span class="cm"># Find similar crates</span>
-similar = client.<span class="fn">similar</span>(<span class="str">"ternary-core"</span>)
-
-<span class="cm"># Get recommendations</span>
-recs = client.<span class="fn">recommend</span>(
-    context=<span class="str">"I need error handling for async operations"</span>,
-    top_k=<span class="num">5</span>,
-)</code></pre>
-    </div>
-
-    <!-- API Reference -->
-    <h2 id="api-reference">API Reference</h2>
-
-    <h3><code>search(query, **kwargs)</code></h3>
-    <div class="method-card">
-      <div class="method-sig">search(query: str, *, top_k: int = 10, threshold: float = 0.5, namespace: str = "default") → list[SearchResult]</div>
-      <p class="method-desc">Perform a semantic search across the entire crate index. Returns ranked results matching the query.</p>
-      <table class="param-table">
-        <thead><tr><th>Param</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
-        <tbody>
-          <tr><td><code>query</code></td><td>str</td><td>—</td><td>Search query (natural language)</td></tr>
-          <tr><td><code>top_k</code></td><td>int</td><td>10</td><td>Max results to return</td></tr>
-          <tr><td><code>threshold</code></td><td>float</td><td>0.5</td><td>Minimum similarity score (0–1)</td></tr>
-          <tr><td><code>namespace</code></td><td>str</td><td>"default"</td><td>Vectorize namespace to search</td></tr>
-        </tbody>
-      </table>
-      <div class="code-block" style="margin-top: 0.8rem;">
-        <div class="code-header">
-          <span class="code-lang">python</span>
-          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-        </div>
-        <pre><code>results = client.<span class="fn">search</span>(<span class="str">"http client"</span>, top_k=<span class="num">5</span>, threshold=<span class="num">0.7</span>)
-<span class="kw">for</span> r <span class="kw">in</span> results:
-    <span class="fn">print</span>(r.name, r.score)</code></pre>
-      </div>
-    </div>
-
-    <h3><code>similar(name, **kwargs)</code></h3>
-    <div class="method-card">
-      <div class="method-sig">similar(name: str, *, top_k: int = 10, exclude_self: bool = True) → list[SearchResult]</div>
-      <p class="method-desc">Find crates similar to a known crate by name. Uses the crate's embedding as the query vector.</p>
-      <table class="param-table">
-        <thead><tr><th>Param</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
-        <tbody>
-          <tr><td><code>name</code></td><td>str</td><td>—</td><td>Exact crate name to find similar crates for</td></tr>
-          <tr><td><code>top_k</code></td><td>int</td><td>10</td><td>Max results to return</td></tr>
-          <tr><td><code>exclude_self</code></td><td>bool</td><td>True</td><td>Exclude the source crate from results</td></tr>
-        </tbody>
-      </table>
-      <div class="code-block" style="margin-top: 0.8rem;">
-        <div class="code-header">
-          <span class="code-lang">python</span>
-          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-        </div>
-        <pre><code>similar = client.<span class="fn">similar</span>(<span class="str">"ternary-core"</span>, top_k=<span class="num">3</span>)
-<span class="kw">for</span> r <span class="kw">in</span> similar:
-    <span class="fn">print</span>(<span class="str">f"  {r.name} ({r.score:.3f})"</span>)</code></pre>
-      </div>
-    </div>
-
-    <h3><code>recommend(**kwargs)</code></h3>
-    <div class="method-card">
-      <div class="method-sig">recommend(*, context: str, top_k: int = 5, exclude: list[str] | None = None) → list[SearchResult]</div>
-      <p class="method-desc">Get AI-powered crate recommendations based on a natural language description of your needs.</p>
-      <table class="param-table">
-        <thead><tr><th>Param</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
-        <tbody>
-          <tr><td><code>context</code></td><td>str</td><td>—</td><td>Description of what you're looking for</td></tr>
-          <tr><td><code>top_k</code></td><td>int</td><td>5</td><td>Max recommendations to return</td></tr>
-          <tr><td><code>exclude</code></td><td>list[str]</td><td>None</td><td>Crate names to exclude</td></tr>
-        </tbody>
-      </table>
-      <div class="code-block" style="margin-top: 0.8rem;">
-        <div class="code-header">
-          <span class="code-lang">python</span>
-          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-        </div>
-        <pre><code>recs = client.<span class="fn">recommend</span>(
-    context=<span class="str">"WebSocket server with rooms"</span>,
-    top_k=<span class="num">5</span>,
-    exclude=[<span class="str">"websockets"</span>],
-)</code></pre>
-      </div>
-    </div>
-
-    <h3><code>stats()</code></h3>
-    <div class="method-card">
-      <div class="method-sig">stats() → IndexStats</div>
-      <p class="method-desc">Return index metadata — total vectors, dimensions, and namespace info.</p>
-      <div class="code-block" style="margin-top: 0.6rem;">
-        <div class="code-header">
-          <span class="code-lang">python</span>
-          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-        </div>
-        <pre><code>info = client.<span class="fn">stats</span>()
-<span class="fn">print</span>(<span class="str">f"Index has {info.total_vectors} vectors ({info.dimensions}d)"</span>)</code></pre>
-      </div>
-    </div>
-
-    <!-- Configuration -->
-    <h2 id="configuration">Configuration</h2>
-    <p>Pass options to the constructor to customize behavior:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">python</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code><span class="kw">from</span> superinstance_fleet <span class="kw">import</span> FleetClient
-
-client = <span class="type">FleetClient</span>(
+client = FleetClient(
     base_url=<span class="str">"https://fleet-vector-api.casey-digennaro.workers.dev"</span>,
-    timeout=<span class="num">5.0</span>,           <span class="cm"># Request timeout in seconds</span>
-    retries=<span class="num">2</span>,              <span class="cm"># Retry count on transient failures</span>
-    namespace=<span class="str">"default"</span>,    <span class="cm"># Default Vectorize namespace</span>
-)</code></pre>
-    </div>
-
-    <table class="param-table" style="margin-bottom: 1rem;">
-      <thead><tr><th>Option</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
-      <tbody>
-        <tr><td><code>base_url</code></td><td>str</td><td>production URL</td><td>API endpoint base URL</td></tr>
-        <tr><td><code>timeout</code></td><td>float</td><td>10.0</td><td>HTTP request timeout (seconds)</td></tr>
-        <tr><td><code>retries</code></td><td>int</td><td>1</td><td>Retry attempts for 5xx / network errors</td></tr>
-        <tr><td><code>namespace</code></td><td>str</td><td>"default"</td><td>Default Vectorize namespace</td></tr>
-      </tbody>
-    </table>
-
-    <!-- Error Handling -->
-    <h2 id="error-handling">Error Handling</h2>
-    <p>All errors inherit from <code>FleetError</code> with specific exception subclasses:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">python</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code><span class="kw">from</span> superinstance_fleet <span class="kw">import</span> FleetClient
-<span class="kw">from</span> superinstance_fleet.errors <span class="kw">import</span> (
-    FleetError,
-    TimeoutError,
-    NotFoundError,
-    InvalidQueryError,
-    ServerError,
 )
 
-<span class="kw">try</span>:
-    results = client.<span class="fn">search</span>(<span class="str">"nonexistent"</span>)
-<span class="kw">except</span> <span class="type">TimeoutError</span>:
-    <span class="fn">print</span>(<span class="str">"Request timed out"</span>)
-<span class="kw">except</span> <span class="type">NotFoundError</span>:
-    <span class="fn">print</span>(<span class="str">"Crate not found"</span>)
-<span class="kw">except</span> <span class="type">InvalidQueryError</span> <span class="kw">as</span> e:
-    <span class="fn">print</span>(<span class="str">f"Invalid query: {e}"</span>)
-<span class="kw">except</span> <span class="type">ServerError</span> <span class="kw">as</span> e:
-    <span class="fn">print</span>(<span class="str">f"Server error: {e}"</span>)
-<span class="kw">except</span> <span class="type">FleetError</span> <span class="kw">as</span> e:
-    <span class="fn">print</span>(<span class="str">f"Unexpected fleet error: {e}"</span>)</code></pre>
-    </div>
+<span class="cm"># Search for crates by natural language</span>
+results = client.<span class="fn">search</span>(<span class="str">"HTTP client with retry logic"</span>)
+<span class="kw">for</span> crate <span class="kw">in</span> results:
+    <span class="fn">print</span>(<span class="str">f"</span>{crate.name:<span class="str">}</span> (score: {crate.score:<span class="str">:.2f</span>})<span class="str">"</span>)
 
-    <!-- Async Support -->
-    <h2 id="async">Async Support</h2>
-    <p>Use <code>AsyncFleetClient</code> for non-blocking I/O with <code>async/await</code>:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">python</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code><span class="kw">import</span> asyncio
+<span class="cm"># Find crates similar to a known crate</span>
+similar = client.<span class="fn">similar</span>(<span class="str">"reqwest"</span>, top_k=<span class="num">5</span>)
+<span class="fn">print</span>(similar)
+
+<span class="cm"># Get personalized recommendations</span>
+recs = client.<span class="fn">recommend</span>(context=<span class="str">"web scraping"</span>)
+<span class="fn">print</span>(recs)
+
+<span class="cm"># Check index stats</span>
+stats = client.<span class="fn">stats</span>()
+<span class="fn">print</span>(stats)  <span class="cm"># → IndexStats(vector_count=..., dimensions=...)</span></code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+
+  <h3>Async Usage</h3>
+  <pre><code><span class="kw">import</span> asyncio
 <span class="kw">from</span> superinstance_fleet <span class="kw">import</span> AsyncFleetClient
 
 <span class="kw">async def</span> <span class="fn">main</span>():
-    <span class="kw">async with</span> <span class="type">AsyncFleetClient</span>() <span class="kw">as</span> client:
-        <span class="cm"># Concurrent searches</span>
-        results = <span class="kw">await</span> asyncio.<span class="fn">gather</span>(
-            client.<span class="fn">search</span>(<span class="str">"http client"</span>, top_k=<span class="num">3</span>),
-            client.<span class="fn">search</span>(<span class="str">"json parsing"</span>, top_k=<span class="num">3</span>),
-            client.<span class="fn">stats</span>(),
-        )
+    client = AsyncFleetClient()
+    results = <span class="kw">await</span> client.<span class="fn">search</span>(<span class="str">"async database driver"</span>)
+    <span class="fn">print</span>(results)
 
-        <span class="kw">for</span> r <span class="kw">in</span> results[<span class="num">0</span>]:
-            <span class="fn">print</span>(<span class="str">f"  {r.name} ({r.score:.3f})"</span>)
+asyncio.<span class="fn">run</span>(<span class="fn">main</span>())</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
 
-        <span class="cm"># Single request</span>
-        similar = <span class="kw">await</span> client.<span class="fn">similar</span>(<span class="str">"ternary-core"</span>)
-        recs = <span class="kw">await</span> client.<span class="fn">recommend</span>(
-            context=<span class="str">"async task queue"</span>,
-            top_k=<span class="num">5</span>,
-        )
+  <!-- API Reference -->
+  <h2>API Reference</h2>
 
-asyncio.<span class="fn">run</span>(<span class="fn">main</span>())</code></pre>
-    </div>
+  <h3>search(query, *, top_k=10, threshold=0.5)</h3>
+  <p>Perform a semantic search across all indexed crates.</p>
+  <table>
+    <tr><th>Parameter</th><th>Type</th><th>Default</th><th>Description</th></tr>
+    <tr><td><code>query</code></td><td><code>str</code></td><td>—</td><td>Natural language search query</td></tr>
+    <tr><td><code>top_k</code></td><td><code>int</code></td><td><code>10</code></td><td>Max results to return</td></tr>
+    <tr><td><code>threshold</code></td><td><code>float</code></td><td><code>0.5</code></td><td>Minimum similarity score (0–1)</td></tr>
+  </table>
+  <pre><code>results = client.<span class="fn">search</span>(<span class="str">"async runtime"</span>, top_k=<span class="num">5</span>, threshold=<span class="num">0.7</span>)</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+  <p>Returns <code>list[CrateResult]</code>.</p>
 
-    <p>The async client supports the same methods as the synchronous client, with identical signatures returning coroutines. Use <code>async with</code> for automatic session cleanup, or manage the client lifecycle manually:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">python</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code>client = <span class="type">AsyncFleetClient</span>()
+  <h3>similar(name, *, top_k=10)</h3>
+  <p>Find crates similar to a known crate by name.</p>
+  <table>
+    <tr><th>Parameter</th><th>Type</th><th>Default</th><th>Description</th></tr>
+    <tr><td><code>name</code></td><td><code>str</code></td><td>—</td><td>Exact crate name to find similar items for</td></tr>
+    <tr><td><code>top_k</code></td><td><code>int</code></td><td><code>10</code></td><td>Max results to return</td></tr>
+  </table>
+  <pre><code>alike = client.<span class="fn">similar</span>(<span class="str">"tokio"</span>, top_k=<span class="num">3</span>)</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+
+  <h3>recommend(*, context, top_k=5)</h3>
+  <p>Get crate recommendations based on a context or use case.</p>
+  <table>
+    <tr><th>Parameter</th><th>Type</th><th>Default</th><th>Description</th></tr>
+    <tr><td><code>context</code></td><td><code>str</code></td><td>—</td><td>Description of your project or use case</td></tr>
+    <tr><td><code>top_k</code></td><td><code>int</code></td><td><code>5</code></td><td>Max results to return</td></tr>
+  </table>
+  <pre><code>picks = client.<span class="fn">recommend</span>(context=<span class="str">"CLI tool with config parsing"</span>)</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+
+  <h3>stats()</h3>
+  <p>Retrieve index statistics.</p>
+  <pre><code>stats = client.<span class="fn">stats</span>()
+<span class="fn">print</span>(stats.vector_count, stats.dimensions)</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+  <p>Returns <code>IndexStats</code>.</p>
+
+  <!-- Configuration -->
+  <h2>Configuration</h2>
+  <table>
+    <tr><th>Option</th><th>Type</th><th>Default</th><th>Description</th></tr>
+    <tr><td><code>base_url</code></td><td><code>str</code></td><td><code>'https://fleet-vector-api.casey-digennaro.workers.dev'</code></td><td>API endpoint URL</td></tr>
+    <tr><td><code>timeout</code></td><td><code>float</code></td><td><code>10.0</code></td><td>Request timeout in seconds</td></tr>
+    <tr><td><code>api_key</code></td><td><code>str | None</code></td><td><code>None</code></td><td>Optional API key for authenticated endpoints</td></tr>
+  </table>
+  <pre><code><span class="kw">import</span> os
+<span class="kw">from</span> superinstance_fleet <span class="kw">import</span> FleetClient
+
+client = FleetClient(
+    base_url=os.environ[<span class="str">"FLEET_API_URL"</span>],
+    timeout=<span class="num">5.0</span>,
+    api_key=os.environ.get(<span class="str">"FLEET_API_KEY"</span>),
+)</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+
+  <!-- Error Handling -->
+  <h2>Error Handling</h2>
+  <pre><code><span class="kw">from</span> superinstance_fleet <span class="kw">import</span> FleetClient, FleetError
+
+client = FleetClient()
+
 <span class="kw">try</span>:
-    results = <span class="kw">await</span> client.<span class="fn">search</span>(<span class="str">"actor"</span>)
-<span class="kw">finally</span>:
-    <span class="kw">await</span> client.<span class="fn">close</span>()</code></pre>
-    </div>
-  </div>
+    results = client.<span class="fn">search</span>(<span class="str">"database ORM"</span>)
+<span class="kw">except</span> FleetError <span class="kw">as</span> e:
+    <span class="kw">if</span> e.code == <span class="str">"TIMEOUT"</span>:
+        <span class="fn">print</span>(<span class="str">"Request timed out"</span>)
+    <span class="kw">elif</span> e.code == <span class="str">"NOT_FOUND"</span>:
+        <span class="fn">print</span>(<span class="str">"Crate not found"</span>)
+    <span class="kw">elif</span> e.code == <span class="str">"INVALID_QUERY"</span>:
+        <span class="fn">print</span>(<span class="str">"Bad query"</span>)
+    <span class="kw">elif</span> e.code == <span class="str">"SERVER_ERROR"</span>:
+        <span class="fn">print</span>(<span class="str">f"Server error (status {e.status_code})"</span>)
+<span class="kw">except</span> Exception <span class="kw">as</span> e:
+    <span class="fn">print</span>(<span class="str">f"Unexpected error: {e}"</span>)</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
 
-  <script>
-    function copyCode(btn) {
-      const pre = btn.closest('.code-block').querySelector('pre code');
-      navigator.clipboard.writeText(pre.textContent).then(() => {
-        btn.textContent = 'Copied!';
-        btn.classList.add('copied');
-        setTimeout(() => {
-          btn.textContent = 'Copy';
-          btn.classList.remove('copied');
-        }, 2000);
-      });
-    }
-  </script>
+  <h3>Exception Classes</h3>
+  <table>
+    <tr><th>Exception</th><th>Code</th><th>Description</th></tr>
+    <tr><td><code>FleetError</code></td><td><code>TIMEOUT</code></td><td>Request exceeded the configured timeout</td></tr>
+    <tr><td><code>FleetError</code></td><td><code>NOT_FOUND</code></td><td>Requested crate or resource not found</td></tr>
+    <tr><td><code>FleetError</code></td><td><code>INVALID_QUERY</code></td><td>Malformed or empty query string</td></tr>
+    <tr><td><code>FleetError</code></td><td><code>SERVER_ERROR</code></td><td>Upstream server returned 5xx</td></tr>
+  </table>
+</div>
+
+<script>
+function copyCode(btn) {
+  const code = btn.parentElement.querySelector('code');
+  navigator.clipboard.writeText(code.textContent).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
 </body>
 </html>

@@ -1,423 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Node.js SDK Quickstart — T-Minus</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #0a0a0f;
-      --bg-card: #12121a;
-      --bg-code: #0e0e16;
-      --accent: #00E6D6;
-      --accent-dim: rgba(0,230,214,0.12);
-      --text: #e0e0e8;
-      --text-muted: #8888a0;
-      --border: #1e1e2e;
-      --font-body: 'Inter', system-ui, sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
-    }
-    html { scroll-behavior: smooth; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--font-body);
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* Layout */
-    .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
-
-    /* Header */
-    .back-link {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      font-size: 0.85rem; color: var(--text-muted); margin-bottom: 2rem;
-    }
-    .back-link:hover { color: var(--accent); }
-
-    .page-title {
-      font-size: 2.2rem; font-weight: 700; margin-bottom: 0.4rem;
-      background: linear-gradient(135deg, var(--accent), #6ee7b7);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    .page-subtitle { color: var(--text-muted); margin-bottom: 2.5rem; font-size: 1.05rem; }
-
-    /* Badge */
-    .badge {
-      display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px;
-      background: var(--accent-dim); color: var(--accent); font-size: 0.75rem;
-      font-family: var(--font-mono); font-weight: 500; margin-left: 0.5rem;
-      vertical-align: middle;
-    }
-
-    /* Sections */
-    h2 {
-      font-size: 1.4rem; font-weight: 600; margin: 2.5rem 0 1rem;
-      padding-bottom: 0.4rem; border-bottom: 1px solid var(--border);
-    }
-    h2:first-of-type { margin-top: 0; }
-    h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.6rem; color: var(--accent); }
-    p { margin-bottom: 0.8rem; }
-
-    /* Code blocks */
-    .code-block {
-      position: relative; margin: 0.8rem 0 1.4rem; border-radius: 8px;
-      background: var(--bg-code); border: 1px solid var(--border); overflow: hidden;
-    }
-    .code-header {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0.5rem 1rem; background: rgba(255,255,255,0.03);
-      border-bottom: 1px solid var(--border);
-    }
-    .code-lang {
-      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);
-      text-transform: uppercase; letter-spacing: 0.5px;
-    }
-    .copy-btn {
-      background: none; border: 1px solid var(--border); border-radius: 4px;
-      color: var(--text-muted); cursor: pointer; font-size: 0.72rem;
-      font-family: var(--font-mono); padding: 0.2rem 0.5rem; transition: all 0.2s;
-    }
-    .copy-btn:hover { color: var(--accent); border-color: var(--accent); }
-    .copy-btn.copied { color: #4ade80; border-color: #4ade80; }
-    pre {
-      padding: 1rem 1.2rem; overflow-x: auto; font-family: var(--font-mono);
-      font-size: 0.85rem; line-height: 1.65; color: #c0c0d8;
-    }
-    .kw { color: #c792ea; }
-    .str { color: #c3e88d; }
-    .fn { color: #82aaff; }
-    .cm { color: #546e7a; }
-    .op { color: #89ddff; }
-    .num { color: #f78c6c; }
-    .type { color: #ffcb6b; }
-
-    /* Method cards */
-    .method-card {
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 8px; padding: 1.2rem 1.4rem; margin: 0.8rem 0 1.2rem;
-    }
-    .method-sig {
-      font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent);
-      margin-bottom: 0.6rem;
-    }
-    .method-desc { color: var(--text-muted); margin-bottom: 0.8rem; font-size: 0.92rem; }
-    .param-table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; }
-    .param-table th {
-      text-align: left; font-size: 0.75rem; text-transform: uppercase;
-      color: var(--text-muted); padding: 0.3rem 0.8rem; border-bottom: 1px solid var(--border);
-    }
-    .param-table td {
-      padding: 0.4rem 0.8rem; font-size: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.03);
-    }
-    .param-table code {
-      font-family: var(--font-mono); color: #ffcb6b; font-size: 0.82rem;
-    }
-
-    /* Inline code */
-    code {
-      font-family: var(--font-mono); background: var(--accent-dim);
-      padding: 0.15rem 0.4rem; border-radius: 3px; font-size: 0.88em;
-      color: var(--accent);
-    }
-    pre code { background: none; padding: 0; font-size: inherit; color: inherit; }
-
-    /* Responsive */
-    @media (max-width: 640px) {
-      .container { padding: 1.2rem 1rem 3rem; }
-      .page-title { font-size: 1.6rem; }
-      pre { font-size: 0.78rem; padding: 0.8rem; }
-      .param-table { font-size: 0.8rem; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Node.js SDK — SuperInstance Docs</title>
+<style>
+  :root { --bg: #0a0a0f; --surface: #12121a; --border: #1e1e2e; --accent: #00E6D6; --text: #e0e0e8; --muted: #8888a0; --code-bg: #0e0e16; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .back { display: inline-block; margin-bottom: 1.5rem; font-size: .9rem; color: var(--muted); }
+  .back:hover { color: var(--accent); }
+  h1 { font-size: 2rem; margin-bottom: .5rem; }
+  h1 span { color: var(--accent); }
+  .subtitle { color: var(--muted); margin-bottom: 2.5rem; }
+  h2 { font-size: 1.35rem; margin: 2.5rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: .4rem; }
+  h3 { font-size: 1.1rem; margin: 1.5rem 0 .5rem; color: var(--accent); }
+  p { margin-bottom: 1rem; }
+  pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; overflow-x: auto; position: relative; margin-bottom: 1.2rem; }
+  code { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; font-size: .88rem; }
+  pre code { color: #c8c8d8; }
+  :not(pre) > code { background: var(--code-bg); padding: .15em .4em; border-radius: 4px; font-size: .88rem; }
+  .copy-btn { position: absolute; top: .6rem; right: .6rem; background: var(--border); color: var(--muted); border: none; border-radius: 4px; padding: .3rem .6rem; font-size: .75rem; cursor: pointer; font-family: inherit; transition: all .15s; }
+  .copy-btn:hover { background: var(--accent); color: var(--bg); }
+  .copy-btn.copied { background: var(--accent); color: var(--bg); }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 1.2rem; }
+  th, td { text-align: left; padding: .6rem .8rem; border-bottom: 1px solid var(--border); }
+  th { color: var(--accent); font-weight: 600; font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; }
+  td { font-size: .92rem; }
+  td code { font-size: .82rem; }
+  .kw { color: #c792ea; } .str { color: #c3e88d; } .fn { color: #82aaff; } .cm { color: #546e7a; } .tp { color: #ffcb6b; } .num { color: #f78c6c; }
+  @media (max-width: 640px) { .container { padding: 1rem; } h1 { font-size: 1.5rem; } pre { padding: .8rem; font-size: .82rem; } }
+</style>
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back-link">← Back to Docs</a>
+<div class="container">
+  <a class="back" href="index.html">← Back to Docs</a>
+  <h1>Node.js SDK <span>Quickstart</span></h1>
+  <p class="subtitle">@superinstance/tminus-client — Semantic crate discovery for your Node.js projects</p>
 
-    <h1 class="page-title">Node.js SDK <span class="badge">v1.x</span></h1>
-    <p class="page-subtitle">Quickstart guide for <code>@superinstance/tminus-client</code> — search, discover, and integrate crates from the T-Minus index.</p>
+  <!-- Installation -->
+  <h2>Installation</h2>
+  <pre><code><span class="kw">npm</span> install @superinstance/tminus-client</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
 
-    <!-- Installation -->
-    <h2 id="installation">Installation</h2>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">bash</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code>npm install @superinstance/tminus-client</code></pre>
-    </div>
+  <!-- Quick Start -->
+  <h2>Quick Start</h2>
+  <pre><code><span class="kw">import</span> { FleetClient } <span class="kw">from</span> <span class="str">'@superinstance/tminus-client'</span>;
 
-    <!-- Quick Start -->
-    <h2 id="quick-start">Quick Start</h2>
-    <p>Minimal working example — search, find similar crates, and get AI-powered recommendations:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">js</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code><span class="kw">import</span> { TMinusClient } <span class="kw">from</span> <span class="str">'@superinstance/tminus-client'</span>;
-
-<span class="kw">const</span> <span class="fn">client</span> = <span class="kw">new</span> <span class="type">TMinusClient</span>();
-
-<span class="cm">// Search the crate index</span>
-<span class="kw">const</span> results = <span class="kw">await</span> client.<span class="fn">search</span>(<span class="str">'actor concurrency'</span>);
-console.<span class="fn">log</span>(<span class="str">`Found ${results.length} crates`</span>);
-
-<span class="cm">// Get similar crates</span>
-<span class="kw">const</span> similar = <span class="kw">await</span> client.<span class="fn">similar</span>(<span class="str">'ternary-core'</span>);
-
-<span class="cm">// Get recommendations</span>
-<span class="kw">const</span> recs = <span class="kw">await</span> client.<span class="fn">recommend</span>({
-  context: <span class="str">'I need error handling for async operations'</span>,
-  topK: <span class="num">5</span>
-});</code></pre>
-    </div>
-
-    <!-- API Reference -->
-    <h2 id="api-reference">API Reference</h2>
-
-    <h3><code>search(query, options?)</code></h3>
-    <div class="method-card">
-      <div class="method-sig">search(query: string, options?: SearchOptions): Promise&lt;SearchResult[]&gt;</div>
-      <p class="method-desc">Perform a semantic search across the entire crate index. Returns ranked results matching the query.</p>
-      <table class="param-table">
-        <thead><tr><th>Param</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
-        <tbody>
-          <tr><td><code>query</code></td><td>string</td><td>—</td><td>Search query (natural language)</td></tr>
-          <tr><td><code>options.topK</code></td><td>number</td><td>10</td><td>Max results to return</td></tr>
-          <tr><td><code>options.threshold</code></td><td>number</td><td>0.5</td><td>Minimum similarity score (0–1)</td></tr>
-          <tr><td><code>options.namespace</code></td><td>string</td><td>'default'</td><td>Vectorize namespace to search</td></tr>
-        </tbody>
-      </table>
-      <div class="code-block" style="margin-top: 0.8rem;">
-        <div class="code-header">
-          <span class="code-lang">js</span>
-          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-        </div>
-        <pre><code><span class="kw">const</span> results = <span class="kw">await</span> client.<span class="fn">search</span>(<span class="str">'http client'</span>, {
-  topK: <span class="num">5</span>,
-  threshold: <span class="num">0.7</span>
-});
-results.<span class="fn">forEach</span>(r <span class="op">=></span> console.<span class="fn">log</span>(r.name, r.score));</code></pre>
-      </div>
-    </div>
-
-    <h3><code>similar(name, options?)</code></h3>
-    <div class="method-card">
-      <div class="method-sig">similar(name: string, options?: SimilarOptions): Promise&lt;SearchResult[]&gt;</div>
-      <p class="method-desc">Find crates similar to a known crate by name. Uses the crate's embedding as the query vector.</p>
-      <table class="param-table">
-        <thead><tr><th>Param</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
-        <tbody>
-          <tr><td><code>name</code></td><td>string</td><td>—</td><td>Exact crate name to find similar crates for</td></tr>
-          <tr><td><code>options.topK</code></td><td>number</td><td>10</td><td>Max results to return</td></tr>
-          <tr><td><code>options.excludeSelf</code></td><td>boolean</td><td>true</td><td>Exclude the source crate from results</td></tr>
-        </tbody>
-      </table>
-      <div class="code-block" style="margin-top: 0.8rem;">
-        <div class="code-header">
-          <span class="code-lang">js</span>
-          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-        </div>
-        <pre><code><span class="kw">const</span> similar = <span class="kw">await</span> client.<span class="fn">similar</span>(<span class="str">'ternary-core'</span>, { topK: <span class="num">3</span> });
-similar.<span class="fn">forEach</span>(r <span class="op">=></span> console.<span class="fn">log</span>(<span class="str">`${r.name} (${r.score})`</span>));</code></pre>
-      </div>
-    </div>
-
-    <h3><code>recommend(options)</code></h3>
-    <div class="method-card">
-      <div class="method-sig">recommend(options: RecommendOptions): Promise&lt;SearchResult[]&gt;</div>
-      <p class="method-desc">Get AI-powered crate recommendations based on a natural language description of your needs.</p>
-      <table class="param-table">
-        <thead><tr><th>Param</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
-        <tbody>
-          <tr><td><code>options.context</code></td><td>string</td><td>—</td><td>Description of what you're looking for</td></tr>
-          <tr><td><code>options.topK</code></td><td>number</td><td>5</td><td>Max recommendations to return</td></tr>
-          <tr><td><code>options.exclude</code></td><td>string[]</td><td>[]</td><td>Crate names to exclude</td></tr>
-        </tbody>
-      </table>
-      <div class="code-block" style="margin-top: 0.8rem;">
-        <div class="code-header">
-          <span class="code-lang">js</span>
-          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-        </div>
-        <pre><code><span class="kw">const</span> recs = <span class="kw">await</span> client.<span class="fn">recommend</span>({
-  context: <span class="str">'WebSocket server with rooms'</span>,
-  topK: <span class="num">5</span>,
-  exclude: [<span class="str">'ws'</span>]
-});</code></pre>
-      </div>
-    </div>
-
-    <h3><code>stats()</code></h3>
-    <div class="method-card">
-      <div class="method-sig">stats(): Promise&lt;IndexStats&gt;</div>
-      <p class="method-desc">Return index metadata — total vectors, dimensions, and namespace info.</p>
-      <div class="code-block" style="margin-top: 0.6rem;">
-        <div class="code-header">
-          <span class="code-lang">js</span>
-          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-        </div>
-        <pre><code><span class="kw">const</span> { totalVectors, dimensions } = <span class="kw">await</span> client.<span class="fn">stats</span>();
-console.<span class="fn">log</span>(<span class="str">`Index has ${totalVectors} vectors (${dimensions}d)`</span>);</code></pre>
-      </div>
-    </div>
-
-    <!-- Configuration -->
-    <h2 id="configuration">Configuration</h2>
-    <p>Pass options to the constructor to customize behavior:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">js</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code><span class="kw">const</span> client = <span class="kw">new</span> <span class="type">TMinusClient</span>({
+<span class="kw">const</span> client = <span class="kw">new</span> <span class="tp">FleetClient</span>({
   baseUrl: <span class="str">'https://fleet-vector-api.casey-digennaro.workers.dev'</span>,
-  timeout: <span class="num">5000</span>,       <span class="cm">// Request timeout in ms</span>
-  retries: <span class="num">2</span>,            <span class="cm">// Retry count on transient failures</span>
-  namespace: <span class="str">'default'</span>, <span class="cm">// Default Vectorize namespace</span>
-});</code></pre>
-    </div>
+});
 
-    <table class="param-table" style="margin-bottom: 1rem;">
-      <thead><tr><th>Option</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
-      <tbody>
-        <tr><td><code>baseUrl</code></td><td>string</td><td>production URL</td><td>API endpoint base URL</td></tr>
-        <tr><td><code>timeout</code></td><td>number</td><td>10000</td><td>HTTP request timeout (ms)</td></tr>
-        <tr><td><code>retries</code></td><td>number</td><td>1</td><td>Retry attempts for 5xx / network errors</td></tr>
-        <tr><td><code>namespace</code></td><td>string</td><td>'default'</td><td>Default Vectorize namespace</td></tr>
-      </tbody>
-    </table>
+<span class="cm">// Search for crates by natural language</span>
+<span class="kw">const</span> results = <span class="kw">await</span> client.<span class="fn">search</span>(<span class="str">'HTTP client with retry logic'</span>);
+console.<span class="fn">log</span>(results); <span class="cm">// → CrateResult[]</span>
 
-    <!-- Error Handling -->
-    <h2 id="error-handling">Error Handling</h2>
-    <p>All errors are instances of <code>TMinusError</code> with a machine-readable <code>code</code>:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">js</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code><span class="kw">import</span> { TMinusClient, TMinusError } <span class="kw">from</span> <span class="str">'@superinstance/tminus-client'</span>;
+<span class="cm">// Find crates similar to a known crate</span>
+<span class="kw">const</span> similar = <span class="kw">await</span> client.<span class="fn">similar</span>(<span class="str">'reqwest'</span>, { topK: <span class="num">5</span> });
+console.<span class="fn">log</span>(similar);
+
+<span class="cm">// Get personalized recommendations</span>
+<span class="kw">const</span> recs = <span class="kw">await</span> client.<span class="fn">recommend</span>({ context: <span class="str">'web scraping'</span> });
+console.<span class="fn">log</span>(recs);
+
+<span class="cm">// Check index stats</span>
+<span class="kw">const</span> stats = <span class="kw">await</span> client.<span class="fn">stats</span>();
+console.<span class="fn">log</span>(stats); <span class="cm">// → { vectorCount, dimensions, ... }</span></code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+
+  <!-- API Reference -->
+  <h2>API Reference</h2>
+
+  <h3>search(query, options?)</h3>
+  <p>Perform a semantic search across all indexed crates.</p>
+  <table>
+    <tr><th>Parameter</th><th>Type</th><th>Default</th><th>Description</th></tr>
+    <tr><td><code>query</code></td><td><code>string</code></td><td>—</td><td>Natural language search query</td></tr>
+    <tr><td><code>options.topK</code></td><td><code>number</code></td><td><code>10</code></td><td>Max results to return</td></tr>
+    <tr><td><code>options.threshold</code></td><td><code>number</code></td><td><code>0.5</code></td><td>Minimum similarity score (0–1)</td></tr>
+  </table>
+  <pre><code><span class="kw">const</span> crates = <span class="kw">await</span> client.<span class="fn">search</span>(<span class="str">'async runtime'</span>, { topK: <span class="num">5</span>, threshold: <span class="num">0.7</span> });</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+
+  <h3>similar(name, options?)</h3>
+  <p>Find crates similar to a known crate by name.</p>
+  <table>
+    <tr><th>Parameter</th><th>Type</th><th>Default</th><th>Description</th></tr>
+    <tr><td><code>name</code></td><td><code>string</code></td><td>—</td><td>Exact crate name to find similar items for</td></tr>
+    <tr><td><code>options.topK</code></td><td><code>number</code></td><td><code>10</code></td><td>Max results to return</td></tr>
+  </table>
+  <pre><code><span class="kw">const</span> alike = <span class="kw">await</span> client.<span class="fn">similar</span>(<span class="str">'tokio'</span>, { topK: <span class="num">3</span> });</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+
+  <h3>recommend(options)</h3>
+  <p>Get crate recommendations based on a context or use case.</p>
+  <table>
+    <tr><th>Parameter</th><th>Type</th><th>Default</th><th>Description</th></tr>
+    <tr><td><code>options.context</code></td><td><code>string</code></td><td>—</td><td>Description of your project or use case</td></tr>
+    <tr><td><code>options.topK</code></td><td><code>number</code></td><td><code>5</code></td><td>Max results to return</td></tr>
+  </table>
+  <pre><code><span class="kw">const</span> picks = <span class="kw">await</span> client.<span class="fn">recommend</span>({ context: <span class="str">'CLI tool with config parsing'</span> });</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+
+  <h3>stats()</h3>
+  <p>Retrieve index statistics including vector count and dimensions.</p>
+  <pre><code><span class="kw">const</span> { vectorCount, dimensions } = <span class="kw">await</span> client.<span class="fn">stats</span>();</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+
+  <!-- Configuration -->
+  <h2>Configuration</h2>
+  <table>
+    <tr><th>Option</th><th>Type</th><th>Default</th><th>Description</th></tr>
+    <tr><td><code>baseUrl</code></td><td><code>string</code></td><td><code>'https://fleet-vector-api.casey-digennaro.workers.dev'</code></td><td>API endpoint URL</td></tr>
+    <tr><td><code>timeout</code></td><td><code>number</code></td><td><code>10000</code></td><td>Request timeout in milliseconds</td></tr>
+    <tr><td><code>apiKey</code></td><td><code>string</code></td><td><code>undefined</code></td><td>Optional API key for authenticated endpoints</td></tr>
+  </table>
+  <pre><code><span class="kw">const</span> client = <span class="kw">new</span> <span class="tp">FleetClient</span>({
+  baseUrl: process.env.<span class="tp">FLEET_API_URL</span>,
+  timeout: <span class="num">5000</span>,
+  apiKey: process.env.<span class="tp">FLEET_API_KEY</span>,
+});</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+
+  <!-- Error Handling -->
+  <h2>Error Handling</h2>
+  <pre><code><span class="kw">import</span> { FleetClient, FleetError } <span class="kw">from</span> <span class="str">'@superinstance/tminus-client'</span>;
 
 <span class="kw">try</span> {
-  <span class="kw">const</span> results = <span class="kw">await</span> client.<span class="fn">search</span>(<span class="str">'nonexistent'</span>);
+  <span class="kw">const</span> results = <span class="kw">await</span> client.<span class="fn">search</span>(<span class="str">'database ORM'</span>);
 } <span class="kw">catch</span> (err) {
-  <span class="kw">if</span> (err <span class="kw">instanceof</span> <span class="type">TMinusError</span>) {
+  <span class="kw">if</span> (err <span class="kw">instanceof</span> <span class="tp">FleetError</span>) {
     <span class="kw">switch</span> (err.code) {
-      <span class="kw">case</span> <span class="str">'TIMEOUT'</span>:
-        console.<span class="fn">error</span>(<span class="str">'Request timed out'</span>);
-        <span class="kw">break</span>;
-      <span class="kw">case</span> <span class="str">'NOT_FOUND'</span>:
-        console.<span class="fn">error</span>(<span class="str">'Crate not found'</span>);
-        <span class="kw">break</span>;
-      <span class="kw">case</span> <span class="str">'INVALID_QUERY'</span>:
-        console.<span class="fn">error</span>(<span class="str">'Invalid search query'</span>);
-        <span class="kw">break</span>;
-      <span class="kw">case</span> <span class="str">'SERVER_ERROR'</span>:
-        console.<span class="fn">error</span>(<span class="str">'Server error:'</span>, err.message);
-        <span class="kw">break</span>;
-      <span class="kw">default</span>:
-        console.<span class="fn">error</span>(<span class="str">'Unknown error:'</span>, err.code);
+      <span class="kw">case</span> <span class="str">'TIMEOUT'</span>:      console.<span class="fn">error</span>(<span class="str">'Request timed out'</span>); <span class="kw">break</span>;
+      <span class="kw">case</span> <span class="str">'NOT_FOUND'</span>:    console.<span class="fn">error</span>(<span class="str">'Crate not found'</span>); <span class="kw">break</span>;
+      <span class="kw">case</span> <span class="str">'INVALID_QUERY'</span>: console.<span class="fn">error</span>(<span class="str">'Bad query'</span>); <span class="kw">break</span>;
+      <span class="kw">case</span> <span class="str">'SERVER_ERROR'</span>: console.<span class="fn">error</span>(<span class="str">'Server error'</span>); <span class="kw">break</span>;
     }
   } <span class="kw">else</span> {
     <span class="kw">throw</span> err;
   }
-}</code></pre>
-    </div>
+}</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
 
-    <!-- CLI -->
-    <h2 id="cli">CLI Usage</h2>
-    <p>The package ships a <code>tminus</code> CLI for quick lookups from the terminal:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">bash</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code><span class="cm"># Search</span>
-npx tminus search <span class="str">"actor concurrency"</span>
-
-<span class="cm"># Find similar crates</span>
-npx tminus similar ternary-core
-
-<span class="cm"># Get recommendations</span>
-npx tminus recommend --context <span class="str">"WebSocket server with rooms"</span>
-
-<span class="cm"># Index stats</span>
-npx tminus stats</code></pre>
-    </div>
-
-    <!-- TypeScript Types -->
-    <h2 id="typescript">TypeScript Types</h2>
-    <p>Key interfaces exported from the package:</p>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">typescript</span>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <pre><code><span class="kw">interface</span> <span class="type">TMinusClientOptions</span> {
-  baseUrl?: string;
-  timeout?: number;
-  retries?: number;
-  namespace?: string;
+  <!-- TypeScript Types -->
+  <h2>TypeScript Types</h2>
+  <pre><code><span class="kw">interface</span> <span class="tp">FleetClientOptions</span> {
+  baseUrl?: <span class="tp">string</span>;
+  timeout?: <span class="tp">number</span>;
+  apiKey?: <span class="tp">string</span>;
 }
 
-<span class="kw">interface</span> <span class="type">SearchOptions</span> {
-  topK?: number;
-  threshold?: number;
-  namespace?: string;
+<span class="kw">interface</span> <span class="tp">CrateResult</span> {
+  name: <span class="tp">string</span>;
+  description: <span class="tp">string</span>;
+  score: <span class="tp">number</span>;          <span class="cm">// similarity score 0–1</span>
+  version?: <span class="tp">string</span>;
+  downloads?: <span class="tp">number</span>;
+  url?: <span class="tp">string</span>;
 }
 
-<span class="kw">interface</span> <span class="type">SimilarOptions</span> {
-  topK?: number;
-  excludeSelf?: boolean;
+<span class="kw">interface</span> <span class="tp">SearchOptions</span> {
+  topK?: <span class="tp">number</span>;
+  threshold?: <span class="tp">number</span>;
 }
 
-<span class="kw">interface</span> <span class="type">RecommendOptions</span> {
-  context: string;
-  topK?: number;
-  exclude?: string[];
+<span class="kw">interface</span> <span class="tp">SimilarOptions</span> {
+  topK?: <span class="tp">number</span>;
 }
 
-<span class="kw">interface</span> <span class="type">SearchResult</span> {
-  name: string;
-  score: number;
-  description?: string;
-  version?: string;
-  metadata?: Record&lt;string, unknown&gt;;
+<span class="kw">interface</span> <span class="tp">RecommendOptions</span> {
+  context: <span class="tp">string</span>;
+  topK?: <span class="tp">number</span>;
 }
 
-<span class="kw">interface</span> <span class="type">IndexStats</span> {
-  totalVectors: number;
-  dimensions: number;
-  namespaces: Record&lt;string, { vectorCount: number }&gt;;
+<span class="kw">interface</span> <span class="tp">IndexStats</span> {
+  vectorCount: <span class="tp">number</span>;
+  dimensions: <span class="tp">number</span>;
+  lastUpdated: <span class="tp">string</span>;
 }
 
-<span class="kw">class</span> <span class="type">TMinusError</span> <span class="kw">extends</span> Error {
+<span class="kw">class</span> <span class="tp">FleetError</span> <span class="kw">extends</span> <span class="tp">Error</span> {
   code: <span class="str">'TIMEOUT'</span> | <span class="str">'NOT_FOUND'</span> | <span class="str">'INVALID_QUERY'</span> | <span class="str">'SERVER_ERROR'</span>;
-}</code></pre>
-    </div>
-  </div>
+  statusCode: <span class="tp">number</span>;
+}</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+</div>
 
-  <script>
-    function copyCode(btn) {
-      const pre = btn.closest('.code-block').querySelector('pre code');
-      navigator.clipboard.writeText(pre.textContent).then(() => {
-        btn.textContent = 'Copied!';
-        btn.classList.add('copied');
-        setTimeout(() => {
-          btn.textContent = 'Copy';
-          btn.classList.remove('copied');
-        }, 2000);
-      });
-    }
-  </script>
+<script>
+function copyCode(btn) {
+  const code = btn.parentElement.querySelector('code');
+  navigator.clipboard.writeText(code.textContent).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
 </body>
 </html>
