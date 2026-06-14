@@ -65,6 +65,22 @@ export type {
   DelegationResult,
 } from './fleet-delegate.js';
 
+// Dashboard
+export { FleetDashboard } from './dashboard.js';
+export type { DashboardOptions } from './dashboard.js';
+
+// Telemetry system
+export { TelemetryReporter } from './telemetry.js';
+export { TelemetryReceiver } from './telemetry-receiver.js';
+
+// Telemetry types
+export type {
+  TelemetryConfig,
+  FleetSnapshot,
+  ConservationAlert,
+} from './telemetry.js';
+export type { AggregateMetrics } from './telemetry-receiver.js';
+
 // ─── Constants ───────────────────────────────────────────────────────────────
 
 /** C = log₂(3) ≈ 1.585 — the conservation capacity constant */

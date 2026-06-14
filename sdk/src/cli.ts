@@ -10,7 +10,7 @@
 
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
-import { C, CONSERVATION_LAW, convergenceDelta, Fleet, Governor } from './index.js';
+import { C, CONSERVATION_LAW, convergenceDelta, Fleet, Governor, FleetDashboard } from './index.js';
 
 const args = process.argv.slice(2);
 const command = args[0];
@@ -26,11 +26,13 @@ function showHelp(): void {
     npx superinstance status            Show fleet status (requires .superinstance/config.json)
     npx superinstance check <γ> <η>     Check if γ + η ≤ C holds
     npx superinstance converge <n>      Show convergence rate δ(n) for fleet size n
+    npx superinstance dashboard          Live fleet dashboard (press q to quit)
     npx superinstance help              Show this help message
 
   Examples:
     npx superinstance check 0.8 0.5     Check if γ=0.8, η=0.5 conserves
     npx superinstance converge 100      Show δ(100) — convergence at 100 agents
+    npx superinstance dashboard         Launch the live fleet dashboard
   `);
 }
 
@@ -146,6 +148,37 @@ function cmdConverge(nStr: string): void {
   console.log(`  Formula:        δ(n) = (1/√n)(1 − 3/(2n))\n`);
 }
 
+function cmdDashboard(): void {
+  const configPath = join(process.cwd(), '.superinstance', 'config.json');
+
+  let fleet: Fleet;
+  if (existsSync(configPath)) {
+    const config = JSON.parse(readFileSync(configPath, 'utf-8'));
+    fleet = new Fleet({ name: config.name, governor: config.governor });
+  } else {
+    fleet = new Fleet({ name: process.cwd().split('/').pop() ?? 'my-fleet' });
+  }
+
+  // Spawn demo agents if fleet is empty
+  fleet.spawn({ role: 'builder', name: 'Builder-1', gammaBudget: 0.35 });
+  fleet.spawn({ role: 'builder', name: 'Builder-2', gammaBudget: 0.35 });
+  fleet.spawn({ role: 'builder', name: 'Builder-3', gammaBudget: 0.3 });
+  fleet.spawn({ role: 'validator', name: 'Tester', gammaBudget: 0.25 });
+  fleet.spawn({ role: 'orchestrator', name: 'Docs', gammaBudget: 0.2 });
+
+  const dash = new FleetDashboard(fleet, { refreshMs: 1000 });
+
+  // Graceful exit
+  const cleanup = (): void => {
+    dash.stop();
+    process.exit(0);
+  };
+  process.on('SIGINT', cleanup);
+  process.on('SIGTERM', cleanup);
+
+  dash.start();
+}
+
 // ─── Dispatch ────────────────────────────────────────────────────────────────
 
 switch (command) {
@@ -169,6 +202,9 @@ switch (command) {
       process.exit(1);
     }
     cmdConverge(args[1]);
+    break;
+  case 'dashboard':
+    cmdDashboard();
     break;
   case 'help':
   case '--help':
