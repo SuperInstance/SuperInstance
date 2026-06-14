@@ -1,11 +1,13 @@
 {
-  "name": "superinstance",
-  "version": "0.1.0",
+  "name": "@superinstance/sdk",
+  "version": "0.2.0",
   "description": "Conservation-law governance for AI agent fleets — works with any framework",
   "type": "module",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
-  "bin": { "superinstance": "./dist/src/cli.js" },
+  "bin": {
+    "superinstance": "./dist/src/cli.js"
+  },
   "scripts": {
     "build": "tsc",
     "test": "node --test dist/test/*.test.js",
