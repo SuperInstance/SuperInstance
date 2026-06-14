@@ -20,6 +20,20 @@ import type {
 } from './types.js';
 import { Governor } from './governor.js';
 import { wrapGeneric } from './wrapper.js';
+import {
+  CapabilityRouter,
+  createSearchHandler,
+  createBudgetHandler,
+  createValidateHandler,
+  createConserveHandler,
+  createStatusHandler,
+  createReportHandler,
+} from './modular.js';
+import type { Capability, CapabilityHandler, CapabilityResponse } from './modular.js';
+import { executeRequest } from './agent-request.js';
+import type { BudgetTracker } from './agent-request.js';
+import { createDelegator } from './fleet-delegate.js';
+import type { DelegationResult } from './fleet-delegate.js';
 
 /** Agent ID counter for unique identification */
 let agentIdCounter = 0;
@@ -34,6 +48,9 @@ let taskIdCounter = 0;
  * 1. Checks if the fleet has conservation headroom
  * 2. Runs the task
  * 3. Reports γ/η back to the fleet
+ *
+ * Agents can also request capabilities from the fleet at runtime
+ * via the modular request system.
  */
 export class Agent {
   readonly id: string;
@@ -41,7 +58,8 @@ export class Agent {
   readonly role: AgentConfig['role'];
   readonly gammaBudget: number;
 
-  private gammaUsed: number = 0;
+  /** Mutable γ tracker — shared with the request system */
+  private _gammaUsedTracker: BudgetTracker = { value: 0 };
   private etaProduced: number = 0;
   private phase: AgentState['phase'] = 'active';
   private readonly fleet: Fleet;
@@ -70,7 +88,7 @@ export class Agent {
     const estimatedEta = Math.max(0.01, taskWeight * 0.4);
 
     // Check agent budget
-    if (this.gammaUsed + estimatedGamma > this.gammaBudget) {
+    if (this._gammaUsedTracker.value + estimatedGamma > this.gammaBudget) {
       return {
         taskId,
         success: false,
@@ -78,7 +96,7 @@ export class Agent {
         etaProduced: 0,
         output: '',
         conservationCheck: this.fleet.getConservation(),
-        };
+      };
     }
 
     // Check fleet conservation
@@ -102,7 +120,7 @@ export class Agent {
 
     // Record to fleet
     this.fleet.recordTask(actualGamma, actualEta);
-    this.gammaUsed += actualGamma;
+    this._gammaUsedTracker.value += actualGamma;
     this.etaProduced += actualEta;
 
     const conservation = this.fleet.getConservation();
@@ -117,6 +135,53 @@ export class Agent {
     };
   }
 
+  /**
+   * Request a capability from the fleet at runtime.
+   *
+   * This is the modular agent request system — agents dynamically
+   * access fleet capabilities without static wiring.
+   *
+   * @example
+   * const results = await agent.request('search', { query: 'rate limiter', topK: 3 });
+   * const budget = await agent.request('budget');
+   * const valid = await agent.request('validate', { signals: [1, -1, 0] });
+   */
+  async request(capability: Capability, params?: Record<string, unknown>): Promise<CapabilityResponse> {
+    return executeRequest(
+      this.fleet,
+      this.id,
+      this._gammaUsedTracker,
+      this.gammaBudget,
+      capability,
+      params,
+    );
+  }
+
+  /**
+   * Delegate a task to another agent in the fleet by role.
+   *
+   * @example
+   * const result = await agent.delegate('researcher', 'research ternary computing', 0.1);
+   */
+  async delegate(toRole: AgentRole, task: string, budget: number = 0.1): Promise<DelegationResult> {
+    const router = this.fleet.getRouter();
+    const response = await router.route({
+      capability: 'delegate',
+      params: { toRole, task, gammaBudget: budget },
+      agentId: this.id,
+    });
+
+    if (!response.success) {
+      return {
+        success: false,
+        delegatedTo: '',
+        error: response.error,
+      };
+    }
+
+    return response.data as DelegationResult;
+  }
+
   /** Get current agent state snapshot */
   getState(): AgentState {
     return {
@@ -124,15 +189,15 @@ export class Agent {
       name: this.name,
       role: this.role,
       phase: this.phase,
-      gammaUsed: this.gammaUsed,
+      gammaUsed: this._gammaUsedTracker.value,
       etaProduced: this.etaProduced,
-      conservationRemaining: Math.max(0, this.gammaBudget - this.gammaUsed),
+      conservationRemaining: Math.max(0, this.gammaBudget - this._gammaUsedTracker.value),
     };
   }
 
   /** Remaining γ budget for this agent */
   getBudget(): number {
-    return Math.max(0, this.gammaBudget - this.gammaUsed);
+    return Math.max(0, this.gammaBudget - this._gammaUsedTracker.value);
   }
 
   /** Set the agent phase */
@@ -146,6 +211,9 @@ export class Agent {
  *
  * The fleet is the top-level governance unit. It maintains a running
  * ledger of γ and η across all agents and enforces the conservation law.
+ *
+ * The fleet also hosts a CapabilityRouter — the central registry for
+ * modular capability requests from agents.
  */
 export class Fleet {
   readonly name: string;
@@ -155,11 +223,16 @@ export class Fleet {
   private agents: Map<string, Agent> = new Map();
   private totalGamma: number = 0;
   private totalEta: number = 0;
+  private router: CapabilityRouter;
 
   constructor(options: { name: string; governor?: Partial<GovernorConfig> }) {
     this.name = options.name;
     this.governor = new Governor(options.governor);
     this.createdAt = Date.now();
+    this.router = new CapabilityRouter();
+
+    // Auto-register built-in handlers
+    this.registerBuiltins();
   }
 
   /** Spawn a new agent in the fleet */
@@ -241,6 +314,20 @@ export class Fleet {
     return wrapGeneric(agent, this, role);
   }
 
+  /**
+   * Register a custom capability handler.
+   * @example
+   * fleet.registerCapability('search', mySearchHandler);
+   */
+  registerCapability(capability: Capability, handler: CapabilityHandler): void {
+    this.router.register(capability, handler);
+  }
+
+  /** Get the fleet's capability router (internal, used by Agent.request) */
+  getRouter(): CapabilityRouter {
+    return this.router;
+  }
+
   /** Record γ/η from task execution (internal, called by Agent) */
   recordTask(gamma: number, eta: number): void {
     this.totalGamma += gamma;
@@ -265,5 +352,18 @@ export class Fleet {
   /** List all agents */
   getAgents(): Agent[] {
     return Array.from(this.agents.values());
+  }
+
+  /** Register built-in capability handlers */
+  private registerBuiltins(): void {
+    this.router.register('search', createSearchHandler());
+    this.router.register('budget', createBudgetHandler(this));
+    this.router.register('validate', createValidateHandler());
+    this.router.register('conserve', createConserveHandler(this));
+    this.router.register('status', createStatusHandler(this));
+    this.router.register('report', createReportHandler(this));
+    this.router.register('delegate', createDelegator(this));
+    // 'spawn' and 'crate-info' are not registered by default —
+    // users can register custom handlers for these
   }
 }

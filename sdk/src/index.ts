@@ -18,6 +18,23 @@ export {
   wrapGeneric,
 } from './wrapper.js';
 
+// Modular capability system
+export {
+  CapabilityRouter,
+  createSearchHandler,
+  createBudgetHandler,
+  createValidateHandler,
+  createConserveHandler,
+  createStatusHandler,
+  createReportHandler,
+} from './modular.js';
+
+// Delegation system
+export {
+  createDelegator,
+  delegate,
+} from './fleet-delegate.js';
+
 // All types
 export type {
   ConservationState,
@@ -33,6 +50,20 @@ export type {
   WrappableAgent,
   WrappedAgent,
 } from './types.js';
+
+// Modular types
+export type {
+  Capability,
+  CapabilityRequest,
+  CapabilityResponse,
+  CapabilityHandler,
+} from './modular.js';
+
+// Delegation types
+export type {
+  DelegationRequest,
+  DelegationResult,
+} from './fleet-delegate.js';
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
