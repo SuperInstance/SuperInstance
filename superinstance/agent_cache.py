@@ -135,15 +135,21 @@ def get_agent(
     else:
         agent_name = name
         
-    # Try to get from cache first
+    # Try to get from cache first (with double-checked locking to avoid overhead)
     agent = cache.get(agent_name)
-    
     if agent is not None:
         return agent
         
-    # Create new agent if not found
-    agent = Agent(name, **kwargs)
-    cache.put(agent, ttl=ttl)
+    # Lock to prevent concurrent duplicate creation
+    with cache._lock:
+        # Check again in case another thread created the agent while we waited
+        agent = cache.get(agent_name)
+        if agent is not None:
+            return agent
+            
+        # Create new agent if not found
+        agent = Agent(name, **kwargs)
+        cache.put(agent, ttl=ttl)
     return agent
 
 
