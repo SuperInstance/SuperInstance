@@ -1,0 +1,64 @@
+{
+  "name": "console-table-printer",
+  "version": "2.16.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/console-table-printer/console-table-printer.git"
+  },
+  "description": "Printing pretty tables on console log",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "setup": "yarn",
+    "build": "tsc",
+    "format": "prettier --write \"**/*.{json,ts,tsx,yml,js,jsx}\"",
+    "test": "jest --config jestconfig.json",
+    "test:coverage": "jest --config jestconfig.json --coverage",
+    "lint": "eslint .",
+    "semantic-release": "semantic-release"
+  },
+  "keywords": [
+    "console-table",
+    "terminal-table",
+    "table-printer",
+    "pretty-table",
+    "cli-table",
+    "unicode-table",
+    "console-output",
+    "ascii-table",
+    "colored-table",
+    "table-formatter",
+    "object-table",
+    "pretty-print",
+    "json-table",
+    "json-to-table",
+    "array-to-table"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Nahiyan Kamal",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.9.2",
+    "eslint": "^10.4.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "husky": "^9.1.7",
+    "jest": "^30.4.2",
+    "prettier": "^3.8.3",
+    "pretty-quick": "^4.2.2",
+    "semantic-release": "^25.0.3",
+    "ts-jest": "^29.4.11",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.1"
+  },
+  "homepage": "https://console-table.netlify.app",
+  "dependencies": {
+    "simple-wcswidth": "^1.1.2"
+  }
+}

@@ -1,14 +1,17 @@
 {
-  "name": "@superinstance/schemas",
-  "version": "1.0.0",
-  "description": "TypeScript interface schemas + JSON Schema definitions for SuperInstance fleet types",
-  "main": "schemas/index.js",
-  "types": "schemas/index.d.ts",
+  "name": "superinstance-monorepo",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Conservation-law governance for AI agent fleets",
+  "type": "module",
+  "workspaces": [
+    "sdk",
+    "integrations/*"
+  ],
   "scripts": {
-    "build": "tsc",
-    "typecheck": "tsc --noEmit"
+    "build": "npm run build --workspaces",
+    "test": "npm test --workspaces",
+    "clean": "find . -name 'dist' -type d -exec rm -rf {} + 2>/dev/null; find . -name 'node_modules' -type d -exec rm -rf {} + 2>/dev/null"
   },
-  "devDependencies": {
-    "typescript": "^5.9.3"
-  }
+  "keywords": ["mcp", "multi-agent", "fleet", "conservation", "governance", "ai-agent", "ternary", "pid"]
 }
