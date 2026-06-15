@@ -65,6 +65,10 @@ export type {
   DelegationResult,
 } from './fleet-delegate.js';
 
+// Harbor daemon integration
+export { HarborBridge, connectHarbor, createHarborFleet } from './harbor.js';
+export type { HarborConfig, HarborBottle } from './harbor.js';
+
 // Dashboard
 export { FleetDashboard } from './dashboard.js';
 export type { DashboardOptions } from './dashboard.js';

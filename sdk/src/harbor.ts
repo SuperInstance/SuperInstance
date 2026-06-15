@@ -4,8 +4,8 @@
  */
 
 import { Fleet } from './sdk.js';
-import type { CapabilityResponse } from './types.js';
-import { createConnection, createServer, type Socket } from 'net';
+import type { Capability, CapabilityRequest, CapabilityResponse, CapabilityHandler } from './modular.js';
+import { createConnection, type Socket } from 'net';
 import { request } from 'http';
 
 // ---------------------------------------------------------------------------
@@ -202,33 +202,39 @@ export class HarborBridge {
 
   attach(fleet: Fleet): void {
     // Delegate capability — route through harbor as a bottle
-    fleet.capability('delegate', async (ctx: { sender: string; role: string; payload: string }) => {
+    fleet.registerCapability('delegate' as Capability, (async (req: CapabilityRequest) => {
+      const { sender, role, payload } = req.params as { sender: string; role: string; payload: string };
       const bottle: HarborBottle = {
         uuid: crypto.randomUUID(),
-        sender: ctx.sender,
-        role: ctx.role,
-        payload: ctx.payload,
+        sender,
+        role,
+        payload,
         created: new Date().toISOString(),
         ttl: 3600,
         delivered: false,
       };
       await this.sendBottle(bottle);
       const response: CapabilityResponse = {
-        ok: true,
-        result: { uuid: bottle.uuid },
+        success: true,
+        data: { uuid: bottle.uuid },
+        gammaCost: 0.01,
+        etaProduced: 0,
       };
       return response;
-    });
+    }) as CapabilityHandler);
 
     // Crate-info capability — fetch from harbor by sender
-    fleet.capability('crate-info', async (ctx: { sender: string }) => {
-      const bottles = await this.listBySender(ctx.sender);
+    fleet.registerCapability('crate-info' as Capability, (async (req: CapabilityRequest) => {
+      const { sender } = req.params as { sender: string };
+      const bottles = await this.listBySender(sender);
       const response: CapabilityResponse = {
-        ok: true,
-        result: { count: bottles.length, bottles },
+        success: true,
+        data: { count: bottles.length, bottles },
+        gammaCost: 0.01,
+        etaProduced: 0,
       };
       return response;
-    });
+    }) as CapabilityHandler);
   }
 }
 
@@ -257,7 +263,7 @@ export async function createHarborFleet(
     ...(harborPort ? { port: harborPort } : {}),
   });
 
-  const fleet = new Fleet(fleetName ?? 'harbor-fleet');
+  const fleet = new Fleet({ name: fleetName ?? 'harbor-fleet' });
   harbor.attach(fleet);
 
   return { fleet, harbor };

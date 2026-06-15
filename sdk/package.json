@@ -1,6 +1,6 @@
 {
   "name": "@superinstance/sdk",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Conservation-law governance for AI agent fleets — works with any framework",
   "type": "module",
   "main": "dist/src/index.js",

@@ -330,7 +330,7 @@ describe('HarborBridge.attach(fleet)', () => {
     const handlers: Record<string, Function> = {};
 
     const mockFleet = {
-      capability(name: string, fn: Function) {
+      registerCapability(name: string, fn: Function) {
         handlers[name] = fn;
       },
     } as any;
@@ -350,7 +350,7 @@ describe('HarborBridge.attach(fleet)', () => {
   it('delegate handler creates bottle and sends via TCP', async () => {
     const handlers: Record<string, Function> = {};
     const mockFleet = {
-      capability(name: string, fn: Function) {
+      registerCapability(name: string, fn: Function) {
         handlers[name] = fn;
       },
     } as any;
@@ -363,20 +363,20 @@ describe('HarborBridge.attach(fleet)', () => {
     bridge.attach(mockFleet);
 
     const result = await handlers['delegate']({
-      sender: 'agent-1',
-      role: 'worker',
-      payload: 'do work',
+      capability: 'delegate',
+      params: { sender: 'agent-1', role: 'worker', payload: 'do work' },
+      agentId: 'test-agent',
     });
 
-    assert.equal(result.ok, true);
-    assert.ok(result.result.uuid);
+    assert.equal(result.success, true);
+    assert.ok(result.data.uuid);
     assert.equal(bottles.size, 1);
   });
 
   it('crate-info handler returns bottles by sender', async () => {
     const handlers: Record<string, Function> = {};
     const mockFleet = {
-      capability(name: string, fn: Function) {
+      registerCapability(name: string, fn: Function) {
         handlers[name] = fn;
       },
     } as any;
@@ -394,9 +394,13 @@ describe('HarborBridge.attach(fleet)', () => {
     bottles.set(b1.uuid, b1);
     bottles.set(b2.uuid, b2);
 
-    const result = await handlers['crate-info']({ sender: 'agent-x' });
-    assert.equal(result.ok, true);
-    assert.equal(result.result.count, 1);
-    assert.equal(result.result.bottles[0].sender, 'agent-x');
+    const result = await handlers['crate-info']({
+      capability: 'crate-info',
+      params: { sender: 'agent-x' },
+      agentId: 'test-agent',
+    });
+    assert.equal(result.success, true);
+    assert.equal(result.data.count, 1);
+    assert.equal(result.data.bottles[0].sender, 'agent-x');
   });
 });
