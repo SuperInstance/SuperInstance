@@ -1,0 +1,14 @@
+{
+  "name": "plato-portal",
+  "compatibility_date": "2026-06-15",
+  "pages": {
+    "build": {
+      "command": "",
+      "directory": "public"
+    }
+  },
+  "bindings": {
+    "KV_FLEET_METRICS": "fleet-metrics-kv",
+    "D1_FLEET_DB": "fleet-events"
+  }
+}

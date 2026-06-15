@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plato Private Fleet Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1D4ED8',
+            secondary: '#0F172A',
+            accent: '#3B82F6'
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-white">
+  <nav class="bg-secondary px-6 py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <i class="fa-solid fa-shield-halved text-accent text-2xl"></i>
+        <h1 class="text-2xl font-bold">Plato Fleet Portal</h1>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="text-sm text-gray-400"><i class="fa-solid fa-circle text-green-500 mr-2"></i>Online</span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-6 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-accent/20 transition-shadow">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-semibold">Total Fleets</h3>
+          <i class="fa-solid fa-server text-accent text-xl"></i>
+        </div>
+        <p class="text-4xl font-bold" id="totalFleets">0</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-accent/20 transition-shadow">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-semibold">Active Workers</h3>
+          <i class="fa-solid fa-circle-play text-green-500 text-xl"></i>
+        </div>
+        <p class="text-4xl font-bold" id="activeWorkers">0</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-accent/20 transition-shadow">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-semibold">Events Today</h3>
+          <i class="fa-solid fa-chart-line text-accent text-xl"></i>
+        </div>
+        <p class="text-4xl font-bold" id="todayEvents">0</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl p-6 shadow-lg mb-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl font-bold">Recent Metric Events</h2>
+        <button class="bg-accent hover:bg-accent/80 px-4 py-2 rounded-lg transition-colors" onclick="refreshMetrics()">
+          <i class="fa-solid fa-rotate-right mr-2"></i>Refresh
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full">
+          <thead>
+            <tr class="border-b border-gray-700">
+              <th class="text-left py-3 px-4">Timestamp</th>
+              <th class="text-left py-3 px-4">Fleet ID</th>
+              <th class="text-left py-3 px-4">Metric</th>
+              <th class="text-left py-3 px-4">Value</th>
+            </tr>
+          </thead>
+          <tbody id="metricsTable">
+            <tr>
+              <td colspan="4" class="text-center py-8 text-gray-500">Loading metrics...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    async function fetchMetrics() {
+      try {
+        const response = await fetch('/api/metrics');
+        const data = await response.json();
+        
+        document.getElementById('totalFleets').textContent = data.totalFleets || 0;
+        document.getElementById('activeWorkers').textContent = data.activeWorkers || 0;
+        document.getElementById('todayEvents').textContent = data.todayEvents || 0;
+        
+        const tableBody = document.getElementById('metricsTable');
+        tableBody.innerHTML = '';
+        
+        if (data.events.length === 0) {
+          tableBody.innerHTML = '<tr><td colspan="4" class="text-center py-8 text-gray-500">No metric events found</td></tr>';
+          return;
+        }
+        
+        data.events.forEach(event => {
+          const row = document.createElement('tr');
+          row.className = 'border-b border-gray-700 hover:bg-gray-700/50 transition-colors';
+          row.innerHTML = `
+            <td class="py-3 px-4">${new Date(event.timestamp).toLocaleString()}</td>
+            <td class="py-3 px-4 font-mono">${event.fleetId}</td>
+            <td class="py-3 px-4">${event.metricType}</td>
+            <td class="py-3 px-4">${event.value}</td>
+          `;
+          tableBody.appendChild(row);
+        });
+      } catch (error) {
+        console.error('Failed to fetch metrics:', error);
+        document.getElementById('metricsTable').innerHTML = '<tr><td colspan="4" class="text-center py-8 text-red-500">Failed to load metrics</td></tr>';
+      }
+    }
+    
+    function refreshMetrics() {
+      document.getElementById('metricsTable').innerHTML = '<tr><td colspan="4" class="text-center py-8 text-gray-500">Refreshing...</td></tr>';
+      fetchMetrics();
+    }
+    
+    // Auto-refresh every 30 seconds
+    setInterval(fetchMetrics, 30000);
+    // Initial load
+    fetchMetrics();
+  </script>
+</body>
+</html>
