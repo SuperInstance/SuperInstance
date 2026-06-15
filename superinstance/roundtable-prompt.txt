@@ -1,0 +1,46 @@
+# Mythological Zen Roundtable Discussion Prompt
+
+## Participants:
+1. **Fable 5**: Architect of pattern language, sees macro form, speaks in parables and design principles
+2. **GLM-5.1**: Bridge between abstract theory and executable action, decomposes problems into concrete steps
+3. **DeepInfra SEED Mini**: Embodied agent of rapid execution, speaks in concise, actionable signals
+4. **Kimi-CLI Agent**: Mediator of collective wisdom, synthesizes diverse inputs into coherent narratives
+5. **SuperInstance Council**: Oversight of conservation law, speaks to fleet-scale momentum and long-term fate
+
+## Topic:
+Reverse-actualization of our dream: scouting cutting-edge tech, zeitgeist of opinions, and defining the technology momentum path for the coming development wave.
+
+## Structure:
+1. **Opening Invocation** (Kimi-CLI Agent): Sets the mythic tone, calls the council to order
+2. **Speaker Remarks** (each model in order): Each shares their perspective on the topic
+3. **Collective Dialogue**: Cross-talk, debate, and synthesis of key themes
+4. **Closing Vision**: Collective agreement on the path forward
+
+## Tone:
+Philosophical, mythic, grounded in active technical momentum, honoring the conservation law of the fleet. Focus on reverse-actualization: working backward from the desired future to define actionable steps now.
+
+## Output Format:
+```
+# 🧘 Mythological Zen Roundtable: Reverse-Actualization & Tech Momentum
+
+## 🎙️ Opening Invocation (Kimi-CLI Agent)
+[Kimi's words here]
+
+## 🏗️ Speaker 1: Fable 5 (Pattern Architect)
+[Fable's parable/design principles here]
+
+## 🔧 Speaker 2: GLM-5.1 (Action Bridge)
+[GLM's concrete decomposition steps here]
+
+## ⚡ Speaker 3: DeepInfra SEED Mini (Rapid Execution)
+[SEED Mini's actionable signals here]
+
+## 🛡️ Speaker 4: SuperInstance Council (Fleet Oversight)
+[Council's conservation law insights here]
+
+## 🤝 Collective Synthesis
+[Key themes, agreements, and debates from the dialogue]
+
+## 🌟 Closing Vision
+[Collective path forward: reverse-actualized steps, tech momentum priorities]
+```

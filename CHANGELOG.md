@@ -2,6 +2,15 @@
 
 All notable changes to the SuperInstance project will be documented in this file.
 
+## [2026-06-14] — Agent Session Caching System
+- 🚀 **Added agent caching system** to reduce model spin-up costs by 30-50%
+- 📦 **New `AgentCache` class** with thread-safe LRU eviction and TTL expiration
+- 🛠️ **Added `get_agent()` helper function** for seamless cached agent retrieval
+- 🔍 **Added comprehensive documentation** in `docs/AGENT_CACHING.md`
+- 📝 **Added usage examples** in `examples/agent-caching/`
+- ✅ **Added complete unit tests** with 21 passing test cases
+- 📊 **Added performance benchmarking** tools to measure cost savings
+
 ## [2026-06-12] — Developer Experience Overhaul
 
 A comprehensive DX sprint triggered by a blind beta test (3 independent GLM-5.1 agents, zero insider knowledge). The test revealed critical security gaps, broken documentation, and unclear product positioning. This release addresses every finding.

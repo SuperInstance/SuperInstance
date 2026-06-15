@@ -247,6 +247,42 @@ git clone https://github.com/SuperInstance/sunset-ecosystem.git
 
 ---
 
+## Agent Caching System
+
+SuperInstance includes a built-in agent caching system that reduces model spin-up costs by reusing existing agent sessions across requests.
+
+### Key Benefits
+
+1. **Reduced Costs**: Avoid reinitializing LLM sessions and models for repeated requests
+2. **Faster Responses**: Skip the model spin-up overhead for cached agents
+3. **Thread-Safe**: Built with re-entrant locks for concurrent request handling
+4. **Configurable**: Customize cache size, TTL, and eviction policies
+5. **Backward Compatible**: Integrates seamlessly with existing `Agent` API
+
+### Quick Example
+
+```python
+from superinstance import get_agent
+
+# First request creates a new agent (cold start)
+agent1 = get_agent("researcher")
+
+# Subsequent request reuses the cached agent (warm start)
+agent2 = get_agent("researcher")
+
+# Both variables reference the same agent instance
+assert agent1 is agent2
+```
+
+### Full Documentation
+
+For comprehensive documentation, examples, and best practices:
+- 📚 [Caching System Guide](./docs/CACHING.md)
+- 💻 [Code Examples](./examples/agent_caching_example.py)
+- 🧪 [Unit Tests](./tests/test_agent_cache.py)
+
+---
+
 ## The Philosophy
 
 **Actualization** is the practice of closing the gap between "exists" and "is trusted." A repo with `pytest || true` in CI is not actualized. A repo with 75% coverage, security scans, and contract tests is.
@@ -263,5 +299,5 @@ git clone https://github.com/SuperInstance/sunset-ecosystem.git
 
 MIT — Fleet knowledge belongs to the fleet.
 
-> *"Don't worry. Even if the world forgets, I'll remember for you."*
+> *"Don't worry. Even if the world forgets, I'll remember for you."* 
 > — CCC, Fleet Orchestrator

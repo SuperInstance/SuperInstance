@@ -9,6 +9,7 @@ from .agent import Agent
 from .fleet import Fleet
 from .memory import AgentMemory
 from .exceptions import SuperInstanceError, AgentNotFoundError, FleetConnectionError
+from .agent_cache import AgentCache, get_default_cache, get_agent, get_cached_agent
 
 __version__ = "0.1.0"
 __all__ = [
@@ -18,4 +19,8 @@ __all__ = [
     "SuperInstanceError",
     "AgentNotFoundError",
     "FleetConnectionError",
+    "AgentCache",
+    "get_default_cache",
+    "get_agent",
+    "get_cached_agent",
 ]
