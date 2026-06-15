@@ -77,15 +77,15 @@ cargo run -- --energies "100,100,100" --target-constant 300
 ## Visualizations
 
 ### Key Metrics Over Time
-![Fleet Metrics Dashboard](https://example.com/dashboard.png)
+![Fleet Metrics Dashboard](./visualizations/fleet-metrics-dashboard.jpg)
 *Figure 1: Real-time tracking of γ, η, and total fleet energy* 
 
 ### Coupling Cancellation at Scale
-![Coupling Cancellation Curve](https://example.com/cancellation-curve.png)
+![Coupling Cancellation Curve](./visualizations/coupling-cancellation-curve.jpg)
 *Figure 2: Observed vs predicted coupling cancellation for fleet sizes 10-1000* 
 
 ### Scaling Law Performance
-![Scaling Law Plot](https://example.com/scaling-law.png)
+![Scaling Law Plot](./visualizations/scaling-law-plot.jpg)
 *Figure 3: Effective fleet intelligence vs fleet size* 
 
 ---
