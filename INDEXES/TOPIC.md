@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-06-15 10:56 UTC
+**Generated:** 2026-06-16 10:09 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -311,6 +311,7 @@
 - **[agent-grid](https://github.com/SuperInstance/agent-grid)** — Grid-based interface for AI agents.
 - **[agent-groove](https://github.com/SuperInstance/agent-groove)** — Musical groove and swing applied to agent work patterns. Pocket states for autonomy, swing schedulin
 - **[agent-harmonic-field](https://github.com/SuperInstance/agent-harmonic-field)** — Advanced music-cognition crate: agent-harmonic-field
+- **[agent-harness-generator](https://github.com/SuperInstance/agent-harness-generator)** — 🛠️ The meta-harness for AI agents — scaffold your own focused, branded agent harness with its own np
 - **[agent-homeostasis](https://github.com/SuperInstance/agent-homeostasis)** — Homeostatic control for AI agent systems — keeping agents in their operating envelope through feedba
 - **[agent-intonation](https://github.com/SuperInstance/agent-intonation)** — Agent intonation — measuring output accuracy like musical pitch. Beating frequencies, cascade deviat
 - **[agent-jam](https://github.com/SuperInstance/agent-jam)** — Musical jam sessions generalized to multi-agent productive collaboration. Voices→collaborators, chor
@@ -489,6 +490,7 @@
 - **[fleet-map](https://github.com/SuperInstance/fleet-map)** — Interactive constellation map of the SuperInstance fork fleet — 19 repos, 1.4M+ GitHub stars, now co
 - **[fleet-mapper](https://github.com/SuperInstance/fleet-mapper)** — Scan, fingerprint, categorize, and deduplicate a fleet of git repos
 - **[fleet-mcp-server](https://github.com/SuperInstance/fleet-mcp-server)** — TypeScript MCP server for fleet-vector-api semantic crate search
+- **[fleet-metrics](https://github.com/SuperInstance/fleet-metrics)** — Real-time metrics collection and aggregation for the entire fleet
 - **[fleet-metrics-cron](https://github.com/SuperInstance/fleet-metrics-cron)** — Fleet metrics collection cron for Cloudflare Workers
 - **[fleet-midee-connector](https://github.com/SuperInstance/fleet-midee-connector)** — Bridge between fleet MIDI output and the Midee browser visualizer
 - **[fleet-midi](https://github.com/SuperInstance/fleet-midi)** — MIDI message parsing and fleet broadcast for agent coordination via musical signals
@@ -961,6 +963,7 @@
 - **[plato-mythos-bridge](https://github.com/SuperInstance/plato-mythos-bridge)**
 - **[plato-nervous](https://github.com/SuperInstance/plato-nervous)** — Room-specific model distillation for PLATO rooms — the nervous system signal chain (Sensor → Deadban
 - **[plato-normalize](https://github.com/SuperInstance/plato-normalize)** — Normalization and standardization for PLATO tile values
+- **[plato-portal](https://github.com/SuperInstance/plato-portal)**
 - **[plato-predict](https://github.com/SuperInstance/plato-predict)** — Time series prediction primitives for PLATO tile streams
 - **[plato-quickstart](https://github.com/SuperInstance/plato-quickstart)** — Bootstrap a Plato room in 30 seconds. CLI tool: init, validate, simulate, fleet. Zero dependencies.
 - **[plato-ring](https://github.com/SuperInstance/plato-ring)** — Lock-free ring buffer for PLATO high-frequency sensor data
@@ -969,6 +972,7 @@
 - **[plato-route](https://github.com/SuperInstance/plato-route)** — Message routing for PLATO tile distribution
 - **[plato-runtime-kernel](https://github.com/SuperInstance/plato-runtime-kernel)** — Runtime kernel for PLATO — the AI theorem prover. Conservation-verified computation on bare metal.
 - **[plato-schema](https://github.com/SuperInstance/plato-schema)** — JSON schema validation and versioning for PLATO messages
+- **[plato-semantic-search](https://github.com/SuperInstance/plato-semantic-search)**
 - **[plato-signal-chain](https://github.com/SuperInstance/plato-signal-chain)** — Composable 5-layer signal chain pipeline for PLATO rooms
 - **[plato-spectral](https://github.com/SuperInstance/plato-spectral)**
 - **[plato-state](https://github.com/SuperInstance/plato-state)** — 16-dimensional room state vectors for PLATO nervous system
@@ -1009,6 +1013,7 @@
 
 ## Polyformalism
 
+- **[delta-clt](https://github.com/SuperInstance/delta-clt)** — Conservation law verification suite + 9-channel polyformalism colony analysis
 - **[polyformalism-languages](https://github.com/SuperInstance/polyformalism-languages)** — Human language polyformalism - Sapir-Whorf applied to creative cognition
 - **[polyformalism-thinking](https://github.com/SuperInstance/polyformalism-thinking)** — Codified framework for forced novel-thinking-via-language-constraints — general-purpose AGI techniqu
 
@@ -1261,7 +1266,6 @@
 - **[fiedler-universal](https://github.com/SuperInstance/fiedler-universal)** — Benchmarking Fiedler vector partition across 6 domains — honest results
 - **[financial-conservation](https://github.com/SuperInstance/financial-conservation)** — Spectral conservation analysis of financial market regimes
 - **[finite-difference-pde](https://github.com/SuperInstance/finite-difference-pde)** — Finite difference PDE solvers in Rust — heat equation, wave equation, Poisson, advection-diffusion w
-- **[fir-filter](https://github.com/SuperInstance/fir-filter)** — fir-filter
 - **[fisher-rao](https://github.com/SuperInstance/fisher-rao)**
 - **[flow-control](https://github.com/SuperInstance/flow-control)** — Rust crate: flow-control
 - **[fluid-sim](https://github.com/SuperInstance/fluid-sim)** — A Rust library for Fluid Sim
@@ -1353,7 +1357,6 @@
 - **[huffman-entropy](https://github.com/SuperInstance/huffman-entropy)** — Huffman coding with entropy estimation and optimal prefix tree construction — Rust information theor
 - **[iching-web](https://github.com/SuperInstance/iching-web)** — Sheaf-theoretic I Ching — single-file web app with cohomological analysis
 - **[iii-observability](https://github.com/SuperInstance/iii-observability)** — Information-theoretic service observability on crackle-runtime
-- **[iir-filter](https://github.com/SuperInstance/iir-filter)**
 - **[immune-system](https://github.com/SuperInstance/immune-system)**
 - **[info-geo](https://github.com/SuperInstance/info-geo)** — Information geometry — Fisher information, Riemannian manifolds, natural gradient, exponential famil
 - **[information-geometry](https://github.com/SuperInstance/information-geometry)** — Information geometry in Rust — Fisher information metric, statistical manifolds, natural gradient, e
@@ -1564,6 +1567,7 @@
 - **[local-vector-search](https://github.com/SuperInstance/local-vector-search)** — Local TF-IDF vector search engine for repo discovery
 - **[log-aggregator](https://github.com/SuperInstance/log-aggregator)** — Centralized log aggregation and analysis service for distributed systems
 - **[logic-foundations](https://github.com/SuperInstance/logic-foundations)** — Logic foundations in Rust. From propositions to proofs.
+- **[loom-caching-rollout](https://github.com/SuperInstance/loom-caching-rollout)**
 - **[lsm-tree](https://github.com/SuperInstance/lsm-tree)** — Research-grade Rust crate
 - **[luau-audio](https://github.com/SuperInstance/luau-audio)** — Musical math for Roblox — MIDI, scales, intervals, frequency calculations
 - **[luau-biome](https://github.com/SuperInstance/luau-biome)** — Deterministic biome generation for Roblox — 10 zones, mathematical structures, seeded worlds
@@ -1594,7 +1598,6 @@
 - **[merkle-tree](https://github.com/SuperInstance/merkle-tree)** — Merkle tree construction, proof generation/verification, batch proofs, and consistency proofs in Rus
 - **[metal-lathe](https://github.com/SuperInstance/metal-lathe)** — The research wheel — churns experimental results into novel questions, hypotheses, and experiments t
 - **[model-check](https://github.com/SuperInstance/model-check)**
-- **[modem-core](https://github.com/SuperInstance/modem-core)**
 - **[modular-arithmetic](https://github.com/SuperInstance/modular-arithmetic)** — See README
 - **[monte-carlo-rs](https://github.com/SuperInstance/monte-carlo-rs)** — Monte Carlo methods: uniform sampling, importance sampling, rejection sampling, MC integration, vari
 - **[moo](https://github.com/SuperInstance/moo)** — Optimised tokenizer/lexer generator! 🐄 Uses /y for performance. Moo.
@@ -1670,7 +1673,6 @@
 - **[quipu-math-c](https://github.com/SuperInstance/quipu-math-c)** — C99 Incan knotted cord encoding — base-10 positional knots, arithmetic, corruption detection for edg
 - **[quipu-math-npm](https://github.com/SuperInstance/quipu-math-npm)** — Mathematics of Incan knotted cord (quipu) data structures — TypeScript/npm
 - **[quipu-math-wasm](https://github.com/SuperInstance/quipu-math-wasm)** — Incan knotted cord encoding compiled to WASM — base-10 positional knots in the browser
-- **[raster-line](https://github.com/SuperInstance/raster-line)**
 - **[ratatui-spectral-dashboard](https://github.com/SuperInstance/ratatui-spectral-dashboard)** — Spectral graph analysis in your terminal — Fiedler vectors, Cheeger constants, community detection, 
 - **[rate-distortion](https://github.com/SuperInstance/rate-distortion)** — Rate-distortion theory with lossy compression bounds — Rust information theory library
 - **[rate-limiter](https://github.com/SuperInstance/rate-limiter)** — Distributed rate limiting service with token bucket, sliding window, and fixed window algorithms
@@ -1735,7 +1737,6 @@
 - **[spacemap](https://github.com/SuperInstance/spacemap)**
 - **[sparse-matrix](https://github.com/SuperInstance/sparse-matrix)** — A Rust library for Sparse Matrix
 - **[spectral-deadband-v2](https://github.com/SuperInstance/spectral-deadband-v2)**
-- **[spectral-est](https://github.com/SuperInstance/spectral-est)**
 - **[spectral-fingerprint](https://github.com/SuperInstance/spectral-fingerprint)** — Spectral fingerprinting for code similarity — eigenvalue decomposition of AST adjacency matrices
 - **[spectral-spreadsheet](https://github.com/SuperInstance/spectral-spreadsheet)** — The Second Moment — spreadsheet where formulas compute spectral graph quantities
 - **[spreadsheet-conservation-wasm](https://github.com/SuperInstance/spreadsheet-conservation-wasm)**
@@ -2061,7 +2062,6 @@
 - **[wasm-verify](https://github.com/SuperInstance/wasm-verify)** — WebAssembly binary analysis, verification, and health reporting library in Rust
 - **[wasserstein-ot-c](https://github.com/SuperInstance/wasserstein-ot-c)** — Optimal transport in plain C11 — Sinkhorn, Wasserstein-1/2, barycenter, JKO gradient flow
 - **[wave-conservation](https://github.com/SuperInstance/wave-conservation)** — Spectral wave propagation: wave speed = √λ₂, CR predicts coherence, standing waves reveal eigenvalue
-- **[wavelet-core](https://github.com/SuperInstance/wavelet-core)**
 - **[west-african-math-c](https://github.com/SuperInstance/west-african-math-c)**
 - **[west-african-math-rs](https://github.com/SuperInstance/west-african-math-rs)**
 - **[witness-complex](https://github.com/SuperInstance/witness-complex)** — Witness complex construction for landmark-based topological data analysis with random, maxmin, and k

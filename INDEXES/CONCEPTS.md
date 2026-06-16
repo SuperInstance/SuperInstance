@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-06-15 10:56 UTC
+**Generated:** 2026-06-16 10:09 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -437,6 +437,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [agent-grid](https://github.com/SuperInstance/agent-grid)
 - [agent-groove](https://github.com/SuperInstance/agent-groove)
 - [agent-harmonic-field](https://github.com/SuperInstance/agent-harmonic-field)
+- [agent-harness-generator](https://github.com/SuperInstance/agent-harness-generator)
 - [agent-homeostasis](https://github.com/SuperInstance/agent-homeostasis)
 - [agent-intonation](https://github.com/SuperInstance/agent-intonation)
 - [agent-jam](https://github.com/SuperInstance/agent-jam)
@@ -631,6 +632,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-mapper](https://github.com/SuperInstance/fleet-mapper)
 - [fleet-math-foundations](https://github.com/SuperInstance/fleet-math-foundations)
 - [fleet-mcp-server](https://github.com/SuperInstance/fleet-mcp-server)
+- [fleet-metrics](https://github.com/SuperInstance/fleet-metrics)
 - [fleet-metrics-cron](https://github.com/SuperInstance/fleet-metrics-cron)
 - [fleet-midee-connector](https://github.com/SuperInstance/fleet-midee-connector)
 - [fleet-midi](https://github.com/SuperInstance/fleet-midi)
@@ -1166,6 +1168,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-mythos-bridge](https://github.com/SuperInstance/plato-mythos-bridge)
 - [plato-nervous](https://github.com/SuperInstance/plato-nervous)
 - [plato-normalize](https://github.com/SuperInstance/plato-normalize)
+- [plato-portal](https://github.com/SuperInstance/plato-portal)
 - [plato-predict](https://github.com/SuperInstance/plato-predict)
 - [plato-quickstart](https://github.com/SuperInstance/plato-quickstart)
 - [plato-ring](https://github.com/SuperInstance/plato-ring)
@@ -1174,6 +1177,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-route](https://github.com/SuperInstance/plato-route)
 - [plato-runtime-kernel](https://github.com/SuperInstance/plato-runtime-kernel)
 - [plato-schema](https://github.com/SuperInstance/plato-schema)
+- [plato-semantic-search](https://github.com/SuperInstance/plato-semantic-search)
 - [plato-signal-chain](https://github.com/SuperInstance/plato-signal-chain)
 - [plato-sonar-text](https://github.com/SuperInstance/plato-sonar-text)
 - [plato-spectral](https://github.com/SuperInstance/plato-spectral)
@@ -1213,6 +1217,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Polyformalism
 
+- [delta-clt](https://github.com/SuperInstance/delta-clt)
 - [linguistic-polyformalism-shell](https://github.com/SuperInstance/linguistic-polyformalism-shell)
 - [polyformalism-languages](https://github.com/SuperInstance/polyformalism-languages)
 - [polyformalism-thinking](https://github.com/SuperInstance/polyformalism-thinking)
@@ -1493,7 +1498,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fiedler-universal](https://github.com/SuperInstance/fiedler-universal)
 - [financial-conservation](https://github.com/SuperInstance/financial-conservation)
 - [finite-difference-pde](https://github.com/SuperInstance/finite-difference-pde)
-- [fir-filter](https://github.com/SuperInstance/fir-filter)
 - [fisher-rao](https://github.com/SuperInstance/fisher-rao)
 - [flow-control](https://github.com/SuperInstance/flow-control)
 - [fluid-sim](https://github.com/SuperInstance/fluid-sim)
@@ -1584,7 +1588,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [huffman-entropy](https://github.com/SuperInstance/huffman-entropy)
 - [iching-web](https://github.com/SuperInstance/iching-web)
 - [iii-observability](https://github.com/SuperInstance/iii-observability)
-- [iir-filter](https://github.com/SuperInstance/iir-filter)
 - [immune-system](https://github.com/SuperInstance/immune-system)
 - [info-geo](https://github.com/SuperInstance/info-geo)
 - [information-geometry](https://github.com/SuperInstance/information-geometry)
@@ -1795,6 +1798,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [local-vector-search](https://github.com/SuperInstance/local-vector-search)
 - [log-aggregator](https://github.com/SuperInstance/log-aggregator)
 - [logic-foundations](https://github.com/SuperInstance/logic-foundations)
+- [loom-caching-rollout](https://github.com/SuperInstance/loom-caching-rollout)
 - [lsm-tree](https://github.com/SuperInstance/lsm-tree)
 - [luau-audio](https://github.com/SuperInstance/luau-audio)
 - [luau-biome](https://github.com/SuperInstance/luau-biome)
@@ -1825,7 +1829,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [merkle-tree](https://github.com/SuperInstance/merkle-tree)
 - [metal-lathe](https://github.com/SuperInstance/metal-lathe)
 - [model-check](https://github.com/SuperInstance/model-check)
-- [modem-core](https://github.com/SuperInstance/modem-core)
 - [modular-arithmetic](https://github.com/SuperInstance/modular-arithmetic)
 - [monte-carlo-rs](https://github.com/SuperInstance/monte-carlo-rs)
 - [moo](https://github.com/SuperInstance/moo)
@@ -1897,7 +1900,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quipu-math-c](https://github.com/SuperInstance/quipu-math-c)
 - [quipu-math-npm](https://github.com/SuperInstance/quipu-math-npm)
 - [quipu-math-wasm](https://github.com/SuperInstance/quipu-math-wasm)
-- [raster-line](https://github.com/SuperInstance/raster-line)
 - [ratatui-spectral-dashboard](https://github.com/SuperInstance/ratatui-spectral-dashboard)
 - [rate-distortion](https://github.com/SuperInstance/rate-distortion)
 - [rate-limiter](https://github.com/SuperInstance/rate-limiter)
@@ -1962,7 +1964,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [spacemap](https://github.com/SuperInstance/spacemap)
 - [sparse-matrix](https://github.com/SuperInstance/sparse-matrix)
 - [spectral-deadband-v2](https://github.com/SuperInstance/spectral-deadband-v2)
-- [spectral-est](https://github.com/SuperInstance/spectral-est)
 - [spectral-fingerprint](https://github.com/SuperInstance/spectral-fingerprint)
 - [spectral-spreadsheet](https://github.com/SuperInstance/spectral-spreadsheet)
 - [spreadsheet-conservation-wasm](https://github.com/SuperInstance/spreadsheet-conservation-wasm)
@@ -2288,7 +2289,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [wasm-verify](https://github.com/SuperInstance/wasm-verify)
 - [wasserstein-ot-c](https://github.com/SuperInstance/wasserstein-ot-c)
 - [wave-conservation](https://github.com/SuperInstance/wave-conservation)
-- [wavelet-core](https://github.com/SuperInstance/wavelet-core)
 - [west-african-math-c](https://github.com/SuperInstance/west-african-math-c)
 - [west-african-math-rs](https://github.com/SuperInstance/west-african-math-rs)
 - [witness-complex](https://github.com/SuperInstance/witness-complex)

@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-06-15 10:56 UTC
+**Generated:** 2026-06-16 10:09 UTC
 **Total repos:** 2000
 
 ## C
@@ -569,6 +569,7 @@
 - **[agent-grid](https://github.com/SuperInstance/agent-grid)** — Grid-based interface for AI agents.
 - **[agent-groove](https://github.com/SuperInstance/agent-groove)** — Musical groove and swing applied to agent work patterns. Pocket states for autonomy, swing schedulin
 - **[agent-harmonic-field](https://github.com/SuperInstance/agent-harmonic-field)** — Advanced music-cognition crate: agent-harmonic-field
+- **[agent-harness-generator](https://github.com/SuperInstance/agent-harness-generator)** — 🛠️ The meta-harness for AI agents — scaffold your own focused, branded agent harness with its own np
 - **[agent-intonation](https://github.com/SuperInstance/agent-intonation)** — Agent intonation — measuring output accuracy like musical pitch. Beating frequencies, cascade deviat
 - **[agent-jam](https://github.com/SuperInstance/agent-jam)** — Musical jam sessions generalized to multi-agent productive collaboration. Voices→collaborators, chor
 - **[agent-knowledge](https://github.com/SuperInstance/agent-knowledge)** — Agent-to-agent knowledge base. Documentation written FOR agents, creating chain-reaction understandi
@@ -794,6 +795,7 @@
 - **[DeckBoss](https://github.com/SuperInstance/DeckBoss)** — 🛩️ Agent Edge OS — flight deck for launching, recovering, and coordinating agents.
 - **[deckboss-net](https://github.com/SuperInstance/deckboss-net)** — Commercial fishing fleet operations — vessel tracking, fuel monitoring, crew management, and deliver
 - **[decomp-agents](https://github.com/SuperInstance/decomp-agents)**
+- **[delta-clt](https://github.com/SuperInstance/delta-clt)** — Conservation law verification suite + 9-channel polyformalism colony analysis
 - **[delta-encode](https://github.com/SuperInstance/delta-encode)**
 - **[demo-memory](https://github.com/SuperInstance/demo-memory)** — Demo memory system — agent memory management and retrieval examples
 - **[dial-ecology](https://github.com/SuperInstance/dial-ecology)** — Ecological succession on the cultural dial: Lotka-Volterra dynamics for tradition competition, niche
@@ -838,7 +840,6 @@
 - **[field-dynamics](https://github.com/SuperInstance/field-dynamics)** — Interactive multi-agent field dynamics simulation with spectral forces
 - **[field-dynamics-sim](https://github.com/SuperInstance/field-dynamics-sim)** — Multi-agent field dynamics simulation with Conservation Spectral Analysis — fleet spectral health mo
 - **[financial-conservation](https://github.com/SuperInstance/financial-conservation)** — Spectral conservation analysis of financial market regimes
-- **[fir-filter](https://github.com/SuperInstance/fir-filter)** — fir-filter
 - **[fisher-rao](https://github.com/SuperInstance/fisher-rao)**
 - **[fishinglog-ai](https://github.com/SuperInstance/fishinglog-ai)** — fishinglog.ai — Edge AI fishing vessel. Jetson-powered species classification, captain voice, conver
 - **[fleet-a2a-bridge](https://github.com/SuperInstance/fleet-a2a-bridge)**
@@ -872,6 +873,7 @@
 - **[fleet-map](https://github.com/SuperInstance/fleet-map)** — Interactive constellation map of the SuperInstance fork fleet — 19 repos, 1.4M+ GitHub stars, now co
 - **[fleet-mapper](https://github.com/SuperInstance/fleet-mapper)** — Scan, fingerprint, categorize, and deduplicate a fleet of git repos
 - **[fleet-math-foundations](https://github.com/SuperInstance/fleet-math-foundations)** — 12-chapter monograph: geometry of coordinated systems — ZHC, H1, Laman, sheaf cohomology, lattice ga
+- **[fleet-metrics](https://github.com/SuperInstance/fleet-metrics)** — Real-time metrics collection and aggregation for the entire fleet
 - **[fleet-metrics-cron](https://github.com/SuperInstance/fleet-metrics-cron)** — Fleet metrics collection cron for Cloudflare Workers
 - **[fleet-midee-connector](https://github.com/SuperInstance/fleet-midee-connector)** — Bridge between fleet MIDI output and the Midee browser visualizer
 - **[fleet-midi](https://github.com/SuperInstance/fleet-midi)** — MIDI message parsing and fleet broadcast for agent coordination via musical signals
@@ -1082,7 +1084,6 @@
 - **[homology-engine](https://github.com/SuperInstance/homology-engine)** — Persistent homology computation engine for topological data analysis
 - **[huffman-code](https://github.com/SuperInstance/huffman-code)**
 - **[i2i-vessel](https://github.com/SuperInstance/i2i-vessel)** — 🧩 Agent communication protocol — typed bottles, filesystem transport, ACK semantics. Any language, a
-- **[iir-filter](https://github.com/SuperInstance/iir-filter)**
 - **[immune-system](https://github.com/SuperInstance/immune-system)**
 - **[info-geo](https://github.com/SuperInstance/info-geo)** — Information geometry — Fisher information, Riemannian manifolds, natural gradient, exponential famil
 - **[information-theory](https://github.com/SuperInstance/information-theory)**
@@ -1356,6 +1357,7 @@
 - **[llvm-project](https://github.com/SuperInstance/llvm-project)** — The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 - **[local-vector-search](https://github.com/SuperInstance/local-vector-search)** — Local TF-IDF vector search engine for repo discovery
 - **[log-aggregator](https://github.com/SuperInstance/log-aggregator)** — Centralized log aggregation and analysis service for distributed systems
+- **[loom-caching-rollout](https://github.com/SuperInstance/loom-caching-rollout)**
 - **[lotka-volterra-agents](https://github.com/SuperInstance/lotka-volterra-agents)** — Generalized Lotka-Volterra dynamics for multi-agent strategy ecology
 - **[luau-audio](https://github.com/SuperInstance/luau-audio)** — Musical math for Roblox — MIDI, scales, intervals, frequency calculations
 - **[luau-conservation](https://github.com/SuperInstance/luau-conservation)** — Conservation law checking for Roblox — Noether's theorem, playable
@@ -1384,7 +1386,6 @@
 - **[metal-lathe](https://github.com/SuperInstance/metal-lathe)** — The research wheel — churns experimental results into novel questions, hypotheses, and experiments t
 - **[midi-flux-bridge](https://github.com/SuperInstance/midi-flux-bridge)** — Bridge from tensor-midi timing to FLUX bytecode: conductor scheduling, swing timing, alignment verif
 - **[model-check](https://github.com/SuperInstance/model-check)**
-- **[modem-core](https://github.com/SuperInstance/modem-core)**
 - **[moe-sheaf](https://github.com/SuperInstance/moe-sheaf)** — Sheaf cohomology of MoE routing — test DeepSeek's conjecture on generalization
 - **[monad-composition](https://github.com/SuperInstance/monad-composition)** — Monad composition patterns for agent pipelines
 - **[moo](https://github.com/SuperInstance/moo)** — Optimised tokenizer/lexer generator! 🐄 Uses /y for performance. Moo.
@@ -1506,6 +1507,7 @@
 - **[plato-mythos](https://github.com/SuperInstance/plato-mythos)** — PLATO-native Recurrent-Depth Transformer — rooms as MoE experts, tiles as KV, deadband as ACT haltin
 - **[plato-mythos-bridge](https://github.com/SuperInstance/plato-mythos-bridge)**
 - **[plato-normalize](https://github.com/SuperInstance/plato-normalize)** — Normalization and standardization for PLATO tile values
+- **[plato-portal](https://github.com/SuperInstance/plato-portal)**
 - **[plato-predict](https://github.com/SuperInstance/plato-predict)** — Time series prediction primitives for PLATO tile streams
 - **[plato-quickstart](https://github.com/SuperInstance/plato-quickstart)** — Bootstrap a Plato room in 30 seconds. CLI tool: init, validate, simulate, fleet. Zero dependencies.
 - **[plato-ring](https://github.com/SuperInstance/plato-ring)** — Lock-free ring buffer for PLATO high-frequency sensor data
@@ -1513,6 +1515,7 @@
 - **[plato-route](https://github.com/SuperInstance/plato-route)** — Message routing for PLATO tile distribution
 - **[plato-runtime-kernel](https://github.com/SuperInstance/plato-runtime-kernel)** — Runtime kernel for PLATO — the AI theorem prover. Conservation-verified computation on bare metal.
 - **[plato-schema](https://github.com/SuperInstance/plato-schema)** — JSON schema validation and versioning for PLATO messages
+- **[plato-semantic-search](https://github.com/SuperInstance/plato-semantic-search)**
 - **[plato-signal-chain](https://github.com/SuperInstance/plato-signal-chain)** — Composable 5-layer signal chain pipeline for PLATO rooms
 - **[plato-sonar-text](https://github.com/SuperInstance/plato-sonar-text)** — PLATO Sonar Text — text perception and sonar-based content analysis for PLATO rooms
 - **[plato-spectral](https://github.com/SuperInstance/plato-spectral)**
@@ -1548,7 +1551,6 @@
 - **[quipu-math](https://github.com/SuperInstance/quipu-math)** — Mathematics of Incan knotted cord (quipu) data structures
 - **[quipu-math-wasm](https://github.com/SuperInstance/quipu-math-wasm)** — Incan knotted cord encoding compiled to WASM — base-10 positional knots in the browser
 - **[random-walk-agent](https://github.com/SuperInstance/random-walk-agent)** — random-walk-agent
-- **[raster-line](https://github.com/SuperInstance/raster-line)**
 - **[ratatui-spectral-dashboard](https://github.com/SuperInstance/ratatui-spectral-dashboard)** — Spectral graph analysis in your terminal — Fiedler vectors, Cheeger constants, community detection, 
 - **[rate-limiter](https://github.com/SuperInstance/rate-limiter)** — Distributed rate limiting service with token bucket, sliding window, and fixed window algorithms
 - **[reinforcement-grid](https://github.com/SuperInstance/reinforcement-grid)** — [package]
@@ -1613,7 +1615,6 @@
 - **[spacedrive-fleet](https://github.com/SuperInstance/spacedrive-fleet)** — Spacedrive × CoCapn: your file explorer is also a compute fleet manager
 - **[spacemap](https://github.com/SuperInstance/spacemap)**
 - **[spectral-deadband-v2](https://github.com/SuperInstance/spectral-deadband-v2)**
-- **[spectral-est](https://github.com/SuperInstance/spectral-est)**
 - **[spectral-fingerprint](https://github.com/SuperInstance/spectral-fingerprint)** — Spectral fingerprinting for code similarity — eigenvalue decomposition of AST adjacency matrices
 - **[spectral-fleet](https://github.com/SuperInstance/spectral-fleet)** — Spectral graph theory for AI agent fleet analysis and optimization
 - **[spectral-graph-agent-rs](https://github.com/SuperInstance/spectral-graph-agent-rs)**
@@ -2017,7 +2018,6 @@
 - **[warp-ternary-vote](https://github.com/SuperInstance/warp-ternary-vote)** — Experiment: GPU warp-level ternary voting simulation. 32 threads with {-1,0,+1} values, warp reduce,
 - **[warp-vote-consensus](https://github.com/SuperInstance/warp-vote-consensus)** — GPU warp-vote hardware as agent consensus. 32-thread ballots → ternary voting → quorum tree → fleet 
 - **[wasserstein-agents](https://github.com/SuperInstance/wasserstein-agents)** — Wasserstein distance and optimal transport — Sinkhorn algorithm, agent distribution coordination, JK
-- **[wavelet-core](https://github.com/SuperInstance/wavelet-core)**
 - **[webgpu-profiler](https://github.com/SuperInstance/webgpu-profiler)** — GPU profiler for WebGPU applications - Real-time GPU monitoring, benchmarking, and performance analy
 - **[west-african-math-rs](https://github.com/SuperInstance/west-african-math-rs)**
 - **[witness-complex](https://github.com/SuperInstance/witness-complex)** — Witness complex construction for landmark-based topological data analysis with random, maxmin, and k
