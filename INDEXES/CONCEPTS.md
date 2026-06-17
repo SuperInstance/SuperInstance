@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-06-16 10:09 UTC
+**Generated:** 2026-06-17 09:52 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -934,6 +934,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [renormalization-group](https://github.com/SuperInstance/renormalization-group)
 - [renormalization-learning-c](https://github.com/SuperInstance/renormalization-learning-c)
 - [reposphere](https://github.com/SuperInstance/reposphere)
+- [roblox-craftmind-agents](https://github.com/SuperInstance/roblox-craftmind-agents)
 - [sailor-workspace](https://github.com/SuperInstance/sailor-workspace)
 - [scheduling-rs](https://github.com/SuperInstance/scheduling-rs)
 - [semble](https://github.com/SuperInstance/semble)
@@ -1089,6 +1090,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [commit-predictor](https://github.com/SuperInstance/commit-predictor)
 - [construct](https://github.com/SuperInstance/construct)
 - [court-jester](https://github.com/SuperInstance/court-jester)
+- [craftmind](https://github.com/SuperInstance/craftmind)
 - [cross-pollination](https://github.com/SuperInstance/cross-pollination)
 - [entropy-conservation](https://github.com/SuperInstance/entropy-conservation)
 - [exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)
@@ -1573,6 +1575,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [harmonic-analysis](https://github.com/SuperInstance/harmonic-analysis)
 - [heat-spectral](https://github.com/SuperInstance/heat-spectral)
 - [hermes-construct](https://github.com/SuperInstance/hermes-construct)
+- [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
 - [hermit-claw](https://github.com/SuperInstance/hermit-claw)
 - [hermit-crab](https://github.com/SuperInstance/hermit-crab)
 - [hermit-zed](https://github.com/SuperInstance/hermit-zed)
@@ -1598,7 +1601,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [kalman-filter](https://github.com/SuperInstance/kalman-filter)
 - [kan-extension](https://github.com/SuperInstance/kan-extension)
 - [kernel-conservation](https://github.com/SuperInstance/kernel-conservation)
-- [kinematics](https://github.com/SuperInstance/kinematics)
 - [kintsugi-math](https://github.com/SuperInstance/kintsugi-math)
 - [kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)
 - [kintsugi-math-npm](https://github.com/SuperInstance/kintsugi-math-npm)
@@ -1834,7 +1836,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [moo](https://github.com/SuperInstance/moo)
 - [morphogenesis](https://github.com/SuperInstance/morphogenesis)
 - [morse-theory](https://github.com/SuperInstance/morse-theory)
-- [motion-planning](https://github.com/SuperInstance/motion-planning)
 - [multi-armed-bandit](https://github.com/SuperInstance/multi-armed-bandit)
 - [murmur-protocol-v2](https://github.com/SuperInstance/murmur-protocol-v2)
 - [music-vibe-experiments](https://github.com/SuperInstance/music-vibe-experiments)
@@ -1881,7 +1882,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [partition-tolerance](https://github.com/SuperInstance/partition-tolerance)
 - [persistence-landscape](https://github.com/SuperInstance/persistence-landscape)
 - [persistent-social](https://github.com/SuperInstance/persistent-social)
-- [pid-control](https://github.com/SuperInstance/pid-control)
 - [pincher](https://github.com/SuperInstance/pincher)
 - [playerlog-ai](https://github.com/SuperInstance/playerlog-ai)
 - [position-aware-embed](https://github.com/SuperInstance/position-aware-embed)
@@ -1920,6 +1920,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ring-buffer-rs](https://github.com/SuperInstance/ring-buffer-rs)
 - [ring-sign](https://github.com/SuperInstance/ring-sign)
 - [rl-rs](https://github.com/SuperInstance/rl-rs)
+- [roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)
 - [robotics-foundations](https://github.com/SuperInstance/robotics-foundations)
 - [routing-table](https://github.com/SuperInstance/routing-table)
 - [run-length](https://github.com/SuperInstance/run-length)
@@ -1953,7 +1954,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [sketch-forgemaster-experiments](https://github.com/SuperInstance/sketch-forgemaster-experiments)
 - [sketch-oracle2-construct-readme](https://github.com/SuperInstance/sketch-oracle2-construct-readme)
 - [sketch-ternary-kihn-metaphor](https://github.com/SuperInstance/sketch-ternary-kihn-metaphor)
-- [slam-core](https://github.com/SuperInstance/slam-core)
 - [smt-core](https://github.com/SuperInstance/smt-core)
 - [social-conservation](https://github.com/SuperInstance/social-conservation)
 - [solid-mechanics](https://github.com/SuperInstance/solid-mechanics)

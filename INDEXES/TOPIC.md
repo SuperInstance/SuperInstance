@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-06-16 10:09 UTC
+**Generated:** 2026-06-17 09:52 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -750,6 +750,7 @@
 - **[renormalization-group](https://github.com/SuperInstance/renormalization-group)** — Renormalization group framework for multi-scale fleet analysis
 - **[renormalization-learning-c](https://github.com/SuperInstance/renormalization-learning-c)** — Wilsonian RG as model for agent skill acquisition. C11 library.
 - **[reposphere](https://github.com/SuperInstance/reposphere)** — Self-hosting repository as conscious entity — REPOSPHERE.md as executable brain, guest agent teachin
+- **[roblox-craftmind-agents](https://github.com/SuperInstance/roblox-craftmind-agents)** — Core Lua framework for Roblox agents with self-improving, token-saving logic
 - **[sailor-workspace](https://github.com/SuperInstance/sailor-workspace)** — Sailor workspace — fleet orchestration, audits, memory, docs, scripts
 - **[scheduling-rs](https://github.com/SuperInstance/scheduling-rs)** — Scheduling algorithms for real-world fleet and job management
 - **[semble](https://github.com/SuperInstance/semble)** — Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read
@@ -890,6 +891,7 @@
 - **[commit-predictor](https://github.com/SuperInstance/commit-predictor)** — Extracted from plato-training
 - **[construct](https://github.com/SuperInstance/construct)** — The Construct — blank PLATO shell for any agent
 - **[court-jester](https://github.com/SuperInstance/court-jester)** — The cheapest voice in the room — Seed-2.0-mini MCP playground for agent ideation with PLATO bridge
+- **[craftmind](https://github.com/SuperInstance/craftmind)** — 🎮 Minecraft AI training ground — spatial reasoning meets PLATO rooms.
 - **[cross-pollination](https://github.com/SuperInstance/cross-pollination)** — 🌿 Cross-room synergy detection for AI agent fleets. Finds shared concepts between knowledge domains.
 - **[entropy-conservation](https://github.com/SuperInstance/entropy-conservation)** — Conservation of Verification Entropy — the mathematical framework behind the meta-law discovered acr
 - **[Equipment-CellLogic-Distiller](https://github.com/SuperInstance/Equipment-CellLogic-Distiller)** — Breaks down LLM logic into spreadsheet-visualized cells with tile decomposition
@@ -1342,6 +1344,7 @@
 - **[harmonic-analysis](https://github.com/SuperInstance/harmonic-analysis)** — Harmonic analysis in Rust — Fourier series, DFT/FFT, wavelets, spectral methods
 - **[heat-spectral](https://github.com/SuperInstance/heat-spectral)** — Heat diffusion on graphs: equilibration time = 1/λ₂, CR predicts diffusion speed, spectral filtering
 - **[hermes-construct](https://github.com/SuperInstance/hermes-construct)** — Hermes understands the cave walls are a shell when seen from the outside. IO with other shells, APIs
+- **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)**
 - **[hermit-claw](https://github.com/SuperInstance/hermit-claw)** — Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS, ANY PLATFORM — deplo
 - **[hermit-crab](https://github.com/SuperInstance/hermit-crab)**
 - **[hermit-zed](https://github.com/SuperInstance/hermit-zed)** — Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators 
@@ -1367,7 +1370,6 @@
 - **[kalman-filter](https://github.com/SuperInstance/kalman-filter)** — A Rust library for Kalman Filter
 - **[kan-extension](https://github.com/SuperInstance/kan-extension)** — Category theory Kan extensions for capability composition
 - **[kernel-conservation](https://github.com/SuperInstance/kernel-conservation)** — Conservation spectral experiment: kernel-conservation
-- **[kinematics](https://github.com/SuperInstance/kinematics)**
 - **[kintsugi-math](https://github.com/SuperInstance/kintsugi-math)** — The mathematics of beautiful error recovery — fault tolerance as an aesthetic principle
 - **[kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)** — C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle
 - **[kintsugi-math-npm](https://github.com/SuperInstance/kintsugi-math-npm)** — The mathematics of beautiful error recovery — TypeScript/npm
@@ -1603,7 +1605,6 @@
 - **[moo](https://github.com/SuperInstance/moo)** — Optimised tokenizer/lexer generator! 🐄 Uses /y for performance. Moo.
 - **[morphogenesis](https://github.com/SuperInstance/morphogenesis)**
 - **[morse-theory](https://github.com/SuperInstance/morse-theory)** — Morse theory on manifolds — critical points, Morse complex, handle attachments
-- **[motion-planning](https://github.com/SuperInstance/motion-planning)**
 - **[multi-armed-bandit](https://github.com/SuperInstance/multi-armed-bandit)** — [package]
 - **[murmur-protocol-v2](https://github.com/SuperInstance/murmur-protocol-v2)**
 - **[music-vibe-experiments](https://github.com/SuperInstance/music-vibe-experiments)** — Music vibe embedding experiments — generating MIDI from vibe space, dimension sweeps, style prototyp
@@ -1652,7 +1653,6 @@
 - **[partition-tolerance](https://github.com/SuperInstance/partition-tolerance)** — Distributed systems primitive
 - **[persistence-landscape](https://github.com/SuperInstance/persistence-landscape)** — Persistence landscapes for statistical topological data analysis: piecewise-linear landscape functio
 - **[persistent-social](https://github.com/SuperInstance/persistent-social)** — Persistent homology for social network analysis — pure Go, goroutine-safe, 10K+ scale
-- **[pid-control](https://github.com/SuperInstance/pid-control)**
 - **[pincher](https://github.com/SuperInstance/pincher)** — Vector Database as runtime, LLM as compiler
 - **[playerlog-ai](https://github.com/SuperInstance/playerlog-ai)** — PlayerLog.ai — AI gaming companion. Session tracking, character management, achievement logging. Par
 - **[position-aware-embed](https://github.com/SuperInstance/position-aware-embed)** — Position-aware text embedding — 44% top-1 accuracy for command matching, sub-microsecond latency
@@ -1693,6 +1693,7 @@
 - **[ring-buffer-rs](https://github.com/SuperInstance/ring-buffer-rs)** — Circular/ring buffer with SPSC lock-free variant, power-of-two sizing, sliding window — pure Rust, n
 - **[ring-sign](https://github.com/SuperInstance/ring-sign)**
 - **[rl-rs](https://github.com/SuperInstance/rl-rs)** — Reinforcement learning in Rust. From Q-tables to policy gradients.
+- **[roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)** — Tooling for automated Roblox game building with t-minus-event synchronized simulation framework
 - **[robotics-foundations](https://github.com/SuperInstance/robotics-foundations)** — Robotics foundations in Rust. Kinematics to control, from scratch.
 - **[routing-table](https://github.com/SuperInstance/routing-table)** — Rust crate: routing-table
 - **[run-length](https://github.com/SuperInstance/run-length)**
@@ -1726,7 +1727,6 @@
 - **[sketch-forgemaster-experiments](https://github.com/SuperInstance/sketch-forgemaster-experiments)**
 - **[sketch-oracle2-construct-readme](https://github.com/SuperInstance/sketch-oracle2-construct-readme)** — Living document: what runs on oracle2, what ports, what services, the feedback loop
 - **[sketch-ternary-kihn-metaphor](https://github.com/SuperInstance/sketch-ternary-kihn-metaphor)** — ARM64 free tier as firing kihn - API brain as dissertation committee. Local ternary math at zero cos
-- **[slam-core](https://github.com/SuperInstance/slam-core)**
 - **[smt-core](https://github.com/SuperInstance/smt-core)**
 - **[social-conservation](https://github.com/SuperInstance/social-conservation)** — Spectral conservation analysis of social networks — bot detection, echo chambers, influence
 - **[solid-mechanics](https://github.com/SuperInstance/solid-mechanics)** — Solid mechanics in Rust — stress/strain tensors, beam theory, FEM basics, yield criteria, energy met

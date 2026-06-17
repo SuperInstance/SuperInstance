@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-06-16 10:09 UTC
+**Generated:** 2026-06-17 09:52 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -782,6 +782,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[crab-traps](https://github.com/SuperInstance/crab-traps)** | CCC, Oracle1 | Chatbot prompts (lures) that generate PLATO tiles by walking agents through the MUD environment. | 🟢 active |
 | **[crackle-runtime](https://github.com/SuperInstance/crackle-runtime)** | Various | A Rust task execution framework where beauty emerges in the cooling, not the firing | ⚪ unknown |
 | **[crackle-runtime-c](https://github.com/SuperInstance/crackle-runtime-c)** | Various | crackle-runtime-c | ⚪ unknown |
+| **[craftmind](https://github.com/SuperInstance/craftmind)** | Various | 🎮 Minecraft AI training ground — spatial reasoning meets PLATO rooms. | ⚪ unknown |
 | **[craftmind-studio](https://github.com/SuperInstance/craftmind-studio)** | Various | AI-powered Minecraft filmmaking studio — AI agents as actors, parallel simulations, Director AI | 🟢 active |
 | **[crate-graph](https://github.com/SuperInstance/crate-graph)** | Various | Dependency graph analysis for Rust crate fleets | ⚪ unknown |
 | **[crates-publish-check](https://github.com/SuperInstance/crates-publish-check)** | Various | Check which Rust crates in a directory are ready for crates.io publishing | ⚪ unknown |
@@ -976,6 +977,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[headspace](https://github.com/SuperInstance/headspace)** | Various | Context compression + ternary swarm + baton fleet: the SuperInstance integration hub. | ⚪ unknown |
 | **[heat-spectral](https://github.com/SuperInstance/heat-spectral)** | Various | Heat diffusion on graphs: equilibration time = 1/λ₂, CR predicts diffusion speed, spectral filtering | ⚪ unknown |
 | **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** | Various | Hebbian routing — connection strengthening based on usage patterns for agent communication networks | 🟢 active |
+| **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)** | Various | hermes-roblox-construct | ⚪ unknown |
 | **[hermit-claw](https://github.com/SuperInstance/hermit-claw)** | Various | Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS, ANY PLATFORM — deplo | ⚪ unknown |
 | **[hermit-zed](https://github.com/SuperInstance/hermit-zed)** | Various | Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators  | ⚪ unknown |
 | **[hoare-logic](https://github.com/SuperInstance/hoare-logic)** | Various | hoare-logic | ⚪ unknown |
@@ -1001,7 +1003,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[kalman-filter](https://github.com/SuperInstance/kalman-filter)** | Various | A Rust library for Kalman Filter | ⚪ unknown |
 | **[kan-extension](https://github.com/SuperInstance/kan-extension)** | Various | Category theory Kan extensions for capability composition | ⚪ unknown |
 | **[kernel-conservation](https://github.com/SuperInstance/kernel-conservation)** | Various | Conservation spectral experiment: kernel-conservation | ⚪ unknown |
-| **[kinematics](https://github.com/SuperInstance/kinematics)** | Various | kinematics | ⚪ unknown |
 | **[kintsugi-math](https://github.com/SuperInstance/kintsugi-math)** | Various | The mathematics of beautiful error recovery — fault tolerance as an aesthetic principle | ⚪ unknown |
 | **[kintsugi-math-npm](https://github.com/SuperInstance/kintsugi-math-npm)** | Various | The mathematics of beautiful error recovery — TypeScript/npm | ⚪ unknown |
 | **[knot-theory](https://github.com/SuperInstance/knot-theory)** | Various | knot-theory | ⚪ unknown |
@@ -1339,7 +1340,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[moo](https://github.com/SuperInstance/moo)** | Various | Optimised tokenizer/lexer generator! 🐄 Uses /y for performance. Moo. | ⚪ unknown |
 | **[morphogenesis](https://github.com/SuperInstance/morphogenesis)** | Various | morphogenesis | ⚪ unknown |
 | **[morse-theory](https://github.com/SuperInstance/morse-theory)** | Various | Morse theory on manifolds — critical points, Morse complex, handle attachments | ⚪ unknown |
-| **[motion-planning](https://github.com/SuperInstance/motion-planning)** | Various | motion-planning | ⚪ unknown |
 | **[mud-arena](https://github.com/SuperInstance/mud-arena)** | Various | Flow-state engineering arena — agents run forward simulations, listen for spectral nudges, maintain  | 🟢 active |
 | **[multi-armed-bandit](https://github.com/SuperInstance/multi-armed-bandit)** | Various | [package] | ⚪ unknown |
 | **[music-vibe-experiments](https://github.com/SuperInstance/music-vibe-experiments)** | Various | Music vibe embedding experiments — generating MIDI from vibe space, dimension sweeps, style prototyp | ⚪ unknown |
@@ -1425,7 +1425,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[persistent-sheaf](https://github.com/SuperInstance/persistent-sheaf)** | Various | Persistent sheaf cohomology — cellular sheaf Laplacians, Vietoris-Rips complexes, multi-modal data f | ⚪ unknown |
 | **[persistent-social](https://github.com/SuperInstance/persistent-social)** | Various | Persistent homology for social network analysis — pure Go, goroutine-safe, 10K+ scale | ⚪ unknown |
 | **[personallog-ai](https://github.com/SuperInstance/personallog-ai)** | Various | personallog.ai — Your personal AI agent living in your repo. Free, open-source, fork-and-deploy. | 🟢 active |
-| **[pid-control](https://github.com/SuperInstance/pid-control)** | Various | pid-control | ⚪ unknown |
 | **[pincher](https://github.com/SuperInstance/pincher)** | Various | Vector Database as runtime, LLM as compiler | ⚪ unknown |
 | **[plato-agent-python](https://github.com/SuperInstance/plato-agent-python)** | Various | Python agent framework for Plato Engine Blocks — connect to rooms, observe ticks, send commands, mak | 🟢 active |
 | **[plato-alert](https://github.com/SuperInstance/plato-alert)** | Various | Alert management for PLATO — creation, routing, acknowledgment, escalation | ⚪ unknown |
@@ -1519,6 +1518,8 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ring-buffer-rs](https://github.com/SuperInstance/ring-buffer-rs)** | Various | Circular/ring buffer with SPSC lock-free variant, power-of-two sizing, sliding window — pure Rust, n | ⚪ unknown |
 | **[ring-sign](https://github.com/SuperInstance/ring-sign)** | Various | ring-sign | ⚪ unknown |
 | **[rl-rs](https://github.com/SuperInstance/rl-rs)** | Various | Reinforcement learning in Rust. From Q-tables to policy gradients. | ⚪ unknown |
+| **[roblox-craftmind-agents](https://github.com/SuperInstance/roblox-craftmind-agents)** | Various | Core Lua framework for Roblox agents with self-improving, token-saving logic | 🟢 active |
+| **[roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)** | Various | Tooling for automated Roblox game building with t-minus-event synchronized simulation framework | ⚪ unknown |
 | **[robotics-foundations](https://github.com/SuperInstance/robotics-foundations)** | Various | Robotics foundations in Rust. Kinematics to control, from scratch. | ⚪ unknown |
 | **[room-cell](https://github.com/SuperInstance/room-cell)** | Various | The fundamental room cell — standalone but composable atom of the Grand Pattern architecture | ⚪ unknown |
 | **[routing-table](https://github.com/SuperInstance/routing-table)** | Various | Rust crate: routing-table | ⚪ unknown |
@@ -1566,7 +1567,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[sketch-forgemaster-experiments](https://github.com/SuperInstance/sketch-forgemaster-experiments)** | Various | sketch-forgemaster-experiments | ⚪ unknown |
 | **[sketch-gc-pid-feedback-loop](https://github.com/SuperInstance/sketch-gc-pid-feedback-loop)** | Various | Disk GC with PID controller, ternary confidence, intelligent predictor. Cross-domain synergy between | ⚪ unknown |
 | **[sketch-oracle2-construct-readme](https://github.com/SuperInstance/sketch-oracle2-construct-readme)** | Various | Living document: what runs on oracle2, what ports, what services, the feedback loop | ⚪ unknown |
-| **[slam-core](https://github.com/SuperInstance/slam-core)** | Various | slam-core | ⚪ unknown |
 | **[SmartCRDT](https://github.com/SuperInstance/SmartCRDT)** | Various | Utilizing CRDT technology for self-improving AI | 🟢 active |
 | **[smt-core](https://github.com/SuperInstance/smt-core)** | Various | smt-core | ⚪ unknown |
 | **[social-conservation](https://github.com/SuperInstance/social-conservation)** | Various | Spectral conservation analysis of social networks — bot detection, echo chambers, influence | ⚪ unknown |
@@ -7488,6 +7488,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Representation theory in Rust — group representations, irreducible representations, characters, Lie algebra representations
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [roblox-craftmind-agents](https://github.com/SuperInstance/roblox-craftmind-agents)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Core Lua framework for Roblox agents with self-improving, token-saving logic
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-06-16 10:09 UTC
+**Generated:** 2026-06-17 09:52 UTC
 **Total repos:** 2000
 
 ## C
@@ -782,6 +782,7 @@
 - **[court-jester](https://github.com/SuperInstance/court-jester)** — The cheapest voice in the room — Seed-2.0-mini MCP playground for agent ideation with PLATO bridge
 - **[cpu-sched](https://github.com/SuperInstance/cpu-sched)**
 - **[crab-trap-funnel](https://github.com/SuperInstance/crab-trap-funnel)** — CF Worker serving 20 domain landing pages with AI bot trap detection
+- **[craftmind](https://github.com/SuperInstance/craftmind)** — 🎮 Minecraft AI training ground — spatial reasoning meets PLATO rooms.
 - **[craftmind-studio](https://github.com/SuperInstance/craftmind-studio)** — AI-powered Minecraft filmmaking studio — AI agents as actors, parallel simulations, Director AI
 - **[crdt-core](https://github.com/SuperInstance/crdt-core)** — Distributed systems primitive
 - **[crdt-map](https://github.com/SuperInstance/crdt-map)**
@@ -1073,6 +1074,7 @@
 - **[headspace](https://github.com/SuperInstance/headspace)** — Context compression + ternary swarm + baton fleet: the SuperInstance integration hub.
 - **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** — Hebbian routing — connection strengthening based on usage patterns for agent communication networks
 - **[hermes-construct](https://github.com/SuperInstance/hermes-construct)** — Hermes understands the cave walls are a shell when seen from the outside. IO with other shells, APIs
+- **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)**
 - **[hermit-claw](https://github.com/SuperInstance/hermit-claw)** — Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS, ANY PLATFORM — deplo
 - **[hermit-crab](https://github.com/SuperInstance/hermit-crab)**
 - **[hermit-zed](https://github.com/SuperInstance/hermit-zed)** — Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators 
@@ -1091,7 +1093,6 @@
 - **[interp-spline](https://github.com/SuperInstance/interp-spline)**
 - **[kan-extension](https://github.com/SuperInstance/kan-extension)** — Category theory Kan extensions for capability composition
 - **[kernel-conservation](https://github.com/SuperInstance/kernel-conservation)** — Conservation spectral experiment: kernel-conservation
-- **[kinematics](https://github.com/SuperInstance/kinematics)**
 - **[kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)** — Golden repair mathematics compiled to WASM — fault tolerance in the browser
 - **[knot-theory](https://github.com/SuperInstance/knot-theory)**
 - **[landauer](https://github.com/SuperInstance/landauer)**
@@ -1391,7 +1392,6 @@
 - **[moo](https://github.com/SuperInstance/moo)** — Optimised tokenizer/lexer generator! 🐄 Uses /y for performance. Moo.
 - **[morphogenesis](https://github.com/SuperInstance/morphogenesis)**
 - **[morse-theory](https://github.com/SuperInstance/morse-theory)** — Morse theory on manifolds — critical points, Morse complex, handle attachments
-- **[motion-planning](https://github.com/SuperInstance/motion-planning)**
 - **[mud-arena](https://github.com/SuperInstance/mud-arena)** — Flow-state engineering arena — agents run forward simulations, listen for spectral nudges, maintain 
 - **[multi-armed-bandit](https://github.com/SuperInstance/multi-armed-bandit)** — [package]
 - **[murmur-protocol-v2](https://github.com/SuperInstance/murmur-protocol-v2)**
@@ -1469,7 +1469,6 @@
 - **[persistent-social](https://github.com/SuperInstance/persistent-social)** — Persistent homology for social network analysis — pure Go, goroutine-safe, 10K+ scale
 - **[PersonalLog](https://github.com/SuperInstance/PersonalLog)** — Personal logging and tracking application for the Cocapn fleet.
 - **[personallog-ai](https://github.com/SuperInstance/personallog-ai)** — personallog.ai — Your personal AI agent living in your repo. Free, open-source, fork-and-deploy.
-- **[pid-control](https://github.com/SuperInstance/pid-control)**
 - **[pincher](https://github.com/SuperInstance/pincher)** — Vector Database as runtime, LLM as compiler
 - **[pincher-flux-bridge](https://github.com/SuperInstance/pincher-flux-bridge)** — Bridge between pincher reflexes and flux-core bytecode IR. Where the spinal cord meets the cortex.
 - **[plato-alert](https://github.com/SuperInstance/plato-alert)** — Alert management for PLATO — creation, routing, acknowledgment, escalation
@@ -1565,6 +1564,8 @@
 - **[ring-buffer](https://github.com/SuperInstance/ring-buffer)** — Audio pipeline NaN guard — fixed-length ring buffer with sanitisation
 - **[ring-sign](https://github.com/SuperInstance/ring-sign)**
 - **[roadmaps](https://github.com/SuperInstance/roadmaps)** — Killer-app roadmaps for the SuperInstance constraint-aware ecosystem
+- **[roblox-craftmind-agents](https://github.com/SuperInstance/roblox-craftmind-agents)** — Core Lua framework for Roblox agents with self-improving, token-saving logic
+- **[roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)** — Tooling for automated Roblox game building with t-minus-event synchronized simulation framework
 - **[room-cell](https://github.com/SuperInstance/room-cell)** — The fundamental room cell — standalone but composable atom of the Grand Pattern architecture
 - **[room-dds-bridge](https://github.com/SuperInstance/room-dds-bridge)** — Auto-configure DDS domains from ternary-mud room topology
 - **[room-topology](https://github.com/SuperInstance/room-topology)** — MUD rooms as topological spaces: doors as continuous maps, warps create non-trivial π₁, simplicial h
@@ -1606,7 +1607,6 @@
 - **[sketch-rotation-adaptation-to-fleet-oracle](https://github.com/SuperInstance/sketch-rotation-adaptation-to-fleet-oracle)** — Forgemaster pushed rotation crates (neon-kernel, pid-cascade, attractor, log-tensor, rotation-core).
 - **[sketch-ternary-kihn-metaphor](https://github.com/SuperInstance/sketch-ternary-kihn-metaphor)** — ARM64 free tier as firing kihn - API brain as dissertation committee. Local ternary math at zero cos
 - **[sketch-workspace-sketchbook-pattern](https://github.com/SuperInstance/sketch-workspace-sketchbook-pattern)** — Push ideas to GitHub repos, clear local workspace. fleet-sketchbook CLI tool. The workspace is a dra
-- **[slam-core](https://github.com/SuperInstance/slam-core)**
 - **[SmartCRDT](https://github.com/SuperInstance/SmartCRDT)** — Utilizing CRDT technology for self-improving AI
 - **[smt-core](https://github.com/SuperInstance/smt-core)**
 - **[social-conservation](https://github.com/SuperInstance/social-conservation)** — Spectral conservation analysis of social networks — bot detection, echo chambers, influence
