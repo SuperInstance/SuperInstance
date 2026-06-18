@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-06-17 09:52 UTC
+**Generated:** 2026-06-18 09:15 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -901,6 +901,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [oracle1-box](https://github.com/SuperInstance/oracle1-box)
 - [oracle1-vessel](https://github.com/SuperInstance/oracle1-vessel)
 - [oracle2](https://github.com/SuperInstance/oracle2)
+- [ouroboros](https://github.com/SuperInstance/ouroboros)
 - [oxide-circuit-breaker](https://github.com/SuperInstance/oxide-circuit-breaker)
 - [oxide-crdt](https://github.com/SuperInstance/oxide-crdt)
 - [oxide-fleet](https://github.com/SuperInstance/oxide-fleet)
@@ -1466,7 +1467,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [electromagnetism](https://github.com/SuperInstance/electromagnetism)
 - [elliptic-curve-ops](https://github.com/SuperInstance/elliptic-curve-ops)
 - [emotional-colorist](https://github.com/SuperInstance/emotional-colorist)
-- [entropy-code](https://github.com/SuperInstance/entropy-code)
 - [entropy-flow-py](https://github.com/SuperInstance/entropy-flow-py)
 - [entropy-lint](https://github.com/SuperInstance/entropy-lint)
 - [entropy-production](https://github.com/SuperInstance/entropy-production)

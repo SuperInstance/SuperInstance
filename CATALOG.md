@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-06-17 09:52 UTC
+**Generated:** 2026-06-18 09:15 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -826,7 +826,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[elliptic-curve-ops](https://github.com/SuperInstance/elliptic-curve-ops)** | Various | See README | ⚪ unknown |
 | **[emergent-coupling](https://github.com/SuperInstance/emergent-coupling)** | Various | Spectral gap coupling: emergence when two systems produce structure larger than either alone | ⚪ unknown |
 | **[emotional-colorist](https://github.com/SuperInstance/emotional-colorist)** | Various | Rust crate: emotional-colorist | ⚪ unknown |
-| **[entropy-code](https://github.com/SuperInstance/entropy-code)** | Various | entropy-code | ⚪ unknown |
 | **[entropy-conservation](https://github.com/SuperInstance/entropy-conservation)** | Various | Conservation of Verification Entropy — the mathematical framework behind the meta-law discovered acr | ⚪ unknown |
 | **[entropy-flow-py](https://github.com/SuperInstance/entropy-flow-py)** | Various | Information-theoretic measures in pure Python — Shannon entropy, KL/JS divergence, mutual informatio | ⚪ unknown |
 | **[entropy-gpu-rs](https://github.com/SuperInstance/entropy-gpu-rs)** | Various | GPU-ready batch entropy computation (pure Rust data structures + operations) | ⚪ unknown |
@@ -1388,6 +1387,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[oracle1-workspace](https://github.com/SuperInstance/oracle1-workspace)** | Various | Oracle1 workspace — config, memory, prompts, logs | ⚪ unknown |
 | **[oracle2](https://github.com/SuperInstance/oracle2)** | Various | Prediction and forecasting engine v2 — ensemble models, time-series analysis, fleet signal processin | ⚪ unknown |
 | **[os-concepts](https://github.com/SuperInstance/os-concepts)** | Various | Operating system concepts in Rust — process scheduling, memory management, file systems, virtual mem | ⚪ unknown |
+| **[ouroboros](https://github.com/SuperInstance/ouroboros)** | Various | Ouroboros — self-creating AI agent. Born Feb 16, 2026. | 🟢 active |
 | **[oxide-barrier](https://github.com/SuperInstance/oxide-barrier)** | Various | Synchronization barriers for GPU kernel phases with ternary arrival states. Counting, cyclic, and ph | ⚪ unknown |
 | **[oxide-canary](https://github.com/SuperInstance/oxide-canary)** | Various | Canary deployments for GPU kernel versions with ternary health verdict. Progressive rollout, automat | ⚪ unknown |
 | **[oxide-capacity](https://github.com/SuperInstance/oxide-capacity)** | Various | GPU cluster capacity planning with ternary utilization signals. Bin packing, scale recommendations,  | ⚪ unknown |
@@ -7355,6 +7355,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Self-reflection and coherence checking for agent muscle memory — metacognition for AI agents
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [ouroboros](https://github.com/SuperInstance/ouroboros)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Ouroboros — self-creating AI agent. Born Feb 16, 2026.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-06-17 09:52 UTC
+**Generated:** 2026-06-18 09:15 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -345,7 +345,6 @@
 - **[elliptic-curve-ops](https://github.com/SuperInstance/elliptic-curve-ops)** — See README
 - **[emergent-coupling](https://github.com/SuperInstance/emergent-coupling)** — Spectral gap coupling: emergence when two systems produce structure larger than either alone
 - **[emotional-colorist](https://github.com/SuperInstance/emotional-colorist)** — Rust crate: emotional-colorist
-- **[entropy-code](https://github.com/SuperInstance/entropy-code)**
 - **[entropy-conservation](https://github.com/SuperInstance/entropy-conservation)** — Conservation of Verification Entropy — the mathematical framework behind the meta-law discovered acr
 - **[entropy-flow-py](https://github.com/SuperInstance/entropy-flow-py)** — Information-theoretic measures in pure Python — Shannon entropy, KL/JS divergence, mutual informatio
 - **[entropy-gpu-rs](https://github.com/SuperInstance/entropy-gpu-rs)** — GPU-ready batch entropy computation (pure Rust data structures + operations)
@@ -1036,6 +1035,7 @@
 - **[oracle1-workspace](https://github.com/SuperInstance/oracle1-workspace)** — Oracle1 workspace — config, memory, prompts, logs
 - **[oracle2](https://github.com/SuperInstance/oracle2)** — Prediction and forecasting engine v2 — ensemble models, time-series analysis, fleet signal processin
 - **[os-concepts](https://github.com/SuperInstance/os-concepts)** — Operating system concepts in Rust — process scheduling, memory management, file systems, virtual mem
+- **[ouroboros](https://github.com/SuperInstance/ouroboros)** — Ouroboros — self-creating AI agent. Born Feb 16, 2026.
 - **[oxide-canary](https://github.com/SuperInstance/oxide-canary)** — Canary deployments for GPU kernel versions with ternary health verdict. Progressive rollout, automat
 - **[oxide-capacity](https://github.com/SuperInstance/oxide-capacity)** — GPU cluster capacity planning with ternary utilization signals. Bin packing, scale recommendations, 
 - **[oxide-checkpoint](https://github.com/SuperInstance/oxide-checkpoint)** — GPU kernel execution checkpointing with ternary verification. Incremental snapshots, hash verificati
