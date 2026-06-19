@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-06-18 09:15 UTC
+**Generated:** 2026-06-19 09:29 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -718,6 +718,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[code-conservation](https://github.com/SuperInstance/code-conservation)** | Various | Spectral conservation analysis of source code structure | ⚪ unknown |
 | **[codespace-worker](https://github.com/SuperInstance/codespace-worker)** | Various | 🚀 GitHub Codespaces worker utilities — run commands remotely in ephemeral x86_64 codespaces, pipelin | 🟢 active |
 | **[cognitive-archaeology](https://github.com/SuperInstance/cognitive-archaeology)** | Various | cognitive-archaeology | ⚪ unknown |
+| **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** | Various | Core cognitive processing engine. | ⚪ unknown |
 | **[cohomology-ring](https://github.com/SuperInstance/cohomology-ring)** | Various | cohomology-ring | ⚪ unknown |
 | **[collision-detect](https://github.com/SuperInstance/collision-detect)** | Various | collision-detect | ⚪ unknown |
 | **[colony-cell](https://github.com/SuperInstance/colony-cell)** | Various | Filesystem-based agent sandbox: Rust cell runtime with XP, leveling, breeding, mutation, sandbox iso | 🟢 active |
@@ -802,7 +803,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[decision-tree-rs](https://github.com/SuperInstance/decision-tree-rs)** | Various | Decision tree: ID3/C4.5 style, information gain, Gini impurity, pruning, prediction | ⚪ unknown |
 | **[deckboss-net](https://github.com/SuperInstance/deckboss-net)** | Various | Commercial fishing fleet operations — vessel tracking, fuel monitoring, crew management, and deliver | 🟢 active |
 | **[decomp-agents](https://github.com/SuperInstance/decomp-agents)** | Various | decomp-agents | 🟢 active |
-| **[delta-encode](https://github.com/SuperInstance/delta-encode)** | Various | delta-encode | ⚪ unknown |
 | **[demo-memory](https://github.com/SuperInstance/demo-memory)** | Various | Demo memory system — agent memory management and retrieval examples | 🟢 active |
 | **[deno](https://github.com/SuperInstance/deno)** | Various | A modern runtime for JavaScript and TypeScript. | ⚪ unknown |
 | **[dep-audit](https://github.com/SuperInstance/dep-audit)** | Various | CLI tool to audit Rust crate dependencies: vulnerabilities, outdated deps, tree depth, unused deps,  | ⚪ unknown |
@@ -1494,6 +1494,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quantum-thermo](https://github.com/SuperInstance/quantum-thermo)** | Various | Quantum thermodynamics: quantum limits on computation, heat, and information | ⚪ unknown |
 | **[query-plan](https://github.com/SuperInstance/query-plan)** | Various | Research-grade Rust crate | ⚪ unknown |
 | **[queueing-theory](https://github.com/SuperInstance/queueing-theory)** | Various | Queueing theory in Rust — M/M/1, M/M/c, Erlang, Jackson networks, priority queues. Model capacity be | ⚪ unknown |
+| **[quicunnel](https://github.com/SuperInstance/quicunnel)** | Various | High-performance QUIC tunnel with mTLS authentication and automatic reconnection | ⚪ unknown |
 | **[quipu-math](https://github.com/SuperInstance/quipu-math)** | Various | Mathematics of Incan knotted cord (quipu) data structures | ⚪ unknown |
 | **[quipu-math-npm](https://github.com/SuperInstance/quipu-math-npm)** | Various | Mathematics of Incan knotted cord (quipu) data structures — TypeScript/npm | ⚪ unknown |
 | **[random-walk-agent](https://github.com/SuperInstance/random-walk-agent)** | Various | random-walk-agent | 🟢 active |
@@ -1523,7 +1524,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[robotics-foundations](https://github.com/SuperInstance/robotics-foundations)** | Various | Robotics foundations in Rust. Kinematics to control, from scratch. | ⚪ unknown |
 | **[room-cell](https://github.com/SuperInstance/room-cell)** | Various | The fundamental room cell — standalone but composable atom of the Grand Pattern architecture | ⚪ unknown |
 | **[routing-table](https://github.com/SuperInstance/routing-table)** | Various | Rust crate: routing-table | ⚪ unknown |
-| **[run-length](https://github.com/SuperInstance/run-length)** | Various | run-length | ⚪ unknown |
 | **[rustfs](https://github.com/SuperInstance/rustfs)** | Various | 🚀2.3x faster than MinIO for 4KB object payloads. RustFS is an open-source, S3-compatible high-perfor | ⚪ unknown |
 | **[rusty-series](https://github.com/SuperInstance/rusty-series)** | Various | Comprehensive time-series analysis in Rust — decomposition, ARIMA, anomaly detection, spectral analy | ⚪ unknown |
 | **[ruview-cathedral](https://github.com/SuperInstance/ruview-cathedral)** | Various | π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, an | ⚪ unknown |

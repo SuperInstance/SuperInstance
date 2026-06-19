@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-06-18 09:15 UTC
+**Generated:** 2026-06-19 09:29 UTC
 **Total repos:** 2000
 
 ## C
@@ -186,6 +186,7 @@
 - **[plato-tick](https://github.com/SuperInstance/plato-tick)** — Tick scheduler for Plato Shell — periodic tasks, cron-like scheduling, and heartbeat management
 - **[polln](https://github.com/SuperInstance/polln)** — SuperInstance Visualized in Spreadsheets for Tile Intelligence in real-time workflows, simulations o
 - **[px4-conservation-poc](https://github.com/SuperInstance/px4-conservation-poc)** — Conservation-based flight anomaly detection for PX4 — predicts failures before they're visible in ra
+- **[quicunnel](https://github.com/SuperInstance/quicunnel)** — High-performance QUIC tunnel with mTLS authentication and automatic reconnection
 - **[quipu-math-c](https://github.com/SuperInstance/quipu-math-c)** — C99 Incan knotted cord encoding — base-10 positional knots, arithmetic, corruption detection for edg
 - **[reflex-arc](https://github.com/SuperInstance/reflex-arc)** — Automatic cognitive reflexes — stimulus→response mapping with priority chains, monitoring, and suppr
 - **[reg-alloc](https://github.com/SuperInstance/reg-alloc)**
@@ -730,6 +731,7 @@
 - **[codex](https://github.com/SuperInstance/codex)** — Lightweight coding agent that runs in your terminal
 - **[codex-budget-guard](https://github.com/SuperInstance/codex-budget-guard)** — Budget enforcement for Codex CLI — daily/weekly/monthly token limits, phase detection, auto-throttle
 - **[cognitive-archaeology](https://github.com/SuperInstance/cognitive-archaeology)**
+- **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
 - **[cohomology-ring](https://github.com/SuperInstance/cohomology-ring)**
 - **[collision-detect](https://github.com/SuperInstance/collision-detect)**
 - **[commit-predictor](https://github.com/SuperInstance/commit-predictor)** — Extracted from plato-training
@@ -796,7 +798,6 @@
 - **[deckboss-net](https://github.com/SuperInstance/deckboss-net)** — Commercial fishing fleet operations — vessel tracking, fuel monitoring, crew management, and deliver
 - **[decomp-agents](https://github.com/SuperInstance/decomp-agents)**
 - **[delta-clt](https://github.com/SuperInstance/delta-clt)** — Conservation law verification suite + 9-channel polyformalism colony analysis
-- **[delta-encode](https://github.com/SuperInstance/delta-encode)**
 - **[demo-memory](https://github.com/SuperInstance/demo-memory)** — Demo memory system — agent memory management and retrieval examples
 - **[dial-ecology](https://github.com/SuperInstance/dial-ecology)** — Ecological succession on the cultural dial: Lotka-Volterra dynamics for tradition competition, niche
 - **[dial-space-explorer](https://github.com/SuperInstance/dial-space-explorer)** — Dial-Space Explorer — 3D interactive map of musical traditions in parameter space
@@ -1569,7 +1570,6 @@
 - **[room-cell](https://github.com/SuperInstance/room-cell)** — The fundamental room cell — standalone but composable atom of the Grand Pattern architecture
 - **[room-dds-bridge](https://github.com/SuperInstance/room-dds-bridge)** — Auto-configure DDS domains from ternary-mud room topology
 - **[room-topology](https://github.com/SuperInstance/room-topology)** — MUD rooms as topological spaces: doors as continuous maps, warps create non-trivial π₁, simplicial h
-- **[run-length](https://github.com/SuperInstance/run-length)**
 - **[ruview-cathedral](https://github.com/SuperInstance/ruview-cathedral)** — π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, an
 - **[sailor-workspace](https://github.com/SuperInstance/sailor-workspace)** — Sailor workspace — fleet orchestration, audits, memory, docs, scripts
 - **[sat-solver](https://github.com/SuperInstance/sat-solver)**

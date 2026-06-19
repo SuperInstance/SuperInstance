@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-06-18 09:15 UTC
+**Generated:** 2026-06-19 09:29 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -1153,6 +1153,7 @@
 - **[cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)** — CoCapn in WebAssembly — the browser tier. Same deadband, same PID, runs in Chrome.
 - **[code-conservation](https://github.com/SuperInstance/code-conservation)** — Spectral conservation analysis of source code structure
 - **[cognitive-archaeology](https://github.com/SuperInstance/cognitive-archaeology)**
+- **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
 - **[collision-detect](https://github.com/SuperInstance/collision-detect)**
 - **[combinatorics](https://github.com/SuperInstance/combinatorics)** — Combinatorics in Rust — counting, Burnside's lemma, Catalan numbers, generating functions, graph enu
 - **[commitment-scheme](https://github.com/SuperInstance/commitment-scheme)** — Pedersen commitments, polynomial commitments, batch opening/verification in Rust
@@ -1208,7 +1209,6 @@
 - **[deadband-python](https://github.com/SuperInstance/deadband-python)** — Deadband signal processing and control filtering utilities in Python
 - **[decision-tree-rs](https://github.com/SuperInstance/decision-tree-rs)** — Decision tree: ID3/C4.5 style, information gain, Gini impurity, pruning, prediction
 - **[delaunay-triang-rs](https://github.com/SuperInstance/delaunay-triang-rs)** — Delaunay triangulation and Voronoi diagrams in pure Rust: Bowyer-Watson, edge flip, quad-edge
-- **[delta-encode](https://github.com/SuperInstance/delta-encode)**
 - **[deno](https://github.com/SuperInstance/deno)** — A modern runtime for JavaScript and TypeScript.
 - **[dial-ecology](https://github.com/SuperInstance/dial-ecology)** — Ecological succession on the cultural dial: Lotka-Volterra dynamics for tradition competition, niche
 - **[dial-space-explorer](https://github.com/SuperInstance/dial-space-explorer)** — Dial-Space Explorer — 3D interactive map of musical traditions in parameter space
@@ -1669,6 +1669,7 @@
 - **[quantum-thermo](https://github.com/SuperInstance/quantum-thermo)** — Quantum thermodynamics: quantum limits on computation, heat, and information
 - **[query-plan](https://github.com/SuperInstance/query-plan)** — Research-grade Rust crate
 - **[queueing-theory](https://github.com/SuperInstance/queueing-theory)** — Queueing theory in Rust — M/M/1, M/M/c, Erlang, Jackson networks, priority queues. Model capacity be
+- **[quicunnel](https://github.com/SuperInstance/quicunnel)** — High-performance QUIC tunnel with mTLS authentication and automatic reconnection
 - **[quipu-math](https://github.com/SuperInstance/quipu-math)** — Mathematics of Incan knotted cord (quipu) data structures
 - **[quipu-math-c](https://github.com/SuperInstance/quipu-math-c)** — C99 Incan knotted cord encoding — base-10 positional knots, arithmetic, corruption detection for edg
 - **[quipu-math-npm](https://github.com/SuperInstance/quipu-math-npm)** — Mathematics of Incan knotted cord (quipu) data structures — TypeScript/npm
@@ -1696,7 +1697,6 @@
 - **[roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)** — Tooling for automated Roblox game building with t-minus-event synchronized simulation framework
 - **[robotics-foundations](https://github.com/SuperInstance/robotics-foundations)** — Robotics foundations in Rust. Kinematics to control, from scratch.
 - **[routing-table](https://github.com/SuperInstance/routing-table)** — Rust crate: routing-table
-- **[run-length](https://github.com/SuperInstance/run-length)**
 - **[rustfs](https://github.com/SuperInstance/rustfs)** — 🚀2.3x faster than MinIO for 4KB object payloads. RustFS is an open-source, S3-compatible high-perfor
 - **[rusty-series](https://github.com/SuperInstance/rusty-series)** — Comprehensive time-series analysis in Rust — decomposition, ARIMA, anomaly detection, spectral analy
 - **[ruview-cathedral](https://github.com/SuperInstance/ruview-cathedral)** — π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, an

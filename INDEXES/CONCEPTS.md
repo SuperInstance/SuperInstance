@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-06-18 09:15 UTC
+**Generated:** 2026-06-19 09:29 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1287,6 +1287,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [AI-Writings](https://github.com/SuperInstance/AI-Writings)
 - [Central-Error-Manager](https://github.com/SuperInstance/Central-Error-Manager)
 - [Claude-PRISM-CF](https://github.com/SuperInstance/Claude-PRISM-CF)
+- [CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)
 - [DMLog-AI](https://github.com/SuperInstance/DMLog-AI)
 - [ESP-Flasher](https://github.com/SuperInstance/ESP-Flasher)
 - [Equipment-NLP-Explainer](https://github.com/SuperInstance/Equipment-NLP-Explainer)
@@ -1444,7 +1445,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [deadband-python](https://github.com/SuperInstance/deadband-python)
 - [decision-tree-rs](https://github.com/SuperInstance/decision-tree-rs)
 - [delaunay-triang-rs](https://github.com/SuperInstance/delaunay-triang-rs)
-- [delta-encode](https://github.com/SuperInstance/delta-encode)
 - [deno](https://github.com/SuperInstance/deno)
 - [dial-ecology](https://github.com/SuperInstance/dial-ecology)
 - [dial-space-explorer](https://github.com/SuperInstance/dial-space-explorer)
@@ -1896,6 +1896,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quantum-thermo](https://github.com/SuperInstance/quantum-thermo)
 - [query-plan](https://github.com/SuperInstance/query-plan)
 - [queueing-theory](https://github.com/SuperInstance/queueing-theory)
+- [quicunnel](https://github.com/SuperInstance/quicunnel)
 - [quipu-math](https://github.com/SuperInstance/quipu-math)
 - [quipu-math-c](https://github.com/SuperInstance/quipu-math-c)
 - [quipu-math-npm](https://github.com/SuperInstance/quipu-math-npm)
@@ -1923,7 +1924,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)
 - [robotics-foundations](https://github.com/SuperInstance/robotics-foundations)
 - [routing-table](https://github.com/SuperInstance/routing-table)
-- [run-length](https://github.com/SuperInstance/run-length)
 - [rustfs](https://github.com/SuperInstance/rustfs)
 - [rusty-series](https://github.com/SuperInstance/rusty-series)
 - [ruview-cathedral](https://github.com/SuperInstance/ruview-cathedral)

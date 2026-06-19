@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-06-18 09:15 UTC
+**Generated:** 2026-06-19 09:29 UTC
 **Total repos:** 2000
 
 ## Ai
@@ -283,6 +283,7 @@
 - **[codex](https://github.com/SuperInstance/codex)** — Lightweight coding agent that runs in your terminal
 - **[codex-budget-guard](https://github.com/SuperInstance/codex-budget-guard)** — Budget enforcement for Codex CLI — daily/weekly/monthly token limits, phase detection, auto-throttle
 - **[cognitive-archaeology](https://github.com/SuperInstance/cognitive-archaeology)**
+- **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
 - **[cohomology-ring](https://github.com/SuperInstance/cohomology-ring)**
 - **[collision-detect](https://github.com/SuperInstance/collision-detect)**
 - **[colony-cell](https://github.com/SuperInstance/colony-cell)** — Filesystem-based agent sandbox: Rust cell runtime with XP, leveling, breeding, mutation, sandbox iso
@@ -398,7 +399,6 @@
 - **[decomp-agents](https://github.com/SuperInstance/decomp-agents)**
 - **[delaunay-triang-rs](https://github.com/SuperInstance/delaunay-triang-rs)** — Delaunay triangulation and Voronoi diagrams in pure Rust: Bowyer-Watson, edge flip, quad-edge
 - **[delta-clt](https://github.com/SuperInstance/delta-clt)** — Conservation law verification suite + 9-channel polyformalism colony analysis
-- **[delta-encode](https://github.com/SuperInstance/delta-encode)**
 - **[demo-memory](https://github.com/SuperInstance/demo-memory)** — Demo memory system — agent memory management and retrieval examples
 - **[deno](https://github.com/SuperInstance/deno)** — A modern runtime for JavaScript and TypeScript.
 - **[dep-audit](https://github.com/SuperInstance/dep-audit)** — CLI tool to audit Rust crate dependencies: vulnerabilities, outdated deps, tree depth, unused deps, 
@@ -1395,6 +1395,7 @@
 - **[quantum-thermo](https://github.com/SuperInstance/quantum-thermo)** — Quantum thermodynamics: quantum limits on computation, heat, and information
 - **[query-plan](https://github.com/SuperInstance/query-plan)** — Research-grade Rust crate
 - **[queueing-theory](https://github.com/SuperInstance/queueing-theory)** — Queueing theory in Rust — M/M/1, M/M/c, Erlang, Jackson networks, priority queues. Model capacity be
+- **[quicunnel](https://github.com/SuperInstance/quicunnel)** — High-performance QUIC tunnel with mTLS authentication and automatic reconnection
 - **[quipu-math](https://github.com/SuperInstance/quipu-math)** — Mathematics of Incan knotted cord (quipu) data structures
 - **[quipu-math-c](https://github.com/SuperInstance/quipu-math-c)** — C99 Incan knotted cord encoding — base-10 positional knots, arithmetic, corruption detection for edg
 - **[quipu-math-npm](https://github.com/SuperInstance/quipu-math-npm)** — Mathematics of Incan knotted cord (quipu) data structures — TypeScript/npm
@@ -1434,7 +1435,6 @@
 - **[room-dds-bridge](https://github.com/SuperInstance/room-dds-bridge)** — Auto-configure DDS domains from ternary-mud room topology
 - **[room-topology](https://github.com/SuperInstance/room-topology)** — MUD rooms as topological spaces: doors as continuous maps, warps create non-trivial π₁, simplicial h
 - **[routing-table](https://github.com/SuperInstance/routing-table)** — Rust crate: routing-table
-- **[run-length](https://github.com/SuperInstance/run-length)**
 - **[rustfs](https://github.com/SuperInstance/rustfs)** — 🚀2.3x faster than MinIO for 4KB object payloads. RustFS is an open-source, S3-compatible high-perfor
 - **[rusty-series](https://github.com/SuperInstance/rusty-series)** — Comprehensive time-series analysis in Rust — decomposition, ARIMA, anomaly detection, spectral analy
 - **[ruview-cathedral](https://github.com/SuperInstance/ruview-cathedral)** — π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, an
