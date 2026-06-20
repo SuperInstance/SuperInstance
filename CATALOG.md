@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-06-19 09:29 UTC
+**Generated:** 2026-06-20 08:22 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -988,7 +988,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[holographic-storage](https://github.com/SuperInstance/holographic-storage)** | Various | 0.1.0 | ⚪ unknown |
 | **[homology-engine](https://github.com/SuperInstance/homology-engine)** | Various | Persistent homology computation engine for topological data analysis | ⚪ unknown |
 | **[homomorphic-hash](https://github.com/SuperInstance/homomorphic-hash)** | Various | Additively homomorphic hash functions, incremental hashing, multi-set hash in Rust | ⚪ unknown |
-| **[huffman-code](https://github.com/SuperInstance/huffman-code)** | Various | huffman-code | ⚪ unknown |
 | **[huffman-entropy](https://github.com/SuperInstance/huffman-entropy)** | Various | Huffman coding with entropy estimation and optimal prefix tree construction — Rust information theor | ⚪ unknown |
 | **[iching-web](https://github.com/SuperInstance/iching-web)** | Various | Sheaf-theoretic I Ching — single-file web app with cohomological analysis | ⚪ unknown |
 | **[iii-observability](https://github.com/SuperInstance/iii-observability)** | Various | Information-theoretic service observability on crackle-runtime | ⚪ unknown |
@@ -1530,6 +1529,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[sailor-workspace](https://github.com/SuperInstance/sailor-workspace)** | Various | Sailor workspace — fleet orchestration, audits, memory, docs, scripts | ⚪ unknown |
 | **[sat-solver](https://github.com/SuperInstance/sat-solver)** | Various | sat-solver | ⚪ unknown |
 | **[scheduling-rs](https://github.com/SuperInstance/scheduling-rs)** | Various | Scheduling algorithms for real-world fleet and job management | ⚪ unknown |
+| **[Scrapcraft](https://github.com/SuperInstance/Scrapcraft)** | Various | Scrapcraft | ⚪ unknown |
 | **[scratch-blocks](https://github.com/SuperInstance/scratch-blocks)** | Various | Scratch Blocks is a library for building creative computing interfaces. | ⚪ unknown |
 | **[scratch-www](https://github.com/SuperInstance/scratch-www)** | Various | Standalone web client for Scratch | ⚪ unknown |
 | **[screenpipe-conservation](https://github.com/SuperInstance/screenpipe-conservation)** | Various | screenpipe + conservation-checker: 24/7 recording meets resource conservation. Fork of screenpipe/sc | ⚪ unknown |

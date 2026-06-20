@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-06-19 09:29 UTC
+**Generated:** 2026-06-20 08:22 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1297,6 +1297,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [OpenEnv](https://github.com/SuperInstance/OpenEnv)
 - [PX4-Autopilot](https://github.com/SuperInstance/PX4-Autopilot)
 - [Quanta](https://github.com/SuperInstance/Quanta)
+- [Scrapcraft](https://github.com/SuperInstance/Scrapcraft)
 - [ab-testing-c](https://github.com/SuperInstance/ab-testing-c)
 - [aboracle](https://github.com/SuperInstance/aboracle)
 - [active-inference](https://github.com/SuperInstance/active-inference)
@@ -1587,7 +1588,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [holographic-storage](https://github.com/SuperInstance/holographic-storage)
 - [homology-engine](https://github.com/SuperInstance/homology-engine)
 - [homomorphic-hash](https://github.com/SuperInstance/homomorphic-hash)
-- [huffman-code](https://github.com/SuperInstance/huffman-code)
 - [huffman-entropy](https://github.com/SuperInstance/huffman-entropy)
 - [iching-web](https://github.com/SuperInstance/iching-web)
 - [iii-observability](https://github.com/SuperInstance/iii-observability)
