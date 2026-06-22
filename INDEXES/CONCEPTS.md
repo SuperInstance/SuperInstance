@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-06-21 08:58 UTC
+**Generated:** 2026-06-22 10:39 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -195,6 +195,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flux-index-rs](https://github.com/SuperInstance/flux-index-rs)
 - [flux-navigate](https://github.com/SuperInstance/flux-navigate)
 - [flux-realm](https://github.com/SuperInstance/flux-realm)
+- [flux-runtime](https://github.com/SuperInstance/flux-runtime)
 - [flux-tensor-midi](https://github.com/SuperInstance/flux-tensor-midi)
 - [flux-verify-api](https://github.com/SuperInstance/flux-verify-api)
 - [flux-vm-dispatch](https://github.com/SuperInstance/flux-vm-dispatch)
@@ -753,6 +754,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flux-autoscale](https://github.com/SuperInstance/flux-autoscale)
 - [flux-importer](https://github.com/SuperInstance/flux-importer)
 - [flux-realm](https://github.com/SuperInstance/flux-realm)
+- [flux-runtime](https://github.com/SuperInstance/flux-runtime)
 - [fm-research](https://github.com/SuperInstance/fm-research)
 - [forge-audio](https://github.com/SuperInstance/forge-audio)
 - [forge-code](https://github.com/SuperInstance/forge-code)
@@ -1346,7 +1348,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [businesslog-ai](https://github.com/SuperInstance/businesslog-ai)
 - [businesslog-ai-pages](https://github.com/SuperInstance/businesslog-ai-pages)
 - [businesslog-app](https://github.com/SuperInstance/businesslog-app)
-- [bwt-compress](https://github.com/SuperInstance/bwt-compress)
 - [c-ternary](https://github.com/SuperInstance/c-ternary)
 - [caas-api](https://github.com/SuperInstance/caas-api)
 - [cache-layer-optimizer](https://github.com/SuperInstance/cache-layer-optimizer)

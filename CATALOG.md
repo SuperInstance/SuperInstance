@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-06-21 08:58 UTC
+**Generated:** 2026-06-22 10:39 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -71,6 +71,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[flux-index](https://github.com/SuperInstance/flux-index)** | Forgemaster | Semantic code search, zero dependencies. Spring-load any repo into a searchable vector space. | 🟢 active |
 | **[flux-index-rs](https://github.com/SuperInstance/flux-index-rs)** | Forgemaster | Inverted index for text search — TF-IDF scoring, cosine similarity, prefix queries | 🟢 active |
 | **[flux-navigate](https://github.com/SuperInstance/flux-navigate)** | Forgemaster | Rust 2D grid pathfinding: BFS, waypoints, replanning | 🟢 active |
+| **[flux-runtime](https://github.com/SuperInstance/flux-runtime)** | Forgemaster | ⚡ Deterministic bytecode ISA runtime for agentic logic — assembler, compiler, VM. | 🟢 active |
 | **[flux-tensor-midi](https://github.com/SuperInstance/flux-tensor-midi)** | Forgemaster | 🎵 4-dimensional tensor representation of MIDI events — 6 languages (Python, Rust, C, CUDA, Fortran,  | 🟢 active |
 | **[flux-verify-api](https://github.com/SuperInstance/flux-verify-api)** | Forgemaster | FLUX constraint safety - flux-verify-api | 🟢 active |
 | **[flux-vm-dispatch](https://github.com/SuperInstance/flux-vm-dispatch)** | Forgemaster | Miniature Flux bytecode VM producing GPU command dispatches. Tests flux-core to cudaclaw synergy. | 🟢 active |
@@ -663,7 +664,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[businesslog-agent](https://github.com/SuperInstance/businesslog-agent)** | Various | businesslog domain agent for PLATO fleet | 🟢 active |
 | **[businesslog-ai](https://github.com/SuperInstance/businesslog-ai)** | Various | BusinessLog.ai — AI business operations assistant. Tasks, metrics, decisions. Part of the Lucineer e | ⚪ unknown |
 | **[businesslog-app](https://github.com/SuperInstance/businesslog-app)** | Various | App for tracking business operations. | ⚪ unknown |
-| **[bwt-compress](https://github.com/SuperInstance/bwt-compress)** | Various | Burrows-Wheeler Transform with suffix array construction — Rust compression library | ⚪ unknown |
 | **[c-ternary](https://github.com/SuperInstance/c-ternary)** | Various | Minimal C99 header-only library for ternary logic: trit type, conviction mapping, Leminal Zone deadb | ⚪ unknown |
 | **[c-ternary-integration-demo](https://github.com/SuperInstance/c-ternary-integration-demo)** | Various | c-ternary fleet integration demo — agent-to-agent ternary logic with I2I wire packing | 🟢 active |
 | **[cache-layer-optimizer](https://github.com/SuperInstance/cache-layer-optimizer)** | Various | Cache optimization layer with intelligent eviction, warming, and invalidation strategies | ⚪ unknown |
@@ -2448,6 +2448,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
 - **Purpose:** Rust 2D grid pathfinding: BFS, waypoints, replanning
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
+### [flux-runtime](https://github.com/SuperInstance/flux-runtime)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** ⚡ Deterministic bytecode ISA runtime for agentic logic — assembler, compiler, VM.
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
