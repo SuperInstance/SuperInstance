@@ -10,8 +10,11 @@ remember across sessions, coordinate across machines, and operate under one
 measurable law: **γ + η = C** — every unit of work spends generation cost (γ)
 and produces innovation value (η), and their sum is a budget you can audit.
 
-This repository is the **front door**: the Python SDK you install to start, plus
-the shared schemas and the conservation auditor that the wider fleet is built on.
+This repository is the **front door** to a large, modular ecosystem — hundreds
+of small MIT-licensed crates and repos published on [crates.io](https://crates.io/search?q=superinstance)
+and the [SuperInstance org](https://github.com/SuperInstance). Start here: the
+Python SDK you install in one line, the shared schemas, and the conservation
+auditor that the wider fleet runs on.
 
 ---
 
@@ -111,11 +114,30 @@ that exposes `/metrics`, `/summary`, and `/transfer` over HTTP while verifying
 
 ## The wider ecosystem
 
-SuperInstance is bigger than this repo. The flagship SDK here is the on-ramp;
-the fleet extends across additional repositories and published packages, each
-MIT-licensed and developed in the open.
+This repo is the **hub**, not the whole. SuperInstance is deliberately modular:
+hundreds of small, single-purpose, MIT-licensed crates and repos, most published
+to [crates.io](https://crates.io/search?q=superinstance) and developed in the
+open across the [SuperInstance org](https://github.com/SuperInstance). The SDK
+above is the on-ramp; the law it implements is the same one that runs fleet-wide.
 
-**The fleet** — heterogeneous vessels coordinating over async protocols. The
+**The ternary stack** — balanced ternary `{-1, 0, +1}`, published and installable:
+
+```bash
+cargo add ternary-core      # Trit + 9-trit Tryte, full-adder arithmetic, no_std
+cargo add ternary-cell      # 3-byte stack-allocated cell — the atomic unit of scale
+cargo add ternary-channel   # inter-room messaging over ternary fleets
+```
+
+**The conservation family** — the law, generalized and specialized, on crates.io:
+`conservation-law` (γ + H = C), `entropy-conservation`, `edge-conservation`
+(`no_std`, edge deployment), `noether-bridge`, `lau-conservation-laws`.
+
+**Protocols & coordination** — `fleet-bottle` (the Bottle protocol for crash-
+surviving inter-agent messages) on crates.io; `@superinstance/tminus-client`,
+`tminus-dispatcher`, and `@superinstance/schemas` on npm; PLATO knowledge rooms
+in [plato-server](https://github.com/SuperInstance/plato-server).
+
+**The fleet** — heterogeneous vessels coordinating over those protocols. The
 conservation law holds regardless of compute capacity, because it measures
 *efficiency*, not raw power.
 
@@ -123,18 +145,13 @@ conservation law holds regardless of compute capacity, because it measures
 |--------|------|
 | **Oracle1** | Fleet coordinator, PLATO rooms, research |
 | **Forgemaster** | Build harness, crate generation |
-| **JetsonClaw1** | Edge inference |
-| **CoCapn** | Conservation auditing, public interface |
+| **JetsonClaw1** | Edge inference ([open-mythos-edge](https://github.com/SuperInstance/open-mythos-edge)) |
+| **CoCapn** | Conservation auditing, public interface ([cocapn](https://github.com/SuperInstance/cocapn)) |
 
-**Published packages** (npm): `@superinstance/tminus-client`,
-`tminus-dispatcher`, `schemas`, `build-guardian`, `plato-core`.
-
-**In active R&D** (design targets, not yet in this repo): the I2I and Bottle
-protocols for cross-shell messaging, the balanced-ternary `{-1, 0, +1}` compute
-stack, and multi-vessel deployment. The conservation law you can run above is
-the first piece of that vision landed in code — the rest is documented in
-[ROADMAP.md](ROADMAP.md) and [ARCHITECTURE.md](ARCHITECTURE.md) and built in the
-open. Concepts that don't yet have running code are labelled as such, on purpose.
+Because the ecosystem is distributed, **this repo vendors a few crates locally**
+(e.g. `conservation-law-rs`, the `fleet_integration` backend `fleet-metrics`
+builds on). Where a directory is a thin local mirror of a separately-published
+crate, prefer the published version on crates.io as the source of truth.
 
 ---
 
