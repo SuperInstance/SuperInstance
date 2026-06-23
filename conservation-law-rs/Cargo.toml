@@ -1,0 +1,15 @@
+[package]
+name = "conservation-law"
+version = "0.1.0"
+edition = "2021"
+authors = ["SuperInstance <dev@superinstance.ai>"]
+description = "The conservation law for agent fleets: total energy is conserved under transfers, with z-score anomaly detection (γ + η = C)"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/SuperInstance/SuperInstance"
+keywords = ["agents", "conservation", "fleet", "metrics"]
+categories = ["science", "simulation"]
+
+# Foundational crate: pure std, no external dependencies by design.
+[dependencies]
+
+[dev-dependencies]

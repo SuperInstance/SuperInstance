@@ -98,8 +98,14 @@ the least-loaded qualified agent and bills the dispatch on the ledger, and
 |-----------|----------|--------|
 | `superinstance` SDK — Agent, Fleet, AgentMemory, **ConservationLedger** | Python | Alpha · installable · 86% test coverage |
 | Fleet type schemas (`@superinstance/schemas`) | TypeScript | Stable definitions |
-| `fleet-metrics` — γ + η = C reporter | Rust | Alpha |
+| `conservation-law` — energy-conservation core (γ + η = C) | Rust | Alpha · zero-dependency · tested |
+| `fleet-metrics` — real-time conservation reporter + HTTP API | Rust | Alpha · builds on `conservation-law` |
 | Fleet automation (watchdog, indexer, beachcomb) | Python | Experimental |
+
+The same law runs on both sides of the stack: in-process via the Python
+`ConservationLedger`, and as a streaming Rust service (`cargo run -p fleet-metrics`)
+that exposes `/metrics`, `/summary`, and `/transfer` over HTTP while verifying
+γ + η = C every interval.
 
 ---
 

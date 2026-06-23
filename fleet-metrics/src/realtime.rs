@@ -219,8 +219,8 @@ mod tests {
     use super::*;
     use std::net::TcpListener;
 
-    #[test]
-    fn test_server_binds() {
+    #[tokio::test]
+    async fn test_server_binds() {
         let listener = TcpListener::bind("127.0.0.1:0").unwrap();
         let addr = listener.local_addr().unwrap();
         drop(listener);
@@ -234,8 +234,11 @@ mod tests {
         let reporter = FleetMetricReporter::new(vec![100.0; 10], config);
         let server = MetricsServer::new(reporter, addr);
 
-        tokio::spawn(async move {
-            server.start().await.unwrap();
-        });
+        // Drive the server briefly on the runtime, then confirm it bound the
+        // address rather than erroring out immediately.
+        let handle = tokio::spawn(async move { server.start().await });
+        tokio::time::sleep(std::time::Duration::from_millis(50)).await;
+        assert!(!handle.is_finished(), "server task exited prematurely");
+        handle.abort();
     }
 }
