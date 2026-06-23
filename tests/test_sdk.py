@@ -1,10 +1,9 @@
 """Tests for the SuperInstance SDK."""
 
-from pathlib import Path
 
 import pytest
 
-from superinstance import Agent, Fleet, AgentMemory
+from superinstance import Agent, AgentMemory, Fleet
 from superinstance.exceptions import AgentNotFoundError
 
 
@@ -52,6 +51,39 @@ class TestAgentMemory:
         assert mem._files["SOUL.md"].exists()
         assert mem._files["USER.md"].exists()
         assert mem._files["MEMORY.md"].exists()
+
+    def test_store_and_retrieve(self, tmp_path):
+        mem = AgentMemory("test_agent", base_dir=tmp_path)
+        mem.store("favorite_lang", "Rust")
+        assert mem.retrieve("favorite_lang") == "Rust"
+
+    def test_retrieve_missing_key(self, tmp_path):
+        mem = AgentMemory("test_agent", base_dir=tmp_path)
+        assert mem.retrieve("nope") is None
+
+    def test_search_substring_fallback(self, tmp_path):
+        # No API key set → search falls back to substring matching.
+        mem = AgentMemory("test_agent", base_dir=tmp_path)
+        mem.remember("The fleet runs on ternary math", "notes")
+        mem.remember("Binary is the old way", "notes")
+        results = mem.search("ternary", semantic=False)
+        assert len(results) == 1
+        assert "ternary" in results[0]
+
+    def test_search_empty(self, tmp_path):
+        mem = AgentMemory("test_agent", base_dir=tmp_path)
+        assert mem.search("anything") == []
+
+    def test_read_soul_and_user(self, tmp_path):
+        mem = AgentMemory("test_agent", base_dir=tmp_path)
+        assert "test_agent" in mem.read_soul()
+        assert "User Profile" in mem.read_user()
+
+    def test_repr(self, tmp_path):
+        mem = AgentMemory("test_agent", base_dir=tmp_path)
+        mem.remember("fact")
+        assert "test_agent" in repr(mem)
+        assert "entries=1" in repr(mem)
 
 
 class TestAgent:
@@ -166,4 +198,68 @@ class TestFleet:
 
     def test_repr(self, tmp_path):
         fleet = Fleet("test_fleet", memory_dir=tmp_path)
-        assert "Fleet('test_fleet', agents=0)" == repr(fleet)
+        assert repr(fleet) == "Fleet('test_fleet', agents=0)"
+
+    def test_dispatch_empty_fleet(self, tmp_path):
+        fleet = Fleet("test_fleet", memory_dir=tmp_path)
+        assert "No agents" in fleet.dispatch("task")
+
+    def test_dispatch_records_cost(self, tmp_path):
+        fleet = Fleet("test_fleet", memory_dir=tmp_path)
+        fleet.create_agent("scout")
+        result = fleet.dispatch("scan the harbor")
+        assert "scout" in result
+        # Dispatch billed γ on the conservation ledger.
+        assert fleet.ledger.budget("scout").gamma > 0
+
+    def test_dispatch_balances_load(self, tmp_path):
+        fleet = Fleet("test_fleet", memory_dir=tmp_path)
+        fleet.create_agent("a")
+        fleet.create_agent("b")
+        # First dispatch loads one agent; the second should pick the other.
+        first = fleet.dispatch("task 1")
+        second = fleet.dispatch("task 2")
+        assert {first.split("to ")[1], second.split("to ")[1]} == {"a", "b"}
+
+    def test_dispatch_respects_tag(self, tmp_path):
+        fleet = Fleet("test_fleet", memory_dir=tmp_path)
+        fleet.create_agent("scout", tags=["research"])
+        fleet.create_agent("writer", tags=["content"])
+        result = fleet.dispatch("find sources", tag="research")
+        assert "scout" in result
+
+    def test_spectral_balance_empty(self, tmp_path):
+        fleet = Fleet("test_fleet", memory_dir=tmp_path)
+        sb = fleet.spectral_balance()
+        assert sb.gap == 0.0
+        assert sb.dominant_agent == ""
+
+    def test_spectral_balance_dominant_is_heaviest(self, tmp_path):
+        fleet = Fleet("test_fleet", memory_dir=tmp_path)
+        light = fleet.create_agent("light")
+        heavy = fleet.create_agent("heavy")
+        for i in range(10):
+            heavy.remember(f"fact {i}", "general")
+        sb = fleet.spectral_balance()
+        # The agent with more memory mass dominates the leading eigenvector.
+        assert sb.dominant_agent == "heavy"
+        assert len(sb.eigenvalues) == 2
+
+    def test_spectral_balance_eigenvalues_ordered(self, tmp_path):
+        fleet = Fleet("test_fleet", memory_dir=tmp_path)
+        for name in ("a", "b", "c"):
+            agent = fleet.create_agent(name, tags=["shared"])
+            agent.remember("x", "general")
+        sb = fleet.spectral_balance()
+        # λ₁ is the dominant eigenvalue; gap is non-negative.
+        assert abs(sb.eigenvalues[0]) >= abs(sb.eigenvalues[1])
+        assert sb.gap >= 0
+
+    def test_audit_flags_burning_agent(self, tmp_path):
+        fleet = Fleet("test_fleet", memory_dir=tmp_path)
+        fleet.create_agent("burner")
+        fleet.ledger.record("burner", gamma=100, eta=100)
+        fleet.ledger.record("burner", gamma=200, eta=80)
+        fleet.ledger.record("burner", gamma=300, eta=50)
+        report = fleet.audit()
+        assert "burner" in report.burning

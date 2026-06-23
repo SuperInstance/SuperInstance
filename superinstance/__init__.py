@@ -6,16 +6,21 @@ Client library for persistent, multi-agent systems.
 from __future__ import annotations
 
 from .agent import Agent
+from .agent_cache import AgentCache, get_agent, get_cached_agent, get_default_cache
+from .conservation import AuditReport, Budget, ConservationLedger, Entry
+from .exceptions import AgentNotFoundError, FleetConnectionError, SuperInstanceError
 from .fleet import Fleet
 from .memory import AgentMemory
-from .exceptions import SuperInstanceError, AgentNotFoundError, FleetConnectionError
-from .agent_cache import AgentCache, get_default_cache, get_agent, get_cached_agent
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __all__ = [
     "Agent",
     "Fleet",
     "AgentMemory",
+    "Budget",
+    "ConservationLedger",
+    "AuditReport",
+    "Entry",
     "SuperInstanceError",
     "AgentNotFoundError",
     "FleetConnectionError",
