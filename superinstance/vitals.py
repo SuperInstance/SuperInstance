@@ -233,10 +233,46 @@ def _demo_ledger() -> ConservationLedger:
     return ledger
 
 
-def main() -> None:
-    """Console entry point (``si-vitals``): render a seeded vital-signs demo."""
-    print(FleetVitals(_demo_ledger()).render(color=True))
+def main(argv: list[str] | None = None) -> int:
+    """Console entry point (``si-vitals``).
+
+    With no ``--url``, renders a seeded cost/value demo. With ``--url``,
+    fetches and renders the live state of a running ``fleet-metrics`` service.
+    """
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        prog="si-vitals",
+        description="Fleet Vital Signs — γ + η = C diagnostic dashboard.",
+    )
+    parser.add_argument(
+        "--url",
+        nargs="?",
+        const="http://127.0.0.1:8902",
+        default=None,
+        help="fleet-metrics service URL for a live readout "
+        "(default http://127.0.0.1:8902); omit for the seeded demo",
+    )
+    parser.add_argument(
+        "--no-color", action="store_true", help="disable ANSI color output"
+    )
+    args = parser.parse_args(argv)
+    color = not args.no_color
+
+    if args.url:
+        from .exceptions import FleetConnectionError
+        from .live import fetch_snapshot, render_live
+        try:
+            snap = fetch_snapshot(args.url)
+        except FleetConnectionError as e:
+            print(f"⚠️  {e}")
+            return 1
+        print(render_live(snap, url=args.url, color=color))
+        return 0
+
+    print(FleetVitals(_demo_ledger()).render(color=color))
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

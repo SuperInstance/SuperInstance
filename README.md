@@ -143,13 +143,42 @@ This is agent observability when you take a conservation law seriously: not a
 logging dashboard, a **physics dashboard**. It's the in-process core of the
 fleet-wide `fleet-metrics` Rust service and the **CoCapn** auditor vessel.
 
+### Live mode — point it at a running fleet
+
+The same command reads a live `fleet-metrics` reporter over HTTP. Start the
+Rust service, then watch real fleet state — per-agent deviation and anomaly
+flags straight off the `/metrics` endpoint:
+
+```bash
+cargo run -p fleet-metrics -- --energies "100,100,100,500" --z-threshold 1.5
+si-vitals --url http://127.0.0.1:8902
+```
+
+```
+Fleet Vital Signs — LIVE
+http://127.0.0.1:8902  ·  γ + η = C
+
+  Fleet γ (health)    1.00  ████████████████████
+  Energy                800.0 / 800.0  (Δ +0.0)
+  Spread (σ)           173.21
+  Law γ + η ≈ C      ✅ holds
+
+  agent 0   █████░░░░░░░░░░░  η= 0.58
+  agent 3   ████████████████  η= 1.73  🔥 ANOMALY
+
+  1 of 4 agents anomalous  →  intervene on: 3
+```
+
+Demo mode shows the cost/value ledger; live mode shows the running service's
+energy-balance + anomaly model. Same law, two lenses — both actionable.
+
 ---
 
 ## What's in this repo
 
 | Component | Language | Status |
 |-----------|----------|--------|
-| `superinstance` SDK — Agent, Fleet, AgentMemory, ConservationLedger, **FleetVitals** + `si-vitals` CLI | Python | Alpha · installable · 89% test coverage |
+| `superinstance` SDK — Agent, Fleet, AgentMemory, ConservationLedger, **FleetVitals** + `si-vitals` CLI (demo + live HTTP) | Python | Alpha · installable · 91% test coverage |
 | Fleet type schemas (`@superinstance/schemas`) | TypeScript | Stable definitions |
 | `conservation-law` — energy-conservation core (γ + η = C) | Rust | Alpha · zero-dependency · tested |
 | `fleet-metrics` — real-time conservation reporter + HTTP API | Rust | Alpha · builds on `conservation-law` |

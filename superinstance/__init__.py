@@ -10,6 +10,7 @@ from .agent_cache import AgentCache, get_agent, get_cached_agent, get_default_ca
 from .conservation import AuditReport, Budget, ConservationLedger, Entry
 from .exceptions import AgentNotFoundError, FleetConnectionError, SuperInstanceError
 from .fleet import Fleet
+from .live import LiveSnapshot, fetch_snapshot, render_live
 from .memory import AgentMemory
 from .vitals import Action, AgentVital, Diagnosis, FleetVitals, Status
 
@@ -27,6 +28,9 @@ __all__ = [
     "Diagnosis",
     "Status",
     "Action",
+    "LiveSnapshot",
+    "fetch_snapshot",
+    "render_live",
     "SuperInstanceError",
     "AgentNotFoundError",
     "FleetConnectionError",
