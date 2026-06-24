@@ -150,7 +150,8 @@ class ConservationLedger:
         gammas = [e.gamma for e in recent]
         etas = [e.eta for e in recent]
         # γ trending up across the window …
-        gamma_rising = all(b >= a for a, b in zip(gammas, gammas[1:])) and gammas[-1] > gammas[0]
+        pairs = zip(gammas, gammas[1:], strict=False)
+        gamma_rising = all(b >= a for a, b in pairs) and gammas[-1] > gammas[0]
         # … while η fails to keep pace (mean is flat or falling).
         eta_flat = etas[-1] <= etas[0]
         return gamma_rising and eta_flat

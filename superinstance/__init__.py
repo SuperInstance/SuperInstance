@@ -11,6 +11,7 @@ from .conservation import AuditReport, Budget, ConservationLedger, Entry
 from .exceptions import AgentNotFoundError, FleetConnectionError, SuperInstanceError
 from .fleet import Fleet
 from .memory import AgentMemory
+from .vitals import Action, AgentVital, Diagnosis, FleetVitals, Status
 
 __version__ = "0.1.1"
 __all__ = [
@@ -21,6 +22,11 @@ __all__ = [
     "ConservationLedger",
     "AuditReport",
     "Entry",
+    "FleetVitals",
+    "AgentVital",
+    "Diagnosis",
+    "Status",
+    "Action",
     "SuperInstanceError",
     "AgentNotFoundError",
     "FleetConnectionError",

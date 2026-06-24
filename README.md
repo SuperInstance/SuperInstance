@@ -95,11 +95,61 @@ the least-loaded qualified agent and bills the dispatch on the ledger, and
 
 ---
 
+## ⚡ Fleet Vital Signs — the killer app
+
+Every AI fleet has a failure you can't see: agents that **churn cost without
+shipping value**. Token budgets evaporate, nothing moves, and the logs look
+busy. Fleet Vital Signs makes that visible and *actionable* — a conservation
+gauge per agent and a one-word verdict: **FEED** the productive, **WATCH** the
+slipping, **KILL** the burning.
+
+```bash
+si-vitals            # ships with the SDK — try it immediately
+```
+
+```
+Fleet Vital Signs — γ + η = C
+
+  rewriter  ████░░░░░░░░░░░░░░░░░░░░  η=   1250 γ=   6000 eff=0.17  🔥 KILL  ⤴ burning
+  drafter   █████████░░░░░░░░░░░░░░░  η=   1750 γ=   3100 eff=0.36  ⚠️  WATCH
+  scout     ███████████████░░░░░░░░░  η=   3100 γ=   1900 eff=0.62  ✅ FEED
+
+  FLEET      efficiency=0.36   1 healthy · 1 watch · 1 burning
+  → intervene on: rewriter
+```
+
+`rewriter` is caught red-handed: γ climbed every pass (1200 → 2000 → 2800) while
+η fell (600 → 400 → 250) — the acute burn signature, flagged `⤴ burning`. The
+bar is the conservation law made visible: **green is value (η), the rest is cost
+(γ)**. Green-dominant agents earn more work; red-dominant agents get pulled.
+
+Point it at your own fleet — no dashboard server, no telemetry pipeline:
+
+```python
+from superinstance import Fleet
+
+fleet = Fleet("pod")
+fleet.create_agent("scout")
+# … your agents record γ/η as they work …
+fleet.ledger.record("scout", gamma=1000, eta=1500)
+
+print(fleet.vitals().render())            # the dashboard above
+d = fleet.vitals().diagnose()
+print(d.kill)                             # ['rewriter'] — who to intervene on
+print(d.headline)                         # "1 healthy · 1 watch · 1 burning"
+```
+
+This is agent observability when you take a conservation law seriously: not a
+logging dashboard, a **physics dashboard**. It's the in-process core of the
+fleet-wide `fleet-metrics` Rust service and the **CoCapn** auditor vessel.
+
+---
+
 ## What's in this repo
 
 | Component | Language | Status |
 |-----------|----------|--------|
-| `superinstance` SDK — Agent, Fleet, AgentMemory, **ConservationLedger** | Python | Alpha · installable · 86% test coverage |
+| `superinstance` SDK — Agent, Fleet, AgentMemory, ConservationLedger, **FleetVitals** + `si-vitals` CLI | Python | Alpha · installable · 89% test coverage |
 | Fleet type schemas (`@superinstance/schemas`) | TypeScript | Stable definitions |
 | `conservation-law` — energy-conservation core (γ + η = C) | Rust | Alpha · zero-dependency · tested |
 | `fleet-metrics` — real-time conservation reporter + HTTP API | Rust | Alpha · builds on `conservation-law` |

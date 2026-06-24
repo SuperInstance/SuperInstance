@@ -174,6 +174,16 @@ class Fleet:
         """
         return self.ledger.audit()
 
+    def vitals(self):
+        """Fleet Vital Signs — the diagnostic surface over the ledger.
+
+        Returns a :class:`~superinstance.vitals.FleetVitals` you can
+        ``.diagnose()`` (who to feed/watch/kill) or ``.render()`` as a
+        conservation-gauge dashboard.
+        """
+        from .vitals import FleetVitals
+        return FleetVitals.from_fleet(self)
+
     def remove_agent(self, name: str) -> None:
         """Remove an agent from the fleet."""
         if name not in self._agents:

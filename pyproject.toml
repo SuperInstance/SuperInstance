@@ -33,6 +33,9 @@ dev = [
     "mypy>=1.10",
 ]
 
+[project.scripts]
+si-vitals = "superinstance.vitals:main"
+
 [project.urls]
 Homepage = "https://github.com/SuperInstance/superinstance"
 Repository = "https://github.com/SuperInstance/superinstance"
