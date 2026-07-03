@@ -100,7 +100,7 @@ coordinator.on("open", () => {
   }, 1000);
 });
 coordinator.on("result", (r) => {
-  console.log(`Coordinator got result: ${JSON(r.result)}`); // 42
+  console.log(`Coordinator got result: ${JSON.stringify(r.result)}`); // 42
   worker.disconnect();
   coordinator.disconnect();
 });
@@ -146,5 +146,8 @@ Use these endpoints to let agents discover tools, libraries, or data at runtime.
 
 1. **Protocol details** — read the `tminus-dispatcher` README for the full WebSocket protocol spec.
 2. **Semantic crate search** — integrate the Fleet Vector API (`POST /search`) into your agents for tool discovery.
-3. **Python SDK** — `pip install superinstance` for the Python API with persistent memory, fleet management, and spectral balance.
+3. **Python SDK** — `pip install cocapn` is the actually-published Python
+   package in this account (`superinstance` on PyPI was never published,
+   despite older docs claiming it — see [README.md](./README.md) for the
+   full, verified picture of what's actually installable here).
 4. **Build something** — open a PR or share what you made.
