@@ -230,6 +230,11 @@ published — are especially welcome; that gap is this account's biggest known
 issue. See [`CONTRIBUTING.md`](CONTRIBUTING.md) and
 [`GOOD_FIRST_ISSUES.md`](GOOD_FIRST_ISSUES.md).
 
+## Further reading
+
+[`docs/VISION.md`](docs/VISION.md) carries the fuller argument this README
+compresses — why the sketchbook model is worth keeping, not just what it is.
+
 ## License
 
 MIT
