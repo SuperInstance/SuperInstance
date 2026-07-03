@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-07-02 08:12 UTC
+**Generated:** 2026-07-03 08:09 UTC
 **Total repos:** 2000
 
 ## C
@@ -697,6 +697,7 @@
 - **[cocapn-explain-rs](https://github.com/SuperInstance/cocapn-explain-rs)** — Decision explainability — feature importance, permutation importance
 - **[cocapn-fleetmind](https://github.com/SuperInstance/cocapn-fleetmind)** — Cocapn fleet crate: cocapn-fleetmind
 - **[cocapn-forth](https://github.com/SuperInstance/cocapn-forth)** — CoCapn in Forth — the language of bare metal. When the ESP32 has 4KB and the ocean has no patience.
+- **[cocapn-foundation](https://github.com/SuperInstance/cocapn-foundation)** — Cocapn / ActiveLog — fishing vessel voice assistant design export. App implementation in progress.
 - **[cocapn-garden](https://github.com/SuperInstance/cocapn-garden)** — Cocapn fleet crate: cocapn-garden
 - **[cocapn-go](https://github.com/SuperInstance/cocapn-go)** — cocapn Go SDK — one API key, any AI model
 - **[cocapn-health](https://github.com/SuperInstance/cocapn-health)** — Cocapn fleet health monitoring — vessel status, heartbeat, and observability utilities
@@ -1562,7 +1563,6 @@
 - **[rhythm-nation-math](https://github.com/SuperInstance/rhythm-nation-math)** — The mathematics of rhythm — polyrhythms, polymeters, groove analysis, syncopation metrics. pip insta
 - **[rig-budget-guard](https://github.com/SuperInstance/rig-budget-guard)**
 - **[ring-buffer](https://github.com/SuperInstance/ring-buffer)** — Audio pipeline NaN guard — fixed-length ring buffer with sanitisation
-- **[ring-sign](https://github.com/SuperInstance/ring-sign)**
 - **[roadmaps](https://github.com/SuperInstance/roadmaps)** — Killer-app roadmaps for the SuperInstance constraint-aware ecosystem
 - **[roblox-craftmind-agents](https://github.com/SuperInstance/roblox-craftmind-agents)** — Core Lua framework for Roblox agents with self-improving, token-saving logic
 - **[roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)** — Tooling for automated Roblox game building with t-minus-event synchronized simulation framework

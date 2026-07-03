@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-02 08:12 UTC
+**Generated:** 2026-07-03 08:09 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1920,7 +1920,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [rhythm-nation-math](https://github.com/SuperInstance/rhythm-nation-math)
 - [rigid-body](https://github.com/SuperInstance/rigid-body)
 - [ring-buffer-rs](https://github.com/SuperInstance/ring-buffer-rs)
-- [ring-sign](https://github.com/SuperInstance/ring-sign)
 - [rl-rs](https://github.com/SuperInstance/rl-rs)
 - [roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)
 - [robotics-foundations](https://github.com/SuperInstance/robotics-foundations)
@@ -2316,6 +2315,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [agent-jam](https://github.com/SuperInstance/agent-jam)
 - [agent-voice-leading](https://github.com/SuperInstance/agent-voice-leading)
 - [casting-call-gpu](https://github.com/SuperInstance/casting-call-gpu)
+- [cocapn-foundation](https://github.com/SuperInstance/cocapn-foundation)
 - [constraint-dialect](https://github.com/SuperInstance/constraint-dialect)
 - [court-jester](https://github.com/SuperInstance/court-jester)
 - [fishinglog-ai](https://github.com/SuperInstance/fishinglog-ai)

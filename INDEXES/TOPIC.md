@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-07-02 08:12 UTC
+**Generated:** 2026-07-03 08:09 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -1691,7 +1691,6 @@
 - **[rhythm-nation-math](https://github.com/SuperInstance/rhythm-nation-math)** — The mathematics of rhythm — polyrhythms, polymeters, groove analysis, syncopation metrics. pip insta
 - **[rigid-body](https://github.com/SuperInstance/rigid-body)** — A Rust library for Rigid Body
 - **[ring-buffer-rs](https://github.com/SuperInstance/ring-buffer-rs)** — Circular/ring buffer with SPSC lock-free variant, power-of-two sizing, sliding window — pure Rust, n
-- **[ring-sign](https://github.com/SuperInstance/ring-sign)**
 - **[rl-rs](https://github.com/SuperInstance/rl-rs)** — Reinforcement learning in Rust. From Q-tables to policy gradients.
 - **[roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)** — Tooling for automated Roblox game building with t-minus-event synchronized simulation framework
 - **[robotics-foundations](https://github.com/SuperInstance/robotics-foundations)** — Robotics foundations in Rust. Kinematics to control, from scratch.
@@ -2080,6 +2079,7 @@
 
 ## Voice-Signature
 
+- **[cocapn-foundation](https://github.com/SuperInstance/cocapn-foundation)** — Cocapn / ActiveLog — fishing vessel voice assistant design export. App implementation in progress.
 - **[fishinglog-ai](https://github.com/SuperInstance/fishinglog-ai)** — fishinglog.ai — Edge AI fishing vessel. Jetson-powered species classification, captain voice, conver
 - **[handy-marine-voice](https://github.com/SuperInstance/handy-marine-voice)** — Voice-controlled marine autopilot. Handy hears you. CoCapn steers. No cloud required.
 - **[lau-voice](https://github.com/SuperInstance/lau-voice)**

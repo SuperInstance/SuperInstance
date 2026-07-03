@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-07-02 08:12 UTC
+**Generated:** 2026-07-03 08:09 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -476,6 +476,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[cocapn-explain-rs](https://github.com/SuperInstance/cocapn-explain-rs)** | CCC | Decision explainability — feature importance, permutation importance | 🟢 active |
 | **[cocapn-fleetmind](https://github.com/SuperInstance/cocapn-fleetmind)** | CCC | Cocapn fleet crate: cocapn-fleetmind | 🟢 active |
 | **[cocapn-forth](https://github.com/SuperInstance/cocapn-forth)** | CCC | CoCapn in Forth — the language of bare metal. When the ESP32 has 4KB and the ocean has no patience. | 🟢 active |
+| **[cocapn-foundation](https://github.com/SuperInstance/cocapn-foundation)** | CCC | Cocapn / ActiveLog — fishing vessel voice assistant design export. App implementation in progress. | 🟢 active |
 | **[cocapn-garden](https://github.com/SuperInstance/cocapn-garden)** | CCC | Cocapn fleet crate: cocapn-garden | 🟢 active |
 | **[cocapn-go](https://github.com/SuperInstance/cocapn-go)** | CCC | cocapn Go SDK — one API key, any AI model | 🟢 active |
 | **[cocapn-health](https://github.com/SuperInstance/cocapn-health)** | CCC | Cocapn fleet health monitoring — vessel status, heartbeat, and observability utilities | 🟢 active |
@@ -1516,7 +1517,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[rhythm-nation-math](https://github.com/SuperInstance/rhythm-nation-math)** | Various | The mathematics of rhythm — polyrhythms, polymeters, groove analysis, syncopation metrics. pip insta | ⚪ unknown |
 | **[rigid-body](https://github.com/SuperInstance/rigid-body)** | Various | A Rust library for Rigid Body | ⚪ unknown |
 | **[ring-buffer-rs](https://github.com/SuperInstance/ring-buffer-rs)** | Various | Circular/ring buffer with SPSC lock-free variant, power-of-two sizing, sliding window — pure Rust, n | ⚪ unknown |
-| **[ring-sign](https://github.com/SuperInstance/ring-sign)** | Various | ring-sign | ⚪ unknown |
 | **[rl-rs](https://github.com/SuperInstance/rl-rs)** | Various | Reinforcement learning in Rust. From Q-tables to policy gradients. | ⚪ unknown |
 | **[roblox-craftmind-agents](https://github.com/SuperInstance/roblox-craftmind-agents)** | Various | Core Lua framework for Roblox agents with self-improving, token-saving logic | 🟢 active |
 | **[roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)** | Various | Tooling for automated Roblox game building with t-minus-event synchronized simulation framework | ⚪ unknown |
@@ -5199,6 +5199,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Web & Browser
 - **Vessel:** CCC
 - **Purpose:** CoCapn in Forth — the language of bare metal. When the ESP32 has 4KB and the ocean has no patience.
+- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
+- **Status:** active
+
+### [cocapn-foundation](https://github.com/SuperInstance/cocapn-foundation)
+- **Domain:** Web & Browser
+- **Vessel:** CCC
+- **Purpose:** Cocapn / ActiveLog — fishing vessel voice assistant design export. App implementation in progress.
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
