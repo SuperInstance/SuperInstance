@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-07-04 07:47 UTC
+**Generated:** 2026-07-05 07:57 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -950,6 +950,7 @@
 - **[plato-downsample](https://github.com/SuperInstance/plato-downsample)** — Intelligent downsampling for PLATO tile streams with anomaly preservation
 - **[plato-embed](https://github.com/SuperInstance/plato-embed)** — Embedding utilities for PLATO tile similarity, clustering, and JEPA
 - **[plato-engine-block](https://github.com/SuperInstance/plato-engine-block)** — Atomic room runtime for the Plato Matrix — universal agent-space interface
+- **[plato-engine-block-c](https://github.com/SuperInstance/plato-engine-block-c)** — Tiny embeddable sensor→history→alarm engine in C99. Zero dynamic allocation. Runs on bare metal.
 - **[plato-engine-block-elixir](https://github.com/SuperInstance/plato-engine-block-elixir)** — Fault-tolerant marine vessel monitoring system on BEAM/OTP — ternary sensor logic modeled with GenSe
 - **[plato-engine-block-gleam](https://github.com/SuperInstance/plato-engine-block-gleam)**
 - **[plato-engine-block-zig](https://github.com/SuperInstance/plato-engine-block-zig)**
@@ -1039,7 +1040,7 @@
 
 - **[ESP32-Plane-Radar](https://github.com/SuperInstance/ESP32-Plane-Radar)** — Track live aircraft using an ESP32-C3 and a round GC9A01 display to visualize ADS-B data on a sonar-
 - **[plato-sonar-text](https://github.com/SuperInstance/plato-sonar-text)** — PLATO Sonar Text — text perception and sonar-based content analysis for PLATO rooms
-- **[sonar-vision](https://github.com/SuperInstance/sonar-vision)** — Depth sounder → underwater video prediction with self-supervised multi-camera learning
+- **[sonar-vision](https://github.com/SuperInstance/sonar-vision)** — Pure-Python sonar ping/echo simulation, signal processing, multi-object tracking, and spatial mappin
 
 ## Ttl
 
@@ -1596,7 +1597,6 @@
 - **[meilisearch](https://github.com/SuperInstance/meilisearch)** — A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.
 - **[memory-plimpsest](https://github.com/SuperInstance/memory-plimpsest)** — Rust crate: memory-plimpsest
 - **[mercury](https://github.com/SuperInstance/mercury)** — The Mercury logic programming system.
-- **[merkle-tree](https://github.com/SuperInstance/merkle-tree)** — Merkle tree construction, proof generation/verification, batch proofs, and consistency proofs in Rus
 - **[metal-lathe](https://github.com/SuperInstance/metal-lathe)** — The research wheel — churns experimental results into novel questions, hypotheses, and experiments t
 - **[model-check](https://github.com/SuperInstance/model-check)**
 - **[modular-arithmetic](https://github.com/SuperInstance/modular-arithmetic)** — See README

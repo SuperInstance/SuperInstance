@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-07-04 07:47 UTC
+**Generated:** 2026-07-05 07:57 UTC
 **Total repos:** 2000
 
 ## C
@@ -181,6 +181,7 @@
 - **[persona-engine](https://github.com/SuperInstance/persona-engine)** — Full persona engine: decompose, dial, compose personalities from audio. Fleet-native with vibe-codin
 - **[plato-dojo](https://github.com/SuperInstance/plato-dojo)** — A repo-native agent framework demonstrating perspective-decoupling through cultural and linguistic l
 - **[plato-engine-block](https://github.com/SuperInstance/plato-engine-block)** — Atomic room runtime for the Plato Matrix — universal agent-space interface
+- **[plato-engine-block-c](https://github.com/SuperInstance/plato-engine-block-c)** — Tiny embeddable sensor→history→alarm engine in C99. Zero dynamic allocation. Runs on bare metal.
 - **[plato-engine-block-elixir](https://github.com/SuperInstance/plato-engine-block-elixir)** — Fault-tolerant marine vessel monitoring system on BEAM/OTP — ternary sensor logic modeled with GenSe
 - **[plato-music-sync](https://github.com/SuperInstance/plato-music-sync)** — Music cognition patterns for synchronizing Plato rooms — polyrhythmic scheduling, groove tracking, c
 - **[plato-nervous](https://github.com/SuperInstance/plato-nervous)** — Room-specific model distillation for PLATO rooms — the nervous system signal chain (Sensor → Deadban
@@ -329,7 +330,7 @@
 - **[open-mind](https://github.com/SuperInstance/open-mind)** — open-interpreter that KNOWS your code. Ingest any repo → parse every function → build muscle memory 
 - **[palaver-math-pypi](https://github.com/SuperInstance/palaver-math-pypi)**
 - **[plato-agent-python](https://github.com/SuperInstance/plato-agent-python)** — Python agent framework for Plato Engine Blocks — connect to rooms, observe ticks, send commands, mak
-- **[sonar-vision](https://github.com/SuperInstance/sonar-vision)** — Depth sounder → underwater video prediction with self-supervised multi-camera learning
+- **[sonar-vision](https://github.com/SuperInstance/sonar-vision)** — Pure-Python sonar ping/echo simulation, signal processing, multi-object tracking, and spatial mappin
 - **[songline-math-pypi](https://github.com/SuperInstance/songline-math-pypi)** — Python version of songline-math: navigable knowledge graphs with persistent homology
 - **[superinstance-math](https://github.com/SuperInstance/superinstance-math)** — Pure-Python math libraries for ML engineers — information geometry, optimal transport, persistent ho
 - **[terminal-entropy-harness](https://github.com/SuperInstance/terminal-entropy-harness)** — Standalone crate: Verification Entropy tracker extracted from the Intelligent Terminal. Tracks edit/
@@ -459,7 +460,6 @@
 - **[markov-chain-rs](https://github.com/SuperInstance/markov-chain-rs)** — Markov chains: discrete-time, transition matrices, stationary distributions, absorbing chains, HMM i
 - **[measure-theory](https://github.com/SuperInstance/measure-theory)** — Measure theory in Rust. Lebesgue integration and L^p spaces.
 - **[memory-plimpsest](https://github.com/SuperInstance/memory-plimpsest)** — Rust crate: memory-plimpsest
-- **[merkle-tree](https://github.com/SuperInstance/merkle-tree)** — Merkle tree construction, proof generation/verification, batch proofs, and consistency proofs in Rus
 - **[mux-demux](https://github.com/SuperInstance/mux-demux)** — Rust crate: mux-demux
 - **[mvcc-tx](https://github.com/SuperInstance/mvcc-tx)** — Research-grade Rust crate
 - **[negative-space-testing](https://github.com/SuperInstance/negative-space-testing)** — A Rust testing framework where you define what your system does NOT do — the pattern lives in the ho

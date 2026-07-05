@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-07-04 07:47 UTC
+**Generated:** 2026-07-05 07:57 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -972,7 +972,6 @@
 - **[memory-palace](https://github.com/SuperInstance/memory-palace)** — Method of loci for agent memory — spatial memory organization
 - **[memory-plimpsest](https://github.com/SuperInstance/memory-plimpsest)** — Rust crate: memory-plimpsest
 - **[mercury](https://github.com/SuperInstance/mercury)** — The Mercury logic programming system.
-- **[merkle-tree](https://github.com/SuperInstance/merkle-tree)** — Merkle tree construction, proof generation/verification, batch proofs, and consistency proofs in Rus
 - **[meta-agent](https://github.com/SuperInstance/meta-agent)** — A meta-agent coordinator that dispatches tasks to agents based on capabilities, load, and dependency
 - **[midi-flux-bridge](https://github.com/SuperInstance/midi-flux-bridge)** — Bridge from tensor-midi timing to FLUX bytecode: conductor scheduling, swing timing, alignment verif
 - **[mmx-toolkit](https://github.com/SuperInstance/mmx-toolkit)** — 🎵 MiniMax multimodal SDK — speech (332 voices), music generation, vision analysis in one import. Zer
@@ -1098,6 +1097,7 @@
 - **[plato-distill](https://github.com/SuperInstance/plato-distill)** — Progressive knowledge distillation tracking for PLATO rooms
 - **[plato-downsample](https://github.com/SuperInstance/plato-downsample)** — Intelligent downsampling for PLATO tile streams with anomaly preservation
 - **[plato-embed](https://github.com/SuperInstance/plato-embed)** — Embedding utilities for PLATO tile similarity, clustering, and JEPA
+- **[plato-engine-block-c](https://github.com/SuperInstance/plato-engine-block-c)** — Tiny embeddable sensor→history→alarm engine in C99. Zero dynamic allocation. Runs on bare metal.
 - **[plato-engine-block-gleam](https://github.com/SuperInstance/plato-engine-block-gleam)**
 - **[plato-engine-block-zig](https://github.com/SuperInstance/plato-engine-block-zig)**
 - **[plato-event](https://github.com/SuperInstance/plato-event)** — Event bus for PLATO nervous system
@@ -1244,7 +1244,7 @@
 - **[smt-core](https://github.com/SuperInstance/smt-core)**
 - **[social-conservation](https://github.com/SuperInstance/social-conservation)** — Spectral conservation analysis of social networks — bot detection, echo chambers, influence
 - **[solid-mechanics](https://github.com/SuperInstance/solid-mechanics)** — Solid mechanics in Rust — stress/strain tensors, beam theory, FEM basics, yield criteria, energy met
-- **[sonar-vision](https://github.com/SuperInstance/sonar-vision)** — Depth sounder → underwater video prediction with self-supervised multi-camera learning
+- **[sonar-vision](https://github.com/SuperInstance/sonar-vision)** — Pure-Python sonar ping/echo simulation, signal processing, multi-object tracking, and spatial mappin
 - **[songline-math](https://github.com/SuperInstance/songline-math)**
 - **[songline-math-c](https://github.com/SuperInstance/songline-math-c)**
 - **[songline-math-pypi](https://github.com/SuperInstance/songline-math-pypi)** — Python version of songline-math: navigable knowledge graphs with persistent homology

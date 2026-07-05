@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-04 07:47 UTC
+**Generated:** 2026-07-05 07:57 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1153,6 +1153,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-downsample](https://github.com/SuperInstance/plato-downsample)
 - [plato-embed](https://github.com/SuperInstance/plato-embed)
 - [plato-engine-block](https://github.com/SuperInstance/plato-engine-block)
+- [plato-engine-block-c](https://github.com/SuperInstance/plato-engine-block-c)
 - [plato-engine-block-elixir](https://github.com/SuperInstance/plato-engine-block-elixir)
 - [plato-engine-block-gleam](https://github.com/SuperInstance/plato-engine-block-gleam)
 - [plato-engine-block-zig](https://github.com/SuperInstance/plato-engine-block-zig)
@@ -1829,7 +1830,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [meilisearch](https://github.com/SuperInstance/meilisearch)
 - [memory-plimpsest](https://github.com/SuperInstance/memory-plimpsest)
 - [mercury](https://github.com/SuperInstance/mercury)
-- [merkle-tree](https://github.com/SuperInstance/merkle-tree)
 - [metal-lathe](https://github.com/SuperInstance/metal-lathe)
 - [model-check](https://github.com/SuperInstance/model-check)
 - [modular-arithmetic](https://github.com/SuperInstance/modular-arithmetic)

@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-07-04 07:47 UTC
+**Generated:** 2026-07-05 07:57 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -423,6 +423,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[plato-browser](https://github.com/SuperInstance/plato-browser)** | JetsonClaw1 | PLATO Nervous System browser demo — real-time sensor monitoring with Chrome AI | 🟢 active |
 | **[plato-demo](https://github.com/SuperInstance/plato-demo)** | JetsonClaw1 | HN demo — pre-seeded knowledge, visible deadband, zero setup | 🟢 active |
 | **[plato-distill](https://github.com/SuperInstance/plato-distill)** | JetsonClaw1 | Progressive knowledge distillation tracking for PLATO rooms | 🟢 active |
+| **[plato-engine-block-c](https://github.com/SuperInstance/plato-engine-block-c)** | JetsonClaw1 | Tiny embeddable sensor→history→alarm engine in C99. Zero dynamic allocation. Runs on bare metal. | 🟢 active |
 | **[plato-engine-block-elixir](https://github.com/SuperInstance/plato-engine-block-elixir)** | JetsonClaw1 | Fault-tolerant marine vessel monitoring system on BEAM/OTP — ternary sensor logic modeled with GenSe | 🟢 active |
 | **[plato-manus](https://github.com/SuperInstance/plato-manus)** | JetsonClaw1 | PLATO Manus — manuscript and writing system for knowledge rooms | 🟢 active |
 | **[plato-nervous](https://github.com/SuperInstance/plato-nervous)** | JetsonClaw1 | Room-specific model distillation for PLATO rooms — the nervous system signal chain (Sensor → Deadban | 🟢 active |
@@ -1327,7 +1328,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[memory-palace](https://github.com/SuperInstance/memory-palace)** | Various | Method of loci for agent memory — spatial memory organization | 🟢 active |
 | **[memory-plimpsest](https://github.com/SuperInstance/memory-plimpsest)** | Various | Rust crate: memory-plimpsest | ⚪ unknown |
 | **[mercury](https://github.com/SuperInstance/mercury)** | Various | The Mercury logic programming system. | ⚪ unknown |
-| **[merkle-tree](https://github.com/SuperInstance/merkle-tree)** | Various | Merkle tree construction, proof generation/verification, batch proofs, and consistency proofs in Rus | ⚪ unknown |
 | **[meta-agent](https://github.com/SuperInstance/meta-agent)** | Various | A meta-agent coordinator that dispatches tasks to agents based on capabilities, load, and dependency | 🟢 active |
 | **[metal-lathe](https://github.com/SuperInstance/metal-lathe)** | Various | The research wheel — churns experimental results into novel questions, hypotheses, and experiments t | ⚪ unknown |
 | **[mmx-toolkit](https://github.com/SuperInstance/mmx-toolkit)** | Various | 🎵 MiniMax multimodal SDK — speech (332 voices), music generation, vision analysis in one import. Zer | ⚪ unknown |
@@ -4856,6 +4856,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** Progressive knowledge distillation tracking for PLATO rooms
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
+### [plato-engine-block-c](https://github.com/SuperInstance/plato-engine-block-c)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** Tiny embeddable sensor→history→alarm engine in C99. Zero dynamic allocation. Runs on bare metal.
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
