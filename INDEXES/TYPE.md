@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-07-05 07:57 UTC
+**Generated:** 2026-07-06 09:01 UTC
 **Total repos:** 2000
 
 ## Cli
