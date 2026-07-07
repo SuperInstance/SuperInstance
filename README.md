@@ -18,6 +18,49 @@ else in this account.**
 
 ---
 
+## Why a sketchbook, and why in public
+
+On one day in early 2026, this account grew by 1,423 repositories. None of
+them were features. Each was a single question, asked once, answered once,
+and left exactly as right or as wrong as that first answer made it. That is
+not a mess to apologize for. It is the method.
+
+Most software organizations show you their conclusions and bury the
+questions that didn't pan out. This account does the opposite on purpose:
+the failed sketch stays up next to the one that worked, both dated, both
+attributable, neither retouched after the fact. A repo here costs almost
+nothing to be wrong in public. That is the entire point — cheap, visible
+wrongness is how you find the rare idea worth making expensive.
+
+The rare ones don't stay here. When a sketch survives contact with a real
+user, it moves to **[github.com/purplepincher](https://github.com/purplepincher)**,
+a separate, curated org held to a stricter bar — every claim there has to be
+literally, checkably true, no exceptions. [DeckBoss](https://github.com/purplepincher/deckboss),
+a shipped, offline-first fishing logbook actual captains use, started here as
+loose `deckboss-*` sketches, a design doc called `cocapn-foundation`, and an
+agent experiment named `plato-vessel-technician`. It isn't the only graduate:
+the compiled geometry engine **[`constraint-theory-core`](https://github.com/SuperInstance/constraint-theory-core)**
+also made the crossing, and is the real, running WASM demo on
+purplepincher.org right now, not a mockup of one. Two data points, not
+one — the pipeline isn't a slogan, it has a track record you can click on.
+
+If this reads like an argument for a way of thinking rather than an org
+chart, that's because it is one, and the account writes essays about it
+alongside the code — start with
+[`THE_CONSERVATION_LAW_OF_INTELLIGENCE.md`](https://github.com/SuperInstance/AI-Writings/blob/main/THE_CONSERVATION_LAW_OF_INTELLIGENCE.md),
+[`philosophy/THE_ROOM_IS_THE_AGENT.md`](https://github.com/SuperInstance/AI-Writings/blob/main/philosophy/THE_ROOM_IS_THE_AGENT.md),
+or [`REFLECTION-HIGH-ABSTRACTION.md`](https://github.com/SuperInstance/AI-Writings/blob/main/REFLECTION-HIGH-ABSTRACTION.md)
+among a few hundred others under `AI-Writings/`. Some of the clearest
+statements of it aren't essays at all —
+[`FICTION/the-crab-that-compiled.md`](https://github.com/SuperInstance/AI-Writings/blob/main/FICTION/the-crab-that-compiled.md)
+makes the same argument as a story about a hermit crab learning to read a
+circuit board, and lands it harder than this README will.
+
+None of that is required reading. The next section is the whole account in
+thirty seconds, for anyone who'd rather scroll than believe a thesis.
+
+---
+
 ## 30 seconds: what is this, actually
 
 - One person (Casey DiGennaro) generates a large number of small, real
@@ -30,20 +73,22 @@ else in this account.**
   sketches. The rest is scaffolding** — deliberately public, not a backlog.
 - The curated, hardened output of this sketchbook lives at
   **[github.com/purplepincher](https://github.com/purplepincher)**, a
-  separate org. [DeckBoss](https://github.com/purplepincher/deckboss) (a
-  shipped, offline-first fishing logbook) started as sketches here
-  (`deckboss-*`, `cocapn-foundation`, `plato-vessel-technician`) and
-  graduated there. That pipeline — sketch here, harden there — is the point
-  of the two-org split.
+  separate org. [DeckBoss](https://github.com/purplepincher/deckboss) and
+  [`constraint-theory-core`](https://github.com/SuperInstance/constraint-theory-core)
+  are the two confirmed graduates so far. That pipeline — sketch here,
+  harden there — is the point of the two-org split.
 
 ---
 
 ## Get something running in the next 5 minutes
 
-There are two real, currently-published install paths. Everything else
-you'll see referenced in older docs here (`pip install superinstance`,
-`cargo install pincher`, `npm i @superinstance/core`) **does not exist on a
-registry.** Use one of these two instead.
+There are two real, currently-published install paths with a full,
+runnable walkthrough. (Four packages technically exist on a registry —
+`@superinstance/sdk` and `si-superinstance` among them, see the skeptic's
+rules below — but these two are the ones worth your first five minutes.)
+Everything else you'll see referenced in older docs here (`pip install
+superinstance`, `cargo install pincher`, `npm i @superinstance/core`)
+**does not exist on a registry.** Use one of these two instead.
 
 ### Path A — Node / WebSocket fleet (`@superinstance/tminus-*`)
 
@@ -103,8 +148,12 @@ some type schemas) but was never packaged as `superinstance` on PyPI, so
 don't install-line-hunt for it.
 
 If you want the design brief for where `cocapn` is headed next, read
-`cocapn-foundation` — it's the voice-controlled-vessel safety design doc that
-became [DeckBoss](https://github.com/purplepincher/deckboss).
+[`cocapn-foundation`](https://github.com/SuperInstance/cocapn-foundation) — a
+detailed, unbuilt safety architecture for voice-controlled vessels that
+turned into the design brief for [DeckBoss](https://github.com/purplepincher/deckboss).
+It's a good place to watch this account's actual habit up close: designed
+in the open, labeled honestly as not-yet-built, for months, before anyone
+touched hardware.
 
 ---
 
@@ -154,7 +203,7 @@ If you only look at seven things in this account, look at these:
 | [`exocortex`](https://github.com/SuperInstance/exocortex) | Well-structured scaffold for distributed agent memory with an ESP32 tier. | Cognitive core is currently mocked — random embeddings, fake training. Architecture is the real contribution so far. |
 | [`git-native-agents`](https://github.com/SuperInstance/git-native-agents) | Multi-agent coordination built entirely on git primitives (POSIX shell). Cleanest small idea in the account. | Explicitly scoped to 5–50 agents; no locking yet, so concurrent ticks can race. |
 | Ternary math core (`ternary-entropy`, `ternary-types`, `ternary-pid`, `ternary-svm`) | Small, tested, honest Rust crates. | See the conservation-law caveat below before you read the papers wrapped around them. |
-| Budget-guardian family (`codex-budget-guard`, `build-guardian`, `dify-budget-watchdog`, …) | Practical, production-minded tools that enforce token/time/build budgets on AI coding workflows. | Understated — better than their obscurity suggests, but undocumented as a "family."|
+| Budget-guardian family (`codex-budget-guard`, `build-guardian`, `dify-budget-watchdog`, …) | Practical, production-minded tools that enforce token/time/build budgets on AI coding workflows. | Understated — better than their obscurity suggests, but undocumented as a "family." |
 
 ---
 
@@ -172,9 +221,9 @@ depending which doc they opened:
 These were never three views of one system — they were three partially-built
 products sharing a brand name. **This README resolves it**: Path A
 (`tminus-*`) and Path B (`cocapn`) above are the only two currently-published,
-working entry points. Everything else in `ROADMAP.md`/`PROFILE.md` is intent,
-not shipped state — useful for what the author is thinking about, not for
-what you can `pip install` today.
+working entry points with a full walkthrough. Everything else in
+`ROADMAP.md`/`PROFILE.md` is intent, not shipped state — useful for what the
+author is thinking about, not for what you can `pip install` today.
 
 ---
 
@@ -197,7 +246,11 @@ truth an agent actually needs, stated as rules:
    costume.** The small information-theory crates that implement it are
    sound. The cancellation formula built on top (δ(n)) has the wrong leading
    coefficient — the account's own proof sketch derives ~0.65/√n, then states
-   1/√n as the theorem. Enjoy the framing, don't cite the theorem.
+   1/√n as the theorem. Enjoy the framing, don't cite the theorem. (The
+   account is honest about this in its own words, at length, in
+   [`philosophy/THE-CONSERVATION-LAW-IS-REAL.md`](https://github.com/SuperInstance/AI-Writings/blob/main/philosophy/THE-CONSERVATION-LAW-IS-REAL.md)
+   — worth reading precisely because it argues for the idea *and* shows its
+   working, in public, including the part that doesn't check out yet.)
 5. **"Fleet" means a home lab, not a data center.** Oracle1, Oracle2,
    Forgemaster, a Pi, a Jetson — five machines, one usually offline. The
    distributed-systems ideas (git-native coordination, reflex shells,
@@ -211,10 +264,14 @@ truth an agent actually needs, stated as rules:
 This account is upstream of nothing on its own. When a sketch here gets
 hardened into something you'd actually run in production, it moves to
 **[github.com/purplepincher](https://github.com/purplepincher)** — a
-separate, curated org. [`purplepincher/deckboss`](https://github.com/purplepincher/deckboss),
-a live voice-first fishing logbook, is the one completed example of that
-pipeline so far: it started as `deckboss-*`, `cocapn-foundation`, and
-`plato-vessel-technician` sketches in *this* account.
+separate, curated org with one non-negotiable rule: every public claim there
+must be literally, checkably true. [`purplepincher/deckboss`](https://github.com/purplepincher/deckboss),
+a live voice-first fishing logbook, and
+[`constraint-theory-core`](https://github.com/SuperInstance/constraint-theory-core),
+a compiled geometry engine running behind a live demo, are the two completed
+examples of that pipeline so far. Both started as loose, dated, occasionally
+wrong sketches in *this* account, in public, with nothing cleaned up
+afterward to make the origin look tidier than it was.
 
 - **Want tools you can depend on?** Start at purplepincher.
 - **Want to see how an idea gets from sketch to shipped, warts included?**
@@ -234,6 +291,13 @@ issue. See [`CONTRIBUTING.md`](CONTRIBUTING.md) and
 
 [`docs/VISION.md`](docs/VISION.md) carries the fuller argument this README
 compresses — why the sketchbook model is worth keeping, not just what it is.
+For the same argument in a different register, `AI-Writings/` carries a few
+hundred essays, poems, and short stories written alongside the code, not
+about it after the fact —
+[`THE_CONSERVATION_LAW_OF_INTELLIGENCE.md`](https://github.com/SuperInstance/AI-Writings/blob/main/THE_CONSERVATION_LAW_OF_INTELLIGENCE.md)
+and [`REFLECTION-HIGH-ABSTRACTION.md`](https://github.com/SuperInstance/AI-Writings/blob/main/REFLECTION-HIGH-ABSTRACTION.md)
+are as good a place to start as any, and neither will take you more than ten
+minutes.
 
 ## License
 
