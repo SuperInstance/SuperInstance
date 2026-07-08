@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-07-07 08:23 UTC
+**Generated:** 2026-07-08 07:30 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -1314,6 +1314,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[lucid-tutor-c](https://github.com/SuperInstance/lucid-tutor-c)** | Various | lucid-tutor-c | ⚪ unknown |
 | **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** | Various | luciddreamer-vision | ⚪ unknown |
 | **[lucineer-com](https://github.com/SuperInstance/lucineer-com)** | Various | Structured lucid dream practice tool — evidence-based techniques, dream sign tracking, and progress  | ⚪ unknown |
+| **[lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)** | Various | Captain agent — vessel command and fleet leadership protocol | 🟢 active |
 | **[mac-digest](https://github.com/SuperInstance/mac-digest)** | Various | mac-digest | ⚪ unknown |
 | **[mapper-agent](https://github.com/SuperInstance/mapper-agent)** | Various | Mapper algorithm for discovering topological structure in agent state spaces | 🟢 active |
 | **[mapper-graph](https://github.com/SuperInstance/mapper-graph)** | Various | Mapper algorithm from Topological Data Analysis: build a mapper graph from point clouds via filter f | ⚪ unknown |
@@ -1534,7 +1535,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[scratch-www](https://github.com/SuperInstance/scratch-www)** | Various | Standalone web client for Scratch | ⚪ unknown |
 | **[screenpipe-conservation](https://github.com/SuperInstance/screenpipe-conservation)** | Various | screenpipe + conservation-checker: 24/7 recording meets resource conservation. Fork of screenpipe/sc | ⚪ unknown |
 | **[secret-manager](https://github.com/SuperInstance/secret-manager)** | Various | Secure service for storing and managing credentials | ⚪ unknown |
-| **[secret-share](https://github.com/SuperInstance/secret-share)** | Various | secret-share | ⚪ unknown |
 | **[secret-sharing](https://github.com/SuperInstance/secret-sharing)** | Various | Shamir's secret sharing, Feldman VSS, and threshold schemes in Rust | ⚪ unknown |
 | **[semantic-field](https://github.com/SuperInstance/semantic-field)** | Various | Force fields in embedding space for semantic navigation and manipulation | ⚪ unknown |
 | **[semble](https://github.com/SuperInstance/semble)** | Various | Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read | 🟢 active |
@@ -7285,6 +7285,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Linear Temporal Logic (LTL) specification library for Rust agents
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Captain agent — vessel command and fleet leadership protocol
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

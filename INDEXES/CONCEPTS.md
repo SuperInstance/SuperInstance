@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-07 08:23 UTC
+**Generated:** 2026-07-08 07:30 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -878,6 +878,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lotka-volterra-agents](https://github.com/SuperInstance/lotka-volterra-agents)
 - [lotka-volterra-agents-c](https://github.com/SuperInstance/lotka-volterra-agents-c)
 - [ltl-spec](https://github.com/SuperInstance/ltl-spec)
+- [lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)
 - [mapper-agent](https://github.com/SuperInstance/mapper-agent)
 - [markdown-agent-studio](https://github.com/SuperInstance/markdown-agent-studio)
 - [market-manifold](https://github.com/SuperInstance/market-manifold)
@@ -1932,7 +1933,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [scratch-www](https://github.com/SuperInstance/scratch-www)
 - [screenpipe-conservation](https://github.com/SuperInstance/screenpipe-conservation)
 - [secret-manager](https://github.com/SuperInstance/secret-manager)
-- [secret-share](https://github.com/SuperInstance/secret-share)
 - [secret-sharing](https://github.com/SuperInstance/secret-sharing)
 - [semantic-field](https://github.com/SuperInstance/semantic-field)
 - [serde](https://github.com/SuperInstance/serde)

@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-07-07 08:23 UTC
+**Generated:** 2026-07-08 07:30 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -35,6 +35,7 @@
 - **[lau-reward-hacking-detector](https://github.com/SuperInstance/lau-reward-hacking-detector)** — Cohomological reward hacking detection — holonomy of value 1-form reveals local optimization with gl
 - **[lever-runner](https://github.com/SuperInstance/lever-runner)** — Post-inference command executor. A token-lean AI operator that runs pre-approved shell commands by i
 - **[license-compliance](https://github.com/SuperInstance/license-compliance)** — CLI tool to check open-source license compatibility across dependency trees
+- **[lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)** — Captain agent — vessel command and fleet leadership protocol
 - **[onboard](https://github.com/SuperInstance/onboard)** — 🚀 Automatic repo integration tool — add any SuperInstance tool to any GitHub repo with one command. 
 - **[open-terminal](https://github.com/SuperInstance/open-terminal)** — A fork of Windows Terminal with native agent integration, right in your command line.
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
@@ -1202,7 +1203,6 @@
 - **[Scrapcraft](https://github.com/SuperInstance/Scrapcraft)**
 - **[scratch-blocks](https://github.com/SuperInstance/scratch-blocks)** — Scratch Blocks is a library for building creative computing interfaces.
 - **[screenpipe-conservation](https://github.com/SuperInstance/screenpipe-conservation)** — screenpipe + conservation-checker: 24/7 recording meets resource conservation. Fork of screenpipe/sc
-- **[secret-share](https://github.com/SuperInstance/secret-share)**
 - **[secret-sharing](https://github.com/SuperInstance/secret-sharing)** — Shamir's secret sharing, Feldman VSS, and threshold schemes in Rust
 - **[semantic-field](https://github.com/SuperInstance/semantic-field)** — Force fields in embedding space for semantic navigation and manipulation
 - **[semble](https://github.com/SuperInstance/semble)** — Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read
