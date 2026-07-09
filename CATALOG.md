@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-07-08 07:30 UTC
+**Generated:** 2026-07-09 08:28 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -396,7 +396,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[codespace-edge-rd](https://github.com/SuperInstance/codespace-edge-rd)** | JetsonClaw1 | R&D: Codespace→Edge agent lifecycle, yoke transfer, devcontainer templates | 🟢 active |
 | **[construct-core](https://github.com/SuperInstance/construct-core)** | JetsonClaw1 | Hardware-agnostic agent runtime with layered trait system for the SuperInstance Construct API | 🟢 active |
 | **[cross-pollination](https://github.com/SuperInstance/cross-pollination)** | JetsonClaw1 | 🌿 Cross-room synergy detection for AI agent fleets. Finds shared concepts between knowledge domains. | 🟢 active |
-| **[DeckBoss](https://github.com/SuperInstance/DeckBoss)** | JetsonClaw1 | 🛩️ Agent Edge OS — flight deck for launching, recovering, and coordinating agents. | 🟢 active |
+| **[DeckBoss](https://github.com/SuperInstance/DeckBoss)** | JetsonClaw1 | 🛩️ Agent Edge OS — flight deck for launching, recovering, and coordinating agents. (Unrelated to pur | 🟢 active |
 | **[delaunay-triang-rs](https://github.com/SuperInstance/delaunay-triang-rs)** | JetsonClaw1 | Delaunay triangulation and Voronoi diagrams in pure Rust: Bowyer-Watson, edge flip, quad-edge | 🟢 active |
 | **[differential-regression](https://github.com/SuperInstance/differential-regression)** | JetsonClaw1 | Regression testing for specification patches using behavioral ledgers | 🟢 active |
 | **[edge-benchmark](https://github.com/SuperInstance/edge-benchmark)** | JetsonClaw1 | Benchmarking primitives for edge runtimes (Cloudflare Workers compatible) | 🟢 active |
@@ -857,7 +857,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[failure-detector](https://github.com/SuperInstance/failure-detector)** | Various | failure-detector | ⚪ unknown |
 | **[fastc-core-sqlite](https://github.com/SuperInstance/fastc-core-sqlite)** | Various | SQLite bindings for fastC — FFI to system libsqlite3, cap-typed file I/O. Part of the fastc-core six | ⚪ unknown |
 | **[federated-ternary](https://github.com/SuperInstance/federated-ternary)** | Various | Experiment: federated ternary learning. Multiple nodes train ternary weights locally, merge via elem | 🟢 active |
-| **[feistel-net](https://github.com/SuperInstance/feistel-net)** | Various | feistel-net | ⚪ unknown |
 | **[fenwick-tree-rs](https://github.com/SuperInstance/fenwick-tree-rs)** | Various | Fenwick/BIT tree, 2D BIT, range updates, prefix sums | ⚪ unknown |
 | **[fft-core](https://github.com/SuperInstance/fft-core)** | Various | fft-core | ⚪ unknown |
 | **[fiber-category](https://github.com/SuperInstance/fiber-category)** | Various | fiber-category | ⚪ unknown |
@@ -869,6 +868,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[financial-conservation](https://github.com/SuperInstance/financial-conservation)** | Various | Spectral conservation analysis of financial market regimes | ⚪ unknown |
 | **[finite-difference-pde](https://github.com/SuperInstance/finite-difference-pde)** | Various | Finite difference PDE solvers in Rust — heat equation, wave equation, Poisson, advection-diffusion w | ⚪ unknown |
 | **[fisher-rao](https://github.com/SuperInstance/fisher-rao)** | Various | fisher-rao | ⚪ unknown |
+| **[fishinglog-agent](https://github.com/SuperInstance/fishinglog-agent)** | Various | AI-powered commercial fishing intelligence. Track catches, weather, tides, and market prices. Find p | 🟢 active |
 | **[flow-control](https://github.com/SuperInstance/flow-control)** | Various | Rust crate: flow-control | ⚪ unknown |
 | **[fluid-sim](https://github.com/SuperInstance/fluid-sim)** | Various | A Rust library for Fluid Sim | ⚪ unknown |
 | **[forge-audio](https://github.com/SuperInstance/forge-audio)** | Various | Audio decomposition into tiles for Plato agents | 🟢 active |
@@ -1312,10 +1312,10 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[luau-scheduler](https://github.com/SuperInstance/luau-scheduler)** | Various | Priority task scheduler for Roblox — tick-based, Heartbeat-ready | ⚪ unknown |
 | **[luau-spatial](https://github.com/SuperInstance/luau-spatial)** | Various | Spatial indexing for Roblox games — QuadTree, GridHash, SpatialHash | ⚪ unknown |
 | **[lucid-tutor-c](https://github.com/SuperInstance/lucid-tutor-c)** | Various | lucid-tutor-c | ⚪ unknown |
+| **[luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)** | Various | AI creative exploration through lucid dreaming themed rooms. Generate poetry, fiction, music, and vi | 🟢 active |
 | **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** | Various | luciddreamer-vision | ⚪ unknown |
 | **[lucineer-com](https://github.com/SuperInstance/lucineer-com)** | Various | Structured lucid dream practice tool — evidence-based techniques, dream sign tracking, and progress  | ⚪ unknown |
 | **[lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)** | Various | Captain agent — vessel command and fleet leadership protocol | 🟢 active |
-| **[mac-digest](https://github.com/SuperInstance/mac-digest)** | Various | mac-digest | ⚪ unknown |
 | **[mapper-agent](https://github.com/SuperInstance/mapper-agent)** | Various | Mapper algorithm for discovering topological structure in agent state spaces | 🟢 active |
 | **[mapper-graph](https://github.com/SuperInstance/mapper-graph)** | Various | Mapper algorithm from Topological Data Analysis: build a mapper graph from point clouds via filter f | ⚪ unknown |
 | **[markdown-agent-studio](https://github.com/SuperInstance/markdown-agent-studio)** | Various | Markdown Agent Studio is a workspace where agents develop specialization through their own experienc | 🟢 active |
@@ -4673,7 +4673,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 ### [DeckBoss](https://github.com/SuperInstance/DeckBoss)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
-- **Purpose:** 🛩️ Agent Edge OS — flight deck for launching, recovering, and coordinating agents.
+- **Purpose:** 🛩️ Agent Edge OS — flight deck for launching, recovering, and coordinating agents. (Unrelated to purplepincher/deckboss, the fishing logbook — same na
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
@@ -6539,6 +6539,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
+### [fishinglog-agent](https://github.com/SuperInstance/fishinglog-agent)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** AI-powered commercial fishing intelligence. Track catches, weather, tides, and market prices. Find patterns humans miss. Built by a commercial fisherm
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
 ### [forge-audio](https://github.com/SuperInstance/forge-audio)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -7285,6 +7292,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Linear Temporal Logic (LTL) specification library for Rust agents
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** AI creative exploration through lucid dreaming themed rooms. Generate poetry, fiction, music, and visual art via iterative reasoning strategies. Integ
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

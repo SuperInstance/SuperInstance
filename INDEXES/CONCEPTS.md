@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-08 07:30 UTC
+**Generated:** 2026-07-09 08:28 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -591,6 +591,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fibration-timing](https://github.com/SuperInstance/fibration-timing)
 - [field-dynamics](https://github.com/SuperInstance/field-dynamics)
 - [field-dynamics-sim](https://github.com/SuperInstance/field-dynamics-sim)
+- [fishinglog-agent](https://github.com/SuperInstance/fishinglog-agent)
 - [fleet-a2a-bridge](https://github.com/SuperInstance/fleet-a2a-bridge)
 - [fleet-a2a-pipeline](https://github.com/SuperInstance/fleet-a2a-pipeline)
 - [fleet-a2a-spectral](https://github.com/SuperInstance/fleet-a2a-spectral)
@@ -878,6 +879,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lotka-volterra-agents](https://github.com/SuperInstance/lotka-volterra-agents)
 - [lotka-volterra-agents-c](https://github.com/SuperInstance/lotka-volterra-agents-c)
 - [ltl-spec](https://github.com/SuperInstance/ltl-spec)
+- [luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)
 - [lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)
 - [mapper-agent](https://github.com/SuperInstance/mapper-agent)
 - [markdown-agent-studio](https://github.com/SuperInstance/markdown-agent-studio)
@@ -1129,6 +1131,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lau-tile-compress](https://github.com/SuperInstance/lau-tile-compress)
 - [lau-tile-store](https://github.com/SuperInstance/lau-tile-store)
 - [lau-training-room](https://github.com/SuperInstance/lau-training-room)
+- [luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)
 - [market-manifold](https://github.com/SuperInstance/market-manifold)
 - [mcp-room-wrapper](https://github.com/SuperInstance/mcp-room-wrapper)
 - [mud-arena](https://github.com/SuperInstance/mud-arena)
@@ -1496,7 +1499,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [extensive-form](https://github.com/SuperInstance/extensive-form)
 - [failure-detector](https://github.com/SuperInstance/failure-detector)
 - [fastc-core-sqlite](https://github.com/SuperInstance/fastc-core-sqlite)
-- [feistel-net](https://github.com/SuperInstance/feistel-net)
 - [fenwick-tree-rs](https://github.com/SuperInstance/fenwick-tree-rs)
 - [fft-core](https://github.com/SuperInstance/fft-core)
 - [fiber-category](https://github.com/SuperInstance/fiber-category)
@@ -1821,7 +1823,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)
 - [luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)
 - [lucineer-com](https://github.com/SuperInstance/lucineer-com)
-- [mac-digest](https://github.com/SuperInstance/mac-digest)
 - [mapper-graph](https://github.com/SuperInstance/mapper-graph)
 - [markov-blanket](https://github.com/SuperInstance/markov-blanket)
 - [markov-chain](https://github.com/SuperInstance/markov-chain)
