@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-09 08:28 UTC
+**Generated:** 2026-07-10 08:23 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -112,7 +112,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [constraint-dynamics](https://github.com/SuperInstance/constraint-dynamics)
 - [construct-hotswap](https://github.com/SuperInstance/construct-hotswap)
 - [crackle-runtime](https://github.com/SuperInstance/crackle-runtime)
-- [crdt-core](https://github.com/SuperInstance/crdt-core)
 - [crdt-map](https://github.com/SuperInstance/crdt-map)
 - [cuda-oxide](https://github.com/SuperInstance/cuda-oxide)
 - [cudaclaw](https://github.com/SuperInstance/cudaclaw)
@@ -585,6 +584,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [demo-memory](https://github.com/SuperInstance/demo-memory)
 - [dial-theory-rs](https://github.com/SuperInstance/dial-theory-rs)
 - [dogmind-arena](https://github.com/SuperInstance/dogmind-arena)
+- [domain-agent-base](https://github.com/SuperInstance/domain-agent-base)
 - [drone-fleet-ternary](https://github.com/SuperInstance/drone-fleet-ternary)
 - [event-bus](https://github.com/SuperInstance/event-bus)
 - [exocortex-fleet-chapel](https://github.com/SuperInstance/exocortex-fleet-chapel)
@@ -596,6 +596,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-a2a-pipeline](https://github.com/SuperInstance/fleet-a2a-pipeline)
 - [fleet-a2a-spectral](https://github.com/SuperInstance/fleet-a2a-spectral)
 - [fleet-a2a-wasm](https://github.com/SuperInstance/fleet-a2a-wasm)
+- [fleet-agent-early-version](https://github.com/SuperInstance/fleet-agent-early-version)
 - [fleet-agent-universal](https://github.com/SuperInstance/fleet-agent-universal)
 - [fleet-architecture](https://github.com/SuperInstance/fleet-architecture)
 - [fleet-arm-compat](https://github.com/SuperInstance/fleet-arm-compat)
@@ -936,6 +937,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [polyformalism-turbo-shell](https://github.com/SuperInstance/polyformalism-turbo-shell)
 - [population-scaling](https://github.com/SuperInstance/population-scaling)
 - [random-walk-agent](https://github.com/SuperInstance/random-walk-agent)
+- [reallog-agent](https://github.com/SuperInstance/reallog-agent)
 - [renormalization-agent](https://github.com/SuperInstance/renormalization-agent)
 - [renormalization-group](https://github.com/SuperInstance/renormalization-group)
 - [renormalization-learning-c](https://github.com/SuperInstance/renormalization-learning-c)
@@ -1076,7 +1078,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lau-guides](https://github.com/SuperInstance/lau-guides)
 - [noether-guard](https://github.com/SuperInstance/noether-guard)
 - [vector-clock](https://github.com/SuperInstance/vector-clock)
-- [vector-clock-rs](https://github.com/SuperInstance/vector-clock-rs)
 
 ## Plato
 
@@ -1098,6 +1099,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [court-jester](https://github.com/SuperInstance/court-jester)
 - [craftmind](https://github.com/SuperInstance/craftmind)
 - [cross-pollination](https://github.com/SuperInstance/cross-pollination)
+- [domain-agent-base](https://github.com/SuperInstance/domain-agent-base)
 - [entropy-conservation](https://github.com/SuperInstance/entropy-conservation)
 - [exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)
 - [flux-tensor-midi](https://github.com/SuperInstance/flux-tensor-midi)
@@ -1882,7 +1884,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [palaver-math-pypi](https://github.com/SuperInstance/palaver-math-pypi)
 - [particle-swarm](https://github.com/SuperInstance/particle-swarm)
 - [particle-system](https://github.com/SuperInstance/particle-system)
-- [partition-tolerance](https://github.com/SuperInstance/partition-tolerance)
 - [persistence-landscape](https://github.com/SuperInstance/persistence-landscape)
 - [persistent-social](https://github.com/SuperInstance/persistent-social)
 - [pincher](https://github.com/SuperInstance/pincher)

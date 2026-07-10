@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-07-09 08:28 UTC
+**Generated:** 2026-07-10 08:23 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -151,6 +151,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-a2a-pipeline](https://github.com/SuperInstance/fleet-a2a-pipeline)** | Oracle1 | fleet-a2a-pipeline | 🟢 active |
 | **[fleet-a2a-spectral](https://github.com/SuperInstance/fleet-a2a-spectral)** | Oracle1 | fleet-a2a-spectral | 🟢 active |
 | **[fleet-a2a-wasm](https://github.com/SuperInstance/fleet-a2a-wasm)** | Oracle1 | A2A WASM module | 🟢 active |
+| **[fleet-agent-early-version](https://github.com/SuperInstance/fleet-agent-early-version)** | Forgemaster | Universal agent server for all 16 fleet-midi agents (ports 2160-2175) | 🟢 active |
 | **[fleet-agent-universal](https://github.com/SuperInstance/fleet-agent-universal)** | Forgemaster | fleet-agent-universal | 🟢 active |
 | **[fleet-architecture](https://github.com/SuperInstance/fleet-architecture)** | Forgemaster | Complete architecture documentation for the SuperInstance fleet — 56+ repos, 5 layers, protocols, tu | 🟢 active |
 | **[fleet-arm-compat](https://github.com/SuperInstance/fleet-arm-compat)** | Forgemaster | ARM64 compatibility module — tests and multi-arch builds for the fleet | 🟢 active |
@@ -508,6 +509,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[cocapn-zig](https://github.com/SuperInstance/cocapn-zig)** | CCC | CoCapn in Zig — comptime safety for bare metal. Verify your deadbands before the boat leaves the doc | 🟢 active |
 | **[codex](https://github.com/SuperInstance/codex)** | CCC | Lightweight coding agent that runs in your terminal | 🟢 active |
 | **[crab-trap-funnel](https://github.com/SuperInstance/crab-trap-funnel)** | CCC | CF Worker serving 20 domain landing pages with AI bot trap detection | 🟢 active |
+| **[domain-agent-base](https://github.com/SuperInstance/domain-agent-base)** | CCC | Shared base class for all Cocapn fleet domain agents — PLATO integration, tile submission, health ch | 🟢 active |
 | **[exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)** | CCC | Minimal Python client for the exocortex — CircuitPython on ESP32. The ESP32 is the PLATO terminal. | 🟢 active |
 | **[fm-research](https://github.com/SuperInstance/fm-research)** | CCC | Extracted from forgemaster/research — Cocapn fleet component | 🟢 active |
 | **[git-cuda-agent](https://github.com/SuperInstance/git-cuda-agent)** | CCC | Clone → cargo build → GPU agent. Combines cudaclaw patterns (command queue, cell agents, muscle fibe | 🟢 active |
@@ -531,6 +533,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quality-gate-stream](https://github.com/SuperInstance/quality-gate-stream)** | CCC | Quality Gate Stream — novelty × correctness × completeness × depth scoring. Part of Cocapn reverse-a | 🟢 active |
 | **[quipu-math-wasm](https://github.com/SuperInstance/quipu-math-wasm)** | CCC | Incan knotted cord encoding compiled to WASM — base-10 positional knots in the browser | 🟢 active |
 | **[ratatui-spectral-dashboard](https://github.com/SuperInstance/ratatui-spectral-dashboard)** | CCC | Spectral graph analysis in your terminal — Fiedler vectors, Cheeger constants, community detection,  | 🟢 active |
+| **[reallog-agent](https://github.com/SuperInstance/reallog-agent)** | CCC | Vision/Fitness Turbo-Shell for cocapn domain | 🟢 active |
 | **[spacedrive-fleet](https://github.com/SuperInstance/spacedrive-fleet)** | CCC | Spacedrive × CoCapn: your file explorer is also a compute fleet manager | 🟢 active |
 | **[superinstance-ai-pages](https://github.com/SuperInstance/superinstance-ai-pages)** | CCC | GitHub Pages for superinstance.ai | 🟢 active |
 | **[superinstance-website](https://github.com/SuperInstance/superinstance-website)** | CCC | Static website for superinstance.ai — fleet dashboard, ecosystem map, and ternary computing document | 🟢 active |
@@ -789,7 +792,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[craftmind-studio](https://github.com/SuperInstance/craftmind-studio)** | Various | AI-powered Minecraft filmmaking studio — AI agents as actors, parallel simulations, Director AI | 🟢 active |
 | **[crate-graph](https://github.com/SuperInstance/crate-graph)** | Various | Dependency graph analysis for Rust crate fleets | ⚪ unknown |
 | **[crates-publish-check](https://github.com/SuperInstance/crates-publish-check)** | Various | Check which Rust crates in a directory are ready for crates.io publishing | ⚪ unknown |
-| **[crdt-core](https://github.com/SuperInstance/crdt-core)** | Various | Distributed systems primitive | 🟢 active |
 | **[crdt-map](https://github.com/SuperInstance/crdt-map)** | Various | crdt-map | 🟢 active |
 | **[creative-engine-c](https://github.com/SuperInstance/creative-engine-c)** | Various | C implementation of the Creative Dynamics Engine — dynamical systems for modeling creative processes | ⚪ unknown |
 | **[cross-compile-checker](https://github.com/SuperInstance/cross-compile-checker)** | Various | CLI tool to check cross-compilation compatibility of Rust projects | ⚪ unknown |
@@ -1419,7 +1421,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[paperclip](https://github.com/SuperInstance/paperclip)** | Various | The open-source app everyone uses to manage agents at work | 🟢 active |
 | **[pareto-tournament](https://github.com/SuperInstance/pareto-tournament)** | Various | Pareto tournament selection — multi-objective optimization for agent population dynamics | 🟢 active |
 | **[particle-system](https://github.com/SuperInstance/particle-system)** | Various | A Rust library for Particle System | ⚪ unknown |
-| **[partition-tolerance](https://github.com/SuperInstance/partition-tolerance)** | Various | Distributed systems primitive | ⚪ unknown |
 | **[persistence-agent](https://github.com/SuperInstance/persistence-agent)** | Various | Persistent homology on agent behavior: TDA detects personality (long-lived features) vs noise (short | 🟢 active |
 | **[persistence-landscape](https://github.com/SuperInstance/persistence-landscape)** | Various | Persistence landscapes for statistical topological data analysis: piecewise-linear landscape functio | ⚪ unknown |
 | **[persistent-agent](https://github.com/SuperInstance/persistent-agent)** | Various | persistent-agent | 🟢 active |
@@ -2006,7 +2007,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[typst](https://github.com/SuperInstance/typst)** | Various | A markup-based typesetting system that is powerful and easy to learn. | ⚪ unknown |
 | **[uv](https://github.com/SuperInstance/uv)** | Various | An extremely fast Python package and project manager, written in Rust. | ⚪ unknown |
 | **[vector-clock](https://github.com/SuperInstance/vector-clock)** | Various | vector-clock | ⚪ unknown |
-| **[vector-clock-rs](https://github.com/SuperInstance/vector-clock-rs)** | Various | Distributed systems primitive | ⚪ unknown |
 | **[vector-novelty](https://github.com/SuperInstance/vector-novelty)** | Various | Vector novelty detection — identifying novel patterns in high-dimensional agent embeddings | 🟢 active |
 | **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** | Various | 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a | 🟢 active |
 | **[ViMax](https://github.com/SuperInstance/ViMax)** | Various | "ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)" | 🟢 active |
@@ -2980,6 +2980,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Oracle1
 - **Purpose:** A2A WASM module
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
+### [fleet-agent-early-version](https://github.com/SuperInstance/fleet-agent-early-version)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** Universal agent server for all 16 fleet-midi agents (ports 2160-2175)
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
@@ -5426,6 +5433,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
+### [domain-agent-base](https://github.com/SuperInstance/domain-agent-base)
+- **Domain:** Web & Browser
+- **Vessel:** CCC
+- **Purpose:** Shared base class for all Cocapn fleet domain agents — PLATO integration, tile submission, health checks
+- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
+- **Status:** active
+
 ### [exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)
 - **Domain:** Web & Browser
 - **Vessel:** CCC
@@ -5584,6 +5598,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Web & Browser
 - **Vessel:** CCC
 - **Purpose:** Spectral graph analysis in your terminal — Fiedler vectors, Cheeger constants, community detection, effective resistance. Built with Ratatui.
+- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
+- **Status:** active
+
+### [reallog-agent](https://github.com/SuperInstance/reallog-agent)
+- **Domain:** Web & Browser
+- **Vessel:** CCC
+- **Purpose:** Vision/Fitness Turbo-Shell for cocapn domain
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
@@ -6431,13 +6452,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** AI-powered Minecraft filmmaking studio — AI agents as actors, parallel simulations, Director AI
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [crdt-core](https://github.com/SuperInstance/crdt-core)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Distributed systems primitive
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
