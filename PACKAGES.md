@@ -20,6 +20,8 @@ Published and available on [PyPI](https://pypi.org).
 | ✅ [plato-fflearning](https://pypi.org/project/plato-fflearning/) | [plato-fflearning](https://github.com/SuperInstance/plato-fflearning) | `0.1.0` | Forward-Forward learning for PLATO — replacing backprop with positive/negative passes | `pip install plato-fflearning` |
 | ✅ [plato-attention-tracker](https://pypi.org/project/plato-attention-tracker/) | [plato-attention-tracker](https://github.com/SuperInstance/plato-attention-tracker) | `0.1.0` | Attention as a first-class resource in PLATO | `pip install plato-attention-tracker` |
 | ✅ [palaver-math](https://pypi.org/project/palaver-math/) | [palaver-math-pypi](https://github.com/SuperInstance/palaver-math-pypi) | `0.1.0` | Consensus mathematics from West African dialogue traditions | `pip install palaver-math` |
+| ✅ [flux-vm](https://pypi.org/project/flux-vm/) | [flux-runtime](https://github.com/SuperInstance/flux-runtime) | `0.1.0` | FLUX bytecode runtime — deterministic agent execution | `pip install flux-vm` |
+| ✅ [cocapn](https://pypi.org/project/cocapn/) | [cocapn](https://github.com/SuperInstance/cocapn) | `0.3.0` | FLUX constraint safety CLI and agent framework | `pip install cocapn` |
 
 ### In Progress (not yet on PyPI)
 
@@ -34,13 +36,13 @@ Published and available on [PyPI](https://pypi.org).
 
 ## Rust (crates.io)
 
-All Rust crates have `Cargo.toml` and are ready for `cargo add`, but **none are published to crates.io yet**.
+Published crates are available on [crates.io](https://crates.io/users/SuperInstance).
 
 ### FLUX
 
 | Crate | Repo | Description | Status |
 |-------|------|-------------|--------|
-| 🚧 `fluxvm` | [flux-core](https://github.com/SuperInstance/flux-core) | FLUX bytecode runtime — register-based VM with assembler, A2A protocol, vocabulary system | In development |
+| ✅ [`fluxvm`](https://crates.io/crates/fluxvm) | [flux-core](https://github.com/SuperInstance/flux-core) | FLUX bytecode runtime — register-based VM with assembler, A2A protocol, vocabulary system | `0.1.0` |
 
 ### PLATO (Rust)
 
@@ -155,7 +157,7 @@ The full ternary fleet spans mathematics, physics, biology analogues, GPU comput
 
 ## JavaScript (npm)
 
-All JS packages have `package.json` and build configs but are **not yet published to npm**.
+JS packages exist with full build configs. Coming soon to npm.
 
 | Package | Repo | Description | Status |
 |---------|------|-------------|--------|

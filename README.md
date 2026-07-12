@@ -43,10 +43,10 @@ This is the opposite of every AI platform today. → [Read the full essay](https
 pip install cocapn plato-core plato-torch
 
 # Rust — FLUX VM, ternary math, constraint theory
-cargo add fluxvm  # (in development — clone flux-core for now)
+cargo add fluxvm
 
-# JavaScript — multi-agent WebSocket client
-npm install @superinstance/tminus-client @superinstance/tminus-dispatcher
+# JavaScript — multi-agent WebSocket client (coming soon)
+# npm install @superinstance/tminus-client @superinstance/tminus-dispatcher
 ```
 
 See [PACKAGES.md](PACKAGES.md) for the full catalog across all registries.
