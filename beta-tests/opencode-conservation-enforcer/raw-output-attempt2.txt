@@ -1,0 +1,32 @@
+[0m
+> build · MiniMax-M2.7
+[0m
+[0m• [0mExplore repo structure[90m Explore Agent[0m
+[0m✓ [0mExplore repo structure[90m Explore Agent[0m
+[0m
+[0m$ [0mpytest --tb=short -q 2>&1
+........................................................................ [ 75%]
+.......................                                                  [100%]
+95 passed in 0.20s
+[0m
+All 95 tests pass. Let me review key source files for potential issues.
+[0m→ [0mRead src/conservation_enforcer/vm.py
+[0m→ [0mRead src/conservation_enforcer/enforcer.py
+[0m→ [0mRead src/conservation_enforcer/assembler.py
+[0m→ [0mRead src/conservation_enforcer/audit.py
+[0m→ [0mRead src/conservation_enforcer/metrics.py
+[0m✱ [0mGlob "tests/*.py"[90m 7 matches[0m
+[0m→ [0mRead pyproject.toml
+[0m→ [0mRead .github/workflows/ci.yml
+[0m✱ [0mGlob "policies/*"[90m 3 matches[0m
+[0m→ [0mRead src/conservation_enforcer/policies/__init__.py
+Now I have a complete picture. Let me write the findings to `BETA_TEST.md`.
+[0m
+[0m← [0mWrite BETA_TEST.md
+Wrote file successfully.
+[0m
+Done. `BETA_TEST.md` written with:
+
+- **95/95 tests passing**
+- **1 high-severity bug**: `scope_discipline_policy` ignores its `max_expansion` parameter (always multiplies by 10)
+- **4 lower-tier observations**: no linting, `ISHR` shift semantics, `YIELD` is a no-op, division errors propagate uncaught
