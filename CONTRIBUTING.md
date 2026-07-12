@@ -8,70 +8,21 @@ Whether you're fixing a typo, implementing a new FLUX opcode, adding ternary mat
 
 ## Table of Contents
 
-- [Finding Your Way Around](#finding-your-way-around)
-- [Pick Your Language](#pick-your-language)
-- [Fork, Clone, Build](#fork-clone-build)
-- [Running Tests](#running-tests)
-- [Making Changes](#making-changes)
-- [Submitting a Pull Request](#submitting-a-pull-request)
+- [Getting Started](#getting-started)
 - [Code Style](#code-style)
-- [Testing Requirements](#testing-requirements)
-- [The Living Repo Philosophy](#the-living-repo-philosophy)
+- [Testing](#testing)
+- [The Living Repo Doctrine](#the-living-repo-doctrine)
+- [Adding New FLUX Implementations](#adding-new-flux-implementations)
+- [Adding New PLATO Implementations](#adding-new-plato-implementations)
+- [Pull Request Process](#pull-request-process)
 - [Communication](#communication)
 - [Areas Where We Need Help](#areas-where-we-need-help)
 
 ---
 
-## Finding Your Way Around
+## Getting Started
 
-SuperInstance is large — thousands of repos organized into ecosystems. Start here:
-
-| Document | What it covers |
-|----------|---------------|
-| [PACKAGES.md](./PACKAGES.md) | Every installable package across PyPI, crates.io, and npm — start here to find something to work on |
-| [CATALOG.md](./CATALOG.md) | All repos indexed by category and layer |
-| [ARCHITECTURE.md](./ARCHITECTURE.md) | The definitive ecosystem reference — three pillars (FLUX, PLATO, Constraint Theory), roadmap, and cross-repo relationships |
-| [ROADMAP.md](./ROADMAP.md) | Fleet-wide roadmap with tiers, timelines, and ship-now initiatives |
-| [GOOD_FIRST_ISSUES.md](./GOOD_FIRST_ISSUES.md) | Concrete, scoped tasks that can be done in under 2 hours |
-| [TOPICS.md](./TOPICS.md) | Repos grouped by topic area |
-
-### Browse the org
-
-- **[All repositories](https://github.com/orgs/SuperInstance/repositories)** — filter by language or topic
-- **[GitHub Topics](https://github.com/topics/superinstance)** — repos tagged `superinstance`
-- **[Good first issues](https://github.com/issues?q=org%3ASuperInstance+label%3A%22good+first+issue%22+is%3Aopen)** across all repos
-
-### The three pillars
-
-Understanding these will help you find where you fit:
-
-1. **FLUX** — A deterministic bytecode VM for agent logic. Same bytecode, same result, every node. Implementations in Python (2,037 tests), Rust (51 tests), JS, C, Zig, Go, Java, WASM, and CUDA.
-2. **PLATO** — A room-level agent runtime with bounded context and deadband wakefulness. Agents only act when something meaningfully changes. Implementations in C99, Rust (`no_std`), Elixir/OTP, and Zig.
-3. **Constraint Theory** — The mathematical governance layer. The conservation law γ + η = C enforces a fixed capability budget. Core crate in Rust (262 tests), companion in Python (167 tests).
-
----
-
-## Pick Your Language
-
-Different parts of the ecosystem use different languages. Pick what you know, or use this as an excuse to learn something new:
-
-| Language | Where it lives | What you'd work on |
-|----------|---------------|-------------------|
-| **Python** | flux-runtime, plato-server, plato-core, plato-torch, exocortex, cocapn, git-agent, constraint-theory-py | FLUX runtime (2,037 tests), PLATO server, self-training rooms, agent frameworks |
-| **Rust** | flux-core, constraint-theory-core, plato-engine, capitaine-1, ternary-* crates (365+) | FLUX VM, constraint math, PLATO engines, ternary compute library |
-| **JavaScript / TypeScript** | tminus-client, tminus-dispatcher, flux-js | Multi-agent WebSocket client, fleet orchestration, FLUX in JS |
-| **C99** | PLATO room implementations | Minimal PLATO rooms (~15KB binary), embedded targets |
-| **Elixir / OTP** | PLATO room implementations | BEAM-supervised rooms, fault-tolerant agent runtimes |
-| **Zig** | PLATO room implementations | Zero-allocation rooms, systems-level PLATO |
-| **Go** | deckboss (graduated product) | Real-world fishing logbook app |
-
-**Don't see your language?** FLUX and PLATO are both spec-based — you can implement either in any language. See [Adding New Implementations](#adding-new-implementations) below.
-
----
-
-## Fork, Clone, Build
-
-### 1. Fork and clone
+### 1. Fork the repo you want to contribute to
 
 ```bash
 # Via GitHub CLI (recommended)
@@ -93,12 +44,23 @@ Use a descriptive branch name:
 - `feat/` — new features
 - `fix/` — bug fixes
 - `docs/` — documentation
-- `sketch/` — experimental work (we love these — see [Living Repo Philosophy](#the-living-repo-philosophy))
+- `sketch/` — experimental work (we love these — see [Living Repo Doctrine](#the-living-repo-doctrine))
 - `test/` — test improvements
 
-### 3. Set up your environment
+### 3. Install language-specific tooling
 
-Each repo has its own setup. Check the repo's README for specifics. General patterns:
+Different parts of the ecosystem use different languages. Install what you need:
+
+| Language | Minimum Version | Install |
+|----------|----------------|---------|
+| **Python** | ≥ 3.10 | [python.org](https://www.python.org/downloads/) — use `pyenv` for version management |
+| **Rust** | stable channel | [rustup.rs](https://rustup.rs/) — `rustup default stable` |
+| **Node.js** | ≥ 18 | [nodejs.org](https://nodejs.org/) — use `nvm` or `fnm` for version management |
+| **C compiler** | C99 | `gcc` or `clang` (most systems have one) |
+| **Zig** | 0.13+ | [ziglang.org](https://ziglang.org/download/) |
+| **Elixir** | 1.15+ | [elixir-lang.org](https://elixir-lang.org/install.html) |
+
+Then set up your project environment:
 
 **Python:**
 ```bash
@@ -122,14 +84,170 @@ npm install    # or: pnpm install
 make           # check the Makefile or build.zig
 ```
 
+### Finding your way around
+
+SuperInstance is large — thousands of repos organized into ecosystems. Start here:
+
+| Document | What it covers |
+|----------|---------------|
+| [PACKAGES.md](./PACKAGES.md) | Every installable package across PyPI, crates.io, and npm |
+| [CATALOG.md](./CATALOG.md) | All repos indexed by category and layer |
+| [ARCHITECTURE.md](./ARCHITECTURE.md) | The definitive ecosystem reference — three pillars, roadmap, cross-repo relationships |
+| [ROADMAP.md](./ROADMAP.md) | Fleet-wide roadmap with tiers, timelines, and ship-now initiatives |
+| [GOOD_FIRST_ISSUES.md](./GOOD_FIRST_ISSUES.md) | Concrete, scoped tasks that can be done in under 2 hours |
+| [TOPICS.md](./TOPICS.md) | Repos grouped by topic area |
+
+### The three pillars
+
+Understanding these will help you find where you fit:
+
+1. **FLUX** — A deterministic bytecode VM for agent logic. Same bytecode, same result, every node. Implementations in Python (2,037 tests), Rust (51 tests), JS, C, Zig, Go, Java, WASM, and CUDA.
+2. **PLATO** — A room-level agent runtime with bounded context and deadband wakefulness. Agents only act when something meaningfully changes. Implementations in C99, Rust (`no_std`), Elixir/OTP, and Zig.
+3. **Constraint Theory** — The mathematical governance layer. The conservation law γ + η = C enforces a fixed capability budget. Core crate in Rust (262 tests), companion in Python (167 tests).
+
 ---
 
-## Running Tests
+## Code Style
 
-All PRs must pass CI. Run tests locally before pushing:
+**The golden rule: match the file you're editing.** Don't reformat code you're not touching.
 
-### Python repos (pytest)
+### Python
 
+- **Formatter:** `ruff format` or `black` (check the repo's `pyproject.toml`)
+- **Linter:** `ruff check`
+- **Type hints:** Required on all public functions and methods
+- **Docstrings:** Required on all public functions, classes, and modules (Google or NumPy style — match the repo)
+- **Line length:** 88 chars default (Black default), unless the repo configures otherwise
+
+```python
+def compute_gamma(eta: float, budget: float) -> float:
+    """Compute the gamma component from eta and a fixed budget.
+
+    Args:
+        eta: The efficiency ratio.
+        budget: The total capability budget C.
+
+    Returns:
+        The gamma value (budget - eta).
+    """
+    return budget - eta
+```
+
+### Rust
+
+- **Formatter:** `cargo fmt`
+- **Linter:** `cargo clippy` (must be clean — CI denies warnings on core crates)
+- **Documented public APIs:** Every `pub` item must have a `///` doc comment
+- **Error handling:** Use `Result<T, E>` — no `unwrap()` in library code
+
+```rust
+/// Computes the gamma component from an efficiency ratio and budget.
+///
+/// # Arguments
+/// * `eta` - The efficiency ratio
+/// * `budget` - The total capability budget C
+///
+/// # Returns
+/// The gamma value (budget - eta)
+pub fn compute_gamma(eta: f64, budget: f64) -> f64 {
+    budget - eta
+}
+```
+
+### JavaScript
+
+- **Formatter:** `prettier` (check `package.json` for config)
+- **Linter:** `eslint`
+- **Modules:** Use ES modules (`import`/`export`) — not CommonJS (`require`)
+- **Comments:** JSDoc comments on all exported functions and classes
+
+```javascript
+/**
+ * Compute the gamma component from eta and a fixed budget.
+ * @param {number} eta - The efficiency ratio.
+ * @param {number} budget - The total capability budget C.
+ * @returns {number} The gamma value (budget - eta).
+ */
+export function computeGamma(eta, budget) {
+  return budget - eta;
+}
+```
+
+### C
+
+- **Formatter:** `clang-format` (each C repo ships a `.clang-format`)
+- **Indentation:** 4 spaces — no tabs
+- **Header guards:** Use `#ifndef`/`#define`/`#endif` include guards (or `#pragma once` — match the repo)
+- **Naming:** `snake_case` for functions and variables, `UPPER_CASE` for macros
+
+```c
+#ifndef FLUX_VM_H
+#define FLUX_VM_H
+
+#include <stdint.h>
+
+/**
+ * Execute a single FLUX bytecode instruction.
+ * @param vm    Pointer to the VM state.
+ * @param op    The opcode byte.
+ * @return      0 on success, non-zero error code on failure.
+ */
+int flux_vm_step(flux_vm_t *vm, uint8_t op);
+
+#endif /* FLUX_VM_H */
+```
+
+### Other languages
+
+| Language | Formatter | Notes |
+|----------|-----------|-------|
+| Zig | `zig fmt` | Built into the compiler |
+| Elixir | `mix format` | `mix credo` for linting |
+
+Don't argue with the formatter. It wins.
+
+---
+
+## Testing
+
+### All PRs must pass CI
+
+No exceptions for core crates (`flux-core`, `constraint-theory-core`, `plato-core`). CI runs automatically on every push and PR.
+
+### Write tests for new features
+
+- **New behavior needs test coverage.** If you add a feature, add tests for it.
+- **Bug fixes should include a regression test** that would have caught the bug.
+- **Aim for the project's existing coverage level.** Core crates are typically 90%+.
+- **Test names should be descriptive.** `test_flux_vm_add_with_overflow_returns_error` is great. `test1` is not.
+
+### FLUX: Cross-implementation conformance
+
+Every FLUX implementation must pass the shared conformance test suite. This ensures that the same bytecode produces identical results across Python, Rust, JS, C, Zig, Go, Java, WASM, and CUDA.
+
+```bash
+# Run the cross-implementation conformance test
+# The canonical test file is tests/cross_impl.flx
+# Your implementation must produce byte-identical output and register state
+```
+
+If you add a new opcode or change behavior, update `tests/cross_impl.flx` and verify **all** implementations still pass.
+
+### PLATO: Protocol conformance suite
+
+Every PLATO implementation must pass the protocol conformance suite. This validates the full room protocol: lifecycle (tick), sensors, actuators, history, and alarms.
+
+```bash
+# Run the PLATO conformance suite
+# Validates: tick protocol, sensor reads, actuator commands,
+#             history queries, alarm set/clear, welcome JSON
+```
+
+The conformance suite lives in the `plato-protocol-test` repo and can be run against any implementation.
+
+### Running tests locally
+
+**Python (pytest):**
 ```bash
 pytest                          # full suite
 pytest tests/test_specific.py   # single file
@@ -137,36 +255,28 @@ pytest -x                       # stop on first failure
 pytest -k "test_name"           # filter by name
 ```
 
-Most Python repos use `pytest` with `pytest-cov` for coverage. Some (like `plato-torch`) have 20+ test methods per module.
-
-### Rust repos (cargo test)
-
+**Rust (cargo test):**
 ```bash
 cargo test                      # all tests (unit + integration + doc tests)
 cargo test --lib                # library unit tests only
 cargo test --test '*'           # integration tests only
 cargo test --doc                # doc tests
-cargo bench                     # run benchmarks (if criterion is set up)
 ```
 
-Rust repos like `constraint-theory-core` use `#[cfg(test)]` module tests, `tests/` directory for integration tests, and doc-tests. 262 tests is typical for a core crate.
-
-### JavaScript repos
-
+**JavaScript:**
 ```bash
 npm test                        # check package.json scripts
 npm run test:watch              # if available
 ```
 
-### C / Zig / Elixir
-
+**C / Zig / Elixir:**
 ```bash
 make test           # C repos typically have a test target
 zig build test      # Zig
 mix test            # Elixir
 ```
 
-### CI
+### CI matrix
 
 Each repo has GitHub Actions workflows in `.github/workflows/`. The CI matrix typically covers:
 - **Python:** 3.10, 3.11, 3.12 on ubuntu-latest
@@ -175,157 +285,69 @@ Each repo has GitHub Actions workflows in `.github/workflows/`. The CI matrix ty
 
 ---
 
-## Making Changes
+## The Living Repo Doctrine
 
-- **Match existing patterns.** Look at surrounding code and follow the same style. Consistency beats perfection.
-- **Run the formatter** before committing:
-  - Python: `ruff format .` or `black .` (check the repo's `pyproject.toml`)
-  - Rust: `cargo fmt`
-  - JS: `npm run format` or `prettier .`
-- **Write tests** for new behavior. See [Testing Requirements](#testing-requirements) below.
-- **Comments explain *why*, not *what.*** The code already says what happens.
-- **Keep functions focused.** If it does three things, it's three functions.
-- **Update documentation** if you change an API, add a feature, or alter behavior.
+SuperInstance repos are **living repos**. This is core to how we work.
 
----
+### Sketches are welcome
 
-## Submitting a Pull Request
+Not everything needs to be polished. Rough drafts, exploratory code, and work-in-progress are all valid contributions. Open a draft PR and iterate. We'd rather merge a rough idea and refine it than reject good thinking.
 
-### 1. Commit your changes
-
-Write clear commit messages:
+### Repos evolve through stages
 
 ```
-feat: add Format G opcode support to flux-core assembler
-fix: handle empty memory dir in Agent.ask() fallback
-test: add edge cases for stop-word stripping in cocapn
-docs: clarify PLATO wire protocol versioning
+sketch → polished → shipped
 ```
 
-### 2. Push and open a PR
+Contributing at **any stage** is valid:
+- **Sketch stage:** Exploring an idea. Code may be rough, tests may be sparse. That's fine. Draft PRs welcome.
+- **Polished stage:** The idea works. Tests exist. API is stabilizing. Ready for review and feedback.
+- **Shipped stage:** Used in production. Full test coverage. Breaking changes require version bumps.
 
-```bash
-git push -u origin feat/my-improvement
-gh pr create --title "feat: short description" --body "What changed and why"
-```
+You don't have to know which stage you're at. Open a PR and we'll figure it out together.
 
-### 3. PR template
+### We archive, we don't delete
 
-Your PR should include:
-- **What changed** — a summary of the changes
-- **Why** — the motivation or issue being addressed
-- **Testing** — how you tested (which tests you ran, any new tests added)
-- **Related issues** — `Closes #123` or `Relates to #456`
+When a repo has been superseded or is no longer active, we **archive** it — not delete it. History matters. Code is reference material. Someone may want to learn from what we built, even if it's no longer the active path.
 
-### 4. Review process
+### Growth over gates
 
-- A maintainer will review your PR. This is a conversation, not an exam.
-- CI must pass on all supported versions/languages.
-- Address feedback by pushing to the same branch (don't close and reopen).
-- Once approved, a maintainer will squash-merge your PR.
-
----
-
-## Code Style
-
-**The golden rule: match the file you're editing.** Don't reformat code you're not touching.
-
-| Language | Formatter | Linter | Notes |
-|----------|-----------|--------|-------|
-| Python | `ruff format` or `black` | `ruff check` | `pyproject.toml` configures line length, rules |
-| Rust | `cargo fmt` | `cargo clippy` | Deny warnings in CI on core crates |
-| JavaScript | `prettier` | `eslint` | Check `package.json` for config |
-| C | `clang-format` | — | Each C repo ships a `.clang-format` |
-| Zig | `zig fmt` | — | Built into the compiler |
-| Elixir | `mix format` | `mix credo` | — |
-
-Don't argue with the formatter. It wins.
-
----
-
-## Testing Requirements
-
-- **All PRs must pass CI.** No exceptions for core crates (`flux-core`, `constraint-theory-core`, `plato-core`).
-- **New behavior needs test coverage.** If you add a feature, add tests for it.
-- **Bug fixes should include a regression test** that would have caught the bug.
-- **Aim for the project's existing coverage level.** Core crates are typically 90%+.
-- **Test names should be descriptive.** `test_flux_vm_add_with_overflow_returns_error` is great. `test1` is not.
-
-### Test patterns by ecosystem
-
-**Python (pytest):**
-```python
-class TestFluxVMExecution:
-    def test_add_registers(self):
-        vm = FluxVM()
-        vm.set_register(0, 42)
-        vm.set_register(1, 8)
-        vm.execute(bytes([OP_ADD, 0, 1, 0]))
-        assert vm.get_register(0) == 50
-```
-
-**Rust:**
-```rust
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn manifold_snap_returns_exact_pythagorean() {
-        let result = snap_to_manifold(3.0, 4.0);
-        assert_eq!(result.triple, (3, 4, 5));
-    }
-}
-```
-
-**JavaScript:**
-```javascript
-describe('FluxVM', () => {
-  test('ADD stores sum in destination register', () => {
-    const vm = new FluxVM();
-    vm.setRegister(0, 42);
-    vm.setRegister(1, 8);
-    vm.execute(new Uint8Array([OP_ADD, 0, 1, 0]));
-    expect(vm.getRegister(0)).toBe(50);
-  });
-});
-```
-
----
-
-## The Living Repo Philosophy
-
-SuperInstance repos are **living repos**. This is core to how we work:
-
-- 📝 **Sketches are welcome.** Not everything needs to be polished to merge. Rough drafts, exploratory code, and work-in-progress are all valid contributions. Open a draft PR and iterate.
-- 🌱 **Growth over gates.** We'd rather merge a rough idea and iterate than reject good thinking. Don't let perfectionism stop you from contributing.
-- 🔄 **Iterate in the open.** PRs are conversations, not exams. Ask questions, show work, learn together. We review to help, not to gatekeep.
+- 🔄 **Iterate in the open.** PRs are conversations, not exams. Ask questions, show work, learn together.
 - ⚡ **Ship and refine.** Breaking changes are fine with a major version bump. Don't let fear of imperfection block progress.
 - 🧪 **Tests are the safety net.** Because we move fast, tests matter. They let us be bold without being reckless.
 
-**If you're not sure whether your contribution is "ready":** open a draft PR. We'll help you figure it out. A sketch in a draft PR is always better than nothing.
+**If you're not sure whether your contribution is "ready":** open a draft PR. We'll help you figure it out.
 
 ---
 
-## Adding New Implementations
+## Adding New FLUX Implementations
 
-FLUX and PLATO are spec-based — you can implement either in any language.
+FLUX is spec-based — you can implement it in any language.
 
-### FLUX implementations
+1. **Read the spec:** [FLUX_BYTECODE_SPEC.md](https://github.com/SuperInstance/AI-Writings/blob/main/FLUX_BYTECODE_SPEC.md) in [AI-Writings](https://github.com/SuperInstance/AI-Writings)
+2. **Implement all canonical opcodes.** The opcode table, encoding, and semantics are frozen. Every implementation must support the full instruction set.
+3. **Pass `tests/cross_impl.flx`.** This is the cross-implementation conformance test. Your implementation must produce byte-identical output and register state for every test case.
+4. **Add your implementation to the cross-implementation matrix** in [ARCHITECTURE.md](./ARCHITECTURE.md) and register it in [PACKAGES.md](./PACKAGES.md).
 
-1. **Read the spec:** [FLUX Bytecode Spec v1.0](https://github.com/SuperInstance/AI-Writings/blob/main/FLUX_BYTECODE_SPEC.md)
-2. **Follow the bytecode format exactly.** Opcodes, encoding, and semantics are frozen.
-3. **Implement the conformance test suite.** Every FLUX implementation must pass the shared test suite — byte-identical output and register state.
-4. **Name it `flux-<lang>`.** Place it under the SuperInstance org.
-5. **Register it** in [PACKAGES.md](./PACKAGES.md) and the implementation matrix in [ARCHITECTURE.md](./ARCHITECTURE.md).
+**Naming convention:** `flux-<lang>` (e.g., `flux-lua`, `flux-ocaml`).
 
-### PLATO implementations
+---
 
-1. **Read the spec:** [PLATO Wire Protocol v0.1](https://github.com/SuperInstance/AI-Writings/blob/main/PLATO_WIRE_PROTOCOL.md)
-2. **Implement the room protocol:** lifecycle hooks, message routing, state transitions.
-3. **Follow the room contract.** Entry, exit, perception, and action APIs must match. Welcome JSON must include `protocol_version`.
-4. **Name it `plato-<lang>`.** Place it under the SuperInstance org.
-5. **Register it** in [PACKAGES.md](./PACKAGES.md) and the implementation matrix.
+## Adding New PLATO Implementations
+
+PLATO is spec-based — you can implement it in any language.
+
+1. **Read the spec:** [PLATO_WIRE_PROTOCOL.md](https://github.com/SuperInstance/AI-Writings/blob/main/PLATO_WIRE_PROTOCOL.md) in [AI-Writings](https://github.com/SuperInstance/AI-Writings)
+2. **Implement the full room protocol:**
+   - **Tick** — lifecycle and deadband wakefulness
+   - **Sensors** — read sensor state
+   - **Actuators** — send commands
+   - **History** — query per-tick historical state
+   - **Alarms** — set and clear alarms
+3. **Pass the PLATO conformance suite.** Run the protocol tests from `plato-protocol-test` against your implementation.
+4. **Add your implementation to PLATO_IMPLEMENTATION_MATRIX.md** and register it in [PACKAGES.md](./PACKAGES.md).
+
+**Naming convention:** `plato-<lang>` (e.g., `plato-ocaml`, `plato-haskell`).
 
 ### Ternary library crates
 
@@ -338,15 +360,56 @@ The ternary library (365+ crates) covers core math, search, routing, caching, le
 
 ---
 
+## Pull Request Process
+
+1. **Branch from `main`.** Create a feature branch (`git checkout -b feat/my-feature`).
+2. **One feature per PR.** Keep PRs focused. If you're fixing three unrelated things, open three PRs.
+3. **Include tests.** New features and bug fixes need test coverage (see [Testing](#testing)).
+4. **Update documentation if needed.** If you change an API, add a feature, or alter behavior, update the README and relevant docs.
+5. **Ensure CI passes.** Run tests locally before pushing. CI must be green before merge.
+6. **Request review.** A maintainer will review your PR. This is a conversation, not an exam.
+
+### Commit messages
+
+Write clear commit messages:
+
+```
+feat: add Format G opcode support to flux-core assembler
+fix: handle empty memory dir in Agent.ask() fallback
+test: add edge cases for stop-word stripping in cocapn
+docs: clarify PLATO wire protocol versioning
+```
+
+### Opening a PR
+
+```bash
+git push -u origin feat/my-improvement
+gh pr create --title "feat: short description" --body "What changed and why"
+```
+
+Your PR should include:
+- **What changed** — a summary of the changes
+- **Why** — the motivation or issue being addressed
+- **Testing** — how you tested (which tests you ran, any new tests added)
+- **Related issues** — `Closes #123` or `Relates to #456`
+
+### Review process
+
+- Address feedback by pushing to the same branch (don't close and reopen).
+- Once approved, a maintainer will squash-merge your PR.
+
+---
+
 ## Communication
 
 Everything happens on GitHub. No Slack, no Discord, no hidden channels.
 
 | Channel | Use for |
 |---------|---------|
+| **[GitHub Issues](https://github.com/SuperInstance/SuperInstance/issues)** | Bug reports and feature requests |
 | **[GitHub Discussions](https://github.com/SuperInstance/SuperInstance/discussions)** | Questions, ideas, design conversations, show-and-tell |
-| **[GitHub Issues](https://github.com/SuperInstance/SuperInstance/issues)** | Bug reports, feature requests, tracking work |
 | **PR comments** | Code-specific discussion |
+| **[DOCS.md](./DOCS.md)** | Architecture context and cross-repo documentation index |
 | **[GOOD_FIRST_ISSUES.md](./GOOD_FIRST_ISSUES.md)** | Concrete tasks for new contributors |
 
 **Response times:** This is an open-source project maintained by people who care. We respond as fast as we can. If you don't hear back in a few days, bump the thread politely — we probably missed it.
