@@ -12,7 +12,9 @@ Published and available on [PyPI](https://pypi.org).
 
 | Package | Repo | Version | Description | Install |
 |---------|------|---------|-------------|---------|
+| ✅ [flux-vm](https://pypi.org/project/flux-vm/) | [flux-runtime](https://github.com/SuperInstance/flux-runtime) | `0.1.0` | FLUX bytecode runtime — deterministic agent execution | `pip install flux-vm` |
 | ✅ [plato-core](https://pypi.org/project/plato-core/) | [plato-core](https://github.com/SuperInstance/plato-core) | `0.2.0` | Foundation types and mesh registry for the SuperInstance ecosystem | `pip install plato-core` |
+| ✅ [si-exocortex](https://pypi.org/project/si-exocortex/) | [exocortex](https://github.com/SuperInstance/exocortex) | `0.1.0` | Persistent cognitive substrate for multi-agent systems | `pip install si-exocortex` |
 | ✅ [plato-torch](https://pypi.org/project/plato-torch/) | [plato-torch](https://github.com/SuperInstance/plato-torch) | `0.5.0` | PLATO self-training rooms — 21 AI training methods as grab-and-go rooms | `pip install plato-torch` |
 | ✅ [plato-config](https://pypi.org/project/plato-config/) | [plato-config](https://github.com/SuperInstance/plato-config) | `0.1.0` | PLATO configuration — agent identity, room settings, fleet parameters | `pip install plato-config` |
 | ✅ [plato-papers](https://pypi.org/project/plato-papers/) | [plato-papers](https://github.com/SuperInstance/plato-papers) | `0.1.0` | Research paper management — citation tracking, bibliography, knowledge graph | `pip install plato-papers` |
@@ -20,8 +22,6 @@ Published and available on [PyPI](https://pypi.org).
 | ✅ [plato-fflearning](https://pypi.org/project/plato-fflearning/) | [plato-fflearning](https://github.com/SuperInstance/plato-fflearning) | `0.1.0` | Forward-Forward learning for PLATO — replacing backprop with positive/negative passes | `pip install plato-fflearning` |
 | ✅ [plato-attention-tracker](https://pypi.org/project/plato-attention-tracker/) | [plato-attention-tracker](https://github.com/SuperInstance/plato-attention-tracker) | `0.1.0` | Attention as a first-class resource in PLATO | `pip install plato-attention-tracker` |
 | ✅ [palaver-math](https://pypi.org/project/palaver-math/) | [palaver-math-pypi](https://github.com/SuperInstance/palaver-math-pypi) | `0.1.0` | Consensus mathematics from West African dialogue traditions | `pip install palaver-math` |
-| ✅ [flux-vm](https://pypi.org/project/flux-vm/) | [flux-runtime](https://github.com/SuperInstance/flux-runtime) | `0.1.0` | FLUX bytecode runtime — deterministic agent execution | `pip install flux-vm` |
-| ✅ [si-exocortex](https://pypi.org/project/si-exocortex/) | [exocortex](https://github.com/SuperInstance/exocortex) | `0.1.0` | Persistent cognitive substrate for multi-agent systems | `pip install si-exocortex` |
 | ✅ [cocapn](https://pypi.org/project/cocapn/) | [cocapn](https://github.com/SuperInstance/cocapn) | `0.3.0` | FLUX constraint safety CLI and agent framework | `pip install cocapn` |
 
 > **Note:** The name `exocortex` was already taken on PyPI by an unrelated project. We publish as `si-exocortex` (SuperInstance prefix).
@@ -45,6 +45,13 @@ Published crates are available on [crates.io](https://crates.io/users/SuperInsta
 | Crate | Repo | Description | Status |
 |-------|------|-------------|--------|
 | ✅ [`fluxvm`](https://crates.io/crates/fluxvm) | [flux-core](https://github.com/SuperInstance/flux-core) | FLUX bytecode runtime — register-based VM with assembler, A2A protocol, vocabulary system | `0.1.0` |
+
+### Constraint Theory & Science (Rust)
+
+| Crate | Repo | Description | Status |
+|-------|------|-------------|--------|
+| ✅ [`ternary-science`](https://crates.io/crates/ternary-science) | [ternary-science](https://github.com/SuperInstance/ternary-science) | Experimental evidence for ternary intelligence — 5 conservation laws, GPU benchmarks, scaling studies | `0.1.0` |
+| ✅ [`categorical-agents`](https://crates.io/crates/categorical-agents) | [categorical-agents](https://github.com/SuperInstance/categorical-agents) | Category theory for agent composition — functors, monads, compositional reasoning | `0.1.0` |
 
 ### PLATO (Rust)
 
@@ -159,10 +166,9 @@ The full ternary fleet spans mathematics, physics, biology analogues, GPU comput
 
 ## JavaScript (npm)
 
-JS packages exist with full build configs. Coming soon to npm.
-
 | Package | Repo | Description | Status |
 |---------|------|-------------|--------|
+| 🚧 `flux-js` | [flux-js](https://github.com/SuperInstance/flux-js) | FLUX VM for Node.js and browsers | Coming soon |
 | 🚧 `@superinstance/tminus-client` | [tminus-client](https://github.com/SuperInstance/tminus-client) | T-Minus Client SDK — Node.js client and CLI for the t-minus cue dispatcher protocol | Coming soon |
 | 🚧 `@superinstance/tminus-dispatcher` | [tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher) | T-Minus Cue Dispatcher — temporal orchestration for multi-agent AI fleets | Coming soon |
 | 🚧 `@cocapn/plato-client` | [plato-client-js](https://github.com/SuperInstance/plato-client-js) | PLATO room protocol client — Node + browser, zero dependencies | In development |
@@ -195,15 +201,6 @@ JS packages exist with full build configs. Coming soon to npm.
 | **FLUX** | 3+ | Rust | Bytecode VM for agent execution — Fluid Language Universal eXecution |
 | **Research Libraries** | 80+ | Rust, Python, C | Standalone algorithms — topology, algebra, control theory, signal processing |
 | **OpenConstruct** | 20+ | Multi | Modular building system across languages |
-
----
-
-### Coming Soon to crates.io
-
-| Crate | Repo | Description | Status |
-|-------|------|-------------|--------|
-| 🚧 `ternary-science` | [ternary-science](https://github.com/SuperInstance/ternary-science) | Ternary scientific computing — physics, chemistry, biology analogues in balanced ternary | Prepped, heading to crates.io |
-| 🚧 `categorical-agents` | [categorical-agents](https://github.com/SuperInstance/categorical-agents) | Category theory for agent composition — functors, monads, compositional reasoning | Prepped, heading to crates.io |
 
 ---
 
