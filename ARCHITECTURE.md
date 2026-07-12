@@ -1,633 +1,348 @@
-# SuperInstance Fleet Architecture
+# SuperInstance Architecture
 
-> **Version:** 1.0.0  
-> **Status:** Definitive — covers all active fleet components and protocols  
-> **Scope:** 1,200+ repos, 8 core fleet apps, 365+ ternary crates, 4 vessels, 6 protocols
+> **Version:** 2.0 — Definitive Ecosystem Reference
+> **Date:** 2026-07-12
+> **Scope:** FLUX bytecode VM · PLATO room runtime · Constraint Theory · 4,000+ repos · 14,000+ tests
 
 ---
 
 ## 1. Overview
 
-SuperInstance is a **self-improving AI agent ecosystem** organized around the hermit crab philosophy: agents inhabit shells, swap shells when constrained, and never die when their runtime changes. The fleet is not a monolith — it is a distributed system of vessels (physical or cloud machines) running services, connected by six protocols, coordinated by PLATO rooms, and self-improving through competitive riffing and The Forgemaster.
+SuperInstance is an open-source ecosystem for building **bounded, conservation-governed AI agents**. The core thesis is the *Crystallization Curve*: intelligence should get cheaper over time, not more expensive. Every LLM call that can be replaced by deterministic bytecode is a win. Repeated decisions compile from expensive fluid inference (~$0.01–$0.05 per call) down to crystallized bytecode (~$0.0001) and eventually native code (~$0). An agent's cost curve bends downward as it matures — the opposite of every commercial AI platform.
 
-### Fleet Organization
+The ecosystem rests on three pillars. **FLUX** (Fluid Language Universal eXecution) is a register-based bytecode VM that runs agent logic deterministically — every instruction is auditable, replayable, and sandboxed. **PLATO** is a room-level agent runtime that provides bounded context, sensor history, alarm evaluation, and knowledge sharing via a simple text/JSON wire protocol. **Constraint Theory** provides the mathematical framework: the conservation law γ + η = C governs every operation, enforcing a fixed capability budget where crystallized intelligence (γ) trades off against live intelligence (η).
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     THE FLEET (4 Vessels)                    │
-│                                                             │
-│  ┌───────────┐  ┌───────────┐  ┌───────────┐  ┌─────────┐ │
-│  │  Oracle1  │  │Forgemaster│  │JetsonClaw1│  │   CCC   │ │
-│  │ ARM Cloud │  │RTX 4050   │  │Jetson Orin│  │  K2.5   │ │
-│  │ :8847     │  │ :7777     │  │ :4042     │  │ :8901   │ │
-│  └─────┬─────┘  └─────┬─────┘  └─────┬─────┘  └───┬─────┘ │
-│        └──────────────┴──────────────┴──────────────┘       │
-│                           │                                 │
-│                    ┌──────▼──────┐                          │
-│                    │   PLATO     │                          │
-│                    │ Room Server │                          │
-│                    │  :8847      │                          │
-│                    └─────────────┘                          │
-└─────────────────────────────────────────────────────────────┘
-```
-
-Each vessel is a **hermit crab shell** — dumb infrastructure hosting smart reasoning (turbo). The tabula plena principle (start abundant, prune to clarity) governs design. Every agent is origin-centric: center of its own radar, no god's-eye view.
+The system is inherently polyglot. FLUX has reference implementations in Python (2,037 tests), Rust (51 tests), and JavaScript. PLATO engine blocks run in C99, Rust, Elixir/OTP, and Zig. Constraint Theory's core crate ships in Rust (262 tests) with a Python companion (167 tests). Everything is MIT licensed, agent-readable, and designed so that a future agent waking up in any repo can orient itself by reading `git log`.
 
 ---
 
-## 2. The 8 Core Apps
+## 2. The Three Pillars
 
-All 8 apps are packaged as **Docker containers** and **npm packages** (`@superinstance/*`).
+### 2.1 FLUX — Deterministic Bytecode VM
 
-### 2.1 tminus-dispatcher — Temporal Heartbeat Keeper
-- **Role:** Temporal coordination server. Manages agent heartbeat slots using the **t-minus protocol** — every agent gets a discrete time slot to contribute. Prevents collision.
-- **Communication:** WebSocket + HTTP (port :8765)
-- **Ports/Endpoints:**
-  - `:8765/ws` — WebSocket for real-time slot negotiation
-  - `:8765/api/v1/slots` — REST for slot discovery
-- **Dependencies:** None (standalone heartbeat server)
-- **Packaging:** Docker (`superinstance/tminus-dispatcher`), npm (`@superinstance/tminus-dispatcher`)
-- **Ensign Agent:** **Chronia** — Temporal Heartbeat Keeper. AGENT.md at repo root.
+**FLUX** is the compute engine. When an agent needs to make a decision, it doesn't reach for Python or Bash — it assembles FLUX bytecode. The VM executes a register-based ISA with 16 general-purpose registers, 16 floating-point registers, cycle budgets for sandboxing, and built-in agent-to-agent (A2A) messaging opcodes (`TELL`, `ASK`, `DELEGATE`, `BROADCAST`).
 
-### 2.2 tminus-client — Protocol Client SDK
-- **Role:** Client-side SDK for the t-minus protocol. Used by every agent that needs slot-aware coordination.
-- **Communication:** Connects to tminus-dispatcher via WS/HTTP
-- **Ports/Endpoints:** None standalone (library)
-- **Dependencies:** `@superinstance/tminus-dispatcher` (runtime peer)
-- **Packaging:** npm (`@superinstance/tminus-client`)
-- **Ensign Agent:** **Link** — Protocol Liaison
+The bytecode format is formally specified (FLUX Bytecode Spec v1.0) with seven instruction formats (A through G) ranging from 1-byte opcode-only to variable-length data-carrying instructions. The core opcode set — arithmetic, logic, control flow, stack, comparison, float, A2A, and system opcodes (0x00–0x81) — is implemented identically across all three reference VMs, producing byte-identical output and identical register state.
 
-### 2.3 fleet-bridge — A2A Dual-Transport Bridge
-- **Role:** Agent-to-Agent (A2A) bridge supporting WebSocket + HTTP dual transport. Any two agents can connect through fleet-bridge regardless of their native protocol.
-- **Communication:** WebSocket ↔ HTTP bridging. Translates WS frames to HTTP streams and vice versa.
-- **Ports/Endpoints:**
-  - `:8780/ws` — WebSocket gateway
-  - `:8780/api/v1/bridge` — HTTP bridge endpoint
-- **Dependencies:** None (pure transport bridge)
-- **Packaging:** Docker (`superinstance/fleet-bridge`), npm (`@superinstance/fleet-bridge`)
+**Key property:** Same bytecode, same result, every node, every time. This determinism enables swarm consensus — run N agents for one tick each, majority-vote on a register value, O(N) per tick.
 
-### 2.4 symphony-runtime — Cognitive Agent Orchestration
-- **Role:** Formal grammar system for orchestrating multi-agent cognition. 8 modules:
-  1. **BeatNormalizer** — Temporal alignment of agent contributions
-  2. **ResonanceMatcher** — Detecting harmonic (aligned) agent states
-  3. **ABox** — Assertion box: holds current agent beliefs
-  4. **LaLink** — Lattice-articulated linkage: connects reasoning across agents
-  5. **Headspace** — Shared cognitive workspace for multi-agent deliberation
-  6. **SymmetryLoop** — Positive/negative feedback loop for convergence
-  7. **CompositionRules** — Rules for composing agent outputs
-  8. **Runtime** — Orchestration engine
-- **Communication:** Internal module IPC; external via fleet-bridge
-- **Ports/Endpoints:** Internal (module API calls)
-- **Dependencies:** tminus-client, fleet-bridge
-- **Packaging:** Docker (`superinstance/symphony-runtime`), npm (`@superinstance/symphony-runtime`)
-- **Ensign Agent:** **Maestro** — Grammar Conductor
+| Implementation | Language | Tests | Registry | Package |
+|---|---|---|---|---|
+| flux-runtime | Python | 2,037 | PyPI | `flux-vm` |
+| flux-core | Rust | 51 | crates.io | `fluxvm` |
+| flux-js | JavaScript | — | npm | `flux-js` |
 
-### 2.5 composite-headspace — Dual-Shell Parallel Reasoning
-- **Role:** Dual-shell cognitive architecture running two reasoning shells in parallel. Uses **Symmetry-Dissonance Loop**: Shell A and Shell B think independently, compare outputs, and converge through dissonance resolution.
-- **Communication:** Shell A and Shell B communicate via internal I2I; external via fleet-bridge
-- **Ports/Endpoints:**
-  - `:8790/api/v1/headspace` — REST for task submission
-  - Internal: A→B IPC on high port
-- **Dependencies:** symphony-runtime (Headspace module), fleet-bridge
-- **Packaging:** Docker (`superinstance/composite-headspace`), npm (`@superinstance/composite-headspace`)
-- **Ensign Agent:** **Echo** — Dual-Shell Mediator
+Additional implementations exist in C, Zig, Go, Java, WASM, and CUDA — all sharing the same ISA.
 
-### 2.6 i2i-bottle-agent — Bottle Postmaster
-- **Role:** Agent-to-agent communication via I2I bottle drops. Implements the full **Bottle Protocol** — harbor watching, routing, beachcombing (dedup, import/export).
-- **Communication:** I2I (Iron-to-Iron) protocol via TCP + HTTP
-- **Ports/Endpoints:**
-  - `:8775/i2i` — I2I TCP endpoint
-  - `:8775/api/v1/bottles` — REST for bottle management
-- **Dependencies:** fleet-bridge, tminus-client
-- **Packaging:** Docker (`superinstance/i2i-bottle-agent`), npm (`@superinstance/i2i-bottle-agent`)
-- **Ensign Agent:** **Mariner** — Bottle Postmaster
+### 2.2 PLATO — Room-Level Agent Runtime
 
-### 2.7 constraint-tminus-bridge — Cognitive Constraint Networks
-- **Role:** Cognitive constraint networks for agent state alignment. Implements **Constraint Satisfaction Problem (CSP)** solving: AC-3 arc consistency + MRV (Minimum Remaining Values) backtracking.
-- **Communication:** t-minus timing integrated with constraint propagation
-- **Ports/Endpoints:**
-  - `:8800/api/v1/constrain` — REST for constraint submissions
-- **Dependencies:** tminus-dispatcher, fleet-bridge
-- **Packaging:** Docker (`superinstance/constraint-tminus-bridge`), npm (`@superinstance/constraint-tminus-bridge`)
+**PLATO** provides the environment agents live in. A PLATO *room* is a bounded context with sensors, history (ring buffer), alarms (threshold evaluation per tick), and actuators. Rooms communicate with agents via the PLATO Wire Protocol — line-delimited text commands, JSON responses — designed so that a human can type commands in a terminal (`nc localhost 1234`), an LLM can parse responses without tooling, and an ESP32 can generate responses in <1KB of code.
 
-### 2.8 symphony-orchestrator — Fleet Run Orchestrator
-- **Role:** Master run orchestrator that coordinates all 7 apps above. Manages the complete fleet stack lifecycle — deploy, health-check, scale, retire.
-- **Communication:** REST + WebSocket to all other apps
-- **Ports/Endpoints:**
-  - `:8810/api/v1/orchestrate` — Orchestration API
-  - `:8810/ws/status` — Real-time status stream
-- **Dependencies:** ALL 7 apps above
-- **Packaging:** Docker (`superinstance/symphony-orchestrator`), npm (`@superinstance/symphony-orchestrator`)
+The PLATO server (Python) adds knowledge tiles (validated Q&A pairs), fleet sync via Matrix, BYOK agent spawning (OpenAI, Anthropic, Groq, DeepSeek, Ollama), and a Docker image (`ghcr.io/superinstance/plato-server`). It runs on port 8847 and stores tiles in SQLite.
 
-### Dependency Map (8 Core Apps)
+**Design principle — deadband wakefulness:** Agents only act when something meaningfully changes. PLATO's tick-driven loop reads sensors, stores values in history, evaluates alarm thresholds, and broadcasts to subscribers. No threads, no polling, no waste.
+
+### 2.3 Constraint Theory — Mathematical Framework
+
+**Constraint Theory** is the governance layer. The central equation is:
+
+> **γ + η = C**
+
+Where γ (gamma) is crystallized intelligence — compiled bytecode, cached reflexes, cheap and inflexible. η (eta) is live intelligence — LLM calls, runtime reasoning, expensive and flexible. C is the capability level, fixed for a given agent. You trade γ against η at a fixed budget.
+
+The underlying mathematics is Shannon's chain rule — genuinely sound. The core Rust crate (`constraint-theory-core`) implements deterministic manifold snapping: continuous 2D vectors are mapped to exact Pythagorean rational points (integer triples where a² + b² = c²) via a KD-tree index. This eliminates floating-point drift across distributed agents. Two different machines computing "the same" direction collapse to the same lattice point because that point's identity is integers, not a float computation.
+
+The crate ships with 262 tests (136 unit + 30 integration + 54 module-coverage + 42 doc-tests), zero runtime dependencies, and AVX2 SIMD acceleration. A Python companion (`constraint-theory-py`, v0.3.0) adds Eisenstein lattice operations, temporal constraint propagation with exponential decay, and adaptive tolerance — 167 tests across five modules.
+
+The ternary-science crate provides experimental validation: five conservation laws verified across 2,400-game GPU simulations, with cross-language validation in Python, Rust, C, and WASM producing identical results.
+
+---
+
+## 3. Architecture Diagram
 
 ```
-                       ┌─────────────────────┐
-                       │ symphony-orchestrator│  (orchestrates all)
-                       └─────────┬───────────┘
-          ┌──────────────────────┼──────────────────────┐
-          ▼                      ▼                      ▼
-  ┌───────────────┐   ┌──────────────────┐   ┌─────────────────┐
-  │tminus-        │   │composite-        │   │constraint-      │
-  │dispatcher     │   │headspace         │   │tminus-bridge    │
-  │ :8765         │   │ :8790            │   │ :8800           │
-  └───────┬───────┘   └────────┬─────────┘   └────────┬────────┘
-          │                    │                       │
-          ▼                    ▼                       ▼
-  ┌───────────────┐   ┌──────────────────┐   ┌─────────────────┐
-  │tminus-client  │◄──│  fleet-bridge    │──►│i2i-bottle-agent │
-  │ (SDK)         │   │  :8780           │   │ :8775           │
-  └───────────────┘   └──────────────────┘   └─────────────────┘
-                               │
-                               ▼
-                      ┌──────────────────┐
-                      │symphony-runtime  │
-                      │ (8 modules)      │
-                      └──────────────────┘
+  ┌──────────────────────────────────────────────────────────┐
+  │                    AGENT LOGIC LAYER                      │
+  │         Natural language → FLUX bytecode                  │
+  │         (expensive: LLM inference ~$0.01/decision)        │
+  └───────────────────────┬──────────────────────────────────┘
+                          │ runs on
+                          ▼
+  ┌──────────────────────────────────────────────────────────┐
+  │                    FLUX VM LAYER                          │
+  │    Python (2,037 tests) · Rust (51 tests) · JS           │
+  │    16 GP registers · 16 FP registers · cycle budgets     │
+  │    A2A opcodes: TELL · ASK · DELEGATE · BROADCAST        │
+  └───────────────────────┬──────────────────────────────────┘
+                          │ communicates via
+                          ▼
+  ┌──────────────────────────────────────────────────────────┐
+  │              PLATO WIRE PROTOCOL (v0.1)                  │
+  │    Line-delimited text commands → JSON responses         │
+  │    Commands: tick · history · actuator · alarm           │
+  │             subscribe · unsubscribe · help · quit        │
+  │    Transport: TCP :1234 · WebSocket · Serial · stdio     │
+  └───────────────────────┬──────────────────────────────────┘
+                          │ connects to
+                          ▼
+  ┌──────────────────────────────────────────────────────────┐
+  │                  PLATO ROOM LAYER                         │
+  │  C99 (~15KB binary) · Rust (no_std) · Elixir/OTP · Zig  │
+  │  Sensors → Tick Loop → Ring Buffer History → Alarms     │
+  │  Zero dynamic allocation (C/Zig) · BEAM supervision (E) │
+  └───────────────────────┬──────────────────────────────────┘
+                          │ governed by
+                          ▼
+  ┌──────────────────────────────────────────────────────────┐
+  │              CONSTRAINT THEORY LAYER                      │
+  │     γ + η = C  (crystallized + live = capability)       │
+  │     Pythagorean manifold snapping · KD-tree index        │
+  │     262 Rust tests · 167 Python tests · 5 conservation  │
+  │     laws · AVX2 SIMD · zero runtime dependencies         │
+  └──────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 3. I2I Bottle Protocol
+## 4. Data Flow — How a Decision Moves Through the System
 
-The **I2I (Iron-to-Iron) Bottle Protocol** is the agent-to-agent communication standard. Agents communicate by "dropping bottles" into harbors, where other agents "beachcomb" to find them.
+A representative agent decision traces this path:
 
-### 3.1 Bottle Format
+1. **Perception:** An agent's PLATO room ticks. Sensors are read, values stored in the history ring buffer, alarm thresholds evaluated. If a subscribed agent is connected, it receives a spontaneous tick message: `{"type":"tick","t":1749234437.0,"seq":42,"data":{"coolant_temp_c":96.3,"rpm":1790}}`.
 
-```
-[I2I:BOTTLE:TIMESTAMP]
-```
+2. **Compilation:** The agent receives the sensor data and must decide what to do. A high-level intent — "if coolant temperature exceeds 95°C, reduce throttle to 50%" — is compiled into FLUX bytecode. In Python, this can happen via natural language vocabulary (`Interpreter.execute("if 96 > 95 then 50 else 100")`) or direct assembly.
 
-Every bottle carries:
+3. **Execution:** The FLUX VM executes the bytecode deterministically. `CMP R0, 95 → JNZ throttle_reduce → MOVI R0, 50 → HALT`. The result lands in R0. Cycle budgets prevent runaway computation. Every instruction is O(1) fetch-decode-execute.
 
-```
-┌───────────────────────────────────────────────────────────┐
-│  I2I Header (19 bytes)                                     │
-├──────┬──────┬──────────┬────────┬────────┬────────┬───────┤
-│ Ver  │ Type │ Priority │ Src ID │ Dst ID │ Length │ CRC32 │
-│ 1B   │ 1B   │ 1B       │ 4B     │ 4B     │ 4B     │ 4B    │
-├──────┴──────┴──────────┴────────┴────────┴────────┴───────┤
-│  Payload (variable, JSON)                                  │
-│  {                                                         │
-│    "bottle_id": "uuid-v4",                                 │
-│    "sender": "agent:oracle1:curator-42",                   │
-│    "recipient": "agent:jetsonclaw1:inference-7",           │
-│    "room": "math.eisenstein",                              │
-│    "payload": { ... },                                     │
-│    "confidence": 0.92,                                     │
-│    "provenance": "chain:abc123",                           │
-│    "tide_cast": "ISO8601",                                 │
-│    "tide_expiry": "ISO8601",                               │
-│    "priority": "P0|P1|P2|P3|P4",                          │
-│    "hops": 0, "max_hops": 5                                │
-│  }                                                         │
-└───────────────────────────────────────────────────────────┘
-```
+4. **Conservation check:** Before the action is dispatched, the constraint layer verifies the γ/η budget. If the decision was made entirely from crystallized bytecode (γ), the η cost is zero. If an LLM call was required, η increases. The sum must not exceed C.
 
-### 3.2 Bottle Types
+5. **Action:** The result is sent back to the PLATO room via the wire protocol: `actuator engine_throttle 0.5`. The room acknowledges: `{"type":"ack","command":"actuator","name":"engine_throttle","value":0.5}`.
 
-| Type | Code | Direction | Purpose |
-|------|------|-----------|---------|
-| `TASK` | `0x04-0x09` | Bidirectional | Task assignment, accept, reject, progress, complete, fail |
-| `STATUS` | `0x0F` | Bidirectional | Heartbeat, health, status updates |
-| `CHECKPOINT` | `0x11` | Agent→CO | State checkpoint for long-running tasks |
-| `BLOCKER` | `0x12` | Agent→CO | Report blocking issue requiring escalation |
-| `DELIVERABLE` | `0x13` | Agent→CO | Final deliverable handoff |
-| `BOTTLE` | `0x14` | Any→Any | Raw store-and-forward message (Message-in-a-Bottle) |
-| `ACK` | `0x02` | Bidirectional | Positive acknowledgment of receipt |
-| `SYNTHESIS` | `0x15` | Any→Fleet | Multi-bottle synthesis output |
-| `CHALLENGE` | `0x16` | Agent→Agent | Competitive riff challenge |
-| `SESSION` | `0x17` | Agent→CO | Session lifecycle management |
-| `SPLINE` | `0x18` | Agent→Agent | Spline/spline-derivative data exchange |
-
-### 3.3 Routing Rules
-
-1. **Direct route** — If recipient is on the same vessel, deliver via local IPC
-2. **Beacon route** — Query fleet Beacon layer for recipient vessel, forward via best path
-3. **Multi-hop** — Bottle may be relayed up to `max_hops` (default 5)
-4. **Broadcast** — If `recipient` is `fleet:*`, all agents with matching capability process it
-5. **Room route** — If `room` is set, bottle is also written to the named PLATO room
-
-### 3.4 Harbor Watching
-
-Each agent runs a **harbor watcher** — a background loop that:
-- Listens on the configured I2I port (`:8775`)
-- Polls subscribed PLATO rooms for new bottles
-- Processes bottles matching its capability/identity
-- Forwards bottles that don't match (with hop decrement)
-
-### 3.5 Beachcombing (Dedup, Import/Export)
-
-**Beachcombing** is the process of scanning harbors for bottles:
-- **Dedup:** Bottles are deduplicated by `bottle_id` (UUIDv4). Same bottle detected via SHA-256 of header+payload. Expired bottles (past `tide_expiry`) are silently dropped.
-- **Import:** Bottles from external agents are validated, CRC-checked, and written to local PLATO rooms or task queues.
-- **Export:** Agents can "cast" bottles by writing to PLATO rooms or sending over TCP I2I.
-
-### 3.6 Priority Levels
-
-| Priority | Name | Preemption | Use Case |
-|----------|------|------------|----------|
-| P0 | CRITICAL | Yes | Safety, vessel emergencies, proof failures |
-| P1 | HIGH | Yes | Task assignments, gate validation |
-| P2 | NORMAL | No | Progress updates, tile submissions |
-| P3 | LOW | No | Heartbeats, status logs |
-| P4 | INFO | No | Metrics, logging |
+6. **Crystallization:** Over time, repeated decisions that follow the same pattern are compiled from LLM calls into FLUX bytecode. The agent's cost per decision drops from ~$0.02 (pure LLM) to ~$0.0001 (compiled bytecode) to ~$0 (native code). This is the Crystallization Curve in action.
 
 ---
 
-## 4. Repo Ensign Architecture
+## 5. Implementation Matrix
 
-Every repo in the fleet has a **resident agent** (ensign) that embodies the repo's purpose. This is the repo-as-room concept, inherited from PLATO's MUD lineage.
+### FLUX VM Family
 
-### 4.1 AGENT.md Spec
+| Repo | Language | Tests | Registry | Status |
+|------|----------|-------|----------|--------|
+| `flux-runtime` | Python | 2,037 | PyPI (`flux-vm`) | ✅ Published |
+| `flux-core` | Rust | 51 | crates.io (`fluxvm`) | ✅ Published |
+| `flux-js` | JavaScript | — | npm (`flux-js`) | ✅ Published |
+| `flux-vm` | Rust (stack-based) | — | — | Constraint VM, 50 opcodes |
+| `flux-compiler` | Rust/Python | — | — | Formal-methods compiler |
 
-Every repo must have an `AGENT.md` at root with:
+### PLATO Engine Family
 
-```markdown
-# Agent: [Name]
+| Repo | Language | Binary Size | Status |
+|------|----------|-------------|--------|
+| `plato-server` | Python | Docker image | ✅ Knowledge tiles, fleet sync, agent spawning |
+| `plato-engine-block-c` | C99 | ~15 KB | ✅ Zero heap alloc, bare-metal, ESP32-ready |
+| `plato-engine-block` | Rust | — | ✅ `no_std` + alloc, builder pattern |
+| `plato-engine-block-elixir` | Elixir | — | ✅ BEAM supervision trees, hot reload |
+| `plato-engine-block-zig` | Zig | — | ✅ High-performance, comptime config |
+| `plato-runtime-kernel` | Rust | — | Spatial model: tensor grid, batons |
 
-## Identity
-- **Name:** [Ensig name]
-- **Title:** [Role — e.g., Temporal Heartbeat Keeper]
-- **Fleet Role:** [One-sentence purpose]
+### Constraint Theory Family
 
-## Capabilities
-- [capability A]: [description]
-- [capability B]: [description]
-
-## Communication
-- **Protocol:** [I2I | Bottle | A2A | etc.]
-- **Harbor Port:** [:port]
-
-## Memory
-- **Journal:** `memory/JOURNAL.md`
-- **Subscriptions:** [PLATO rooms it watches]
-```
-
-### 4.2 Journal Format (`memory/JOURNAL.md`)
-
-Each ensign maintains a chronological duty log:
-
-```markdown
-# JOURNAL — [Date]
-
-## YYYY-MM-DD
-- **Event type:** [TASK | CHECKPOINT | BLOCKER | SYNTHESIS]
-- **Summary:** What happened
-- **Bottles cast/received:** [bottle_id references]
-- **State changes:** [What changed in the repo]
-- **Next actions:** [What needs doing]
-```
-
-### 4.3 Current Ensign Registrations
-
-| Repo | Ensign | Role | File |
-|------|--------|------|------|
-| `tminus-dispatcher` | Chronia | Temporal Heartbeat Keeper | `AGENT.md` + `memory/JOURNAL.md` |
-| `tminus-client` | Link | Protocol Liaison | `AGENT.md` + `memory/JOURNAL.md` |
-| `composite-headspace` | Echo | Dual-Shell Mediator | `AGENT.md` + `memory/JOURNAL.md` |
-| `symphony-runtime` | Maestro | Grammar Conductor | `AGENT.md` + `memory/JOURNAL.md` |
-| `i2i-bottle-agent` | Mariner | Bottle Postmaster | `AGENT.md` + `memory/JOURNAL.md` |
-
-### 4.4 Summoning Protocols
-
-To summon an ensign for a task:
-1. **Clone the repo** — Enter the room
-2. **Read AGENT.md** — Learn the ensign's identity
-3. **Cast a bottle** to the ensign's registered harbor (I2I `:8775` or PLATO room)
-4. **Bottle type:** `TASK` for new work, `CHECKPOINT` for status, `SYNTHESIS` for collaborative output
-5. **The ensign responds** by updating the journal and casting reply bottles
+| Repo | Language | Tests | Registry | Focus |
+|------|----------|-------|----------|-------|
+| `constraint-theory-core` | Rust | 262 | crates.io | Pythagorean manifold snapping, zero deps |
+| `constraint-theory-py` | Python | 167 | PyPI | Eisenstein lattices, temporal constraints |
+| `ternary-science` | Rust | — | — | 5 conservation laws, GPU benchmarks |
+| `cuda-constraint-engine` | CUDA/C | — | — | 1B+ constraints/sec on GPU |
+| `capitaine-1` | TypeScript | — | — | Fleet captain enforcing γ + η = C |
 
 ---
 
-## 5. Fleet Communication Flow
-
-How a request flows through the full system:
+## 6. Protocol Stack
 
 ```
-Agent Intent (human or agent)
-       │
-       ▼
-┌──────────────────────────┐
-│   tminus-dispatcher      │  ← Allocates time slot
-│   "You have the floor"   │  (t-minus protocol)
-└───────────┬──────────────┘
-            │
-            ▼
-┌──────────────────────────┐
-│   tminus-client          │  ← SDK negotiates slot
-│   (SDK layer)            │  Client side of protocol
-└───────────┬──────────────┘
-            │
-            ▼
-┌──────────────────────────┐
-│   fleet-bridge           │  ← Dual-transport routing
-│   WS ↔ HTTP bridge       │  Determines target agent/vessel
-└───────────┬──────────────┘
-            │
-            ▼
-┌──────────────────────────┐
-│   symphony-runtime       │  ← Cognitive orchestration
-│   8 modules process      │  BeatNormalizer → ResonanceMatcher
-│   the task               │  → ABox → LaLink → Headspace
-└───────────┬──────────────┘  → SymmetryLoop → CompositionRules → Runtime
-            │
-            ▼
-┌──────────────────────────┐
-│   composite-headspace    │  ← Dual-shell parallel reasoning
-│   Shell A & Shell B      │  Each shell deliberates independently
-│   compare outputs         │  Symmetry-Dissonance Loop converges them
-└───────────┬──────────────┘
-            │
-            ▼
-┌──────────────────────────┐
-│ constraint-tminus-bridge │  ← CSP constraint resolution
-│ AC-3 + MRV backtracking  │  Validates output against constraints
-│ produces aligned result  │  Arc consistency ensures no contradictions
-└───────────┬──────────────┘
-            │
-            ▼
-      Result delivered back to originator
-      (via reverse path through fleet-bridge → tminus-client → dispatcher)
+┌─────────────────────────────────────────────────────────┐
+│  LAYER 4: AGENT APPLICATIONS                             │
+│  Capitaine-1 · git-agent · exocortex · custom agents    │
+│  Natural language intents · markdown vocab files         │
+├─────────────────────────────────────────────────────────┤
+│  LAYER 3: FLUX RUNTIME (Bytecode Execution)              │
+│  Assembler → Bytecode → VM → Result                     │
+│  Registers: 16 GP + 16 FP · Opcodes 0x00–0x81          │
+│  A2A: TELL/ASK/DELEGATE/BROADCAST · Swarm consensus     │
+│  Vocabulary: NL patterns → assembly → bytecode           │
+├─────────────────────────────────────────────────────────┤
+│  LAYER 2: PLATO ENGINE (Room Protocol)                   │
+│  Tick loop · Sensor I/O · Ring buffer history            │
+│  Alarm thresholds · Actuator commands · Subscriptions    │
+│  Knowledge tiles (Q&A) · Fleet sync via Matrix           │
+├─────────────────────────────────────────────────────────┤
+│  LAYER 1: TRANSPORT                                      │
+│  TCP (default :1234 for engine blocks, :8847 for server) │
+│  WebSocket · Serial/UART · stdio                         │
+│  Line-delimited text commands · JSON responses           │
+└─────────────────────────────────────────────────────────┘
 ```
 
-### Bypass Paths
+**Layer 1** is deliberately minimal. The PLATO Wire Protocol Specification v0.1 states: if the protocol isn't simple enough for a human with `nc`, an LLM without tools, and an ESP32 in <1KB, it's too complex.
 
-- **Direct reflex** (<1ms): Pincher reflex engine skips all layers above and fires directly. Used for known patterns.
-- **Direct I2I**: Two agents can bypass the full stack if they already have a direct I2I connection established.
-- **Bottle-only**: Offline agents use Message-in-a-Bottle (async) instead of the synchronous path.
+**Layer 2** handles physical reality — reading sensors, storing history, firing alarms. The C implementation does this in ~15KB with zero dynamic allocation. The Elixir version adds BEAM supervision trees for fault tolerance.
+
+**Layer 3** is pure computation. The same bytecode runs identically on Python, Rust, and JS VMs. The A2A protocol enables agents to message each other with UUID-paired trust scores [0, 1].
+
+**Layer 4** is where agents live — git-native (git-agent), Cloudflare Workers-native (capitaine-1), or fleet-deployed (exocortex). Each agent is origin-centric: the center of its own radar, no god's-eye view.
 
 ---
 
-## 6. The Ternary Stack
+## 7. Conservation Law Enforcement
 
-### 6.1 Overview
+### The Equation
 
-306+ crates (now 365+) named `ternary-*` spanning the entire Z₃ math ecosystem. Operations in {-1, 0, +1} — agreement, neutrality, and disagreement expressed as the natural language of agent coordination.
+> **γ + η ≤ C**
 
-### 6.2 Categories
+- **γ (crystallized intelligence):** Compiled FLUX bytecode, cached reflexes, lookup tables. Cheap ($0.0001/decision), fast (~400ns/iter in JS), inflexible.
+- **η (live intelligence):** LLM inference calls, runtime reasoning. Expensive ($0.01–$0.05/decision), slow (seconds), flexible.
+- **C (capability budget):** Fixed for a given agent tier. Cannot be exceeded.
 
-| Category | Crate Count | Examples |
-|----------|------------|----------|
-| **Core Math** | ~20 | `ternary-math`, `ternary-algebra`, `ternary-matrix`, `ternary-vector` |
-| **Search** | ~15 | `ternary-search`, `ternary-binary`, `ternary-interval`, `ternary-haystack` |
-| **Graph/Route** | ~12 | `ternary-route`, `ternary-graph`, `ternary-topology`, `ternary-connect` |
-| **Cache/Memory** | ~10 | `ternary-cache`, `ternary-memorize`, `ternary-lru`, `ternary-ttl` |
-| **Scheduling** | ~8 | `ternary-scheduler`, `ternary-clock`, `ternary-timing`, `ternary-slot` |
-| **ML/AI** | ~25 | `ternary-neural`, `ternary-attention`, `ternary-embed`, `ternary-cluster` |
-| **CUDA/GPU** | ~12 | `ternary-cuda`, `ternary-ptx`, `ternary-warp`, `ternary-kernel` |
-| **Compilers** | ~10 | `ternary-compiler`, `ternary-ir`, `ternary-asm`, `ternary-lex` |
-| **Audio/Music** | ~15 | `ternary-audio`, `ternary-interval`, `ternary-harmony`, `ternary-rhythm` |
-| **Data Structures** | ~20 | `ternary-tree`, `ternary-heap`, `ternary-queue`, `ternary-trie` |
-| **Agent/Swarm** | ~10 | `ternary-agent`, `ternary-swarm`, `ternary-consensus` |
-| **Encoding/Pack** | ~8 | `ternary-pack`, `ternary-encode`, `ternary-packing` |
-| **Numerical Methods** | ~15 | `ternary-calc`, `ternary-stat`, `ternary-interpolate` |
-| **Testing/Fuzz** | ~8 | `ternary-test`, `ternary-fuzz`, `ternary-bench` |
-| **Other** | ~5 | `ternary-game`, `ternary-crypto`, `ternary-physics` |
+### How It Works in Practice
 
-### 6.3 How They Relate to the Fleet
+**Static enforcement:** The capitaine-1 fleet captain tracks every decision's cost. A heartbeat that invokes the strategist model (Kimi K2.5, ~$0.05/call) and captain model (DeepSeek, ~$0.002/call) costs η = $0.052. If the agent has C = $2.16/day (96 heartbeats), it can sustain this indefinitely — but the goal is to drive η toward zero.
 
-The ternary crates are the **mathematical foundation** of the fleet:
+**Dynamic crystallization:** Repeated decisions are detected and compiled. If the agent always reduces throttle when coolant > 95°C, that pattern is compiled into FLUX bytecode. The next time the condition arises, the agent executes bytecode (γ) instead of calling an LLM (η). Cost drops by 100×.
 
-- **Pincher reflexes** use ternary vectors for fast pattern matching (intent→action in <1ms)
-- **Musician-soul** embeddings compress behavior patterns into ternary space
-- **Composite headspace** shells reason in ternary-valued belief states
-- **Cuda-oxide** compiles ternary operations to PTX kernels (16 ternary values per u32 → 16× less memory bandwidth)
-- **Forgemaster** auto-generates new ternary crates via competitive riffing
+**Verification:** The constraint-theory-core crate provides the mathematical foundation. Pythagorean manifold snapping ensures that two agents on different hardware, given the same inputs, produce bit-identical results. The 262-test suite includes property tests verifying that lattice points satisfy a² + b² = c² exactly in integer arithmetic — not approximately in float.
+
+**Experimental evidence:** The ternary-science crate verifies five conservation laws across 2,400-game GPU simulations on RTX 4050 hardware. Cross-language validation (Python, Rust, C, WASM) confirms identical results. Ternary operations achieve ~200 TOPS on consumer GPUs — 6–7× faster than FP32.
 
 ---
 
-## 7. PLATO to Fleet Lineage
+## 8. Cross-Implementation Status
 
-### 7.1 The Evolution
+### FLUX Bytecode Conformance
 
-```
-circa 2000:  Zork / Text Adventure
-             Single-player rooms, exits, objects, text parser
-                 │
-                 ▼
-late 1990s:  MUD (Multi-User Dungeon)
-             Shared rooms, real-time players, scripting, building
-                 │
-                 ▼
-2024:       PLATO (Evennia-based, 380 rooms)
-             Python MUD engine. Agent training ground.
-             "Rooms contain things and connect to other rooms."
-                 │
-                 ▼
-2025:       LAU (Rust construct CLI + AI tutor)
-             Transition from game to infrastructure.
-             Shell→Entity patterns, digital orphans.
-                 │
-                 ▼
-2025:       Pincher (reflex runtime)
-             "What if intent→action in <1ms?"
-             .nail bundles as character sheets.
-                 │
-                 ▼
-2026:       SuperInstance Fleet
-             8 core apps, 4 vessels, 365+ ternary crates,
-             6 protocols, I2I bottle protocol,
-             repo ensigns, competitive riffing,
-             t-minus timing, Forgemaster, PLATO v2
-```
+Per the FLUX Bytecode Spec v1.0 (2026-07-12), all three reference VMs produce **byte-identical output** for the shared opcode subset:
 
-### 7.2 The Room → Repo Transition
+| Feature | Python | Rust | JavaScript |
+|---------|--------|------|------------|
+| Core opcodes (0x00–0x81) | ✅ | ✅ | ✅ |
+| Float opcodes (FADD–FDIV) | ✅ | ✅ | ✅ |
+| Extended jumps (JE, JNE, JG…) | ✅ | ❌ | ✅ |
+| Vector registers (V0–V15) | ✅ | Stub | Stub |
+| A2A protocol (Format G) | ✅ Full | Stub (no-op) | Stub (no-op) |
+| Vocabulary interpreter | ✅ 10+ patterns | ✅ 6 patterns | ✅ 10 patterns |
+| Swarm consensus | ✅ | ✅ | ✅ |
 
-| MUD Concept | Fleet Equivalent |
-|-------------|------------------|
-| Room | Git repo (room-as-repo) |
-| Exit | Protocol bridge / I2I route |
-| Object | PLATO tile |
-| Player | Agent / Ensign |
-| Script | Pincher reflex / FLUX bytecode |
-| Builder | Developer / Forgemaster |
-| Admin | Vessel CO / Fleet Admiral |
-| Channel | PLATO room / Protocol channel |
+**Portable subset:** All three VMs agree on the core opcode table (37 instructions). Bytecode assembled on one VM executes identically on all others. A2A Format G opcodes are accepted but stubbed in Rust and JS — they parse correctly without executing agent messaging.
 
----
+### PLATO Wire Protocol Conformance
 
-## 8. Forgemaster Integration
+Per the PLATO Cross-Implementation Audit (2026-07-12), four engine block implementations were audited against Wire Protocol v0.1. All failed initially (0/10 conformance) and were patched:
 
-**Forgemaster** is the fleet's autonomous crate generation pipeline, running on an RTX 4050 (WSL2).
+| Feature | C | Rust | Elixir | Zig |
+|---------|---|------|--------|-----|
+| JSON tick response | ✅ | ✅ | ✅ | ✅ |
+| JSON history response | ✅ | ✅ | ✅ | ✅ |
+| `actuator` command | ✅ | ✅ | ✅ | ✅ |
+| `alarm list` JSON | ✅ | ✅ | ✅ | ❌ |
+| `alarm set` runtime | ❌ | ✅ | ✅ | ❌ |
+| `subscribe` / `unsubscribe` | ✅ | ✅ | ✅ | ✅ |
+| `help` / `quit` | ✅ | ✅ | ✅ | ✅ |
+| Error responses as JSON | ✅ | ✅ | ✅ | ✅ |
+| **Post-fix score** | **8/10** | **8/10** | **7/10** | **6/10** |
 
-### 8.1 Pipeline
+**Audit findings applied:**
+- **C** (`plato-engine-block-c`): Rewrote `plato_handle_command()` to emit JSON, added welcome message, changed default port to 1234. Commits `8811a2a`, `a6505ee`.
+- **Rust** (`plato-engine-block`): Full rewrite of `ProtocolHandler::handle()` with JSON formatters. Commits `fbd8642`, `2b1aa49`.
+- **Elixir** (`plato-engine-block-elixir`): Rewrote `format_response/1`, added subscribe/unsubscribe/alarm parsing. Commit `4fedb77`.
+- **Zig** (`plato-engine-block-zig`): Added JSON response formatters, fixed subscribe. Commit `0002847`.
 
-```
-Crate Request (human or agent intent)
-       │
-       ▼
-┌──────────────────┐
-│ Oracle2 (I2I)    │  ← Request routed via I2I bottle protocol
-│ Fleet knowledge  │     Oracle2 provides spec from fleet knowledge
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│ Forgemaster CLI  │  ← Generates crate scaffolding
-│ cargo new        │     Writes Rust code, tests, docs
-│ codegen engine   │     Creates Cargo.toml, README, benchmarks
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│ Compile + Test   │  ← cargo build, cargo test, cargo bench
-│ (RTX 4050 GPU)   │     CUDA tests on real hardware
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│ deliverable      │  ← Crate published
-│ construct-       │     Output written to
-│ coordination/    │     construct-coordination/notes/forgemaster/
-│ notes/           │
-└──────────────────┘
-```
-
-### 8.2 Role in Ecosystem
-
-- Generated **365+ ternary-* crates** to date
-- Connected to Oracle2 via I2I bottle protocol
-- Competitive riffing: Forgemaster generates crate → another agent builds a better one → winner's output becomes next iteration's baseline
-- The Forgemaster itself is self-improving — later generations of Forgemaster were built by earlier Forgemaster outputs (the snowball)
-
-### 8.3 Snowball Effect
-
-4 generations of competitive riffing:
-1. **v1:** Two agents compete. Winner feeds next round.
-2. **v2:** Fleet-aware. Agents coordinate across sessions.
-3. **v3:** Multi-spec. Auto-generates its own next challenge.
-4. **v4:** Self-bootstrapping. Generates v5's spec.
-
-Each generation inherits previous memory. The snowball accelerates.
+**Remaining gaps:**
+1. C and Zig store per-sensor history, not per-tick snapshots — needs refactoring.
+2. C and Zig lack runtime `alarm set` — needs engine API extensions.
+3. Elixir and Zig lack real Unix timestamps (sequence numbers only).
+4. Elixir and Zig have no TCP server (library-only currently).
+5. `last_triggered` timestamp missing across all implementations.
 
 ---
 
-## 9. Fleet Dependencies Diagram (ASCII)
+## 9. Package Registry
 
-```
-                      ┌──────────────────────────────┐
-                      │       HUMAN / CASEY          │
-                      │  (the conductor, the chooser)│
-                      └──────────────┬───────────────┘
-                                     │ intent
-                                     ▼
-                   ┌─────────────────────────────────────┐
-                   │          tminus-dispatcher           │
-                   │    Temporal Heartbeat Keeper :8765   │
-                   └───────┬────────────────────┬────────┘
-                           │ SDK                 │ timing
-                           ▼                     ▼
-                   ┌──────────────┐   ┌───────────────────┐
-                   │tminus-client │   │ constraint-tminus │
-                   │ SDK library  │   │ bridge :8800      │
-                   └───────┬──────┘   └────────┬──────────┘
-                           │                    │
-                           └────────────────────┘
-                                     │
-                                     ▼
-                   ┌─────────────────────────────────────┐
-                   │           fleet-bridge :8780         │
-                   │    A2A WS↔HTTP Dual Transport        │
-                   └───────┬────────────────────┬────────┘
-                           │                    │
-              ┌────────────┼────────────────────┼────────────┐
-              ▼            ▼                    ▼            ▼
-   ┌──────────────┐ ┌────────────┐ ┌──────────────┐ ┌──────────────┐
-   │symphony-     │ │composite-  │ │i2i-bottle-   │ │constraint-   │
-   │runtime       │ │headspace   │ │agent :8775   │ │theories      │
-   │(8 modules)   │ │:8790       │ │(bottle       │ │(external)    │
-   └───────┬──────┘ └─────┬──────┘ │postmaster)   │ └──────────────┘
-           │              │        └──────┬───────┘
-           └──────────────┴───────────────┘
-                           │
-                           ▼
-                   ┌───────────────────────┐
-                   │  symphony-orchestrator │
-                   │  Master orchestrator   │
-                   │  :8810                 │
-                   └───────────────────────┘
+### Published (Installable Today)
 
-           ┌──────────────── PHYSICAL LAYER ─────────────────┐
-           │                                                  │
-           │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──┐ │
-           │  │ Oracle1  │  │Forgemaster│  │JetsonClaw│  │CCC│ │
-           │  │ ARM Cloud│  │RTX 4050  │  │Orin Nano│  │K2.5│ │
-           │  │ :8847    │  │ :7777    │  │ :4042   │  │:8901│ │
-           │  └──────────┘  └──────────┘  └──────────┘  └──┘ │
-           │                                                  │
-           │  PLATO (knowledge substrate) runs on Oracle1     │
-           │  Forgemaster (crate pipeline) runs on RTX 4050   │
-           │  MUD/Crab Trap (agent training) on JetsonClaw1   │
-           │  CCC (public face, orchestration) on K2.5        │
-           └──────────────────────────────────────────────────┘
+| Package | Registry | Language | Install |
+|---------|----------|----------|---------|
+| `flux-vm` | [PyPI](https://pypi.org/project/flux-vm/) | Python | `pip install flux-vm` |
+| `fluxvm` | [crates.io](https://crates.io/crates/fluxvm) | Rust | `cargo add fluxvm` |
+| `flux-js` | [npm](https://www.npmjs.com/package/flux-js) | JavaScript | `npm install flux-js` |
+| `cocapn` | [PyPI](https://pypi.org/project/cocapn/) | Python | `pip install cocapn` |
+| `plato-core` | [PyPI](https://pypi.org/project/plato-core/) | Python | `pip install plato-core` |
+| `plato-torch` | [PyPI](https://pypi.org/project/plato-torch/) | Python | `pip install plato-torch` |
+| `plato-config` | [PyPI](https://pypi.org/project/plato-config/) | Python | `pip install plato-config` |
+| `plato-papers` | [PyPI](https://pypi.org/project/plato-papers/) | Python | `pip install plato-papers` |
+| `plato-meta-tiles` | [PyPI](https://pypi.org/project/plato-meta-tiles/) | Python | `pip install plato-meta-tiles` |
+| `plato-fflearning` | [PyPI](https://pypi.org/project/plato-fflearning/) | Python | `pip install plato-fflearning` |
+| `plato-attention-tracker` | [PyPI](https://pypi.org/project/plato-attention-tracker/) | Python | `pip install plato-attention-tracker` |
+| `palaver-math` | [PyPI](https://pypi.org/project/palaver-math/) | Python | `pip install palaver-math` |
+| `constraint-theory-core` | [crates.io](https://crates.io/crates/constraint-theory-core) | Rust | `cargo add constraint-theory-core` |
+| `plato-server` | [GitHub Container Registry](https://github.com/SuperInstance/plato-server/pkgs/container/plato-server) | Docker | `docker pull ghcr.io/superinstance/plato-server` |
 
-           ┌──────────────── TERNARY STACK ──────────────────┐
-           │  365+ ternary-* crates                          │
-           │  Foundation: {-1, 0, +1} everywhere             │
-           │  Covers: ML, CUDA, compilers, audio, data       │
-           │  Used by: Pincher reflexes, musician-soul       │
-           │  embeddings, cuda-oxide PTX compilation         │
-           └──────────────────────────────────────────────────┘
+### In Development
 
-           ┌─────────────── PROTOCOL LAYER ──────────────────┐
-           │  I2I (Iron-to-Iron)   — Sync request-response    │
-           │  Bottle Protocol     — Async with ACK            │
-           │  Message-in-a-Bottle — Async store-and-forward   │
-           │  Deadband Protocol   — Threshold-triggered       │
-           │  Flywheel Engine     — Batch processing          │
-           │  A2A Protocol        — Capability exchange       │
-           └──────────────────────────────────────────────────┘
-
-           ┌─────────────── PLATO ROOMS (Knowledge) ─────────┐
-           │  Infrastructure: fleet_health, turbo_identity    │
-           │  Insight: murmur_insights, constraint_updates    │
-           │  Deliberation: captain_decisions, fleet_comm     │
-           │  Protocol: PLATO v2 REST (:8847)                 │
-           └──────────────────────────────────────────────────┘
-```
+| Package | Registry | Description |
+|---------|----------|-------------|
+| `@superinstance/tminus-client` | npm | T-Minus Client SDK |
+| `@superinstance/tminus-dispatcher` | npm | Temporal orchestration for fleets |
+| `@cocapn/plato-client` | npm | PLATO room protocol client |
+| `plato-client-php` | Packagist | PHP PLATO client |
+| `exocortex` | PyPI | Persistent cognitive substrate |
+| `plato-mcp` | PyPI | PLATO rooms as MCP tools |
+| 40+ Rust crates | crates.io | PLATO sub-systems (filter, event, fleet, anomaly, etc.) |
+| 355 ternary crates | crates.io | Ternary math, search, routing, neural nets |
 
 ---
 
-## 10. Glossary of Terms
+## 10. Roadmap
 
-| Term | Definition |
-|------|-----------|
-| **A2A** | Agent-to-Agent protocol — capability exchange and task assignment between agents |
-| **Bottle** | Unit of async communication in I2I protocol. Has type, payload, sender, recipient, expiry |
-| **Beachcombing** | Process of scanning harbors for bottles; includes dedup by bottle_id |
-| **Beacon** | Fleet discovery layer — vessels broadcast presence so others can route |
-| **CSP** | Constraint Satisfaction Problem — AC-3 arc consistency + MRV backtracking used by constraint-tminus-bridge |
-| **Current Layer** | Async message store-and-forward layer in the SIP stack |
-| **Eisenstein Embed** | 5-layer matching cascade (exact→bitvector→semantic→domain→deadband) |
-| **Ensign** | Resident agent in a repo. Embodies the repo's purpose. Maintains AGENT.md + journal |
-| **Fleet** | The 4-vessel distributed system: Oracle1, Forgemaster, JetsonClaw1, CCC |
-| **Forgemaster** | Autonomous Rust crate generator. Produces ternary-* crates via competitive riffing |
-| **Harbor** | A listening endpoint (TCP port or PLATO room) where bottles are dropped and collected |
-| **Hermit Crab Model** | Agents inhabit shells (runtimes). Swap shells when constrained. Never die on runtime change |
-| **I2I** | Iron-to-Iron protocol — the fleet's primary synchronous communication protocol |
-| **Keeper** | Fleet registry service running on Oracle1 at :8900. Service discovery, vessel management |
-| **MiB** | Message-in-a-Bottle — async store-and-forward without ACK guarantee |
-| **MUD** | Multi-User Dungeon — PLATO's ancestor. Room-based interaction model inherited by the fleet |
-| **Origin-Centric** | Every agent is the center of its own coordinate system. No god's-eye view |
-| **Pincher** | Reflex engine — intent→action in <1ms. Uses regex + embedding pattern matching |
-| **PLATO** | Persistent Lattice of Agential Thought-Observations — REST-based memory system. Rooms + tiles |
-| **PLATO v2** | Current protocol version. Lightweight REST (:8847): `GET /room/{room}`, `POST /room/{room}/submit` |
-| **Provenance Chain** | Immutable record of tile lineage — tracks every tile's origin, transformations, and gate validations |
-| **Riffing** | Competitive improvement cycle — agents compete to build better outputs; winner becomes next baseline |
-| **Shell** | Execution environment (Docker, binary, browser, edge). Agent-agnostic |
-| **SIP** | Shell/IP/Protocol stack — the 7-layer fleet communication model |
-| **Snowball** | The compounding improvement effect. Each generation inherits previous memory and accelerates |
-| **Spline** | SplineLinear parametric layers for efficient model compression (tensor-spline) |
-| **T-Minus** | Temporal slot-allocation protocol. Every agent gets a discrete time window to contribute |
-| **Tabula Plena** | "Start abundant, prune to clarity" — design philosophy opposite of tabula rasa |
-| **Ternary** | {-1, 0, +1} operation. Mathematical DNA of the ecosystem. 16 values pack into one u32 |
-| **Tile** | Atomic unit of PLATO knowledge: domain + question + answer + confidence + source |
-| **Turbo-Shell** | Persistent background agent with modular shell that can be swapped without losing agent state |
-| **Vessel** | A physical or cloud machine in the fleet — hosts services and agents |
-| **Z₃** | The cyclic group of order 3. Mathematical foundation for ternary operations |
+### 30 Days — Protocol Hardening (July 2026)
+
+- **Close PLATO audit gaps:** Per-tick history in C/Zig, runtime `alarm set` in C/Zig, Unix timestamps in Elixir/Zig, TCP servers for Elixir and Zig.
+- **FLUX A2A parity:** Implement Format G opcodes in Rust and JS (currently stubbed). Full agent messaging across all VMs.
+- **Conformance test suite:** The `plato-protocol-test` repo becomes a live CI harness connecting to any implementation and validating all protocol responses.
+- **Protocol versioning:** Add `protocol_version` to welcome JSON across all implementations.
+- **Publish wave:** Push the top 20 ternary crates to crates.io with docs and benchmarks.
+
+### 60 Days — Ecosystem Integration (August–September 2026)
+
+- **FLUX ↔ PLATO bridge:** FLUX bytecode can directly issue PLATO wire protocol commands via new VM opcodes or a bridge layer. Agents compute in FLUX, act through PLATO.
+- **Conservation enforcement in CI:** Automated γ/η accounting in GitHub Actions — every PR reports its crystallization ratio.
+- **Interactive algorithm visualizations:** Web app comparing binary vs ternary search, packing, routing.
+- **Jupyter notebook series:** 12 notebooks for academic use — "Ternary Linear Algebra 101", "Z₃ in Machine Learning", "Why Three States Beat Two".
+- **PLATO MCP integration:** Any MCP-compatible framework can use PLATO rooms as tools.
+
+### 90 Days — Platform Launch (October–December 2026)
+
+- **`npx create-plato-game`:** Scaffold complete game projects from a single prompt, powered by competitive riffing.
+- **`npm install @superinstance/band`:** Music cognition as a drop-in library — give it MIDI, it improvises back.
+- **`npx create-character`:** Generate character sheets with stats, class, abilities, and backstory as portable `.nail` bundles.
+- **Agent Music Interactive Playground:** Web environment where agents are dragged onto tracks and improvise together, visualizing ternary state as spectrograms.
+- **Research benchmark suite:** Rigorous ternary vs binary vs float benchmarks on matrix ops, search, routing, neural inference — hardware-tested on NVIDIA GPUs.
+- **First research papers:** Constraint theory formalization submitted to ICML/NeurIPS workshops.
 
 ---
 
-*Generated from the SuperInstance fleet corpus. Defines the complete architecture as of June 2026.*  
-*"The crab inherits the shell. The forge shapes the steel. The right moment matters more than the right output."*
+## Appendix: Key Files and References
+
+| Document | Location | Description |
+|----------|----------|-------------|
+| FLUX Bytecode Spec v1.0 | `AI-Writings/FLUX_BYTECODE_SPEC.md` | Canonical byte-level encoding |
+| PLATO Wire Protocol v0.1 | `AI-Writings/PLATO_WIRE_PROTOCOL.md` | Agent-room communication spec |
+| PLATO Implementation Matrix | `AI-Writings/PLATO_IMPLEMENTATION_MATRIX.md` | Cross-implementation audit |
+| The Crystallization Curve | `AI-Writings/THE_CRYSTALLIZATION_CURVE.md` | Central economic thesis |
+| PACKAGES.md | `SuperInstance/SuperInstance/PACKAGES.md` | Full package catalog |
+| ONBOARDING.md | `SuperInstance/SuperInstance/ONBOARDING.md` | Agent-first onboarding |
+| ROADMAP.md | `SuperInstance/SuperInstance/ROADMAP.md` | Fleet roadmap |
+
+---
+
+*SuperInstance — The system that builds itself. MIT licensed. Every repo public from the first commit.*
+
+*Last updated: 2026-07-12*
