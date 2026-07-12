@@ -1,43 +1,112 @@
 # Contributing to SuperInstance
 
-Thanks for helping out! Here's how to get started.
+Thanks for your interest in contributing! SuperInstance is a living ecosystem of agent infrastructure — every contribution matters.
 
-## Reporting Issues
+---
 
-- **Bug?** Use the [Bug Report](/.github/ISSUE_TEMPLATE/bug-report.md) template
-- **Feature idea?** Use the [Feature Request](/.github/ISSUE_TEMPLATE/feature-request.md) template
-- **Confused?** Use the [Question](/.github/ISSUE_TEMPLATE/question.md) template — seriously, we want to know what's unclear
+## How to Contribute
 
-## Making Changes
+### 1. Fork & Clone
 
-1. **Fork** the repo
-2. **Branch** from `main` — use a descriptive name (`fix/auth-timeout`, `feat/export-csv`)
-3. **Make your changes** — keep PRs focused on one thing
-4. **Test** your changes before opening a PR
-5. **Open a Pull Request** — describe what changed and why
+```bash
+gh repo fork SuperInstance/SuperInstance --clone
+cd SuperInstance
+```
+
+### 2. Create a Branch
+
+```bash
+git checkout -b feat/my-improvement
+```
+
+Use a descriptive branch name:
+- `feat/` — new features
+- `fix/` — bug fixes
+- `docs/` — documentation
+- `sketch/` — experimental work
+
+### 3. Make Your Changes
+
+- **Match existing patterns.** Look at surrounding code and follow the same style.
+- **Run the formatter.** Each repo has its own — check the repo's README for the command.
+- **Write tests.** New behavior needs test coverage.
+
+### 4. Test
+
+All PRs must pass CI. Before pushing:
+
+```bash
+# Look for a Makefile, justfile, or package.json scripts
+make test        # or: just test, npm test, cargo test
+```
+
+### 5. Open a Pull Request
+
+```bash
+gh pr create --title "feat: short description" --body "What changed and why"
+```
+
+Reference any related issues (`Closes #123`).
+
+---
 
 ## Code Style
 
-Follow what the existing code does. Consistency > perfection.
+- **Match the file you're editing.** Consistency beats perfection.
+- Use the project's formatter and linter — don't argue with them.
+- Comments explain *why*, not *what*.
+- Keep functions focused. If it does three things, it's three functions.
 
-## Commit Messages
+---
 
-We use emoji + short description:
+## Living Repo Doctrine
 
-```
-✨ add CSV export to instances
-🐛 fix auth token refresh race condition
-📝 clarify API rate limit docs
-```
+SuperInstance repos are **living repos**. That means:
 
-Check `git log` for examples.
+- 📝 **Sketches welcome.** Not everything needs to be polished to merge. Rough drafts, exploratory code, and work-in-progress are all valid.
+- 🌱 **Growth over gates.** We'd rather merge a rough idea and iterate than reject good thinking.
+- 🔄 **Iterate in the open.** PRs are conversations, not exams. Ask questions, show work, learn together.
+- ⚡ **Ship and refine.** Breaking changes are fine with a major version bump. Don't let perfectionism block progress.
 
-## PR Tips
+---
 
-- One concern per PR
-- If it's a big change, open an issue first to discuss
-- Screenshots or logs help reviewers a lot
+## Adding New Implementations
 
-## First Time?
+### FLUX Implementations
 
-Look for issues tagged **`good first issue`** or **`help wanted`**. They're picked to be approachable entry points.
+FLUX is a wire protocol spec. To add a new language implementation:
+
+1. **Read the spec:** [flux-spec](https://github.com/SuperInstance/flux-runtime/blob/main/SPEC.md)
+2. **Follow the bytecode format exactly.** Opcodes, encoding, and semantics are frozen.
+3. **Implement the conformance test suite.** Every FLUX implementation must pass the shared test suite.
+4. **Name it `flux-<lang>`.** Place it under the SuperInstance org.
+5. **Register it** in [PACKAGES.md](./PACKAGES.md).
+
+### PLATO Implementations
+
+PLATO defines a room-level agent runtime. To add a new implementation:
+
+1. **Read the spec:** [plato-spec](https://github.com/SuperInstance/plato-spec)
+2. **Implement the room protocol:** lifecycle hooks, message routing, state transitions.
+3. **Follow the room contract.** Entry, exit, perception, and action APIs must match.
+4. **Name it `plato-<lang>`.** Place it under the SuperInstance org.
+5. **Register it** in [PACKAGES.md](./PACKAGES.md).
+
+---
+
+## Communication
+
+- **[GitHub Issues](https://github.com/SuperInstance/SuperInstance/issues)** — Bug reports, feature requests, tracking work
+- **[GitHub Discussions](https://github.com/SuperInstance/SuperInstance/discussions)** — Questions, ideas, design conversations
+
+We keep everything on GitHub. No Slack, no Discord, no hidden channels. If it matters, it's in an issue or discussion.
+
+---
+
+## Code of Conduct
+
+Be excellent to each other. Disagreements are fine — disrespect is not.
+
+---
+
+<sub>This is a living document. PRs to improve it are always welcome.</sub>
