@@ -48,11 +48,11 @@ Published crates are available on [crates.io](https://crates.io/users/SuperInsta
 
 ---
 
-## JavaScript (npm) — pending
+## JavaScript (npm) — 1 published, 5 pending
 
-| Package | Status | Description |
-|---------|--------|-------------|
-| 🚧 `flux-js` | Awaiting token | FLUX bytecode VM in JavaScript |
+| Package | Version | Status | Description |
+|---------|---------|--------|-------------|
+| ✅ [`flux-js`](https://www.npmjs.com/package/flux-js) | `0.1.0` | Published | FLUX bytecode VM in JavaScript |
 | 🚧 `@superinstance/tminus-client` | Coming soon | T-Minus Client SDK — Node.js client and CLI for the t-minus cue dispatcher protocol |
 | 🚧 `@superinstance/tminus-dispatcher` | Coming soon | T-Minus Cue Dispatcher — temporal orchestration for multi-agent AI fleets |
 | 🚧 `@cocapn/plato-client` | In development | PLATO room protocol client — Node + browser, zero dependencies |
@@ -178,9 +178,11 @@ Browse all: [`gh repo list SuperInstance --limit 1000 --json name --jq '.[].name
 
 ## Registry Stats
 
-- **16 packages published** (7 PyPI + 9 crates.io)
-- 6 npm packages pending publication
+- **17 packages published** (7 PyPI + 9 crates.io + 1 npm)
+- 5 npm packages pending publication
 - 1 PHP package pending publication
+- 11 PyPI packages scheduled in 3 daily batches
+- 28 unpublished Rust crates identified for future release
 - 5 next-horizon projects in active development
 - Every core component now has both Python and Rust versions
 - 3 FLUX VM implementations with cross-VM conformance verified
@@ -209,4 +211,4 @@ Browse all: [`gh repo list SuperInstance --limit 1000 --json name --jq '.[].name
 
 ---
 
-*Last updated: 2026-07-12 (Session 4 — Rust Ports Wave) · Maintained by [SuperInstance](https://github.com/SuperInstance)*
+*Last updated: 2026-07-12 (Session 5 — Evening Wave) · Maintained by [SuperInstance](https://github.com/SuperInstance)*
