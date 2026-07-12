@@ -1,0 +1,8 @@
+Now let me run the tests:All 30 tests pass. Now let me note some issues I spotted during review and check a few more things:I have everything I need. Now I'll write the findings file:All 30 tests pass. Wrote findings to `BETA_TEST.md` covering the test run output and 11 issues found during review, with prioritized recommendations.
+
+Top concerns:
+- **Validator mutates input lessons in place** (`validator.py:54-93`) — re-validation compounds confidence decay and corrupts persisted briefs
+- **Empty-context temporal lessons wrongly classified ACTIVE** — inflates survival rate
+- **No-op test assertion** (`test_baton.py:354`: `assert "90%" in output or "90%" in output`)
+- **CI masks all failures with `|| true`** and references a missing `requirements.txt`
+- **`_infer_type` heuristic keys don't match fixture data** — version-specific lessons get classified timeless
