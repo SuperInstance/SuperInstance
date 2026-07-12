@@ -12,11 +12,14 @@
 |---------|----------|---------|--------|-----|
 | **flux-vm** | PyPI | 0.1.0 | ✅ Live | [pypi.org/project/flux-vm/0.1.0/](https://pypi.org/project/flux-vm/0.1.0/) |
 | **fluxvm** | crates.io | 0.1.0 | ✅ Live | [crates.io/crates/fluxvm](https://crates.io/crates/fluxvm) |
+| **plato-core** | PyPI | 0.2.0 | ✅ Live | [pypi.org/project/plato-core/0.2.0/](https://pypi.org/project/plato-core/0.2.0/) |
+| **si-exocortex** | PyPI | 0.1.0 | ✅ Live | [pypi.org/project/si-exocortex/0.1.0/](https://pypi.org/project/si-exocortex/0.1.0/) |
 | **flux-js** | npm | 0.1.0 | ⏳ Built, pending publish token | name confirmed available |
 
 **Name conflict resolutions:**
 - `flux-runtime` on PyPI → taken by unrelated project → **renamed to `flux-vm`**
 - `flux-core` on crates.io → taken by a task runner → **renamed to `fluxvm`**
+- `exocortex` on PyPI → taken by unrelated project → **renamed to `si-exocortex`**
 - `flux-js` on npm → **available** ✅
 
 **Trusted publishing infrastructure wired:**
@@ -326,8 +329,8 @@ Full 28-cluster analysis of all 4,229 repos completed.
 | Wikis deprecated | 4 |
 | Clusters analyzed | 28 |
 | Total repos in org | 4,229 |
-| Registry packages published | 2 live (PyPI + crates.io) |
-| Packages prepped | 1 more (npm, pending token) |
+| Registry packages published | 4 live (3 PyPI + 1 crates.io) |
+| Packages prepped | 2 more (npm + 2 crates.io next wave) |
 
 ---
 
