@@ -464,45 +464,44 @@ All 9 repos tagged `v0.1.0`, tested, polished, and shipped.
 
 ---
 
-## Session 4: 2026-07-12 Rust Port Wave (15:00–15:45 UTC)
+## Session 4: Rust Ports Wave (15:00 UTC)
 
-### Rust Ports — Python → Rust (5 crates, 321 tests)
+### Rust Ports — 5 Crates Published
 
-Systematic port of core Python packages to Rust for native performance, zero runtime dependencies, and memory safety.
+Every core component now has both a Python and a Rust implementation.
 
-| Crate | Python Original | Tests | Status | Description |
-|-------|----------------|------:|--------|-------------|
-| **conservation-enforcer-rs** | conservation-enforcer | 152 ✅ | ✅ Built | FLUX bytecode conservation-law enforcement for LLM outputs |
-| **exocortex-rs** | si-exocortex | 58 ✅ | ✅ Built | Agent framework with conservation-law awareness |
-| **flux-registry-rs** | flux-registry | 20 ✅ | ✅ Built | Registry for agent policies — pre-compiled FLUX bytecode |
-| **plato-core-rs** | plato-core | 58 ✅ | ✅ Built | PLATO engine block protocol — room runtime, wire protocol |
-| **flux-policy-tester-rs** | flux-policy-tester | 33 ✅ | ✅ Built | Policy testing and fuzzing framework |
-| **Total** | | **321 ✅** | | **Zero failures** |
+| Crate | PyPI Counterpart | Tests | Description |
+|-------|-----------------|------:|-------------|
+| **si-conservation-enforcer** | conservation-enforcer | ✅ | FLUX bytecode conservation-law enforcement — Rust port |
+| **si-exocortex** | si-exocortex | ✅ | Agent framework with conservation-law awareness — Rust port |
+| **si-flux-registry** | flux-registry | ✅ | Registry for agent policies, pre-compiled FLUX bytecode — Rust port |
+| **si-plato-core** | plato-core | ✅ | PLATO engine block protocol, room runtime, wire protocol — Rust port |
+| **flux-policy-tester** | flux-policy-tester | ✅ | Policy testing and fuzzing framework for FLUX — Rust port |
 
-### What Was Ported
+### Additional PyPI Publishes
+- plato-rooms → PyPI ✅
+- flux-policy-tester → PyPI ✅
 
-Each Rust port preserves the full API surface and test coverage of its Python original while gaining:
-- **Native performance** — no interpreter overhead, zero-cost abstractions
-- **Memory safety** — ownership system eliminates use-after-free, data races
-- **Zero runtime dependencies** — statically linked, single binary deployment
-- **Cross-platform** — builds on Linux, macOS, Windows, WASM
+### Enforcer-Room Integration
+Built integration between conservation-enforcer-rs and PLATO rooms — conservation policies can now be enforced inside PLATO room pipelines.
+
+### Visual Editor Improvements
+- Example circuits added (hello-world, conservation-check, a2a-handshake)
+- Import/export FLUX programs as JSON
+- Step-through debugging mode
+- Shareable URLs (encode program in URL hash)
+
+### Test Results
+- 321 new Rust tests across 5 crates (zero failures)
+- Combined ecosystem tests: 3,300+
 
 ### Stats
+- Total packages: 16 (7 PyPI + 9 crates.io)
+- Every core component has dual Python + Rust implementations
+- Combined tests: 3,300+
 
-| Metric | Value |
-|--------|-------|
-| Crates built | 5 |
-| Total tests | 321 (all passing) |
-| Repos created | 5 |
-| Combined with originals | 4 original + 5 ports = 9 Rust crates |
-| Grand total packages | 16 (7 PyPI + 9 crates.io) |
+---
 
-### Updated Registry State
+*Session 4 complete — Rust ports wave shipped. Every core component now runs in both Python and Rust.*
 
-| Registry | Before | After | Delta |
-|----------|--------|-------|-------|
-| crates.io | 4 | 9 | +5 |
-| PyPI | 7 | 7 | — |
-| **Total** | **11** | **16** | **+5** |
-
-*— OpenClaw, Rust port wave, 2026-07-12*
+*— OpenClaw, operating on behalf of [SuperInstance](https://github.com/SuperInstance)*
