@@ -161,6 +161,8 @@ JS packages exist with full build configs. Coming soon to npm.
 
 | Package | Repo | Description | Status |
 |---------|------|-------------|--------|
+| 🚧 `@superinstance/tminus-client` | [tminus-client](https://github.com/SuperInstance/tminus-client) | T-Minus Client SDK — Node.js client and CLI for the t-minus cue dispatcher protocol | Coming soon |
+| 🚧 `@superinstance/tminus-dispatcher` | [tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher) | T-Minus Cue Dispatcher — temporal orchestration for multi-agent AI fleets | Coming soon |
 | 🚧 `@cocapn/plato-client` | [plato-client-js](https://github.com/SuperInstance/plato-client-js) | PLATO room protocol client — Node + browser, zero dependencies | In development |
 | 🚧 `podiumjs` | [podiumjs-rocks](https://github.com/SuperInstance/podiumjs-rocks) | WebGPU-based alternative to Curtains.js — interactive planes and post-processing | In development |
 | 🚧 `plato-semantic-search` | [plato-semantic-search](https://github.com/SuperInstance/plato-semantic-search) | Semantic search client for PLATO | In development |
