@@ -1,0 +1,47 @@
+Warning: Input is not a terminal (fd=0).
+────────────────────────────────────────────────────────────────────────────────
+You can skip this check with --no-gitignore
+Add .aider* to .gitignore (recommended)? (Y)es/(N)o [Yes]:  
+
+
+
+
+
+
+                                                                                                                                                                                                                          Add .aider* to .gitignore (recommended)? (Y)es/(N)o [Yes]:                                                                                                     
+Added .aider* to .gitignore
+Warning: deepseek/deepseek-chat expects these environment variables
+- DEEPSEEK_API_KEY: Not set
+You can skip this check with --no-show-model-warnings
+
+https://aider.chat/docs/llms/warnings.html
+Open documentation url for more info? (Y)es/(N)o/(D)on't ask again [Yes]:  
+
+
+
+
+
+
+                                                                                                                                                                                                                                         Open documentation url for more info? (Y)es/(N)o/(D)on't ask again [Yes]:                                                                                      
+
+Aider v0.86.2
+Model: deepseek/deepseek-chat with diff edit format, prompt cache, infinite 
+output
+Git repo: .git with 16 files
+Repo-map: using 4096 tokens, auto refresh
+
+
+https://aider.chat/HISTORY.html#release-notes
+Would you like to see what's new in this version? (Y)es/(N)o [Yes]:  
+
+
+
+
+
+
+                                                                                                                                                                                                                                   Would you like to see what's new in this version? (Y)es/(N)o [Yes]:                                                                                            
+
+litellm.AuthenticationError: AuthenticationError: DeepseekException - 
+Authentication Fails (governor)
+The API provider is not able to authenticate you. Check your API key.
+
