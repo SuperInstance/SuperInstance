@@ -2,51 +2,67 @@
 
 ## Reporting a Vulnerability
 
-Email security@superinstance.ai or open a private security advisory at github.com/SuperInstance/SuperInstance/security.
+We take security seriously. If you discover a vulnerability in any SuperInstance project, please report it responsibly.
 
-Please do not publicly disclose vulnerabilities before we've had a chance to respond.
+### How to Report
 
-## Response Time
-- Acknowledgment: within 48 hours
-- Initial assessment: within 5 business days
-- Fix: critical 24h, high 72h, medium 2 weeks, low next release
+**Do NOT open a public GitHub issue for security vulnerabilities.**
 
-## API Authentication
+Instead, please either:
 
-| Endpoint | Auth Required | Method |
-|----------|--------------|--------|
-| `POST /search` | No | — |
-| `POST /recommend` | No | — |
-| `POST /similar` | No | — |
-| `GET /stats` | No | — |
-| `GET /clusters` | No | — |
-| `GET /docs` | No | — |
-| `GET /openapi.json` | No | — |
-| `POST /ingest` | **Yes** | `Authorization: Bearer <token>` |
+1. **Use GitHub's private vulnerability reporting:**
+   - Navigate to the affected repo
+   - Click **Security** → **Report a vulnerability**
+   - Fill out the advisory form
 
-Only `/ingest` requires authentication. All read endpoints are public and free.
+2. **Email:** Send details to `security@superinstance.dev` (if available) or open a private advisory.
 
-### Getting an Ingest Token
+### What to Include
 
-Contact security@superinstance.ai or open a GitHub issue to request an ingest token.
+Please provide as much of the following as possible:
 
-### Rate Limiting
+- Description of the vulnerability
+- Steps to reproduce (proof of concept)
+- Affected versions
+- Potential impact
+- Suggested fix (if any)
 
-Public endpoints are currently unrate-limited for development. We ask that you:
-- Keep requests under 10/second sustained
-- Use `topK` ≤ 20 for search queries
-- Cache results locally
+### Response Timeline
 
-Abuse will result in IP-level blocking. Production rate limits coming soon.
+| Step | Expected Time |
+|------|--------------|
+| Acknowledgment | Within 48 hours |
+| Initial assessment | Within 5 business days |
+| Fix or mitigation | Within 30 days (severity-dependent) |
+| Public disclosure | After fix is released, coordinated with reporter |
 
-## Scope
+### Disclosure Policy
 
-**In scope:** Fleet Vector API, superinstance.ai, npm packages (@superinstance/*), GitHub repos (github.com/SuperInstance/*)
-**Out of scope:** Social media, third-party services (Cloudflare, npm, GitHub), DoS attacks, social engineering
+- We follow **coordinated disclosure**.
+- We will credit reporters in advisory publications (unless you prefer to remain anonymous).
+- We will not take legal action against reporters acting in good faith.
 
-## Best Practices for Users
+---
 
-- Never share API tokens in public repos
-- Use environment variables for credentials
-- Pin npm package versions in production
-- Report unexpected behavior even if unsure it's a vulnerability
+## Supported Versions
+
+Each project maintains its own support policy. Generally:
+
+- The latest minor release receives security fixes
+- Critical fixes may be backported to the previous minor
+- End-of-life versions will not receive patches
+
+Check individual repo READMEs for specific version support.
+
+---
+
+## Security Best Practices for Contributors
+
+- Never commit secrets, API keys, or credentials
+- Use environment variables or secret managers
+- Review dependencies for known vulnerabilities (`pip-audit`, `cargo audit`, `npm audit`)
+- Follow the principle of least privilege in all code
+
+---
+
+<sub>This policy is a living document. Improvements welcome via PR.</sub>
