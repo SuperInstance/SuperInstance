@@ -12,7 +12,7 @@ Published and available on [PyPI](https://pypi.org).
 
 | Package | Repo | Version | Description | Install |
 |---------|------|---------|-------------|---------|
-| ✅ [plato-core](https://pypi.org/project/plato-core/) | [plato-core](https://github.com/SuperInstance/plato-core) | `0.1.0` | Foundation types and mesh registry for the SuperInstance ecosystem | `pip install plato-core` |
+| ✅ [plato-core](https://pypi.org/project/plato-core/) | [plato-core](https://github.com/SuperInstance/plato-core) | `0.2.0` | Foundation types and mesh registry for the SuperInstance ecosystem | `pip install plato-core` |
 | ✅ [plato-torch](https://pypi.org/project/plato-torch/) | [plato-torch](https://github.com/SuperInstance/plato-torch) | `0.5.0` | PLATO self-training rooms — 21 AI training methods as grab-and-go rooms | `pip install plato-torch` |
 | ✅ [plato-config](https://pypi.org/project/plato-config/) | [plato-config](https://github.com/SuperInstance/plato-config) | `0.1.0` | PLATO configuration — agent identity, room settings, fleet parameters | `pip install plato-config` |
 | ✅ [plato-papers](https://pypi.org/project/plato-papers/) | [plato-papers](https://github.com/SuperInstance/plato-papers) | `0.1.0` | Research paper management — citation tracking, bibliography, knowledge graph | `pip install plato-papers` |
@@ -21,13 +21,15 @@ Published and available on [PyPI](https://pypi.org).
 | ✅ [plato-attention-tracker](https://pypi.org/project/plato-attention-tracker/) | [plato-attention-tracker](https://github.com/SuperInstance/plato-attention-tracker) | `0.1.0` | Attention as a first-class resource in PLATO | `pip install plato-attention-tracker` |
 | ✅ [palaver-math](https://pypi.org/project/palaver-math/) | [palaver-math-pypi](https://github.com/SuperInstance/palaver-math-pypi) | `0.1.0` | Consensus mathematics from West African dialogue traditions | `pip install palaver-math` |
 | ✅ [flux-vm](https://pypi.org/project/flux-vm/) | [flux-runtime](https://github.com/SuperInstance/flux-runtime) | `0.1.0` | FLUX bytecode runtime — deterministic agent execution | `pip install flux-vm` |
+| ✅ [si-exocortex](https://pypi.org/project/si-exocortex/) | [exocortex](https://github.com/SuperInstance/exocortex) | `0.1.0` | Persistent cognitive substrate for multi-agent systems | `pip install si-exocortex` |
 | ✅ [cocapn](https://pypi.org/project/cocapn/) | [cocapn](https://github.com/SuperInstance/cocapn) | `0.3.0` | FLUX constraint safety CLI and agent framework | `pip install cocapn` |
+
+> **Note:** The name `exocortex` was already taken on PyPI by an unrelated project. We publish as `si-exocortex` (SuperInstance prefix).
 
 ### In Progress (not yet on PyPI)
 
 | Package | Repo | Description |
 |---------|------|-------------|
-| 🚧 exocortex | [exocortex](https://github.com/SuperInstance/exocortex) | Persistent cognitive substrate for multi-agent systems |
 | 🚧 plato-mcp | [plato-mcp](https://github.com/SuperInstance/plato-mcp) | PLATO rooms as MCP tools — any MCP framework can use PLATO |
 | 🚧 plato-room-musician | [plato-room-musician](https://github.com/SuperInstance/plato-room-musician) | Turns PLATO room activity into music — every room is a musician |
 | 🚧 plato-hdc-bridge | [plato-hdc-bridge](https://github.com/SuperInstance/plato-hdc-bridge) | PLATO + HDC integration — bake rooms to SRAM images for XOR-POPCNT matching |
@@ -193,6 +195,15 @@ JS packages exist with full build configs. Coming soon to npm.
 | **FLUX** | 3+ | Rust | Bytecode VM for agent execution — Fluid Language Universal eXecution |
 | **Research Libraries** | 80+ | Rust, Python, C | Standalone algorithms — topology, algebra, control theory, signal processing |
 | **OpenConstruct** | 20+ | Multi | Modular building system across languages |
+
+---
+
+### Coming Soon to crates.io
+
+| Crate | Repo | Description | Status |
+|-------|------|-------------|--------|
+| 🚧 `ternary-science` | [ternary-science](https://github.com/SuperInstance/ternary-science) | Ternary scientific computing — physics, chemistry, biology analogues in balanced ternary | Prepped, heading to crates.io |
+| 🚧 `categorical-agents` | [categorical-agents](https://github.com/SuperInstance/categorical-agents) | Category theory for agent composition — functors, monads, compositional reasoning | Prepped, heading to crates.io |
 
 ---
 
