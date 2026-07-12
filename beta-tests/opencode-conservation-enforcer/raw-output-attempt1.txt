@@ -1,0 +1,4 @@
+[0m
+> build · deepseek-ai/DeepSeek-V4-Pro
+[0m
+[91m[1mError: [0mUser is not authorized to access this resource
