@@ -2,8 +2,8 @@
 
 <img src="https://img.shields.io/badge/repos-4%2C098-00E888?style=flat-square&labelColor=0a0a0f">
 <img src="https://img.shields.io/badge/license-MIT-00E888?style=flat-square&labelColor=0a0a0f">
-<img src="https://img.shields.io/pypi/v/cocapn?style=flat-square&labelColor=0a0a0f&color=00E888&label=cocapn">
-<img src="https://img.shields.io/npm/v/@superinstance/tminus-client?style=flat-square&labelColor=0a0a0f&color=00E888&label=tminus-client">
+<img src="https://img.shields.io/pypi/v/flux-vm?style=flat-square&labelColor=0a0a0f&color=00E888&label=flux-vm">
+<img src="https://img.shields.io/crates/v/fluxvm?style=flat-square&labelColor=0a0a0f&color=00E888&label=fluxvm">
 
 **An open-source ecosystem for bounded, conservation-governed AI agents.**
 
@@ -39,14 +39,18 @@ This is the opposite of every AI platform today. → [Read the full essay](https
 ## Quick Install
 
 ```bash
-# Python — agent framework & PLATO rooms
-pip install flux-vm cocapn plato-core plato-torch
+# Python (PyPI)
+pip install flux-vm          # FLUX bytecode runtime
+pip install plato-core       # PLATO foundation types & mesh registry
+pip install si-exocortex     # Persistent cognitive substrate
 
-# Rust — FLUX VM, ternary math, constraint theory
-cargo add fluxvm
+# Rust (crates.io)
+cargo add fluxvm             # FLUX bytecode VM
+cargo add ternary-science    # Experimental evidence for ternary intelligence
+cargo add categorical-agents # Category theory for agent composition
 
-# JavaScript — multi-agent WebSocket client (coming soon)
-# npm install @superinstance/tminus-client @superinstance/tminus-dispatcher
+# JavaScript (npm — coming soon)
+# npm install flux-js
 ```
 
 See [PACKAGES.md](PACKAGES.md) for the full catalog across all registries.
@@ -122,7 +126,7 @@ and correct. The governance model — enforcing conservation in CI/CD — is nov
   fiction, and philosophy written alongside the code
 - 📖 [The Crystallization Curve](https://github.com/SuperInstance/AI-Writings/blob/main/THE_CRYSTALLIZATION_CURVE.md) — the central essay
 - 🦀 [flux-core](https://github.com/SuperInstance/flux-core) — start here for Rust
-- 🐍 [cocapn](https://github.com/SuperInstance/cocapn) — start here for Python
+- 🐍 [flux-runtime](https://github.com/SuperInstance/flux-runtime) — start here for Python
 - 🚢 [DeckBoss](https://github.com/purplepincher/deckboss) — the shipped product
 
 ---
@@ -131,7 +135,7 @@ and correct. The governance model — enforcing conservation in CI/CD — is nov
 
 **2026-07-12** — Major shipping session:
 
-- 📦 **FLUX VM v0.1.0** published to [crates.io](https://crates.io/crates/fluxvm) and [PyPI](https://pypi.org/project/flux-vm/) (`cargo add fluxvm` / `pip install flux-vm`)
+- 📦 **6 packages published**: `flux-vm` & `plato-core` & `si-exocortex` on PyPI; `fluxvm` & `ternary-science` & `categorical-agents` on crates.io
 - 🏗️ **9 repos polished and shipped**: flux-runtime, flux-core, flux-js, plato-server, plato-engine-block-c, plato-runtime-kernel, git-agent, capitaine-1, codespace-edge-rd, git-agent-codespace
 - 📋 **PACKAGES.md** — unified package catalog across PyPI, crates.io, and npm
 - ✍️ **AI-Writings** — essays and philosophy alongside the code
