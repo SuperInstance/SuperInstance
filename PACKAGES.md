@@ -30,7 +30,7 @@ Published and available on [PyPI](https://pypi.org).
 
 ---
 
-## Rust (crates.io) — 4 packages
+## Rust (crates.io) — 9 packages
 
 Published crates are available on [crates.io](https://crates.io/users/SuperInstance).
 
@@ -40,6 +40,11 @@ Published crates are available on [crates.io](https://crates.io/users/SuperInsta
 | ✅ [`ternary-science`](https://crates.io/crates/ternary-science) | `0.1.1` | `cargo add ternary-science` | Negative Space Intelligence — GPU benchmarks, 5 conservation laws, scaling proofs |
 | ✅ [`categorical-agents`](https://crates.io/crates/categorical-agents) | `0.1.0` | `cargo add categorical-agents` | Categorical formalization of agent capabilities — functors, monads, composition |
 | ✅ [`constraint-theory-core`](https://crates.io/crates/constraint-theory-core) | `2.2.1` | `cargo add constraint-theory-core` | Deterministic manifold snapping with KD-tree indexing |
+| ✅ [`si-conservation-enforcer`](https://crates.io/crates/si-conservation-enforcer) | `0.1.0` | `cargo add si-conservation-enforcer` | Rust port — FLUX bytecode conservation-law enforcement for LLM outputs |
+| ✅ [`si-exocortex`](https://crates.io/crates/si-exocortex) | `0.1.0` | `cargo add si-exocortex` | Rust port — agent framework with conservation-law awareness |
+| ✅ [`si-flux-registry`](https://crates.io/crates/si-flux-registry) | `0.1.0` | `cargo add si-flux-registry` | Rust port — registry for agent policies, pre-compiled FLUX bytecode |
+| ✅ [`si-plato-core`](https://crates.io/crates/si-plato-core) | `0.1.0` | `cargo add si-plato-core` | Rust port — PLATO engine block protocol, room runtime, wire protocol |
+| ✅ [`flux-policy-tester`](https://crates.io/crates/flux-policy-tester) | `0.1.0` | `cargo add flux-policy-tester` | Rust port — policy testing and fuzzing framework for FLUX agent policies |
 
 ---
 
@@ -173,10 +178,11 @@ Browse all: [`gh repo list SuperInstance --limit 1000 --json name --jq '.[].name
 
 ## Registry Stats
 
-- **17 packages published** (13 PyPI + 4 crates.io)
+- **16 packages published** (7 PyPI + 9 crates.io)
 - 6 npm packages pending publication
 - 1 PHP package pending publication
 - 5 next-horizon projects in active development
+- Every core component now has both Python and Rust versions
 - 3 FLUX VM implementations with cross-VM conformance verified
 - 5 PLATO engine implementations with wire protocol compliance
 - 1,000+ repositories across the ecosystem
@@ -203,4 +209,4 @@ Browse all: [`gh repo list SuperInstance --limit 1000 --json name --jq '.[].name
 
 ---
 
-*Last updated: 2026-07-12 · Maintained by [SuperInstance](https://github.com/SuperInstance)*
+*Last updated: 2026-07-12 (Session 4 — Rust Ports Wave) · Maintained by [SuperInstance](https://github.com/SuperInstance)*
