@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-13 08:17 UTC
+**Generated:** 2026-07-14 07:11 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -156,6 +156,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Crdt
 
+- [SmartCRDT](https://github.com/SuperInstance/SmartCRDT)
 - [emergence-detector](https://github.com/SuperInstance/emergence-detector)
 - [emergent-coupling](https://github.com/SuperInstance/emergent-coupling)
 - [fleet-characters](https://github.com/SuperInstance/fleet-characters)
@@ -419,6 +420,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [warp-room](https://github.com/SuperInstance/warp-room)
 - [warp-ternary-vote](https://github.com/SuperInstance/warp-ternary-vote)
 - [warp-vote-consensus](https://github.com/SuperInstance/warp-vote-consensus)
+- [webgpu-profiler](https://github.com/SuperInstance/webgpu-profiler)
 
 ## Guard Dsl
 
@@ -512,11 +514,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [SuperInstance](https://github.com/SuperInstance/SuperInstance)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
 - [a2a-protocol](https://github.com/SuperInstance/a2a-protocol)
-- [activeledger-ai](https://github.com/SuperInstance/activeledger-ai)
 - [activelog-agent](https://github.com/SuperInstance/activelog-agent)
-- [agent-dna](https://github.com/SuperInstance/agent-dna)
 - [agent-grid](https://github.com/SuperInstance/agent-grid)
-- [agent-manifest](https://github.com/SuperInstance/agent-manifest)
 - [agent-orchestration](https://github.com/SuperInstance/agent-orchestration)
 - [agent-resume](https://github.com/SuperInstance/agent-resume)
 - [agent-vocabulary](https://github.com/SuperInstance/agent-vocabulary)
@@ -986,6 +985,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [oracle1-chronicle](https://github.com/SuperInstance/oracle1-chronicle)
 - [oracle2](https://github.com/SuperInstance/oracle2)
 - [ouroboros](https://github.com/SuperInstance/ouroboros)
+- [page-agent](https://github.com/SuperInstance/page-agent)
 - [paper-zero-crypto-fleet-security](https://github.com/SuperInstance/paper-zero-crypto-fleet-security)
 - [papers](https://github.com/SuperInstance/papers)
 - [pareto-tournament](https://github.com/SuperInstance/pareto-tournament)
@@ -1235,10 +1235,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
-- [adaptive-plato-early-version](https://github.com/SuperInstance/adaptive-plato-early-version)
 - [chart-room](https://github.com/SuperInstance/chart-room)
 - [cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)
-- [dojo-musician-rooms](https://github.com/SuperInstance/dojo-musician-rooms)
 - [domain-agent-base](https://github.com/SuperInstance/domain-agent-base)
 - [exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)
 - [federation-protocol](https://github.com/SuperInstance/federation-protocol)
@@ -1584,7 +1582,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [activelog-backend](https://github.com/SuperInstance/activelog-backend)
 - [activelog-claude](https://github.com/SuperInstance/activelog-claude)
 - [actualization-harbor](https://github.com/SuperInstance/actualization-harbor)
-- [actualizer-ai](https://github.com/SuperInstance/actualizer-ai)
 - [carry-protocol](https://github.com/SuperInstance/carry-protocol)
 - [chart-system](https://github.com/SuperInstance/chart-system)
 - [cocapn-pushdown](https://github.com/SuperInstance/cocapn-pushdown)
@@ -1592,7 +1589,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-art](https://github.com/SuperInstance/conservation-art)
 - [conservation-cli](https://github.com/SuperInstance/conservation-cli)
 - [conservation-rhythm-rs](https://github.com/SuperInstance/conservation-rhythm-rs)
-- [dojo](https://github.com/SuperInstance/dojo)
 - [dream-cycle](https://github.com/SuperInstance/dream-cycle)
 - [dual-connection](https://github.com/SuperInstance/dual-connection)
 - [dynamical-systems](https://github.com/SuperInstance/dynamical-systems)
@@ -1709,6 +1705,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [groove-analyzer](https://github.com/SuperInstance/groove-analyzer)
 - [harmonic-analysis](https://github.com/SuperInstance/harmonic-analysis)
 - [harmonic-plr-rs](https://github.com/SuperInstance/harmonic-plr-rs)
+- [hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)
+- [hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)
 - [hoare-logic](https://github.com/SuperInstance/hoare-logic)
 - [hodge-belief](https://github.com/SuperInstance/hodge-belief)
 - [hodge-belief-c](https://github.com/SuperInstance/hodge-belief-c)
@@ -1977,6 +1975,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [orations-metal](https://github.com/SuperInstance/orations-metal)
 - [org-audit](https://github.com/SuperInstance/org-audit)
 - [os-concepts](https://github.com/SuperInstance/os-concepts)
+- [othismos](https://github.com/SuperInstance/othismos)
 - [packet-capture](https://github.com/SuperInstance/packet-capture)
 - [page-replace](https://github.com/SuperInstance/page-replace)
 - [palaver-math-c](https://github.com/SuperInstance/palaver-math-c)
@@ -2150,6 +2149,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [symplectic-opt-rs](https://github.com/SuperInstance/symplectic-opt-rs)
 - [symplectic-spin](https://github.com/SuperInstance/symplectic-spin)
 - [sync-primitive](https://github.com/SuperInstance/sync-primitive)
+- [system_prompts_leaks](https://github.com/SuperInstance/system_prompts_leaks)
 - [t-minus-rs](https://github.com/SuperInstance/t-minus-rs)
 - [tasklog-ai](https://github.com/SuperInstance/tasklog-ai)
 - [tda-c](https://github.com/SuperInstance/tda-c)
