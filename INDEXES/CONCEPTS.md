@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-14 07:11 UTC
+**Generated:** 2026-07-15 07:15 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -67,11 +67,12 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Constraint Theory
 
+- [Constraint-Theory](https://github.com/SuperInstance/Constraint-Theory)
 - [cocapn-cli](https://github.com/SuperInstance/cocapn-cli)
 - [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core)
 - [constraint-theory-py](https://github.com/SuperInstance/constraint-theory-py)
+- [constrainttheory-ml-demo](https://github.com/SuperInstance/constrainttheory-ml-demo)
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
-- [drift-analyzer](https://github.com/SuperInstance/drift-analyzer)
 - [eisenstein-cuda](https://github.com/SuperInstance/eisenstein-cuda)
 - [eisenstein-snap-python](https://github.com/SuperInstance/eisenstein-snap-python)
 - [field-core](https://github.com/SuperInstance/field-core)
@@ -511,15 +512,13 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [I](https://github.com/SuperInstance/I)
 - [Luma](https://github.com/SuperInstance/Luma)
 - [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
+- [Spreadsheet-moment](https://github.com/SuperInstance/Spreadsheet-moment)
 - [SuperInstance](https://github.com/SuperInstance/SuperInstance)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
 - [a2a-protocol](https://github.com/SuperInstance/a2a-protocol)
 - [activelog-agent](https://github.com/SuperInstance/activelog-agent)
 - [agent-grid](https://github.com/SuperInstance/agent-grid)
 - [agent-orchestration](https://github.com/SuperInstance/agent-orchestration)
-- [agent-resume](https://github.com/SuperInstance/agent-resume)
-- [agent-vocabulary](https://github.com/SuperInstance/agent-vocabulary)
-- [agent-whisper](https://github.com/SuperInstance/agent-whisper)
 - [capitaine-1](https://github.com/SuperInstance/capitaine-1)
 - [casting-call](https://github.com/SuperInstance/casting-call)
 - [categorical-agents](https://github.com/SuperInstance/categorical-agents)
@@ -530,8 +529,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-matrix-rs](https://github.com/SuperInstance/conservation-matrix-rs)
 - [construct-core](https://github.com/SuperInstance/construct-core)
 - [crab](https://github.com/SuperInstance/crab)
-- [domain-agent-base](https://github.com/SuperInstance/domain-agent-base)
-- [dream-compiler](https://github.com/SuperInstance/dream-compiler)
 - [entropy-conservation-rs](https://github.com/SuperInstance/entropy-conservation-rs)
 - [ergodic-transport-rs](https://github.com/SuperInstance/ergodic-transport-rs)
 - [event-bus](https://github.com/SuperInstance/event-bus)
@@ -1237,7 +1234,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
 - [chart-room](https://github.com/SuperInstance/chart-room)
 - [cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)
-- [domain-agent-base](https://github.com/SuperInstance/domain-agent-base)
 - [exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)
 - [federation-protocol](https://github.com/SuperInstance/federation-protocol)
 - [field-visualizer](https://github.com/SuperInstance/field-visualizer)
@@ -1539,6 +1535,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Security
 
+- [Spreadsheet-moment](https://github.com/SuperInstance/Spreadsheet-moment)
 - [fleet-raid5](https://github.com/SuperInstance/fleet-raid5)
 - [fleet-simulation](https://github.com/SuperInstance/fleet-simulation)
 - [paper-zero-crypto-fleet-security](https://github.com/SuperInstance/paper-zero-crypto-fleet-security)
@@ -1584,12 +1581,12 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [actualization-harbor](https://github.com/SuperInstance/actualization-harbor)
 - [carry-protocol](https://github.com/SuperInstance/carry-protocol)
 - [chart-system](https://github.com/SuperInstance/chart-system)
+- [claw-extensions](https://github.com/SuperInstance/claw-extensions)
 - [cocapn-pushdown](https://github.com/SuperInstance/cocapn-pushdown)
 - [cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)
 - [conservation-art](https://github.com/SuperInstance/conservation-art)
 - [conservation-cli](https://github.com/SuperInstance/conservation-cli)
 - [conservation-rhythm-rs](https://github.com/SuperInstance/conservation-rhythm-rs)
-- [dream-cycle](https://github.com/SuperInstance/dream-cycle)
 - [dual-connection](https://github.com/SuperInstance/dual-connection)
 - [dynamical-systems](https://github.com/SuperInstance/dynamical-systems)
 - [ecc-rs](https://github.com/SuperInstance/ecc-rs)
@@ -1952,6 +1949,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [network-science](https://github.com/SuperInstance/network-science)
 - [neyman-pearson-gap](https://github.com/SuperInstance/neyman-pearson-gap)
 - [night-wheel](https://github.com/SuperInstance/night-wheel)
+- [nmea-bridge](https://github.com/SuperInstance/nmea-bridge)
 - [noise-gen-rs](https://github.com/SuperInstance/noise-gen-rs)
 - [normal-form](https://github.com/SuperInstance/normal-form)
 - [notebooklm-bridge](https://github.com/SuperInstance/notebooklm-bridge)
@@ -1976,6 +1974,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [org-audit](https://github.com/SuperInstance/org-audit)
 - [os-concepts](https://github.com/SuperInstance/os-concepts)
 - [othismos](https://github.com/SuperInstance/othismos)
+- [othismos-llm](https://github.com/SuperInstance/othismos-llm)
+- [othismos-reef](https://github.com/SuperInstance/othismos-reef)
 - [packet-capture](https://github.com/SuperInstance/packet-capture)
 - [page-replace](https://github.com/SuperInstance/page-replace)
 - [palaver-math-c](https://github.com/SuperInstance/palaver-math-c)
