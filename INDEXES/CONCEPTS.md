@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-16 07:22 UTC
+**Generated:** 2026-07-17 07:17 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -520,6 +520,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [a2a-protocol](https://github.com/SuperInstance/a2a-protocol)
 - [activelog-agent](https://github.com/SuperInstance/activelog-agent)
 - [agent-grid](https://github.com/SuperInstance/agent-grid)
+- [agent-handoff](https://github.com/SuperInstance/agent-handoff)
 - [agent-orchestration](https://github.com/SuperInstance/agent-orchestration)
 - [baton-protocol](https://github.com/SuperInstance/baton-protocol)
 - [capitaine-1](https://github.com/SuperInstance/capitaine-1)
@@ -1594,8 +1595,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-art](https://github.com/SuperInstance/conservation-art)
 - [conservation-cli](https://github.com/SuperInstance/conservation-cli)
 - [conservation-rhythm-rs](https://github.com/SuperInstance/conservation-rhythm-rs)
-- [egg](https://github.com/SuperInstance/egg)
-- [eigen-system](https://github.com/SuperInstance/eigen-system)
 - [electromagnetism](https://github.com/SuperInstance/electromagnetism)
 - [elliptic-curve-ops](https://github.com/SuperInstance/elliptic-curve-ops)
 - [embryo](https://github.com/SuperInstance/embryo)
@@ -2095,6 +2094,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [songline-math-pypi](https://github.com/SuperInstance/songline-math-pypi)
 - [songline-math-wasm](https://github.com/SuperInstance/songline-math-wasm)
 - [sort-algo-rs](https://github.com/SuperInstance/sort-algo-rs)
+- [soundcrab](https://github.com/SuperInstance/soundcrab)
 - [spacemap](https://github.com/SuperInstance/spacemap)
 - [sparse-matrix](https://github.com/SuperInstance/sparse-matrix)
 - [spectral-cayley](https://github.com/SuperInstance/spectral-cayley)

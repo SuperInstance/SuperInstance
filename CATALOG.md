@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-07-16 07:22 UTC
+**Generated:** 2026-07-17 07:17 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -597,6 +597,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[shell-ui](https://github.com/SuperInstance/shell-ui)** | CCC | Browser-based fleet dashboard and shell UI | 🟢 active |
 | **[si-conservation-wasm](https://github.com/SuperInstance/si-conservation-wasm)** | CCC | WASM bindings for SuperInstance conservation law — gamma + eta = total_budget in the browser | 🟢 active |
 | **[snapkit-zig](https://github.com/SuperInstance/snapkit-zig)** | CCC | Extracted from forgemaster/snapkit-zig — Cocapn fleet component | 🟢 active |
+| **[soundcrab](https://github.com/SuperInstance/soundcrab)** | CCC | Multi-speaker audio router for Windows — per-device volume, EQ, compression. WASAPI loopback → N out | 🟢 active |
 | **[spacedrive-fleet](https://github.com/SuperInstance/spacedrive-fleet)** | CCC | Spacedrive × CoCapn: your file explorer is also a compute fleet manager | 🟢 active |
 | **[studylog-ai-pages](https://github.com/SuperInstance/studylog-ai-pages)** | CCC | GitHub Pages for studylog.ai | 🟢 active |
 | **[superinstance-ai-pages](https://github.com/SuperInstance/superinstance-ai-pages)** | CCC | GitHub Pages for superinstance.ai | 🟢 active |
@@ -625,6 +626,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[activelog-claude](https://github.com/SuperInstance/activelog-claude)** | Various | Activity Log plugin for Claude. | ⚪ unknown |
 | **[actualization-harbor](https://github.com/SuperInstance/actualization-harbor)** | Various | Actualization Harbor | ⚪ unknown |
 | **[agent-grid](https://github.com/SuperInstance/agent-grid)** | Various | Grid-based interface for AI agents. | 🟢 active |
+| **[agent-handoff](https://github.com/SuperInstance/agent-handoff)** | Various | Generational handoff documents for SuperInstance AI agents — bootstrap briefs and lessons carried be | 🟢 active |
 | **[agent-orchestration](https://github.com/SuperInstance/agent-orchestration)** | Various | Orchestration for agent fleets. Roles as instruments, dynamics as resource allocation, sections as c | 🟢 active |
 | **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** | Various | Creative writing, essays, and philosophical explorations from the Exocortex project | ⚪ unknown |
 | **[Baton](https://github.com/SuperInstance/Baton)** | Various | automate agents training their successors for a better way to have infinite context without limits | 🟢 active |
@@ -640,8 +642,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[conservation-law-rs](https://github.com/SuperInstance/conservation-law-rs)** | Various | Conservation laws for agent dynamics — Lagrangian mechanics, Noether theorem, and symmetry-based con | 🟢 active |
 | **[conservation-matrix-rs](https://github.com/SuperInstance/conservation-matrix-rs)** | Various | Conservation laws in ternary agent systems — avoidance ratio, fitness convergence, ecological resili | 🟢 active |
 | **[conservation-rhythm-rs](https://github.com/SuperInstance/conservation-rhythm-rs)** | Various | Self-Improving Band: conservation-rhythm-rs | ⚪ unknown |
-| **[egg](https://github.com/SuperInstance/egg)** | Various | egg | ⚪ unknown |
-| **[eigen-system](https://github.com/SuperInstance/eigen-system)** | Various | Research-grade eigenvalue computation in pure Rust — power iteration, QR algorithm, tridiagonalizati | ⚪ unknown |
 | **[electromagnetism](https://github.com/SuperInstance/electromagnetism)** | Various | Electromagnetism in Rust. Maxwell's equations, solved. | ⚪ unknown |
 | **[elliptic-curve-ops](https://github.com/SuperInstance/elliptic-curve-ops)** | Various | See README | ⚪ unknown |
 | **[embryo](https://github.com/SuperInstance/embryo)** | Various | embryo | ⚪ unknown |
@@ -6049,6 +6049,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
+### [soundcrab](https://github.com/SuperInstance/soundcrab)
+- **Domain:** Web & Browser
+- **Vessel:** CCC
+- **Purpose:** Multi-speaker audio router for Windows — per-device volume, EQ, compression. WASAPI loopback → N output channels.
+- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
+- **Status:** active
+
 ### [spacedrive-fleet](https://github.com/SuperInstance/spacedrive-fleet)
 - **Domain:** Web & Browser
 - **Vessel:** CCC
@@ -6172,6 +6179,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Grid-based interface for AI agents.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [agent-handoff](https://github.com/SuperInstance/agent-handoff)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Generational handoff documents for SuperInstance AI agents — bootstrap briefs and lessons carried between sessions
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
