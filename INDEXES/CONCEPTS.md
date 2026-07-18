@@ -1,16 +1,11 @@
 # Concept Index
 
-**Generated:** 2026-07-17 07:17 UTC
+**Generated:** 2026-07-18 07:01 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
-## A2A
-
-- [a2a-adapter](https://github.com/SuperInstance/a2a-adapter)
-
 ## A2A Protocol
 
-- [a2a-protocol](https://github.com/SuperInstance/a2a-protocol)
 - [fleet-a2a-bridge](https://github.com/SuperInstance/fleet-a2a-bridge)
 - [fleet-a2a-pipeline](https://github.com/SuperInstance/fleet-a2a-pipeline)
 - [fleet-a2a-spectral](https://github.com/SuperInstance/fleet-a2a-spectral)
@@ -74,8 +69,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [constraint-theory-py](https://github.com/SuperInstance/constraint-theory-py)
 - [constrainttheory-ml-demo](https://github.com/SuperInstance/constrainttheory-ml-demo)
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
-- [eisenstein-cuda](https://github.com/SuperInstance/eisenstein-cuda)
-- [eisenstein-snap-python](https://github.com/SuperInstance/eisenstein-snap-python)
 - [field-core](https://github.com/SuperInstance/field-core)
 - [fleet-bench](https://github.com/SuperInstance/fleet-bench)
 - [fleet-budget](https://github.com/SuperInstance/fleet-budget)
@@ -159,7 +152,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Crdt
 
 - [SmartCRDT](https://github.com/SuperInstance/SmartCRDT)
-- [emergence-detector](https://github.com/SuperInstance/emergence-detector)
+- [emergency-alerts](https://github.com/SuperInstance/emergency-alerts)
 - [emergent-coupling](https://github.com/SuperInstance/emergent-coupling)
 - [fleet-characters](https://github.com/SuperInstance/fleet-characters)
 - [fleet-clock](https://github.com/SuperInstance/fleet-clock)
@@ -218,15 +211,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core)
 - [constraint-theory-py](https://github.com/SuperInstance/constraint-theory-py)
-- [eisenstein-bench](https://github.com/SuperInstance/eisenstein-bench)
-- [eisenstein-c](https://github.com/SuperInstance/eisenstein-c)
-- [eisenstein-cuda](https://github.com/SuperInstance/eisenstein-cuda)
-- [eisenstein-do178c](https://github.com/SuperInstance/eisenstein-do178c)
-- [eisenstein-fuzz](https://github.com/SuperInstance/eisenstein-fuzz)
-- [eisenstein-quantize](https://github.com/SuperInstance/eisenstein-quantize)
-- [eisenstein-snap-python](https://github.com/SuperInstance/eisenstein-snap-python)
-- [eisenstein-tools](https://github.com/SuperInstance/eisenstein-tools)
-- [eisenstein-wasm](https://github.com/SuperInstance/eisenstein-wasm)
 - [guard2mask-gpu](https://github.com/SuperInstance/guard2mask-gpu)
 - [hex-graph-constraint](https://github.com/SuperInstance/hex-graph-constraint)
 - [hex-lattice-explorer](https://github.com/SuperInstance/hex-lattice-explorer)
@@ -246,6 +230,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [FORGE-FLUX-ECOSYSTEM](https://github.com/SuperInstance/FORGE-FLUX-ECOSYSTEM)
 - [cocapn-cli](https://github.com/SuperInstance/cocapn-cli)
+- [conformance-service](https://github.com/SuperInstance/conformance-service)
 - [conservation-enforcer](https://github.com/SuperInstance/conservation-enforcer)
 - [conservation-enforcer-rs](https://github.com/SuperInstance/conservation-enforcer-rs)
 - [fleet-midi-flux](https://github.com/SuperInstance/fleet-midi-flux)
@@ -353,7 +338,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Gpu Compute
 
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
-- [eisenstein-cuda](https://github.com/SuperInstance/eisenstein-cuda)
 - [fleet-constraint-kernel](https://github.com/SuperInstance/fleet-constraint-kernel)
 - [fleet-keel](https://github.com/SuperInstance/fleet-keel)
 - [fleet-phase](https://github.com/SuperInstance/fleet-phase)
@@ -514,13 +498,13 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [I](https://github.com/SuperInstance/I)
 - [Luma](https://github.com/SuperInstance/Luma)
 - [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
+- [PersonalLog](https://github.com/SuperInstance/PersonalLog)
 - [Spreadsheet-moment](https://github.com/SuperInstance/Spreadsheet-moment)
 - [SuperInstance](https://github.com/SuperInstance/SuperInstance)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
-- [a2a-protocol](https://github.com/SuperInstance/a2a-protocol)
-- [activelog-agent](https://github.com/SuperInstance/activelog-agent)
 - [agent-grid](https://github.com/SuperInstance/agent-grid)
 - [agent-handoff](https://github.com/SuperInstance/agent-handoff)
+- [agent-loop](https://github.com/SuperInstance/agent-loop)
 - [agent-orchestration](https://github.com/SuperInstance/agent-orchestration)
 - [baton-protocol](https://github.com/SuperInstance/baton-protocol)
 - [capitaine-1](https://github.com/SuperInstance/capitaine-1)
@@ -982,6 +966,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [opensmile-bridge](https://github.com/SuperInstance/opensmile-bridge)
 - [optimal-transport-agents-rs](https://github.com/SuperInstance/optimal-transport-agents-rs)
 - [optimal-transport-rs](https://github.com/SuperInstance/optimal-transport-rs)
+- [oracle-relay](https://github.com/SuperInstance/oracle-relay)
 - [oracle-tui](https://github.com/SuperInstance/oracle-tui)
 - [oracle1-chronicle](https://github.com/SuperInstance/oracle1-chronicle)
 - [oracle2](https://github.com/SuperInstance/oracle2)
@@ -1214,7 +1199,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Physics
 
-- [eisenstein-snap-python](https://github.com/SuperInstance/eisenstein-snap-python)
 - [fleet-clock](https://github.com/SuperInstance/fleet-clock)
 - [fleet-math-foundations](https://github.com/SuperInstance/fleet-math-foundations)
 - [fleet-yaw](https://github.com/SuperInstance/fleet-yaw)
@@ -1241,6 +1225,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
 - [chart-room](https://github.com/SuperInstance/chart-room)
 - [cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)
+- [conformance-service](https://github.com/SuperInstance/conformance-service)
 - [exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)
 - [federation-protocol](https://github.com/SuperInstance/federation-protocol)
 - [field-visualizer](https://github.com/SuperInstance/field-visualizer)
@@ -1426,6 +1411,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-room-configs](https://github.com/SuperInstance/plato-room-configs)
 - [plato-room-deployment](https://github.com/SuperInstance/plato-room-deployment)
 - [plato-room-deployment-approval](https://github.com/SuperInstance/plato-room-deployment-approval)
+- [plato-room-directory](https://github.com/SuperInstance/plato-room-directory)
 - [plato-room-musician](https://github.com/SuperInstance/plato-room-musician)
 - [plato-room-security-audit](https://github.com/SuperInstance/plato-room-security-audit)
 - [plato-room-security-audit-rs](https://github.com/SuperInstance/plato-room-security-audit-rs)
@@ -1512,10 +1498,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [polyformalism](https://github.com/SuperInstance/polyformalism)
 
-## Protocol Bridge
-
-- [a2a-adapter](https://github.com/SuperInstance/a2a-adapter)
-
 ## Pythagorean48
 
 - [hex-lattice-explorer](https://github.com/SuperInstance/hex-lattice-explorer)
@@ -1576,14 +1558,13 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [.github](https://github.com/SuperInstance/.github)
 - [AI-Writings](https://github.com/SuperInstance/AI-Writings)
+- [CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)
 - [ESP-Flasher](https://github.com/SuperInstance/ESP-Flasher)
 - [ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)
 - [OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)
 - [Scrapcraft](https://github.com/SuperInstance/Scrapcraft)
 - [SubForge](https://github.com/SuperInstance/SubForge)
 - [a2ui](https://github.com/SuperInstance/a2ui)
-- [activelog-ai](https://github.com/SuperInstance/activelog-ai)
-- [activelog-backend](https://github.com/SuperInstance/activelog-backend)
 - [activelog-claude](https://github.com/SuperInstance/activelog-claude)
 - [actualization-harbor](https://github.com/SuperInstance/actualization-harbor)
 - [carry-protocol](https://github.com/SuperInstance/carry-protocol)
@@ -1595,9 +1576,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-art](https://github.com/SuperInstance/conservation-art)
 - [conservation-cli](https://github.com/SuperInstance/conservation-cli)
 - [conservation-rhythm-rs](https://github.com/SuperInstance/conservation-rhythm-rs)
-- [electromagnetism](https://github.com/SuperInstance/electromagnetism)
-- [elliptic-curve-ops](https://github.com/SuperInstance/elliptic-curve-ops)
-- [embryo](https://github.com/SuperInstance/embryo)
+- [domain-landing](https://github.com/SuperInstance/domain-landing)
+- [edge-weight](https://github.com/SuperInstance/edge-weight)
+- [eigenpy](https://github.com/SuperInstance/eigenpy)
+- [email-oracle](https://github.com/SuperInstance/email-oracle)
 - [emotional-colorist](https://github.com/SuperInstance/emotional-colorist)
 - [entropy-code](https://github.com/SuperInstance/entropy-code)
 - [entropy-production](https://github.com/SuperInstance/entropy-production)
@@ -1932,6 +1914,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [model-field-guide](https://github.com/SuperInstance/model-field-guide)
 - [modem-core](https://github.com/SuperInstance/modem-core)
 - [modular-arithmetic](https://github.com/SuperInstance/modular-arithmetic)
+- [module-registry](https://github.com/SuperInstance/module-registry)
 - [monte-carlo-rs](https://github.com/SuperInstance/monte-carlo-rs)
 - [morphogenesis](https://github.com/SuperInstance/morphogenesis)
 - [morse-theory](https://github.com/SuperInstance/morse-theory)
@@ -2047,6 +2030,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [scale-fold](https://github.com/SuperInstance/scale-fold)
 - [screenpipe-conservation](https://github.com/SuperInstance/screenpipe-conservation)
 - [scripts](https://github.com/SuperInstance/scripts)
+- [search-superinstance-ai](https://github.com/SuperInstance/search-superinstance-ai)
 - [secret-share](https://github.com/SuperInstance/secret-share)
 - [secret-sharing](https://github.com/SuperInstance/secret-sharing)
 - [seed-creative-swarm](https://github.com/SuperInstance/seed-creative-swarm)
@@ -2064,6 +2048,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [sheaf-spectral](https://github.com/SuperInstance/sheaf-spectral)
 - [shell](https://github.com/SuperInstance/shell)
 - [shepherds-console](https://github.com/SuperInstance/shepherds-console)
+- [ship-log-modules](https://github.com/SuperInstance/ship-log-modules)
+- [ship-log-search](https://github.com/SuperInstance/ship-log-search)
+- [ship-log-sync](https://github.com/SuperInstance/ship-log-sync)
 - [shoal](https://github.com/SuperInstance/shoal)
 - [si](https://github.com/SuperInstance/si)
 - [si-compaction-poc](https://github.com/SuperInstance/si-compaction-poc)
@@ -2078,6 +2065,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [signal-router](https://github.com/SuperInstance/signal-router)
 - [signal-transduction](https://github.com/SuperInstance/signal-transduction)
 - [signaling-games](https://github.com/SuperInstance/signaling-games)
+- [signalk-bridge](https://github.com/SuperInstance/signalk-bridge)
 - [simulated-anneal](https://github.com/SuperInstance/simulated-anneal)
 - [simulation-ledger](https://github.com/SuperInstance/simulation-ledger)
 - [skenna](https://github.com/SuperInstance/skenna)
@@ -2088,6 +2076,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [skills](https://github.com/SuperInstance/skills)
 - [skip-list-rs](https://github.com/SuperInstance/skip-list-rs)
 - [slam-core](https://github.com/SuperInstance/slam-core)
+- [smart-404](https://github.com/SuperInstance/smart-404)
 - [smt-core](https://github.com/SuperInstance/smt-core)
 - [social-conservation](https://github.com/SuperInstance/social-conservation)
 - [solid-mechanics](https://github.com/SuperInstance/solid-mechanics)
