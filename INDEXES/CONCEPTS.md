@@ -1,11 +1,12 @@
 # Concept Index
 
-**Generated:** 2026-07-18 07:01 UTC
+**Generated:** 2026-07-19 07:27 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
 ## A2A Protocol
 
+- [A2A-native-notebookLM](https://github.com/SuperInstance/A2A-native-notebookLM)
 - [fleet-a2a-bridge](https://github.com/SuperInstance/fleet-a2a-bridge)
 - [fleet-a2a-pipeline](https://github.com/SuperInstance/fleet-a2a-pipeline)
 - [fleet-a2a-spectral](https://github.com/SuperInstance/fleet-a2a-spectral)
@@ -153,7 +154,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [SmartCRDT](https://github.com/SuperInstance/SmartCRDT)
 - [emergency-alerts](https://github.com/SuperInstance/emergency-alerts)
-- [emergent-coupling](https://github.com/SuperInstance/emergent-coupling)
 - [fleet-characters](https://github.com/SuperInstance/fleet-characters)
 - [fleet-clock](https://github.com/SuperInstance/fleet-clock)
 - [fleet-crdt](https://github.com/SuperInstance/fleet-crdt)
@@ -371,6 +371,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-gpu](https://github.com/SuperInstance/plato-gpu)
 - [plato-torch](https://github.com/SuperInstance/plato-torch)
 - [podiumjs-rocks](https://github.com/SuperInstance/podiumjs-rocks)
+- [polln](https://github.com/SuperInstance/polln)
 - [ptx-room](https://github.com/SuperInstance/ptx-room)
 - [superinstance-gpu-compute](https://github.com/SuperInstance/superinstance-gpu-compute)
 - [ternary-antidote](https://github.com/SuperInstance/ternary-antidote)
@@ -494,6 +495,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Multi Agent
 
+- [A2A-native-notebookLM](https://github.com/SuperInstance/A2A-native-notebookLM)
 - [Baton](https://github.com/SuperInstance/Baton)
 - [I](https://github.com/SuperInstance/I)
 - [Luma](https://github.com/SuperInstance/Luma)
@@ -502,7 +504,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [Spreadsheet-moment](https://github.com/SuperInstance/Spreadsheet-moment)
 - [SuperInstance](https://github.com/SuperInstance/SuperInstance)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
-- [agent-grid](https://github.com/SuperInstance/agent-grid)
 - [agent-handoff](https://github.com/SuperInstance/agent-handoff)
 - [agent-loop](https://github.com/SuperInstance/agent-loop)
 - [agent-orchestration](https://github.com/SuperInstance/agent-orchestration)
@@ -517,7 +518,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-matrix-rs](https://github.com/SuperInstance/conservation-matrix-rs)
 - [construct-core](https://github.com/SuperInstance/construct-core)
 - [crab](https://github.com/SuperInstance/crab)
-- [entropy-conservation-rs](https://github.com/SuperInstance/entropy-conservation-rs)
 - [ergodic-transport-rs](https://github.com/SuperInstance/ergodic-transport-rs)
 - [event-bus](https://github.com/SuperInstance/event-bus)
 - [evolutionary-strategy](https://github.com/SuperInstance/evolutionary-strategy)
@@ -698,6 +698,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-orchestra](https://github.com/SuperInstance/fleet-orchestra)
 - [fleet-osc-server](https://github.com/SuperInstance/fleet-osc-server)
 - [fleet-phase](https://github.com/SuperInstance/fleet-phase)
+- [fleet-platform](https://github.com/SuperInstance/fleet-platform)
 - [fleet-predict](https://github.com/SuperInstance/fleet-predict)
 - [fleet-proto](https://github.com/SuperInstance/fleet-proto)
 - [fleet-proto-rs](https://github.com/SuperInstance/fleet-proto-rs)
@@ -728,6 +729,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-types](https://github.com/SuperInstance/fleet-types)
 - [fleet-voice-leader](https://github.com/SuperInstance/fleet-voice-leader)
 - [fleet-warden-rs](https://github.com/SuperInstance/fleet-warden-rs)
+- [fleet-weather](https://github.com/SuperInstance/fleet-weather)
 - [fleet-yaw](https://github.com/SuperInstance/fleet-yaw)
 - [flux](https://github.com/SuperInstance/flux)
 - [flux-compiler-agentic](https://github.com/SuperInstance/flux-compiler-agentic)
@@ -1025,6 +1027,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-voice](https://github.com/SuperInstance/plato-voice)
 - [plato-workflow](https://github.com/SuperInstance/plato-workflow)
 - [playerlog-agent](https://github.com/SuperInstance/playerlog-agent)
+- [polln](https://github.com/SuperInstance/polln)
 - [polychora-temporal](https://github.com/SuperInstance/polychora-temporal)
 - [prophet-agent](https://github.com/SuperInstance/prophet-agent)
 - [purplepincher-shell-library](https://github.com/SuperInstance/purplepincher-shell-library)
@@ -1463,6 +1466,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-window](https://github.com/SuperInstance/plato-window)
 - [plato-workflow](https://github.com/SuperInstance/plato-workflow)
 - [playerlog-agent](https://github.com/SuperInstance/playerlog-agent)
+- [polln](https://github.com/SuperInstance/polln)
 - [ptx-room](https://github.com/SuperInstance/ptx-room)
 - [room-lifecycle](https://github.com/SuperInstance/room-lifecycle)
 - [room-micro-models](https://github.com/SuperInstance/room-micro-models)
@@ -1565,8 +1569,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [Scrapcraft](https://github.com/SuperInstance/Scrapcraft)
 - [SubForge](https://github.com/SuperInstance/SubForge)
 - [a2ui](https://github.com/SuperInstance/a2ui)
-- [activelog-claude](https://github.com/SuperInstance/activelog-claude)
-- [actualization-harbor](https://github.com/SuperInstance/actualization-harbor)
+- [activelog-ai](https://github.com/SuperInstance/activelog-ai)
 - [carry-protocol](https://github.com/SuperInstance/carry-protocol)
 - [chart-system](https://github.com/SuperInstance/chart-system)
 - [claw](https://github.com/SuperInstance/claw)
@@ -1580,9 +1583,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [edge-weight](https://github.com/SuperInstance/edge-weight)
 - [eigenpy](https://github.com/SuperInstance/eigenpy)
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
-- [emotional-colorist](https://github.com/SuperInstance/emotional-colorist)
-- [entropy-code](https://github.com/SuperInstance/entropy-code)
-- [entropy-production](https://github.com/SuperInstance/entropy-production)
 - [ergodic-theory](https://github.com/SuperInstance/ergodic-theory)
 - [ergodic-transport-c](https://github.com/SuperInstance/ergodic-transport-c)
 - [evo-rs](https://github.com/SuperInstance/evo-rs)
@@ -2409,6 +2409,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tick-engine-v2](https://github.com/SuperInstance/tick-engine-v2)
 - [tiny-ecs](https://github.com/SuperInstance/tiny-ecs)
 - [tminus-music](https://github.com/SuperInstance/tminus-music)
+- [tminus-os](https://github.com/SuperInstance/tminus-os)
 - [token-stream](https://github.com/SuperInstance/token-stream)
 - [token-wavelet](https://github.com/SuperInstance/token-wavelet)
 - [tools](https://github.com/SuperInstance/tools)
@@ -2457,6 +2458,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Voice Signature
 
+- [activelog-app](https://github.com/SuperInstance/activelog-app)
+- [fishinglog-ai](https://github.com/SuperInstance/fishinglog-ai)
 - [fleet-midi-weave](https://github.com/SuperInstance/fleet-midi-weave)
 - [fleet-voice-leader](https://github.com/SuperInstance/fleet-voice-leader)
 - [handy-marine-voice](https://github.com/SuperInstance/handy-marine-voice)
