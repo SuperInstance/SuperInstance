@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-19 07:27 UTC
+**Generated:** 2026-07-20 08:06 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -508,6 +508,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [agent-loop](https://github.com/SuperInstance/agent-loop)
 - [agent-orchestration](https://github.com/SuperInstance/agent-orchestration)
 - [baton-protocol](https://github.com/SuperInstance/baton-protocol)
+- [boat-agent](https://github.com/SuperInstance/boat-agent)
 - [capitaine-1](https://github.com/SuperInstance/capitaine-1)
 - [casting-call](https://github.com/SuperInstance/casting-call)
 - [categorical-agents](https://github.com/SuperInstance/categorical-agents)
@@ -518,8 +519,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-matrix-rs](https://github.com/SuperInstance/conservation-matrix-rs)
 - [construct-core](https://github.com/SuperInstance/construct-core)
 - [crab](https://github.com/SuperInstance/crab)
-- [ergodic-transport-rs](https://github.com/SuperInstance/ergodic-transport-rs)
-- [event-bus](https://github.com/SuperInstance/event-bus)
 - [evolutionary-strategy](https://github.com/SuperInstance/evolutionary-strategy)
 - [evolving-sheaf-rs](https://github.com/SuperInstance/evolving-sheaf-rs)
 - [exocortex](https://github.com/SuperInstance/exocortex)
@@ -1030,6 +1029,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [polln](https://github.com/SuperInstance/polln)
 - [polychora-temporal](https://github.com/SuperInstance/polychora-temporal)
 - [prophet-agent](https://github.com/SuperInstance/prophet-agent)
+- [provenance-log](https://github.com/SuperInstance/provenance-log)
 - [purplepincher-shell-library](https://github.com/SuperInstance/purplepincher-shell-library)
 - [random-walk-agent](https://github.com/SuperInstance/random-walk-agent)
 - [reallog-agent](https://github.com/SuperInstance/reallog-agent)
@@ -1183,6 +1183,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)
 - [topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)
 - [tripartite-room](https://github.com/SuperInstance/tripartite-room)
+- [tzpro-agent](https://github.com/SuperInstance/tzpro-agent)
 - [vector-novelty](https://github.com/SuperInstance/vector-novelty)
 - [vessel-prototype](https://github.com/SuperInstance/vessel-prototype)
 - [vibe-graph](https://github.com/SuperInstance/vibe-graph)
@@ -1226,6 +1227,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
+- [boat-agent](https://github.com/SuperInstance/boat-agent)
 - [chart-room](https://github.com/SuperInstance/chart-room)
 - [cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)
 - [conformance-service](https://github.com/SuperInstance/conformance-service)
@@ -1537,6 +1539,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Sonar
 
+- [boat-agent](https://github.com/SuperInstance/boat-agent)
 - [fleet-constraint-kernel](https://github.com/SuperInstance/fleet-constraint-kernel)
 - [openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)
 - [plato-sonar-text](https://github.com/SuperInstance/plato-sonar-text)
@@ -1563,7 +1566,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [.github](https://github.com/SuperInstance/.github)
 - [AI-Writings](https://github.com/SuperInstance/AI-Writings)
 - [CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)
-- [ESP-Flasher](https://github.com/SuperInstance/ESP-Flasher)
 - [ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)
 - [OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)
 - [Scrapcraft](https://github.com/SuperInstance/Scrapcraft)
@@ -1583,8 +1585,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [edge-weight](https://github.com/SuperInstance/edge-weight)
 - [eigenpy](https://github.com/SuperInstance/eigenpy)
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
-- [ergodic-theory](https://github.com/SuperInstance/ergodic-theory)
-- [ergodic-transport-c](https://github.com/SuperInstance/ergodic-transport-c)
 - [evo-rs](https://github.com/SuperInstance/evo-rs)
 - [evolving-sheaf-c](https://github.com/SuperInstance/evolving-sheaf-c)
 - [exocortex-ast-cpp](https://github.com/SuperInstance/exocortex-ast-cpp)
@@ -1684,6 +1684,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [harmonic-analysis](https://github.com/SuperInstance/harmonic-analysis)
 - [harmonic-plr-rs](https://github.com/SuperInstance/harmonic-plr-rs)
 - [hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)
+- [hermes-memory-mcp](https://github.com/SuperInstance/hermes-memory-mcp)
 - [hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)
 - [hoare-logic](https://github.com/SuperInstance/hoare-logic)
 - [hodge-belief](https://github.com/SuperInstance/hodge-belief)
@@ -1967,6 +1968,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [partition-tolerance](https://github.com/SuperInstance/partition-tolerance)
 - [pedigree](https://github.com/SuperInstance/pedigree)
 - [penrose-lattice](https://github.com/SuperInstance/penrose-lattice)
+- [perception-cascade](https://github.com/SuperInstance/perception-cascade)
 - [persistence-landscape](https://github.com/SuperInstance/persistence-landscape)
 - [personallog-ai-pages](https://github.com/SuperInstance/personallog-ai-pages)
 - [pid-control](https://github.com/SuperInstance/pid-control)
@@ -2099,6 +2101,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [spectral-mechanics](https://github.com/SuperInstance/spectral-mechanics)
 - [spectral-spreadsheet](https://github.com/SuperInstance/spectral-spreadsheet)
 - [spectral-transport](https://github.com/SuperInstance/spectral-transport)
+- [spectro](https://github.com/SuperInstance/spectro)
 - [spline-midi-smooth](https://github.com/SuperInstance/spline-midi-smooth)
 - [spline-spectral](https://github.com/SuperInstance/spline-spectral)
 - [spreadsheet-conservation-wasm](https://github.com/SuperInstance/spreadsheet-conservation-wasm)
@@ -2409,7 +2412,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tick-engine-v2](https://github.com/SuperInstance/tick-engine-v2)
 - [tiny-ecs](https://github.com/SuperInstance/tiny-ecs)
 - [tminus-music](https://github.com/SuperInstance/tminus-music)
-- [tminus-os](https://github.com/SuperInstance/tminus-os)
 - [token-stream](https://github.com/SuperInstance/token-stream)
 - [token-wavelet](https://github.com/SuperInstance/token-wavelet)
 - [tools](https://github.com/SuperInstance/tools)
