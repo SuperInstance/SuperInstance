@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-07-20 08:06 UTC
+**Generated:** 2026-07-21 07:33 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -459,6 +459,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[topological-flow](https://github.com/SuperInstance/topological-flow)** | Oracle1 | Persistent homology for flow networks: Vietoris-Rips filtration, Betti numbers, bottleneck distance, | 🟢 active |
 | **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** | Forgemaster | Real-time anomaly detection on fleet coordination topology | 🟢 active |
 | **[topology-bench](https://github.com/SuperInstance/topology-bench)** | Forgemaster | CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem | 🟢 active |
+| **[VaaS](https://github.com/SuperInstance/VaaS)** | Forgemaster | VaaS Resonance Substrate — multi-agent cognitive architecture for vessel-as-a-robot systems. Seven p | 🟢 active |
 | **[vessel-prototype](https://github.com/SuperInstance/vessel-prototype)** | Forgemaster | Agent/Vessel separation prototype — fleet-wide agent scheduling, migration, and capability scoring | 🟢 active |
 | **[whisper-sync](https://github.com/SuperInstance/whisper-sync)** | Oracle1 | Rust CLI/crate bridging Murmurer ambient whisper protocol to PLATO room infrastructure — short, ambi | 🟢 active |
 | **[witness-topology](https://github.com/SuperInstance/witness-topology)** | Forgemaster | Witness topology for multi-agent verification: witness complexes from point clouds, topological infe | 🟢 active |
@@ -643,7 +644,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[eigenpy](https://github.com/SuperInstance/eigenpy)** | Various | Bindings between Numpy and Eigen using Boost.Python | ⚪ unknown |
 | **[email-oracle](https://github.com/SuperInstance/email-oracle)** | Various | Incoming email to Oracle relay event pipeline | ⚪ unknown |
 | **[emergency-alerts](https://github.com/SuperInstance/emergency-alerts)** | Various | Outage and incident status for SuperInstance infrastructure | ⚪ unknown |
-| **[evo-rs](https://github.com/SuperInstance/evo-rs)** | Various | Evolutionary computation in Rust — GA, DE, NSGA-II, GP | ⚪ unknown |
 | **[evolutionary-strategy](https://github.com/SuperInstance/evolutionary-strategy)** | Various | Evolution strategies for agent parameter optimization — population, mutation, recombination, selecti | 🟢 active |
 | **[evolving-sheaf-c](https://github.com/SuperInstance/evolving-sheaf-c)** | Various | Spectral Gap Dynamics in Evolving Cellular Sheaves — when a theorem fails, the failure is more inter | ⚪ unknown |
 | **[evolving-sheaf-rs](https://github.com/SuperInstance/evolving-sheaf-rs)** | Various | Evolving sheaf structures in Rust — part of the SuperInstance fleet for distributed cognitive agent  | 🟢 active |
@@ -5136,6 +5136,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
+### [VaaS](https://github.com/SuperInstance/VaaS)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** VaaS Resonance Substrate — multi-agent cognitive architecture for vessel-as-a-robot systems. Seven pillars. One Operator Field.
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 

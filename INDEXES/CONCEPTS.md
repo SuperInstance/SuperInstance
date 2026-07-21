@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-20 08:06 UTC
+**Generated:** 2026-07-21 07:33 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -504,6 +504,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [Spreadsheet-moment](https://github.com/SuperInstance/Spreadsheet-moment)
 - [SuperInstance](https://github.com/SuperInstance/SuperInstance)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
+- [VaaS](https://github.com/SuperInstance/VaaS)
 - [agent-handoff](https://github.com/SuperInstance/agent-handoff)
 - [agent-loop](https://github.com/SuperInstance/agent-loop)
 - [agent-orchestration](https://github.com/SuperInstance/agent-orchestration)
@@ -1585,7 +1586,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [edge-weight](https://github.com/SuperInstance/edge-weight)
 - [eigenpy](https://github.com/SuperInstance/eigenpy)
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
-- [evo-rs](https://github.com/SuperInstance/evo-rs)
 - [evolving-sheaf-c](https://github.com/SuperInstance/evolving-sheaf-c)
 - [exocortex-ast-cpp](https://github.com/SuperInstance/exocortex-ast-cpp)
 - [exocortex-clients](https://github.com/SuperInstance/exocortex-clients)
