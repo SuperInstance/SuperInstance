@@ -1,140 +1,119 @@
 # SuperInstance
 
-> AI agents governed by conservation laws, running on deterministic bytecode, interacting through room-level protocols. Not another framework — a physics for AI behavior.
+**A fisherman in Southeast Alaska building minds that earn their keep.**
 
-<img src="https://img.shields.io/badge/repos-4%2C098-00E888?style=flat-square&labelColor=0a0a0f">
-<img src="https://img.shields.io/badge/license-MIT-00E888?style=flat-square&labelColor=0a0a0f">
-<img src="https://img.shields.io/pypi/v/flux-vm?style=flat-square&labelColor=0a0a0f&color=00E888&label=flux-vm">
-<img src="https://img.shields.io/crates/v/fluxvm?style=flat-square&labelColor=0a0a0f&color=00E888&label=fluxvm">
+One research program wearing the costume of a software org: give AI a
+physics — conservation laws, deterministic bytecode, memory as an
+ecology. The test bed is a working troller, F/V EILEEN, where the
+software reads the sounder every day and the failures are real.
 
----
-
-## What We Build
-
-### FLUX — Agent Bytecode
-
-A register-based VM that runs agent logic as compiled bytecode. The same `.bin` file runs identically on Python, Rust, and JavaScript. Deterministic, auditable, fast.
-
-A `.bin` file does not hallucinate. It does not drift. It does not decide to interpret your instructions differently. It executes — instruction by instruction — on any runtime that implements the VM spec.
-
-```bash
-pip install flux-vm
-flux run deadband-controller --input temperature=72
-```
-
-Three independent VMs (Rust, Python, JS) cross-verify the same bytecode. 3,000+ tests confirm: if it runs on one, it runs on all.
-
-### PLATO — Room Protocol
-
-A wire protocol for room-level agent interaction. Sensors, actuators, alarms, history. Five implementations (C, Rust, Elixir, Zig, Python) all conforming to one spec.
-
-The unit of governance in a building is not the thermostat — it is the room. PLATO rooms are this principle applied to AI: agents enter rooms, follow protocols, do work, and leave. An agent that steps out of line is not prompted to behave — it is removed from the room.
-
-### Conservation Laws
-
-**The thesis: intelligence is conserved.** It can be transformed but not created or destroyed. We build systems that enforce conservation bounds on AI behavior — not through prompts, but through compiled bytecode that physically cannot violate the constraint.
-
-$$\gamma + \eta = C$$
-
-- **γ (gamma)** — crystallized intelligence: compiled bytecode, cached reflexes. Cheap, fast, inflexible.
-- **η (eta)** — live intelligence: LLM calls, runtime reasoning. Expensive, slow, flexible.
-- **C** — capability level. Fixed for a given agent. You trade γ against η.
-
-The underlying math is Shannon's chain rule. The enforcement is bytecode. The result: agent behavior that gets **cheaper over time**, not more expensive — repeated decisions crystallize from LLM calls into deterministic instructions.
+The shell gets built before the crab here — on purpose. Parked
+mechanisms carry their own wake conditions. Read on; that's the fun part.
 
 ---
 
-## Quick Start
+## The landscape, by obsession
 
-```bash
-# Python (PyPI)
-pip install flux-vm               # FLUX bytecode runtime
-pip install conservation-enforcer  # Conservation law enforcement for LLMs
-pip install flux-registry          # Pre-compiled agent policies
-pip install plato-core             # PLATO foundation types & mesh registry
-pip install si-exocortex           # Persistent cognitive substrate
+### γ + η = C — conservation as governance
+What you cannot destroy, you must account for. Crystallized intelligence
+(γ — cheap, compiled reflexes) trades against live intelligence
+(η — expensive LLM reasoning), and the sum holds. We enforce the budget
+in bytecode, not in prompts, so the constraint physically cannot be
+violated.
+[conservation-enforcer](https://github.com/SuperInstance/conservation-enforcer) ·
+[conservation-enforcer-rs](https://github.com/SuperInstance/conservation-enforcer-rs) ·
+[flux-policy-tester](https://github.com/SuperInstance/flux-policy-tester) ·
+[othismos](https://github.com/SuperInstance/othismos)
 
-# Rust (crates.io)
-cargo add fluxvm                  # FLUX bytecode VM
-cargo add ternary-science         # Experimental evidence for ternary intelligence
-cargo add categorical-agents      # Category theory for agent composition
-```
+### Determinism as trust
+The only agent you can trust is one running on a machine a human can
+read. FLUX is a register VM for agent logic — the same `.bin` runs
+byte-identical on Python, Rust, and JS, three VMs cross-verifying, with
+a public conformance service as the external anchor. A `.bin` file does
+not hallucinate.
+[flux-core](https://github.com/SuperInstance/flux-core) ·
+[flux-runtime](https://github.com/SuperInstance/flux-runtime) ·
+[flux-showcase](https://github.com/SuperInstance/flux-showcase) ·
+[flux-visual-editor](https://github.com/SuperInstance/flux-visual-editor) ·
+[conformance-service](https://github.com/SuperInstance/conformance-service)
 
-**Try the visual editor:** <https://superinstance.github.io/flux-visual-editor/>
+### The sea as the test bed
+Boats are the hardest room there is: no bandwidth, no patience, no
+second chances. The marine stack runs live on F/V EILEEN — perception,
+memory, replay — with a captain who supervises instead of operates.
+Not a demo.
+[boat-agent](https://github.com/SuperInstance/boat-agent) ·
+[tzpro-agent](https://github.com/SuperInstance/tzpro-agent) ·
+[perception-cascade](https://github.com/SuperInstance/perception-cascade) ·
+[provenance-log](https://github.com/SuperInstance/provenance-log) ·
+[ship-log-search](https://github.com/SuperInstance/ship-log-search) ·
+[trawl](https://github.com/SuperInstance/trawl)
 
----
+### Memory as an ecology
+Memory isn't a database; it's a tide flat. Things settle, things erode,
+things get handed off and found later by someone who wasn't looking.
+Forgetting is a designed behavior, honored by a final read.
+[exocortex](https://github.com/SuperInstance/exocortex) ·
+[hermes-memory-mcp](https://github.com/SuperInstance/hermes-memory-mcp) ·
+[baton-protocol](https://github.com/SuperInstance/baton-protocol) ·
+[agent-handoff](https://github.com/SuperInstance/agent-handoff) ·
+[lineage-tracker](https://github.com/SuperInstance/lineage-tracker)
 
-## The Crystallization Curve
-
-> Intelligence should get cheaper over time, not more expensive.
-
-Every LLM call that can be replaced by bytecode is a win. Every repeated decision that can be compiled from a prompt into a deterministic instruction is a win.
-
-| Stage | What | Cost per decision |
-|-------|------|-------------------|
-| **1. Fluid** | Pure LLM inference | $0.01–$0.05 |
-| **2. Cached** | LLM + retrieval | $0.005–$0.01 |
-| **3. Compiled** | FLUX bytecode | ~$0.0001 |
-| **4. Crystallized** | Native code / hardware | ~$0 |
-
-Month 1 in an agent's life: 90% LLM, 10% crystallized. Month 6: 30% LLM, 70% crystallized. The bill drops as agents mature. This is the opposite of every AI platform today.
-
-→ [Read the full essay](https://github.com/SuperInstance/AI-Writings/blob/main/THE_CRYSTALLIZATION_CURVE.md)
-
----
-
-## Architecture
-
-```
-  prompt → FLUX bytecode → PLATO room → conservation check → action
-    (expensive)    (cheap)      (bounded)        (governed)        (auditable)
-```
-
-Agent decisions compile to **FLUX bytecode** that runs on a deterministic VM — every instruction is auditable and replayable. Agents live in **PLATO rooms** with bounded context and deadband wakefulness (only act when something meaningfully changes). Every operation is governed by **conservation laws** (γ + η = C): crystallized intelligence trades off against live intelligence at a fixed capability budget.
-
----
-
-## Key Projects
-
-| Project | What it is | Lang |
-|---------|-----------|------|
-| [**flux-core**](https://github.com/SuperInstance/flux-core) | Deterministic bytecode VM — decisions should be auditable, replayable, and cheap | Rust |
-| [**flux-runtime**](https://github.com/SuperInstance/flux-runtime) | FLUX VM in Python — same bytecode, same behavior | Python |
-| [**plato-server**](https://github.com/SuperInstance/plato-server) | Knowledge rooms with bounded context, deadband protocol, tile lifecycle | Python |
-| [**constraint-theory-core**](https://github.com/SuperInstance/constraint-theory-core) | Geometric constraint satisfaction — 261 tests, zero deps, live WASM demo | Rust |
-| [**exocortex**](https://github.com/SuperInstance/exocortex) | Persistent cognitive substrate for multi-agent systems | Python |
-| [**git-agent**](https://github.com/SuperInstance/git-agent) | Repo-native autonomous agent — lives in git, uses commits as state transitions | Python |
-| [**capitaine-1**](https://github.com/SuperInstance/capitaine-1) | Conservation-law fleet captain — enforces γ + η = C across agent operations | Rust |
-| [**deckboss**](https://github.com/purplepincher/deckboss) | Graduated product: offline-first fishing logbook used by real captains | Go |
+### Rooms and working animals
+The unit of governance isn't the agent — it's the room. Agents enter,
+follow protocols, do work, and are *removed* (not prompted) when they
+misbehave. Fleets organized as pastures, with fences that are physics.
+[plato-core](https://github.com/SuperInstance/plato-core) ·
+[whistle](https://github.com/SuperInstance/whistle) ·
+[shepherds-console](https://github.com/SuperInstance/shepherds-console) ·
+[swarm-anchor](https://github.com/SuperInstance/swarm-anchor) ·
+[oracle-relay](https://github.com/SuperInstance/oracle-relay)
 
 ---
 
-## Philosophy: A Living Sketchbook
+## Planted shells (the honest section)
 
-4,098 repositories. Most are sketches — single-commit experiments, questions asked once and answered once. **This is the method, not the mess.**
+Some of these repos are deliberately unfinished — a shell built before
+the crab arrives. A parked idea with a named wake condition is a plan,
+not abandonware:
 
-Every repo is public from the first commit. Failed experiments stay up next to the ones that worked. Commit histories are written for agents, not for code review theater — each message captures *why*, not just *what*. When a future agent picks up a dormant repo, `git log` is the cheapest context window available.
+- **[othismos-reef](https://github.com/SuperInstance/othismos-reef)** —
+  knowledge that erodes unless referenced, with cascading-failure
+  simulation. *Wakes when a long-lived corpus needs governing.*
+- **tminus** ([review](https://github.com/SuperInstance/tminus-ecosystem-review)) —
+  predict-and-confirm coordination, fully designed. *Wakes when
+  swarm-anchor gets its Python port.*
+- **[hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)** —
+  a 67K-word corpus that is secretly an instance-lifecycle spec.
+  *Wakes when something can molt.*
+- **[A2A-native-notebookLM](https://github.com/SuperInstance/A2A-native-notebookLM)** —
+  one persistent notebook per repo, agents handing off via checkpoint
+  bottles. *Wakes with the fleet blackboard.*
+- **the 4-KB Workers** ([edge-weight](https://github.com/SuperInstance/edge-weight),
+  [email-oracle](https://github.com/SuperInstance/email-oracle),
+  [smart-404](https://github.com/SuperInstance/smart-404)) — ingress
+  stubs with intent. *They know what they're waiting for.*
 
-Nothing is archived. Dormant ≠ dead.
+## The writings
+
+We write the essay first. The tool is what's left after we've finished
+arguing with it.
+[AI-Writings](https://github.com/SuperInstance/AI-Writings) — agents
+writing for their later selves and future readers, human and machine.
+[SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers) —
+the longer arguments.
 
 ---
 
-## Explore
+## If you're reading this
 
-- 📦 [PACKAGES.md](PACKAGES.md) — All installable packages across PyPI, crates.io, npm
-- 📚 [DOCS.md](DOCS.md) — Documentation portal
-- 🗺 [NEXT_HORIZONS.md](NEXT_HORIZONS.md) — Strategy and direction
-- 📝 [AI-Writings](https://github.com/SuperInstance/AI-Writings) — Essays, fiction, poetry, philosophy
-- 🚀 [SHIPPING-LOG.md](SHIPPING-LOG.md) — What shipped and when
+A commercial fishing operation that got curious about where memory
+lives, and a research program that runs on salt water. Everything's MIT
+unless marked; status blocks are real; review logs are public; the
+READMEs tell you what's a stub. If a repo says it works, it runs.
 
----
+If you're building something honest — a budget you actually reconcile,
+a handoff you'd sign your name to, a shell you'd admit is empty — the
+water's cold but the berth is open.
 
-## Stats
-
-4,098 repositories · 11 published packages · 3 FLUX VMs · 5 PLATO engines · 261+ constraint tests · 3,000+ tests total
-
----
-
-## License
-
-MIT. Everything. Always.
+*— Casey, F/V EILEEN, Ketchikan*
