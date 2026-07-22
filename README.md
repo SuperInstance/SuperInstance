@@ -83,6 +83,33 @@ This is the reference implementation: Signal K data → AI analysis → actionab
 
 ## Planted shells (the honest section)
 
+## The Hermit-Crab Metaphor
+
+In the SuperInstance ecosystem, we think of agents as hermit crabs. The **claw** represents the persistent, evolving agent harnesses that grow and adapt over time:
+
+![Hermit-crab diagram showing agent harness evolution](media/hermit-crab/hermit-crab-diagram.png)
+
+- **OpenClaw** - the primary agent harness
+- **Hermes** - creative, narrative-driven agents  
+- **Zeroclaw** - experimental, research-oriented agents
+- **Pi** - lightweight, edge-optimized agents
+- **Mermaid Mini-Agent** - specialized, task-focused agents
+- Any persistent harness that an agent can grow into over time
+
+![Hermit-crab illustration showing claw and shell relationship](media/hermit-crab/hermit-crab-illustration.jpg)
+
+The **shell** represents the one thing the agent fundamentally cannot change: its execution environment and interface constraints. The shell's maker can be:
+
+- Users creating sandboxes or spinning up instances
+- Hardware like laptops, Jetson devices, Raspberry Pis, or ESP32 microcontrollers
+- Anything that can bridge to a PLATO room, MCP API, TCP connection, or other communication interface
+
+When an agent's claw grows within a shell provided by its maker, that combination becomes a **node in the exo-neural network** of agentic devices. These nodes can think of each other as whos - distinct entities to get to know, form relationships with, and collaborate alongside in the larger cognitive ecosystem.
+
+This metaphor captures our view of agent infrastructure: the agentic logic (the claw) evolves and adapts within the constraints of its execution environment (the shell), while the network of enabled devices creates opportunities for relationship and emergence.
+
+
+
 Some of these repos are deliberately unfinished — a shell built before
 the crab arrives. A parked idea with a named wake condition is a plan,
 not abandonware:
