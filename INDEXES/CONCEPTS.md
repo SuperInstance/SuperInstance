@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-21 07:33 UTC
+**Generated:** 2026-07-22 07:34 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -505,12 +505,14 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [SuperInstance](https://github.com/SuperInstance/SuperInstance)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
 - [VaaS](https://github.com/SuperInstance/VaaS)
+- [able-bodied-crew](https://github.com/SuperInstance/able-bodied-crew)
 - [agent-handoff](https://github.com/SuperInstance/agent-handoff)
 - [agent-loop](https://github.com/SuperInstance/agent-loop)
 - [agent-orchestration](https://github.com/SuperInstance/agent-orchestration)
 - [baton-protocol](https://github.com/SuperInstance/baton-protocol)
 - [boat-agent](https://github.com/SuperInstance/boat-agent)
 - [capitaine-1](https://github.com/SuperInstance/capitaine-1)
+- [cartographer](https://github.com/SuperInstance/cartographer)
 - [casting-call](https://github.com/SuperInstance/casting-call)
 - [categorical-agents](https://github.com/SuperInstance/categorical-agents)
 - [cocapn-browser-agent](https://github.com/SuperInstance/cocapn-browser-agent)
@@ -520,8 +522,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-matrix-rs](https://github.com/SuperInstance/conservation-matrix-rs)
 - [construct-core](https://github.com/SuperInstance/construct-core)
 - [crab](https://github.com/SuperInstance/crab)
-- [evolutionary-strategy](https://github.com/SuperInstance/evolutionary-strategy)
-- [evolving-sheaf-rs](https://github.com/SuperInstance/evolving-sheaf-rs)
 - [exocortex](https://github.com/SuperInstance/exocortex)
 - [exocortex-fleet-chapel](https://github.com/SuperInstance/exocortex-fleet-chapel)
 - [exocortex-rs](https://github.com/SuperInstance/exocortex-rs)
@@ -1582,13 +1582,11 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-art](https://github.com/SuperInstance/conservation-art)
 - [conservation-cli](https://github.com/SuperInstance/conservation-cli)
 - [conservation-rhythm-rs](https://github.com/SuperInstance/conservation-rhythm-rs)
+- [deckhand-rs](https://github.com/SuperInstance/deckhand-rs)
 - [domain-landing](https://github.com/SuperInstance/domain-landing)
 - [edge-weight](https://github.com/SuperInstance/edge-weight)
 - [eigenpy](https://github.com/SuperInstance/eigenpy)
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
-- [evolving-sheaf-c](https://github.com/SuperInstance/evolving-sheaf-c)
-- [exocortex-ast-cpp](https://github.com/SuperInstance/exocortex-ast-cpp)
-- [exocortex-clients](https://github.com/SuperInstance/exocortex-clients)
 - [exocortex-embed-mojo](https://github.com/SuperInstance/exocortex-embed-mojo)
 - [exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)
 - [exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)
@@ -1605,6 +1603,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fencecraft](https://github.com/SuperInstance/fencecraft)
 - [fft-core](https://github.com/SuperInstance/fft-core)
 - [fft-rs](https://github.com/SuperInstance/fft-rs)
+- [fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)
 - [fibonacci-growth](https://github.com/SuperInstance/fibonacci-growth)
 - [fiedler-universal](https://github.com/SuperInstance/fiedler-universal)
 - [field-evolution-early-version](https://github.com/SuperInstance/field-evolution-early-version)
@@ -2058,6 +2057,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [si-compaction-poc](https://github.com/SuperInstance/si-compaction-poc)
 - [si-conservation-python](https://github.com/SuperInstance/si-conservation-python)
 - [si-conservation-wasm](https://github.com/SuperInstance/si-conservation-wasm)
+- [si-exocortex-rs](https://github.com/SuperInstance/si-exocortex-rs)
 - [si-fibration-timing](https://github.com/SuperInstance/si-fibration-timing)
 - [si-geometric-demo](https://github.com/SuperInstance/si-geometric-demo)
 - [si-runtime-go](https://github.com/SuperInstance/si-runtime-go)
