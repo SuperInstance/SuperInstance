@@ -71,6 +71,16 @@ misbehave. Fleets organized as pastures, with fences that are physics.
 
 ---
 
+## Proof of Concept: AI Sonar Analysis
+
+The wheelhouse inference, running live. A chatbot analyzes a full day of sounder data — 273 chum-predicted blobs across a north-south track in Clarence Strait, Southeast Alaska — and pinpoints where the biomass concentrates:
+
+![AI chatbot analyzing sonar data on a fishing boat, identifying peak chum salmon biomass concentration](assets/profile/sonar-ai-poc.jpg)
+
+The bot processed the day's track (12:39–17:00 UTC), found peak mid-water intensity at **55°47.272'N / 131°40.853'W** (74.5/255 at 17:00 vs 59.8 at 12:40), and identified the highest chum concentration at **32–46 fathoms** near the southern end of the track. Speed over ground: 1.3–2.0 kts. Real boat, real data, real analysis — the edge agent earning its wattage.
+
+This is the reference implementation: Signal K data → AI analysis → actionable insight, all on a 12-volt system with intermittent connectivity.
+
 ## Planted shells (the honest section)
 
 Some of these repos are deliberately unfinished — a shell built before
