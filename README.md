@@ -12,6 +12,11 @@ mechanisms carry their own wake conditions. Read on; that's the fun part.
 
 ---
 
+
+## What We Build
+
+SuperInstance builds agent infrastructure governed by conservation laws — the principle that every mind, biological or synthetic, runs on a budget. Our work spans deterministic bytecode virtual machines, room-based agent operating systems, constraint theory, marine data systems, and lean tooling for the working-animal architecture. We validate everything against the reference implementation: a commercial fishing boat operating offline, wattage-constrained, and salt-air-corroded in the Gulf of Alaska.
+
 ## The landscape, by obsession
 
 ### γ + η = C — conservation as governance
