@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-22 07:34 UTC
+**Generated:** 2026-07-23 07:33 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -47,6 +47,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flux-hyperbolic-py](https://github.com/SuperInstance/flux-hyperbolic-py)
 - [lau-distributed-systems](https://github.com/SuperInstance/lau-distributed-systems)
 - [lau-palaver](https://github.com/SuperInstance/lau-palaver)
+- [palaver-math-rs](https://github.com/SuperInstance/palaver-math-rs)
 - [sheaf-agents-rs](https://github.com/SuperInstance/sheaf-agents-rs)
 - [si-hodge-consensus-demo](https://github.com/SuperInstance/si-hodge-consensus-demo)
 - [si-sheaf-gossip](https://github.com/SuperInstance/si-sheaf-gossip)
@@ -1587,7 +1588,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [edge-weight](https://github.com/SuperInstance/edge-weight)
 - [eigenpy](https://github.com/SuperInstance/eigenpy)
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
-- [exocortex-embed-mojo](https://github.com/SuperInstance/exocortex-embed-mojo)
 - [exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)
 - [exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)
 - [exocortex-memory-zig](https://github.com/SuperInstance/exocortex-memory-zig)
