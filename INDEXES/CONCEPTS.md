@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-24 07:31 UTC
+**Generated:** 2026-07-25 07:18 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -524,7 +524,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [construct-core](https://github.com/SuperInstance/construct-core)
 - [crab](https://github.com/SuperInstance/crab)
 - [exocortex](https://github.com/SuperInstance/exocortex)
-- [exocortex-fleet-chapel](https://github.com/SuperInstance/exocortex-fleet-chapel)
 - [exocortex-rs](https://github.com/SuperInstance/exocortex-rs)
 - [federation-protocol](https://github.com/SuperInstance/federation-protocol)
 - [fiber-category](https://github.com/SuperInstance/fiber-category)
@@ -1187,6 +1186,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tripartite-room](https://github.com/SuperInstance/tripartite-room)
 - [tzpro-agent](https://github.com/SuperInstance/tzpro-agent)
 - [vector-novelty](https://github.com/SuperInstance/vector-novelty)
+- [vessel-agent](https://github.com/SuperInstance/vessel-agent)
 - [vessel-prototype](https://github.com/SuperInstance/vessel-prototype)
 - [vibe-graph](https://github.com/SuperInstance/vibe-graph)
 - [warp](https://github.com/SuperInstance/warp)
@@ -1509,6 +1509,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Pythagorean48
 
 - [hex-lattice-explorer](https://github.com/SuperInstance/hex-lattice-explorer)
+- [holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)
 - [openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)
 - [pythagorean-quantize](https://github.com/SuperInstance/pythagorean-quantize)
 - [pythagorean48](https://github.com/SuperInstance/pythagorean48)
@@ -1590,7 +1591,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
 - [exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)
 - [exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)
-- [exocortex-memory-zig](https://github.com/SuperInstance/exocortex-memory-zig)
 - [exocortex-script-lua](https://github.com/SuperInstance/exocortex-script-lua)
 - [exocortex-wasm-runtime](https://github.com/SuperInstance/exocortex-wasm-runtime)
 - [exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)
@@ -2482,4 +2482,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)
 - [topo-sonata](https://github.com/SuperInstance/topo-sonata)
 - [voice-signature-tool](https://github.com/SuperInstance/voice-signature-tool)
+
+## Zhc
+
+- [holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)
 
