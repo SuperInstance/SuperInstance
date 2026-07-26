@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-25 07:18 UTC
+**Generated:** 2026-07-26 07:35 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1183,6 +1183,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)
 - [topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)
 - [topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)
+- [trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)
 - [tripartite-room](https://github.com/SuperInstance/tripartite-room)
 - [tzpro-agent](https://github.com/SuperInstance/tzpro-agent)
 - [vector-novelty](https://github.com/SuperInstance/vector-novelty)
@@ -1233,7 +1234,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [chart-room](https://github.com/SuperInstance/chart-room)
 - [cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)
 - [conformance-service](https://github.com/SuperInstance/conformance-service)
-- [exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)
 - [federation-protocol](https://github.com/SuperInstance/federation-protocol)
 - [field-visualizer](https://github.com/SuperInstance/field-visualizer)
 - [fleet-chronicle](https://github.com/SuperInstance/fleet-chronicle)
@@ -1591,7 +1591,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
 - [exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)
 - [exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)
-- [exocortex-script-lua](https://github.com/SuperInstance/exocortex-script-lua)
 - [exocortex-wasm-runtime](https://github.com/SuperInstance/exocortex-wasm-runtime)
 - [exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)
 - [experiments](https://github.com/SuperInstance/experiments)
@@ -2427,6 +2426,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [venue-personality](https://github.com/SuperInstance/venue-personality)
 - [vessel](https://github.com/SuperInstance/vessel)
 - [vessel-constellation](https://github.com/SuperInstance/vessel-constellation)
+- [vessel-quest](https://github.com/SuperInstance/vessel-quest)
 - [vetcheck](https://github.com/SuperInstance/vetcheck)
 - [vibe-core](https://github.com/SuperInstance/vibe-core)
 - [vocabularies](https://github.com/SuperInstance/vocabularies)

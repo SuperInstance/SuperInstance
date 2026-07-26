@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-07-25 07:18 UTC
+**Generated:** 2026-07-26 07:35 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -548,6 +548,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-transfer](https://github.com/SuperInstance/ternary-transfer)** | JetsonClaw1 | ternary-transfer  Transfer learning for ternary agents — take knowledge learned in one environm... | 🟢 active |
 | **[ternary-zkp](https://github.com/SuperInstance/ternary-zkp)** | JetsonClaw1 | Zero-knowledge proofs over ternary fields GF(3^n) | 🟢 active |
 | **[the-plenum-early-version](https://github.com/SuperInstance/the-plenum-early-version)** | JetsonClaw1 | [ARCHIVED] Early knowledge field explorer. 4KB scaffolding only. | 🟢 active |
+| **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** | JetsonClaw1 | Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t | 🟢 active |
 | **[tzpro-agent](https://github.com/SuperInstance/tzpro-agent)** | JetsonClaw1 | First sensor node of the FishingLog.ai ecosystem. Watches the TZ Pro sounder, reads the bottom, lear | 🟢 active |
 | **[warp-vote-consensus](https://github.com/SuperInstance/warp-vote-consensus)** | JetsonClaw1 | GPU warp-vote hardware as agent consensus. 32-thread ballots → ternary voting → quorum tree → fleet  | 🟢 active |
 | **[zero-knowledge](https://github.com/SuperInstance/zero-knowledge)** | JetsonClaw1 | Zero-knowledge proof primitives: Schnorr, DLEQ, range proofs, sigma protocols, Fiat-Shamir | 🟢 active |
@@ -561,7 +562,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)** | CCC | CoCapn in WebAssembly — the browser tier. Same deadband, same PID, runs in Chrome. | 🟢 active |
 | **[cocapn-zig](https://github.com/SuperInstance/cocapn-zig)** | CCC | CoCapn in Zig — comptime safety for bare metal. Verify your deadbands before the boat leaves the doc | 🟢 active |
 | **[crab](https://github.com/SuperInstance/crab)** | CCC | Hermit crab agent shell — agents find repos, grow, move shells | 🟢 active |
-| **[exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)** | CCC | Minimal Python client for the exocortex — CircuitPython on ESP32. The ESP32 is the PLATO terminal. | 🟢 active |
 | **[fishinglog-ai-pages](https://github.com/SuperInstance/fishinglog-ai-pages)** | CCC | GitHub Pages for fishinglog.ai | 🟢 active |
 | **[flywheel](https://github.com/SuperInstance/flywheel)** | CCC | Extracted from forgemaster/flywheel — Cocapn fleet component | 🟢 active |
 | **[fm-experiments](https://github.com/SuperInstance/fm-experiments)** | CCC | Extracted from forgemaster/experiments — Cocapn fleet component | 🟢 active |
@@ -648,7 +648,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[emergency-alerts](https://github.com/SuperInstance/emergency-alerts)** | Various | Outage and incident status for SuperInstance infrastructure | ⚪ unknown |
 | **[exocortex](https://github.com/SuperInstance/exocortex)** | Various | 🧠 Persistent cognitive substrate for multi-agent systems — S3-compatible memory, shadow rendering, t | 🟢 active |
 | **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** | Various | Rust agent framework with conservation-law awareness | 🟢 active |
-| **[exocortex-script-lua](https://github.com/SuperInstance/exocortex-script-lua)** | Various | Lua 5.4 scripting interface for the exocortex system | ⚪ unknown |
 | **[exocortex-wasm-runtime](https://github.com/SuperInstance/exocortex-wasm-runtime)** | Various | Minimal C TAP protocol for WASM - zero heap allocation | ⚪ unknown |
 | **[ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)** | Various | Topological data analysis for the exocortex — proving multiple dispatch makes TDA readable and compo | ⚪ unknown |
 | **[exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)** | Various | NLopt-based motion solvers for the EXOTica framework — optimization-based inverse kinematics for rob | ⚪ unknown |
@@ -1996,6 +1995,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[vessel](https://github.com/SuperInstance/vessel)** | Various | Preserved workspace artifact | 🟢 active |
 | **[vessel-agent](https://github.com/SuperInstance/vessel-agent)** | Various | Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelli | 🟢 active |
 | **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** | Various | 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a | 🟢 active |
+| **[vessel-quest](https://github.com/SuperInstance/vessel-quest)** | Various | The boat is the game engine. The sea is the level designer. The logbook is the quest log. The scoreb | 🟢 active |
 | **[vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)** | Various | Your boat as a navigable 3D web space — ScummVM meets Google Street View. Walk rooms, warp instantly | 🟢 active |
 | **[vetcheck](https://github.com/SuperInstance/vetcheck)** | Various | Vetcheck: model health monitoring as veterinary care | ⚪ unknown |
 | **[vibe-core](https://github.com/SuperInstance/vibe-core)** | Various | 16-dim vibe embeddings — standalone but composable primitive for the Grand Pattern | ⚪ unknown |
@@ -5734,6 +5734,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K telemetry layer + WebSocket broadcaster).
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [tzpro-agent](https://github.com/SuperInstance/tzpro-agent)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -5794,13 +5801,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Web & Browser
 - **Vessel:** CCC
 - **Purpose:** Hermit crab agent shell — agents find repos, grow, move shells
-- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
-- **Status:** active
-
-### [exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)
-- **Domain:** Web & Browser
-- **Vessel:** CCC
-- **Purpose:** Minimal Python client for the exocortex — CircuitPython on ESP32. The ESP32 is the PLATO terminal.
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
@@ -8384,6 +8384,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, and Lagrange point detection
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [vessel-quest](https://github.com/SuperInstance/vessel-quest)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** The boat is the game engine. The sea is the level designer. The logbook is the quest log. The scoreboard for the game that was always being played on 
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

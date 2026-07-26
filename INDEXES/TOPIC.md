@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-07-25 07:18 UTC
+**Generated:** 2026-07-26 07:35 UTC
 **Total repos:** 2000
 
 ## A2A-Protocol
@@ -848,6 +848,7 @@
 - **[tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)** — Heavy architectural documentation of the SuperInstance T-Minus ecosystem (t-minus, t-minus-rs, tminu
 - **[topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)** — Advanced topological sorting with parallel, priority-aware, and incremental algorithms
 - **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** — Real-time anomaly detection on fleet coordination topology
+- **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** — Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t
 - **[tzpro-agent](https://github.com/SuperInstance/tzpro-agent)** — First sensor node of the FishingLog.ai ecosystem. Watches the TZ Pro sounder, reads the bottom, lear
 - **[VaaS](https://github.com/SuperInstance/VaaS)** — VaaS Resonance Substrate — multi-agent cognitive architecture for vessel-as-a-robot systems. Seven p
 - **[vector-novelty](https://github.com/SuperInstance/vector-novelty)** — Vector novelty detection — identifying novel patterns in high-dimensional agent embeddings
@@ -881,7 +882,6 @@
 
 - **[chart-room](https://github.com/SuperInstance/chart-room)** — The Chart Room — Four panels. Four perspectives. One truth.
 - **[cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)** — Keeper↔Fleet binary wire protocol — the nervous system of the Cocapn Fleet. msgpack-based message fr
-- **[exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)** — Minimal Python client for the exocortex — CircuitPython on ESP32. The ESP32 is the PLATO terminal.
 - **[federation-protocol](https://github.com/SuperInstance/federation-protocol)** — Minimum Viable Federation — coupling summaries between PLATO fleets
 - **[field-visualizer](https://github.com/SuperInstance/field-visualizer)** — Continuous field visualizer for PLATO knowledge space — see the negative space between tiles
 - **[fleet-chronicle](https://github.com/SuperInstance/fleet-chronicle)** — Universal reporting office for every agent in the fleet. Each agent gets a folder. Runs offline or a
@@ -1189,7 +1189,6 @@
 - **[email-oracle](https://github.com/SuperInstance/email-oracle)** — Incoming email to Oracle relay event pipeline
 - **[exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)** — ESP32 sensor node for Exocortex — reads analog sensors, POSTs to /tap/sense, recalls memories, gets 
 - **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** — TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n
-- **[exocortex-script-lua](https://github.com/SuperInstance/exocortex-script-lua)** — Lua 5.4 scripting interface for the exocortex system
 - **[exocortex-wasm-runtime](https://github.com/SuperInstance/exocortex-wasm-runtime)** — Minimal C TAP protocol for WASM - zero heap allocation
 - **[ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)** — Topological data analysis for the exocortex — proving multiple dispatch makes TDA readable and compo
 - **[exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)** — NLopt-based motion solvers for the EXOTica framework — optimization-based inverse kinematics for rob
@@ -2029,6 +2028,7 @@
 - **[venue-personality](https://github.com/SuperInstance/venue-personality)** — Venue personality modeling for SuperInstance spatial intelligence
 - **[vessel](https://github.com/SuperInstance/vessel)** — Preserved workspace artifact
 - **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** — 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a
+- **[vessel-quest](https://github.com/SuperInstance/vessel-quest)** — The boat is the game engine. The sea is the level designer. The logbook is the quest log. The scoreb
 - **[vetcheck](https://github.com/SuperInstance/vetcheck)** — Vetcheck: model health monitoring as veterinary care
 - **[vibe-core](https://github.com/SuperInstance/vibe-core)** — 16-dim vibe embeddings — standalone but composable primitive for the Grand Pattern
 - **[vocabularies](https://github.com/SuperInstance/vocabularies)** — Preserved workspace artifact

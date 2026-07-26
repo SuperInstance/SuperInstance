@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-07-25 07:18 UTC
+**Generated:** 2026-07-26 07:35 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -79,8 +79,6 @@
 - **[exocortex-kernel-c](https://github.com/SuperInstance/exocortex-kernel-c)** — Pure C99 ML kernel — neural networks, logistic regression, K-means, isolation forests with zero depe
 - **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** — TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n
 - **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** — Rust agent framework with conservation-law awareness
-- **[exocortex-script-lua](https://github.com/SuperInstance/exocortex-script-lua)** — Lua 5.4 scripting interface for the exocortex system
-- **[exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)** — Minimal Python client for the exocortex — CircuitPython on ESP32. The ESP32 is the PLATO terminal.
 - **[exocortex-wasm-runtime](https://github.com/SuperInstance/exocortex-wasm-runtime)** — Minimal C TAP protocol for WASM - zero heap allocation
 - **[ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)** — Topological data analysis for the exocortex — proving multiple dispatch makes TDA readable and compo
 - **[exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)** — NLopt-based motion solvers for the EXOTica framework — optimization-based inverse kinematics for rob
@@ -1953,6 +1951,7 @@
 - **[transfer-entropy](https://github.com/SuperInstance/transfer-entropy)** — transfer-entropy
 - **[trawl](https://github.com/SuperInstance/trawl)** — Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels 
 - **[treap-rs](https://github.com/SuperInstance/treap-rs)** — Treap with random priorities, split/merge operations, union, intersection, and order statistics
+- **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** — Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t
 - **[tripartite-room](https://github.com/SuperInstance/tripartite-room)** — Three innate agents per PLATO room: Ground Truth (physics), Constraint (engineer), Communication (di
 - **[tropical-algebra](https://github.com/SuperInstance/tropical-algebra)** — Tropical algebra (max-plus semiring) with spectral analysis, polynomial roots, and ReLU network equi
 - **[tropical-attention](https://github.com/SuperInstance/tropical-attention)** — Tropical attention — max-plus softmax, tropical transformer layers, Newton polytopes, piecewise-line
@@ -1975,6 +1974,7 @@
 - **[vessel-agent](https://github.com/SuperInstance/vessel-agent)** — Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelli
 - **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** — 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a
 - **[vessel-prototype](https://github.com/SuperInstance/vessel-prototype)** — Agent/Vessel separation prototype — fleet-wide agent scheduling, migration, and capability scoring
+- **[vessel-quest](https://github.com/SuperInstance/vessel-quest)** — The boat is the game engine. The sea is the level designer. The logbook is the quest log. The scoreb
 - **[vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)** — Your boat as a navigable 3D web space — ScummVM meets Google Street View. Walk rooms, warp instantly
 - **[vetcheck](https://github.com/SuperInstance/vetcheck)** — Vetcheck: model health monitoring as veterinary care
 - **[vibe-core](https://github.com/SuperInstance/vibe-core)** — 16-dim vibe embeddings — standalone but composable primitive for the Grand Pattern

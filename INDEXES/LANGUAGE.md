@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-07-25 07:18 UTC
+**Generated:** 2026-07-26 07:35 UTC
 **Total repos:** 2000
 
 ## C
@@ -296,7 +296,6 @@
 - **[cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)** — GPU constraint checking at 1B+ constraints/sec — CUDA library with C and Python APIs
 - **[deckhand-rs](https://github.com/SuperInstance/deckhand-rs)** — Rust BM25 retriever. Zero-dep. 10-100x faster than Python.
 - **[eigenpy](https://github.com/SuperInstance/eigenpy)** — Bindings between Numpy and Eigen using Boost.Python
-- **[exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)** — Minimal Python client for the exocortex — CircuitPython on ESP32. The ESP32 is the PLATO terminal.
 - **[fleet-agent-universal](https://github.com/SuperInstance/fleet-agent-universal)** — Universal Python HTTP server acting as any of 16 fleet-midi ternary musical agents — chord, scale, a
 - **[fleet-math-py](https://github.com/SuperInstance/fleet-math-py)** — Core fleet mathematics: ZHC, H1 emergence, Laman rigidity, constraint fields
 - **[flux-check-py](https://github.com/SuperInstance/flux-check-py)** — Python CLI for exact constraint checking — 6 industry presets, 74 tests, thermodynamic mode.
@@ -567,7 +566,6 @@
 - **[email-oracle](https://github.com/SuperInstance/email-oracle)** — Incoming email to Oracle relay event pipeline
 - **[emergency-alerts](https://github.com/SuperInstance/emergency-alerts)** — Outage and incident status for SuperInstance infrastructure
 - **[exocortex](https://github.com/SuperInstance/exocortex)** — 🧠 Persistent cognitive substrate for multi-agent systems — S3-compatible memory, shadow rendering, t
-- **[exocortex-script-lua](https://github.com/SuperInstance/exocortex-script-lua)** — Lua 5.4 scripting interface for the exocortex system
 - **[ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)** — Topological data analysis for the exocortex — proving multiple dispatch makes TDA readable and compo
 - **[exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)** — NLopt-based motion solvers for the EXOTica framework — optimization-based inverse kinematics for rob
 - **[experiments](https://github.com/SuperInstance/experiments)** — Experimental prototypes and explorations for the SuperInstance ecosystem
@@ -1973,6 +1971,7 @@
 - **[training-throttle](https://github.com/SuperInstance/training-throttle)** — Training rate throttling and backpressure for ML pipelines
 - **[trawl](https://github.com/SuperInstance/trawl)** — Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels 
 - **[treap-rs](https://github.com/SuperInstance/treap-rs)** — Treap with random priorities, split/merge operations, union, intersection, and order statistics
+- **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** — Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t
 - **[tripartite-room](https://github.com/SuperInstance/tripartite-room)** — Three innate agents per PLATO room: Ground Truth (physics), Constraint (engineer), Communication (di
 - **[tropical-attention](https://github.com/SuperInstance/tropical-attention)** — Tropical attention — max-plus softmax, tropical transformer layers, Newton polytopes, piecewise-line
 - **[tropical-attention-kernel](https://github.com/SuperInstance/tropical-attention-kernel)** — CUDA kernels: tropical (max-plus) attention and numerically-stable online-softmax attention, benchma
@@ -1990,6 +1989,7 @@
 - **[vessel](https://github.com/SuperInstance/vessel)** — Preserved workspace artifact
 - **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** — 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a
 - **[vessel-prototype](https://github.com/SuperInstance/vessel-prototype)** — Agent/Vessel separation prototype — fleet-wide agent scheduling, migration, and capability scoring
+- **[vessel-quest](https://github.com/SuperInstance/vessel-quest)** — The boat is the game engine. The sea is the level designer. The logbook is the quest log. The scoreb
 - **[vetcheck](https://github.com/SuperInstance/vetcheck)** — Vetcheck: model health monitoring as veterinary care
 - **[vibe-core](https://github.com/SuperInstance/vibe-core)** — 16-dim vibe embeddings — standalone but composable primitive for the Grand Pattern
 - **[vibe-graph](https://github.com/SuperInstance/vibe-graph)** — Vibe-graph social network analysis for SuperInstance agents

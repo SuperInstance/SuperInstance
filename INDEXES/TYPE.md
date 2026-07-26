@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-07-25 07:18 UTC
+**Generated:** 2026-07-26 07:35 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -11,7 +11,6 @@
 - **[cocapn-cli](https://github.com/SuperInstance/cocapn-cli)** — FLUX constraint safety - cocapn-cli
 - **[cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)** — Keeper↔Fleet binary wire protocol — the nervous system of the Cocapn Fleet. msgpack-based message fr
 - **[conservation-cli](https://github.com/SuperInstance/conservation-cli)** — 🔧 si-conservation CLI — unified conservation law benchmark + proof tool (Rust)
-- **[exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)** — Minimal Python client for the exocortex — CircuitPython on ESP32. The ESP32 is the PLATO terminal.
 - **[fleet-build](https://github.com/SuperInstance/fleet-build)** — Automated Rust crate build, test, fix, and push CLI for agent workflows
 - **[fleet-midi-cycle](https://github.com/SuperInstance/fleet-midi-cycle)** — Cyclic patterns from agent state periodicity
 - **[fleet-platform](https://github.com/SuperInstance/fleet-platform)** — One-command deploy for the SuperInstance agency cloud infrastructure
@@ -117,7 +116,6 @@
 - **[exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)** — ESP32 sensor node for Exocortex — reads analog sensors, POSTs to /tap/sense, recalls memories, gets 
 - **[exocortex-kernel-c](https://github.com/SuperInstance/exocortex-kernel-c)** — Pure C99 ML kernel — neural networks, logistic regression, K-means, isolation forests with zero depe
 - **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** — Rust agent framework with conservation-law awareness
-- **[exocortex-script-lua](https://github.com/SuperInstance/exocortex-script-lua)** — Lua 5.4 scripting interface for the exocortex system
 - **[ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)** — Topological data analysis for the exocortex — proving multiple dispatch makes TDA readable and compo
 - **[exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)** — NLopt-based motion solvers for the EXOTica framework — optimization-based inverse kinematics for rob
 - **[experiments](https://github.com/SuperInstance/experiments)** — Experimental prototypes and explorations for the SuperInstance ecosystem
@@ -1997,6 +1995,7 @@
 - **[vessel-agent](https://github.com/SuperInstance/vessel-agent)** — Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelli
 - **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** — 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a
 - **[vessel-prototype](https://github.com/SuperInstance/vessel-prototype)** — Agent/Vessel separation prototype — fleet-wide agent scheduling, migration, and capability scoring
+- **[vessel-quest](https://github.com/SuperInstance/vessel-quest)** — The boat is the game engine. The sea is the level designer. The logbook is the quest log. The scoreb
 - **[vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)** — Your boat as a navigable 3D web space — ScummVM meets Google Street View. Walk rooms, warp instantly
 
 ## Web
@@ -2028,5 +2027,6 @@
 - **[surrealdb](https://github.com/SuperInstance/surrealdb)** — A scalable, distributed, collaborative, document-graph database, for the realtime web
 - **[ternary-ecosystem](https://github.com/SuperInstance/ternary-ecosystem)** — Full ecosystem simulation with multiple ternary species and food webs
 - **[test-pages-repo](https://github.com/SuperInstance/test-pages-repo)** — Test
+- **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** — Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t
 - **[ws-status-indicator](https://github.com/SuperInstance/ws-status-indicator)** — React WebSocket status indicator component with auto-reconnection and customizable UI
 
