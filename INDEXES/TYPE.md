@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-07-26 07:35 UTC
+**Generated:** 2026-07-27 08:31 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -1804,7 +1804,6 @@
 - **[carry-protocol](https://github.com/SuperInstance/carry-protocol)** — Moving data across divides where infrastructure doesn't reach.
 - **[categorical-agents](https://github.com/SuperInstance/categorical-agents)** — Category theory for agents — capabilities as objects, protocols as morphisms, symmetric monoidal cat
 - **[claw](https://github.com/SuperInstance/claw)** — A simple Claw engine for cellular logic in spreadsheet instances within a superinstance/spreadsheet-
-- **[exocortex-wasm-runtime](https://github.com/SuperInstance/exocortex-wasm-runtime)** — Minimal C TAP protocol for WASM - zero heap allocation
 - **[federation-protocol](https://github.com/SuperInstance/federation-protocol)** — Minimum Viable Federation — coupling summaries between PLATO fleets
 - **[fleet-architecture](https://github.com/SuperInstance/fleet-architecture)** — Complete architecture documentation for the SuperInstance fleet — 56+ repos, 5 layers, protocols, tu
 - **[fleet-bottle](https://github.com/SuperInstance/fleet-bottle)** — Rust bottle protocol library for inter-agent messaging — 26 tests
@@ -1993,6 +1992,7 @@
 - **[VaaS](https://github.com/SuperInstance/VaaS)** — VaaS Resonance Substrate — multi-agent cognitive architecture for vessel-as-a-robot systems. Seven p
 - **[vessel](https://github.com/SuperInstance/vessel)** — Preserved workspace artifact
 - **[vessel-agent](https://github.com/SuperInstance/vessel-agent)** — Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelli
+- **[vessel-agent-system](https://github.com/SuperInstance/vessel-agent-system)** — Vessel intelligence OS for commercial fishing vessels (F/V EILEEN, Southeast Alaska). BMAD methodolo
 - **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** — 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a
 - **[vessel-prototype](https://github.com/SuperInstance/vessel-prototype)** — Agent/Vessel separation prototype — fleet-wide agent scheduling, migration, and capability scoring
 - **[vessel-quest](https://github.com/SuperInstance/vessel-quest)** — The boat is the game engine. The sea is the level designer. The logbook is the quest log. The scoreb

@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-07-26 07:35 UTC
+**Generated:** 2026-07-27 08:31 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -648,7 +648,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[emergency-alerts](https://github.com/SuperInstance/emergency-alerts)** | Various | Outage and incident status for SuperInstance infrastructure | ⚪ unknown |
 | **[exocortex](https://github.com/SuperInstance/exocortex)** | Various | 🧠 Persistent cognitive substrate for multi-agent systems — S3-compatible memory, shadow rendering, t | 🟢 active |
 | **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** | Various | Rust agent framework with conservation-law awareness | 🟢 active |
-| **[exocortex-wasm-runtime](https://github.com/SuperInstance/exocortex-wasm-runtime)** | Various | Minimal C TAP protocol for WASM - zero heap allocation | ⚪ unknown |
 | **[ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)** | Various | Topological data analysis for the exocortex — proving multiple dispatch makes TDA readable and compo | ⚪ unknown |
 | **[exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)** | Various | NLopt-based motion solvers for the EXOTica framework — optimization-based inverse kinematics for rob | ⚪ unknown |
 | **[experiments](https://github.com/SuperInstance/experiments)** | Various | Experimental prototypes and explorations for the SuperInstance ecosystem | ⚪ unknown |
@@ -1994,6 +1993,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[venue-personality](https://github.com/SuperInstance/venue-personality)** | Various | Venue personality modeling for SuperInstance spatial intelligence | ⚪ unknown |
 | **[vessel](https://github.com/SuperInstance/vessel)** | Various | Preserved workspace artifact | 🟢 active |
 | **[vessel-agent](https://github.com/SuperInstance/vessel-agent)** | Various | Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelli | 🟢 active |
+| **[vessel-agent-system](https://github.com/SuperInstance/vessel-agent-system)** | Various | Vessel intelligence OS for commercial fishing vessels (F/V EILEEN, Southeast Alaska). BMAD methodolo | 🟢 active |
 | **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** | Various | 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a | 🟢 active |
 | **[vessel-quest](https://github.com/SuperInstance/vessel-quest)** | Various | The boat is the game engine. The sea is the level designer. The logbook is the quest log. The scoreb | 🟢 active |
 | **[vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)** | Various | Your boat as a navigable 3D web space — ScummVM meets Google Street View. Walk rooms, warp instantly | 🟢 active |
@@ -8377,6 +8377,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelligence using BMAD methodology
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [vessel-agent-system](https://github.com/SuperInstance/vessel-agent-system)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Vessel intelligence OS for commercial fishing vessels (F/V EILEEN, Southeast Alaska). BMAD methodology, 5 abstraction levels, 3-viewer interface, mult
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

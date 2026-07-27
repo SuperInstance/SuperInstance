@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-07-26 07:35 UTC
+**Generated:** 2026-07-27 08:31 UTC
 **Total repos:** 2000
 
 ## C
@@ -15,7 +15,6 @@
 - **[constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core)** — Unified geometric constraint theory — Eisenstein lattices, deadband funnels, Laman rigidity, metrono
 - **[construct-core](https://github.com/SuperInstance/construct-core)** — Hardware-agnostic agent runtime with layered trait system for the SuperInstance Construct API
 - **[exocortex-kernel-c](https://github.com/SuperInstance/exocortex-kernel-c)** — Pure C99 ML kernel — neural networks, logistic regression, K-means, isolation forests with zero depe
-- **[exocortex-wasm-runtime](https://github.com/SuperInstance/exocortex-wasm-runtime)** — Minimal C TAP protocol for WASM - zero heap allocation
 - **[fleet-a2a-spectral](https://github.com/SuperInstance/fleet-a2a-spectral)** — Graph spectral topology to music — Laplacian eigenvalues, Fiedler vectors, and Cheeger constants bec
 - **[fleet-bottles](https://github.com/SuperInstance/fleet-bottles)** — CCC bottles — fleet audits, roadmaps, design notes
 - **[fleet-budget](https://github.com/SuperInstance/fleet-budget)** — 🧮 D1 ledger that enforces γ+η≤C at the database level — conservation law as CHECK constraint
@@ -1987,6 +1986,7 @@
 - **[vector-novelty](https://github.com/SuperInstance/vector-novelty)** — Vector novelty detection — identifying novel patterns in high-dimensional agent embeddings
 - **[venue-personality](https://github.com/SuperInstance/venue-personality)** — Venue personality modeling for SuperInstance spatial intelligence
 - **[vessel](https://github.com/SuperInstance/vessel)** — Preserved workspace artifact
+- **[vessel-agent-system](https://github.com/SuperInstance/vessel-agent-system)** — Vessel intelligence OS for commercial fishing vessels (F/V EILEEN, Southeast Alaska). BMAD methodolo
 - **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** — 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a
 - **[vessel-prototype](https://github.com/SuperInstance/vessel-prototype)** — Agent/Vessel separation prototype — fleet-wide agent scheduling, migration, and capability scoring
 - **[vessel-quest](https://github.com/SuperInstance/vessel-quest)** — The boat is the game engine. The sea is the level designer. The logbook is the quest log. The scoreb

@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-26 07:35 UTC
+**Generated:** 2026-07-27 08:31 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1188,6 +1188,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tzpro-agent](https://github.com/SuperInstance/tzpro-agent)
 - [vector-novelty](https://github.com/SuperInstance/vector-novelty)
 - [vessel-agent](https://github.com/SuperInstance/vessel-agent)
+- [vessel-agent-system](https://github.com/SuperInstance/vessel-agent-system)
 - [vessel-prototype](https://github.com/SuperInstance/vessel-prototype)
 - [vibe-graph](https://github.com/SuperInstance/vibe-graph)
 - [warp](https://github.com/SuperInstance/warp)
@@ -1591,7 +1592,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
 - [exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)
 - [exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)
-- [exocortex-wasm-runtime](https://github.com/SuperInstance/exocortex-wasm-runtime)
 - [exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)
 - [experiments](https://github.com/SuperInstance/experiments)
 - [exponential-family](https://github.com/SuperInstance/exponential-family)
