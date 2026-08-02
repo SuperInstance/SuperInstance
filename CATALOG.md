@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-01 07:28 UTC
+**Generated:** 2026-08-02 07:32 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -577,6 +577,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)** | CCC | Golden repair mathematics compiled to WASM — fault tolerance in the browser | 🟢 active |
 | **[luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)** | CCC | GitHub Pages for luciddreamer.ai | 🟢 active |
 | **[lucineer-com-pages](https://github.com/SuperInstance/lucineer-com-pages)** | CCC | GitHub Pages for lucineer.com | 🟢 active |
+| **[lucineer-system](https://github.com/SuperInstance/lucineer-system)** | CCC | ⚒️ Lucineer — persistent AI game-building companion. Lives in Roblox, browser, and Godot. Remembers  | 🟢 active |
 | **[Luma](https://github.com/SuperInstance/Luma)** | CCC | Systems programming language agent — low-level compiled alternative to C with static analysis. Boota | 🟢 active |
 | **[makerlog-ai-pages](https://github.com/SuperInstance/makerlog-ai-pages)** | CCC | GitHub Pages for makerlog.ai | 🟢 active |
 | **[oracle-tui](https://github.com/SuperInstance/oracle-tui)** | CCC | Agentic terminal dashboard for the SuperInstance fleet — nebula, crates, system, evolution | 🟢 active |
@@ -648,14 +649,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[emergency-alerts](https://github.com/SuperInstance/emergency-alerts)** | Various | Outage and incident status for SuperInstance infrastructure | ⚪ unknown |
 | **[exocortex](https://github.com/SuperInstance/exocortex)** | Various | 🧠 Persistent cognitive substrate for multi-agent systems — S3-compatible memory, shadow rendering, t | 🟢 active |
 | **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** | Various | Rust agent framework with conservation-law awareness | 🟢 active |
-| **[ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)** | Various | Topological data analysis for the exocortex — proving multiple dispatch makes TDA readable and compo | ⚪ unknown |
-| **[exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)** | Various | NLopt-based motion solvers for the EXOTica framework — optimization-based inverse kinematics for rob | ⚪ unknown |
-| **[experiments](https://github.com/SuperInstance/experiments)** | Various | Experimental prototypes and explorations for the SuperInstance ecosystem | ⚪ unknown |
-| **[exponential-family](https://github.com/SuperInstance/exponential-family)** | Various | Exponential family distributions: sufficient statistics, natural parameters, log-partition functions | ⚪ unknown |
-| **[extensive-form](https://github.com/SuperInstance/extensive-form)** | Various | Extensive-form game theory in pure Rust — game trees, backward induction, subgame perfect equilibriu | ⚪ unknown |
 | **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)** | Various | fabric-mcp | ⚪ unknown |
-| **[failure-detector](https://github.com/SuperInstance/failure-detector)** | Various | Phi accrual failure detector for distributed systems — statistical heartbeat analysis used in Cassan | ⚪ unknown |
-| **[federation-protocol](https://github.com/SuperInstance/federation-protocol)** | Various | Minimum Viable Federation — coupling summaries between PLATO fleets | ⚪ unknown |
 | **[feistel-net](https://github.com/SuperInstance/feistel-net)** | Various | Feistel network cipher constructions in pure Rust — balanced/unbalanced networks, key schedules, S-b | ⚪ unknown |
 | **[fencecraft](https://github.com/SuperInstance/fencecraft)** | Various | Fencecraft: visual fence builder for Working Animal Architecture | ⚪ unknown |
 | **[fft-core](https://github.com/SuperInstance/fft-core)** | Various | Research-grade FFT in pure Rust — Cooley-Tukey, Bluestein, real FFT, inverse, and windowing function | ⚪ unknown |
@@ -1151,6 +1145,12 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[lucid-tutor-c](https://github.com/SuperInstance/lucid-tutor-c)** | Various | Lucid tutoring system in C for SuperInstance education agents | 🟢 active |
 | **[luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)** | Various | AI creative exploration through lucid dreaming themed rooms. Generate poetry, fiction, music, and vi | 🟢 active |
 | **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** | Various | LucidDreamer vision module for SuperInstance dream-state agents | 🟢 active |
+| **[lucineer-brain](https://github.com/SuperInstance/lucineer-brain)** | Various | 🧮 Multi-model build intelligence — routes natural language through DeepInfra models to generate Robl | ⚪ unknown |
+| **[lucineer-creative](https://github.com/SuperInstance/lucineer-creative)** | Various | 🎨 MMX-powered creative asset pipeline — concept art, ambient music, and build previews for Lucineer' | ⚪ unknown |
+| **[lucineer-memory](https://github.com/SuperInstance/lucineer-memory)** | Various | 🧠 Persistent memory system for Lucineer — D1 database, Vectorize index, cross-session recall | ⚪ unknown |
+| **[lucineer-relay](https://github.com/SuperInstance/lucineer-relay)** | Various | ⚡ Cloudflare Worker relay between Roblox and OpenClaw for Lucineer | ⚪ unknown |
+| **[lucineer-roblox](https://github.com/SuperInstance/lucineer-roblox)** | Various | 🎮 Lucineer Roblox client — Lua modules for in-game AI companion with live build execution | ⚪ unknown |
+| **[lucineer-vector](https://github.com/SuperInstance/lucineer-vector)** | Various | 🧬 Semantic skill search for Lucineer — Vectorize index with 10 seeded Luau build patterns | ⚪ unknown |
 | **[mac-digest](https://github.com/SuperInstance/mac-digest)** | Various | Message authentication code digest library for SuperInstance | ⚪ unknown |
 | **[make-me-app](https://github.com/SuperInstance/make-me-app)** | Various | Make Me A... — instant web apps from natural language. Say what you want, get a URL. | ⚪ unknown |
 | **[makerlog-agent](https://github.com/SuperInstance/makerlog-agent)** | Various | AI-powered maker logging for project tracking and build streaks. Log commits, deploys, and milestone | 🟢 active |
@@ -5906,6 +5906,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Web & Browser
 - **Vessel:** CCC
 - **Purpose:** GitHub Pages for lucineer.com
+- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
+- **Status:** active
+
+### [lucineer-system](https://github.com/SuperInstance/lucineer-system)
+- **Domain:** Web & Browser
+- **Vessel:** CCC
+- **Purpose:** ⚒️ Lucineer — persistent AI game-building companion. Lives in Roblox, browser, and Godot. Remembers you across sessions. Gets better over time.
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 

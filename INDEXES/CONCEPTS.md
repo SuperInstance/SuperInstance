@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-01 07:28 UTC
+**Generated:** 2026-08-02 07:32 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -525,7 +525,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [crab](https://github.com/SuperInstance/crab)
 - [exocortex](https://github.com/SuperInstance/exocortex)
 - [exocortex-rs](https://github.com/SuperInstance/exocortex-rs)
-- [federation-protocol](https://github.com/SuperInstance/federation-protocol)
 - [fiber-category](https://github.com/SuperInstance/fiber-category)
 - [fibonacci-growth-v2](https://github.com/SuperInstance/fibonacci-growth-v2)
 - [field-dynamics](https://github.com/SuperInstance/field-dynamics)
@@ -1235,7 +1234,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [chart-room](https://github.com/SuperInstance/chart-room)
 - [cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)
 - [conformance-service](https://github.com/SuperInstance/conformance-service)
-- [federation-protocol](https://github.com/SuperInstance/federation-protocol)
 - [field-visualizer](https://github.com/SuperInstance/field-visualizer)
 - [fleet-chronicle](https://github.com/SuperInstance/fleet-chronicle)
 - [fleet-math-c](https://github.com/SuperInstance/fleet-math-c)
@@ -1570,7 +1568,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [.github](https://github.com/SuperInstance/.github)
 - [AI-Writings](https://github.com/SuperInstance/AI-Writings)
 - [CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)
-- [ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)
 - [OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)
 - [Scrapcraft](https://github.com/SuperInstance/Scrapcraft)
 - [SubForge](https://github.com/SuperInstance/SubForge)
@@ -1592,12 +1589,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
 - [exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)
 - [exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)
-- [exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)
-- [experiments](https://github.com/SuperInstance/experiments)
-- [exponential-family](https://github.com/SuperInstance/exponential-family)
-- [extensive-form](https://github.com/SuperInstance/extensive-form)
 - [fabric-mcp](https://github.com/SuperInstance/fabric-mcp)
-- [failure-detector](https://github.com/SuperInstance/failure-detector)
 - [feistel-net](https://github.com/SuperInstance/feistel-net)
 - [fencecraft](https://github.com/SuperInstance/fencecraft)
 - [fft-core](https://github.com/SuperInstance/fft-core)
@@ -1890,7 +1882,14 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [luau-git-world](https://github.com/SuperInstance/luau-git-world)
 - [lucid-tutor](https://github.com/SuperInstance/lucid-tutor)
 - [luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)
+- [lucineer-brain](https://github.com/SuperInstance/lucineer-brain)
 - [lucineer-com-pages](https://github.com/SuperInstance/lucineer-com-pages)
+- [lucineer-creative](https://github.com/SuperInstance/lucineer-creative)
+- [lucineer-memory](https://github.com/SuperInstance/lucineer-memory)
+- [lucineer-relay](https://github.com/SuperInstance/lucineer-relay)
+- [lucineer-roblox](https://github.com/SuperInstance/lucineer-roblox)
+- [lucineer-system](https://github.com/SuperInstance/lucineer-system)
+- [lucineer-vector](https://github.com/SuperInstance/lucineer-vector)
 - [mac-digest](https://github.com/SuperInstance/mac-digest)
 - [make-me-app](https://github.com/SuperInstance/make-me-app)
 - [makerlog-ai-pages](https://github.com/SuperInstance/makerlog-ai-pages)
