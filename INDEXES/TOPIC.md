@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-08-02 07:32 UTC
+**Generated:** 2026-08-03 08:29 UTC
 **Total repos:** 2000
 
 ## A2A-Protocol
@@ -32,7 +32,6 @@
 - **[Constraint-Theory](https://github.com/SuperInstance/Constraint-Theory)** — ⚠️ MOVED: See constraint-theory-core, constraint-theory-python, constraint-theory-web, constraint-th
 - **[constrainttheory-ml-demo](https://github.com/SuperInstance/constrainttheory-ml-demo)**
 - **[cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)** — GPU constraint checking at 1B+ constraints/sec — CUDA library with C and Python APIs
-- **[field-core](https://github.com/SuperInstance/field-core)** — Continuous constraint field library with topology detection and propagation
 - **[fleet-bench](https://github.com/SuperInstance/fleet-bench)** — Deep hardware profiling of Cocapn fleet constraint crates
 - **[fleet-budget](https://github.com/SuperInstance/fleet-budget)** — 🧮 D1 ledger that enforces γ+η≤C at the database level — conservation law as CHECK constraint
 - **[fleet-constraint-kernel](https://github.com/SuperInstance/fleet-constraint-kernel)** — GPU fleet constraint evaluator — sonar beamformer architecture for N×M parallel constraint checking
@@ -114,6 +113,7 @@
 - **[guard2mask-gpu](https://github.com/SuperInstance/guard2mask-gpu)** — GPU-accelerated GUARD DSL constraint solver — parallel AC-3, Eisenstein checking, Simulated Bifurcat
 - **[hexgrid-gen](https://github.com/SuperInstance/hexgrid-gen)** — Code generator for Eisenstein hex grid lookup tables
 - **[plato-midi-bridge-rs](https://github.com/SuperInstance/plato-midi-bridge-rs)** — Rust crate — Eisenstein lattices, Penrose tilings, and multi-scale musical style analysis
+- **[slackwater-rust](https://github.com/SuperInstance/slackwater-rust)** — Rust performance twins for Slackwater — exact arithmetic, Tensor-MIDI, flow detection, Eisenstein la
 - **[snap-lut-eisenstein](https://github.com/SuperInstance/snap-lut-eisenstein)** — Snap lookup tables using Eisenstein integer arithmetic
 - **[snapkit-js](https://github.com/SuperInstance/snapkit-js)** — Eisenstein A₂ lattice snap, temporal beat grids, and spectral analysis for JavaScript/TypeScript. Ze
 - **[snapkit-python](https://github.com/SuperInstance/snapkit-python)** — Tolerance-compressed attention allocation — Eisenstein lattices, delta detection, attention budgets.
@@ -347,9 +347,6 @@
 - **[crab](https://github.com/SuperInstance/crab)** — Hermit crab agent shell — agents find repos, grow, move shells
 - **[exocortex](https://github.com/SuperInstance/exocortex)** — 🧠 Persistent cognitive substrate for multi-agent systems — S3-compatible memory, shadow rendering, t
 - **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** — Rust agent framework with conservation-law awareness
-- **[fiber-category](https://github.com/SuperInstance/fiber-category)** — Fiber categories and Grothendieck constructions for agent systems — organize and migrate agents acro
-- **[fibonacci-growth-v2](https://github.com/SuperInstance/fibonacci-growth-v2)** — Fibonacci growth patterns for the SuperInstance fleet — scaling dynamics for distributed agent syste
-- **[field-dynamics](https://github.com/SuperInstance/field-dynamics)** — Interactive multi-agent field dynamics simulation with spectral forces
 - **[field-dynamics-sim](https://github.com/SuperInstance/field-dynamics-sim)** — Multi-agent field dynamics simulation with Conservation Spectral Analysis — fleet spectral health mo
 - **[fishinglog-agent](https://github.com/SuperInstance/fishinglog-agent)** — AI-powered commercial fishing intelligence. Track catches, weather, tides, and market prices. Find p
 - **[fleet](https://github.com/SuperInstance/fleet)** — Agent fleet management — orchestration, deployment, and coordination of distributed AI agents
@@ -763,6 +760,11 @@
 - **[sketch-rotation-audit-provenance](https://github.com/SuperInstance/sketch-rotation-audit-provenance)** — Forgemaster pushed 5 rotation crates, all compile on Neoverse-N1. Meta-gc PID needs recalibrated fro
 - **[sketch-self-hosting-construct](https://github.com/SuperInstance/sketch-self-hosting-construct)** — Oracle2 fleet construct: 4 Rust services, 13MB binary, zero API cost pulse stream with SVM+entropy+s
 - **[sketch-workspace-sketchbook-pattern](https://github.com/SuperInstance/sketch-workspace-sketchbook-pattern)** — Push ideas to GitHub repos, clear local workspace. fleet-sketchbook CLI tool. The workspace is a dra
+- **[slackwater-harmony](https://github.com/SuperInstance/slackwater-harmony)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-lattice](https://github.com/SuperInstance/slackwater-lattice)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-perception](https://github.com/SuperInstance/slackwater-perception)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-tempo](https://github.com/SuperInstance/slackwater-tempo)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-tminus](https://github.com/SuperInstance/slackwater-tminus)** — Modular component of the Slackwater spatial-temporal AI agent framework
 - **[snapkit-zig](https://github.com/SuperInstance/snapkit-zig)** — Extracted from forgemaster/snapkit-zig — Cocapn fleet component
 - **[spacedrive-fleet](https://github.com/SuperInstance/spacedrive-fleet)** — Spacedrive × CoCapn: your file explorer is also a compute fleet manager
 - **[spectral-deadband-v2](https://github.com/SuperInstance/spectral-deadband-v2)** — Spectral deadband filtering for signal processing in SuperInstance agents
@@ -1172,6 +1174,7 @@
 - **[a2ui](https://github.com/SuperInstance/a2ui)** — A2UI — Adaptive Interface. The Whistle Layer of Working Animal Architecture.
 - **[activelog-ai](https://github.com/SuperInstance/activelog-ai)** — Activelog.ai — AI fitness and activity tracker. Workouts, progress, goals. Part of the Lucineer ecos
 - **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** — Creative writing, essays, and philosophical explorations from the Exocortex project
+- **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** — 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton
 - **[carry-protocol](https://github.com/SuperInstance/carry-protocol)** — Moving data across divides where infrastructure doesn't reach.
 - **[chart-system](https://github.com/SuperInstance/chart-system)** — Polyformal navigation: four chart configurations that cross-reference the same problem space
 - **[claw](https://github.com/SuperInstance/claw)** — A simple Claw engine for cellular logic in spreadsheet instances within a superinstance/spreadsheet-
@@ -1190,13 +1193,8 @@
 - **[exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)** — ESP32 sensor node for Exocortex — reads analog sensors, POSTs to /tap/sense, recalls memories, gets 
 - **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** — TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n
 - **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)**
-- **[feistel-net](https://github.com/SuperInstance/feistel-net)** — Feistel network cipher constructions in pure Rust — balanced/unbalanced networks, key schedules, S-b
 - **[fencecraft](https://github.com/SuperInstance/fencecraft)** — Fencecraft: visual fence builder for Working Animal Architecture
-- **[fft-core](https://github.com/SuperInstance/fft-core)** — Research-grade FFT in pure Rust — Cooley-Tukey, Bluestein, real FFT, inverse, and windowing function
-- **[fft-rs](https://github.com/SuperInstance/fft-rs)** — Fast Fourier Transform in pure Rust — Cooley-Tukey radix-2, iterative FFT, IFFT, convolution, and DC
 - **[fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)** — Budget governor whose limit scales by the golden ratio.
-- **[fibonacci-growth](https://github.com/SuperInstance/fibonacci-growth)** — Fibonacci team growth → CR = 1/φ. Penrose outward, Mandelbrot inward. Pure Rust.
-- **[fiedler-universal](https://github.com/SuperInstance/fiedler-universal)** — Benchmarking Fiedler vector partition across 6 domains — honest results
 - **[field-evolution-early-version](https://github.com/SuperInstance/field-evolution-early-version)** — [ARCHIVED] Early field evolution tracker. 1KB scaffolding only.
 - **[financial-conservation](https://github.com/SuperInstance/financial-conservation)** — Spectral conservation analysis of financial market regimes
 - **[finite-difference-pde](https://github.com/SuperInstance/finite-difference-pde)** — Finite difference PDE solvers in Rust — heat equation, wave equation, Poisson, advection-diffusion w
@@ -1627,6 +1625,7 @@
 - **[routing-table](https://github.com/SuperInstance/routing-table)** — Rust crate: routing-table
 - **[run-length](https://github.com/SuperInstance/run-length)** — Run-length encoding compression utility
 - **[rusty-series](https://github.com/SuperInstance/rusty-series)** — Comprehensive time-series analysis in Rust — decomposition, ARIMA, anomaly detection, spectral analy
+- **[salidiere](https://github.com/SuperInstance/salidiere)** — 🧂 Multi-model AI orchestrator by Claude Sonnet 5 — the salt-keeper
 - **[scale-fold](https://github.com/SuperInstance/scale-fold)** — scale-fold
 - **[Scrapcraft](https://github.com/SuperInstance/Scrapcraft)** — Browser-based 3D voxel game set in an industrial scrapyard — middle schoolers build robots, program 
 - **[screenpipe-conservation](https://github.com/SuperInstance/screenpipe-conservation)** — screenpipe + conservation-checker: 24/7 recording meets resource conservation. Fork of screenpipe/sc
@@ -1677,6 +1676,7 @@
 - **[sketch-ternary-kihn-metaphor](https://github.com/SuperInstance/sketch-ternary-kihn-metaphor)** — ARM64 free tier as firing kihn - API brain as dissertation committee. Local ternary math at zero cos
 - **[skills](https://github.com/SuperInstance/skills)** — Preserved workspace artifact
 - **[skip-list-rs](https://github.com/SuperInstance/skip-list-rs)** — Skip list with probabilistic balancing, range queries, and iterator support — pure Rust, no dependen
+- **[slackwater-orchestrator](https://github.com/SuperInstance/slackwater-orchestrator)** — 🌊 Multi-model AI orchestrator by GLM-5.2 — the full ensemble
 - **[slam-core](https://github.com/SuperInstance/slam-core)** — SLAM (Simultaneous Localization and Mapping) core for SuperInstance robotics
 - **[smart-404](https://github.com/SuperInstance/smart-404)** — Smart 404 page with semantic search and did-you-mean
 - **[smt-core](https://github.com/SuperInstance/smt-core)** — SMT (Satisfiability Modulo Theories) solver core for SuperInstance

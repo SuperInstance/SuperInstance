@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-08-02 07:32 UTC
+**Generated:** 2026-08-03 08:29 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -90,6 +90,7 @@
 - **[activelog-app](https://github.com/SuperInstance/activelog-app)** — Essential domain-agnostic voice transcriber with location annotation
 - **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** — Creative writing, essays, and philosophical explorations from the Exocortex project
 - **[Baton](https://github.com/SuperInstance/Baton)** — automate agents training their successors for a better way to have infinite context without limits
+- **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** — 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton
 - **[build-guardian](https://github.com/SuperInstance/build-guardian)** — Build Budget Guardian — tracks build resource usage, enforces budgets, detects bloat trends
 - **[casting-call](https://github.com/SuperInstance/casting-call)** — Which model plays which role — fleet knowledge base of LLM capabilities, failure modes, and casting 
 - **[chart-room](https://github.com/SuperInstance/chart-room)** — The Chart Room — Four panels. Four perspectives. One truth.
@@ -119,15 +120,8 @@
 - **[exocortex-kernel-c](https://github.com/SuperInstance/exocortex-kernel-c)** — Pure C99 ML kernel — neural networks, logistic regression, K-means, isolation forests with zero depe
 - **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** — Rust agent framework with conservation-law awareness
 - **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)**
-- **[feistel-net](https://github.com/SuperInstance/feistel-net)** — Feistel network cipher constructions in pure Rust — balanced/unbalanced networks, key schedules, S-b
 - **[fencecraft](https://github.com/SuperInstance/fencecraft)** — Fencecraft: visual fence builder for Working Animal Architecture
-- **[fft-rs](https://github.com/SuperInstance/fft-rs)** — Fast Fourier Transform in pure Rust — Cooley-Tukey radix-2, iterative FFT, IFFT, convolution, and DC
-- **[fiber-category](https://github.com/SuperInstance/fiber-category)** — Fiber categories and Grothendieck constructions for agent systems — organize and migrate agents acro
 - **[fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)** — Budget governor whose limit scales by the golden ratio.
-- **[fibonacci-growth](https://github.com/SuperInstance/fibonacci-growth)** — Fibonacci team growth → CR = 1/φ. Penrose outward, Mandelbrot inward. Pure Rust.
-- **[fibonacci-growth-v2](https://github.com/SuperInstance/fibonacci-growth-v2)** — Fibonacci growth patterns for the SuperInstance fleet — scaling dynamics for distributed agent syste
-- **[field-core](https://github.com/SuperInstance/field-core)** — Continuous constraint field library with topology detection and propagation
-- **[field-dynamics](https://github.com/SuperInstance/field-dynamics)** — Interactive multi-agent field dynamics simulation with spectral forces
 - **[field-dynamics-sim](https://github.com/SuperInstance/field-dynamics-sim)** — Multi-agent field dynamics simulation with Conservation Spectral Analysis — fleet spectral health mo
 - **[field-evolution-early-version](https://github.com/SuperInstance/field-evolution-early-version)** — [ARCHIVED] Early field evolution tracker. 1KB scaffolding only.
 - **[field-visualizer](https://github.com/SuperInstance/field-visualizer)** — Continuous field visualizer for PLATO knowledge space — see the negative space between tiles
@@ -1234,6 +1228,13 @@
 - **[sketch-rotation-audit-provenance](https://github.com/SuperInstance/sketch-rotation-audit-provenance)** — Forgemaster pushed 5 rotation crates, all compile on Neoverse-N1. Meta-gc PID needs recalibrated fro
 - **[skills](https://github.com/SuperInstance/skills)** — Preserved workspace artifact
 - **[skip-list-rs](https://github.com/SuperInstance/skip-list-rs)** — Skip list with probabilistic balancing, range queries, and iterator support — pure Rust, no dependen
+- **[slackwater-harmony](https://github.com/SuperInstance/slackwater-harmony)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-lattice](https://github.com/SuperInstance/slackwater-lattice)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-orchestrator](https://github.com/SuperInstance/slackwater-orchestrator)** — 🌊 Multi-model AI orchestrator by GLM-5.2 — the full ensemble
+- **[slackwater-perception](https://github.com/SuperInstance/slackwater-perception)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-rust](https://github.com/SuperInstance/slackwater-rust)** — Rust performance twins for Slackwater — exact arithmetic, Tensor-MIDI, flow detection, Eisenstein la
+- **[slackwater-tempo](https://github.com/SuperInstance/slackwater-tempo)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-tminus](https://github.com/SuperInstance/slackwater-tminus)** — Modular component of the Slackwater spatial-temporal AI agent framework
 - **[slam-core](https://github.com/SuperInstance/slam-core)** — SLAM (Simultaneous Localization and Mapping) core for SuperInstance robotics
 - **[smart-404](https://github.com/SuperInstance/smart-404)** — Smart 404 page with semantic search and did-you-mean
 - **[SmartCRDT](https://github.com/SuperInstance/SmartCRDT)** — Utilizing CRDT technology for self-improving AI
@@ -1762,7 +1763,6 @@
 
 - **[cartographer](https://github.com/SuperInstance/cartographer)** — The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed.
 - **[Constraint-Theory](https://github.com/SuperInstance/Constraint-Theory)** — ⚠️ MOVED: See constraint-theory-core, constraint-theory-python, constraint-theory-web, constraint-th
-- **[fft-core](https://github.com/SuperInstance/fft-core)** — Research-grade FFT in pure Rust — Cooley-Tukey, Bluestein, real FFT, inverse, and windowing function
 - **[fleet-science](https://github.com/SuperInstance/fleet-science)** — Scientific research hub — papers, experiments, proofs for the SuperInstance ternary system
 - **[fleet-tutorials](https://github.com/SuperInstance/fleet-tutorials)** — Step-by-step tutorials for the SuperInstance fleet — beginner to research deep-dives
 - **[flux-emergence-research](https://github.com/SuperInstance/flux-emergence-research)** — 55+ GPU experiments on emergent specialization — five fundamental laws, agent fleet architecture rul
@@ -1903,6 +1903,7 @@
 - **[polychora](https://github.com/SuperInstance/polychora)** — Genuine 4D voxel game engine built on Vulkan — full spatial X/Y/Z/W coordinates, native 4D rotation 
 - **[port-generator](https://github.com/SuperInstance/port-generator)** — Port number generator and allocator for SuperInstance services
 - **[rate-limiter](https://github.com/SuperInstance/rate-limiter)** — Distributed rate limiting service with token bucket, sliding window, and fixed window algorithms
+- **[salidiere](https://github.com/SuperInstance/salidiere)** — 🧂 Multi-model AI orchestrator by Claude Sonnet 5 — the salt-keeper
 - **[seed-mcp](https://github.com/SuperInstance/seed-mcp)** — Standalone MCP + HTTP API for ByteDance Seed-2.0-Mini - cheap creative reasoning engine
 - **[si-fleet-api](https://github.com/SuperInstance/si-fleet-api)** — Fleet registry API — Supabase-backed cloud backbone for the SuperInstance ecosystem
 - **[sketch-fleet-oracle-construct](https://github.com/SuperInstance/sketch-fleet-oracle-construct)** — 4 Rust services (relay/log/event/oracle) running on ARM64, ternary decision engine, pulse protocol
@@ -1916,7 +1917,6 @@
 
 ## Tool
 
-- **[fiedler-universal](https://github.com/SuperInstance/fiedler-universal)** — Benchmarking Fiedler vector partition across 6 domains — honest results
 - **[fleet-bench](https://github.com/SuperInstance/fleet-bench)** — Deep hardware profiling of Cocapn fleet constraint crates
 - **[fleet-magenta-connector](https://github.com/SuperInstance/fleet-magenta-connector)** — Bridge between SuperInstance MIDI fleet and Google Magenta AI music tools
 - **[fleet-midi-studio](https://github.com/SuperInstance/fleet-midi-studio)** — Browser-based MIDI workstation chaining all fleet tools

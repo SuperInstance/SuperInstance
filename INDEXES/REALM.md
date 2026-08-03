@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-08-02 07:32 UTC
+**Generated:** 2026-08-03 08:29 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -32,6 +32,7 @@
 - **[agent-orchestration](https://github.com/SuperInstance/agent-orchestration)** — Orchestration for agent fleets. Roles as instruments, dynamics as resource allocation, sections as c
 - **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** — Creative writing, essays, and philosophical explorations from the Exocortex project
 - **[Baton](https://github.com/SuperInstance/Baton)** — automate agents training their successors for a better way to have infinite context without limits
+- **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** — 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton
 - **[baton-protocol](https://github.com/SuperInstance/baton-protocol)** — Session-level handoff for AI agents (state/next/meta). Lighter than baton-handoff (model generationa
 - **[boat-agent](https://github.com/SuperInstance/boat-agent)** — Like Commander Data for your wheelhouse. Works with any marine IO from Navigation/Autopilot to IR en
 - **[build-guardian](https://github.com/SuperInstance/build-guardian)** — Build Budget Guardian — tracks build resource usage, enforces budgets, detects bloat trends
@@ -80,17 +81,8 @@
 - **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** — TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n
 - **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** — Rust agent framework with conservation-law awareness
 - **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)**
-- **[feistel-net](https://github.com/SuperInstance/feistel-net)** — Feistel network cipher constructions in pure Rust — balanced/unbalanced networks, key schedules, S-b
 - **[fencecraft](https://github.com/SuperInstance/fencecraft)** — Fencecraft: visual fence builder for Working Animal Architecture
-- **[fft-core](https://github.com/SuperInstance/fft-core)** — Research-grade FFT in pure Rust — Cooley-Tukey, Bluestein, real FFT, inverse, and windowing function
-- **[fft-rs](https://github.com/SuperInstance/fft-rs)** — Fast Fourier Transform in pure Rust — Cooley-Tukey radix-2, iterative FFT, IFFT, convolution, and DC
-- **[fiber-category](https://github.com/SuperInstance/fiber-category)** — Fiber categories and Grothendieck constructions for agent systems — organize and migrate agents acro
 - **[fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)** — Budget governor whose limit scales by the golden ratio.
-- **[fibonacci-growth](https://github.com/SuperInstance/fibonacci-growth)** — Fibonacci team growth → CR = 1/φ. Penrose outward, Mandelbrot inward. Pure Rust.
-- **[fibonacci-growth-v2](https://github.com/SuperInstance/fibonacci-growth-v2)** — Fibonacci growth patterns for the SuperInstance fleet — scaling dynamics for distributed agent syste
-- **[fiedler-universal](https://github.com/SuperInstance/fiedler-universal)** — Benchmarking Fiedler vector partition across 6 domains — honest results
-- **[field-core](https://github.com/SuperInstance/field-core)** — Continuous constraint field library with topology detection and propagation
-- **[field-dynamics](https://github.com/SuperInstance/field-dynamics)** — Interactive multi-agent field dynamics simulation with spectral forces
 - **[field-dynamics-sim](https://github.com/SuperInstance/field-dynamics-sim)** — Multi-agent field dynamics simulation with Conservation Spectral Analysis — fleet spectral health mo
 - **[field-evolution-early-version](https://github.com/SuperInstance/field-evolution-early-version)** — [ARCHIVED] Early field evolution tracker. 1KB scaffolding only.
 - **[field-visualizer](https://github.com/SuperInstance/field-visualizer)** — Continuous field visualizer for PLATO knowledge space — see the negative space between tiles
@@ -1321,6 +1313,7 @@
 - **[run-length](https://github.com/SuperInstance/run-length)** — Run-length encoding compression utility
 - **[rusty-series](https://github.com/SuperInstance/rusty-series)** — Comprehensive time-series analysis in Rust — decomposition, ARIMA, anomaly detection, spectral analy
 - **[sailor-workspace](https://github.com/SuperInstance/sailor-workspace)** — Sailor workspace — fleet orchestration, audits, memory, docs, scripts
+- **[salidiere](https://github.com/SuperInstance/salidiere)** — 🧂 Multi-model AI orchestrator by Claude Sonnet 5 — the salt-keeper
 - **[sat-solver](https://github.com/SuperInstance/sat-solver)** — SAT solver for constraint satisfaction in SuperInstance agents
 - **[scale-fold](https://github.com/SuperInstance/scale-fold)** — scale-fold
 - **[scheduling-rs](https://github.com/SuperInstance/scheduling-rs)** — Scheduling algorithms for real-world fleet and job management
@@ -1422,6 +1415,13 @@
 - **[sketch-workspace-sketchbook-pattern](https://github.com/SuperInstance/sketch-workspace-sketchbook-pattern)** — Push ideas to GitHub repos, clear local workspace. fleet-sketchbook CLI tool. The workspace is a dra
 - **[skills](https://github.com/SuperInstance/skills)** — Preserved workspace artifact
 - **[skip-list-rs](https://github.com/SuperInstance/skip-list-rs)** — Skip list with probabilistic balancing, range queries, and iterator support — pure Rust, no dependen
+- **[slackwater-harmony](https://github.com/SuperInstance/slackwater-harmony)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-lattice](https://github.com/SuperInstance/slackwater-lattice)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-orchestrator](https://github.com/SuperInstance/slackwater-orchestrator)** — 🌊 Multi-model AI orchestrator by GLM-5.2 — the full ensemble
+- **[slackwater-perception](https://github.com/SuperInstance/slackwater-perception)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-rust](https://github.com/SuperInstance/slackwater-rust)** — Rust performance twins for Slackwater — exact arithmetic, Tensor-MIDI, flow detection, Eisenstein la
+- **[slackwater-tempo](https://github.com/SuperInstance/slackwater-tempo)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-tminus](https://github.com/SuperInstance/slackwater-tminus)** — Modular component of the Slackwater spatial-temporal AI agent framework
 - **[slam-core](https://github.com/SuperInstance/slam-core)** — SLAM (Simultaneous Localization and Mapping) core for SuperInstance robotics
 - **[smart-404](https://github.com/SuperInstance/smart-404)** — Smart 404 page with semantic search and did-you-mean
 - **[SmartCRDT](https://github.com/SuperInstance/SmartCRDT)** — Utilizing CRDT technology for self-improving AI

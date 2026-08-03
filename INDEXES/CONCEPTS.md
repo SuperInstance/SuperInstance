@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-02 07:32 UTC
+**Generated:** 2026-08-03 08:29 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -71,7 +71,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [constraint-theory-py](https://github.com/SuperInstance/constraint-theory-py)
 - [constrainttheory-ml-demo](https://github.com/SuperInstance/constrainttheory-ml-demo)
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
-- [field-core](https://github.com/SuperInstance/field-core)
 - [fleet-bench](https://github.com/SuperInstance/fleet-bench)
 - [fleet-budget](https://github.com/SuperInstance/fleet-budget)
 - [fleet-constraint-kernel](https://github.com/SuperInstance/fleet-constraint-kernel)
@@ -219,6 +218,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [iching-sheaf](https://github.com/SuperInstance/iching-sheaf)
 - [plato-midi-bridge-rs](https://github.com/SuperInstance/plato-midi-bridge-rs)
 - [pythagorean-quantize](https://github.com/SuperInstance/pythagorean-quantize)
+- [slackwater-rust](https://github.com/SuperInstance/slackwater-rust)
 - [snap-lut-eisenstein](https://github.com/SuperInstance/snap-lut-eisenstein)
 - [snapkit-js](https://github.com/SuperInstance/snapkit-js)
 - [snapkit-python](https://github.com/SuperInstance/snapkit-python)
@@ -525,9 +525,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [crab](https://github.com/SuperInstance/crab)
 - [exocortex](https://github.com/SuperInstance/exocortex)
 - [exocortex-rs](https://github.com/SuperInstance/exocortex-rs)
-- [fiber-category](https://github.com/SuperInstance/fiber-category)
-- [fibonacci-growth-v2](https://github.com/SuperInstance/fibonacci-growth-v2)
-- [field-dynamics](https://github.com/SuperInstance/field-dynamics)
 - [field-dynamics-sim](https://github.com/SuperInstance/field-dynamics-sim)
 - [fishinglog-agent](https://github.com/SuperInstance/fishinglog-agent)
 - [fleet](https://github.com/SuperInstance/fleet)
@@ -1086,6 +1083,11 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [sketch-rotation-audit-provenance](https://github.com/SuperInstance/sketch-rotation-audit-provenance)
 - [sketch-self-hosting-construct](https://github.com/SuperInstance/sketch-self-hosting-construct)
 - [sketch-workspace-sketchbook-pattern](https://github.com/SuperInstance/sketch-workspace-sketchbook-pattern)
+- [slackwater-harmony](https://github.com/SuperInstance/slackwater-harmony)
+- [slackwater-lattice](https://github.com/SuperInstance/slackwater-lattice)
+- [slackwater-perception](https://github.com/SuperInstance/slackwater-perception)
+- [slackwater-tempo](https://github.com/SuperInstance/slackwater-tempo)
+- [slackwater-tminus](https://github.com/SuperInstance/slackwater-tminus)
 - [snapkit-zig](https://github.com/SuperInstance/snapkit-zig)
 - [spacedrive-fleet](https://github.com/SuperInstance/spacedrive-fleet)
 - [spectral-deadband-v2](https://github.com/SuperInstance/spectral-deadband-v2)
@@ -1573,6 +1575,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [SubForge](https://github.com/SuperInstance/SubForge)
 - [a2ui](https://github.com/SuperInstance/a2ui)
 - [activelog-ai](https://github.com/SuperInstance/activelog-ai)
+- [baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)
 - [carry-protocol](https://github.com/SuperInstance/carry-protocol)
 - [chart-system](https://github.com/SuperInstance/chart-system)
 - [claw](https://github.com/SuperInstance/claw)
@@ -1590,13 +1593,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)
 - [exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)
 - [fabric-mcp](https://github.com/SuperInstance/fabric-mcp)
-- [feistel-net](https://github.com/SuperInstance/feistel-net)
 - [fencecraft](https://github.com/SuperInstance/fencecraft)
-- [fft-core](https://github.com/SuperInstance/fft-core)
-- [fft-rs](https://github.com/SuperInstance/fft-rs)
 - [fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)
-- [fibonacci-growth](https://github.com/SuperInstance/fibonacci-growth)
-- [fiedler-universal](https://github.com/SuperInstance/fiedler-universal)
 - [field-evolution-early-version](https://github.com/SuperInstance/field-evolution-early-version)
 - [financial-conservation](https://github.com/SuperInstance/financial-conservation)
 - [finite-difference-pde](https://github.com/SuperInstance/finite-difference-pde)
@@ -2026,6 +2024,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [routing-table](https://github.com/SuperInstance/routing-table)
 - [run-length](https://github.com/SuperInstance/run-length)
 - [rusty-series](https://github.com/SuperInstance/rusty-series)
+- [salidiere](https://github.com/SuperInstance/salidiere)
 - [scale-fold](https://github.com/SuperInstance/scale-fold)
 - [screenpipe-conservation](https://github.com/SuperInstance/screenpipe-conservation)
 - [scripts](https://github.com/SuperInstance/scripts)
@@ -2075,6 +2074,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [sketch-ternary-kihn-metaphor](https://github.com/SuperInstance/sketch-ternary-kihn-metaphor)
 - [skills](https://github.com/SuperInstance/skills)
 - [skip-list-rs](https://github.com/SuperInstance/skip-list-rs)
+- [slackwater-orchestrator](https://github.com/SuperInstance/slackwater-orchestrator)
 - [slam-core](https://github.com/SuperInstance/slam-core)
 - [smart-404](https://github.com/SuperInstance/smart-404)
 - [smt-core](https://github.com/SuperInstance/smt-core)

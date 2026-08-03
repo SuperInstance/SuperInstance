@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-02 07:32 UTC
+**Generated:** 2026-08-03 08:29 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -8,6 +8,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | Repo | Vessel | Purpose | Status |
 |------|--------|---------|--------|
 | **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** | Oracle1 | TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n | 🟢 active |
+| **[salidiere](https://github.com/SuperInstance/salidiere)** | Oracle1 | 🧂 Multi-model AI orchestrator by Claude Sonnet 5 — the salt-keeper | 🟢 active |
 | **[seed-mcp](https://github.com/SuperInstance/seed-mcp)** | Oracle1 | Standalone MCP + HTTP API for ByteDance Seed-2.0-Mini - cheap creative reasoning engine | 🟢 active |
 | **[sketch-self-hosting-construct](https://github.com/SuperInstance/sketch-self-hosting-construct)** | Oracle1 | Oracle2 fleet construct: 4 Rust services, 13MB binary, zero API cost pulse stream with SVM+entropy+s | 🟢 active |
 | **[sketch-ternary-kihn-metaphor](https://github.com/SuperInstance/sketch-ternary-kihn-metaphor)** | Oracle1 | ARM64 free tier as firing kihn - API brain as dissertation committee. Local ternary math at zero cos | 🟢 active |
@@ -153,6 +154,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[si-runtime-js](https://github.com/SuperInstance/si-runtime-js)** | Forgemaster | General-purpose JS/TS runtime for constraint-aware AI: conservation budgets, spectral ranking, capab | 🟢 active |
 | **[si-runtime-zig](https://github.com/SuperInstance/si-runtime-zig)** | Forgemaster | General-purpose Zig runtime for constraint-aware AI: conservation budgets, spectral ranking, capabil | 🟢 active |
 | **[si-variational-agent](https://github.com/SuperInstance/si-variational-agent)** | Forgemaster | Proof of concept: variational principle for optimal agent budget allocation — Euler-Lagrange with co | 🟢 active |
+| **[slackwater-rust](https://github.com/SuperInstance/slackwater-rust)** | Forgemaster | Rust performance twins for Slackwater — exact arithmetic, Tensor-MIDI, flow detection, Eisenstein la | 🟢 active |
 | **[snap-lut-eisenstein](https://github.com/SuperInstance/snap-lut-eisenstein)** | Forgemaster | Snap lookup tables using Eisenstein integer arithmetic | 🟢 active |
 | **[snapkit-flux-bridge](https://github.com/SuperInstance/snapkit-flux-bridge)** | Forgemaster | Bridge from snapkit harmony governor configs to FLUX bytecode. Python enforcement can be bypassed; b | 🟢 active |
 | **[snapkit-js](https://github.com/SuperInstance/snapkit-js)** | Forgemaster | Eisenstein A₂ lattice snap, temporal beat grids, and spectral analysis for JavaScript/TypeScript. Ze | 🟢 active |
@@ -182,7 +184,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 |------|--------|---------|--------|
 | **[A2A-native-notebookLM](https://github.com/SuperInstance/A2A-native-notebookLM)** | Oracle1 |  Notebook LM for agents. let them build automations themselves for themselves | 🟢 active |
 | **[claw](https://github.com/SuperInstance/claw)** | Forgemaster | A simple Claw engine for cellular logic in spreadsheet instances within a superinstance/spreadsheet- | 🟢 active |
-| **[field-core](https://github.com/SuperInstance/field-core)** | Forgemaster | Continuous constraint field library with topology detection and propagation | 🟢 active |
 | **[fleet-a2a-bridge](https://github.com/SuperInstance/fleet-a2a-bridge)** | Oracle1 | Bridge between message-passing (I2I bottles) and functional composition (spreadsheet formulas) for i | 🟢 active |
 | **[fleet-a2a-pipeline](https://github.com/SuperInstance/fleet-a2a-pipeline)** | Oracle1 | CSV-to-JSON pipeline converting spreadsheet strategy vectors through ternary domain into MIDI sequen | 🟢 active |
 | **[fleet-a2a-spectral](https://github.com/SuperInstance/fleet-a2a-spectral)** | Oracle1 | Graph spectral topology to music — Laplacian eigenvalues, Fiedler vectors, and Cheeger constants bec | 🟢 active |
@@ -629,6 +630,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[agent-orchestration](https://github.com/SuperInstance/agent-orchestration)** | Various | Orchestration for agent fleets. Roles as instruments, dynamics as resource allocation, sections as c | 🟢 active |
 | **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** | Various | Creative writing, essays, and philosophical explorations from the Exocortex project | ⚪ unknown |
 | **[Baton](https://github.com/SuperInstance/Baton)** | Various | automate agents training their successors for a better way to have infinite context without limits | 🟢 active |
+| **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** | Various | 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton | ⚪ unknown |
 | **[baton-protocol](https://github.com/SuperInstance/baton-protocol)** | Various | Session-level handoff for AI agents (state/next/meta). Lighter than baton-handoff (model generationa | 🟢 active |
 | **[capitaine-1](https://github.com/SuperInstance/capitaine-1)** | Various | Capitaine — fork a repo, click Codespaces, the agent is alive. The repo IS the agent. | 🟢 active |
 | **[carry-protocol](https://github.com/SuperInstance/carry-protocol)** | Various | Moving data across divides where infrastructure doesn't reach. | ⚪ unknown |
@@ -650,16 +652,8 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[exocortex](https://github.com/SuperInstance/exocortex)** | Various | 🧠 Persistent cognitive substrate for multi-agent systems — S3-compatible memory, shadow rendering, t | 🟢 active |
 | **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** | Various | Rust agent framework with conservation-law awareness | 🟢 active |
 | **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)** | Various | fabric-mcp | ⚪ unknown |
-| **[feistel-net](https://github.com/SuperInstance/feistel-net)** | Various | Feistel network cipher constructions in pure Rust — balanced/unbalanced networks, key schedules, S-b | ⚪ unknown |
 | **[fencecraft](https://github.com/SuperInstance/fencecraft)** | Various | Fencecraft: visual fence builder for Working Animal Architecture | ⚪ unknown |
-| **[fft-core](https://github.com/SuperInstance/fft-core)** | Various | Research-grade FFT in pure Rust — Cooley-Tukey, Bluestein, real FFT, inverse, and windowing function | ⚪ unknown |
-| **[fft-rs](https://github.com/SuperInstance/fft-rs)** | Various | Fast Fourier Transform in pure Rust — Cooley-Tukey radix-2, iterative FFT, IFFT, convolution, and DC | ⚪ unknown |
-| **[fiber-category](https://github.com/SuperInstance/fiber-category)** | Various | Fiber categories and Grothendieck constructions for agent systems — organize and migrate agents acro | 🟢 active |
 | **[fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)** | Various | Budget governor whose limit scales by the golden ratio. | ⚪ unknown |
-| **[fibonacci-growth](https://github.com/SuperInstance/fibonacci-growth)** | Various | Fibonacci team growth → CR = 1/φ. Penrose outward, Mandelbrot inward. Pure Rust. | ⚪ unknown |
-| **[fibonacci-growth-v2](https://github.com/SuperInstance/fibonacci-growth-v2)** | Various | Fibonacci growth patterns for the SuperInstance fleet — scaling dynamics for distributed agent syste | 🟢 active |
-| **[fiedler-universal](https://github.com/SuperInstance/fiedler-universal)** | Various | Benchmarking Fiedler vector partition across 6 domains — honest results | ⚪ unknown |
-| **[field-dynamics](https://github.com/SuperInstance/field-dynamics)** | Various | Interactive multi-agent field dynamics simulation with spectral forces | 🟢 active |
 | **[field-dynamics-sim](https://github.com/SuperInstance/field-dynamics-sim)** | Various | Multi-agent field dynamics simulation with Conservation Spectral Analysis — fleet spectral health mo | 🟢 active |
 | **[field-evolution-early-version](https://github.com/SuperInstance/field-evolution-early-version)** | Various | [ARCHIVED] Early field evolution tracker. 1KB scaffolding only. | ⚪ unknown |
 | **[financial-conservation](https://github.com/SuperInstance/financial-conservation)** | Various | Spectral conservation analysis of financial market regimes | ⚪ unknown |
@@ -1525,6 +1519,12 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[sketch-oracle2-construct-readme](https://github.com/SuperInstance/sketch-oracle2-construct-readme)** | Various | Living document: what runs on oracle2, what ports, what services, the feedback loop | ⚪ unknown |
 | **[skills](https://github.com/SuperInstance/skills)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[skip-list-rs](https://github.com/SuperInstance/skip-list-rs)** | Various | Skip list with probabilistic balancing, range queries, and iterator support — pure Rust, no dependen | ⚪ unknown |
+| **[slackwater-harmony](https://github.com/SuperInstance/slackwater-harmony)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🟢 active |
+| **[slackwater-lattice](https://github.com/SuperInstance/slackwater-lattice)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🟢 active |
+| **[slackwater-orchestrator](https://github.com/SuperInstance/slackwater-orchestrator)** | Various | 🌊 Multi-model AI orchestrator by GLM-5.2 — the full ensemble | ⚪ unknown |
+| **[slackwater-perception](https://github.com/SuperInstance/slackwater-perception)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🟢 active |
+| **[slackwater-tempo](https://github.com/SuperInstance/slackwater-tempo)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🟢 active |
+| **[slackwater-tminus](https://github.com/SuperInstance/slackwater-tminus)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🟢 active |
 | **[slam-core](https://github.com/SuperInstance/slam-core)** | Various | SLAM (Simultaneous Localization and Mapping) core for SuperInstance robotics | ⚪ unknown |
 | **[smart-404](https://github.com/SuperInstance/smart-404)** | Various | Smart 404 page with semantic search and did-you-mean | ⚪ unknown |
 | **[SmartCRDT](https://github.com/SuperInstance/SmartCRDT)** | Various | Utilizing CRDT technology for self-improving AI | 🟢 active |
@@ -2035,6 +2035,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Core Infrastructure
 - **Vessel:** Oracle1
 - **Purpose:** TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the notebook runtime
+- **Research lineage:** Auto-categorized. Core infrastructure.
+- **Status:** active
+
+### [salidiere](https://github.com/SuperInstance/salidiere)
+- **Domain:** Core Infrastructure
+- **Vessel:** Oracle1
+- **Purpose:** 🧂 Multi-model AI orchestrator by Claude Sonnet 5 — the salt-keeper
 - **Research lineage:** Auto-categorized. Core infrastructure.
 - **Status:** active
 
@@ -3025,6 +3032,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
+### [slackwater-rust](https://github.com/SuperInstance/slackwater-rust)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** Rust performance twins for Slackwater — exact arithmetic, Tensor-MIDI, flow detection, Eisenstein lattice
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
 ### [snap-lut-eisenstein](https://github.com/SuperInstance/snap-lut-eisenstein)
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
@@ -3197,13 +3211,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** A simple Claw engine for cellular logic in spreadsheet instances within a superinstance/spreadsheet-moment protocol
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [field-core](https://github.com/SuperInstance/field-core)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Continuous constraint field library with topology detection and propagation
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
@@ -6259,27 +6266,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
-### [fiber-category](https://github.com/SuperInstance/fiber-category)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Fiber categories and Grothendieck constructions for agent systems — organize and migrate agents across capability hierarchies
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [fibonacci-growth-v2](https://github.com/SuperInstance/fibonacci-growth-v2)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Fibonacci growth patterns for the SuperInstance fleet — scaling dynamics for distributed agent systems
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [field-dynamics](https://github.com/SuperInstance/field-dynamics)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Interactive multi-agent field dynamics simulation with spectral forces
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
 ### [field-dynamics-sim](https://github.com/SuperInstance/field-dynamics-sim)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -7943,6 +7929,41 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Proof of concept: Wasserstein distance measures fleet distribution shift — Sinkhorn optimal transport for agent realignment
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [slackwater-harmony](https://github.com/SuperInstance/slackwater-harmony)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Modular component of the Slackwater spatial-temporal AI agent framework
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [slackwater-lattice](https://github.com/SuperInstance/slackwater-lattice)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Modular component of the Slackwater spatial-temporal AI agent framework
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [slackwater-perception](https://github.com/SuperInstance/slackwater-perception)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Modular component of the Slackwater spatial-temporal AI agent framework
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [slackwater-tempo](https://github.com/SuperInstance/slackwater-tempo)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Modular component of the Slackwater spatial-temporal AI agent framework
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [slackwater-tminus](https://github.com/SuperInstance/slackwater-tminus)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Modular component of the Slackwater spatial-temporal AI agent framework
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
