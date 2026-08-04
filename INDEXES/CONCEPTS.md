@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-03 08:29 UTC
+**Generated:** 2026-08-04 07:40 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -216,6 +216,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hex-lattice-explorer](https://github.com/SuperInstance/hex-lattice-explorer)
 - [hexgrid-gen](https://github.com/SuperInstance/hexgrid-gen)
 - [iching-sheaf](https://github.com/SuperInstance/iching-sheaf)
+- [modurust-lite](https://github.com/SuperInstance/modurust-lite)
 - [plato-midi-bridge-rs](https://github.com/SuperInstance/plato-midi-bridge-rs)
 - [pythagorean-quantize](https://github.com/SuperInstance/pythagorean-quantize)
 - [slackwater-rust](https://github.com/SuperInstance/slackwater-rust)
@@ -525,7 +526,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [crab](https://github.com/SuperInstance/crab)
 - [exocortex](https://github.com/SuperInstance/exocortex)
 - [exocortex-rs](https://github.com/SuperInstance/exocortex-rs)
-- [field-dynamics-sim](https://github.com/SuperInstance/field-dynamics-sim)
 - [fishinglog-agent](https://github.com/SuperInstance/fishinglog-agent)
 - [fleet](https://github.com/SuperInstance/fleet)
 - [fleet-a2a-bridge](https://github.com/SuperInstance/fleet-a2a-bridge)
