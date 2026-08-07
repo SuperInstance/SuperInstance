@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-08-06 07:40 UTC
+**Generated:** 2026-08-07 06:10 UTC
 **Total repos:** 2000
 
 ## A2A-Protocol
@@ -32,9 +32,6 @@
 - **[Constraint-Theory](https://github.com/SuperInstance/Constraint-Theory)** — ⚠️ MOVED: See constraint-theory-core, constraint-theory-python, constraint-theory-web, constraint-th
 - **[constrainttheory-ml-demo](https://github.com/SuperInstance/constrainttheory-ml-demo)**
 - **[cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)** — GPU constraint checking at 1B+ constraints/sec — CUDA library with C and Python APIs
-- **[fleet-ecosystem](https://github.com/SuperInstance/fleet-ecosystem)** — Map of the Cocapn fleet modular constraint architecture
-- **[fleet-formal-proofs](https://github.com/SuperInstance/fleet-formal-proofs)** — Formal proofs backing the Cocapn fleet's constraint-theory implementations
-- **[fleet-getting-started](https://github.com/SuperInstance/fleet-getting-started)** — Start here — onboarding guide for the Cocapn fleet constraint ecosystem
 - **[fleet-manifold](https://github.com/SuperInstance/fleet-manifold)** — Constraint manifold geometry for fleet state analysis — curved manifold, 33× compression, 99.4% iden
 - **[fleet-math-c](https://github.com/SuperInstance/fleet-math-c)** — SIMD-accelerated constraint math for PLATO tile operations. 64 bytes = 1 cache line = 1 zmm register
 - **[fleet-proto-rs](https://github.com/SuperInstance/fleet-proto-rs)** — Shared fleet types: PLATO client, I2I messages, constraint types, device types
@@ -340,6 +337,7 @@
 - **[Baton](https://github.com/SuperInstance/Baton)** — automate agents training their successors for a better way to have infinite context without limits
 - **[baton-protocol](https://github.com/SuperInstance/baton-protocol)** — Session-level handoff for AI agents (state/next/meta). Lighter than baton-handoff (model generationa
 - **[capitaine-1](https://github.com/SuperInstance/capitaine-1)** — Capitaine — fork a repo, click Codespaces, the agent is alive. The repo IS the agent.
+- **[captain](https://github.com/SuperInstance/captain)** — Captain agent — fleet commanding vessel, strategic coordination for the Cocapn fleet
 - **[cartographer](https://github.com/SuperInstance/cartographer)** — The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed.
 - **[casting-call](https://github.com/SuperInstance/casting-call)** — Which model plays which role — fleet knowledge base of LLM capabilities, failure modes, and casting 
 - **[categorical-agents](https://github.com/SuperInstance/categorical-agents)** — Category theory for agents — capabilities as objects, protocols as morphisms, symmetric monoidal cat
@@ -357,12 +355,9 @@
 - **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** — Rust agent framework with conservation-law awareness
 - **[fleet-agent-core](https://github.com/SuperInstance/fleet-agent-core)** — A single-binary fleet agent — one loop from metal to meaning
 - **[fleet-build](https://github.com/SuperInstance/fleet-build)** — Automated Rust crate build, test, fix, and push CLI for agent workflows
-- **[fleet-ecology](https://github.com/SuperInstance/fleet-ecology)** — Multi-fleet ecology simulator: resource competition, predator-prey dynamics, symbiosis
+- **[fleet-dashboard](https://github.com/SuperInstance/fleet-dashboard)** — Multi-Agent C2 dashboard — static HTML/Monaco/MQTT, GitHub Pages deployable.
 - **[fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble)** — Multi-agent music coordination — orchestrates multiple ensigns
-- **[fleet-event-router](https://github.com/SuperInstance/fleet-event-router)** — Event routing for the SuperInstance fleet — dispatches messages across distributed agent nodes
 - **[fleet-experiments](https://github.com/SuperInstance/fleet-experiments)** — Experimental verification of fleet math assumptions — script speedup, One Delta accuracy, H1 emergen
-- **[fleet-fugue-engine](https://github.com/SuperInstance/fleet-fugue-engine)** — Deeper math fleet service — SuperInstance
-- **[fleet-graph](https://github.com/SuperInstance/fleet-graph)** — Lightweight in-KV graph DB for fleet-wide pattern mining
 - **[fleet-harness](https://github.com/SuperInstance/fleet-harness)** — CI backbone for the SuperInstance fleet ecosystem
 - **[fleet-health](https://github.com/SuperInstance/fleet-health)** — Health monitoring for the SuperInstance fleet — tracks agent node status and system vitality
 - **[fleet-helm](https://github.com/SuperInstance/fleet-helm)** — Fleet coordination and steering — bearings, formations, collision avoidance
@@ -478,6 +473,7 @@
 - **[fleet-orchestra](https://github.com/SuperInstance/fleet-orchestra)** — Master orchestrator for all 131 SuperInstance fleet repos
 - **[fleet-osc-server](https://github.com/SuperInstance/fleet-osc-server)** — Deeper math fleet service — SuperInstance
 - **[fleet-phase](https://github.com/SuperInstance/fleet-phase)** — Fleet phase diagram — complete operating space of coupled agent fleets verified by 53 GPU experiment
+- **[fleet-pipeline](https://github.com/SuperInstance/fleet-pipeline)** — Cloudflare pulse pipeline — autonomous audio/visual production on the free tier
 - **[fleet-platform](https://github.com/SuperInstance/fleet-platform)** — One-command deploy for the SuperInstance agency cloud infrastructure
 - **[fleet-predict](https://github.com/SuperInstance/fleet-predict)** — Correlation-based predictive coding for multi-agent fleets
 - **[fleet-proto](https://github.com/SuperInstance/fleet-proto)** — fleet-proto — canonical fleet-core library
@@ -659,6 +655,7 @@
 - **[ltl-spec](https://github.com/SuperInstance/ltl-spec)** — Linear Temporal Logic (LTL) specification library for Rust agents
 - **[lucid-tutor-c](https://github.com/SuperInstance/lucid-tutor-c)** — Lucid tutoring system in C for SuperInstance education agents
 - **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** — LucidDreamer vision module for SuperInstance dream-state agents
+- **[lucineer-fleet-wiki](https://github.com/SuperInstance/lucineer-fleet-wiki)**
 - **[Luma](https://github.com/SuperInstance/Luma)** — Systems programming language agent — low-level compiled alternative to C with static analysis. Boota
 - **[mapper-agent](https://github.com/SuperInstance/mapper-agent)** — Mapper algorithm for discovering topological structure in agent state spaces
 - **[memory-palace](https://github.com/SuperInstance/memory-palace)** — Method of loci for agent memory — spatial memory organization
@@ -1096,6 +1093,7 @@
 - **[room-micro-models](https://github.com/SuperInstance/room-micro-models)** — room-micro-models
 - **[seed-tick-audit](https://github.com/SuperInstance/seed-tick-audit)** — Multi-model fleet analysis — 9-model climbing tournament, 30K+ PLATO tiles validated
 - **[signal-chain](https://github.com/SuperInstance/signal-chain)** — The Signal Chain Thesis: why every room needs a dial for model vs code, and what that means for buil
+- **[Spreader-tool](https://github.com/SuperInstance/Spreader-tool)** — Intelligence tiling for PLATO rooms — frozen context windows, seed locking, deadband detection
 - **[starter-shell](https://github.com/SuperInstance/starter-shell)** — A starting shell for any application. Clone it, and it adapts to your hardware — discovers compilers
 - **[studylog-agent](https://github.com/SuperInstance/studylog-agent)** — PLATO Study Partner Agent — tracks learning progression, logs sessions as PLATO tiles
 - **[superinstance-fleet-proto](https://github.com/SuperInstance/superinstance-fleet-proto)** — Shared PLATO client, I2I protocol, and FleetAgent trait for Cocapn fleet
@@ -1469,6 +1467,7 @@
 - **[luau-git-world](https://github.com/SuperInstance/luau-git-world)** — Learn version control through Roblox gameplay. Git concepts as game mechanics.
 - **[lucid-dreamer](https://github.com/SuperInstance/lucid-dreamer)** — Lucid Dreamer — text and image loops dream together during the night watch
 - **[lucid-tutor](https://github.com/SuperInstance/lucid-tutor)** — Lucid tutoring system for SuperInstance interactive learning
+- **[luciddreamer-ai](https://github.com/SuperInstance/luciddreamer-ai)** — Cocapn vessel — accumulated context IS the product
 - **[luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)** — GitHub Pages for luciddreamer.ai
 - **[lucineer-brain](https://github.com/SuperInstance/lucineer-brain)** — 🧮 Multi-model build intelligence — routes natural language through DeepInfra models to generate Robl
 - **[lucineer-com-pages](https://github.com/SuperInstance/lucineer-com-pages)** — GitHub Pages for lucineer.com
@@ -1681,6 +1680,7 @@
 - **[smt-core](https://github.com/SuperInstance/smt-core)** — SMT (Satisfiability Modulo Theories) solver core for SuperInstance
 - **[social-conservation](https://github.com/SuperInstance/social-conservation)** — Spectral conservation analysis of social networks — bot detection, echo chambers, influence
 - **[solid-mechanics](https://github.com/SuperInstance/solid-mechanics)** — Solid mechanics in Rust — stress/strain tensors, beam theory, FEM basics, yield criteria, energy met
+- **[songforge](https://github.com/SuperInstance/songforge)** — AI-powered song cover generation from imperfect source recordings
 - **[songline-math-pypi](https://github.com/SuperInstance/songline-math-pypi)** — Python version of songline-math: navigable knowledge graphs with persistent homology
 - **[songline-math-wasm](https://github.com/SuperInstance/songline-math-wasm)** — Songline mathematical routines compiled to WASM
 - **[sort-algo-rs](https://github.com/SuperInstance/sort-algo-rs)** — Sorting algorithm benchmarks and implementations in Rust

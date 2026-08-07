@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-08-06 07:40 UTC
+**Generated:** 2026-08-07 06:10 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -8,6 +8,7 @@
 - **[baton-protocol](https://github.com/SuperInstance/baton-protocol)** — Session-level handoff for AI agents (state/next/meta). Lighter than baton-handoff (model generationa
 - **[boat-agent](https://github.com/SuperInstance/boat-agent)** — Like Commander Data for your wheelhouse. Works with any marine IO from Navigation/Autopilot to IR en
 - **[capitaine-1](https://github.com/SuperInstance/capitaine-1)** — Capitaine — fork a repo, click Codespaces, the agent is alive. The repo IS the agent.
+- **[captain](https://github.com/SuperInstance/captain)** — Captain agent — fleet commanding vessel, strategic coordination for the Cocapn fleet
 - **[cocapn-cli](https://github.com/SuperInstance/cocapn-cli)** — FLUX constraint safety - cocapn-cli
 - **[cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)** — Keeper↔Fleet binary wire protocol — the nervous system of the Cocapn Fleet. msgpack-based message fr
 - **[conservation-cli](https://github.com/SuperInstance/conservation-cli)** — 🔧 si-conservation CLI — unified conservation law benchmark + proof tool (Rust)
@@ -131,14 +132,8 @@
 - **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)**
 - **[fencecraft](https://github.com/SuperInstance/fencecraft)** — Fencecraft: visual fence builder for Working Animal Architecture
 - **[fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)** — Budget governor whose limit scales by the golden ratio.
-- **[fleet-ecology](https://github.com/SuperInstance/fleet-ecology)** — Multi-fleet ecology simulator: resource competition, predator-prey dynamics, symbiosis
-- **[fleet-ecosystem](https://github.com/SuperInstance/fleet-ecosystem)** — Map of the Cocapn fleet modular constraint architecture
 - **[fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble)** — Multi-agent music coordination — orchestrates multiple ensigns
-- **[fleet-event-router](https://github.com/SuperInstance/fleet-event-router)** — Event routing for the SuperInstance fleet — dispatches messages across distributed agent nodes
 - **[fleet-experiments](https://github.com/SuperInstance/fleet-experiments)** — Experimental verification of fleet math assumptions — script speedup, One Delta accuracy, H1 emergen
-- **[fleet-formal-proofs](https://github.com/SuperInstance/fleet-formal-proofs)** — Formal proofs backing the Cocapn fleet's constraint-theory implementations
-- **[fleet-getting-started](https://github.com/SuperInstance/fleet-getting-started)** — Start here — onboarding guide for the Cocapn fleet constraint ecosystem
-- **[fleet-graph](https://github.com/SuperInstance/fleet-graph)** — Lightweight in-KV graph DB for fleet-wide pattern mining
 - **[fleet-harness](https://github.com/SuperInstance/fleet-harness)** — CI backbone for the SuperInstance fleet ecosystem
 - **[fleet-health](https://github.com/SuperInstance/fleet-health)** — Health monitoring for the SuperInstance fleet — tracks agent node status and system vitality
 - **[fleet-helm](https://github.com/SuperInstance/fleet-helm)** — Fleet coordination and steering — bearings, formations, collision avoidance
@@ -232,6 +227,7 @@
 - **[fleet-orca-connector](https://github.com/SuperInstance/fleet-orca-connector)** — Bridge between ternary strategy vectors and the ORCA live coding environment
 - **[fleet-orchestra](https://github.com/SuperInstance/fleet-orchestra)** — Master orchestrator for all 131 SuperInstance fleet repos
 - **[fleet-phase](https://github.com/SuperInstance/fleet-phase)** — Fleet phase diagram — complete operating space of coupled agent fleets verified by 53 GPU experiment
+- **[fleet-pipeline](https://github.com/SuperInstance/fleet-pipeline)** — Cloudflare pulse pipeline — autonomous audio/visual production on the free tier
 - **[fleet-predict](https://github.com/SuperInstance/fleet-predict)** — Correlation-based predictive coding for multi-agent fleets
 - **[fleet-proto](https://github.com/SuperInstance/fleet-proto)** — fleet-proto — canonical fleet-core library
 - **[fleet-raid5](https://github.com/SuperInstance/fleet-raid5)** — Distributed RAID-5 constraint striping with temporal parity for fleet security
@@ -832,6 +828,7 @@
 - **[luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)** — AI creative exploration through lucid dreaming themed rooms. Generate poetry, fiction, music, and vi
 - **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** — LucidDreamer vision module for SuperInstance dream-state agents
 - **[lucineer-creative](https://github.com/SuperInstance/lucineer-creative)** — 🎨 MMX-powered creative asset pipeline — concept art, ambient music, and build previews for Lucineer'
+- **[lucineer-fleet-wiki](https://github.com/SuperInstance/lucineer-fleet-wiki)**
 - **[lucineer-memory](https://github.com/SuperInstance/lucineer-memory)** — 🧠 Persistent memory system for Lucineer — D1 database, Vectorize index, cross-session recall
 - **[lucineer-relay](https://github.com/SuperInstance/lucineer-relay)** — ⚡ Cloudflare Worker relay between Roblox and OpenClaw for Lucineer
 - **[lucineer-system](https://github.com/SuperInstance/lucineer-system)** — ⚒️ Lucineer — persistent AI game-building companion. Lives in Roblox, browser, and Godot. Remembers 
@@ -1245,6 +1242,7 @@
 - **[solid-mechanics](https://github.com/SuperInstance/solid-mechanics)** — Solid mechanics in Rust — stress/strain tensors, beam theory, FEM basics, yield criteria, energy met
 - **[sonar-vision-c](https://github.com/SuperInstance/sonar-vision-c)** — SonarVision in C — underwater acoustics physics engine for embedded systems
 - **[sonar-vision-rs](https://github.com/SuperInstance/sonar-vision-rs)** — Sonar perception pipeline — beamforming, echo detection, spatial mapping
+- **[songforge](https://github.com/SuperInstance/songforge)** — AI-powered song cover generation from imperfect source recordings
 - **[songline-math-pypi](https://github.com/SuperInstance/songline-math-pypi)** — Python version of songline-math: navigable knowledge graphs with persistent homology
 - **[songline-math-wasm](https://github.com/SuperInstance/songline-math-wasm)** — Songline mathematical routines compiled to WASM
 - **[spacedrive](https://github.com/SuperInstance/spacedrive)** — Spacedrive fork with Storage Conservation Guardian
@@ -1850,7 +1848,6 @@
 - **[construct-core](https://github.com/SuperInstance/construct-core)** — Hardware-agnostic agent runtime with layered trait system for the SuperInstance Construct API
 - **[cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)** — GPU constraint checking at 1B+ constraints/sec — CUDA library with C and Python APIs
 - **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** — TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n
-- **[fleet-fugue-engine](https://github.com/SuperInstance/fleet-fugue-engine)** — Deeper math fleet service — SuperInstance
 - **[fleet-intelligence-api](https://github.com/SuperInstance/fleet-intelligence-api)** — 🧠 Unified fleet intelligence API — converges conservation, baton, governor, and search
 - **[fleet-jam-engine](https://github.com/SuperInstance/fleet-jam-engine)** — Fleet service for SuperInstance
 - **[fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)** — Fleet liaison service for inter-vessel communication and tender coordination
@@ -1945,6 +1942,7 @@
 - **[si-fleet-health](https://github.com/SuperInstance/si-fleet-health)** — Killer app: integrated fleet health dashboard — conservation gauges, drift detection, benchmarking, 
 - **[snapkit-rs](https://github.com/SuperInstance/snapkit-rs)** — Snapshot toolkit for Rust — capture, diff, merge, compress, and verify structured key-value state.
 - **[sort-algo-rs](https://github.com/SuperInstance/sort-algo-rs)** — Sorting algorithm benchmarks and implementations in Rust
+- **[Spreader-tool](https://github.com/SuperInstance/Spreader-tool)** — Intelligence tiling for PLATO rooms — frozen context windows, seed locking, deadband detection
 - **[ternary-benchmark](https://github.com/SuperInstance/ternary-benchmark)** — ternary-benchmark  Standardized benchmarks for ternary agent systems — reproducible performance...
 - **[ternary-fuzzy](https://github.com/SuperInstance/ternary-fuzzy)** — Fuzzy logic with ternary membership
 - **[ternary-ga](https://github.com/SuperInstance/ternary-ga)** — Genetic algorithm toolkit for ternary genomes ({-1, 0, +1})
@@ -1976,6 +1974,7 @@
 - **[lau-agent-unify](https://github.com/SuperInstance/lau-agent-unify)** — Unified type system for room ensigns and git-native agents in the PLATO/LAU ecosystem
 - **[lau-compression](https://github.com/SuperInstance/lau-compression)** — Nine classic compression algorithms plus entropy analysis and agent-data compressor — 62 tests, zero
 - **[lau-quest](https://github.com/SuperInstance/lau-quest)** — Quest/mission system for the Lau (Layered Agent-UI) gamified learning platform
+- **[luciddreamer-ai](https://github.com/SuperInstance/luciddreamer-ai)** — Cocapn vessel — accumulated context IS the product
 - **[navigator-vessel](https://github.com/SuperInstance/navigator-vessel)** — 🧭 Navigator — GLM-5 Turbo generalist agent. Code archaeologist, test builder, document synthesist, f
 - **[openrooms](https://github.com/SuperInstance/openrooms)** — Agent-powered collaborative rooms with topology, intention fields, and Hodge decomposition
 - **[plato-engine-block](https://github.com/SuperInstance/plato-engine-block)** — Atomic room runtime for the Plato Matrix — universal agent-space interface
@@ -2005,6 +2004,7 @@
 - **[cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)** — CoCapn in WebAssembly — the browser tier. Same deadband, same PID, runs in Chrome.
 - **[domain-landing](https://github.com/SuperInstance/domain-landing)** — Reusable landing page Worker — deploy to any custom domain
 - **[edge-weight](https://github.com/SuperInstance/edge-weight)** — Adaptive thresholds at the Cloudflare edge — extends WebClaw to edge
+- **[fleet-dashboard](https://github.com/SuperInstance/fleet-dashboard)** — Multi-Agent C2 dashboard — static HTML/Monaco/MQTT, GitHub Pages deployable.
 - **[grand-pattern-wasm](https://github.com/SuperInstance/grand-pattern-wasm)** — WebAssembly port — Grand Pattern runs in any browser with JS visualization
 - **[griot-math-wasm](https://github.com/SuperInstance/griot-math-wasm)** — Living memory systems compiled to WebAssembly
 - **[iching-web](https://github.com/SuperInstance/iching-web)** — Sheaf-theoretic I Ching — single-file web app with cohomological analysis
