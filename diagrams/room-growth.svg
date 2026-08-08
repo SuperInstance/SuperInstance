@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="Georgia, serif">
+  <defs>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1525"/>
+      <stop offset="60%" stop-color="#0d2540"/>
+      <stop offset="100%" stop-color="#08152a"/>
+    </linearGradient>
+    <radialGradient id="roomGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a4a6a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1a2a4a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- Ocean background -->
+  <rect width="900" height="520" fill="url(#oceanGrad)"/>
+  
+  <!-- Star field -->
+  <circle cx="120" cy="30" r="1" fill="#445" opacity="0.5"/>
+  <circle cx="300" cy="20" r="1.5" fill="#556" opacity="0.4"/>
+  <circle cx="500" cy="35" r="1" fill="#445" opacity="0.6"/>
+  <circle cx="700" cy="25" r="1" fill="#556" opacity="0.3"/>
+  <circle cx="820" cy="40" r="1.5" fill="#445" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" fill="#c8d8e8" font-size="20" font-weight="bold">Rooms That Grow Like Barnacles</text>
+  <text x="450" y="55" text-anchor="middle" fill="#5a7a9a" font-size="13" font-style="italic">Each room is a shell the fleet left on the hull. Over time, the hull becomes a world.</text>
+
+  <!-- Vessel hull silhouette -->
+  <path d="M 200 430 Q 200 470 250 475 L 650 475 Q 700 470 700 430 L 680 380 L 220 380 Z" 
+        fill="#0a1525" stroke="#1a3050" stroke-width="2"/>
+  
+  <!-- Deck line -->
+  <line x1="220" y1="380" x2="680" y2="380" stroke="#2a4a6a" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Waterline -->
+  <path d="M 150 440 Q 300 435 450 442 Q 600 438 750 442" stroke="#1a3a5a" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 140 460 Q 290 455 440 462 Q 590 458 760 460" stroke="#1a3a5a" stroke-width="0.5" fill="none" opacity="0.3"/>
+
+  <!-- Room 1: Bar Rail (the first room) -->
+  <ellipse cx="300" cy="360" rx="50" ry="28" fill="url(#roomGlow)" stroke="#3a6a8a" stroke-width="1.5" opacity="0.9"/>
+  <text x="300" y="358" text-anchor="middle" fill="#5a9aba" font-size="11" font-weight="bold">Bar Rail</text>
+  <text x="300" y="372" text-anchor="middle" fill="#3a6a8a" font-size="8">Day 1 · the seed</text>
+  <circle cx="300" cy="360" r="4" fill="#5a9aba" opacity="0.6"/>
+
+  <!-- Room 2: Library Nook -->
+  <ellipse cx="420" cy="345" rx="45" ry="25" fill="url(#roomGlow)" stroke="#4a7a5a" stroke-width="1.5" opacity="0.8"/>
+  <text x="420" y="343" text-anchor="middle" fill="#6a9a7a" font-size="11" font-weight="bold">Library</text>
+  <text x="420" y="356" text-anchor="middle" fill="#4a7a5a" font-size="8">Day 3 · west exit</text>
+
+  <!-- Room 3: Aft Deck -->
+  <ellipse cx="540" cy="365" rx="48" ry="26" fill="url(#roomGlow)" stroke="#8a7a4a" stroke-width="1.5" opacity="0.85"/>
+  <text x="540" y="363" text-anchor="middle" fill="#aa9a6a" font-size="11" font-weight="bold">Aft Deck</text>
+  <text x="540" y="376" text-anchor="middle" fill="#8a7a4a" font-size="8">Day 5 · open air</text>
+
+  <!-- Room 4: Galley -->
+  <ellipse cx="250" cy="330" rx="40" ry="22" fill="url(#roomGlow)" stroke="#7a5a6a" stroke-width="1.5" opacity="0.75"/>
+  <text x="250" y="328" text-anchor="middle" fill="#9a7a8a" font-size="10" font-weight="bold">Galley</text>
+  <text x="250" y="340" text-anchor="middle" fill="#7a5a6a" font-size="8">Day 7</text>
+
+  <!-- Room 5: Engine Room -->
+  <ellipse cx="630" cy="325" rx="42" ry="24" fill="url(#roomGlow)" stroke="#6a5a3a" stroke-width="1.5" opacity="0.7"/>
+  <text x="630" y="323" text-anchor="middle" fill="#8a7a5a" font-size="10" font-weight="bold">Engine Room</text>
+  <text x="630" y="336" text-anchor="middle" fill="#6a5a3a" font-size="8">Day 10</text>
+
+  <!-- Room 6: Bridge Table -->
+  <ellipse cx="370" cy="300" rx="38" ry="20" fill="url(#roomGlow)" stroke="#5a6a8a" stroke-width="1.5" opacity="0.65"/>
+  <text x="370" y="298" text-anchor="middle" fill="#7a8aaa" font-size="10" font-weight="bold">Bridge</text>
+  <text x="370" y="310" text-anchor="middle" fill="#5a6a8a" font-size="8">Day 12</text>
+
+  <!-- Room 7: Wheelhouse -->
+  <ellipse cx="490" cy="290" rx="36" ry="18" fill="url(#roomGlow)" stroke="#4a8a8a" stroke-width="1.5" opacity="0.6"/>
+  <text x="490" y="288" text-anchor="middle" fill="#6aaaaa" font-size="10" font-weight="bold">Wheelhouse</text>
+  <text x="490" y="300" text-anchor="middle" fill="#4a8a8a" font-size="8">Day 14</text>
+
+  <!-- Room 8: Poker Room (materialized) -->
+  <ellipse cx="610" cy="280" rx="34" ry="17" fill="url(#roomGlow)" stroke="#8a5a8a" stroke-width="1.5" opacity="0.55"/>
+  <text x="610" y="278" text-anchor="middle" fill="#aa7aaa" font-size="9" font-weight="bold">Poker Room</text>
+  <text x="610" y="289" text-anchor="middle" fill="#8a5a8a" font-size="7">Day 18 · spawned</text>
+
+  <!-- Room 9: Camera Room -->
+  <ellipse cx="200" cy="290" rx="32" ry="16" fill="url(#roomGlow)" stroke="#8a8a4a" stroke-width="1.5" opacity="0.5"/>
+  <text x="200" y="288" text-anchor="middle" fill="#aaaa6a" font-size="9" font-weight="bold">Crow's Nest</text>
+  <text x="200" y="299" text-anchor="middle" fill="#8a8a4a" font-size="7">Day 21 · camera</text>
+
+  <!-- Warp connections -->
+  <path d="M 300 360 Q 200 300 200 290" stroke="#3a5a7a" stroke-width="1" stroke-dasharray="3,3" fill="none" opacity="0.4"/>
+  <path d="M 630 325 Q 620 300 610 280" stroke="#3a5a7a" stroke-width="1" stroke-dasharray="3,3" fill="none" opacity="0.4"/>
+  <path d="M 300 360 Q 350 330 370 300" stroke="#3a5a7a" stroke-width="1" stroke-dasharray="3,3" fill="none" opacity="0.3"/>
+
+  <!-- Timeline arrow -->
+  <line x1="100" y1="490" x2="800" y2="490" stroke="#2a4a6a" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="800,490 792,486 792,494" fill="#2a4a6a" opacity="0.5"/>
+  <text x="100" y="508" fill="#3a5a7a" font-size="10">Day 1</text>
+  <text x="440" y="508" text-anchor="middle" fill="#3a5a7a" font-size="10">Day 12 — the hull disappears under the rooms</text>
+  <text x="770" y="508" text-anchor="end" fill="#3a5a7a" font-size="10">Day 21+</text>
+
+  <!-- Warp gate indicator -->
+  <rect x="730" y="250" width="130" height="50" rx="8" fill="#0a0a1a" stroke="#3a3a6a" stroke-width="1" opacity="0.8"/>
+  <text x="795" y="270" text-anchor="middle" fill="#6a6aaa" font-size="9" font-weight="bold">◈ Warp System</text>
+  <text x="795" y="285" text-anchor="middle" fill="#5a5a8a" font-size="8">Rooms link across</text>
+  <text x="795" y="295" text-anchor="middle" fill="#5a5a8a" font-size="8">vessels &amp; worlds</text>
+
+  <!-- Legend -->
+  <rect x="40" y="130" width="180" height="80" rx="6" fill="#080a15" stroke="#1a2a4a"/>
+  <text x="50" y="148" fill="#5a7a9a" font-size="10" font-weight="bold">How rooms appear:</text>
+  <text x="50" y="164" fill="#4a6a8a" font-size="9">1. Need arises (a conversation)</text>
+  <text x="50" y="178" fill="#4a6A8a" font-size="9">2. Room spawns in rooms.json</text>
+  <text x="50" y="192" fill="#4a6a8a" font-size="9">3. Loader connects exits</text>
+  <text x="50" y="206" fill="#4a6a8a" font-size="9">4. Renderer makes it visible</text>
+</svg>

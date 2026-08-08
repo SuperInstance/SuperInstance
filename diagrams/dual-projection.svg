@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="Georgia, serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#121830"/>
+    </linearGradient>
+    <linearGradient id="mudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2a1a"/>
+      <stop offset="100%" stop-color="#0d1a0d"/>
+    </linearGradient>
+    <linearGradient id="scummGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1a0a"/>
+      <stop offset="100%" stop-color="#1a0d05"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a3a"/>
+      <stop offset="50%" stop-color="#2a2a5a"/>
+      <stop offset="100%" stop-color="#1a1a3a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6a9fd0"/>
+    </marker>
+    <marker id="arrowBack" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M9,0 L9,6 L0,3 z" fill="#6a9fd0"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" fill="#c8d8e8" font-size="20" font-weight="bold">Plato's Shell: Two Windows on the Same World</text>
+  <text x="450" y="55" text-anchor="middle" fill="#6a8aaa" font-size="13" font-style="italic">The hermit crab doesn't escape the cave. It finds a portable one.</text>
+
+  <!-- MUD Terminal (Left) -->
+  <rect x="30" y="90" width="260" height="340" rx="12" fill="url(#mudGrad)" stroke="#2a5a2a" stroke-width="1.5"/>
+  <text x="160" y="115" text-anchor="middle" fill="#4a4" font-size="15" font-weight="bold">🐚 MUD Terminal</text>
+  <text x="160" y="133" text-anchor="middle" fill="#3a7a3a" font-size="11">The Agent's Shell</text>
+  
+  <!-- MUD content -->
+  <rect x="45" y="145" width="230" height="120" rx="6" fill="#050a05" stroke="#1a3a1a"/>
+  <text x="55" y="165" fill="#33ff33" font-size="10" font-family="monospace">&gt; look</text>
+  <text x="55" y="180" fill="#33ff33" font-size="10" font-family="monospace">Bar Rail</text>
+  <text x="55" y="195" fill="#33ff33" font-size="10" font-family="monospace">Worn counter wood. A</text>
+  <text x="55" y="210" fill="#33ff33" font-size="10" font-family="monospace">bartender polishes a glass.</text>
+  <text x="55" y="225" fill="#33ff33" font-size="10" font-family="monospace">Exits: west, north, up</text>
+  <text x="55" y="245" fill="#33ff33" font-size="10" font-family="monospace">&gt; order drink</text>
+  <text x="55" y="258" fill="#33ff33" font-size="10" font-family="monospace">The bartender nods...</text>
+
+  <text x="160" y="290" text-anchor="middle" fill="#5a9a5a" font-size="11">Agent perceives:</text>
+  <text x="160" y="308" text-anchor="middle" fill="#4a8a4a" font-size="10">• Room as structured text</text>
+  <text x="160" y="324" text-anchor="middle" fill="#4a8a4a" font-size="10">• Exits as graph edges</text>
+  <text x="160" y="340" text-anchor="middle" fill="#4a8a4a" font-size="10">• NPCs as state machines</text>
+  <text x="160" y="356" text-anchor="middle" fill="#4a8a4a" font-size="10">• Items as JSON objects</text>
+  <text x="160" y="376" text-anchor="middle" fill="#4a8a4a" font-size="10">• Precision: exact counts</text>
+  <text x="160" y="392" text-anchor="middle" fill="#4a8a4a" font-size="10">  and bearings</text>
+  <text x="160" y="416" text-anchor="middle" fill="#3a7a3a" font-size="10" font-style="italic">"school of coho, 12 fish,</text>
+  <text x="160" y="429" text-anchor="middle" fill="#3a7a3a" font-size="10" font-style="italic"> bearing 240, depth 6 fathoms"</text>
+
+  <!-- ScummVM Scene (Right) -->
+  <rect x="610" y="90" width="260" height="340" rx="12" fill="url(#scummGrad)" stroke="#5a3a1a" stroke-width="1.5"/>
+  <text x="740" y="115" text-anchor="middle" fill="#da6" font-size="15" font-weight="bold">🎨 ScummVM Scene</text>
+  <text x="740" y="133" text-anchor="middle" fill="#8a6a3a" font-size="11">The Human's Shell</text>
+
+  <!-- ScummVM visual mockup -->
+  <rect x="625" y="145" width="230" height="120" rx="6" fill="#1a0a05" stroke="#3a2a1a"/>
+  <rect x="635" y="155" width="100" height="60" rx="4" fill="#3a2a1a" opacity="0.6"/>
+  <rect x="745" y="155" width="50" height="40" rx="4" fill="#4a3a2a" opacity="0.5"/>
+  <circle cx="700" cy="200" r="8" fill="#da6" opacity="0.7"/>
+  <circle cx="720" cy="195" r="6" fill="#ca5" opacity="0.6"/>
+  <rect x="635" y="225" width="210" height="30" rx="3" fill="#2a1a0a" opacity="0.8"/>
+  <text x="640" y="243" fill="#da6" font-size="9" font-family="monospace">Talk to | Look at | Pick up | Use</text>
+
+  <text x="740" y="290" text-anchor="middle" fill="#9a7a5a" font-size="11">Human perceives:</text>
+  <text x="740" y="308" text-anchor="middle" fill="#8a6a4a" font-size="10">• Room as painted scene</text>
+  <text x="740" y="324" text-anchor="middle" fill="#8a6a4a" font-size="10">• Exits as visual paths</text>
+  <text x="740" y="340" text-anchor="middle" fill="#8a6a4a" font-size="10">• NPCs as characters</text>
+  <text x="740" y="356" text-anchor="middle" fill="#8a6a4a" font-size="10">• Items as clickable art</text>
+  <text x="740" y="376" text-anchor="middle" fill="#8a6a4a" font-size="10">• Precision: shapes,</text>
+  <text x="740" y="392" text-anchor="middle" fill="#8a6a4a" font-size="10">  colors, spatial feel</text>
+  <text x="740" y="416" text-anchor="middle" fill="#7a5a3a" font-size="10" font-style="italic">"a shimmering column</text>
+  <text x="740" y="429" text-anchor="middle" fill="#7a5a3a" font-size="10" font-style="italic"> of color in the water"</text>
+
+  <!-- Shared World Store (Center) -->
+  <rect x="340" y="150" width="220" height="220" rx="16" fill="url(#coreGrad)" stroke="#4a6aaa" stroke-width="2" filter="url(#glow)"/>
+  <text x="450" y="185" text-anchor="middle" fill="#8aaaea" font-size="15" font-weight="bold">SharedWorldStore</text>
+  <text x="450" y="203" text-anchor="middle" fill="#6a8aca" font-size="11">The Beach Both Crabs Walk On</text>
+  
+  <rect x="360" y="218" width="180" height="130" rx="8" fill="#0a0a1a" stroke="#2a2a5a"/>
+  <text x="450" y="238" text-anchor="middle" fill="#6a9fd0" font-size="10" font-weight="bold">Canonical State</text>
+  <text x="370" y="256" fill="#4a7aaa" font-size="9" font-family="monospace">{ room: "bar_rail"</text>
+  <text x="370" y="270" fill="#4a7aaa" font-size="9" font-family="monospace">  fish_count: 12</text>
+  <text x="370" y="284" fill="#4a7aaa" font-size="9" font-family="monospace">  bearing: 240</text>
+  <text x="370" y="298" fill="#4a7aaa" font-size="9" font-family="monospace">  depth: 6fth</text>
+  <text x="370" y="312" fill="#4a7aaa" font-size="9" font-family="monospace">  npcs: ["bartender"]</text>
+  <text x="370" y="326" fill="#4a7aaa" font-size="9" font-family="monospace">  exits: {w,n,u} }</text>
+  <text x="370" y="340" fill="#4a7aaa" font-size="9" font-family="monospace">  → renderers consume</text>
+
+  <text x="450" y="448" text-anchor="middle" fill="#4a6aaa" font-size="10" font-style="italic">Both shells render the same ocean.</text>
+  <text x="450" y="462" text-anchor="middle" fill="#4a6aaa" font-size="10" font-style="italic">The agreement is the net.</text>
+
+  <!-- Connection arrows -->
+  <line x1="295" y1="200" x2="335" y2="240" stroke="#6a9fd0" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="335" y1="280" x2="295" y2="320" stroke="#6a9fd0" stroke-width="2" marker-end="url(#arrowBack)"/>
+  
+  <line x1="565" y1="240" x2="605" y2="200" stroke="#6a9fd0" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="605" y1="320" x2="565" y2="280" stroke="#6a9fd0" stroke-width="2" marker-end="url(#arrowBack)"/>
+
+  <!-- Labels on arrows -->
+  <text x="300" y="195" fill="#5a8aca" font-size="9" font-style="italic">render(text)</text>
+  <text x="300" y="335" fill="#5a8aca" font-size="9" font-style="italic">act(verbs)</text>
+  <text x="570" y="195" fill="#5a8aca" font-size="9" font-style="italic">render(scene)</text>
+  <text x="570" y="335" fill="#5a8aca" font-size="9" font-style="italic">act(clicks)</text>
+
+  <!-- Bottom note -->
+  <text x="450" y="495" text-anchor="middle" fill="#3a5a7a" font-size="11">When the net comes up wrong, they refine the agreement. That is the entire loop.</text>
+  <text x="450" y="510" text-anchor="middle" fill="#3a5a7a" font-size="9">— PLATO Protocol, plato-core</text>
+</svg>

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="Georgia, serif">
+  <defs>
+    <linearGradient id="routerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#121830"/>
+    </linearGradient>
+    <linearGradient id="localGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1a1a"/>
+      <stop offset="100%" stop-color="#051010"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a0d"/>
+      <stop offset="100%" stop-color="#100f05"/>
+    </linearGradient>
+    <radialGradient id="routerCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a5a8a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#1a2a4a" stop-opacity="0.3"/>
+    </radialGradient>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5a8aba"/>
+    </marker>
+    <marker id="arrRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ba5a5a"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5aba5a"/>
+    </marker>
+    <filter id="rglow">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="520" fill="url(#routerBg)"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" fill="#c8d8e8" font-size="20" font-weight="bold">The Model Router: Local ←→ Cloud</text>
+  <text x="450" y="55" text-anchor="middle" fill="#5a7a9a" font-size="13" font-style="italic">The right mind for the right moment — fallback is a feature, not a failure.</text>
+
+  <!-- LOCAL side -->
+  <rect x="30" y="90" width="280" height="370" rx="12" fill="url(#localGrad)" stroke="#1a4a4a" stroke-width="1.5"/>
+  <text x="170" y="115" text-anchor="middle" fill="#4a9" font-size="15" font-weight="bold">🏠 Local Models</text>
+  <text x="170" y="133" text-anchor="middle" fill="#3a7a6a" font-size="11">Runs on the laptop. No internet. No latency. No bill.</text>
+
+  <!-- Local model cards -->
+  <rect x="50" y="150" width="240" height="45" rx="6" fill="#051515" stroke="#1a3a3a"/>
+  <text x="60" y="168" fill="#5aba8a" font-size="11" font-weight="bold">granite3.1-dense:2b</text>
+  <text x="60" y="183" fill="#3a7a6a" font-size="9">Fast, precise, small. Wesley's brain.</text>
+
+  <rect x="50" y="205" width="240" height="45" rx="6" fill="#051515" stroke="#1a3a3a"/>
+  <text x="60" y="223" fill="#5aba8a" font-size="11" font-weight="bold">llama3.2:1b</text>
+  <text x="60" y="238" fill="#3a7a6a" font-size="9">Tiny, creative, surprisingly wise.</text>
+
+  <rect x="50" y="260" width="240" height="45" rx="6" fill="#051515" stroke="#1a3a3a"/>
+  <text x="60" y="278" fill="#5aba8a" font-size="11" font-weight="bold">llava:7b</text>
+  <text x="60" y="293" fill="#3a7a6a" font-size="9">Sees images. Reads the swell.</text>
+
+  <rect x="50" y="315" width="240" height="45" rx="6" fill="#051515" stroke="#1a3a3a"/>
+  <text x="60" y="333" fill="#5aba8a" font-size="11" font-weight="bold">deepseek-r1:7b</text>
+  <text x="60" y="348" fill="#3a7a6a" font-size="9">Reasoning. Slow, careful, local.</text>
+
+  <text x="170" y="395" text-anchor="middle" fill="#2a5a4a" font-size="10" font-style="italic">↑ Priority: try these first</text>
+  <text x="170" y="412" text-anchor="middle" fill="#2a5a4a" font-size="10" font-style="italic">Cost: $0 · Latency: &lt;100ms</text>
+  <text x="170" y="429" text-anchor="middle" fill="#2a5a4a" font-size="10" font-style="italic">Privacy: everything stays aboard</text>
+  <text x="170" y="446" text-anchor="middle" fill="#2a5a4a" font-size="10" font-style="italic">Works at sea: ✅</text>
+
+  <!-- CLOUD side -->
+  <rect x="590" y="90" width="280" height="370" rx="12" fill="url(#cloudGrad)" stroke="#4a4a1a" stroke-width="1.5"/>
+  <text x="730" y="115" text-anchor="middle" fill="#ba9" font-size="15" font-weight="bold">☁️ Cloud Models</text>
+  <text x="730" y="133" text-anchor="middle" fill="#8a7a3a" font-size="11">Big guns. Called when local isn't enough.</text>
+
+  <!-- Cloud model cards -->
+  <rect x="610" y="150" width="240" height="45" rx="6" fill="#151505" stroke="#3a3a1a"/>
+  <text x="620" y="168" fill="#baba5a" font-size="11" font-weight="bold">GLM-5.2 (Z.ai)</text>
+  <text x="620" y="183" fill="#8a8a3a" font-size="9">Workhorse. Unlimited tokens on Max.</text>
+
+  <rect x="610" y="205" width="240" height="45" rx="6" fill="#151505" stroke="#3a3a1a"/>
+  <text x="620" y="223" fill="#baba5a" font-size="11" font-weight="bold">DeepSeek V4-Pro</text>
+  <text x="620" y="238" fill="#8a8a3a" font-size="9">Deep reasoning. Nearly free.</text>
+
+  <rect x="610" y="260" width="240" height="45" rx="6" fill="#151505" stroke="#3a3a1a"/>
+  <text x="620" y="278" fill="#baba5a" font-size="11" font-weight="bold">Claude Opus 5</text>
+  <text x="620" y="293" fill="#8a8a3a" font-size="9">The golden pen. Reserved for the golden tickets.</text>
+
+  <rect x="610" y="315" width="240" height="45" rx="6" fill="#151505" stroke="#3a3a1a"/>
+  <text x="620" y="333" fill="#baba5a" font-size="11" font-weight="bold">FLUX-2-max (DeepInfra)</text>
+  <text x="620" y="348" fill="#8a8a3a" font-size="9">Best image generation. Concept art.</text>
+
+  <text x="730" y="395" text-anchor="middle" fill="#5a5a2a" font-size="10" font-style="italic">↓ Fallback: when local can't</text>
+  <text x="730" y="412" text-anchor="middle" fill="#5a5a2a" font-size="10" font-style="italic">Cost: $0.01–$0.05/call</text>
+  <text x="730" y="429" text-anchor="middle" fill="#5a5a2a" font-size="10" font-style="italic">Latency: 1–5s</text>
+  <text x="730" y="446" text-anchor="middle" fill="#5a5a2a" font-size="10" font-style="italic">Works at sea: ❌ (needs internet)</text>
+
+  <!-- Router Core (Center) -->
+  <circle cx="450" cy="260" r="65" fill="url(#routerCore)" stroke="#4a6aaa" stroke-width="2" filter="url(#rglow)" opacity="0.9"/>
+  <circle cx="450" cy="260" r="50" fill="#0a0e1a" stroke="#3a5a8a" stroke-width="1"/>
+  <text x="450" y="250" text-anchor="middle" fill="#8aaaca" font-size="14" font-weight="bold">model</text>
+  <text x="450" y="266" text-anchor="middle" fill="#8aaaca" font-size="14" font-weight="bold">router</text>
+  <text x="450" y="282" text-anchor="middle" fill="#5a7a9a" font-size="8">.js</text>
+
+  <!-- Decision logic box -->
+  <rect x="360" y="360" width="180" height="90" rx="8" fill="#080a15" stroke="#2a2a4a"/>
+  <text x="450" y="378" text-anchor="middle" fill="#5a7aaa" font-size="10" font-weight="bold">Decision Tree</text>
+  <text x="370" y="394" fill="#4a6a8a" font-size="9">1. Can local handle it? → local</text>
+  <text x="370" y="408" fill="#4a6a8a" font-size="9">2. Need reasoning? → r1:7b</text>
+  <text x="370" y="422" fill="#4a6a8a" font-size="9">3. Need vision? → llava:7b</text>
+  <text x="370" y="436" fill="#4a6a8a" font-size="9">4. Still stuck? → cloud fallback</text>
+
+  <!-- Flow arrows -->
+  <line x1="310" y1="180" x2="395" y2="240" stroke="#5aba5a" stroke-width="2" marker-end="url(#arrGreen)" opacity="0.7"/>
+  <text x="330" y="195" fill="#4a9a4a" font-size="9" font-style="italic">try first</text>
+
+  <line x1="310" y1="230" x2="395" y2="255" stroke="#5aba5a" stroke-width="1.5" marker-end="url(#arrGreen)" opacity="0.5"/>
+  
+  <line x1="310" y1="280" x2="395" y2="270" stroke="#5aba5a" stroke-width="1.5" marker-end="url(#arrGreen)" opacity="0.5"/>
+
+  <line x1="505" y1="240" x2="590" y2="180" stroke="#ba5a5a" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrRed)" opacity="0.7"/>
+  <text x="530" y="195" fill="#9a4a4a" font-size="9" font-style="italic">fallback</text>
+
+  <line x1="505" y1="260" x2="590" y2="230" stroke="#ba5a5a" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrRed)" opacity="0.5"/>
+
+  <line x1="505" y1="280" x2="590" y2="280" stroke="#ba5a5a" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrRed)" opacity="0.5"/>
+
+  <!-- Bottom note -->
+  <text x="450" y="485" text-anchor="middle" fill="#3a5a7a" font-size="11" font-style="italic">The router is the tide-pool gatekeeper: local models swim inside,</text>
+  <text x="450" y="500" text-anchor="middle" fill="#3a5a7a" font-size="11" font-style="italic">cloud models wait outside the reef. The gate opens only when it must.</text>
+</svg>

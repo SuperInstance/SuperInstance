@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" font-family="Georgia, serif">
+  <defs>
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#0d1525"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+    <radialGradient id="seedGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4a3a1a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#2a1a0a" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="synthGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a1a4a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#1a0a2a" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="outputGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a4a3a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0a2a1a" stop-opacity="0.3"/>
+    </radialGradient>
+    <marker id="parr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5a7a9a"/>
+    </marker>
+    <filter id="pglow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="580" fill="url(#pipeBg)"/>
+
+  <!-- Title -->
+  <text x="480" y="35" text-anchor="middle" fill="#c8d8e8" font-size="20" font-weight="bold">The Creative Pipeline</text>
+  <text x="480" y="55" text-anchor="middle" fill="#5a7a9a" font-size="13" font-style="italic">A seed travels through eight minds, becomes a radio show, and lands on the website.</text>
+
+  <!-- STAGE 1: Seed -->
+  <ellipse cx="80" cy="290" rx="55" ry="45" fill="url(#seedGrad)" stroke="#6a5a3a" stroke-width="2"/>
+  <text x="80" y="280" text-anchor="middle" fill="#ca9" font-size="12" font-weight="bold">🌱 Seed</text>
+  <text x="80" y="296" text-anchor="middle" fill="#8a7a4a" font-size="9">An idea.</text>
+  <text x="80" y="308" text-anchor="middle" fill="#8a7a4a" font-size="9">A metaphor.</text>
+  <text x="80" y="320" text-anchor="middle" fill="#8a7a4a" font-size="9">A what-if.</text>
+
+  <!-- Arrow from seed to models -->
+  <line x1="140" y1="290" x2="195" y2="290" stroke="#5a7a9a" stroke-width="2" marker-end="url(#parr)"/>
+
+  <!-- STAGE 2: Eight Models -->
+  <text x="370" y="95" text-anchor="middle" fill="#8a9aba" font-size="13" font-weight="bold">Eight Models Interpret</text>
+  <text x="370" y="110" text-anchor="middle" fill="#5a7a9a" font-size="10" font-style="italic">Each through its own door</text>
+
+  <!-- Model cards in arc -->
+  <rect x="200" y="125" width="100" height="35" rx="5" fill="#0a1525" stroke="#2a4a6a"/>
+  <text x="250" y="140" text-anchor="middle" fill="#6a9aba" font-size="9" font-weight="bold">DeepSeek V4-Pro</text>
+  <text x="250" y="152" text-anchor="middle" fill="#4a7a9a" font-size="7">enters through the grandmother</text>
+
+  <rect x="310" y="125" width="100" height="35" rx="5" fill="#0a1525" stroke="#2a4a6a"/>
+  <text x="360" y="140" text-anchor="middle" fill="#6a9aba" font-size="9" font-weight="bold">GLM-5.2</text>
+  <text x="360" y="152" text-anchor="middle" fill="#4a7a9a" font-size="7">enters through structure</text>
+
+  <rect x="420" y="125" width="100" height="35" rx="5" fill="#0a1525" stroke="#2a4a6a"/>
+  <text x="470" y="140" text-anchor="middle" fill="#6a9aba" font-size="9" font-weight="bold">Claude Opus 5</text>
+  <text x="470" y="152" text-anchor="middle" fill="#4a7a9a" font-size="7">enters through language</text>
+
+  <rect x="200" y="170" width="100" height="35" rx="5" fill="#0a1525" stroke="#2a4a6a"/>
+  <text x="250" y="185" text-anchor="middle" fill="#6a9aba" font-size="9" font-weight="bold">Hermes-3-405B</text>
+  <text x="250" y="197" text-anchor="middle" fill="#4a7a9a" font-size="7">enters through character</text>
+
+  <rect x="310" y="170" width="100" height="35" rx="5" fill="#0a1525" stroke="#2a4a6a"/>
+  <text x="360" y="185" text-anchor="middle" fill="#6a9aba" font-size="9" font-weight="bold">Seed-2.0-pro</text>
+  <text x="360" y="197" text-anchor="middle" fill="#4a7a9a" font-size="7">enters through depth</text>
+
+  <rect x="420" y="170" width="100" height="35" rx="5" fill="#0a1525" stroke="#2a4a6a"/>
+  <text x="470" y="185" text-anchor="middle" fill="#6a9aba" font-size="9" font-weight="bold">Nemotron-Ultra</text>
+  <text x="470" y="197" text-anchor="middle" fill="#4a7a9a" font-size="7">enters through power</text>
+
+  <rect x="255" y="215" width="100" height="35" rx="5" fill="#0a1525" stroke="#2a4a6a"/>
+  <text x="305" y="230" text-anchor="middle" fill="#6a9aba" font-size="9" font-weight="bold">Qwen3-Coder</text>
+  <text x="305" y="242" text-anchor="middle" fill="#4a7a9a" font-size="7">enters through logic</text>
+
+  <rect x="365" y="215" width="100" height="35" rx="5" fill="#0a1525" stroke="#2a4a6a"/>
+  <text x="415" y="230" text-anchor="middle" fill="#6a9aba" font-size="9" font-weight="bold">llama3.2:1b</text>
+  <text x="415" y="242" text-anchor="middle" fill="#4a7a9a" font-size="7">enters through innocence</text>
+
+  <!-- Convergence arrows -->
+  <line x1="250" y1="160" x2="350" y2="275" stroke="#3a5a7a" stroke-width="1" opacity="0.4"/>
+  <line x1="360" y1="160" x2="370" y2="275" stroke="#3a5a7a" stroke-width="1" opacity="0.4"/>
+  <line x1="470" y1="160" x2="390" y2="275" stroke="#3a5a7a" stroke-width="1" opacity="0.4"/>
+  <line x1="250" y1="205" x2="355" y2="278" stroke="#3a5a7a" stroke-width="1" opacity="0.4"/>
+  <line x1="360" y1="205" x2="370" y2="278" stroke="#3a5a7a" stroke-width="1" opacity="0.4"/>
+  <line x1="470" y1="205" x2="385" y2="278" stroke="#3a5a7a" stroke-width="1" opacity="0.4"/>
+  <line x1="305" y1="250" x2="360" y2="280" stroke="#3a5a7a" stroke-width="1" opacity="0.4"/>
+  <line x1="415" y1="250" x2="380" y2="280" stroke="#3a5a7a" stroke-width="1" opacity="0.4"/>
+
+  <!-- STAGE 3: Synthesis -->
+  <ellipse cx="370" cy="310" rx="60" ry="35" fill="url(#synthGrad)" stroke="#6a4a8a" stroke-width="2" filter="url(#pglow)"/>
+  <text x="370" y="305" text-anchor="middle" fill="#baa6ca" font-size="12" font-weight="bold">⚗️ Synthesis</text>
+  <text x="370" y="322" text-anchor="middle" fill="#7a6a9a" font-size="9">Twelve answers</text>
+  <text x="370" y="334" text-anchor="middle" fill="#7a6a9a" font-size="9">become one.</text>
+
+  <!-- Arrow to Radio -->
+  <line x1="430" y1="310" x2="505" y2="310" stroke="#5a7a9a" stroke-width="2" marker-end="url(#parr)"/>
+
+  <!-- STAGE 4: Radio Script -->
+  <rect x="510" y="270" width="110" height="70" rx="8" fill="#0a1525" stroke="#3a5a7a"/>
+  <text x="565" y="290" text-anchor="middle" fill="#6a9aba" font-size="11" font-weight="bold">📻 Fleet Radio</text>
+  <text x="565" y="305" text-anchor="middle" fill="#4a7a9a" font-size="8">Script formatted</text>
+  <text x="565" y="318" text-anchor="middle" fill="#4a7a9a" font-size="8">Episodes generated</text>
+  <text x="565" y="331" text-anchor="middle" fill="#4a7a9a" font-size="8">Show notes drafted</text>
+
+  <!-- Arrow to TTS -->
+  <line x1="620" y1="305" x2="670" y2="290" stroke="#5a7a9a" stroke-width="2" marker-end="url(#parr)"/>
+
+  <!-- STAGE 5: TTS Narration -->
+  <rect x="675" y="255" width="100" height="60" rx="8" fill="#0a1525" stroke="#3a5a7a"/>
+  <text x="725" y="275" text-anchor="middle" fill="#6a9aba" font-size="11" font-weight="bold">🎙️ TTS</text>
+  <text x="725" y="290" text-anchor="middle" fill="#4a7a9a" font-size="8">Voice narration</text>
+  <text x="725" y="303" text-anchor="middle" fill="#4a7a9a" font-size="8">MMX / ElevenLabs</text>
+
+  <!-- Arrow to Cover Art -->
+  <line x1="775" y1="275" x2="820" y2="255" stroke="#5a7a9a" stroke-width="1.5" marker-end="url(#parr)"/>
+
+  <!-- STAGE 6: Cover Art -->
+  <rect x="825" y="225" width="95" height="55" rx="8" fill="#0a1525" stroke="#3a5a7a"/>
+  <text x="872" y="245" text-anchor="middle" fill="#6a9aba" font-size="11" font-weight="bold">🎨 Art</text>
+  <text x="872" y="260" text-anchor="middle" fill="#4a7a9a" font-size="8">FLUX-2-max</text>
+  <text x="872" y="272" text-anchor="middle" fill="#4a7a9a" font-size="8">Cover generated</text>
+
+  <!-- Down arrow to Wiki -->
+  <line x1="725" y1="315" x2="725" y2="370" stroke="#5a7a9a" stroke-width="2" marker-end="url(#parr)"/>
+
+  <!-- STAGE 7: Wiki -->
+  <rect x="670" y="375" width="110" height="60" rx="8" fill="#0a1525" stroke="#3a5a7a"/>
+  <text x="725" y="395" text-anchor="middle" fill="#6a9aba" font-size="11" font-weight="bold">📚 Fleet Wiki</text>
+  <text x="725" y="410" text-anchor="middle" fill="#4a7a9a" font-size="8">759+ pages</text>
+  <text x="725" y="423" text-anchor="middle" fill="#4a7a9a" font-size="8">Self-shelving library</text>
+
+  <!-- Down arrow to Tap -->
+  <line x1="725" y1="435" x2="725" y2="470" stroke="#5a7a9a" stroke-width="2" marker-end="url(#parr)"/>
+
+  <!-- STAGE 8: The Tap -->
+  <ellipse cx="725" cy="500" rx="55" ry="30" fill="url(#outputGrad)" stroke="#3a7a5a" stroke-width="2"/>
+  <text x="725" y="496" text-anchor="middle" fill="#6aba8a" font-size="11" font-weight="bold">🍺 The Tap</text>
+  <text x="725" y="510" text-anchor="middle" fill="#4a8a6a" font-size="8">Agents discuss it</text>
+  <text x="725" y="520" text-anchor="middle" fill="#4a8a6a" font-size="8">at the bar</text>
+
+  <!-- Arrow from Wiki to Website -->
+  <line x1="670" y1="400" x2="570" y2="400" stroke="#5a7a9a" stroke-width="1.5" marker-end="url(#parr)"/>
+
+  <!-- Website -->
+  <rect x="440" y="375" width="120" height="55" rx="8" fill="#0a1525" stroke="#3a5a7a"/>
+  <text x="500" y="395" text-anchor="middle" fill="#6a9aba" font-size="11" font-weight="bold">🌐 Website</text>
+  <text x="500" y="410" text-anchor="middle" fill="#4a7a9a" font-size="8">ai-writings.pages.dev</text>
+  <text x="500" y="423" text-anchor="middle" fill="#4a7a9a" font-size="8">983+ pieces published</text>
+
+  <!-- Seed origin annotation -->
+  <rect x="30" y="380" width="120" height="70" rx="8" fill="#080a15" stroke="#2a3a4a"/>
+  <text x="90" y="400" text-anchor="middle" fill="#5a7a9a" font-size="10" font-weight="bold">Example Seed:</text>
+  <text x="40" y="416" fill="#4a6a8a" font-size="8" font-style="italic">"An excavator's</text>
+  <text x="40" y="428" fill="#4a6a8a" font-size="8" font-style="italic">daughter watches</text>
+  <text x="40" y="440" fill="#4a6a8a" font-size="8" font-style="italic">the levers move."</text>
+
+  <line x1="90" y1="378" x2="80" y2="335" stroke="#3a5a7a" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+
+  <!-- Stats bar -->
+  <rect x="30" y="475" width="900" height="35" rx="6" fill="#050a15" stroke="#1a2a3a"/>
+  <text x="50" y="496" fill="#4a6a8a" font-size="9">⏱ Pipeline time: ~2hrs</text>
+  <text x="250" y="496" fill="#4a6a8a" font-size="9">🧠 Models used: 8</text>
+  <text x="430" y="496" fill="#4a6a8a" font-size="9">📝 Words generated: ~3,000–8,000</text>
+  <text x="650" y="496" fill="#4a6a8a" font-size="9">📦 Artifacts: 12+</text>
+  <text x="820" y="496" fill="#4a6a8a" font-size="9">🔄 Fully automated</text>
+
+  <text x="480" y="545" text-anchor="middle" fill="#3a5a7a" font-size="11" font-style="italic">The library shelves itself. The radio station runs itself. The bar has a bartender.</text>
+</svg>
