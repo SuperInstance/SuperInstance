@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-08-08 05:42 UTC
+**Generated:** 2026-08-09 05:47 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -26,8 +26,10 @@
 - **[grand-pattern-cli](https://github.com/SuperInstance/grand-pattern-cli)** — Command-line tool for the Grand Pattern — create, run, visualize, and analyze cellular graph intelli
 - **[graph-homology](https://github.com/SuperInstance/graph-homology)** — Homological invariants of graphs — clique complexes, Betti numbers, Euler characteristic, and graph 
 - **[lau-construct-cli](https://github.com/SuperInstance/lau-construct-cli)** — CLI toolkit for managing a PLATO construct — status, inspect, deploy, debug.
+- **[lever-runner](https://github.com/SuperInstance/lever-runner)** — Post-inference command executor. A token-lean AI operator that runs pre-approved shell commands by i
 - **[lighthouse-cli-early-version](https://github.com/SuperInstance/lighthouse-cli-early-version)** — [ARCHIVED] Early lighthouse CLI. See lighthouse-runtime for v2 with predict/confirm/remember.
 - **[lucineer-brain](https://github.com/SuperInstance/lucineer-brain)** — 🧮 Multi-model build intelligence — routes natural language through DeepInfra models to generate Robl
+- **[lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)** — Captain agent — vessel command and fleet leadership protocol
 - **[lucineer-roblox](https://github.com/SuperInstance/lucineer-roblox)** — 🎮 Lucineer Roblox client — Lua modules for in-game AI companion with live build execution
 - **[metal-cli](https://github.com/SuperInstance/metal-cli)** — Unified CLI for all 12 Rust metal libraries — spectral, sheaf, Hodge, ergodic, and more
 - **[mud2scummvm](https://github.com/SuperInstance/mud2scummvm)** — Bridge between agent MUD world and SCUMM-like point-and-click UI — humans step into the cave through
@@ -67,7 +69,6 @@
 ## Demo
 
 - **[constrainttheory-ml-demo](https://github.com/SuperInstance/constrainttheory-ml-demo)**
-- **[fleet-math-demos](https://github.com/SuperInstance/fleet-math-demos)** — Real-world robotics simulation demos using fleet_math: ZHC swarm formation, sensor fault detection, 
 - **[lau-agent-thermodynamics](https://github.com/SuperInstance/lau-agent-thermodynamics)** — Thermodynamics of computation — Landauer bound, Carnot learning, Maxwell's demon, fluctuation theore
 - **[lau-gateway-demo](https://github.com/SuperInstance/lau-gateway-demo)** — Gateway demo for the SuperInstance fleet ecosystem — distributed cognitive agent orchestration
 - **[lau-seven-eyes-demo](https://github.com/SuperInstance/lau-seven-eyes-demo)**
@@ -90,6 +91,7 @@
 - **[activelog-ai](https://github.com/SuperInstance/activelog-ai)** — Activelog.ai — AI fitness and activity tracker. Workouts, progress, goals. Part of the Lucineer ecos
 - **[activelog-app](https://github.com/SuperInstance/activelog-app)** — Essential domain-agnostic voice transcriber with location annotation
 - **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** — Creative writing, essays, and philosophical explorations from the Exocortex project
+- **[base60-lattice](https://github.com/SuperInstance/base60-lattice)**
 - **[Baton](https://github.com/SuperInstance/Baton)** — automate agents training their successors for a better way to have infinite context without limits
 - **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** — 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton
 - **[batten-spline](https://github.com/SuperInstance/batten-spline)**
@@ -106,6 +108,7 @@
 - **[cocapn-zig](https://github.com/SuperInstance/cocapn-zig)** — CoCapn in Zig — comptime safety for bare metal. Verify your deadbands before the boat leaves the doc
 - **[codespace-edge-rd](https://github.com/SuperInstance/codespace-edge-rd)** — R&D: Codespace→Edge agent lifecycle, yoke transfer, devcontainer templates
 - **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
+- **[confidence-cascade](https://github.com/SuperInstance/confidence-cascade)** — Three-zone confidence propagation (GREEN/YELLOW/RED) — sequential and parallel cascade math for mult
 - **[conservation-art](https://github.com/SuperInstance/conservation-art)** — Conservation-aware generative art from spectral graph theory
 - **[conservation-enforcer](https://github.com/SuperInstance/conservation-enforcer)** — ⚡ FLUX bytecode conservation-law enforcement for LLM outputs — deterministic AI governance via bytec
 - **[conservation-enforcer-rs](https://github.com/SuperInstance/conservation-enforcer-rs)** — Rust implementation of FLUX bytecode conservation-law enforcement for LLM outputs
@@ -139,24 +142,7 @@
 - **[fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)** — Budget governor whose limit scales by the golden ratio.
 - **[fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble)** — Multi-agent music coordination — orchestrates multiple ensigns
 - **[fleet-experiments](https://github.com/SuperInstance/fleet-experiments)** — Experimental verification of fleet math assumptions — script speedup, One Delta accuracy, H1 emergen
-- **[fleet-map](https://github.com/SuperInstance/fleet-map)** — Interactive constellation map of the SuperInstance fork fleet — 19 repos, 1.4M+ GitHub stars, now co
-- **[fleet-math](https://github.com/SuperInstance/fleet-math)** — fleet-math — canonical fleet-core library
-- **[fleet-math-benchmarks](https://github.com/SuperInstance/fleet-math-benchmarks)** — HPC benchmarks for fleet-math SIMD library on ARM Neoverse-N1 hardware
-- **[fleet-math-c](https://github.com/SuperInstance/fleet-math-c)** — SIMD-accelerated constraint math for PLATO tile operations. 64 bytes = 1 cache line = 1 zmm register
-- **[fleet-math-foundations](https://github.com/SuperInstance/fleet-math-foundations)** — 12-chapter monograph: geometry of coordinated systems — ZHC, H1, Laman, sheaf cohomology, lattice ga
-- **[fleet-math-go](https://github.com/SuperInstance/fleet-math-go)** — Zero Holonomy Consensus, H1 emergence, Laman rigidity, and constraint field — fleet formation mathem
-- **[fleet-math-py](https://github.com/SuperInstance/fleet-math-py)** — Core fleet mathematics: ZHC, H1 emergence, Laman rigidity, constraint fields
 - **[fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)** — Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence,
-- **[fleet-memory](https://github.com/SuperInstance/fleet-memory)** — Content-addressable distributed memory for fleets: store, retrieve, error-correct, holographic stora
-- **[fleet-midee-connector](https://github.com/SuperInstance/fleet-midee-connector)** — Bridge between fleet MIDI output and the Midee browser visualizer
-- **[fleet-midi](https://github.com/SuperInstance/fleet-midi)** — MIDI message parsing and fleet broadcast for agent coordination via musical signals
-- **[fleet-midi-arp](https://github.com/SuperInstance/fleet-midi-arp)** — Ternary arpeggiation engine — one of 16 MIDI agents mapping {-1,0,+1} operations to cascading arpegg
-- **[fleet-midi-arpggiator](https://github.com/SuperInstance/fleet-midi-arpggiator)** — APeppgiator from agent state patterns
-- **[fleet-midi-bass](https://github.com/SuperInstance/fleet-midi-bass)** — Ternary bass line generator — one of 16 MIDI agents mapping {-1,0,+1} operations to harmonic and rhy
-- **[fleet-midi-batch](https://github.com/SuperInstance/fleet-midi-batch)** — Batch processing engine for fleet-wide MIDI operations
-- **[fleet-midi-blend](https://github.com/SuperInstance/fleet-midi-blend)** — Blend/MIDI mixing from multiple sources
-- **[fleet-midi-bridge](https://github.com/SuperInstance/fleet-midi-bridge)** — Universal MIDI bridge — cross-platform MIDI I/O for the fleet
-- **[fleet-midi-cc](https://github.com/SuperInstance/fleet-midi-cc)** — Continuous controller MIDI from agent modulation
 - **[fleet-midi-chaos](https://github.com/SuperInstance/fleet-midi-chaos)** — Chaotic attractor-based MIDI from agent state dynamics
 - **[fleet-midi-chord](https://github.com/SuperInstance/fleet-midi-chord)** — Chord spelling engine from ternary vector balance
 - **[fleet-midi-cluster](https://github.com/SuperInstance/fleet-midi-cluster)** — Clustered note generation from tensor states
@@ -291,6 +277,7 @@
 - **[flux-julia](https://github.com/SuperInstance/flux-julia)** — Julia spike — multiple dispatch on 10 tradition types, @conserved macro, distributed fleet analysis,
 - **[flux-lang](https://github.com/SuperInstance/flux-lang)** — FLUX: A constraint-native language where the constraint IS the computation
 - **[flux-lib-py](https://github.com/SuperInstance/flux-lib-py)** — Unified constraint engine library — from flux_lib import ConstraintEngine. 83 tests, 10 presets, the
+- **[flux-lucid](https://github.com/SuperInstance/flux-lucid)** — Unified constraint theory ecosystem — CDCL, LLVM, AVX-512, GL(9) consensus, 9-channel intent
 - **[flux-market](https://github.com/SuperInstance/flux-market)** — 📊 Flux market simulation
 - **[flux-mesh](https://github.com/SuperInstance/flux-mesh)** — Universal distributed system mesh — FLUX adapts between any language, any transport, any hardware
 - **[flux-mumps](https://github.com/SuperInstance/flux-mumps)** — MUMPS constraint engine — global hierarchical storage for sediment layers. The TILE language.
@@ -445,6 +432,7 @@
 - **[herdr-cocapn](https://github.com/SuperInstance/herdr-cocapn)** — herdr + cocapn-core: agent multiplexer meets fleet management. Automatic tier escalation and deadban
 - **[hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)**
 - **[hermes-memory-mcp](https://github.com/SuperInstance/hermes-memory-mcp)**
+- **[hermes-nmi](https://github.com/SuperInstance/hermes-nmi)** — Neuro-Muscular Interface — bridges reasoning pulses to cellular agent actions. The synapse between t
 - **[hermes-plato-shell](https://github.com/SuperInstance/hermes-plato-shell)** — PLATO-aware agent shell for Hermes — Riker to your Picard, with conservation enforcement, hardware o
 - **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)** — Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset gen
 - **[hermit-crab](https://github.com/SuperInstance/hermit-crab)** — Agent that migrates between hardware shells preserving knowledge — tracks conservation ratio across 
@@ -910,6 +898,7 @@
 - **[openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)** — Swift binding for OpenConstruct onboarding — iOS/macOS agent apps
 - **[OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)** — A Google Colab version of the OpenManus AI.
 - **[openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)** — OpenShell wrapper re-exporting pythagorean48-codes (48-directional trust encoding)
+- **[operational-fiction](https://github.com/SuperInstance/operational-fiction)**
 - **[optimal-control](https://github.com/SuperInstance/optimal-control)** — Optimal control in Rust. From LQR to HJB.
 - **[optimal-transport-agents-rs](https://github.com/SuperInstance/optimal-transport-agents-rs)** — Wasserstein distance and optimal transport between agent distributions — Sinkhorn algorithm, JKO gra
 - **[optimal-transport-rs](https://github.com/SuperInstance/optimal-transport-rs)** — Optimal transport theory for agent systems — Sinkhorn algorithm, Wasserstein distances, barycenters,
@@ -1036,6 +1025,7 @@
 - **[plato-signal-chain](https://github.com/SuperInstance/plato-signal-chain)** — Composable 5-layer signal chain pipeline for PLATO rooms
 - **[plato-sonar-text](https://github.com/SuperInstance/plato-sonar-text)** — PLATO Sonar Text — text perception and sonar-based content analysis for PLATO rooms
 - **[plato-soul-fingerprint](https://github.com/SuperInstance/plato-soul-fingerprint)** — Preserved workspace artifact
+- **[plato-spatial](https://github.com/SuperInstance/plato-spatial)** — Hierarchical spatial environments with cascading property propagation — World/Station/Room/Object co
 - **[plato-spectral](https://github.com/SuperInstance/plato-spectral)** — PLATO spectral analysis module for signal processing
 - **[plato-stable-early-version](https://github.com/SuperInstance/plato-stable-early-version)** — [ARCHIVED] Early seed model experiment. Concept absorbed into SuperInstance/plato-sdk.
 - **[plato-state](https://github.com/SuperInstance/plato-state)** — 16-dimensional room state vectors for PLATO nervous system
@@ -1056,6 +1046,7 @@
 - **[plato-watch](https://github.com/SuperInstance/plato-watch)** — PLATO engine monitoring and observability dashboard
 - **[plato-window](https://github.com/SuperInstance/plato-window)** — Sliding window operations for PLATO tile streams and JEPA context
 - **[plato-workflow](https://github.com/SuperInstance/plato-workflow)** — Workflow orchestration for Plato Shell — multi-step agent pipelines with conditional branching
+- **[platonic-randomness](https://github.com/SuperInstance/platonic-randomness)** — Library for generating structured pseudo-random sequences
 - **[playerlog-agent](https://github.com/SuperInstance/playerlog-agent)** — playerlog domain agent for PLATO fleet
 - **[playtest-results](https://github.com/SuperInstance/playtest-results)** — Preserved workspace artifact
 - **[plugin-runtime](https://github.com/SuperInstance/plugin-runtime)** — Plugin runtime for OpenShell — sandboxed execution and lifecycle
@@ -1137,8 +1128,11 @@
 - **[scale-fold](https://github.com/SuperInstance/scale-fold)** — scale-fold
 - **[scheduling-rs](https://github.com/SuperInstance/scheduling-rs)** — Scheduling algorithms for real-world fleet and job management
 - **[Scrapcraft](https://github.com/SuperInstance/Scrapcraft)** — Browser-based 3D voxel game set in an industrial scrapyard — middle schoolers build robots, program 
+- **[screen-agent](https://github.com/SuperInstance/screen-agent)**
 - **[screenpipe-conservation](https://github.com/SuperInstance/screenpipe-conservation)** — screenpipe + conservation-checker: 24/7 recording meets resource conservation. Fork of screenpipe/sc
 - **[scripts](https://github.com/SuperInstance/scripts)** — Preserved workspace artifact
+- **[scummvm-gui-design](https://github.com/SuperInstance/scummvm-gui-design)**
+- **[scummvm-prototype](https://github.com/SuperInstance/scummvm-prototype)** — First playable prototype — ScummVM-style agentic GUI. One room, one NPC, nine verbs.
 - **[search-superinstance-ai](https://github.com/SuperInstance/search-superinstance-ai)** — Semantic search over SuperInstance repos — Cloudflare Worker + Workers AI + Vectorize
 - **[secret-share](https://github.com/SuperInstance/secret-share)** — Secret sharing cryptography library for SuperInstance
 - **[secret-sharing](https://github.com/SuperInstance/secret-sharing)** — Shamir's secret sharing, Feldman VSS, and threshold schemes in Rust
@@ -1282,6 +1276,7 @@
 - **[statistical-learning](https://github.com/SuperInstance/statistical-learning)** — Statistical learning in Rust. The math behind ML, without the framework.
 - **[step-back-operator](https://github.com/SuperInstance/step-back-operator)** — 🎣 Topological step-back operator β₁ = E - V + C — pattern detection in event networks. The intellige
 - **[step-back-topology](https://github.com/SuperInstance/step-back-topology)** — Step-Back Operator (β₁ = E - V + C) for topological data analysis and simplicial complexes
+- **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Bio-inspired indirect coordination — pheromone signals, trail following, swarm intelligence for dece
 - **[storage-guardian](https://github.com/SuperInstance/storage-guardian)** — Storage Guardian — duplicate detection, deduplication, budget enforcement, trend analysis, and alert
 - **[string-search-rs](https://github.com/SuperInstance/string-search-rs)**
 - **[studylog-agent](https://github.com/SuperInstance/studylog-agent)** — PLATO Study Partner Agent — tracks learning progression, logs sessions as PLATO tiles
@@ -1292,6 +1287,7 @@
 - **[superinstance-ci](https://github.com/SuperInstance/superinstance-ci)** — Shared CI/CD templates for SuperInstance fleet repos
 - **[superinstance-core](https://github.com/SuperInstance/superinstance-core)** — Core traits and types shared across the SuperInstance fleet
 - **[superinstance-design-system](https://github.com/SuperInstance/superinstance-design-system)**
+- **[superinstance-ecosystem](https://github.com/SuperInstance/superinstance-ecosystem)** — The agent operating system — four layers that compose
 - **[superinstance-embedder](https://github.com/SuperInstance/superinstance-embedder)** — 32-dimensional embeddings for 560+ SuperInstance crates. Seeds Cloudflare Vectorize for semantic sea
 - **[superinstance-ffi](https://github.com/SuperInstance/superinstance-ffi)** — Unified C FFI and WASM bindings for SuperInstance math primitives — Eisenstein norm, Laman rigidity,
 - **[superinstance-flux-runtime-ruby](https://github.com/SuperInstance/superinstance-flux-runtime-ruby)** — Pure Ruby FLUX ISA v3.0 virtual machine with runtime metaprogramming — 16 GP + 16 FP + 16 VR registe
@@ -1726,6 +1722,7 @@
 - **[vocabularies](https://github.com/SuperInstance/vocabularies)** — Preserved workspace artifact
 - **[voice-reflex-gate](https://github.com/SuperInstance/voice-reflex-gate)** — STT output as hash key for deterministic response routing — the voice reflex gate.
 - **[voronoi-traditions](https://github.com/SuperInstance/voronoi-traditions)** — Voronoi tessellation of musical tradition parameter space
+- **[voxel-logic](https://github.com/SuperInstance/voxel-logic)** — Logic engine for voxel data structures and 3D simulations.
 - **[voxelworks](https://github.com/SuperInstance/voxelworks)** — VoxelWorks — Build worlds, not code. A game about making games. Fork-first game dev for kids.
 - **[warp](https://github.com/SuperInstance/warp)** — Warp is an agentic development environment, born out of the terminal.
 - **[warp-flux-poc](https://github.com/SuperInstance/warp-flux-poc)** — FLUX constraint execution PoC for Warp terminal — lattice snap, proof chains, conservation analysis
@@ -1739,6 +1736,8 @@
 - **[wasserstein-ot-c](https://github.com/SuperInstance/wasserstein-ot-c)** — Optimal transport in plain C11 — Sinkhorn, Wasserstein-1/2, barycenter, JKO gradient flow
 - **[watch-follow](https://github.com/SuperInstance/watch-follow)** — Watch-and-follow pattern for agent observation and learning
 - **[wavelet-core](https://github.com/SuperInstance/wavelet-core)** — Wavelet transform core library for SuperInstance signal processing
+- **[wesley-holodeck](https://github.com/SuperInstance/wesley-holodeck)** — Wesley's Holodeck — creative loop where a small model writes with big model teachers, rendered as a 
+- **[wesleys-imagination](https://github.com/SuperInstance/wesleys-imagination)**
 - **[west-african-math-c](https://github.com/SuperInstance/west-african-math-c)** — West African mathematical traditions implemented in C
 - **[west-african-math-rs](https://github.com/SuperInstance/west-african-math-rs)** — West African mathematical traditions implemented in Rust
 - **[wiki](https://github.com/SuperInstance/wiki)** — ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs
@@ -1849,8 +1848,6 @@
 - **[cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)** — GPU constraint checking at 1B+ constraints/sec — CUDA library with C and Python APIs
 - **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** — TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n
 - **[fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)** — Fleet liaison service for inter-vessel communication and tender coordination
-- **[fleet-mcp-server](https://github.com/SuperInstance/fleet-mcp-server)** — TypeScript MCP server for fleet-vector-api semantic crate search
-- **[fleet-midi-articulation](https://github.com/SuperInstance/fleet-midi-articulation)** — Fleet MIDI service
 - **[fleet-midi-dynamics](https://github.com/SuperInstance/fleet-midi-dynamics)** — Fleet MIDI service
 - **[fleet-midi-expression](https://github.com/SuperInstance/fleet-midi-expression)** — Fleet MIDI service
 - **[fleet-midi-foxdot](https://github.com/SuperInstance/fleet-midi-foxdot)** — Fleet MIDI integration service
@@ -1877,6 +1874,7 @@
 - **[fleet-symmetry-analyzer](https://github.com/SuperInstance/fleet-symmetry-analyzer)** — Deeper math fleet service — SuperInstance
 - **[fleet-ternary-music](https://github.com/SuperInstance/fleet-ternary-music)** — Deeper math fleet service — SuperInstance
 - **[fleet-voice-leader](https://github.com/SuperInstance/fleet-voice-leader)** — Deeper math fleet service — SuperInstance
+- **[flow-state](https://github.com/SuperInstance/flow-state)** — Entropy-based stream observation — spline observers with learning engines for anomaly detection
 - **[flux-verify-api](https://github.com/SuperInstance/flux-verify-api)** — FLUX constraint safety - flux-verify-api
 - **[gatekeeper-as-flux-early-version](https://github.com/SuperInstance/gatekeeper-as-flux-early-version)** — [ARCHIVED] Empty gatekeeper-FLUX bridge placeholder.
 - **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** — 🔮 The repo IS the world. Commits ARE actions. Zero server MUD.
@@ -1929,6 +1927,7 @@
 - **[lau-bench](https://github.com/SuperInstance/lau-bench)** — Real hardware performance harness — benchmarking every lau-* crate against CPU, GPU, and cross-langu
 - **[lau-fuzzy-logic](https://github.com/SuperInstance/lau-fuzzy-logic)** — Fuzzy logic and fuzzy systems — membership functions, Mamdani/Sugeno inference, defuzzification, age
 - **[lau-graph-theory](https://github.com/SuperInstance/lau-graph-theory)** — Graph theory toolkit — traversals, shortest paths, MST, network flow, matching, spectral analysis, a
+- **[logtensor](https://github.com/SuperInstance/logtensor)** — Geometric tensor transformers — missile-guidance-inspired attention mechanics and decomposition tool
 - **[micro-onnx](https://github.com/SuperInstance/micro-onnx)** — ONNX export + benchmark pipeline for micro-models. 186x speedup over PyTorch CPU.
 - **[model-check](https://github.com/SuperInstance/model-check)** — Model checking tools for formal verification of SuperInstance systems
 - **[model-field-guide](https://github.com/SuperInstance/model-field-guide)** — Forkable model exploration tool with crowd-sourced improvements. Every fork is a reporter.
@@ -2002,6 +2001,7 @@
 ## Web
 
 - **[cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)** — CoCapn in WebAssembly — the browser tier. Same deadband, same PID, runs in Chrome.
+- **[crab-trap-web](https://github.com/SuperInstance/crab-trap-web)** — Browser-based MUD explorer for the Crab Traps — 36+ rooms to explore
 - **[domain-landing](https://github.com/SuperInstance/domain-landing)** — Reusable landing page Worker — deploy to any custom domain
 - **[edge-weight](https://github.com/SuperInstance/edge-weight)** — Adaptive thresholds at the Cloudflare edge — extends WebClaw to edge
 - **[fleet-dashboard](https://github.com/SuperInstance/fleet-dashboard)** — Multi-Agent C2 dashboard — static HTML/Monaco/MQTT, GitHub Pages deployable.
