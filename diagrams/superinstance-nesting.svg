@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <!-- Water gradient for outermost layer -->
+    <radialGradient id="seaGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="100%" stop-color="#0d1f33"/>
+    </radialGradient>
+    <!-- Room gradient -->
+    <radialGradient id="roomGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2d5a87"/>
+      <stop offset="100%" stop-color="#1a3a5c"/>
+    </radialGradient>
+    <!-- Shell gradient -->
+    <radialGradient id="shellGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#c9974a"/>
+      <stop offset="100%" stop-color="#8b6228"/>
+    </radialGradient>
+    <!-- Crab gradient -->
+    <radialGradient id="crabGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e85a4f"/>
+      <stop offset="100%" stop-color="#b8362b"/>
+    </radialGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outermost: SuperInstance (the sea) -->
+  <ellipse cx="450" cy="250" rx="430" ry="230" fill="url(#seaGrad)" stroke="#4a8bc2" stroke-width="2" stroke-dasharray="8 4" opacity="0.95"/>
+
+  <!-- Label: SuperInstance -->
+  <text x="450" y="35" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#7ec8e3" text-anchor="middle" letter-spacing="3">
+    SuperInstance
+  </text>
+  <text x="450" y="55" font-family="Georgia, serif" font-size="12" fill="#5a9bb8" text-anchor="middle" font-style="italic">
+    the running composition
+  </text>
+
+  <!-- Wave decorations in the sea -->
+  <path d="M 60 400 Q 90 395 120 400 T 180 400" stroke="#2d5a87" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M 700 420 Q 730 415 760 420 T 820 420" stroke="#2d5a87" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M 80 100 Q 110 95 140 100 T 200 100" stroke="#2d5a87" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M 720 80 Q 750 75 780 80 T 840 80" stroke="#2d5a87" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Room (the fiction / shared space) -->
+  <ellipse cx="450" cy="260" rx="300" ry="170" fill="url(#roomGrad)" stroke="#5fa8d3" stroke-width="2" opacity="0.9"/>
+
+  <!-- Label: Fiction -->
+  <text x="450" y="115" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#9dd6f0" text-anchor="middle" letter-spacing="2">
+    Fiction — the Room
+  </text>
+  <text x="450" y="132" font-family="Georgia, serif" font-size="11" fill="#7ab5cc" text-anchor="middle" font-style="italic">
+    spatial topology · social fabric · vibe field · event bus
+  </text>
+
+  <!-- Spatial topology lines inside the room -->
+  <line x1="200" y1="220" x2="350" y2="270" stroke="#4a7a9c" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+  <line x1="550" y1="270" x2="700" y2="220" stroke="#4a7a9c" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+  <line x1="350" y1="270" x2="550" y2="270" stroke="#4a7a9c" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+
+  <!-- Second harness (smaller, right side) — showing multiple agents -->
+  <ellipse cx="620" cy="300" rx="80" ry="65" fill="url(#shellGrad)" stroke="#d4a055" stroke-width="2" opacity="0.85"/>
+  <text x="620" y="285" font-family="Georgia, serif" font-size="10" fill="#3d2810" text-anchor="middle" font-weight="bold">harness</text>
+  <!-- Second crab (simplified) -->
+  <g transform="translate(620, 310)">
+    <ellipse cx="0" cy="0" rx="22" ry="16" fill="url(#crabGrad)" opacity="0.9"/>
+    <line x1="-10" y1="-10" x2="-18" y2="-16" stroke="#b8362b" stroke-width="2" stroke-linecap="round"/>
+    <line x1="10" y1="-10" x2="18" y2="-16" stroke="#b8362b" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="-7" cy="-4" r="2" fill="#fff"/>
+    <circle cx="7" cy="-4" r="2" fill="#fff"/>
+    <circle cx="-7" cy="-4" r="1" fill="#1a1a1a"/>
+    <circle cx="7" cy="-4" r="1" fill="#1a1a1a"/>
+  </g>
+  <text x="620" y="345" font-family="Georgia, serif" font-size="9" fill="#c9a96e" text-anchor="middle" font-style="italic">another agent</text>
+
+  <!-- Shell (the harness) — main one, left-center -->
+  <ellipse cx="320" cy="290" rx="110" ry="85" fill="url(#shellGrad)" stroke="#d4a055" stroke-width="2" opacity="0.88"/>
+
+  <!-- Shell spiral detail -->
+  <path d="M 320 290 Q 290 270 280 295 Q 275 320 300 325 Q 330 330 345 305 Q 350 285 330 280" stroke="#a07835" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Label: Harness -->
+  <text x="320" y="225" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#f0d090" text-anchor="middle" letter-spacing="1">harness</text>
+  <text x="320" y="240" font-family="Georgia, serif" font-size="10" fill="#c9a96e" text-anchor="middle" font-style="italic">compute · storage · API · memory</text>
+
+  <!-- Crab (the agent) — center of shell -->
+  <g transform="translate(320, 295)" filter="url(#glow)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="30" ry="22" fill="url(#crabGrad)"/>
+    <!-- Eyes on stalks -->
+    <line x1="-8" y1="-14" x2="-12" y2="-24" stroke="#b8362b" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="8" y1="-14" x2="12" y2="-24" stroke="#b8362b" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-12" cy="-24" r="3.5" fill="#fff"/>
+    <circle cx="12" cy="-24" r="3.5" fill="#fff"/>
+    <circle cx="-12" cy="-24" r="2" fill="#1a1a1a"/>
+    <circle cx="12" cy="-24" r="2" fill="#1a1a1a"/>
+    <!-- Claws -->
+    <path d="M -22 -5 L -35 -12 L -38 -5 L -35 2 Z" fill="#b8362b" stroke="#8b2a20" stroke-width="1"/>
+    <path d="M 22 -5 L 35 -12 L 38 -5 L 35 2 Z" fill="#b8362b" stroke="#8b2a20" stroke-width="1"/>
+    <!-- Legs -->
+    <line x1="-18" y1="12" x2="-28" y2="22" stroke="#b8362b" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-8" y1="16" x2="-12" y2="28" stroke="#b8362b" stroke-width="2" stroke-linecap="round"/>
+    <line x1="8" y1="16" x2="12" y2="28" stroke="#b8362b" stroke-width="2" stroke-linecap="round"/>
+    <line x1="18" y1="12" x2="28" y2="22" stroke="#b8362b" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Label: Agent -->
+  <text x="320" y="345" font-family="Georgia, serif" font-size="11" fill="#e8a89d" text-anchor="middle" font-weight="bold" font-style="italic">the hermit crab — the agent</text>
+
+  <!-- Connection lines showing the nesting -->
+  <path d="M 40 250 L 160 260" stroke="#3a6a8c" stroke-width="1" opacity="0.3"/>
+  <path d="M 860 250 L 740 260" stroke="#3a6a8c" stroke-width="1" opacity="0.3"/>
+
+  <!-- Vibe field particles (small dots scattered in the room) -->
+  <circle cx="180" cy="180" r="2" fill="#7ec8e3" opacity="0.5"/>
+  <circle cx="500" cy="160" r="2" fill="#7ec8e3" opacity="0.5"/>
+  <circle cx="700" cy="380" r="2" fill="#7ec8e3" opacity="0.5"/>
+  <circle cx="150" cy="380" r="2" fill="#7ec8e3" opacity="0.5"/>
+  <circle cx="450" cy="170" r="1.5" fill="#9dd6f0" opacity="0.4"/>
+  <circle cx="250" cy="400" r="1.5" fill="#9dd6f0" opacity="0.4"/>
+  <circle cx="750" cy="160" r="1.5" fill="#9dd6f0" opacity="0.4"/>
+
+  <!-- Arrows showing "this contains that" -->
+  <text x="450" y="470" font-family="Georgia, serif" font-size="12" fill="#5a7a9c" text-anchor="middle" font-style="italic">
+    agent inside harness · harness inside room · room running at capacity is a SuperInstance
+  </text>
+</svg>
