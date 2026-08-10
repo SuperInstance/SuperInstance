@@ -20,8 +20,16 @@ class ZenMindAgent:
     def load_context(self):
         """Load persistent context from disk"""
         if self.context_file.exists():
-            with open(self.context_file, "r") as f:
-                self.context = json.load(f)
+            try:
+                with open(self.context_file, "r") as f:
+                    self.context = json.load(f)
+            except (json.JSONDecodeError, ValueError):
+                # Corrupt context file — reset to defaults
+                self.context = {
+                    "sessions": [],
+                    "recent_queries": [],
+                    "last_updated": str(Path(__file__).stat().st_mtime)
+                }
         else:
             self.context = {
                 "sessions": [],
