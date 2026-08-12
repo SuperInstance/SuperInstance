@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-11 05:53 UTC
+**Generated:** 2026-08-12 06:15 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -221,7 +221,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conformance-service](https://github.com/SuperInstance/conformance-service)
 - [conservation-enforcer](https://github.com/SuperInstance/conservation-enforcer)
 - [conservation-enforcer-rs](https://github.com/SuperInstance/conservation-enforcer-rs)
-- [fleet-midi-flux](https://github.com/SuperInstance/fleet-midi-flux)
 - [flux](https://github.com/SuperInstance/flux)
 - [flux-agent-runtime](https://github.com/SuperInstance/flux-agent-runtime)
 - [flux-algebra](https://github.com/SuperInstance/flux-algebra)
@@ -486,6 +485,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [jc1-ct-bridge](https://github.com/SuperInstance/jc1-ct-bridge)
 - [superinstance-ffi](https://github.com/SuperInstance/superinstance-ffi)
 
+## Lures
+
+- [crab-traps](https://github.com/SuperInstance/crab-traps)
+
 ## Multi Agent
 
 - [A2A-native-notebookLM](https://github.com/SuperInstance/A2A-native-notebookLM)
@@ -535,9 +538,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-experiments](https://github.com/SuperInstance/fleet-experiments)
 - [fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)
 - [fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)
-- [fleet-midi-filter](https://github.com/SuperInstance/fleet-midi-filter)
-- [fleet-midi-flux](https://github.com/SuperInstance/fleet-midi-flux)
-- [fleet-midi-foxdot](https://github.com/SuperInstance/fleet-midi-foxdot)
 - [fleet-midi-fractal](https://github.com/SuperInstance/fleet-midi-fractal)
 - [fleet-midi-fx](https://github.com/SuperInstance/fleet-midi-fx)
 - [fleet-midi-gateway](https://github.com/SuperInstance/fleet-midi-gateway)
@@ -1420,6 +1420,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [scummvm-prototype](https://github.com/SuperInstance/scummvm-prototype)
 - [seed-tick-audit](https://github.com/SuperInstance/seed-tick-audit)
 - [servo-mind](https://github.com/SuperInstance/servo-mind)
+- [session-room](https://github.com/SuperInstance/session-room)
 - [signal-chain](https://github.com/SuperInstance/signal-chain)
 - [starter-shell](https://github.com/SuperInstance/starter-shell)
 - [studylog-agent](https://github.com/SuperInstance/studylog-agent)
@@ -1452,6 +1453,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermes-nmi](https://github.com/SuperInstance/hermes-nmi)
 - [murmur-agent](https://github.com/SuperInstance/murmur-agent)
 - [polyformalism](https://github.com/SuperInstance/polyformalism)
+
+## Prompts
+
+- [crab-traps](https://github.com/SuperInstance/crab-traps)
 
 ## Pythagorean48
 
@@ -2379,6 +2384,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [texture-synth](https://github.com/SuperInstance/texture-synth)
 - [the-lock](https://github.com/SuperInstance/the-lock)
 - [the-plenum-early-version](https://github.com/SuperInstance/the-plenum-early-version)
+- [the-relay](https://github.com/SuperInstance/the-relay)
 - [the-revolution](https://github.com/SuperInstance/the-revolution)
 - [the-technician-courses](https://github.com/SuperInstance/the-technician-courses)
 - [thermal-budget](https://github.com/SuperInstance/thermal-budget)

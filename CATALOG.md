@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-11 05:53 UTC
+**Generated:** 2026-08-12 06:15 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -203,9 +203,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-experiments](https://github.com/SuperInstance/fleet-experiments)** | Forgemaster | Experimental verification of fleet math assumptions — script speedup, One Delta accuracy, H1 emergen | 🟢 active |
 | **[fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)** | Forgemaster | Fleet liaison service for inter-vessel communication and tender coordination | 🟢 active |
 | **[fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)** | Forgemaster | Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence, | 🟢 active |
-| **[fleet-midi-filter](https://github.com/SuperInstance/fleet-midi-filter)** | Forgemaster | Filter/MIDI conditional routing | 🟢 active |
-| **[fleet-midi-flux](https://github.com/SuperInstance/fleet-midi-flux)** | Forgemaster | Flux/flow-based MIDI generation from agent entropy | 🟢 active |
-| **[fleet-midi-foxdot](https://github.com/SuperInstance/fleet-midi-foxdot)** | Forgemaster | Fleet MIDI integration service | 🟢 active |
 | **[fleet-midi-fractal](https://github.com/SuperInstance/fleet-midi-fractal)** | Forgemaster | Fractal-based MIDI generation from recursive ternary structures | 🟢 active |
 | **[fleet-midi-fx](https://github.com/SuperInstance/fleet-midi-fx)** | Forgemaster | Ternary effects routing agent — one of 16 MIDI agents controlling wet/dry signal processing via {-1, | 🟢 active |
 | **[fleet-midi-gateway](https://github.com/SuperInstance/fleet-midi-gateway)** | Forgemaster | Unified API gateway for all MIDI fleet services | 🟢 active |
@@ -593,6 +590,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[conservation-law-rs](https://github.com/SuperInstance/conservation-law-rs)** | Various | Conservation laws for agent dynamics — Lagrangian mechanics, Noether theorem, and symmetry-based con | 🟢 active |
 | **[conservation-matrix-rs](https://github.com/SuperInstance/conservation-matrix-rs)** | Various | Conservation laws in ternary agent systems — avoidance ratio, fitness convergence, ecological resili | 🟢 active |
 | **[conservation-rhythm-rs](https://github.com/SuperInstance/conservation-rhythm-rs)** | Various | Self-Improving Band: conservation-rhythm-rs | ⚪ unknown |
+| **[crab-traps](https://github.com/SuperInstance/crab-traps)** | CCC, Oracle1 | Chatbot prompts (lures) that generate PLATO tiles by walking agents through the MUD environment. | 🟢 active |
 | **[CrashPilot](https://github.com/SuperInstance/CrashPilot)** | Various | Our SSL Robot Controller | ⚪ unknown |
 | **[cudaclaw](https://github.com/SuperInstance/cudaclaw)** | Various | ⚡ GPU-accelerated SmartCRDT with persistent CUDA kernels — warp-level consensus. | 🟢 active |
 | **[deckhand-rs](https://github.com/SuperInstance/deckhand-rs)** | Various | Rust BM25 retriever. Zero-dep. 10-100x faster than Python. | ⚪ unknown |
@@ -1446,6 +1444,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[segment-tree-rs](https://github.com/SuperInstance/segment-tree-rs)** | Various | Segment tree with point updates, range queries (sum/min/max/gcd), and lazy propagation | ⚪ unknown |
 | **[self-improving-band](https://github.com/SuperInstance/self-improving-band)** | Various | Self-improving autonomous musical AI ensemble — t-minus timing, SIA spectral identity, conservation  | ⚪ unknown |
 | **[semantic-field](https://github.com/SuperInstance/semantic-field)** | Various | Force fields in embedding space for semantic navigation and manipulation | ⚪ unknown |
+| **[session-room](https://github.com/SuperInstance/session-room)** | Various | session-room | ⚪ unknown |
 | **[shadow-cathedral](https://github.com/SuperInstance/shadow-cathedral)** | Various | Rust exocortex crate: shadow-cathedral | ⚪ unknown |
 | **[shadow-pipeline](https://github.com/SuperInstance/shadow-pipeline)** | Various | Lossy shadow compression pipeline with ordered stages, fidelity scoring, and human-readable renderin | ⚪ unknown |
 | **[sheaf-agents](https://github.com/SuperInstance/sheaf-agents)** | Various | Sheaf-theoretic agent framework for SuperInstance | 🟢 active |
@@ -1947,6 +1946,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tests](https://github.com/SuperInstance/tests)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[texture-synth](https://github.com/SuperInstance/texture-synth)** | Various | Texture synthesis library for SuperInstance graphics pipeline | ⚪ unknown |
 | **[the-lock](https://github.com/SuperInstance/the-lock)** | Various | Iterative reasoning engine — 5 rounds of structured self-debate, 8 strategies. Zero deps Python. | ⚪ unknown |
+| **[the-relay](https://github.com/SuperInstance/the-relay)** | Various | the-relay | ⚪ unknown |
 | **[the-revolution](https://github.com/SuperInstance/the-revolution)** | Various | The Revolution — SuperInstance manifesto and founding documents | ⚪ unknown |
 | **[the-rotation](https://github.com/SuperInstance/the-rotation)** | Various | Recursive self-improvement infrastructure for agent fleets — five-layer closed loop: Bayesian confid | 🟢 active |
 | **[the-technician-courses](https://github.com/SuperInstance/the-technician-courses)** | Various | Course materials for the Training Port's educational platform — track outlines, worked exercises, ve | ⚪ unknown |
@@ -3344,27 +3344,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence, Laman rigidity, field analysis
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-filter](https://github.com/SuperInstance/fleet-midi-filter)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Filter/MIDI conditional routing
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-flux](https://github.com/SuperInstance/fleet-midi-flux)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Flux/flow-based MIDI generation from agent entropy
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-foxdot](https://github.com/SuperInstance/fleet-midi-foxdot)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Fleet MIDI integration service
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
@@ -5858,6 +5837,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Conservation laws in ternary agent systems — avoidance ratio, fitness convergence, ecological resilience
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [crab-traps](https://github.com/SuperInstance/crab-traps)
+- **Domain:** Other / Uncategorized
+- **Vessel:** CCC, Oracle1
+- **Purpose:** Chatbot prompts (lures) that generate PLATO tiles by walking agents through the MUD environment.
+- **Research lineage:** PurplePincher program. Progressive lure prompts that walk chatbots through the fleet.
 - **Status:** active
 
 ### [cudaclaw](https://github.com/SuperInstance/cudaclaw)
