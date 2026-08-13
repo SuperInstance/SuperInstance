@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-12 06:15 UTC
+**Generated:** 2026-08-13 06:17 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -538,8 +538,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-experiments](https://github.com/SuperInstance/fleet-experiments)
 - [fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)
 - [fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)
-- [fleet-midi-fractal](https://github.com/SuperInstance/fleet-midi-fractal)
-- [fleet-midi-fx](https://github.com/SuperInstance/fleet-midi-fx)
 - [fleet-midi-gateway](https://github.com/SuperInstance/fleet-midi-gateway)
 - [fleet-midi-generator](https://github.com/SuperInstance/fleet-midi-generator)
 - [fleet-midi-genetic](https://github.com/SuperInstance/fleet-midi-genetic)
@@ -1519,6 +1517,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)
 - [CrashPilot](https://github.com/SuperInstance/CrashPilot)
 - [DigitalTwin-RobotStudio-SmartComponent](https://github.com/SuperInstance/DigitalTwin-RobotStudio-SmartComponent)
+- [GeometryPainterThreeJS](https://github.com/SuperInstance/GeometryPainterThreeJS)
 - [Mentis](https://github.com/SuperInstance/Mentis)
 - [OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)
 - [Scrapcraft](https://github.com/SuperInstance/Scrapcraft)
@@ -2123,6 +2122,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [sync-primitive](https://github.com/SuperInstance/sync-primitive)
 - [system_prompts_leaks](https://github.com/SuperInstance/system_prompts_leaks)
 - [t-minus-rs](https://github.com/SuperInstance/t-minus-rs)
+- [tapscript-studio](https://github.com/SuperInstance/tapscript-studio)
 - [tasklog-ai](https://github.com/SuperInstance/tasklog-ai)
 - [tda-c](https://github.com/SuperInstance/tda-c)
 - [templates](https://github.com/SuperInstance/templates)

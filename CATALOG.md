@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-12 06:15 UTC
+**Generated:** 2026-08-13 06:17 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -203,8 +203,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-experiments](https://github.com/SuperInstance/fleet-experiments)** | Forgemaster | Experimental verification of fleet math assumptions — script speedup, One Delta accuracy, H1 emergen | 🟢 active |
 | **[fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)** | Forgemaster | Fleet liaison service for inter-vessel communication and tender coordination | 🟢 active |
 | **[fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)** | Forgemaster | Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence, | 🟢 active |
-| **[fleet-midi-fractal](https://github.com/SuperInstance/fleet-midi-fractal)** | Forgemaster | Fractal-based MIDI generation from recursive ternary structures | 🟢 active |
-| **[fleet-midi-fx](https://github.com/SuperInstance/fleet-midi-fx)** | Forgemaster | Ternary effects routing agent — one of 16 MIDI agents controlling wet/dry signal processing via {-1, | 🟢 active |
 | **[fleet-midi-gateway](https://github.com/SuperInstance/fleet-midi-gateway)** | Forgemaster | Unified API gateway for all MIDI fleet services | 🟢 active |
 | **[fleet-midi-generator](https://github.com/SuperInstance/fleet-midi-generator)** | Forgemaster | Fleet MIDI integration service | 🟢 active |
 | **[fleet-midi-genetic](https://github.com/SuperInstance/fleet-midi-genetic)** | Forgemaster | Genetic algorithm MIDI evolution from agent fitness | 🟢 active |
@@ -652,6 +650,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[garden-path](https://github.com/SuperInstance/garden-path)** | Various | Decision tree pruning via garden metaphor | ⚪ unknown |
 | **[gc-pid-bridge](https://github.com/SuperInstance/gc-pid-bridge)** | Various | Rust bridge between gc-intelligent.sh and ternary-pid — host-level disk PID controller | ⚪ unknown |
 | **[genetic-search](https://github.com/SuperInstance/genetic-search)** | Various | Genetic algorithms with selection, crossover, mutation operators — Rust optimization library | ⚪ unknown |
+| **[GeometryPainterThreeJS](https://github.com/SuperInstance/GeometryPainterThreeJS)** | Various | GeometryPainterThreeJS | ⚪ unknown |
 | **[ghost-track](https://github.com/SuperInstance/ghost-track)** | Various | Ghost process tracker — lifecycle management for ephemeral agent processes | 🟢 active |
 | **[git-agent](https://github.com/SuperInstance/git-agent)** | Various | 🦀 Repo-native agent that lives in git — the shell IS the agent. | 🟢 active |
 | **[git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)** | Various | One-click Codespace template for git-agent runtime development | 🟢 active |
@@ -1602,6 +1601,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[system_prompts_leaks](https://github.com/SuperInstance/system_prompts_leaks)** | Various | Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. Open | ⚪ unknown |
 | **[t-minus](https://github.com/SuperInstance/t-minus)** | Various | T-minus event coordination for multi-agent systems | 🟢 active |
 | **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** | Various | Countdown/timer primitives with scheduling, deadline propagation, and backpressure | ⚪ unknown |
+| **[tapscript-studio](https://github.com/SuperInstance/tapscript-studio)** | Various | Plain-text music notation that compiles to MIDI. Embeds in markdown like mermaid. | ⚪ unknown |
 | **[tasklog-ai](https://github.com/SuperInstance/tasklog-ai)** | Various | Task Manager — AI-powered Task Manager | ⚪ unknown |
 | **[tda-c](https://github.com/SuperInstance/tda-c)** | Various | tda-c | ⚪ unknown |
 | **[templates](https://github.com/SuperInstance/templates)** | Various | Preserved workspace artifact | ⚪ unknown |
@@ -3344,20 +3344,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence, Laman rigidity, field analysis
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-fractal](https://github.com/SuperInstance/fleet-midi-fractal)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Fractal-based MIDI generation from recursive ternary structures
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-fx](https://github.com/SuperInstance/fleet-midi-fx)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Ternary effects routing agent — one of 16 MIDI agents controlling wet/dry signal processing via {-1,0,+1}
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
