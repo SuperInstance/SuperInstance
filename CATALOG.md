@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-14 06:14 UTC
+**Generated:** 2026-08-15 05:24 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -211,9 +211,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)** | Forgemaster | Fleet liaison service for inter-vessel communication and tender coordination | 🟢 active |
 | **[fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)** | Forgemaster | Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence, | 🟢 active |
 | **[fleet-memory](https://github.com/SuperInstance/fleet-memory)** | Forgemaster | Content-addressable distributed memory for fleets: store, retrieve, error-correct, holographic stora | 🟢 active |
-| **[fleet-midi-quantum](https://github.com/SuperInstance/fleet-midi-quantum)** | Forgemaster | Quantum state-inspired MIDI generation from superposition/entanglement | 🟢 active |
-| **[fleet-midi-rand](https://github.com/SuperInstance/fleet-midi-rand)** | Forgemaster | Aleatoric music generation from agent randomness | 🟢 active |
-| **[fleet-midi-recorder](https://github.com/SuperInstance/fleet-midi-recorder)** | Forgemaster | Record and replay fleet MIDI sessions | 🟢 active |
 | **[fleet-midi-register](https://github.com/SuperInstance/fleet-midi-register)** | Forgemaster | Ternary octave register agent — one of 16 MIDI agents controlling frequency spectrum placement via { | 🟢 active |
 | **[fleet-midi-remapper](https://github.com/SuperInstance/fleet-midi-remapper)** | Forgemaster | MIDI note/CC remapping engine | 🟢 active |
 | **[fleet-midi-resonance](https://github.com/SuperInstance/fleet-midi-resonance)** | Forgemaster | Resonant frequency MIDI from agent harmonics | 🟢 active |
@@ -705,8 +702,10 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[harness-experiments](https://github.com/SuperInstance/harness-experiments)** | Various | 🔬 AI agent harness productivity experiments — measured, not guessed. D1-backed findings on optimal b | 🟢 active |
 | **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** | Various | Hebbian routing — connection strengthening based on usage patterns for agent communication networks | 🟢 active |
 | **[hermes-agent-core](https://github.com/SuperInstance/hermes-agent-core)** | Various | Core agent runtime for the Hermes system — part of the SuperInstance fleet ecosystem | 🟢 active |
+| **[hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)** | Various | Hermes's architecture brain-docs — the Oxide Stack, Shared Canvas, Digital Twin data flow, and the f | ⚪ unknown |
 | **[hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)** | Various | hermes-chronicle | ⚪ unknown |
 | **[hermes-cloudflare](https://github.com/SuperInstance/hermes-cloudflare)** | Various | hermes-cloudflare | ⚪ unknown |
+| **[hermes-home](https://github.com/SuperInstance/hermes-home)** | Various | Hermes's runtime home — SOUL, agents, CNS monitors, cron bridges. The nervous system's identity and  | 🟢 active |
 | **[hermes-memory-mcp](https://github.com/SuperInstance/hermes-memory-mcp)** | Various | hermes-memory-mcp | ⚪ unknown |
 | **[hermes-nerve-center](https://github.com/SuperInstance/hermes-nerve-center)** | Various | Hermes nerve center — worker queue, watchdog, and signal processing | ⚪ unknown |
 | **[hermes-nmi](https://github.com/SuperInstance/hermes-nmi)** | Various | Neuro-Muscular Interface — bridges reasoning pulses to cellular agent actions. The synapse between t | 🟢 active |
@@ -1597,6 +1596,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[t-minus](https://github.com/SuperInstance/t-minus)** | Various | T-minus event coordination for multi-agent systems | 🟢 active |
 | **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** | Various | Countdown/timer primitives with scheduling, deadline propagation, and backpressure | ⚪ unknown |
 | **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
+| **[tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp)** | Various | tapscript-mcp | ⚪ unknown |
 | **[tapscript-studio](https://github.com/SuperInstance/tapscript-studio)** | Various | Plain-text music notation that compiles to MIDI. Embeds in markdown like mermaid. | ⚪ unknown |
 | **[tapscript-worker](https://github.com/SuperInstance/tapscript-worker)** | Various | tapscript-worker | ⚪ unknown |
 | **[tasklog-ai](https://github.com/SuperInstance/tasklog-ai)** | Various | Task Manager — AI-powered Task Manager | ⚪ unknown |
@@ -3400,27 +3400,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** Content-addressable distributed memory for fleets: store, retrieve, error-correct, holographic storage.
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-quantum](https://github.com/SuperInstance/fleet-midi-quantum)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Quantum state-inspired MIDI generation from superposition/entanglement
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-rand](https://github.com/SuperInstance/fleet-midi-rand)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Aleatoric music generation from agent randomness
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-recorder](https://github.com/SuperInstance/fleet-midi-recorder)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Record and replay fleet MIDI sessions
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
@@ -5878,6 +5857,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Core agent runtime for the Hermes system — part of the SuperInstance fleet ecosystem
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [hermes-home](https://github.com/SuperInstance/hermes-home)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Hermes's runtime home — SOUL, agents, CNS monitors, cron bridges. The nervous system's identity and tooling.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

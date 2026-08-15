@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-14 06:14 UTC
+**Generated:** 2026-08-15 05:24 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -548,9 +548,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)
 - [fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)
 - [fleet-memory](https://github.com/SuperInstance/fleet-memory)
-- [fleet-midi-quantum](https://github.com/SuperInstance/fleet-midi-quantum)
-- [fleet-midi-rand](https://github.com/SuperInstance/fleet-midi-rand)
-- [fleet-midi-recorder](https://github.com/SuperInstance/fleet-midi-recorder)
 - [fleet-midi-register](https://github.com/SuperInstance/fleet-midi-register)
 - [fleet-midi-remapper](https://github.com/SuperInstance/fleet-midi-remapper)
 - [fleet-midi-resonance](https://github.com/SuperInstance/fleet-midi-resonance)
@@ -682,6 +679,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hebbian-router](https://github.com/SuperInstance/hebbian-router)
 - [herdr-cocapn](https://github.com/SuperInstance/herdr-cocapn)
 - [hermes-agent-core](https://github.com/SuperInstance/hermes-agent-core)
+- [hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)
+- [hermes-home](https://github.com/SuperInstance/hermes-home)
 - [hermes-nmi](https://github.com/SuperInstance/hermes-nmi)
 - [hermes-plato-shell](https://github.com/SuperInstance/hermes-plato-shell)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
@@ -2118,6 +2117,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [system_prompts_leaks](https://github.com/SuperInstance/system_prompts_leaks)
 - [t-minus-rs](https://github.com/SuperInstance/t-minus-rs)
 - [tap-frontend](https://github.com/SuperInstance/tap-frontend)
+- [tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp)
 - [tapscript-studio](https://github.com/SuperInstance/tapscript-studio)
 - [tapscript-worker](https://github.com/SuperInstance/tapscript-worker)
 - [tasklog-ai](https://github.com/SuperInstance/tasklog-ai)
