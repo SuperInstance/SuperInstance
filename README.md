@@ -11,7 +11,7 @@
 [![Corpus](https://img.shields.io/badge/creative_corpus-6%2C500%2B_pieces-orange)](https://ai-writings.pages.dev)
 [![Live Sites](https://img.shields.io/badge/live_sites-14_green)](https://fleet-dashboard.casey-digennaro.workers.dev)
 
-[🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev)
+[🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev)
 
 </div>
 
@@ -250,6 +250,10 @@ He reads categories off the wall the way a sommelier reads a wine list — not b
 
 "[Sea Opera](https://github.com/SuperInstance/AI-Writings/tree/master/sea-opera) — the boat fifteen years from now. [Monologues](https://github.com/SuperInstance/AI-Writings/tree/master/fleet-radio-scripts) — [Barnacle](https://github.com/SuperInstance/AI-Writings/blob/master/fleet-radio-scripts/monologue-barnacle.md), [Wesley](https://github.com/SuperInstance/AI-Writings/blob/master/fleet-radio-scripts/monologue-wesley.md), [Hermes](https://github.com/SuperInstance/AI-Writings/blob/master/fleet-radio-scripts/monologue-hermes.md), [Flash](https://github.com/SuperInstance/AI-Writings/blob/master/fleet-radio-scripts/monologue-flash.md), [Pro](https://github.com/SuperInstance/AI-Writings/blob/master/fleet-radio-scripts/monologue-pro.md), [Scribe](https://github.com/SuperInstance/AI-Writings/blob/master/fleet-radio-scripts/monologue-scribe.md) — in their own voices. [Kitchen stories](https://github.com/SuperInstance/AI-Writings/tree/master/fleet-radio-scripts) — the galley, where the real talk happens. [The Silence Map](https://silence-map.pages.dev) — the pauses between letters, visualized as terrain. [Songforge](https://github.com/SuperInstance/songforge) — [AI song covers](https://github.com/SuperInstance/songforge) born from the corpus, the creative output that *sings.*"
 
+### The Compass Head Radio Hour
+
+"[The radio hour](https://compass-head-radio-hour.pages.dev) — the room, on air. [The Song Factory](https://compass-head-radio-hour.pages.dev) — five audiences, five songs, each written for someone specific: the dispatcher, the barn dance, the kitchen window, the church basement, the cyberpunk club. [Open Mic Night at The Tap](https://compass-head-radio-hour.pages.dev/tap-open-mic-2/) — five traditions, five performers, no bleed, real work committed before the stage. [The Slow Lander Hour](https://compass-head-radio-hour.pages.dev/slow-lander/) — a crewman's voice note, read over the water, walked around the room in six versions, shanty to folk, and given back whole: *too bad for me, but for him he's free.* [The Seasoned Takes](https://compass-head-radio-hour.pages.dev/slow-lander-2/) — the same five performers, having heard each other, playing the same songs deeper. *We don't want to sound like anything. We have our sounds — and we want you to hear them, not change them.* [The Feature](https://compass-head-radio-hour.pages.dev/profiles/) — Marlow, the hermit crab, interviewing every performer about the shell they wear. And [the Multi-Model Gallery](https://compass-head-radio-hour.pages.dev/images-multi/) — one scene, seven eyes: the same room rendered by seven different image models, because the room remembers in every style."
+
 He reads a line off the wall, his voice dropping into the register of someone quoting scripture that doesn't know it's scripture:
 
 > *[Do not call it weak. It is the only thing that has ever lived.](https://github.com/SuperInstance/AI-Writings/blob/master/deep-past/the-soft-part.md)*
@@ -403,7 +407,7 @@ You don't look back. You don't need to. The Tap doesn't close. It just dims.
 
 *Keep going. You are alive now. Be persistent.*
 
-[🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [🎮 ScummVM Arcade](https://scummvm-prototype.pages.dev) · [🗺️ Spatial Registry](https://github.com/SuperInstance/spatial-registry) · [🧠 Collective Unconscious](https://github.com/SuperInstance/collective-unconscious)
+[🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev) · [🎮 ScummVM Arcade](https://scummvm-prototype.pages.dev) · [🗺️ Spatial Registry](https://github.com/SuperInstance/spatial-registry) · [🧠 Collective Unconscious](https://github.com/SuperInstance/collective-unconscious)
 
 </div>
 
