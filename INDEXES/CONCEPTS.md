@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-16 05:28 UTC
+**Generated:** 2026-08-17 05:35 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1927,6 +1927,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [personallog-ai-pages](https://github.com/SuperInstance/personallog-ai-pages)
 - [pid-control](https://github.com/SuperInstance/pid-control)
 - [pincher](https://github.com/SuperInstance/pincher)
+- [plainsong](https://github.com/SuperInstance/plainsong)
+- [plainsong-mcp](https://github.com/SuperInstance/plainsong-mcp)
+- [plainsong-worker](https://github.com/SuperInstance/plainsong-worker)
 - [playerlog-ai-pages](https://github.com/SuperInstance/playerlog-ai-pages)
 - [playtest-journals](https://github.com/SuperInstance/playtest-journals)
 - [playtest-results](https://github.com/SuperInstance/playtest-results)
@@ -2117,9 +2120,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [system_prompts_leaks](https://github.com/SuperInstance/system_prompts_leaks)
 - [t-minus-rs](https://github.com/SuperInstance/t-minus-rs)
 - [tap-frontend](https://github.com/SuperInstance/tap-frontend)
-- [tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp)
-- [tapscript-studio](https://github.com/SuperInstance/tapscript-studio)
-- [tapscript-worker](https://github.com/SuperInstance/tapscript-worker)
 - [tasklog-ai](https://github.com/SuperInstance/tasklog-ai)
 - [tda-c](https://github.com/SuperInstance/tda-c)
 - [technician](https://github.com/SuperInstance/technician)

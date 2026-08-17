@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-08-16 05:28 UTC
+**Generated:** 2026-08-17 05:35 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -925,6 +925,9 @@
 - **[physics-clock](https://github.com/SuperInstance/physics-clock)** — Temporal inference from physics models — no RTC, no NTP, no GPS. The physics IS the clock.
 - **[pid-control](https://github.com/SuperInstance/pid-control)** — PID controller implementation for SuperInstance control systems
 - **[pincher](https://github.com/SuperInstance/pincher)** — Vector Database as runtime, LLM as compiler
+- **[plainsong](https://github.com/SuperInstance/plainsong)** — Plain-text music notation that compiles to MIDI. Embeds in markdown like mermaid.
+- **[plainsong-mcp](https://github.com/SuperInstance/plainsong-mcp)**
+- **[plainsong-worker](https://github.com/SuperInstance/plainsong-worker)**
 - **[plato-alert](https://github.com/SuperInstance/plato-alert)** — Alert management for PLATO — creation, routing, acknowledgment, escalation
 - **[plato-alignments-early-version](https://github.com/SuperInstance/plato-alignments-early-version)** — [ARCHIVED] Early snap-point alignment experiment. Concept absorbed into SuperInstance/plato-sdk.
 - **[plato-anomaly](https://github.com/SuperInstance/plato-anomaly)** — Anomaly detection methods for PLATO tile streams
@@ -1318,9 +1321,6 @@
 - **[t-minus](https://github.com/SuperInstance/t-minus)** — T-minus event coordination for multi-agent systems
 - **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** — Countdown/timer primitives with scheduling, deadline propagation, and backpressure
 - **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** — Auto-created for sync 2026-08-13
-- **[tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp)**
-- **[tapscript-studio](https://github.com/SuperInstance/tapscript-studio)** — Plain-text music notation that compiles to MIDI. Embeds in markdown like mermaid.
-- **[tapscript-worker](https://github.com/SuperInstance/tapscript-worker)**
 - **[tasklog-ai](https://github.com/SuperInstance/tasklog-ai)** — Task Manager — AI-powered Task Manager
 - **[tda-c](https://github.com/SuperInstance/tda-c)**
 - **[templates](https://github.com/SuperInstance/templates)** — Preserved workspace artifact

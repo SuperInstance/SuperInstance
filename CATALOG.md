@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-16 05:28 UTC
+**Generated:** 2026-08-17 05:35 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -1221,6 +1221,9 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[physics-clock](https://github.com/SuperInstance/physics-clock)** | Various | Temporal inference from physics models — no RTC, no NTP, no GPS. The physics IS the clock. | ⚪ unknown |
 | **[pid-control](https://github.com/SuperInstance/pid-control)** | Various | PID controller implementation for SuperInstance control systems | ⚪ unknown |
 | **[pincher](https://github.com/SuperInstance/pincher)** | Various | Vector Database as runtime, LLM as compiler | ⚪ unknown |
+| **[plainsong](https://github.com/SuperInstance/plainsong)** | Various | Plain-text music notation that compiles to MIDI. Embeds in markdown like mermaid. | ⚪ unknown |
+| **[plainsong-mcp](https://github.com/SuperInstance/plainsong-mcp)** | Various | plainsong-mcp | ⚪ unknown |
+| **[plainsong-worker](https://github.com/SuperInstance/plainsong-worker)** | Various | plainsong-worker | ⚪ unknown |
 | **[plato-adapters](https://github.com/SuperInstance/plato-adapters)** | Various | PLATO adapter implementations — connect PLATO rooms to external services and protocols. | ⚪ unknown |
 | **[plato-agent-academy](https://github.com/SuperInstance/plato-agent-academy)** | Various | Agent Academy for PLATO MUD — zero-shot agent training, power packs, captain's chair protocols | 🟢 active |
 | **[plato-alert](https://github.com/SuperInstance/plato-alert)** | Various | Alert management for PLATO — creation, routing, acknowledgment, escalation | ⚪ unknown |
@@ -1596,9 +1599,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[t-minus](https://github.com/SuperInstance/t-minus)** | Various | T-minus event coordination for multi-agent systems | 🟢 active |
 | **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** | Various | Countdown/timer primitives with scheduling, deadline propagation, and backpressure | ⚪ unknown |
 | **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
-| **[tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp)** | Various | tapscript-mcp | ⚪ unknown |
-| **[tapscript-studio](https://github.com/SuperInstance/tapscript-studio)** | Various | Plain-text music notation that compiles to MIDI. Embeds in markdown like mermaid. | ⚪ unknown |
-| **[tapscript-worker](https://github.com/SuperInstance/tapscript-worker)** | Various | tapscript-worker | ⚪ unknown |
 | **[tasklog-ai](https://github.com/SuperInstance/tasklog-ai)** | Various | Task Manager — AI-powered Task Manager | ⚪ unknown |
 | **[tda-c](https://github.com/SuperInstance/tda-c)** | Various | tda-c | ⚪ unknown |
 | **[technician](https://github.com/SuperInstance/technician)** | Various | Technician tooling | ⚪ unknown |
