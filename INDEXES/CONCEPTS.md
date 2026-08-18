@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-17 05:35 UTC
+**Generated:** 2026-08-18 05:30 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -548,9 +548,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)
 - [fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)
 - [fleet-memory](https://github.com/SuperInstance/fleet-memory)
-- [fleet-midi-register](https://github.com/SuperInstance/fleet-midi-register)
-- [fleet-midi-remapper](https://github.com/SuperInstance/fleet-midi-remapper)
-- [fleet-midi-resonance](https://github.com/SuperInstance/fleet-midi-resonance)
 - [fleet-midi-reverb](https://github.com/SuperInstance/fleet-midi-reverb)
 - [fleet-midi-router](https://github.com/SuperInstance/fleet-midi-router)
 - [fleet-midi-scale](https://github.com/SuperInstance/fleet-midi-scale)
@@ -1532,6 +1529,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ec2mud](https://github.com/SuperInstance/ec2mud)
 - [edge-weight](https://github.com/SuperInstance/edge-weight)
 - [eigenpy](https://github.com/SuperInstance/eigenpy)
+- [elephant](https://github.com/SuperInstance/elephant)
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
 - [exocortex-core](https://github.com/SuperInstance/exocortex-core)
 - [exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)
@@ -1948,6 +1946,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quantum-thermo](https://github.com/SuperInstance/quantum-thermo)
 - [query-plan](https://github.com/SuperInstance/query-plan)
 - [queueing-theory](https://github.com/SuperInstance/queueing-theory)
+- [quilt](https://github.com/SuperInstance/quilt)
+- [quilt-rust](https://github.com/SuperInstance/quilt-rust)
 - [quipu-math](https://github.com/SuperInstance/quipu-math)
 - [quipu-math-c](https://github.com/SuperInstance/quipu-math-c)
 - [quipu-math-npm](https://github.com/SuperInstance/quipu-math-npm)

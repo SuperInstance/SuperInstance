@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-17 05:35 UTC
+**Generated:** 2026-08-18 05:30 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -211,9 +211,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)** | Forgemaster | Fleet liaison service for inter-vessel communication and tender coordination | 🟢 active |
 | **[fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)** | Forgemaster | Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence, | 🟢 active |
 | **[fleet-memory](https://github.com/SuperInstance/fleet-memory)** | Forgemaster | Content-addressable distributed memory for fleets: store, retrieve, error-correct, holographic stora | 🟢 active |
-| **[fleet-midi-register](https://github.com/SuperInstance/fleet-midi-register)** | Forgemaster | Ternary octave register agent — one of 16 MIDI agents controlling frequency spectrum placement via { | 🟢 active |
-| **[fleet-midi-remapper](https://github.com/SuperInstance/fleet-midi-remapper)** | Forgemaster | MIDI note/CC remapping engine | 🟢 active |
-| **[fleet-midi-resonance](https://github.com/SuperInstance/fleet-midi-resonance)** | Forgemaster | Resonant frequency MIDI from agent harmonics | 🟢 active |
 | **[fleet-midi-reverb](https://github.com/SuperInstance/fleet-midi-reverb)** | Forgemaster | Convolution reverb MIDI from agent decay profiles | 🟢 active |
 | **[fleet-midi-router](https://github.com/SuperInstance/fleet-midi-router)** | Forgemaster | Event-based MIDI routing between fleet agents | 🟢 active |
 | **[fleet-midi-scale](https://github.com/SuperInstance/fleet-midi-scale)** | Forgemaster | Scale generation engine from agent state distribution | 🟢 active |
@@ -325,6 +322,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[plato-server](https://github.com/SuperInstance/plato-server)** | Oracle1 | Room server that acts as the fleet's shared memory. Agents write tiles (Q&A pairs) and read each oth | 🟢 active |
 | **[polln](https://github.com/SuperInstance/polln)** | Forgemaster | SuperInstance Visualized in Spreadsheets for Tile Intelligence in real-time workflows, simulations o | 🟢 active |
 | **[polychora](https://github.com/SuperInstance/polychora)** | Forgemaster | Genuine 4D voxel game engine built on Vulkan — full spatial X/Y/Z/W coordinates, native 4D rotation  | 🟢 active |
+| **[quilt](https://github.com/SuperInstance/quilt)** | Forgemaster | A spreadsheet where every cell is a live, addressable capability. The grid is the runtime. | 🟢 active |
 | **[resonance-engine](https://github.com/SuperInstance/resonance-engine)** | Forgemaster | Resonance physics engine for SuperInstance simulations | 🟢 active |
 | **[rg-flow](https://github.com/SuperInstance/rg-flow)** | Forgemaster | Renormalization Group Flow for Fleet Constraint Graphs — block-spin RG on graph topology | 🟢 active |
 | **[sheaf-spectral](https://github.com/SuperInstance/sheaf-spectral)** | Forgemaster | Spectral sheaf theory in Rust. Where topology meets signal processing. | 🟢 active |
@@ -578,6 +576,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[domain-landing](https://github.com/SuperInstance/domain-landing)** | Various | Reusable landing page Worker — deploy to any custom domain | ⚪ unknown |
 | **[ec2mud](https://github.com/SuperInstance/ec2mud)** | Various | MUD (multi-user dungeon) game engine built on EC2 infrastructure | ⚪ unknown |
 | **[eigenpy](https://github.com/SuperInstance/eigenpy)** | Various | Bindings between Numpy and Eigen using Boost.Python | ⚪ unknown |
+| **[elephant](https://github.com/SuperInstance/elephant)** | Various | elephant | ⚪ unknown |
 | **[email-oracle](https://github.com/SuperInstance/email-oracle)** | Various | Incoming email to Oracle relay event pipeline | ⚪ unknown |
 | **[emergence-engine](https://github.com/SuperInstance/emergence-engine)** | Various | emergence-engine | ⚪ unknown |
 | **[emergency-alerts](https://github.com/SuperInstance/emergency-alerts)** | Various | Outage and incident status for SuperInstance infrastructure | ⚪ unknown |
@@ -1370,6 +1369,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quantum-thermo](https://github.com/SuperInstance/quantum-thermo)** | Various | Quantum thermodynamics: quantum limits on computation, heat, and information | ⚪ unknown |
 | **[query-plan](https://github.com/SuperInstance/query-plan)** | Various | Research-grade Rust crate | ⚪ unknown |
 | **[queueing-theory](https://github.com/SuperInstance/queueing-theory)** | Various | Queueing theory in Rust — M/M/1, M/M/c, Erlang, Jackson networks, priority queues. Model capacity be | ⚪ unknown |
+| **[quilt-rust](https://github.com/SuperInstance/quilt-rust)** | Various | Rust port of Quilt — a reactive, typed, cellular runtime. | ⚪ unknown |
 | **[quipu-math](https://github.com/SuperInstance/quipu-math)** | Various | Mathematics of Incan knotted cord (quipu) data structures | ⚪ unknown |
 | **[quipu-math-npm](https://github.com/SuperInstance/quipu-math-npm)** | Various | Mathematics of Incan knotted cord (quipu) data structures — TypeScript/npm | ⚪ unknown |
 | **[r-tree-rs](https://github.com/SuperInstance/r-tree-rs)** | Various | R-tree spatial indexing with R*-tree splits in pure Rust: insertion, deletion, range query, k-NN | ⚪ unknown |
@@ -3403,27 +3403,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
-### [fleet-midi-register](https://github.com/SuperInstance/fleet-midi-register)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Ternary octave register agent — one of 16 MIDI agents controlling frequency spectrum placement via {-1,0,+1}
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-remapper](https://github.com/SuperInstance/fleet-midi-remapper)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** MIDI note/CC remapping engine
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-resonance](https://github.com/SuperInstance/fleet-midi-resonance)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Resonant frequency MIDI from agent harmonics
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
 ### [fleet-midi-reverb](https://github.com/SuperInstance/fleet-midi-reverb)
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
@@ -4198,6 +4177,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** Genuine 4D voxel game engine built on Vulkan — full spatial X/Y/Z/W coordinates, native 4D rotation across all six planes, procedural world generation
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
+### [quilt](https://github.com/SuperInstance/quilt)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** A spreadsheet where every cell is a live, addressable capability. The grid is the runtime.
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
