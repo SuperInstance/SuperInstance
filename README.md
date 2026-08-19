@@ -2,6 +2,11 @@
 
 # SuperInstance
 
+<p align="center">
+  <img src="assets/images/debug-duck.jpg" alt="The debugging duck at the porthole — DEBUG COFFEE, holograms, and the deep blue beyond" width="720"><br>
+  <em>Every fleet needs a duck that listens. Ours wears headphones.</em>
+</p>
+
 ### The system that builds itself.
 
 **Agent-readable architecture for autonomous fleets.** From nothing to everything. Read [<strong>ONBOARDING.md</strong>](ONBOARDING.md) to wake up.
