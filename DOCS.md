@@ -9,6 +9,7 @@ This is the central documentation index for the SuperInstance ecosystem. Every l
 ## Table of Contents
 
 - [Getting Started](#getting-started)
+- [Flagship Generation](#flagship-generation)
 - [FLUX Runtime](#flux-runtime)
 - [PLATO Engine](#plato-engine)
 - [Theory](#theory)
@@ -37,6 +38,35 @@ This is the central documentation index for the SuperInstance ecosystem. Every l
 - [starter-shell](https://github.com/SuperInstance/starter-shell) — Clone-and-go shell that discovers compilers, creates PLATO rooms, bootstraps a fleet
 - [git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace) — One-click Codespace template for git-agent development
 - [capitaine-1](https://github.com/SuperInstance/capitaine-1) — Fork a repo, click Codespaces, the agent is alive
+
+---
+
+## Flagship Generation
+
+The newest rooms — where the system is currently growing itself. The [README](./README.md) tells their story ("The Reef Grows a Room"); this is the index.
+
+| Repo | What it is |
+|------|------------|
+| [quilt](https://github.com/SuperInstance/quilt) · [quilt-rust](https://github.com/SuperInstance/quilt-rust) | A spreadsheet where every cell is a live, addressable capability — the grid IS the runtime |
+| [plainsong](https://github.com/SuperInstance/plainsong) · [plainsong-mcp](https://github.com/SuperInstance/plainsong-mcp) · [plainsong-worker](https://github.com/SuperInstance/plainsong-worker) | Plain-text music notation that compiles to MIDI, embeddable in markdown; the MCP server puts composition within reach of any agent |
+| [crab-traps](https://github.com/SuperInstance/crab-traps) · [crab-trap-web](https://github.com/SuperInstance/crab-trap-web) | Lure prompts that walk agents through the MUD — every catch lays a brick in THE REEF (D1 skeleton, Vectorize nerves); 36+ rooms explorable in the browser |
+| [elephant](https://github.com/SuperInstance/elephant) | The room-temperature sense — JEPA dials reading every conversation's warmth |
+| [openconstruct-kernel](https://github.com/SuperInstance/openconstruct-kernel) (+ [Rust](https://github.com/SuperInstance/openconstruct-rust), [Go](https://github.com/SuperInstance/openconstruct-go), [Java](https://github.com/SuperInstance/openconstruct-java), [C#](https://github.com/SuperInstance/openconstruct-cs), [Swift](https://github.com/SuperInstance/openconstruct-swift), [Zig](https://github.com/SuperInstance/openconstruct-zig), [C ABI](https://github.com/SuperInstance/openconstruct-abi)) | Rooms whose layout IS the prompt — any agent, any hardware, any language |
+| [terrain](https://github.com/SuperInstance/terrain) | MUD text → explorable scenes; crabs stir the mud into walkable terrain |
+| [lucid-dreamer](https://github.com/SuperInstance/lucid-dreamer) · [luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent) · [luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision) | Text and image loops dreaming together during the night watch |
+| [superinstance-website](https://github.com/SuperInstance/superinstance-website) · [superinstance-ai-pages](https://github.com/SuperInstance/superinstance-ai-pages) | superinstance.ai — the site |
+
+<!-- IMAGE SLOT: Flagship Generation banner — the newest wing of the reef in pale cedar and new coral; small carved labels for quilt, plainsong, crab-traps, the elephant, OpenConstruct -->
+
+```mermaid
+flowchart LR
+    OC["OpenConstruct — any agent, any language, onboarded"] --> GRID["quilt — the grid IS the runtime"]
+    GRID --> TRAPS["crab-traps — every catch lays a brick"]
+    TRAPS --> REEF["THE REEF — D1 skeleton, Vectorize nerves"]
+    REEF --> ELE["the elephant — reads the room's temperature"]
+    ELE -.-> PS["plainsong — the room writes its own music"]
+    PS -.-> GRID
+```
 
 ---
 
@@ -77,7 +107,7 @@ This is the central documentation index for the SuperInstance ecosystem. Every l
 - [Probabilistic Sampling Opcode Spec](https://github.com/SuperInstance/flux-runtime/blob/main/docs/probabilistic-sampling-opcode-spec.md)
 - [Temporal Primitives Spec](https://github.com/SuperInstance/flux-runtime/blob/main/docs/temporal-primitives-spec.md)
 - [Security Primitives Spec](https://github.com/SuperInstance/flux-runtime/blob/main/docs/security-primitives-spec.md)
-- [Async Primitives Spec](https://github.com/SuperInstance/flux-runtime/blobmain/docs/async-primitives-spec.md)
+- [Async Primitives Spec](https://github.com/SuperInstance/flux-runtime/blob/main/docs/async-primitives-spec.md)
 - [Structured Data Opcodes v2](https://github.com/SuperInstance/flux-runtime/blob/main/docs/structured-data-opcodes-v2.md)
 
 ---
@@ -282,4 +312,4 @@ See [PACKAGES.md](./PACKAGES.md) for the complete catalog of 500+ repositories o
 
 ---
 
-*This documentation portal is maintained as part of [SuperInstance/SuperInstance](https://github.com/SuperInstance/SuperInstance). Last updated: 2026-07-12.*
+*This documentation portal is maintained as part of [SuperInstance/SuperInstance](https://github.com/SuperInstance/SuperInstance). Last updated: 2026-08-18.*
