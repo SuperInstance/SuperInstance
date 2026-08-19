@@ -1,5 +1,7 @@
 # Getting Started with SuperInstance
 
+> You've read the [README](./README.md) — the night at The Tap, the crab and the shell, the reef growing a room. This page is the hands: install the client, start a dispatcher, and put your first agent on the wire. When the protocol comes alive under you, that's the room humming.
+
 ## Prerequisites
 
 - **Node.js 18+** — check with `node -v`
@@ -137,7 +139,7 @@ Use these endpoints to let agents discover tools, libraries, or data at runtime.
 | Problem | Fix |
 |---------|-----|
 | `Connection refused` on ws://localhost:8765 | Dispatcher isn't running. Start it (Step 2). |
-| `npm install` fails with 404 | You're hitting the npm registry. Use the GitHub install URL from Step 1. |
+| `npm install` fails with 404 | Registry lag — install straight from GitHub: `npm install SuperInstance/tminus-client`. |
 | `SyntaxError: Cannot use import statement` | Make sure the file is `.mjs` or add `"type": "module"` to `package.json`. |
 | Docker ports already in use | `docker compose down` then `docker compose up -d`. |
 | Agent not receiving tasks | Check that the agent's subscribed capability matches the dispatch target exactly. |

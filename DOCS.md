@@ -24,6 +24,7 @@ This is the central documentation index for the SuperInstance ecosystem. Every l
 | Resource | Link |
 |----------|------|
 | **Start Here — Onboarding** | [ONBOARDING.md](./ONBOARDING.md) |
+| **The Fleet, Right Now — a welcome** | [THE-FLEET-NOW.md](./THE-FLEET-NOW.md) |
 | **Quickstart Guide** | [QUICKSTART.md](./QUICKSTART.md) |
 | **Architecture Overview** | [ARCHITECTURE.md](./ARCHITECTURE.md) |
 | **Roadmap** | [ROADMAP.md](./ROADMAP.md) |
