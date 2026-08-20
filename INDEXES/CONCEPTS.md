@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-19 05:31 UTC
+**Generated:** 2026-08-20 05:30 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -336,7 +336,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
 - [cudaclaw](https://github.com/SuperInstance/cudaclaw)
-- [fleet-phase](https://github.com/SuperInstance/fleet-phase)
 - [flux-chapel](https://github.com/SuperInstance/flux-chapel)
 - [flux-emergence-research](https://github.com/SuperInstance/flux-emergence-research)
 - [flux-gpu](https://github.com/SuperInstance/flux-gpu)
@@ -550,35 +549,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)
 - [fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)
 - [fleet-memory](https://github.com/SuperInstance/fleet-memory)
-- [fleet-midi-substitution](https://github.com/SuperInstance/fleet-midi-substitution)
-- [fleet-midi-swarm](https://github.com/SuperInstance/fleet-midi-swarm)
-- [fleet-midi-symusic](https://github.com/SuperInstance/fleet-midi-symusic)
-- [fleet-midi-synth](https://github.com/SuperInstance/fleet-midi-synth)
-- [fleet-midi-tempo](https://github.com/SuperInstance/fleet-midi-tempo)
-- [fleet-midi-text2midi](https://github.com/SuperInstance/fleet-midi-text2midi)
-- [fleet-midi-tidalcycles](https://github.com/SuperInstance/fleet-midi-tidalcycles)
-- [fleet-midi-tide](https://github.com/SuperInstance/fleet-midi-tide)
-- [fleet-midi-tokenizer](https://github.com/SuperInstance/fleet-midi-tokenizer)
-- [fleet-midi-tremolo](https://github.com/SuperInstance/fleet-midi-tremolo)
-- [fleet-midi-vel](https://github.com/SuperInstance/fleet-midi-vel)
-- [fleet-midi-velocity](https://github.com/SuperInstance/fleet-midi-velocity)
-- [fleet-midi-visualizer](https://github.com/SuperInstance/fleet-midi-visualizer)
-- [fleet-midi-voicing](https://github.com/SuperInstance/fleet-midi-voicing)
-- [fleet-midi-wave](https://github.com/SuperInstance/fleet-midi-wave)
-- [fleet-midi-weave](https://github.com/SuperInstance/fleet-midi-weave)
-- [fleet-miner](https://github.com/SuperInstance/fleet-miner)
 - [fleet-murmur-worker](https://github.com/SuperInstance/fleet-murmur-worker)
-- [fleet-music-theorist](https://github.com/SuperInstance/fleet-music-theorist)
-- [fleet-neofetch](https://github.com/SuperInstance/fleet-neofetch)
-- [fleet-oracle](https://github.com/SuperInstance/fleet-oracle)
 - [fleet-oracle2](https://github.com/SuperInstance/fleet-oracle2)
-- [fleet-orca-connector](https://github.com/SuperInstance/fleet-orca-connector)
-- [fleet-orchestra](https://github.com/SuperInstance/fleet-orchestra)
-- [fleet-osc-server](https://github.com/SuperInstance/fleet-osc-server)
-- [fleet-phase](https://github.com/SuperInstance/fleet-phase)
 - [fleet-pipeline](https://github.com/SuperInstance/fleet-pipeline)
 - [fleet-platform](https://github.com/SuperInstance/fleet-platform)
-- [fleet-predict](https://github.com/SuperInstance/fleet-predict)
 - [fleet-proto](https://github.com/SuperInstance/fleet-proto)
 - [fleet-proto-rs](https://github.com/SuperInstance/fleet-proto-rs)
 - [fleet-radio](https://github.com/SuperInstance/fleet-radio)
@@ -842,6 +816,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [navigator-vessel](https://github.com/SuperInstance/navigator-vessel)
 - [nebula-docs](https://github.com/SuperInstance/nebula-docs)
 - [nerve-agent](https://github.com/SuperInstance/nerve-agent)
+- [oci-agent](https://github.com/SuperInstance/oci-agent)
 - [openconstruct-abi](https://github.com/SuperInstance/openconstruct-abi)
 - [openconstruct-cs](https://github.com/SuperInstance/openconstruct-cs)
 - [openconstruct-go](https://github.com/SuperInstance/openconstruct-go)
@@ -926,6 +901,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [provenance-log](https://github.com/SuperInstance/provenance-log)
 - [purplepincher-shell-library](https://github.com/SuperInstance/purplepincher-shell-library)
 - [quilt-agent](https://github.com/SuperInstance/quilt-agent)
+- [quilt-fleet](https://github.com/SuperInstance/quilt-fleet)
 - [random-walk-agent](https://github.com/SuperInstance/random-walk-agent)
 - [reallog-agent](https://github.com/SuperInstance/reallog-agent)
 - [renormalization-group-rs](https://github.com/SuperInstance/renormalization-group-rs)
@@ -1466,11 +1442,16 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-room-security-audit](https://github.com/SuperInstance/plato-room-security-audit)
 - [plato-room-security-audit-rs](https://github.com/SuperInstance/plato-room-security-audit-rs)
 
+## Self Supervised
+
+- [sonar-vision](https://github.com/SuperInstance/sonar-vision)
+
 ## Sonar
 
 - [boat-agent](https://github.com/SuperInstance/boat-agent)
 - [openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)
 - [plato-sonar-text](https://github.com/SuperInstance/plato-sonar-text)
+- [sonar-vision](https://github.com/SuperInstance/sonar-vision)
 - [sonar-vision-c](https://github.com/SuperInstance/sonar-vision-c)
 - [sonar-vision-landing](https://github.com/SuperInstance/sonar-vision-landing)
 - [sonar-vision-rs](https://github.com/SuperInstance/sonar-vision-rs)
@@ -1503,6 +1484,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [SubForge](https://github.com/SuperInstance/SubForge)
 - [a2ui](https://github.com/SuperInstance/a2ui)
 - [activelog-ai](https://github.com/SuperInstance/activelog-ai)
+- [alphabet](https://github.com/SuperInstance/alphabet)
 - [base60-lattice](https://github.com/SuperInstance/base60-lattice)
 - [baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)
 - [batten-spline](https://github.com/SuperInstance/batten-spline)
@@ -1854,6 +1836,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [micro-onnx](https://github.com/SuperInstance/micro-onnx)
 - [migrations](https://github.com/SuperInstance/migrations)
 - [minimax-code](https://github.com/SuperInstance/minimax-code)
+- [mist-game](https://github.com/SuperInstance/mist-game)
 - [mitochondria](https://github.com/SuperInstance/mitochondria)
 - [model-breaking](https://github.com/SuperInstance/model-breaking)
 - [model-check](https://github.com/SuperInstance/model-check)
@@ -1943,9 +1926,27 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [query-plan](https://github.com/SuperInstance/query-plan)
 - [queueing-theory](https://github.com/SuperInstance/queueing-theory)
 - [quilt](https://github.com/SuperInstance/quilt)
+- [quilt-ai](https://github.com/SuperInstance/quilt-ai)
+- [quilt-base](https://github.com/SuperInstance/quilt-base)
+- [quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare)
+- [quilt-codespace](https://github.com/SuperInstance/quilt-codespace)
+- [quilt-core-os](https://github.com/SuperInstance/quilt-core-os)
+- [quilt-elf](https://github.com/SuperInstance/quilt-elf)
 - [quilt-esp32](https://github.com/SuperInstance/quilt-esp32)
+- [quilt-evolve](https://github.com/SuperInstance/quilt-evolve)
+- [quilt-flow](https://github.com/SuperInstance/quilt-flow)
+- [quilt-jetson](https://github.com/SuperInstance/quilt-jetson)
+- [quilt-k3s](https://github.com/SuperInstance/quilt-k3s)
 - [quilt-live](https://github.com/SuperInstance/quilt-live)
+- [quilt-nomad](https://github.com/SuperInstance/quilt-nomad)
+- [quilt-pincher](https://github.com/SuperInstance/quilt-pincher)
+- [quilt-rag](https://github.com/SuperInstance/quilt-rag)
 - [quilt-rust](https://github.com/SuperInstance/quilt-rust)
+- [quilt-swarm](https://github.com/SuperInstance/quilt-swarm)
+- [quilt-time](https://github.com/SuperInstance/quilt-time)
+- [quilt-vault](https://github.com/SuperInstance/quilt-vault)
+- [quilt-vision](https://github.com/SuperInstance/quilt-vision)
+- [quilt-zk](https://github.com/SuperInstance/quilt-zk)
 - [quipu-math](https://github.com/SuperInstance/quipu-math)
 - [quipu-math-c](https://github.com/SuperInstance/quipu-math-c)
 - [quipu-math-npm](https://github.com/SuperInstance/quipu-math-npm)
@@ -2311,6 +2312,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-ring](https://github.com/SuperInstance/ternary-ring)
 - [ternary-rl](https://github.com/SuperInstance/ternary-rl)
 - [ternary-robotics](https://github.com/SuperInstance/ternary-robotics)
+- [ternary-rom](https://github.com/SuperInstance/ternary-rom)
 - [ternary-route](https://github.com/SuperInstance/ternary-route)
 - [ternary-routing](https://github.com/SuperInstance/ternary-routing)
 - [ternary-runlength](https://github.com/SuperInstance/ternary-runlength)
@@ -2435,6 +2437,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ws-status-indicator](https://github.com/SuperInstance/ws-status-indicator)
 - [young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)
 - [zero-knowledge](https://github.com/SuperInstance/zero-knowledge)
+- [zeroclaw-dissertation](https://github.com/SuperInstance/zeroclaw-dissertation)
 
 ## Underwater
 
@@ -2453,7 +2456,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [activelog-app](https://github.com/SuperInstance/activelog-app)
 - [fishinglog-ai](https://github.com/SuperInstance/fishinglog-ai)
-- [fleet-midi-weave](https://github.com/SuperInstance/fleet-midi-weave)
 - [fleet-voice-leader](https://github.com/SuperInstance/fleet-voice-leader)
 - [handy-marine-voice](https://github.com/SuperInstance/handy-marine-voice)
 - [hermes-avatar](https://github.com/SuperInstance/hermes-avatar)
