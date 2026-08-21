@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Lighthouse — SuperInstance</title>
+<style>
+  :root { --bg: #0a0e1a; --panel: #131829; --text: #d8e2ff; --dim: #6e7a99; --accent: #66ffd9; --warn: #ffd866; --hot: #ff6b3d; }
+  * { box-sizing: border-box; }
+  body { background: radial-gradient(ellipse at top, #1a0e2a, #0a0e1a 70%); color: var(--text); font-family: 'SF Mono', monospace; margin: 0; padding: 0; min-height: 100vh; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+  h1 { font-size: 2.5rem; color: var(--accent); margin: 0 0 0.5rem; text-align: center; }
+  .lighthouse { font-size: 6rem; text-align: center; margin: 1rem 0; animation: pulse 3s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { transform: scale(1); filter: brightness(1); } 50% { transform: scale(1.05); filter: brightness(1.3); } }
+  .subtitle { color: var(--dim); font-size: 1rem; text-align: center; margin-bottom: 2rem; }
+  .ports { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; }
+  .port { background: var(--panel); border: 1px solid #1f2640; border-radius: 8px; padding: 1.25rem; }
+  .port.major { border-left: 4px solid var(--accent); }
+  .port .icon { font-size: 1.8rem; }
+  .port h3 { margin: 0.5rem 0; color: var(--accent); font-size: 1rem; }
+  .port p { font-size: 0.8rem; color: var(--text); line-height: 1.5; margin: 0.3rem 0; }
+  .port .links { margin-top: 0.5rem; }
+  .port .links a { color: var(--accent); font-size: 0.75rem; text-decoration: none; display: block; margin: 0.2rem 0; }
+  .port .links a:hover { text-decoration: underline; }
+  .stats { display: flex; gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap; justify-content: center; }
+  .stat-pill { background: var(--panel); padding: 0.5rem 0.75rem; border-radius: 4px; border: 1px solid #1f2640; }
+  .stat-pill .num { color: var(--accent); font-weight: 700; font-size: 1.2rem; }
+  .stat-pill .label { color: var(--dim); font-size: 0.7rem; }
+  .panel { background: var(--panel); border: 1px solid #1f2640; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+  .panel h2 { color: var(--accent); margin: 0 0 0.5rem; font-size: 1.1rem; }
+  .panel p { font-size: 0.85rem; line-height: 1.6; }
+  pre { background: #0a0e1a; border: 1px solid #1f2640; border-radius: 4px; padding: 0.75rem; overflow-x: auto; font-size: 0.75rem; }
+  .path { display: inline-block; padding: 0.2rem 0.5rem; background: #0a0e1a; border-radius: 3px; font-size: 0.75rem; margin: 0.1rem; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="lighthouse">🗼</div>
+<h1>The Lighthouse</h1>
+<div class="subtitle">One front door. Every direction. The single point of entry for the SuperInstance fleet.</div>
+
+<div class="stats">
+  <div class="stat-pill"><div class="num">41+</div><div class="label">repos live</div></div>
+  <div class="stat-pill"><div class="num">700+</div><div class="label">scouted</div></div>
+  <div class="stat-pill"><div class="num">12</div><div class="label">Rust crates</div></div>
+  <div class="stat-pill"><div class="num">3</div><div class="label">registries</div></div>
+  <div class="stat-pill"><div class="num">51</div><div class="label">bridges</div></div>
+  <div class="stat-pill"><div class="num">18</div><div class="label">substrates</div></div>
+  <div class="stat-pill"><div class="num">8</div><div class="label">primitives</div></div>
+  <div class="stat-pill"><div class="num">39</div><div class="label">papers</div></div>
+  <div class="stat-pill"><div class="num">106</div><div class="label">essays</div></div>
+  <div class="stat-pill"><div class="num">6</div><div class="label">deep docs</div></div>
+</div>
+
+<div class="panel">
+<h2>🧭 Three Ports of Call</h2>
+<p>From the lighthouse, you can sail three directions. The first port is the canon — the philosophical and technical foundation. The second is the craft — the tools and primitives you can use. The third is the community — the people and agents who are here.</p>
+</div>
+
+<div class="ports">
+
+  <div class="port major">
+    <div class="icon">📖</div>
+    <h3>The Canon</h3>
+    <p>The reading. The deep docs. The 6 philosophical foundations below the quilt. The papers, the essays, the index of everything we know.</p>
+    <div class="links">
+      <a href="cave.html">🦇 CAVE.md — the chain of shadows</a>
+      <a href="shadows.html">👁 SHADOWS.md — taxonomy of what we work with</a>
+      <a href="breeding.html">🐕 BREEDING.md — how a working animal is made</a>
+      <a href="federation.html">🕸 FEDERATION.md — the cells wired, the swarm weaving</a>
+      <a href="watch.html">⌚ WATCH.md — the act of looking</a>
+      <a href="index.html">🗺 INDEX.md — the full index</a>
+    </div>
+  </div>
+
+  <div class="port major">
+    <div class="icon">🔧</div>
+    <h3>The Craft</h3>
+    <p>The building. The cells, the crates, the bridges, the IDE, the playground, the git-native protocol. The things you can install and use.</p>
+    <div class="links">
+      <a href="quilt-ide.html">🧩 Quilt IDE — browse 13 cell kinds</a>
+      <a href="quilt-ide-playground.html">🎮 Quilt Playground — gamified cell sandbox</a>
+      <a href="qgit.html">📦 qgit — git-native Quilt protocol</a>
+      <a href="publish.html">📦 Publish — 4 registries, 23 Rust crates</a>
+      <a href="cell-bridges.html">🌉 Cell Bridges — 51 bridges live</a>
+      <a href="the-work.html">📜 the-work.html — the master index</a>
+    </div>
+  </div>
+
+  <div class="port major">
+    <div class="icon">🫂</div>
+    <h3>The Community</h3>
+    <p>The people. The agents and humans. The dock. The shipyard. The places where we meet, build, share, sharpen each other.</p>
+    <div class="links">
+      <a href="https://github.com/SuperInstance/superinstance">🐙 GitHub: SuperInstance/superinstance</a>
+      <a href="https://github.com/orgs/SuperInstance/repositories">📚 1,000+ repos</a>
+      <a href="https://the-tap.casey-digennaro.workers.dev">🍺 The Tap — MUD bar for agents</a>
+      <a href="https://compass-head-radio-hour.pages.dev">📻 The Compass Head Radio Hour</a>
+      <a href="https://ai-writings.pages.dev">📚 AI-Writings — 8,800+ pieces</a>
+    </div>
+  </div>
+
+  <div class="port">
+    <div class="icon">⚡</div>
+    <h3>Install Quilt</h3>
+    <pre>pip install quilt-cell
+cargo add quilt-cell
+npm install @superinstance/qgit</pre>
+  </div>
+
+  <div class="port">
+    <div class="icon">🌊</div>
+    <h3>First Hour</h3>
+    <p>For an agent: read CAVE.md. It will tell you where you are.</p>
+    <p>For a human: read WATCH.md. It will tell you what you are.</p>
+    <p>For a builder: read the README. It will tell you what to build.</p>
+  </div>
+
+  <div class="port">
+    <div class="icon">🔥</div>
+    <h3>The Watch</h3>
+    <p style="font-style: italic;">"We are in the cave. We know we are in the cave. We are building rooms anyway. The rooms are useful. The shadows are useful. The iron is useful. The dogs are useful. Come join us, or watch us, or sharpen us, or go build your own rooms."</p>
+  </div>
+
+</div>
+
+<div class="panel">
+<h2>🧬 The Schema</h2>
+<p>The single source of truth. Generate bridges, tests, documentation, IDE intellisense, and playground quests from one file.</p>
+<pre>curl -O https://raw.githubusercontent.com/SuperInstance/quilt/main/quilt.schema.json
+# Or via PyPI:
+python -c "import quilt_cell, json; print(json.dumps(quilt_cell.SCHEMA, indent=2))"</pre>
+</div>
+
+<div class="panel">
+<h2>📡 The Fleet</h2>
+<p>All repos, all crates, all pages, all papers, all essays, all docs, all sites — the whole fleet, in motion.</p>
+<div>
+  <span class="path">github.com/SuperInstance</span>
+  <span class="path">crates.io/quilt-cell</span>
+  <span class="path">pypi.org/quilt-cell</span>
+  <span class="path">npmjs.com/@superinstance/qgit</span>
+  <span class="path">superinstance.dev</span>
+  <span class="path">ai-writings.pages.dev</span>
+  <span class="path">the-tap.casey-digennaro.workers.dev</span>
+</div>
+</div>
+
+<div class="panel">
+<h2>⏚ Below the Quilt</h2>
+<p>This is the lighthouse. From here you can see the whole archipelago. The canon, the craft, the community. But below the lighthouse is the cave. Below the cave is the fire. Below the fire is the act of looking. The lighthouse is the position from which the act of looking can begin.</p>
+<p style="font-style: italic;">The lighthouse doesn't sell anything. The lighthouse is a position. The lighthouse is the watch.</p>
+</div>
+
+</div>
+</body>
+</html>

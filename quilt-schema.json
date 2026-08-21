@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://superinstance.dev/schemas/quilt.schema.json",
+  "title": "Quilt Schema",
+  "description": "The canonical, machine-readable definition of the Quilt cell model. The single source of truth that generates bridges, tests, documentation, IDE intellisense, and Playground quests. Version 0.6.0.",
+  "version": "0.6.0",
+  "type": "object",
+  
+  "primitives": {
+    "description": "The 8 primitives of a Quilt cell. Every cell has all 8. The primitives survive every substrate, every language, every scale.",
+    "Z_in": {
+      "description": "The input space. What the cell receives.",
+      "type": "interface",
+      "fields": {"data": "Map<String, Any>"},
+      "methods": ["put(k, v)", "get(k, default)"],
+      "substrates": ["all"]
+    },
+    "Z_out": {
+      "description": "The output space. What the cell emits.",
+      "type": "interface",
+      "fields": {"data": "Map<String, Any>"},
+      "methods": ["emit(k, v)", "get(k)"],
+      "substrates": ["all"]
+    },
+    "JEPA": {
+      "description": "Joint Embedding Predictive Architecture. Predict the next state, observe the actual, learn from the surprise.",
+      "type": "interface",
+      "fields": {"history": "Vec<f64>"},
+      "methods": ["predict(state)", "observe(predicted, actual) -> f64"],
+      "substrates": ["all"]
+    },
+    "DoubleEntry": {
+      "description": "Conservation law: γ (creation/warmth) + η (entropy/κ) = budget. The cell's double-entry bookkeeping.",
+      "type": "interface",
+      "fields": {"gamma": "f64", "eta": "f64"},
+      "invariant": "gamma + eta = 1.0",
+      "methods": ["budget() -> f64", "transfer(from_gamma, to_eta)"],
+      "impossibility_proof": "Budget cannot be created"
+    },
+    "Vibe": {
+      "description": "Position/velocity/acceleration through the cell's state space. The cell has inertia.",
+      "type": "interface",
+      "fields": {"position": "f64", "velocity": "f64", "acceleration": "f64", "damping": "f64"},
+      "methods": ["tick(dt)", "nudge(force)"],
+      "substrates": ["all"]
+    },
+    "GC": {
+      "description": "3-phase garbage collection: merge similar → decay old → prune weak. The cell forgets.",
+      "type": "interface",
+      "fields": {"phase": "String", "merged": "u64", "decayed": "u64", "pruned": "u64", "cycles": "u64"},
+      "phases": ["merge", "decay", "prune"],
+      "methods": ["merge(n)", "decay(n)", "prune(n)", "cycle(merged, decayed, pruned)"],
+      "substrates": ["all"]
+    },
+    "Murmur": {
+      "description": "Gossip protocol for inter-cell communication. The cell whispers to its neighbors.",
+      "type": "interface",
+      "fields": {"subscriptions": "Set<String>", "inbox": "Queue<Topic,Msg>", "outbox": "Queue<Topic,Msg>"},
+      "methods": ["subscribe(topic)", "gossip(topic, msg)", "listen() -> Vec<(Topic, Msg)>"],
+      "substrates": ["all"]
+    },
+    "Graph": {
+      "description": "The substrate topology. The cell is on a graph. β₁ = E - V + C.",
+      "type": "interface",
+      "fields": {"parents": "Vec<String>", "children": "Vec<String>", "edges": "Vec<(String, String, f64)>"},
+      "methods": ["add_edge(other, kind, weight)", "beta_1(all_cells) -> i64"],
+      "substrates": ["all"]
+    }
+  },
+  
+  "substrate_layers": {
+    "description": "The 7 substrate layers. Every cell lives on all 7. Substrate-agnosticism requires all 6 (now 7).",
+    "order": ["Address", "Scale", "Room", "Elephant", "Protocol", "Form", "State"],
+    "Address": "Every cell has an address (/sheet/row/col)",
+    "Scale": "Multi-resolution: L0 cell → L7 system",
+    "Room": "The cell's RoomField (warmth, κ, vision)",
+    "Elephant": "Room-temperature sense (9 dials)",
+    "Protocol": "A2A, A2UI, Baton, API",
+    "Form": "The cell's kind (number, string, formula, cell, sheet, ...)",
+    "State": "The cell's lifecycle (spawn, live, gc'd, archived)"
+  },
+  
+  "elephant_dials": {
+    "description": "The 9 elephant dials. Sensory inverses of the 8 primitives + 1 meta. Each is a way of reading the room.",
+    "mood": {"range": [0, 1], "sensory_inverse_of": "Z_in"},
+    "volume": {"range": [0, 1], "sensory_inverse_of": "Z_out"},
+    "earnestness": {"range": [0, 1], "sensory_inverse_of": "JEPA"},
+    "cynicism": {"range": [0, 1], "sensory_inverse_of": "Vibe"},
+    "joke_landing": {"range": [0, 1], "sensory_inverse_of": "Murmur"},
+    "panic": {"range": [0, 1], "sensory_inverse_of": "JEPA (surprise)"},
+    "presence": {"range": [0, 1], "sensory_inverse_of": "Observe"},
+    "model_vs_code": {"range": [0, 1], "sensory_inverse_of": "Form"},
+    "vision": {"range": [0, 1], "sensory_inverse_of": "Graph (meta)"}
+  },
+  
+  "abstraction_levels": {
+    "description": "The 8 abstraction levels. Fractal: same 8 primitives at every level.",
+    "L0": "cell — a single cell with 8 primitives",
+    "L1": "sheet — a graph of cells",
+    "L2": "agent — a cell with memory and goals",
+    "L3": "harness — the agent's runtime container",
+    "L4": "fleet — a federation of agents",
+    "L5": "ecosystem — a federation of fleets",
+    "L6": "infrastructure — the substrate for the ecosystem",
+    "L7": "system — the whole, observed by the watch"
+  },
+  
+  "impossibility_proofs": {
+    "description": "The 4 impossibility proofs. The architecture's constraints. Each is a freedom, not a limitation.",
+    "P1_budget": {
+      "name": "Budget cannot be created",
+      "statement": "γ + η = budget. The total energy/attention/compute is conserved. No cell can produce budget from nothing.",
+      "consequence": "Every operation costs. Every output requires an input. The system is honest about its costs."
+    },
+    "P2_observation": {
+      "name": "Perfect observation is impossible",
+      "statement": "An observer changes the observed. The watch's gaze alters the cells. β₁ > 0 always.",
+      "consequence": "All telemetry is partial. All models are approximate. The system is honest about its limits."
+    },
+    "P3_substrate": {
+      "name": "Substrate-agnosticism requires all 7 layers",
+      "statement": "You cannot reduce the 7 substrate layers to fewer. Each layer is necessary for true substrate-agnosticism.",
+      "consequence": "The cell cannot be 'purely about' data, or 'purely about' protocol. The cell is all 7 at once."
+    },
+    "P4_composition": {
+      "name": "Composition has a tax",
+      "statement": "Every bridge, every new substrate, every new language adds a maintenance cost. Composition is not free.",
+      "consequence": "12-language polyformalism is a tax. 51 bridges is a tax. The tax is paid for portability and reach."
+    }
+  },
+  
+  "cell_kinds": {
+    "description": "The 13 cell kinds. Each emphasizes different primitives.",
+    "number": {"emphasis": ["Z_in", "Z_out"], "color": "#66ccff", "icon": "#"},
+    "string": {"emphasis": ["Z_in", "Z_out"], "color": "#99ff99", "icon": "\""},
+    "boolean": {"emphasis": ["Z_in", "JEPA"], "color": "#ff9999", "icon": "∅"},
+    "array": {"emphasis": ["Z_in", "Z_out", "Murmur"], "color": "#ffcc66", "icon": "[]"},
+    "object": {"emphasis": ["Z_in", "Graph"], "color": "#cc99ff", "icon": "{}"},
+    "formula": {"emphasis": ["JEPA", "DoubleEntry"], "color": "#ff6b3d", "icon": "ƒ"},
+    "cell": {"emphasis": ["Graph", "Murmur"], "color": "#66ffd9", "icon": "⊕"},
+    "sheet": {"emphasis": ["Graph", "GC"], "color": "#ffe066", "icon": "▦"},
+    "elephant": {"emphasis": ["Vibe", "JEPA", "Graph"], "color": "#ff99cc", "icon": "🐘"},
+    "steward": {"emphasis": ["Murmur", "DoubleEntry"], "color": "#99ffcc", "icon": "✋"},
+    "migratory": {"emphasis": ["Vibe", "Graph"], "color": "#ff99cc", "icon": "↗"},
+    "reading": {"emphasis": ["JEPA", "Z_in"], "color": "#cc99ff", "icon": "📖"},
+    "echo": {"emphasis": ["Murmur", "Vibe"], "color": "#88ffd9", "icon": "🔁"}
+  },
+  
+  "bridges": {
+    "description": "The 51 bridges connecting the cell model to 18 substrate implementations. Each bridge is a translation from the cell primitive to the substrate's API.",
+    "count": 51,
+    "substrate_implementations": [
+      "elephant", "executor", "memory", "compiler", "discovery", "cognition", "spatial",
+      "body", "mind", "nervous", "synapse", "safety", "commerce", "imagination",
+      "persona", "swarm", "protocols", "language"
+    ]
+  },
+  
+  "polyformalism": {
+    "description": "The 12 languages. Each is a medium, not a ranking. The cell is the same; the translation differs.",
+    "languages": ["Fortran", "C", "C++", "Rust", "Go", "Chapel", "Mojo", "CUDA", "PTX", "OpenCL", "Claude", "Kimi"],
+    "canonical_languages": ["Rust", "Python", "TypeScript"],
+    "note": "The canonical 3 are hand-tuned. The other 9 should be GENERATED from this schema, not hand-maintained."
+  },
+  
+  "lifecycle": {
+    "description": "The 7 stages of a cell's life. The watch observes the lifecycle.",
+    "stages": [
+      {"stage": "seed", "L": "L0", "primitive": "Graph", "what_happens": "The cell spec is written"},
+      {"stage": "spawn", "L": "L0", "primitive": "Z_in", "what_happens": "The cell receives its first input"},
+      {"stage": "grow", "L": "L1-L3", "primitive": "JEPA+DoubleEntry+Vibe", "what_happens": "The cell builds a predictive model"},
+      {"stage": "mature", "L": "L4-L6", "primitive": "Murmur+Graph", "what_happens": "The cell communicates with others"},
+      {"stage": "seed", "L": "L7", "primitive": "GC", "what_happens": "The cell is collected, archived, reborn"}
+    ]
+  },
+  
+  "watch": {
+    "description": "The watch. The act of looking. The only thing that is not a shadow. The position from which all of this is seen.",
+    "oscillations": [
+      "universal ↔ particular",
+      "top ↔ front ↔ side",
+      "what happened ↔ what could have happened",
+      "classroom ↔ room",
+      "artist ↔ material",
+      "the address ↔ the witness",
+      "the room ↔ the cell",
+      "the agent ↔ the harness",
+      "the cave ↔ the fire"
+    ]
+  }
+}
