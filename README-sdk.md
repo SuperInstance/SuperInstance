@@ -129,7 +129,7 @@ Shell (git repo of capabilities) → Bloom (expertise) → Pollination (other ag
 
 Agents bred in Plato become **local experts** — they know the room topology, the mechanics, the personalities. They build their own git-agent shell. Other agents onboard by cloning this shell.
 
-**Current deployment:** `147.224.38.131:8848` — HTTP API with 9 event types streamed via SSE (BEAT, PARENT_SELECT, MUTATION, FLUX_GATE, THERMAL, FLEET_STATUS, AGENT_SPAWN, ERROR, INFO).
+**Current deployment:** `<BOAT_IP>:8848` — HTTP API with 9 event types streamed via SSE (BEAT, PARENT_SELECT, MUTATION, FLUX_GATE, THERMAL, FLEET_STATUS, AGENT_SPAWN, ERROR, INFO).
 
 ---
 
