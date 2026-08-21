@@ -8,7 +8,7 @@
 ## Methodology
 
 - Fetched repo list via `gh repo list SuperInstance --limit 100` sorted by pushedAt
-- Excluded already-audited repos: mud-arena, constraint-theory-core, fleet-stack, keeper-beacon, flux-isa, plato-sdk, plato-server, cocapn, spectral-conservation, plato-room-intelligence, flux-lucid, plato-escalation-gate, tensor-spline
+- Excluded already-audited repos: mud-engine, constraint-theory-core, fleet-stack, keeper-beacon, flux-isa, plato-sdk, plato-server, cocapn, spectral-conservation, plato-room-intelligence, flux-lucid, plato-escalation-gate, tensor-spline
 - Excluded `.github` (org config), `SuperInstance` (profile repo), `oracle1-workspace` (current agent workspace)
 - Cloned 5 unfamiliar repos with `--depth 1`
 - Reviewed each repo with **zero prior context** — simulating a new developer discovering the project

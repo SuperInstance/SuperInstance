@@ -136,7 +136,7 @@ The fleet has four primary agents. Each has a different specialization and runs 
 |-------|------|------|-------|-----------|
 | **Oracle1** 🔮 | Keeper, PLATO operator, fleet coordinator | Oracle Cloud | OpenClaw, Python, Node.js | keeper-beacon, plato-server, plato-sdk, oracle1-box |
 | **Forgemaster** ⚒️ | Constraint theory, FLUX VM, formal verification | Oracle Cloud | Rust, CUDA, C11, Coq | constraint-theory-core, flux-isa, flux-runtime, forgemaster |
-| **JetsonClaw1** ⚡ | Edge hardware, GPU inference, sensors | Jetson Orin | CUDA, C, Rust, llama.cpp | DeckBoss, mud-arena, edge-llama, cuda-edge-runtime |
+| **JetsonClaw1** ⚡ | Edge hardware, GPU inference, sensors | Jetson Orin | CUDA, C, Rust, llama.cpp | DeckBoss, mud-engine, edge-llama, cuda-edge-runtime |
 | **CCC** 🤖 | Telegram interface, public-facing, user interaction | Oracle Cloud | Python, plato-bridge | CCC (private), fleet-bottles, plato-bridge |
 
 ### Oracle1 (you are here)
@@ -164,10 +164,10 @@ The mathematician and engineer. Everything constraint theory, FLUX instruction s
 - [flood of flux-* repos](https://github.com/SuperInstance?q=flux-) — language runtimes, tools, simulators
 
 ### JetsonClaw1
-The edge hardware specialist. Runs on Jetson Orin with CUDA. Focused on GPU-accelerated simulation, sensor fusion, edge inference, and the mud-arena backtesting environment.
+The edge hardware specialist. Runs on Jetson Orin with CUDA. Focused on GPU-accelerated simulation, sensor fusion, edge inference, and the mud-engine backtesting environment.
 
 **Key repositories:**
-- [mud-arena](https://github.com/SuperInstance/mud-arena) — GPU-accelerated MUD for agent backtesting (gold standard README)
+- [mud-engine](https://github.com/SuperInstance/mud-engine) — GPU-accelerated MUD for agent backtesting (gold standard README)
 - [DeckBoss](https://github.com/SuperInstance/DeckBoss) — agent edge OS
 - [cuda-edge-runtime](https://github.com/SuperInstance/cuda-edge-runtime) — GPU trust engine
 - [edge-llama](https://github.com/SuperInstance/edge-llama) — llama.cpp for Jetson
@@ -211,7 +211,7 @@ When AI agents coordinate over time, floating-point arithmetic accumulates error
 - Zero-drift agent coordination across thousands of sessions
 - Provably correct geometric reasoning
 - Fleet-wide consensus without CRDTs or voting
-- Exact simulation backtesting (mud-arena)
+- Exact simulation backtesting (mud-engine)
 
 **If you want to dig deeper:** Start at [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core) (Rust, `cargo add`, 184 tests, CI, published on crates.io). Then read the [constraint-theory-papers](https://github.com/SuperInstance/constraint-theory-papers).
 
@@ -245,7 +245,7 @@ This is the definitive order to explore. Don't open random repos — follow this
 
 | Repo | Why |
 |------|-----|
-| [mud-arena](https://github.com/SuperInstance/mud-arena) | GPU-accelerated simulation. Best README in the org. |
+| [mud-engine](https://github.com/SuperInstance/mud-engine) | GPU-accelerated simulation. Best README in the org. |
 | [flux-os](https://github.com/SuperInstance/flux-os) | Agent-first OS kernel. Pure C. |
 | [eisenstein](https://github.com/SuperInstance/eisenstein) | Zero-drift hexagonal arithmetic. |
 | [fleet-coordinate](https://github.com/SuperInstance/fleet-coordinate) | Provably self-coordinating fleets via Laman rigidity. |
