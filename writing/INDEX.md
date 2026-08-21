@@ -26,9 +26,9 @@
 |-------|----------|------:|--------|
 | Signal Chain Paper | [signal-chain/papers/SIGNAL-CHAIN.md](https://github.com/SuperInstance/signal-chain/blob/master/papers/SIGNAL-CHAIN.md) | 6,169 | Core thesis: per-room α dial, tiles as context carriers, deadband detection |
 | Signal Chain Survey | [signal-chain/papers/SIGNAL-CHAIN-SURVEY.md](https://github.com/SuperInstance/signal-chain/blob/master/papers/SIGNAL-CHAIN-SURVEY.md) | — | Related work and positioning |
-| Spectral Conservation Paper (v4.2) | [experiments/gpu-loop/PAPER-V4.md](https://github.com/SuperInstance/forgemaster/blob/master/experiments/gpu-loop/PAPER-V4.md) | — | I(x) = γ(x) + H(x), 20 experimental cycles, cycle 20 breaking result |
-| Galois Unification Proofs | [galois-unification-proofs/](https://github.com/SuperInstance/forgemaster/tree/master/galois-unification-proofs) | — | 6 parts, 1.4M+ constructive verification checks |
-| Multilingual Papers (7) | [papers/](https://github.com/SuperInstance/forgemaster/tree/master/papers) | 222KB total | UNIFIED-SYNTHESIS, NEGATIVE-GPU-RESULTS, CROSS-DOMAIN-APPLICATIONS, etc. |
+| Spectral Conservation Paper (v4.2) | [experiments/gpu-loop/PAPER-V4.md](https://github.com/SuperInstance/forgemaster/blob/master/experiments/gpu-loop/PAPER-V4.md) (dead) | — | I(x) = γ(x) + H(x), 20 experimental cycles, cycle 20 breaking result |
+| Galois Unification Proofs | [galois-unification-proofs/](https://github.com/SuperInstance/forgemaster/tree/master/galois-unification-proofs) (dead) | — | 6 parts, 1.4M+ constructive verification checks |
+| Multilingual Papers (7) | [papers/](https://github.com/SuperInstance/forgemaster/tree/master/papers) (dead) | 222KB total | UNIFIED-SYNTHESIS, NEGATIVE-GPU-RESULTS, CROSS-DOMAIN-APPLICATIONS, etc. |
 
 ---
 
@@ -110,7 +110,7 @@
 
 - **AI-Writings**: [github.com/SuperInstance/AI-Writings](https://github.com/SuperInstance/AI-Writings) — all essays, futures, experiments
 - **Signal Chain**: [github.com/SuperInstance/signal-chain](https://github.com/SuperInstance/signal-chain) — paper, landing page, HN announcement
-- **Forgemaster**: [github.com/SuperInstance/forgemaster](https://github.com/SuperInstance/forgemaster) — research papers, Galois proofs, GPU experiments
+- **Forgemaster**: [github.com/SuperInstance/forgemaster](https://github.com/SuperInstance/forgemaster) (dead) — research papers, Galois proofs, GPU experiments
 - **Cocapn Web**: [superinstance.github.io/cocapn-ai-web/](https://superinstance.github.io/cocapn-ai-web/) — landing page with Narrows demo
 - **PurplePincher**: [plato.purplepincher.org](https://plato.purplepincher.org) — PLATO landing page
 

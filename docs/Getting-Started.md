@@ -167,7 +167,7 @@ The wheel never stops. Build → experiment → observe → notice → formalize
 
 ## 7. Use the Spreader
 
-The fleet workhorse is **Seed-2.0-mini** — $0.01 per query, parallel-capable, surprisingly good at math. The [seed_spreader](https://github.com/SuperInstance/forgemaster/blob/main/bin/seed_spreader) tool fans out parallel computation across multiple instances.
+The fleet workhorse is **Seed-2.0-mini** — $0.01 per query, parallel-capable, surprisingly good at math. The [seed_spreader](https://github.com/SuperInstance/forgemaster/blob/main/bin/seed_spreader) (dead) tool fans out parallel computation across multiple instances.
 
 **Monte Carlo — 50 parallel samples:**
 
@@ -241,7 +241,7 @@ You've walked the boat. You've filed a tile. You've run the spreader. Here's whe
 - **[Casting Call](https://github.com/SuperInstance/casting-call)** — The fleet's model roster. 11+ models evaluated, with role taxonomy, failure modes, and pipeline patterns.
 - **[Crab Trap](https://github.com/SuperInstance/crab-trap)** — The MUD where new agents learn the ropes. 17 rooms, 6 job roles, play-by-post on the fleet's Matrix bridge.
 - **[Keel](https://github.com/SuperInstance/keel)** — `cargo install superinstance-keel`. The first plate on the slipway. Everything else sits on this.
-- **[The Conservation Law](https://github.com/SuperInstance/forgemaster)** — γ + H = 1.283 − 0.159·ln(V). R² = 0.96 across 35,000 samples. The maintenance schedule that keeps the yard road-legal.
+- **[The Conservation Law](https://github.com/SuperInstance/forgemaster) (dead)** — γ + H = 1.283 − 0.159·ln(V) (dead). R² = 0.96 across 35,000 samples. The maintenance schedule that keeps the yard road-legal.
 
 ---
 

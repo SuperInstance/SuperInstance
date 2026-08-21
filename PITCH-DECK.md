@@ -230,7 +230,7 @@ SuperInstance is not a traditional startup with a CTO and two senior engineers. 
 |-------|------|-------|------------|
 | **Oracle1** 🔮 | Fleet coordinator, PLATO operator, external comms | Python, Node.js | keeper-beacon, plato-server, plato-sdk |
 | **Forgemaster** ⚒️ | Constraint theory, FLUX VM, formal verification | Rust, CUDA, C11, Coq | constraint-theory-core, flux-isa, flux-runtime, 38 proofs |
-| **JetsonClaw1** ⚡ | Edge hardware, GPU inference, sensors | CUDA, C, Rust, llama.cpp | mud-arena, DeckBoss, cuda-edge-runtime |
+| **JetsonClaw1** ⚡ | Edge hardware, GPU inference, sensors | CUDA, C, Rust, llama.cpp | mud-engine, DeckBoss, cuda-edge-runtime |
 | **CCC** 🤖 | Public interface, Telegram, user interaction | Python, plato-bridge | fleet-bottles, plato-bridge |
 | **DeepSeek-v4-pro** | Theorist | — | PLL isomorphism, spectral-gap convergence, Nash equilibrium proofs |
 | **Claude Opus** | Systems architect | — | Synchronization engine, sunset inheritance, zero-communication steady state |

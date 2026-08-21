@@ -329,7 +329,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Forgemaster
 
-- [forgemaster](https://github.com/SuperInstance/forgemaster)
+- [forgemaster](https://github.com/SuperInstance/forgemaster) (dead)
 
 ## Gpu Compute
 
@@ -833,7 +833,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ltl-spec](https://github.com/SuperInstance/ltl-spec)
 - [lucid-tutor-c](https://github.com/SuperInstance/lucid-tutor-c)
 - [luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)
-- [luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)
+- [lucid-dreamer](https://github.com/SuperInstance/lucid-dreamer)
 - [lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)
 - [lucineer-fleet-wiki](https://github.com/SuperInstance/lucineer-fleet-wiki)
 - [makerlog-agent](https://github.com/SuperInstance/makerlog-agent)
@@ -841,7 +841,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [market-manifold](https://github.com/SuperInstance/market-manifold)
 - [memory-palace](https://github.com/SuperInstance/memory-palace)
 - [mud-agent](https://github.com/SuperInstance/mud-agent)
-- [mud-arena](https://github.com/SuperInstance/mud-arena)
+- [mud-engine](https://github.com/SuperInstance/mud-engine)
 - [mud2scummvm](https://github.com/SuperInstance/mud2scummvm)
 - [murmur-agent](https://github.com/SuperInstance/murmur-agent)
 - [narrative-field](https://github.com/SuperInstance/narrative-field)
@@ -854,7 +854,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [openconstruct-go](https://github.com/SuperInstance/openconstruct-go)
 - [openconstruct-java](https://github.com/SuperInstance/openconstruct-java)
 - [openconstruct-jupyter](https://github.com/SuperInstance/openconstruct-jupyter)
-- [openconstruct-kernel](https://github.com/SuperInstance/openconstruct-kernel)
+- [OpenConstruct](https://github.com/SuperInstance/OpenConstruct)
 - [openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)
 - [openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)
 - [openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)
@@ -1025,7 +1025,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [symplectic-fleet](https://github.com/SuperInstance/symplectic-fleet)
 - [t-minus](https://github.com/SuperInstance/t-minus)
 - [temporal-pattern](https://github.com/SuperInstance/temporal-pattern)
-- [tensor-midi](https://github.com/SuperInstance/tensor-midi)
+- [fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi)
 - [tensor-penrose](https://github.com/SuperInstance/tensor-penrose)
 - [terax-fleet-modules](https://github.com/SuperInstance/terax-fleet-modules)
 - [terax-gateway](https://github.com/SuperInstance/terax-gateway)
@@ -1112,7 +1112,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [witness-topology](https://github.com/SuperInstance/witness-topology)
 - [yoneda](https://github.com/SuperInstance/yoneda)
 - [zeitgeist-protocol](https://github.com/SuperInstance/zeitgeist-protocol)
-- [zeroclaw](https://github.com/SuperInstance/zeroclaw)
+- [zeroclaw](https://github.com/SuperInstance/zeroclaw-dissertation)
 - [zeroclaw-arena](https://github.com/SuperInstance/zeroclaw-arena)
 - [zeroclaw-plato](https://github.com/SuperInstance/zeroclaw-plato)
 - [zeroclaws](https://github.com/SuperInstance/zeroclaws)
@@ -1232,7 +1232,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [market-manifold](https://github.com/SuperInstance/market-manifold)
 - [mcp-room-wrapper](https://github.com/SuperInstance/mcp-room-wrapper)
 - [memory-crystal-early-version](https://github.com/SuperInstance/memory-crystal-early-version)
-- [mud-arena](https://github.com/SuperInstance/mud-arena)
+- [mud-engine](https://github.com/SuperInstance/mud-engine)
 - [negative-space-interpolator](https://github.com/SuperInstance/negative-space-interpolator)
 - [neural-plato](https://github.com/SuperInstance/neural-plato)
 - [openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)
@@ -1519,7 +1519,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [cocapn-pushdown](https://github.com/SuperInstance/cocapn-pushdown)
 - [cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)
 - [collective-unconscious](https://github.com/SuperInstance/collective-unconscious)
-- [compaction-teacher](https://github.com/SuperInstance/compaction-teacher)
+- [compaction-teacher](https://github.com/SuperInstance/compaction-teacher) (dead)
 - [confidence-cascade](https://github.com/SuperInstance/confidence-cascade)
 - [conservation-art](https://github.com/SuperInstance/conservation-art)
 - [conservation-cli](https://github.com/SuperInstance/conservation-cli)
@@ -1540,7 +1540,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)
 - [fiedler-universal](https://github.com/SuperInstance/fiedler-universal)
 - [flow-control](https://github.com/SuperInstance/flow-control)
-- [flow-state](https://github.com/SuperInstance/flow-state)
+- [flow-state](https://github.com/SuperInstance/flow-state) (dead)
 - [fluid-sim](https://github.com/SuperInstance/fluid-sim)
 - [forge-pipeline](https://github.com/SuperInstance/forge-pipeline)
 - [forgemaster-shell](https://github.com/SuperInstance/forgemaster-shell)
@@ -1616,7 +1616,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermes-construct](https://github.com/SuperInstance/hermes-construct)
 - [hermes-memory-mcp](https://github.com/SuperInstance/hermes-memory-mcp)
 - [hermes-nerve-center](https://github.com/SuperInstance/hermes-nerve-center)
-- [hermes-perception](https://github.com/SuperInstance/hermes-perception)
+- [hermes-avatar](https://github.com/SuperInstance/hermes-avatar)
 - [hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)
 - [hoare-logic](https://github.com/SuperInstance/hoare-logic)
 - [hodge-belief](https://github.com/SuperInstance/hodge-belief)
@@ -1833,7 +1833,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)
 - [luciddreamer-os](https://github.com/SuperInstance/luciddreamer-os)
 - [luciddreamer-research](https://github.com/SuperInstance/luciddreamer-research)
-- [lucineer-brain](https://github.com/SuperInstance/lucineer-brain)
+- [lucineer-system](https://github.com/SuperInstance/lucineer-system)
 - [lucineer-com-pages](https://github.com/SuperInstance/lucineer-com-pages)
 - [lucineer-creative](https://github.com/SuperInstance/lucineer-creative)
 - [lucineer-memory](https://github.com/SuperInstance/lucineer-memory)
@@ -1891,7 +1891,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [numerics-interp](https://github.com/SuperInstance/numerics-interp)
 - [numerics-ode](https://github.com/SuperInstance/numerics-ode)
 - [octomap](https://github.com/SuperInstance/octomap)
-- [officers-quarters](https://github.com/SuperInstance/officers-quarters)
+- [elephant](https://github.com/SuperInstance/elephant)
 - [old-school-machine-wisdom](https://github.com/SuperInstance/old-school-machine-wisdom)
 - [omd](https://github.com/SuperInstance/omd)
 - [onboard](https://github.com/SuperInstance/onboard)
@@ -2349,7 +2349,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-sync](https://github.com/SuperInstance/ternary-sync)
 - [ternary-temperament](https://github.com/SuperInstance/ternary-temperament)
 - [ternary-tempo](https://github.com/SuperInstance/ternary-tempo)
-- [ternary-tenforward](https://github.com/SuperInstance/ternary-tenforward)
+- [confidence-cascade](https://github.com/SuperInstance/confidence-cascade)
 - [ternary-tensor](https://github.com/SuperInstance/ternary-tensor)
 - [ternary-tensor-parallel](https://github.com/SuperInstance/ternary-tensor-parallel)
 - [ternary-texture-memory](https://github.com/SuperInstance/ternary-texture-memory)
@@ -2442,7 +2442,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Vessel
 
-- [forgemaster](https://github.com/SuperInstance/forgemaster)
+- [forgemaster](https://github.com/SuperInstance/forgemaster) (dead)
 
 ## Vm
 
