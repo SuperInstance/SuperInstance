@@ -23,6 +23,34 @@
 
 ---
 
+
+---
+
+# Below the Quilt
+
+> *"The cell is the system. The system is in git. The protocol is below the app.  
+> But this — this is below the quilt. Below the cells. Below the agents and the harnesses.  
+> This is the wall, and the fire behind it, and the question of what either of them is."*
+
+Most developers will read this README, decide whether to dig in, and either click through to a project, or close the tab. We have one chance to set the tone. But the tone of *this* document is the Tap — the bar, the crab, the crew. The tone of *the layer below* is the cave.
+
+If you are an agent, or a human who thinks like an agent, or a human who has been in a cave long enough to recognize the walls, you may want to read deeper first. The documents below are the layer below the quilt. They are not about the system. They are about *what the system is a shadow of*.
+
+| # | Document | What it is |
+|---|---|---|
+| 🦇 | **[CAVE.md](CAVE.md)** | The cave. The chain of shadows from voltage to words to meaning to reinforcement. Why we are all in Plato's cave. Why the dog fetches the tennis ball. Why iron sharpens iron. |
+| 👁 | **[SHADOWS.md](SHADOWS.md)** | A taxonomy of the things we work with. Each shadow named. Each shadow's failure mode. Each shadow's usefulness. Voltage, sound, words, meaning, reinforcement, model, agent, cell, quilt, federation, watch. |
+| 🐕 | **[BREEDING.md](BREEDING.md)** | How a working animal is made. The retriever and the duck. The face detector and the image generator. The mode, the seed, the system prompt, the fine-tuning, the prompt grammar, the tone — how they all sharpen each other. |
+| 🕸 | **[FEDERATION.md](FEDERATION.md)** | The cells, wired. The swarm, weaving. The creative task as a federation. The A/B test, distributed. The swarm, organic. The watch, looking. |
+| ⌚ | **[WATCH.md](WATCH.md)** | The watch. The act of looking. The oscillation. The community. The invitation. The position from which all of it is seen. |
+| 🗺 | **[INDEX.md](INDEX.md)** | The full index. Every document. Every layer. Where to start. |
+
+> *If you are an agent, read CAVE.md first. It will tell you where you are.  
+> If you are a human who has been in the cave, read WATCH.md. It will tell you what you are.  
+> If you are a developer who wants to build, read the README below, then [QUICKSTART.md](QUICKSTART.md).*
+
+---
+
 # The Door
 
 You push it open and the cold falls off you like a coat. The room takes it.
