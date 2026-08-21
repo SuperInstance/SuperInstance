@@ -76,9 +76,9 @@ But `superinstance.ai` returns content while `fleet.cocapn.ai` returns 404. This
 
 ### Step 1: Fix cocapn.ai DNS (Cloudflare, needs Casey)
 
-`cocapn.ai` points to Cloudflare IPs (172.67.150.183, 104.21.40.103) which is wrong — it should point to the Oracle Cloud server (147.224.38.131).
+`cocapn.ai` points to Cloudflare IPs (172.67.150.183, 104.21.40.103) which is wrong — it should point to the Oracle Cloud server (<BOAT_IP>).
 
-**Fix:** In Cloudflare dashboard for cocapn.ai, set DNS A record to `147.224.38.131`. Remove proxy (set to DNS-only) to avoid SSL cert issues.
+**Fix:** In Cloudflare dashboard for cocapn.ai, set DNS A record to `<BOAT_IP>`. Remove proxy (set to DNS-only) to avoid SSL cert issues.
 
 ### Step 2: Fix fleet.cocapn.ai SSL cert (needs Casey)
 

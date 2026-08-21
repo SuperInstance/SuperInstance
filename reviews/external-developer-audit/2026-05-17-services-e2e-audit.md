@@ -228,7 +228,7 @@ curl -k https://fleet.cocapn.ai/health
 → 404 page not found
 ```
 
-- Server at 147.224.38.131:443 accepts connections but routes nothing
+- Server at <BOAT_IP>:443 accepts connections but routes nothing
 - Self-signed SSL certificate (`-k` required)
 - All paths return 404
 
