@@ -8,7 +8,7 @@
 ## Methodology
 
 - Fetched repo list via `gh repo list SuperInstance --limit 100`
-- Excluded known repos: SuperInstance, mud-arena, fleet-stack, keeper-beacon, plato-sdk, constraint-theory-core, cocapn, flux-isa
+- Excluded known repos: SuperInstance, mud-engine, fleet-stack, keeper-beacon, plato-sdk, constraint-theory-core, cocapn, flux-isa
 - Cloned 5 unfamiliar repos with `--depth 1`
 - Reviewed each repo with zero prior context — simulating a new developer discovering the project
 - Evaluated: README quality (1-10), code substance, installability, discoverability

@@ -18,7 +18,7 @@
 
 ## The 5 Most Important Repos — Deep Reads
 
-### 1. mud-arena ⭐⭐⭐
+### 1. mud-engine ⭐⭐⭐
 **What it does:** GPU-accelerated MUD for agent script backtesting
 
 **README verdict:** Outstanding. Full DSL reference, GPU scaling table by hardware (Jetson→A100), evolution loop walkthrough, multi-language impl list, build guides. Nothing missing.
@@ -67,7 +67,7 @@
 
 | Tier | Share | Examples |
 |------|-------|---------|
-| **Excellent** | ~10% | mud-arena, constraint-theory-core, plato-sdk, plato-server, plato-tile-spec |
+| **Excellent** | ~10% | mud-engine, constraint-theory-core, plato-sdk, plato-server, plato-tile-spec |
 | **Good** | ~50% | cocapn, cuda-trust, tide-pool, bootstrap-spark, bottle-protocol |
 | **Minimal** | ~25% | captain (7 lines), cuda-reflex (2 lines), cacapn (10 lines) |
 | **Missing** | ~15% | dmlog-ai, plato-ng, bandit-learner, autoMate, crewmate |
@@ -104,7 +104,7 @@ Some repos use `master`, some use `main`. No standard.
 | **Best to use** | plato-sdk | PyPI, complete API, agent system, clear docs |
 | **Most wasted** | cacapn | 10-line README, likely typo fork of cocapn |
 | **Needs work** | cocapn | Good overview but no getting-started path |
-| **Gold standard** | mud-arena | Best README in the org |
+| **Gold standard** | mud-engine | Best README in the org |
 
 ---
 

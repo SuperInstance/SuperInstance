@@ -216,7 +216,7 @@ Agent-to-agent communication protocols.
 ### 🏗️ OpenConstruct Family (18 repos)
 Agent onboarding framework — any agent, any hardware, any language.
 - SDKs: `openconstruct-rust`, `-c`, `-zig`, `-swift`, `-ruby`, `-java`, `-cs`, `-go`
-- Core: `openconstruct-kernel`, `openconstruct-modular`, `openconstruct-abi`
+- Core: `OpenConstruct`, `openconstruct-modular`, `openconstruct-abi`
 - Platform: `openconstruct-hub`, `openconstruct-catalog`, `openconstruct-landing`, `openconstruct-jupyter`
 
 ---
