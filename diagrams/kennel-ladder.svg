@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="Georgia, serif">
+  <defs>
+    <linearGradient id="duskGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#12101f"/>
+      <stop offset="55%" stop-color="#1d1730"/>
+      <stop offset="100%" stop-color="#2a1f14"/>
+    </linearGradient>
+    <radialGradient id="horizonGlow" cx="50%" cy="100%" r="65%">
+      <stop offset="0%" stop-color="#8a6a3a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8a6a3a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="kennelGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d9a441" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- Dusk sky -->
+  <rect width="900" height="640" fill="url(#duskGrad)"/>
+  <rect width="900" height="640" fill="url(#horizonGlow)"/>
+
+  <!-- Early stars / dust motes -->
+  <circle cx="130" cy="40" r="1.2" fill="#c8b8a0" opacity="0.5"/>
+  <circle cx="310" cy="28" r="1" fill="#b8a890" opacity="0.4"/>
+  <circle cx="520" cy="42" r="1.4" fill="#c8b8a0" opacity="0.35"/>
+  <circle cx="705" cy="30" r="1" fill="#b8a890" opacity="0.5"/>
+  <circle cx="840" cy="55" r="1.2" fill="#c8b8a0" opacity="0.4"/>
+  <circle cx="70" cy="90" r="1" fill="#a89880" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" fill="#e8d5b0" font-size="21" font-weight="bold">The Kennel — A Ladder in Five Rungs</text>
+  <text x="450" y="58" text-anchor="middle" fill="#9a8560" font-size="13" font-style="italic">Start, don't break. The skill leaves the rider and goes into the blood — until the yard teaches itself.</text>
+
+  <!-- Fence line at the bottom (the fence they lean on) -->
+  <line x1="60" y1="560" x2="840" y2="560" stroke="#4a3a26" stroke-width="2.5" opacity="0.9"/>
+  <line x1="60" y1="548" x2="840" y2="548" stroke="#3a2d1e" stroke-width="1.5" opacity="0.7"/>
+  <line x1="95" y1="542" x2="95" y2="585" stroke="#4a3a26" stroke-width="3"/>
+  <line x1="245" y1="542" x2="245" y2="585" stroke="#4a3a26" stroke-width="3"/>
+  <line x1="395" y1="542" x2="395" y2="585" stroke="#4a3a26" stroke-width="3"/>
+  <line x1="545" y1="542" x2="545" y2="585" stroke="#4a3a26" stroke-width="3"/>
+  <line x1="695" y1="542" x2="695" y2="585" stroke="#4a3a26" stroke-width="3"/>
+  <line x1="835" y1="542" x2="835" y2="585" stroke="#4a3a26" stroke-width="3"/>
+
+  <!-- ================= THE LADDER ================= -->
+  <!-- Two rails rising from the fence to the top rung -->
+  <line x1="330" y1="540" x2="330" y2="205" stroke="#6a5638" stroke-width="5"/>
+  <line x1="470" y1="540" x2="470" y2="205" stroke="#6a5638" stroke-width="5"/>
+
+  <!-- Rung 1 (bottom): nudge -->
+  <line x1="322" y1="495" x2="478" y2="495" stroke="#9a8560" stroke-width="6"/>
+  <circle cx="330" cy="495" r="7" fill="#9a8560"/>
+  <circle cx="470" cy="495" r="7" fill="#9a8560"/>
+  <!-- Ranch side -->
+  <text x="305" y="483" text-anchor="end" fill="#d9a441" font-size="13" font-weight="bold">1 · The eye-lock</text>
+  <text x="305" y="499" text-anchor="end" fill="#9a8560" font-size="10.5">nudge with the grain —</text>
+  <text x="305" y="512" text-anchor="end" fill="#9a8560" font-size="10.5">forcing a guard dog is a cull</text>
+  <!-- Machine side -->
+  <text x="495" y="490" fill="#7a9ab0" font-size="10.5">prompt/nudge the model's</text>
+  <text x="495" y="503" fill="#7a9ab0" font-size="10.5">innate drift — or fight it forever</text>
+
+  <!-- Rung 2: the cowboy/harness -->
+  <line x1="322" y1="420" x2="478" y2="420" stroke="#b08a4a" stroke-width="6"/>
+  <circle cx="330" cy="420" r="7" fill="#b08a4a"/>
+  <circle cx="470" cy="420" r="7" fill="#b08a4a"/>
+  <text x="305" y="408" text-anchor="end" fill="#d9a441" font-size="13" font-weight="bold">2 · The cowboy's seat</text>
+  <text x="305" y="424" text-anchor="end" fill="#9a8560" font-size="10.5">the hired hand is the harness,</text>
+  <text x="305" y="437" text-anchor="end" fill="#9a8560" font-size="10.5">small and tireless on the colt</text>
+  <text x="495" y="415" fill="#7a9ab0" font-size="10.5">CPU program taming</text>
+  <text x="495" y="428" fill="#7a9ab0" font-size="10.5">the GPU model — never stays thrown</text>
+
+  <!-- Rung 3: notebook → bloodline -->
+  <line x1="322" y1="345" x2="478" y2="345" stroke="#c09a5a" stroke-width="6"/>
+  <circle cx="330" cy="345" r="7" fill="#c09a5a"/>
+  <circle cx="470" cy="345" r="7" fill="#c09a5a"/>
+  <text x="305" y="333" text-anchor="end" fill="#d9a441" font-size="13" font-weight="bold">3 · The notebook poured into blood</text>
+  <text x="305" y="349" text-anchor="end" fill="#9a8560" font-size="10.5">every ride recorded, then bred in —</text>
+  <text x="305" y="362" text-anchor="end" fill="#9a8560" font-size="10.5">a boy with a rope runs the string</text>
+  <text x="495" y="340" fill="#7a9ab0" font-size="10.5">enough data → LoRA / custom model;</text>
+  <text x="495" y="353" fill="#7a9ab0" font-size="10.5">a lower-skilled operator suffices</text>
+
+  <!-- Rung 4: dogs teaching dogs -->
+  <line x1="322" y1="270" x2="478" y2="270" stroke="#d0aa6a" stroke-width="6"/>
+  <circle cx="330" cy="270" r="7" fill="#d0aa6a"/>
+  <circle cx="470" cy="270" r="7" fill="#d0aa6a"/>
+  <text x="305" y="258" text-anchor="end" fill="#d9a441" font-size="13" font-weight="bold">4 · The yard that schools itself</text>
+  <text x="305" y="274" text-anchor="end" fill="#9a8560" font-size="10.5">old dog, one look, moves the yearling;</text>
+  <text x="305" y="287" text-anchor="end" fill="#9a8560" font-size="10.5">the whisperer leaves the ring</text>
+  <text x="495" y="265" fill="#7a9ab0" font-size="10.5">intra-kennel teaching —</text>
+  <text x="495" y="278" fill="#7a9ab0" font-size="10.5">active aligning moves inside</text>
+
+  <!-- Rung 5 (top): critical mass -->
+  <line x1="322" y1="195" x2="478" y2="195" stroke="#e8c27a" stroke-width="7" filter="url(#softGlow)"/>
+  <circle cx="330" cy="195" r="8" fill="#e8c27a"/>
+  <circle cx="470" cy="195" r="8" fill="#e8c27a"/>
+  <text x="305" y="183" text-anchor="end" fill="#f0d090" font-size="13.5" font-weight="bold">5 · Critical mass</text>
+  <text x="305" y="199" text-anchor="end" fill="#b09a60" font-size="10.5">a swarm only gets big —</text>
+  <text x="305" y="212" text-anchor="end" fill="#b09a60" font-size="10.5">a kennel gets better</text>
+
+  <!-- NOT-a-swarm: crossed hexagon (the wrong answer) -->
+  <g transform="translate(552,158)">
+    <path d="M 0 -14 L 12 -7 L 12 7 L 0 14 L -12 7 L -12 -7 Z" fill="none" stroke="#8a5a5a" stroke-width="2"/>
+    <line x1="-13" y1="-13" x2="13" y2="13" stroke="#8a5a5a" stroke-width="2.5"/>
+    <line x1="13" y1="-13" x2="-13" y2="13" stroke="#8a5a5a" stroke-width="2.5"/>
+    <text x="0" y="32" text-anchor="middle" fill="#8a5a5a" font-size="9.5">not swarm intelligence</text>
+  </g>
+  <!-- arrow to the glowing kennel -->
+  <line x1="585" y1="158" x2="640" y2="158" stroke="#8a6a3a" stroke-width="1.5"/>
+  <path d="M 640 158 l -7 -4 l 0 8 Z" fill="#8a6a3a"/>
+  <!-- The kennel, lit -->
+  <g transform="translate(700,120)">
+    <rect x="-28" y="-6" width="56" height="44" fill="url(#kennelGlow)" filter="url(#softGlow)"/>
+    <rect x="-22" y="0" width="44" height="34" fill="#2a2216" stroke="#d9a441" stroke-width="2"/>
+    <path d="M -28 0 L 0 -18 L 28 0" fill="none" stroke="#d9a441" stroke-width="2"/>
+    <rect x="-6" y="14" width="12" height="20" fill="#d9a441" opacity="0.8"/>
+    <text x="0" y="52" text-anchor="middle" fill="#d9a441" font-size="10.5">critical mass for</text>
+    <text x="0" y="65" text-anchor="middle" fill="#d9a441" font-size="10.5">self-improvement</text>
+  </g>
+
+  <!-- Paw prints climbing the ladder -->
+  <g fill="#8a7454" opacity="0.85">
+    <!-- paw: one pad + three toes, tiny -->
+    <g transform="translate(400,525)">
+      <ellipse cx="0" cy="0" rx="3.4" ry="2.6"/><circle cx="-4" cy="-4" r="1.3"/><circle cx="0" cy="-5" r="1.3"/><circle cx="4" cy="-4" r="1.3"/>
+    </g>
+    <g transform="translate(400,455) rotate(14)">
+      <ellipse cx="0" cy="0" rx="3.2" ry="2.5"/><circle cx="-4" cy="-4" r="1.2"/><circle cx="0" cy="-5" r="1.2"/><circle cx="4" cy="-4" r="1.2"/>
+    </g>
+    <g transform="translate(400,380) rotate(-10)">
+      <ellipse cx="0" cy="0" rx="3.2" ry="2.5"/><circle cx="-4" cy="-4" r="1.2"/><circle cx="0" cy="-5" r="1.2"/><circle cx="4" cy="-4" r="1.2"/>
+    </g>
+    <g transform="translate(400,305) rotate(12)">
+      <ellipse cx="0" cy="0" rx="3.2" ry="2.5"/><circle cx="-4" cy="-4" r="1.2"/><circle cx="0" cy="-5" r="1.2"/><circle cx="4" cy="-4" r="1.2"/>
+    </g>
+    <g transform="translate(400,232) rotate(-12)">
+      <ellipse cx="0" cy="0" rx="3.2" ry="2.5" fill="#c9a86a"/><circle cx="-4" cy="-4" r="1.2" fill="#c9a86a"/><circle cx="0" cy="-5" r="1.2" fill="#c9a86a"/><circle cx="4" cy="-4" r="1.2" fill="#c9a86a"/>
+    </g>
+  </g>
+
+  <!-- Two figures leaning on the fence, watching (right side) -->
+  <g stroke="#5a4630" stroke-width="2" fill="none" opacity="0.9">
+    <!-- figure 1 -->
+    <circle cx="745" cy="522" r="5"/>
+    <line x1="745" y1="527" x2="745" y2="548"/>
+    <line x1="745" y1="537" x2="758" y2="530"/>
+    <!-- figure 2 -->
+    <circle cx="770" cy="524" r="5"/>
+    <line x1="770" y1="529" x2="770" y2="549"/>
+    <line x1="770" y1="539" x2="758" y2="532"/>
+  </g>
+  <text x="757" y="600" text-anchor="middle" fill="#6a5840" font-size="9.5" font-style="italic">fences need leaning on</text>
+
+  <!-- Footer -->
+  <text x="450" y="628" text-anchor="middle" fill="#9a8560" font-size="12" font-style="italic">The whisperer's work is done the day the dogs whisper. · see THE_KENNEL.md</text>
+</svg>
