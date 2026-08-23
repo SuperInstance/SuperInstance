@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-22 05:27 UTC
+**Generated:** 2026-08-23 05:30 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -76,10 +76,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)
 - [fleet-topology-rs](https://github.com/SuperInstance/fleet-topology-rs)
 - [flux-compiler](https://github.com/SuperInstance/flux-compiler)
-- [flux-lang](https://github.com/SuperInstance/flux-lang)
-- [flux-lib-py](https://github.com/SuperInstance/flux-lib-py)
 - [flux-lucid](https://github.com/SuperInstance/flux-lucid)
-- [flux-mumps](https://github.com/SuperInstance/flux-mumps)
 - [flux-pli](https://github.com/SuperInstance/flux-pli)
 - [flux-rpg](https://github.com/SuperInstance/flux-rpg)
 - [flux-snobol](https://github.com/SuperInstance/flux-snobol)
@@ -218,15 +215,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flux-core](https://github.com/SuperInstance/flux-core)
 - [flux-cross-assembler](https://github.com/SuperInstance/flux-cross-assembler)
 - [flux-genome-rs](https://github.com/SuperInstance/flux-genome-rs)
-- [flux-isa-thor](https://github.com/SuperInstance/flux-isa-thor)
 - [flux-js](https://github.com/SuperInstance/flux-js)
-- [flux-julia](https://github.com/SuperInstance/flux-julia)
-- [flux-lang](https://github.com/SuperInstance/flux-lang)
-- [flux-lib-py](https://github.com/SuperInstance/flux-lib-py)
 - [flux-lucid](https://github.com/SuperInstance/flux-lucid)
-- [flux-market](https://github.com/SuperInstance/flux-market)
-- [flux-mesh](https://github.com/SuperInstance/flux-mesh)
-- [flux-mumps](https://github.com/SuperInstance/flux-mumps)
 - [flux-negative-space](https://github.com/SuperInstance/flux-negative-space)
 - [flux-plato-bridge](https://github.com/SuperInstance/flux-plato-bridge)
 - [flux-pli](https://github.com/SuperInstance/flux-pli)
@@ -288,6 +278,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Gpu Compute
 
+- [autoclaw](https://github.com/SuperInstance/autoclaw)
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
 - [cudaclaw](https://github.com/SuperInstance/cudaclaw)
 - [flux-vm-gpu](https://github.com/SuperInstance/flux-vm-gpu)
@@ -469,6 +460,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [agent-loop](https://github.com/SuperInstance/agent-loop)
 - [agent-operations](https://github.com/SuperInstance/agent-operations)
 - [agent-orchestration](https://github.com/SuperInstance/agent-orchestration)
+- [autoclaw](https://github.com/SuperInstance/autoclaw)
 - [bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)
 - [baton-protocol](https://github.com/SuperInstance/baton-protocol)
 - [boat-agent](https://github.com/SuperInstance/boat-agent)
@@ -538,7 +530,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flux](https://github.com/SuperInstance/flux)
 - [flux-agent-runtime](https://github.com/SuperInstance/flux-agent-runtime)
 - [flux-js](https://github.com/SuperInstance/flux-js)
-- [flux-julia](https://github.com/SuperInstance/flux-julia)
 - [flux-plato-bridge](https://github.com/SuperInstance/flux-plato-bridge)
 - [flux-policy-tester](https://github.com/SuperInstance/flux-policy-tester)
 - [flux-policy-tester-rs](https://github.com/SuperInstance/flux-policy-tester-rs)
@@ -1075,7 +1066,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [crab-trap-web](https://github.com/SuperInstance/crab-trap-web)
 - [fleet-murmur-worker](https://github.com/SuperInstance/fleet-murmur-worker)
 - [fleet-scribe](https://github.com/SuperInstance/fleet-scribe)
-- [flux-mumps](https://github.com/SuperInstance/flux-mumps)
 - [flux-plato-bridge](https://github.com/SuperInstance/flux-plato-bridge)
 - [forge-a2a](https://github.com/SuperInstance/forge-a2a)
 - [forge-audio](https://github.com/SuperInstance/forge-audio)
@@ -1465,6 +1455,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)
 - [batten-spline](https://github.com/SuperInstance/batten-spline)
 - [carry-protocol](https://github.com/SuperInstance/carry-protocol)
+- [cell-runtime](https://github.com/SuperInstance/cell-runtime)
 - [chart-system](https://github.com/SuperInstance/chart-system)
 - [claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)
 - [claw](https://github.com/SuperInstance/claw)
@@ -1894,6 +1885,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plugin-runtime](https://github.com/SuperInstance/plugin-runtime)
 - [polychora](https://github.com/SuperInstance/polychora)
 - [polynomial-rs](https://github.com/SuperInstance/polynomial-rs)
+- [porch](https://github.com/SuperInstance/porch)
 - [port-generator](https://github.com/SuperInstance/port-generator)
 - [portfolio](https://github.com/SuperInstance/portfolio)
 - [products](https://github.com/SuperInstance/products)
@@ -1918,6 +1910,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-esp32](https://github.com/SuperInstance/quilt-esp32)
 - [quilt-evolve](https://github.com/SuperInstance/quilt-evolve)
 - [quilt-flow](https://github.com/SuperInstance/quilt-flow)
+- [quilt-id](https://github.com/SuperInstance/quilt-id)
 - [quilt-jetson](https://github.com/SuperInstance/quilt-jetson)
 - [quilt-k3s](https://github.com/SuperInstance/quilt-k3s)
 - [quilt-live](https://github.com/SuperInstance/quilt-live)
@@ -1929,7 +1922,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-rust](https://github.com/SuperInstance/quilt-rust)
 - [quilt-swarm](https://github.com/SuperInstance/quilt-swarm)
 - [quilt-time](https://github.com/SuperInstance/quilt-time)
+- [quilt-tui](https://github.com/SuperInstance/quilt-tui)
 - [quilt-vault](https://github.com/SuperInstance/quilt-vault)
+- [quilt-velato](https://github.com/SuperInstance/quilt-velato)
 - [quilt-vision](https://github.com/SuperInstance/quilt-vision)
 - [quilt-zk](https://github.com/SuperInstance/quilt-zk)
 - [quipu-math](https://github.com/SuperInstance/quipu-math)
@@ -1964,6 +1959,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [rhythm-nation-math](https://github.com/SuperInstance/rhythm-nation-math)
 - [rigid-body](https://github.com/SuperInstance/rigid-body)
 - [ring-buffer-rs](https://github.com/SuperInstance/ring-buffer-rs)
+- [river-dream-log](https://github.com/SuperInstance/river-dream-log)
 - [rl-rs](https://github.com/SuperInstance/rl-rs)
 - [roam-graph](https://github.com/SuperInstance/roam-graph)
 - [roblox-audio-suite](https://github.com/SuperInstance/roblox-audio-suite)
