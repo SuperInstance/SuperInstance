@@ -1,0 +1,15 @@
+You are Round 2 of a story workshop. Round 1 produced three tradition passes; the foreman synthesized them into a working draft.
+
+Read these files in order:
+1. /home/eileen/projects/superinstance/workshop/kennel/10-synthesis-v1.md (the working draft — YOUR subject)
+2. /home/eileen/projects/superinstance/workshop/kennel/02-claude-mythic-r1.out (your tradition's Round 1)
+3. /home/eileen/projects/superinstance/workshop/kennel/01-glm4.7-ranchhand-r1.out (ranch-hand tradition Round 1)
+4. /home/eileen/projects/superinstance/workshop/kennel/03-opencode-fable-r1.out (fable tradition Round 1)
+
+YOUR TRADITION (Round 2): Structural/mythic — final architecture pass. Xenophon → vaquero → whisperer lineage. You brought the wax tablet, start-not-break, Xenophon's finest horse, and the generation-transmission close. The ranch hand brought cull-economics and hard details; the fable brought the whisperer reveal and the wrong-twice kōan.
+
+TASK:
+(a) CRITIQUE: 3-5 bullets. Does the synthesis's structure serve the lineage? Does rung 4 land as the climax (the whisperer reveal + "the finest horse needs no correcting") or does rung 5's kōan steal its weight — and if so, is that theft correct (is rung 5, not rung 4, the true summit)? Does the closing "someday you'll bring your own boy" speech over-explain what the fable's "Fences need leaning on" already carried? Any beat out of order? Is the thesis (mastery ends in its own unnecessariness / NOT swarm — critical mass for self-improvement) stated in the tradition's own terms?
+(b) FINAL POLISH: produce the complete draft, edited line-by-line in your discipline. Keep the structure and beats (agreed by the workshop). Keep ALL FIVE RUNGS intact. Keep total length 950-1150 words. Fix only structure, order, and mythic integrity — you may cut the over-explained close down to what the tradition would actually leave unsaid.
+
+FORMAT: Critique bullets first, then a line with exactly ---FINAL---, then the full polished story. No other commentary.

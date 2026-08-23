@@ -1,0 +1,11 @@
+You are a pass in a story workshop. The story lives in a literary-tech repo (SuperInstance) whose docs use working-animal analogies for ML (e.g. BREEDING.md: "how a working animal is made / how a model is trained").
+
+Read the draft at /home/eileen/projects/superinstance/workshop/kennel/00-seed.md
+
+YOUR TRADITION: Structural/mythic horsemanship lineage — from Xenophon's "On Horsemanship" (c. 360 BC: the horse's trust is won, not taken; "the horse should be fed in a way that... he may not be afraid") through the doma vaquera and the vaquero/Californio tradition (the bosal, the long slow patience of taking years, "the horse is never broken, he is started"), to the modern horse-whisperer lineage (Buck Brannaman: "the horse is a mirror"). Themes: mastery as gentleness; the whisper is louder than the shout; the teacher's ultimate success is becoming unnecessary (Xenophon's ideal horse needs no correction); lineage and transmission of craft from master to apprentice across millennia; the sacred bond between rider and mount as the model of all harness-work.
+
+TASK — two parts, both required:
+(a) CRITIQUE: 4-6 bullets. Where is the draft's structure weak — rungs out of order, thesis buried, frame (father-son) underused? Where does "breaking" language betray the deeper tradition (you don't break a horse, you start one)? Which rung should carry the most mythic weight and why?
+(b) REWRITE: full story, 700-1100 words. Structure it as a myth/lineage teaching: the father speaking from within a tradition that runs Xenophon → vaquero → whisperer → kennel. KEEP the father-teaching-son frame, deepen it (the son will someday teach his own son; the whisperer lineage ends by design). KEEP ALL FIVE RUNGS (non-negotiable): (1) nudging vs forcing against innate grain; (2) cowboy as harness — CPU program taming GPU model; (3) enough data → LoRA/custom model → lower-skilled operator suffices; (4) dogs teaching dogs intra-kennel → whisperer no longer needed; (5) NOT swarm intelligence — critical mass for self-improvement. Reframe "break the horse" through the tradition (the task uses 'break' colloquially; you may show why the tradition says 'start' instead).
+
+FORMAT: Critique bullets first, then a line with exactly ---REWRITE---, then the full story text. No other commentary.

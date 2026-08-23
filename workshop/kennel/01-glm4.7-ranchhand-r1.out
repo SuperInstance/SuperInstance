@@ -1,0 +1,41 @@
+
+> build · glm-4.7
+
+→ Read 00-seed.md
+→ Read 00-seed.md
+• Ranch hands don't "train" dogs to guard like they're teaching tricks. A border collie you make bite is a cull — you don't spend months proving it can be done, you move it along or put it down. The economics are wrong.
+
+• No rancher hires a "cowboy" to start colts while he leans on the fence. You start your own horses or you pay a horse trainer — and you sure don't do it every morning. Once-broke is broke for good.
+
+• The kennel scene is pure fantasy. Old dogs don't school young dogs in working manners. That's the handler's job. A sheepdog that nips a pup's flank is correcting yard behavior, not teaching its craft.
+
+• Rung 3 talks about "breaking the horse every morning." Nobody breaks a horse daily. That's what training is — you put the work in once, not over and over. The analogy to LoRA is sound but the horse work is wrong.
+
+• Rung 5's "lineage" is ranch language used backward. Lineage is blood — breeding for traits. What's described here is kennel culture, which is a different thing. A hand would call it "the place settling in."
+
+• The voice is too clean. Real ranch talk doesn't use words like "override" or "comply" or "scaffold." A hand says "force," "do," "get done."
+
+---REWRITE---
+
+The father holds the kennel door and the boy steps through. Straw on the concrete, the smell of working dogs, dust motes in light slanting through high windows.
+
+"You take a border collie and make it bite," the father says, pointing at a black-and-white walking the fence line. "People do it. But it's wrong work." That dog was bred to gather, to circle, to bring things in. Every instinct in its blood says collect, don't confront. You make it guard by fighting what's already there. It costs you months and it never settles. One slip and it's back to what it was born to do. A hand culls that kind of confusion.
+
+The machines are the same. You can force a general model into a job it wasn't made for — pile on prompts, guardrails, instructions. It'll do it. But it'll cost you and it won't be right, always wanting to drift back to its grain. Or you can nudge. Work with the model like a good hand works a dog: use what's already there. The nudger gets more work done.
+
+The boy asks about the horses.
+
+"When a colt needs starting," the father says, "you hire it out. You've got cattle to tend, fences to mend. You pay a man who knows how to ride a bucking horse. That man is the harness." In the machine world, the horse is the GPU model — all power, no manners, needs handling. The cowboy is the CPU program that rides it: the loop, the wrapper, the thing that holds the reins. The model bucks; the program sits it until it carries the saddle. That's what a harness is — cheap, tireless, sitting on top of what costs money.
+
+"But here's what happens," he says. "You ride enough colts. You keep notes. You save the good rides and the bad ones. Get enough data, you don't need the top hand anymore. You can fine-tune. You can breed a custom model for the job. Then who runs the herd? Not the expert. A hand with a season under his belt can do it. The breeding carries what the breaking used to. The skill moved from the rider into the blood — from runtime into weights.
+
+The kennel's loud. The boy looks around. The old dogs are working the young ones. An old shepherd nips a pup into place. A veteran guard shows a yearling where to stand. The men are leaning on the fence.
+
+"That's the last rung," the father says. "Once you've got enough animals bred right, they train each other. Kennel does the work. You don't need the whisperer in the ring day to day. The alignment moved inside."
+
+The boy, who's read the internet: "So it's a swarm? Bees?"
+
+"No," he says. "A swarm is bugs doing what none of them understand. This is the opposite. This is breeding. Every dog was made for a job and passes it down. Not many minds becoming one by accident. It's a kennel hitting critical mass — enough good dogs, enough saved work, enough teaching — that it gets better without the whisperer. Not swarm. Enough to fix itself."
+
+They walk back to the truck. Behind them the kennel runs like it runs: an old dog showing a young one where to stand.
+EXIT:0

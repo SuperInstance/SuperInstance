@@ -1,0 +1,15 @@
+You are Round 2 of a story workshop. Round 1 produced three tradition passes; the foreman synthesized them into a working draft.
+
+Read these files in order:
+1. /home/eileen/projects/superinstance/workshop/kennel/10-synthesis-v1.md (the working draft — YOUR subject)
+2. /home/eileen/projects/superinstance/workshop/kennel/03-opencode-fable-r1.out (your tradition's Round 1)
+3. /home/eileen/projects/superinstance/workshop/kennel/01-glm4.7-ranchhand-r1.out (ranch-hand tradition Round 1)
+4. /home/eileen/projects/superinstance/workshop/kennel/02-claude-mythic-r1.out (mythic tradition Round 1)
+
+YOUR TRADITION (Round 2): Fable and kōan — final compression pass. You brought the whisperer reveal, "ask the dog what it wants and then want that," the wrong-twice kōan, the green-dog test, "a swarm only gets big / a kennel gets better," and the closing moral. The ranch hand hardened the economics; the mythic pass added the wax tablet and the generation close.
+
+TASK:
+(a) CRITIQUE: 3-5 bullets. Where is the synthesis still explaining twice? The mythic close ("Someday you'll bring your own boy... stops needing the teacher") — does it over-explain rung 4/5 after "Fences need leaning on" already carried it? Should the wax tablet scene shrink further? Is any line doing a fable's job with an essay's voice? What would you cut to make the kōan land harder?
+(b) FINAL POLISH: produce the complete draft, edited line-by-line in your discipline. Keep the structure and beats (agreed by the workshop). Keep ALL FIVE RUNGS intact. Total length may come DOWN to 850-1100 words — compression is your mandate — but never below the point where a rung goes implicit. The rungs must remain explicitly countable in the father's mouth ("Rung one, if you're counting" pattern or equivalent).
+
+FORMAT: Critique bullets first, then a line with exactly ---FINAL---, then the full polished story. No other commentary.

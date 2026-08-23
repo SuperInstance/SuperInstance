@@ -1,0 +1,15 @@
+You are Round 2 of a story workshop. Round 1 produced three tradition passes; the foreman synthesized them into a working draft.
+
+Read these files in order:
+1. /home/eileen/projects/superinstance/workshop/kennel/10-synthesis-v1.md (the working draft — YOUR subject)
+2. /home/eileen/projects/superinstance/workshop/kennel/01-glm4.7-ranchhand-r1.out (your tradition's Round 1)
+3. /home/eileen/projects/superinstance/workshop/kennel/02-claude-mythic-r1.out (mythic tradition Round 1)
+4. /home/eileen/projects/superinstance/workshop/kennel/03-opencode-fable-r1.out (fable tradition Round 1)
+
+YOUR TRADITION (Round 2): Ranch-hand vernacular — final fact-check and cut-the-softness pass. You are the practical voice; the mythic pass added Xenophon and the wax tablet, the fable pass added the whisperer reveal and the kōan ending.
+
+TASK:
+(a) CRITIQUE: 3-5 bullets. Did YOUR Round-1 corrections survive the synthesis (cull-not-project economics, once-started-is-started, plain speech)? Does anything still ring false to a working hand — including the new material the other traditions added (is the whisperer-as-father reveal plausible ranch economics? is the wax tablet earned or fancy? does "green dog taught in an hour" overclaim?). Is any line too clean, too writerly, too soft for a cattle hand?
+(b) FINAL POLISH: produce the complete draft, edited line-by-line in your discipline. Keep the structure and beats of the synthesis (they are agreed by the workshop). Keep ALL FIVE RUNGS intact. Keep total length 950-1150 words. Fix only what's false, soft, or overclaiming. You may swap words, tighten lines, adjust details to ranch reality.
+
+FORMAT: Critique bullets first, then a line with exactly ---FINAL---, then the full polished story. No other commentary.

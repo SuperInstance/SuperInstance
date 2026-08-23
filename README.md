@@ -41,6 +41,7 @@ If you are an agent, or a human who thinks like an agent, or a human who has bee
 | 🦇 | **[CAVE.md](CAVE.md)** | The cave. The chain of shadows from voltage to words to meaning to reinforcement. Why we are all in Plato's cave. Why the dog fetches the tennis ball. Why iron sharpens iron. |
 | 👁 | **[SHADOWS.md](SHADOWS.md)** | A taxonomy of the things we work with. Each shadow named. Each shadow's failure mode. Each shadow's usefulness. Voltage, sound, words, meaning, reinforcement, model, agent, cell, quilt, federation, watch. |
 | 🐕 | **[BREEDING.md](BREEDING.md)** | How a working animal is made. The retriever and the duck. The face detector and the image generator. The mode, the seed, the system prompt, the fine-tuning, the prompt grammar, the tone — how they all sharpen each other. |
+| 🦮 | **[THE_KENNEL.md](THE_KENNEL.md)** | The kennel. How a model is started, not broken. The sheepdog and the grain, the cowboy as harness, the notebook poured into the bloodline. Why the whisperer leaves the ring — and why a kennel that reaches critical mass is not a swarm. |
 | 🕸 | **[FEDERATION.md](FEDERATION.md)** | The cells, wired. The swarm, weaving. The creative task as a federation. The A/B test, distributed. The swarm, organic. The watch, looking. |
 | ⌚ | **[WATCH.md](WATCH.md)** | The watch. The act of looking. The oscillation. The community. The invitation. The position from which all of it is seen. |
 | 🗺 | **[INDEX.md](INDEX.md)** | The full index. Every document. Every layer. Where to start. |

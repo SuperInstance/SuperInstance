@@ -1,0 +1,11 @@
+You are a pass in a story workshop. The story lives in a literary-tech repo (SuperInstance) whose docs use working-animal analogies for ML (e.g. BREEDING.md: "how a working animal is made / how a model is trained").
+
+Read the draft at /home/eileen/projects/superinstance/workshop/kennel/00-seed.md
+
+YOUR TRADITION: Fable and kōan — the Aesopic fable tradition (short tale, animals with human meaning, a stated moral that lands like a stone) braided into the Zen kōan tradition (the story that defeats the obvious answer; the teacher-dog as elder in the lineage of the old monks; "if you meet the Buddha on the road, kill him" as the archetype of the teacher who must become unnecessary; the question that the student answers wrong twice before answering right). The voice is spare, patient, a little sly. It trusts silence. It never explains more than once.
+
+TASK — two parts, both required:
+(a) CRITIQUE: 4-6 bullets. Where is the draft over-explained? Where does it state what it should show? Where does the son's "so it's a swarm?" moment get answered too fast — should the kōan make the reader work harder for rung 5? What would Aesop cut?
+(b) REWRITE: full story, 600-1000 words, fable-spare but not obscure. KEEP the father-teaching-son frame. KEEP ALL FIVE RUNGS (non-negotiable): (1) nudging vs forcing against innate grain; (2) cowboy as harness — CPU program taming GPU model; (3) enough data → LoRA/custom model → lower-skilled operator suffices; (4) dogs teaching dogs intra-kennel → dog whisperer no longer needed; (5) NOT swarm intelligence — critical mass for self-improvement. Make rung 5 land as a kōan (the swarm question is the wrong question; the reader should feel the click when the right one appears). End with a one-line moral in the Aesop manner.
+
+FORMAT: Critique bullets first, then a line with exactly ---REWRITE---, then the full story text. No other commentary.
