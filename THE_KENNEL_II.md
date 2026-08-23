@@ -1,5 +1,8 @@
 # The Kennel, Vol. II — A Day of Matching
 
+<p align="center"><img src="images/kennel-hero.jpg" alt="The Kennel, Vol. II — A Day of Matching — the old dog watches the pup's first stance at dusk" width="760"></p>
+
+
 The boy from the fence rail came back a father, and what he brought on his shoulders was a girl, six years old and loud about it.
 
 "Grandpa said the dogs teach themselves," she said.
