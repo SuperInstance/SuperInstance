@@ -1,0 +1,19 @@
+[0m
+> build · glm-5.3
+[0m
+[0m→ [0mRead workshop/kennel-vol2/10-draft-v1.md
+**(a) Spine check**
+
+- **The kōan un-clicks itself.** The boss-sheep sequence runs clean (wrong at "the big one in front," wrong at "then the dogs give the orders," click at "No boss. Only weather.") — but the father re-opens it one beat later with "The bridge... That's the whole trick. You don't herd weather by being a bigger sheep" (line 69). It's a lecture stacked on top of the girl's own synthesis at line 67, and it directly contradicts "After that, he said less and less" (line 75) — his longest sermon arrives immediately before we're told he went quiet.
+- **Sermon-repetition in the packer beat.** Lines 21 and 23 polish the same stone twice: the father's "whole day's freight, every day, all of it," then the whisperer's "His job isn't to be first. His job is to arrive — all of him, every load." Back-to-back characters making the identical point; one speech should carry it.
+- **Two over-notes say what's already shown.** Line 117's "a shape she had never been taught and never once noticed she carried" spells out the inheritance that the shared stance at line 45 ("Nobody had ever told her why") already planted — trust the posture. Same with line 93's "a correction no human hand had taught the yard," which pre-explains the whisperer's "The kennel pays itself" before it can land alone.
+- **The moral is still the hardest stone.** Nothing in the body pre-quotes or softens it; "it doesn't whisper to me anymore" builds toward it without touching its wording, and the girl's "she could wait" stays unrewarded. "Finished is for museums" is the nearest rival but it's the refusal, not the consolation — it earns its place. Both guarded machine lines ("old lance," "Machine side?") remain the only two, and the harness is noted exactly twice, both earned.
+
+---POLISH---
+
+1. Line 23 — CURRENT: `"Your touch is patience. His job isn't to be first. His job is to arrive — all of him, every load."` → REPLACE: `"Your touch is patience."` (keeps: `"Long knots, checked twice," the whisperer told the packer. "Your touch is patience."`)
+2. Line 33 — CURRENT: `Look at every saddle in here. The shape is still riding. The shape of an old war rides with you.` → REPLACE: `Look at every saddle in here. The shape of an old war rides with you.`
+3. Line 69 — CURRENT: `"The bridge," her father said. "That's the whole trick. You don't herd weather by being a bigger sheep. You send dogs."` → DELETE the line; run `"The dogs wear the harness standing in the weather."` straight into `She was quiet for a while, turning it.` so the father's silence is where "said less and less" begins.
+4. Line 93 — CURRENT: `a shoulder check, a growl pitched exactly right — a correction no human hand had taught the yard.` → REPLACE: `a shoulder check, a growl pitched exactly right.`
+5. Line 117 — CURRENT: `bracing something no one else could see — a shape she had never been taught and never once noticed she carried.` → REPLACE: `bracing something no one else could see.`
+EXIT=0

@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 660" font-family="Georgia, serif">
+  <defs>
+    <linearGradient id="dusk2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a2233"/>
+      <stop offset="45%" stop-color="#1d1730"/>
+      <stop offset="100%" stop-color="#2a1f14"/>
+    </linearGradient>
+    <radialGradient id="dawnGlow" cx="0%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#7a9ab0" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#7a9ab0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="duskGlow" cx="100%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#8a6a3a" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#8a6a3a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="yardGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d9a441" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft2"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+
+  <rect width="980" height="660" fill="url(#dusk2)"/>
+  <rect width="980" height="660" fill="url(#dawnGlow)"/>
+  <rect width="980" height="660" fill="url(#duskGlow)"/>
+
+  <!-- stars / motes -->
+  <circle cx="140" cy="36" r="1.2" fill="#c8b8a0" opacity="0.45"/>
+  <circle cx="380" cy="26" r="1" fill="#b8a890" opacity="0.4"/>
+  <circle cx="620" cy="40" r="1.3" fill="#c8b8a0" opacity="0.35"/>
+  <circle cx="860" cy="30" r="1.1" fill="#b8a890" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="490" y="36" text-anchor="middle" fill="#e8d5b0" font-size="21" font-weight="bold">The Kennel, Vol. II — A Day of Matching</text>
+  <text x="490" y="56" text-anchor="middle" fill="#9a8560" font-size="13" font-style="italic">Dawn to dusk: every rider gets a different animal, and a different hand's touch — until the harness isn't there.</text>
+
+  <!-- The road of the day: gate to dusk -->
+  <path d="M 70 470 C 250 500, 480 500, 700 470 C 800 456, 880 448, 930 442" fill="none" stroke="#4a3a26" stroke-width="4" opacity="0.9"/>
+  <text x="70" y="516" fill="#6a5840" font-size="10" font-style="italic">the gate, morning</text>
+  <text x="930" y="428" text-anchor="end" fill="#6a5840" font-size="10" font-style="italic">the road, dusk</text>
+
+  <!-- ============ STATION 1: the three riders ============ -->
+  <g transform="translate(70,110)">
+    <text x="0" y="0" fill="#d9a441" font-size="13" font-weight="bold">1 · Three riders, three animals</text>
+    <!-- jockey: small, quick -->
+    <g stroke="#b08a4a" stroke-width="1.8" fill="none">
+      <circle cx="14" cy="38" r="4"/>
+      <line x1="14" y1="42" x2="14" y2="58"/>
+      <line x1="8" y1="70" x2="36" y2="70"/><line x1="40" y1="70" x2="66" y2="70"/><!-- quick little mare: short lines -->
+      <line x1="14" y1="46" x2="4" y2="52"/><line x1="14" y1="46" x2="24" y2="52"/>
+      <path d="M 66 70 l -8 -3 l 0 6 Z" fill="#b08a4a"/>
+    </g>
+    <text x="4" y="88" fill="#9a8560" font-size="10.5">the jockey — quick, not fast;</text>
+    <text x="4" y="101" fill="#9a8560" font-size="10.5">short rides, short words</text>
+    <!-- packer: mules, tall rigs -->
+    <g stroke="#8a7454" stroke-width="1.8" fill="none">
+      <circle cx="120" cy="46" r="4"/>
+      <line x1="120" y1="50" x2="120" y2="62"/>
+      <rect x="112" y="64" width="16" height="14"/>
+      <rect x="128" y="58" width="8" height="20"/><!-- pack, tall -->
+      <circle cx="116" cy="80" r="4"/><circle cx="126" cy="80" r="4"/>
+    </g>
+    <text x="108" y="98" fill="#9a8560" font-size="10.5">the packer — arrive, all of</text>
+    <text x="108" y="111" fill="#9a8560" font-size="10.5">him, every load, every day</text>
+    <!-- kid + fat pony -->
+    <g stroke="#a89060" stroke-width="2.2" fill="none">
+      <circle cx="204" cy="46" r="4"/>
+      <line x1="204" y1="50" x2="204" y2="60"/>
+      <ellipse cx="204" cy="72" rx="22" ry="11"/><!-- fat pony -->
+      <circle cx="190" cy="84" r="3.4"/><circle cx="218" cy="84" r="3.4"/>
+    </g>
+    <text x="178" y="104" fill="#9a8560" font-size="10.5">the kid — forgiveness paid</text>
+    <text x="178" y="117" fill="#9a8560" font-size="10.5">for in the breeding</text>
+  </g>
+
+  <!-- ============ STATION 2: the vestigial stirrup ============ -->
+  <g transform="translate(410,100)">
+    <text x="60" y="10" fill="#d9a441" font-size="13" font-weight="bold">2 · The vestigial stirrup</text>
+    <!-- wall nail + knight's stirrup: wide, flared, heavy -->
+    <line x1="95" y1="24" x2="95" y2="36" stroke="#6a5638" stroke-width="2"/>
+    <path d="M 82 36 L 108 36 L 104 66 L 100 74 L 90 74 L 86 66 Z" fill="none" stroke="#c09a5a" stroke-width="3"/>
+    <text x="120" y="42" fill="#9a8560" font-size="10.5">"the shape of an old war</text>
+    <text x="120" y="55" fill="#9a8560" font-size="10.5">rides with you" — kept</text>
+    <text x="120" y="68" fill="#9a8560" font-size="10.5">because it held, and you're</text>
+    <text x="120" y="81" fill="#9a8560" font-size="10.5">never sure the war is over</text>
+    <!-- machine-side echo, small and cool -->
+    <text x="120" y="102" fill="#7a9ab0" font-size="9.5" font-style="italic">a system prompt is somebody's old lance</text>
+  </g>
+
+  <!-- ============ STATION 3: harness vs the flock ============ -->
+  <g transform="translate(660,110)">
+    <text x="80" y="0" fill="#d9a441" font-size="13" font-weight="bold">3 · Harness outside, weather inside</text>
+    <!-- whistle → lead dog → young dogs (line of command) -->
+    <text x="6" y="36" fill="#c8b890" font-size="11">whistle</text>
+    <line x1="48" y1="32" x2="62" y2="32" stroke="#8a6a3a" stroke-width="1.5"/><path d="M 62 32 l -6 -3 l 0 6 Z" fill="#8a6a3a"/>
+    <g stroke="#c09a5a" stroke-width="1.8" fill="none">
+      <ellipse cx="84" cy="32" rx="10" ry="5"/><circle cx="76" cy="26" r="2"/><line x1="94" y1="32" x2="99" y2="30"/><line x1="99" y1="30" x2="99" y2="35"/><!-- lead dog, tail up -->
+    </g>
+    <line x1="106" y1="32" x2="118" y2="32" stroke="#8a6a3a" stroke-width="1.2" opacity="0.8"/>
+    <g stroke="#8a7454" stroke-width="1.4" fill="none" opacity="0.9">
+      <ellipse cx="132" cy="28" rx="7" ry="4"/><ellipse cx="132" cy="38" rx="7" ry="4"/>
+    </g>
+    <text x="6" y="58" fill="#6a5840" font-size="9.5" font-style="italic">a line of command</text>
+    <!-- the flock: no boss, only weather -->
+    <g fill="#b8a890" opacity="0.85">
+      <ellipse cx="70" cy="86" rx="7" ry="4.6"/><ellipse cx="92" cy="80" rx="7" ry="4.6"/>
+      <ellipse cx="112" cy="90" rx="7" ry="4.6"/><ellipse cx="130" cy="82" rx="7" ry="4.6"/>
+      <ellipse cx="148" cy="90" rx="7" ry="4.6"/><ellipse cx="86" cy="94" rx="7" ry="4.6"/>
+    </g>
+    <!-- wind arcs through the sheep -->
+    <path d="M 60 100 Q 100 112 156 96" fill="none" stroke="#7a9ab0" stroke-width="1.4" opacity="0.7"/>
+    <path d="M 64 106 Q 102 117 150 102" fill="none" stroke="#7a9ab0" stroke-width="1.1" opacity="0.5"/>
+    <text x="6" y="122" fill="#6a5840" font-size="9.5" font-style="italic">no boss — pressure, moving like weather</text>
+    <text x="6" y="140" fill="#9a8560" font-size="10.5">the dogs are the bridge: harnessed</text>
+    <text x="6" y="153" fill="#9a8560" font-size="10.5">on one side, standing in weather</text>
+  </g>
+
+  <!-- ============ STATION 4: the invisible harness ============ -->
+  <g transform="translate(150,330)">
+    <text x="0" y="0" fill="#d9a441" font-size="13" font-weight="bold">4 · The invisible harness</text>
+    <!-- whistle hanging on its post, unused -->
+    <line x1="10" y1="16" x2="10" y2="52" stroke="#6a5638" stroke-width="3"/>
+    <path d="M 18 18 q 8 2 6 10 q -2 6 -8 4" fill="none" stroke="#b08a4a" stroke-width="2"/>
+    <text x="32" y="26" fill="#9a8560" font-size="10.5">off-leash, off-whistle — the</text>
+    <text x="32" y="39" fill="#9a8560" font-size="10.5">whistle stays on its post</text>
+    <!-- pup lying at the gate -->
+    <g stroke="#c9a86a" stroke-width="1.8" fill="none">
+      <ellipse cx="10" cy="80" rx="14" ry="6"/><circle cx="-6" cy="76" r="3.4"/>
+      <line x1="4" y1="86" x2="4" y2="92"/><line x1="16" y1="86" x2="16" y2="92"/>
+    </g>
+    <!-- sheep banded at gate -->
+    <g fill="#b8a890" opacity="0.8">
+      <ellipse cx="42" cy="78" rx="6" ry="4"/><ellipse cx="58" cy="82" rx="6" ry="4"/><ellipse cx="54" cy="72" rx="6" ry="4"/>
+    </g>
+    <text x="80" y="82" fill="#9a8560" font-size="10.5">the pup gathers clean, lies down.</text>
+    <!-- old grey bitch turning away, toward sun -->
+    <g stroke="#8a8a8a" stroke-width="1.8" fill="none">
+      <ellipse cx="216" cy="84" rx="13" ry="5.5"/><circle cx="230" cy="80" r="3.2"/>
+      <line x1="222" y1="89" x2="222" y2="94"/><line x1="212" y1="89" x2="212" y2="94"/>
+    </g>
+    <ellipse cx="258" cy="86" rx="20" ry="9" fill="#d9a441" opacity="0.18" filter="url(#soft2)"/>
+    <text x="196" y="104" fill="#6a5840" font-size="9.5" font-style="italic">the old dog stops watching</text>
+    <text x="0" y="126" fill="#9a8560" font-size="10.5">the graduation isn't the ribbon — it's the watcher turning away.</text>
+  </g>
+
+  <!-- ============ STATION 5: dogs teaching dogs ============ -->
+  <g transform="translate(620,360)">
+    <text x="0" y="0" fill="#d9a441" font-size="13" font-weight="bold">5 · The yard schools itself</text>
+    <g stroke="#c9a86a" stroke-width="1.8" fill="none">
+      <!-- young dog shoulder-checking another -->
+      <ellipse cx="30" cy="26" rx="13" ry="5.5"/><circle cx="15" cy="22" r="3.4"/>
+      <line x1="26" y1="31" x2="26" y2="37"/><line x1="36" y1="31" x2="36" y2="37"/>
+      <ellipse cx="62" cy="28" rx="12" ry="5"/><circle cx="76" cy="25" r="3.2"/>
+      <line x1="58" y1="33" x2="58" y2="38"/><line x1="68" y1="33" x2="68" y2="38"/>
+    </g>
+    <!-- the growl: three short marks -->
+    <g stroke="#b06a4a" stroke-width="1.6">
+      <line x1="44" y1="18" x2="47" y2="12"/><line x1="50" y1="18" x2="53" y2="12"/><line x1="56" y1="18" x2="59" y2="12"/>
+    </g>
+    <text x="0" y="58" fill="#9a8560" font-size="10.5">a correction no human hand</text>
+    <text x="0" y="71" fill="#9a8560" font-size="10.5">taught the yard — the wage</text>
+    <text x="0" y="84" fill="#9a8560" font-size="10.5">the kennel pays itself</text>
+  </g>
+
+  <!-- ============ STATION 6: the exit ============ -->
+  <!-- the kennel glowing, whispering to itself -->
+  <g transform="translate(790,520)">
+    <rect x="-34" y="-8" width="68" height="52" fill="url(#yardGlow)" filter="url(#soft2)"/>
+    <rect x="-26" y="0" width="52" height="38" fill="#2a2216" stroke="#d9a441" stroke-width="2"/>
+    <path d="M -32 0 L 0 -20 L 32 0" fill="none" stroke="#d9a441" stroke-width="2"/>
+    <rect x="-7" y="16" width="14" height="22" fill="#d9a441" opacity="0.8"/>
+    <!-- dogs inside, old showing young -->
+    <g stroke="#c9a86a" stroke-width="1.3" fill="none">
+      <ellipse cx="-14" cy="34" rx="7" ry="3"/><circle cx="-21" cy="32" r="2"/>
+      <ellipse cx="10" cy="34" rx="6" ry="2.7"/><circle cx="4" cy="32" r="1.8"/>
+    </g>
+    <text x="0" y="62" text-anchor="middle" fill="#d9a441" font-size="10.5">it whispers to itself</text>
+  </g>
+  <!-- whisperer walking away, weight forward, one old dog -->
+  <g stroke="#e8d5b0" stroke-width="2" fill="none" opacity="0.9">
+    <circle cx="912" cy="470" r="4.5"/>
+    <line x1="912" y1="475" x2="908" y2="492"/><!-- lean forward -->
+    <line x1="911" y1="480" x2="902" y2="486"/>
+    <line x1="908" y1="492" x2="912" y2="502"/><line x1="908" y1="492" x2="903" y2="501"/>
+  </g>
+  <g stroke="#8a8a8a" stroke-width="1.6" fill="none">
+    <ellipse cx="898" cy="500" rx="9" ry="3.6"/><circle cx="888" cy="497" r="2.6"/>
+  </g>
+  <text x="912" y="522" text-anchor="middle" fill="#9a8560" font-size="9.5" font-style="italic">weight forward —</text>
+  <text x="912" y="534" text-anchor="middle" fill="#9a8560" font-size="9.5" font-style="italic">a shape she never knew she carried</text>
+  <!-- whisper arcs: from kennel to itself, not to her -->
+  <path d="M 762 508 q -14 -10 -28 0" fill="none" stroke="#d9a441" stroke-width="1.3" opacity="0.7"/>
+  <path d="M 748 514 q -12 -9 -24 0" fill="none" stroke="#d9a441" stroke-width="1.1" opacity="0.5"/>
+  <!-- girl at the rail, listening -->
+  <g stroke="#5a4630" stroke-width="2" fill="none" opacity="0.9">
+    <line x1="120" y1="585" x2="300" y2="585" stroke="#4a3a26" stroke-width="2.5"/>
+    <line x1="120" y1="573" x2="300" y2="573" stroke="#3a2d1e" stroke-width="1.5"/>
+    <circle cx="196" cy="548" r="5"/>
+    <line x1="196" y1="553" x2="196" y2="573"/>
+    <line x1="196" y1="563" x2="206" y2="573"/>
+  </g>
+  <text x="210" y="604" fill="#6a5840" font-size="9.5" font-style="italic">the girl stands at the rail and listens. It is not saying it to her.</text>
+
+  <!-- Footer -->
+  <text x="490" y="646" text-anchor="middle" fill="#9a8560" font-size="12" font-style="italic">Nothing is finished. Some things merely stop speaking to you. · The Kennel, Vol. II · see THE_KENNEL_II.md</text>
+</svg>
