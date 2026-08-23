@@ -1,0 +1,3 @@
+kimi version 0.34.0
+error: failed to run prompt: provider.auth_error: 403 You've reached your usage limit for this billing cycle. Your quota will be refreshed in the next cycle. To continue now, purchase extra usage or upgrade your plan: https://www.kimi.com/code/#pricing
+See log: /home/eileen/.kimi-code/logs/kimi-code.log
