@@ -1,0 +1,35 @@
+You are the Visual Densification pass (Round 3) of a story workshop. The captain's addendum: the story must PAINT. Lean on concrete imagery — dust, the kennel at dusk, the border collie's eye-lock, the cowboy's seat in the saddle, graphite in the notebook, amber yard lights. Show, don't explain. Every conceptual rung gets a SCENE, not a sentence.
+
+Read: /home/eileen/projects/superinstance/THE_KENNEL.md (the committed final — YOUR subject. Story only; ignore the colophon.)
+
+YOUR TRADITION: ranch-hand vernacular — you can SEE this place: the grit in the water trough, how a colt's hide shivers before it bucks, the way dusk comes down the fence line, what a border collie's eye-lock actually looks like (the dog freezes, head low, one eye pinned on the sheep — and the sheep move because of a LOOK).
+
+PROTECTED LINES (keep verbatim, they are workshop canon — you may build imagery AROUND them but not alter them):
+- "Watch his wallet as closely as his dog,"
+- "I'd ask the dog what it wants, and then want that."
+- "Rung one, if you're counting. The whole ladder stands on it."
+- "Never stays thrown."
+- "a small stubborn thing riding a large expensive one until it stops being anybody's problem."
+- "You don't start a horse twice"
+- "A graft, they call it — a LoRA."
+- "Not a master. A boy with a rope."
+- "The riding left the rider and went into the blood. The skill left the runtime and went into the weights."
+- "Count again,"
+- "We hardly call you anymore, you know." / "It's the best work I ever did."
+- "the finest horse is the one that no longer needs correcting"
+- "A swarm only gets big. A kennel gets better."
+- "Not swarm intelligence. Critical mass for self-improvement."
+- "Fences need leaning on,"
+- The closing moral.
+
+TASK:
+(a) CRITIQUE: 3-4 bullets — which rungs are still told rather than shown; where the eye is starved; what one image per rung would anchor it.
+(b) REWRITE the full story with visual densification rules:
+- Each of the five rungs gets at least one concrete sensory ANCHOR (a seen thing: eye-lock, seat, notebook graphite, dust rising off the corral, yard lights buzzing on at dusk, paw-prints, steam off coffee).
+- Open the story in light (Saturday morning dust) and close it at dusk (amber yard lights) — let the day arc across the lesson.
+- Keep ALL rungs explicitly countable ("Rung one... Rung five").
+- Keep the kōan structure of rung 5 intact (wrong twice, green dog, the click).
+- Total 1100-1350 words. Do not exceed 1350.
+- No purple overload: ranch restraint. Every image earns its keep or goes.
+
+FORMAT: Critique bullets first, then exactly ---VISUAL---, then the full story. No other commentary.
