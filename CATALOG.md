@@ -1,7 +1,7 @@
 # Fleet Catalog
 **Generated:** 2026-08-24 05:38 UTC
-**Total repositories:** 2000
-A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
+**Organization total:** 4,357 public repositories · **Listed here:** 2,000 (generation cap — see INDEXES/ for slices)
+A detailed catalog of repos in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
 ## Core Infrastructure

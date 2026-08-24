@@ -288,4 +288,4 @@ These invariants must hold at every layer of the architecture:
 
 _This document is a living specification. As SuperInstance evolves, this architecture will be updated to reflect what we've learned. The paradigm is the compass; this document is the map._
 
-_Related: [The Hermit Crab and the Working Dog](AI-Writings/ESSAYS/the-hermit-crab-and-the-working-dog.md)_
+_Related: [The Hermit Crab and the Working Dog](THE_HERMIT_CRAB_AND_THE_WORKING_DOG.md)_

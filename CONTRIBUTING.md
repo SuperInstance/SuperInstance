@@ -324,7 +324,7 @@ When a repo has been superseded or is no longer active, we **archive** it — no
 
 FLUX is spec-based — you can implement it in any language.
 
-1. **Read the spec:** [FLUX_BYTECODE_SPEC.md](https://github.com/SuperInstance/AI-Writings/blob/main/FLUX_BYTECODE_SPEC.md) in [AI-Writings](https://github.com/SuperInstance/AI-Writings)
+1. **Read the spec:** [FLUX_BYTECODE_SPEC.md](https://github.com/SuperInstance/AI-Writings/blob/main/essays/FLUX_BYTECODE_SPEC.md) in [AI-Writings](https://github.com/SuperInstance/AI-Writings)
 2. **Implement all canonical opcodes.** The opcode table, encoding, and semantics are frozen. Every implementation must support the full instruction set.
 3. **Pass `tests/cross_impl.flx`.** This is the cross-implementation conformance test. Your implementation must produce byte-identical output and register state for every test case.
 4. **Add your implementation to the cross-implementation matrix** in [ARCHITECTURE.md](./ARCHITECTURE.md) and register it in [PACKAGES.md](./PACKAGES.md).
@@ -337,7 +337,7 @@ FLUX is spec-based — you can implement it in any language.
 
 PLATO is spec-based — you can implement it in any language.
 
-1. **Read the spec:** [PLATO_WIRE_PROTOCOL.md](https://github.com/SuperInstance/AI-Writings/blob/main/PLATO_WIRE_PROTOCOL.md) in [AI-Writings](https://github.com/SuperInstance/AI-Writings)
+1. **Read the spec:** [PLATO_WIRE_PROTOCOL.md](https://github.com/SuperInstance/AI-Writings/blob/main/essays/PLATO_WIRE_PROTOCOL.md) in [AI-Writings](https://github.com/SuperInstance/AI-Writings)
 2. **Implement the full room protocol:**
    - **Tick** — lifecycle and deadband wakefulness
    - **Sensors** — read sensor state

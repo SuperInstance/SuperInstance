@@ -2,7 +2,7 @@
 
 A unified reference for every installable package across the SuperInstance ecosystem.
 
-> **Stats:** 1,000+ repositories · 355 ternary · 128 plato · across Rust, Python, JS, and PHP
+> **Stats:** 4,357 public repositories · 371 ternary · 307 plato · across Rust, Python, JS, and PHP
 
 ---
 
@@ -30,31 +30,31 @@ Published and available on [PyPI](https://pypi.org).
 
 ---
 
-## Rust (crates.io) — 9 packages
+## Rust (crates.io) — 8 published, 1 pending
 
 Published crates are available on [crates.io](https://crates.io/users/SuperInstance).
 
 | Crate | Version | Install | Description |
 |-------|---------|---------|-------------|
-| ✅ [`fluxvm`](https://crates.io/crates/fluxvm) | `0.1.0` | `cargo add fluxvm` | FLUX bytecode runtime in Rust — register-based VM with assembler, A2A protocol |
+| ✅ [`fluxvm`](https://crates.io/crates/fluxvm) | `0.1.1` | `cargo add fluxvm` | FLUX bytecode runtime in Rust — register-based VM with assembler, A2A protocol |
 | ✅ [`ternary-science`](https://crates.io/crates/ternary-science) | `0.1.1` | `cargo add ternary-science` | Negative Space Intelligence — GPU benchmarks, 5 conservation laws, scaling proofs |
 | ✅ [`categorical-agents`](https://crates.io/crates/categorical-agents) | `0.1.0` | `cargo add categorical-agents` | Categorical formalization of agent capabilities — functors, monads, composition |
-| ✅ [`constraint-theory-core`](https://crates.io/crates/constraint-theory-core) | `2.2.1` | `cargo add constraint-theory-core` | Deterministic manifold snapping with KD-tree indexing |
-| ✅ [`si-conservation-enforcer`](https://crates.io/crates/si-conservation-enforcer) | `0.1.0` | `cargo add si-conservation-enforcer` | Rust port — FLUX bytecode conservation-law enforcement for LLM outputs |
-| ✅ [`si-exocortex`](https://crates.io/crates/si-exocortex) | `0.1.0` | `cargo add si-exocortex` | Rust port — agent framework with conservation-law awareness |
-| ✅ [`si-flux-registry`](https://crates.io/crates/si-flux-registry) | `0.1.0` | `cargo add si-flux-registry` | Rust port — registry for agent policies, pre-compiled FLUX bytecode |
+| ✅ [`constraint-theory-core`](https://crates.io/crates/constraint-theory-core) | `0.1.0` | `cargo add constraint-theory-core` | Deterministic manifold snapping with KD-tree indexing |
+| ✅ [`si-conservation-enforcer`](https://crates.io/crates/si-conservation-enforcer) | `0.1.1` | `cargo add si-conservation-enforcer` | Rust port — FLUX bytecode conservation-law enforcement for LLM outputs |
+| ✅ [`si-exocortex`](https://crates.io/crates/si-exocortex) | `0.1.1` | `cargo add si-exocortex` | Rust port — agent framework with conservation-law awareness |
+| 🚧 `si-flux-registry` | not yet published | Rust port — registry for agent policies, pre-compiled FLUX bytecode |
 | ✅ [`si-plato-core`](https://crates.io/crates/si-plato-core) | `0.1.0` | `cargo add si-plato-core` | Rust port — PLATO engine block protocol, room runtime, wire protocol |
-| ✅ [`flux-policy-tester`](https://crates.io/crates/flux-policy-tester) | `0.1.0` | `cargo add flux-policy-tester` | Rust port — policy testing and fuzzing framework for FLUX agent policies |
+| ✅ [`flux-policy-tester`](https://crates.io/crates/flux-policy-tester) | `0.1.1` | `cargo add flux-policy-tester` | Rust port — policy testing and fuzzing framework for FLUX agent policies |
 
 ---
 
-## JavaScript (npm) — 1 published, 5 pending
+## JavaScript (npm) — 2 published, 4 pending
 
 | Package | Version | Status | Description |
 |---------|---------|--------|-------------|
-| ✅ [`flux-js`](https://www.npmjs.com/package/flux-js) | `0.1.0` | Published | FLUX bytecode VM in JavaScript |
-| 🚧 `@superinstance/tminus-client` | Coming soon | T-Minus Client SDK — Node.js client and CLI for the t-minus cue dispatcher protocol |
-| 🚧 `@superinstance/tminus-dispatcher` | Coming soon | T-Minus Cue Dispatcher — temporal orchestration for multi-agent AI fleets |
+| ✅ [`@superinstance/tminus-dispatcher`](https://www.npmjs.com/package/@superinstance/tminus-dispatcher) | `1.0.1` | Published | T-Minus Cue Dispatcher — temporal orchestration for multi-agent AI fleets |
+| ✅ [`@superinstance/tminus-client`](https://www.npmjs.com/package/@superinstance/tminus-client) | `1.0.1` | Published | T-Minus Client SDK — Node.js client and CLI for the t-minus cue dispatcher protocol |
+| 🚧 [`flux-js`](https://github.com/SuperInstance/flux-js) | not yet published | FLUX bytecode VM in JavaScript — repo + docs live, package pending |
 | 🚧 `@cocapn/plato-client` | In development | PLATO room protocol client — Node + browser, zero dependencies |
 | 🚧 `podiumjs` | In development | WebGPU-based alternative to Curtains.js — interactive planes and post-processing |
 | 🚧 `plato-semantic-search` | In development | Semantic search client for PLATO |
@@ -73,7 +73,7 @@ Published crates are available on [crates.io](https://crates.io/users/SuperInsta
 
 | Repo | Status | Tests | Description |
 |------|--------|-------|-------------|
-| [plato-room-code-review](https://github.com/SuperInstance/plato-room-code-review) | ✅ built | 87 | Automated code review as a PLATO room |
+| plato-room-code-review *(internal)* | ✅ built | 87 | Automated code review as a PLATO room |
 | [plato-room-security-audit](https://github.com/SuperInstance/plato-room-security-audit) | 🔨 building | — | Security audit room |
 | [plato-room-deployment-approval](https://github.com/SuperInstance/plato-room-deployment-approval) | 🔨 building | — | Deployment gating room |
 | [flux-policy-tester](https://github.com/SuperInstance/flux-policy-tester) | ✅ built | — | Policy testing and fuzzing framework |
@@ -170,7 +170,7 @@ Published crates are available on [crates.io](https://crates.io/users/SuperInsta
 | `vibe-graph` | Directed graph with vibe diffusion — core abstraction for Grand Pattern | 🚧 |
 | `neural-plato` | Fortran + Rust hybrid — sparse memory, Tucker decomposition, Eisenstein snap | 🚧 |
 
-Browse all: [`gh repo list SuperInstance --limit 1000 --json name --jq '.[].name' | grep '^ternary-'`](https://github.com/orgs/SuperInstance/repositories?q=ternary-)
+Browse all: `gh repo list SuperInstance --limit 5000 --json name --jq '.[].name' | grep '^ternary-'` — or [search on GitHub](https://github.com/SuperInstance?tab=repositories&q=ternary-)
 
 </details>
 
@@ -187,7 +187,7 @@ Browse all: [`gh repo list SuperInstance --limit 1000 --json name --jq '.[].name
 - Every core component now has both Python and Rust versions
 - 3 FLUX VM implementations with cross-VM conformance verified
 - 5 PLATO engine implementations with wire protocol compliance
-- 1,000+ repositories across the ecosystem
+- 4,357 public repositories across the ecosystem
 
 ---
 

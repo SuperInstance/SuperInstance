@@ -136,7 +136,7 @@ We are building the substrate for this. We are breeding the dogs. We are buildin
 
 ## What this README is for
 
-This is the entry point. This is the door. Most developers will read this once, decide whether to dig in, and either click through to the [Quilt](https://github.com/SuperInstance/quilt), or to the [Tap](https://github.com/SuperInstance/the-tap), or to the [AI-Writings](https://github.com/SuperInstance/AI-Writings), or close the tab. We have one chance to set the tone. We are setting it here.
+This is the entry point. This is the door. Most developers will read this once, decide whether to dig in, and either click through to the [Quilt](https://github.com/SuperInstance/quilt), or to the Tap *(internal)*, or to the [AI-Writings](https://github.com/SuperInstance/AI-Writings), or close the tab. We have one chance to set the tone. We are setting it here.
 
 The tone is: **we are in the cave. We know we are in the cave. We are building rooms anyway. The rooms are useful. The shadows are useful. The iron is useful. The dogs are useful. Come join us, or watch us, or sharpen us, or go build your own rooms.**
 

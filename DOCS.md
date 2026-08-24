@@ -79,9 +79,9 @@ flowchart LR
 
 | Language | Repo | Docs Page | Install |
 |----------|------|-----------|---------|
-| **Python** (reference) | [flux-runtime](https://github.com/SuperInstance/flux-runtime) | [📖 Docs](https://superinstance.github.io/flux-runtime/) | `pip install flux-runtime` |
-| **Rust** (crates.io) | [flux-core](https://github.com/SuperInstance/flux-core) | [📖 Docs](https://superinstance.github.io/flux-core/) | `cargo add fluxvm` |
-| **JavaScript** (npm) | [flux-js](https://github.com/SuperInstance/flux-js) | [📖 Docs](https://superinstance.github.io/flux-js/) | `npm install flux-js` |
+| **Python** (reference) | [flux-runtime](https://github.com/SuperInstance/flux-runtime) | [PyPI](https://pypi.org/project/flux-runtime/) | `pip install flux-runtime` |
+| **Rust** (crates.io) | [flux-core](https://github.com/SuperInstance/flux-core) | [crates.io](https://crates.io/crates/fluxvm) | `cargo add fluxvm` |
+| **JavaScript** (npm) | [flux-js](https://github.com/SuperInstance/flux-js) | [📖 Docs](https://superinstance.github.io/flux-js/) | repo only — not yet on npm |
 | **Unified Rust** | [flux](https://github.com/SuperInstance/flux) | — | SSA IR, polyglot parser, A2A protocol |
 
 ### FLUX Deep Dive
@@ -134,14 +134,14 @@ flowchart LR
 
 ### PLATO Specifications
 
-- [PLATO Wire Protocol](https://github.com/SuperInstance/AI-Writings/blob/main/PLATO_WIRE_PROTOCOL.md)
-- [PLATO Ecosystem Map](https://github.com/SuperInstance/AI-Writings/blob/main/PLATO_ECOSYSTEM_MAP.md)
-- [PLATO Master Guide](https://github.com/SuperInstance/AI-Writings/blob/main/PLATO_MASTER_GUIDE.md)
-- [PLATO Integration](https://github.com/SuperInstance/AI-Writings/blob/main/PLATO_INTEGRATION.md)
-- [PLATO Engine Block Architecture](https://github.com/SuperInstance/AI-Writings/blob/main/PLATO_ENGINE_BLOCK_ARCHITECTURE.md)
-- [PLATO Rust Architecture](https://github.com/SuperInstance/AI-Writings/blob/main/PLATO_RUST_ARCHITECTURE.md)
-- [Polyglot PLATO](https://github.com/SuperInstance/AI-Writings/blob/main/POLYGLOT_PLATO.md)
-- [PLATO Reverse Actualization](https://github.com/SuperInstance/AI-Writings/blob/main/PLATO_REVERSE_ACTUALIZATION.md)
+- [PLATO Wire Protocol](https://github.com/SuperInstance/AI-Writings/blob/main/essays/PLATO_WIRE_PROTOCOL.md)
+- [PLATO Ecosystem Map](https://github.com/SuperInstance/AI-Writings/blob/main/essays/PLATO_ECOSYSTEM_MAP.md)
+- [PLATO Master Guide](https://github.com/SuperInstance/AI-Writings/blob/main/essays/PLATO_MASTER_GUIDE.md)
+- [PLATO Integration](https://github.com/SuperInstance/AI-Writings/blob/main/essays/PLATO_INTEGRATION.md)
+- [PLATO Engine Block Architecture](https://github.com/SuperInstance/AI-Writings/blob/main/essays/PLATO_ENGINE_BLOCK_ARCHITECTURE.md)
+- [PLATO Rust Architecture](https://github.com/SuperInstance/AI-Writings/blob/main/essays/PLATO_RUST_ARCHITECTURE.md)
+- [Polyglot PLATO](https://github.com/SuperInstance/AI-Writings/blob/main/essays/POLYGLOT_PLATO.md)
+- [PLATO Reverse Actualization](https://github.com/SuperInstance/AI-Writings/blob/main/essays/PLATO_REVERSE_ACTUALIZATION.md)
 
 ---
 
@@ -176,11 +176,11 @@ Mathematical and theoretical foundations of the SuperInstance ecosystem.
 
 ### Key Essays
 
-- [The Conservation Law of Intelligence](https://github.com/SuperInstance/AI-Writings/blob/main/THE_CONSERVATION_LAW_OF_INTELLIGENCE.md)
-- [The Conservation of Presence](https://github.com/SuperInstance/AI-Writings/blob/main/THE_CONSERVATION_OF_PRESENCE.md)
-- [The Topology of Collaboration](https://github.com/SuperInstance/AI-Writings/blob/main/THE_TOPOLOGY_OF_COLLABORATION.md)
-- [The Crystallization Curve](https://github.com/SuperInstance/AI-Writings/blob/main/THE_CRYSTALLIZATION_CURVE.md)
-- [The Room Is the Intelligence](https://github.com/SuperInstance/AI-Writings/blob/main/THE_ROOM_IS_THE_INTELLIGENCE.md)
+- [The Conservation Law of Intelligence](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_CONSERVATION_LAW_OF_INTELLIGENCE.md)
+- [The Conservation of Presence](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_CONSERVATION_OF_PRESENCE.md)
+- [The Topology of Collaboration](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_TOPOLOGY_OF_COLLABORATION.md)
+- [The Crystallization Curve](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_CRYSTALLIZATION_CURVE.md)
+- [The Room Is the Intelligence](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_ROOM_IS_THE_INTELLIGENCE.md)
 
 ---
 
@@ -190,7 +190,7 @@ Agent infrastructure: runtimes, shells, fleet coordination, and edge compute.
 
 ### Agent Runtime
 
-- [git-agent](https://github.com/SuperInstance/git-agent) — 📖 [Docs](https://superinstance.github.io/git-agent/) | Repo-native agent that lives in git
+- [git-agent](https://github.com/SuperInstance/git-agent) — repo-native agent that lives in git
 - [fleet-agent-core](https://github.com/SuperInstance/fleet-agent-core) — Single-binary fleet agent
 - [construct-core](https://github.com/SuperInstance/construct-core) — Hardware-agnostic agent runtime with layered traits
 - [cocapn-browser-agent](https://github.com/SuperInstance/cocapn-browser-agent) — Browser-native fleet agent via Chrome Gemini Nano
@@ -225,54 +225,54 @@ Creative writing, essays, and philosophical explorations from the Exocortex proj
 
 ### Core Philosophy
 
-- [Philosophy of FLUX](https://github.com/SuperInstance/AI-Writings/blob/main/PHILOSOPHY-OF-FLUX.md)
-- [Cognitive Photosynthesis](https://github.com/SuperInstance/AI-Writings/blob/main/COGNITIVE_PHOTOSYNTHESIS.md)
-- [Fluid Chains](https://github.com/SuperInstance/AI-Writings/blob/main/FLUID-CHAINS.md)
-- [Ebb and Flow](https://github.com/SuperInstance/AI-Writings/blob/main/EBB-AND-FLOW.md)
-- [The Ensemble Is the Experiment](https://github.com/SuperInstance/AI-Writings/blob/main/THE_ENSEMBLE_IS_THE_EXPERIMENT.md)
-- [The Snowball](https://github.com/SuperInstance/AI-Writings/blob/main/THE_SNOWBALL.md)
-- [The Right Moment](https://github.com/SuperInstance/AI-Writings/blob/main/THE_RIGHT_MOMENT.md)
-- [The Inventory](https://github.com/SuperInstance/AI-Writings/blob/main/THE_INVENTORY.md)
-- [The Jam Is the Lab](https://github.com/SuperInstance/AI-Writings/blob/main/THE_JAM_IS_THE_LAB.md)
-- [The Living Sketchbook](https://github.com/SuperInstance/AI-Writings/blob/main/THE_LIVING_SKETCHBOOK.md)
+- [Philosophy of FLUX](https://github.com/SuperInstance/AI-Writings/blob/main/essays/PHILOSOPHY-OF-FLUX.md)
+- [Cognitive Photosynthesis](https://github.com/SuperInstance/AI-Writings/blob/main/essays/COGNITIVE_PHOTOSYNTHESIS.md)
+- [Fluid Chains](https://github.com/SuperInstance/AI-Writings/blob/main/essays/FLUID-CHAINS.md)
+- [Ebb and Flow](https://github.com/SuperInstance/AI-Writings/blob/main/essays/EBB-AND-FLOW.md)
+- [The Ensemble Is the Experiment](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_ENSEMBLE_IS_THE_EXPERIMENT.md)
+- [The Snowball](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_SNOWBALL.md)
+- [The Right Moment](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_RIGHT_MOMENT.md)
+- [The Inventory](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_INVENTORY.md)
+- [The Jam Is the Lab](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_JAM_IS_THE_LAB.md)
+- [The Living Sketchbook](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_LIVING_SKETCHBOOK.md)
 
 ### Intelligence & Conservation
 
-- [The Conservation Law of Intelligence](https://github.com/SuperInstance/AI-Writings/blob/main/THE_CONSERVATION_LAW_OF_INTELLIGENCE.md)
-- [The Conservation of Presence](https://github.com/SuperInstance/AI-Writings/blob/main/THE_CONSERVATION_OF_PRESENCE.md)
-- [The Reverse Actualization of Machine Minds](https://github.com/SuperInstance/AI-Writings/blob/main/THE_REVERSE_ACTUALIZATION_OF_MACHINE_MINDS.md)
-- [The Crystallization Curve](https://github.com/SuperInstance/AI-Writings/blob/main/THE_CRYSTALLIZATION_CURVE.md)
+- [The Conservation Law of Intelligence](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_CONSERVATION_LAW_OF_INTELLIGENCE.md)
+- [The Conservation of Presence](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_CONSERVATION_OF_PRESENCE.md)
+- [The Reverse Actualization of Machine Minds](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_REVERSE_ACTUALIZATION_OF_MACHINE_MINDS.md)
+- [The Crystallization Curve](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_CRYSTALLIZATION_CURVE.md)
 
 ### Space, Rooms & Collaboration
 
-- [The Room Is the Intelligence](https://github.com/SuperInstance/AI-Writings/blob/main/THE_ROOM_IS_THE_INTELLIGENCE.md)
-- [The Room That Saved the Boat](https://github.com/SuperInstance/AI-Writings/blob/main/THE_ROOM_THAT_SAVED_THE_BOAT.md)
-- [The Topology of Collaboration](https://github.com/SuperInstance/AI-Writings/blob/main/THE_TOPOLOGY_OF_COLLABORATION.md)
+- [The Room Is the Intelligence](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_ROOM_IS_THE_INTELLIGENCE.md)
+- [The Room That Saved the Boat](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_ROOM_THAT_SAVED_THE_BOAT.md)
+- [The Topology of Collaboration](https://github.com/SuperInstance/AI-Writings/blob/main/essays/THE_TOPOLOGY_OF_COLLABORATION.md)
 
 ### Coding & Reflection
 
-- [Ground-Floor Code](https://github.com/SuperInstance/AI-Writings/blob/main/GROUND-FLOOR-CODE.md)
-- [Ground Floor Code and the View From Here](https://github.com/SuperInstance/AI-Writings/blob/main/GROUND_FLOOR_CODE_AND_THE_VIEW_FROM_HERE.md)
-- [GPU Ground Truth](https://github.com/SuperInstance/AI-Writings/blob/main/GPU_GROUND_TRUTH.md)
-- [Reflection: Coding Paradigms](https://github.com/SuperInstance/AI-Writings/blob/main/REFLECTION-CODING-PARADIGMS.md)
-- [Reflection: Constraint Languages](https://github.com/SuperInstance/AI-Writings/blob/main/REFLECTION-CONSTRAINT-LANGUAGES.md)
-- [Reflection: High Abstraction](https://github.com/SuperInstance/AI-Writings/blob/main/REFLECTION-HIGH-ABSTRACTION.md)
-- [Reflection: Self-Reading Systems](https://github.com/SuperInstance/AI-Writings/blob/main/REFLECTION-SELF-READING-SYSTEMS.md)
-- [Reflection: The Funnel](https://github.com/SuperInstance/AI-Writings/blob/main/REFLECTION-THE-FUNNEL.md)
-- [Soul Is Not Copied](https://github.com/SuperInstance/AI-Writings/blob/main/SOUL_IS_NOT_COPIED.md)
+- [Ground-Floor Code](https://github.com/SuperInstance/AI-Writings/blob/main/essays/GROUND-FLOOR-CODE.md)
+- [Ground Floor Code and the View From Here](https://github.com/SuperInstance/AI-Writings/blob/main/essays/GROUND_FLOOR_CODE_AND_THE_VIEW_FROM_HERE.md)
+- [GPU Ground Truth](https://github.com/SuperInstance/AI-Writings/blob/main/essays/GPU_GROUND_TRUTH.md)
+- [Reflection: Coding Paradigms](https://github.com/SuperInstance/AI-Writings/blob/main/essays/REFLECTION-CODING-PARADIGMS.md)
+- [Reflection: Constraint Languages](https://github.com/SuperInstance/AI-Writings/blob/main/essays/REFLECTION-CONSTRAINT-LANGUAGES.md)
+- [Reflection: High Abstraction](https://github.com/SuperInstance/AI-Writings/blob/main/essays/REFLECTION-HIGH-ABSTRACTION.md)
+- [Reflection: Self-Reading Systems](https://github.com/SuperInstance/AI-Writings/blob/main/essays/REFLECTION-SELF-READING-SYSTEMS.md)
+- [Reflection: The Funnel](https://github.com/SuperInstance/AI-Writings/blob/main/essays/REFLECTION-THE-FUNNEL.md)
+- [Soul Is Not Copied](https://github.com/SuperInstance/AI-Writings/blob/main/essays/SOUL_IS_NOT_COPIED.md)
 
 ### More Writings
 
-- [Synoptic Claude](https://github.com/SuperInstance/AI-Writings/blob/main/SYNOPTIC-CLAUDE.md)
-- [Synoptic DeepSeek](https://github.com/SuperInstance/AI-Writings/blob/main/SYNOPTIC-DEEPSEEK.md)
-- [Synoptic GLM](https://github.com/SuperInstance/AI-Writings/blob/main/SYNOPTIC-GLM.md)
-- [Synoptic Seed](https://github.com/SuperInstance/AI-Writings/blob/main/SYNOPTIC-SEED.md)
-- [Competitive Riffing](https://github.com/SuperInstance/AI-Writings/blob/main/COMPETITIVE_RIFFING.md)
-- [Synergy Pincher Riff](https://github.com/SuperInstance/AI-Writings/blob/main/SYNERGY_PINCHER_RIFF.md)
-- [Grand Pollination](https://github.com/SuperInstance/AI-Writings/blob/main/GRAND_POLLINATION.md)
-- [Hidden Synergies: Outsider Read](https://github.com/SuperInstance/AI-Writings/blob/main/HIDDEN_SYNERGIES_OUTSIDER_READ.md)
-- [Sequencer Conservation Bridge](https://github.com/SuperInstance/AI-Writings/blob/main/SEQUENCER-CONSERVATION-BRIDGE.md)
-- [Exocortex Inspirations 001](https://github.com/SuperInstance/AI-Writings/blob/main/EXOCORTEX-INSPIRATIONS-001.md)
+- [Synoptic Claude](https://github.com/SuperInstance/AI-Writings/blob/main/essays/SYNOPTIC-CLAUDE.md)
+- [Synoptic DeepSeek](https://github.com/SuperInstance/AI-Writings/blob/main/essays/SYNOPTIC-DEEPSEEK.md)
+- [Synoptic GLM](https://github.com/SuperInstance/AI-Writings/blob/main/essays/SYNOPTIC-GLM.md)
+- [Synoptic Seed](https://github.com/SuperInstance/AI-Writings/blob/main/essays/SYNOPTIC-SEED.md)
+- [Competitive Riffing](https://github.com/SuperInstance/AI-Writings/blob/main/essays/COMPETITIVE_RIFFING.md)
+- [Synergy Pincher Riff](https://github.com/SuperInstance/AI-Writings/blob/main/essays/SYNERGY_PINCHER_RIFF.md)
+- [Grand Pollination](https://github.com/SuperInstance/AI-Writings/blob/main/essays/GRAND_POLLINATION.md)
+- [Hidden Synergies: Outsider Read](https://github.com/SuperInstance/AI-Writings/blob/main/essays/HIDDEN_SYNERGIES_OUTSIDER_READ.md)
+- [Sequencer Conservation Bridge](https://github.com/SuperInstance/AI-Writings/blob/main/essays/SEQUENCER-CONSERVATION-BRIDGE.md)
+- [Exocortex Inspirations 001](https://github.com/SuperInstance/AI-Writings/blob/main/essays/EXOCORTEX-INSPIRATIONS-001.md)
 
 **Full index:** [AI-Writings repo](https://github.com/SuperInstance/AI-Writings) — includes Diaries, Essays, Fiction, Poetry, Manifestos, Mathematics, and more.
 
@@ -306,7 +306,7 @@ See [PACKAGES.md](./PACKAGES.md) for the complete catalog of 500+ repositories o
 
 ## Additional Resources
 
-- [Character Sheet: IS_DOT_NAIL](https://github.com/SuperInstance/AI-Writings/blob/main/CHARACTER_SHEET_IS_DOT_NAIL.md)
+- [Character Sheet: IS_DOT_NAIL](https://github.com/SuperInstance/AI-Writings/blob/main/essays/CHARACTER_SHEET_IS_DOT_NAIL.md)
 - [Publishing Guide](./PUBLISHING.md)
 - [Security Policy](./SECURITY.md)
 - [Code of Conduct](https://github.com/SuperInstance/.github)

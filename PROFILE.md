@@ -18,14 +18,14 @@ npx superinstance init
 | | |
 |---|---|
 | Website | [superinstance.com](https://superinstance.com) |
-| Docs | [docs.superinstance.com](https://docs.superinstance.com) |
+| Docs | [superinstance.com](https://superinstance.com) |
 | npm | [@superinstance](https://www.npmjs.com/~superinstance) |
 | API | [fleet-vector-api](https://fleet-vector-api.casey-digennaro.workers.dev) |
 
 ## Stats
 
 - **1,012** crates indexed (384-dim BGE embeddings)
-- **20+** repositories
+- **4,300+** public repositories
 - **500+** tests passing
 
 ## Built With

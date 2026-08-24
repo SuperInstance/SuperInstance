@@ -1,7 +1,7 @@
 # Index by Topic
 
 **Generated:** 2026-08-24 05:38 UTC
-**Total repos:** 2000
+**Listed:** 2,000 of 4,357 public repos
 
 ## A2A
 
