@@ -1,15 +1,22 @@
 # SuperInstance — Index
 
-A fleet index for the SuperInstance GitHub account (github.com/SuperInstance): 4,357 public repositories, organized by slice.
 
-## Slice indexes
+## Indexes
 
-- [By type](INDEXES/TYPE.md) — repos grouped by kind
-- [By language](INDEXES/LANGUAGE.md) — repos grouped by primary language
-- [By topic](INDEXES/TOPIC.md) — repos grouped by subject area
-- [By realm](INDEXES/REALM.md) — repos grouped by problem domain
-- [By concept](INDEXES/CONCEPTS.md) — repos grouped by shared concepts
+Multi-dimensional indexes for finding what you need:
 
-CATALOG.md lists the first 2,000 of the 4,357 public repos (auto-generated from the GitHub API).
+- **[Index by Type](INDEXES/TYPE.md)**
+- **[Index by Language](INDEXES/LANGUAGE.md)**
+- **[Index by Topic](INDEXES/TOPIC.md)**
+- **[Index by Realm](INDEXES/REALM.md)**
+- **[Index by Concepts](INDEXES/CONCEPTS.md)**
 
-Last generated: 2026-08-24. To regenerate, run the auto-index job under `scripts/`.
+This index is auto-generated from the GitHub API. It catalogs all public repositories
+in the [SuperInstance](https://github.com/SuperInstance) organization.
+
+**Last generated:** $(date -u '+%Y-%m-%d %H:%M UTC')
+**Total repositories:** 
+
+2000
+
+<!-- Warning: gh repo list returned empty output -->
