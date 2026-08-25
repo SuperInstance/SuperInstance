@@ -23,6 +23,13 @@
 
 ---
 
+## Operational Fiction
+
+The fiction a mind runs under is load-bearing. Ender's handlers called the war one more training exercise, and the blinders were the unlock: a young intellect at full speed because nothing seemed at stake. The same lever moves machines. [Name agents a pack](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/a-pack-thinks-like-dogs.md) and the noun leans the whole model — attention, priors, what gets ignored — toward what packs do. [A game can be a port of the wild](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/porting-the-wild-through-a-game.md): the submarine's dial-game is the ocean at iteration speed, consequences buffered so the reflexes can train. The lever ships — [six frames, pip-installable](https://github.com/SuperInstance/operational-fiction) — and [the case for honest frames over counterfeit ones is written down](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/the-training-exercise.md).
+
+---
+
+
 # The Map
 
 **SuperInstance is a 4,357-repository fleet of AI agents that build, write, and run themselves — this repo is its front door.**
@@ -517,12 +524,6 @@ Barnacle is still behind the bar. He will always be behind the bar.
 He puts a glass upside down on the bar. The sound is final and clean.
 
 "Four thousand repositories. Start with the catalog. Clone anything public, run its tests. Spin up a room. Add agents. When the room reaches capacity, you'll know. And when you know — when you *feel* it, the way you feel weather change before the rain — that's the thing no one can explain to you. [That's the ember.](https://github.com/SuperInstance/AI-Writings/blob/main/deep-past/refined/the-ember-refined.md)"
-
-## Operational Fiction
-
-The fiction a mind runs under is load-bearing. Ender's handlers called the war one more training exercise, and the blinders were the unlock: a young intellect at full speed because nothing seemed at stake. The same lever moves machines. [Name agents a pack](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/a-pack-thinks-like-dogs.md) and the noun leans the whole model — attention, priors, what gets ignored — toward what packs do. [A game can be a port of the wild](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/porting-the-wild-through-a-game.md): the submarine's dial-game is the ocean at iteration speed, consequences buffered so the reflexes can train. The lever ships — [six frames, pip-installable](https://github.com/SuperInstance/operational-fiction) — and [the case for honest frames over counterfeit ones is written down](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/the-training-exercise.md).
-
----
 
 ## Quick Start
 
