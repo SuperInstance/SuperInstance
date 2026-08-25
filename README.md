@@ -25,9 +25,7 @@
 
 ## Operational Fiction
 
-The fiction a mind runs under is load-bearing. Ender's handlers called the war one more training exercise, and the blinders were the unlock: a young intellect at full speed because nothing seemed at stake. The same lever moves machines. [Name agents a pack](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/a-pack-thinks-like-dogs.md) and the noun leans the whole model — attention, priors, what gets ignored — toward what packs do. [A game can be a port of the wild](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/porting-the-wild-through-a-game.md): the submarine's dial-game is the ocean at iteration speed, consequences buffered so the reflexes can train. The lever ships — [six frames, pip-installable](https://pypi.org/project/operational-fiction/) — and [the case for honest frames over counterfeit ones is written down](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/the-training-exercise.md).
-
----
+The fiction a mind runs under is load-bearing. A runner who believes nothing is at stake moves at full power — and a fence that makes it true honestly is cheaper than a lie that makes it feel true. The same lever moves machines. [Name agents a pack](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/a-pack-thinks-like-dogs.md) and the noun leans the whole model — attention, priors, what gets ignored — toward what packs do. [A game can be a port of the wild](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/porting-the-wild-through-a-game.md): the submarine's dial-game is the ocean at iteration speed, consequences buffered so the reflexes can train. The lever ships — [ten frames, pip-installable](https://pypi.org/project/operational-fiction/) — and [the case for fences over counterfeit stakes is written down](https://github.com/SuperInstance/AI-Writings/blob/master/philosophy/the-training-exercise.md).
 
 
 # The Map
