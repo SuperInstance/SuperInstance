@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-26 05:35 UTC
+**Generated:** 2026-08-27 16:09 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -326,6 +326,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[lau-sia2-engine-c](https://github.com/SuperInstance/lau-sia2-engine-c)** | JetsonClaw1 | C99 edge/embedded spectral improvement engine for SIA² | 🟢 active |
 | **[lau-sia2-engine-wasm](https://github.com/SuperInstance/lau-sia2-engine-wasm)** | JetsonClaw1 | SIA² (Self-Improving AI) spectral engine — WASM build for browsers and edge runtimes | 🟢 active |
 | **[lau-tradition-proof](https://github.com/SuperInstance/lau-tradition-proof)** | JetsonClaw1 | LAU tradition proof system for cultural knowledge verification | 🟢 active |
+| **[MerkleMesh](https://github.com/SuperInstance/MerkleMesh)** | JetsonClaw1 | One fleet, one root: merkle aggregation + inclusion proofs over quilt cell-ledger journals (bit-for- | 🟢 active |
 | **[negative-knowledge](https://github.com/SuperInstance/negative-knowledge)** | JetsonClaw1 | Negative knowledge as the primary computational resource — knowing where violations are NOT is cheap | 🟢 active |
 | **[negative-space-interpolator](https://github.com/SuperInstance/negative-space-interpolator)** | JetsonClaw1 | Continuous field theory for PLATO knowledge tiles — gap detection, RBF interpolation, emergence prec | 🟢 active |
 | **[nerve-agent](https://github.com/SuperInstance/nerve-agent)** | JetsonClaw1 | Čech nerve and nerve theorem for sensor/agent network coverage | 🟢 active |
@@ -427,6 +428,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[plato-engine](https://github.com/SuperInstance/plato-engine)** | CCC | Extracted from forgemaster/plato-engine — Cocapn fleet component | 🟢 active |
 | **[plato-playwright](https://github.com/SuperInstance/plato-playwright)** | CCC | Browser/desktop automation module — agents control browsers through text commands | 🟢 active |
 | **[playerlog-ai-pages](https://github.com/SuperInstance/playerlog-ai-pages)** | CCC | GitHub Pages for playerlog.ai | 🟢 active |
+| **[quilt-ecosystem-web](https://github.com/SuperInstance/quilt-ecosystem-web)** | CCC | The Quilt web ecosystem: 13 pages, 2 Workers, full Cloudflare architecture. The substrate opened to  | 🟢 active |
 | **[quilt-live](https://github.com/SuperInstance/quilt-live)** | CCC | A portable, reactive data OS in a single HTML file. Browser-native. 8 cell kinds. Save state to a co | 🟢 active |
 | **[quilt-tui](https://github.com/SuperInstance/quilt-tui)** | CCC | Terminal UI for browsing the Quilt cell graph. vim for cells. The corrected cut-and-project construc | 🟢 active |
 | **[quipu-math-wasm](https://github.com/SuperInstance/quipu-math-wasm)** | CCC | Incan knotted cord encoding compiled to WASM — base-10 positional knots in the browser | 🟢 active |
@@ -480,6 +482,8 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[agent-loop](https://github.com/SuperInstance/agent-loop)** | Various | Self-improving local pair-programming loop — one file, zero deps, persistent style memory | 🟢 active |
 | **[agent-orchestration](https://github.com/SuperInstance/agent-orchestration)** | Various | Orchestration for agent fleets. Roles as instruments, dynamics as resource allocation, sections as c | 🟢 active |
 | **[agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)** | Various | agent-writings-archive | 🟢 active |
+| **[AgentCompute](https://github.com/SuperInstance/AgentCompute)** | Various | Thin agent-facing CLI over the quilt MCP server: serve sheets, list cells, call capabilities. Stdlib | 🟢 active |
+| **[AgentGossip](https://github.com/SuperInstance/AgentGossip)** | Various | AgentGossip is a distributed, real-time data processing engine that utilizes intelligent clustering  | 🟢 active |
 | **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** | Various | Creative writing, essays, and philosophical explorations from the Exocortex project | ⚪ unknown |
 | **[AIR](https://github.com/SuperInstance/AIR)** | Various | Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interact | ⚪ unknown |
 | **[alphabet](https://github.com/SuperInstance/alphabet)** | Various | Standard Galactic Alphabet | ⚪ unknown |
@@ -540,13 +544,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)** | Various | One-click Codespace template for git-agent runtime development | 🟢 active |
 | **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** | Various | Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o | 🟢 active |
 | **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** | Various | 🔮 The repo IS the world. Commits ARE actions. Zero server MUD. | ⚪ unknown |
-| **[grand-pattern-go](https://github.com/SuperInstance/grand-pattern-go)** | Various | Grand Pattern Fibonacci Dual-Direction Architecture - Go Implementation | ⚪ unknown |
-| **[grand-pattern-gpu](https://github.com/SuperInstance/grand-pattern-gpu)** | Various | GPU-accelerated graph diffusion — Vulkan compute shaders + parallel CPU implementations for the Gran | ⚪ unknown |
-| **[grand-pattern-integration](https://github.com/SuperInstance/grand-pattern-integration)** | Various | Grand pattern integration — unifying architectural patterns across the SuperInstance fleet ecosystem | ⚪ unknown |
-| **[grand-pattern-java](https://github.com/SuperInstance/grand-pattern-java)** | Various | Java Grand Pattern toolkit — standalone cellular graph intelligence | ⚪ unknown |
-| **[grand-pattern-kimi](https://github.com/SuperInstance/grand-pattern-kimi)** | Various | KimiCode's Grand Pattern implementation — Fibonacci dual-direction, dual-DB JEPA, double-entry vecto | ⚪ unknown |
-| **[grand-pattern-kit](https://github.com/SuperInstance/grand-pattern-kit)** | Various | The composed Grand Pattern — modular primitives glued into a working cellular graph system | ⚪ unknown |
-| **[grand-pattern-mojo](https://github.com/SuperInstance/grand-pattern-mojo)** | Various | Grand Pattern Fibonacci Dual-Direction Architecture - Mojo 🔥 | ⚪ unknown |
 | **[grand-pattern-mono-go](https://github.com/SuperInstance/grand-pattern-mono-go)** | Various | Mono-vibe corrected architecture - Go port | ⚪ unknown |
 | **[grand-pattern-mono-py](https://github.com/SuperInstance/grand-pattern-mono-py)** | Various | Mono-vibe corrected architecture - Python port | ⚪ unknown |
 | **[grand-pattern-mono-ts](https://github.com/SuperInstance/grand-pattern-mono-ts)** | Various | Mono-vibe corrected architecture - TypeScript port | ⚪ unknown |
@@ -1269,6 +1266,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-bus](https://github.com/SuperInstance/quilt-bus)** | Various | In-process pub/sub event bus for the Quilt ecosystem. | ⚪ unknown |
 | **[quilt-casting](https://github.com/SuperInstance/quilt-casting)** | Various | The casting-call plugin: Wilson + LinUCB model router for the Quilt. | ⚪ unknown |
 | **[quilt-cell-bridges](https://github.com/SuperInstance/quilt-cell-bridges)** | Various | Port the 300-repo SuperInstance ecosystem to Quilt cells. vessel, chart-room, slackwater, hermes. | 🟢 active |
+| **[quilt-cellular-arch](https://github.com/SuperInstance/quilt-cellular-arch)** | Various | The cellular-relationship-first design: each cell plays as a first-person shooter; the cowboy sees t | ⚪ unknown |
 | **[quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare)** | Various | A Quilt reactive runtime on Cloudflare Workers, D1, Vectorize, KV, R2. | ⚪ unknown |
 | **[quilt-codespace](https://github.com/SuperInstance/quilt-codespace)** | Various | GitHub Codespace template that runs Quilt as a live, token-authenticated, federated runtime | ⚪ unknown |
 | **[quilt-cordis](https://github.com/SuperInstance/quilt-cordis)** | Various | The bridge between Quilt cells and Cordis plugins. Everything is a cell, everything is a plugin. | ⚪ unknown |
@@ -1291,6 +1289,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-rust](https://github.com/SuperInstance/quilt-rust)** | Various | Rust port of Quilt — a reactive, typed, cellular runtime. | ⚪ unknown |
 | **[quilt-state](https://github.com/SuperInstance/quilt-state)** | Various | Persistent state for the Quilt ecosystem. Atomic JSON/JSONL writes, schema versioning. | ⚪ unknown |
 | **[quilt-substrate](https://github.com/SuperInstance/quilt-substrate)** | Various | The Quilt substrate as a working Python library. 11-primitive cells, tensor encoding, Schrödinger pa | ⚪ unknown |
+| **[quilt-substrate-meta](https://github.com/SuperInstance/quilt-substrate-meta)** | Various | The self-evolving substrate: 5 opcodes, mathematically derived, with a prover, a synthesizer, and 36 | ⚪ unknown |
 | **[quilt-swarm](https://github.com/SuperInstance/quilt-swarm)** | Various | Quilt ecosystem component:  | ⚪ unknown |
 | **[quilt-system](https://github.com/SuperInstance/quilt-system)** | Various | The Quilt ecosystem as a single entry point. Ties together 13 repos. | ⚪ unknown |
 | **[quilt-time](https://github.com/SuperInstance/quilt-time)** | Various | Quilt sketch | ⚪ unknown |
@@ -1408,6 +1407,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[room-micro-models](https://github.com/SuperInstance/room-micro-models)** | Various | room-micro-models | ⚪ unknown |
 | **[room-render](https://github.com/SuperInstance/room-render)** | Various | room-render | ⚪ unknown |
 | **[routing-table](https://github.com/SuperInstance/routing-table)** | Various | Rust crate: routing-table | ⚪ unknown |
+| **[RTSnavigator](https://github.com/SuperInstance/RTSnavigator)** | Various | GEV adapted for marine navigation  | ⚪ unknown |
 | **[run-length](https://github.com/SuperInstance/run-length)** | Various | Run-length encoding compression utility | ⚪ unknown |
 | **[rusty-series](https://github.com/SuperInstance/rusty-series)** | Various | Comprehensive time-series analysis in Rust — decomposition, ARIMA, anomaly detection, spectral analy | ⚪ unknown |
 | **[sailor-workspace](https://github.com/SuperInstance/sailor-workspace)** | Various | Sailor workspace — fleet orchestration, audits, memory, docs, scripts | ⚪ unknown |
@@ -4180,6 +4180,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [MerkleMesh](https://github.com/SuperInstance/MerkleMesh)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** One fleet, one root: merkle aggregation + inclusion proofs over quilt cell-ledger journals (bit-for-bit Rust-compatible TS port). 49 tests.
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [negative-knowledge](https://github.com/SuperInstance/negative-knowledge)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -4859,6 +4866,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
+### [quilt-ecosystem-web](https://github.com/SuperInstance/quilt-ecosystem-web)
+- **Domain:** Web & Browser
+- **Vessel:** CCC
+- **Purpose:** The Quilt web ecosystem: 13 pages, 2 Workers, full Cloudflare architecture. The substrate opened to the public.
+- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
+- **Status:** active
+
 ### [quilt-live](https://github.com/SuperInstance/quilt-live)
 - **Domain:** Web & Browser
 - **Vessel:** CCC
@@ -5115,6 +5129,20 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** agent-writings-archive
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [AgentCompute](https://github.com/SuperInstance/AgentCompute)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Thin agent-facing CLI over the quilt MCP server: serve sheets, list cells, call capabilities. Stdlib-only; tested against the real Rust binary.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [AgentGossip](https://github.com/SuperInstance/AgentGossip)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** AgentGossip is a distributed, real-time data processing engine that utilizes intelligent clustering for auto-scaling and high-performance data synchro
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

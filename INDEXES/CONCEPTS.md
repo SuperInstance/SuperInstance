@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-26 05:35 UTC
+**Generated:** 2026-08-27 16:09 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -247,7 +247,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [autoclaw](https://github.com/SuperInstance/autoclaw)
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
 - [cudaclaw](https://github.com/SuperInstance/cudaclaw)
-- [grand-pattern-gpu](https://github.com/SuperInstance/grand-pattern-gpu)
 - [grand-pattern-ptx](https://github.com/SuperInstance/grand-pattern-ptx)
 - [guard2mask-gpu](https://github.com/SuperInstance/guard2mask-gpu)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
@@ -270,6 +269,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [podiumjs-rocks](https://github.com/SuperInstance/podiumjs-rocks)
 - [polln](https://github.com/SuperInstance/polln)
 - [ptx-room](https://github.com/SuperInstance/ptx-room)
+- [quilt-cellular-arch](https://github.com/SuperInstance/quilt-cellular-arch)
 - [quilt-metal](https://github.com/SuperInstance/quilt-metal)
 - [slackwater-forge](https://github.com/SuperInstance/slackwater-forge)
 - [superinstance-gpu-compute](https://github.com/SuperInstance/superinstance-gpu-compute)
@@ -392,10 +392,13 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Multi Agent
 
 - [A2A-native-notebookLM](https://github.com/SuperInstance/A2A-native-notebookLM)
+- [AgentCompute](https://github.com/SuperInstance/AgentCompute)
+- [AgentGossip](https://github.com/SuperInstance/AgentGossip)
 - [Baton](https://github.com/SuperInstance/Baton)
 - [Equipment-Consensus-Engine](https://github.com/SuperInstance/Equipment-Consensus-Engine)
 - [I](https://github.com/SuperInstance/I)
 - [Luma](https://github.com/SuperInstance/Luma)
+- [MerkleMesh](https://github.com/SuperInstance/MerkleMesh)
 - [Murmur](https://github.com/SuperInstance/Murmur)
 - [OpenConstruct](https://github.com/SuperInstance/OpenConstruct)
 - [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
@@ -493,7 +496,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-agent](https://github.com/SuperInstance/git-agent)
 - [git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)
 - [git-native-agents](https://github.com/SuperInstance/git-native-agents)
-- [grand-pattern-integration](https://github.com/SuperInstance/grand-pattern-integration)
 - [grand-pattern-sim](https://github.com/SuperInstance/grand-pattern-sim)
 - [grand-pattern-venue](https://github.com/SuperInstance/grand-pattern-venue)
 - [guard](https://github.com/SuperInstance/guard)
@@ -1358,6 +1360,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [Edge-Native](https://github.com/SuperInstance/Edge-Native)
 - [INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)
 - [OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)
+- [RTSnavigator](https://github.com/SuperInstance/RTSnavigator)
 - [Scrapcraft](https://github.com/SuperInstance/Scrapcraft)
 - [SubForge](https://github.com/SuperInstance/SubForge)
 - [a2ui](https://github.com/SuperInstance/a2ui)
@@ -1412,11 +1415,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flow-state](https://github.com/SuperInstance/flow-state)
 - [forgemaster-shell](https://github.com/SuperInstance/forgemaster-shell)
 - [git-native-mud](https://github.com/SuperInstance/git-native-mud)
-- [grand-pattern-go](https://github.com/SuperInstance/grand-pattern-go)
-- [grand-pattern-java](https://github.com/SuperInstance/grand-pattern-java)
-- [grand-pattern-kimi](https://github.com/SuperInstance/grand-pattern-kimi)
-- [grand-pattern-kit](https://github.com/SuperInstance/grand-pattern-kit)
-- [grand-pattern-mojo](https://github.com/SuperInstance/grand-pattern-mojo)
 - [grand-pattern-mono-go](https://github.com/SuperInstance/grand-pattern-mono-go)
 - [grand-pattern-mono-py](https://github.com/SuperInstance/grand-pattern-mono-py)
 - [grand-pattern-mono-ts](https://github.com/SuperInstance/grand-pattern-mono-ts)
@@ -1807,6 +1805,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-core-os](https://github.com/SuperInstance/quilt-core-os)
 - [quilt-cowboy](https://github.com/SuperInstance/quilt-cowboy)
 - [quilt-ecosystem-demo](https://github.com/SuperInstance/quilt-ecosystem-demo)
+- [quilt-ecosystem-web](https://github.com/SuperInstance/quilt-ecosystem-web)
 - [quilt-elf](https://github.com/SuperInstance/quilt-elf)
 - [quilt-esp32](https://github.com/SuperInstance/quilt-esp32)
 - [quilt-evolve](https://github.com/SuperInstance/quilt-evolve)
@@ -1825,6 +1824,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-rust](https://github.com/SuperInstance/quilt-rust)
 - [quilt-saddle-bridge](https://github.com/SuperInstance/quilt-saddle-bridge)
 - [quilt-state](https://github.com/SuperInstance/quilt-state)
+- [quilt-substrate-meta](https://github.com/SuperInstance/quilt-substrate-meta)
 - [quilt-swarm](https://github.com/SuperInstance/quilt-swarm)
 - [quilt-system](https://github.com/SuperInstance/quilt-system)
 - [quilt-time](https://github.com/SuperInstance/quilt-time)
