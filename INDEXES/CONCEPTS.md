@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-27 16:09 UTC
+**Generated:** 2026-08-28 17:11 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -120,6 +120,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [cudaclaw](https://github.com/SuperInstance/cudaclaw)
 - [emergence-engine](https://github.com/SuperInstance/emergence-engine)
 - [emergency-alerts](https://github.com/SuperInstance/emergency-alerts)
+- [emergency-dispatch-simulation-system](https://github.com/SuperInstance/emergency-dispatch-simulation-system)
 - [fleet-experiments](https://github.com/SuperInstance/fleet-experiments)
 - [fleet-stitch](https://github.com/SuperInstance/fleet-stitch)
 - [grand-synthesis](https://github.com/SuperInstance/grand-synthesis)
@@ -247,7 +248,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [autoclaw](https://github.com/SuperInstance/autoclaw)
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
 - [cudaclaw](https://github.com/SuperInstance/cudaclaw)
-- [grand-pattern-ptx](https://github.com/SuperInstance/grand-pattern-ptx)
 - [guard2mask-gpu](https://github.com/SuperInstance/guard2mask-gpu)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
 - [jc1-ct-bridge](https://github.com/SuperInstance/jc1-ct-bridge)
@@ -270,6 +270,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [polln](https://github.com/SuperInstance/polln)
 - [ptx-room](https://github.com/SuperInstance/ptx-room)
 - [quilt-cellular-arch](https://github.com/SuperInstance/quilt-cellular-arch)
+- [quilt-cuda](https://github.com/SuperInstance/quilt-cuda)
 - [quilt-metal](https://github.com/SuperInstance/quilt-metal)
 - [slackwater-forge](https://github.com/SuperInstance/slackwater-forge)
 - [superinstance-gpu-compute](https://github.com/SuperInstance/superinstance-gpu-compute)
@@ -392,6 +393,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Multi Agent
 
 - [A2A-native-notebookLM](https://github.com/SuperInstance/A2A-native-notebookLM)
+- [AVA-AI-Voice-Agent-for-Asterisk](https://github.com/SuperInstance/AVA-AI-Voice-Agent-for-Asterisk)
 - [AgentCompute](https://github.com/SuperInstance/AgentCompute)
 - [AgentGossip](https://github.com/SuperInstance/AgentGossip)
 - [Baton](https://github.com/SuperInstance/Baton)
@@ -496,7 +498,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-agent](https://github.com/SuperInstance/git-agent)
 - [git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)
 - [git-native-agents](https://github.com/SuperInstance/git-native-agents)
-- [grand-pattern-sim](https://github.com/SuperInstance/grand-pattern-sim)
 - [grand-pattern-venue](https://github.com/SuperInstance/grand-pattern-venue)
 - [guard](https://github.com/SuperInstance/guard)
 - [harness-experiments](https://github.com/SuperInstance/harness-experiments)
@@ -1271,6 +1272,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-cobol](https://github.com/SuperInstance/quilt-cobol)
 - [quilt-cpp](https://github.com/SuperInstance/quilt-cpp)
 - [quilt-csharp](https://github.com/SuperInstance/quilt-csharp)
+- [quilt-edge-arch](https://github.com/SuperInstance/quilt-edge-arch)
 - [quilt-gc](https://github.com/SuperInstance/quilt-gc)
 - [quilt-julia](https://github.com/SuperInstance/quilt-julia)
 - [quilt-linker](https://github.com/SuperInstance/quilt-linker)
@@ -1363,6 +1365,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [RTSnavigator](https://github.com/SuperInstance/RTSnavigator)
 - [Scrapcraft](https://github.com/SuperInstance/Scrapcraft)
 - [SubForge](https://github.com/SuperInstance/SubForge)
+- [ZkCanvas](https://github.com/SuperInstance/ZkCanvas)
 - [a2ui](https://github.com/SuperInstance/a2ui)
 - [active-probe](https://github.com/SuperInstance/active-probe)
 - [activeledger-ai-pages](https://github.com/SuperInstance/activeledger-ai-pages)
@@ -1415,17 +1418,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flow-state](https://github.com/SuperInstance/flow-state)
 - [forgemaster-shell](https://github.com/SuperInstance/forgemaster-shell)
 - [git-native-mud](https://github.com/SuperInstance/git-native-mud)
-- [grand-pattern-mono-go](https://github.com/SuperInstance/grand-pattern-mono-go)
-- [grand-pattern-mono-py](https://github.com/SuperInstance/grand-pattern-mono-py)
-- [grand-pattern-mono-ts](https://github.com/SuperInstance/grand-pattern-mono-ts)
-- [grand-pattern-net](https://github.com/SuperInstance/grand-pattern-net)
-- [grand-pattern-py](https://github.com/SuperInstance/grand-pattern-py)
 - [grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)
-- [grand-pattern-simd](https://github.com/SuperInstance/grand-pattern-simd)
-- [grand-pattern-store](https://github.com/SuperInstance/grand-pattern-store)
-- [grand-pattern-swift](https://github.com/SuperInstance/grand-pattern-swift)
-- [grand-pattern-topology](https://github.com/SuperInstance/grand-pattern-topology)
-- [grand-pattern-ts](https://github.com/SuperInstance/grand-pattern-ts)
 - [grand-pattern-wasm](https://github.com/SuperInstance/grand-pattern-wasm)
 - [grand-pattern-zig](https://github.com/SuperInstance/grand-pattern-zig)
 - [granger-causality](https://github.com/SuperInstance/granger-causality)
@@ -1740,6 +1733,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [onboard-demo](https://github.com/SuperInstance/onboard-demo)
 - [open-mind](https://github.com/SuperInstance/open-mind)
 - [open-mythos-edge](https://github.com/SuperInstance/open-mythos-edge)
+- [openPlan3D](https://github.com/SuperInstance/openPlan3D)
 - [openconstruct-c](https://github.com/SuperInstance/openconstruct-c)
 - [openconstruct-catalog](https://github.com/SuperInstance/openconstruct-catalog)
 - [openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)
@@ -1807,6 +1801,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-ecosystem-demo](https://github.com/SuperInstance/quilt-ecosystem-demo)
 - [quilt-ecosystem-web](https://github.com/SuperInstance/quilt-ecosystem-web)
 - [quilt-elf](https://github.com/SuperInstance/quilt-elf)
+- [quilt-engine-ports](https://github.com/SuperInstance/quilt-engine-ports)
 - [quilt-esp32](https://github.com/SuperInstance/quilt-esp32)
 - [quilt-evolve](https://github.com/SuperInstance/quilt-evolve)
 - [quilt-flow](https://github.com/SuperInstance/quilt-flow)
@@ -1816,6 +1811,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-k3s](https://github.com/SuperInstance/quilt-k3s)
 - [quilt-live](https://github.com/SuperInstance/quilt-live)
 - [quilt-llm-worker](https://github.com/SuperInstance/quilt-llm-worker)
+- [quilt-mhs](https://github.com/SuperInstance/quilt-mhs)
 - [quilt-nomad](https://github.com/SuperInstance/quilt-nomad)
 - [quilt-picker](https://github.com/SuperInstance/quilt-picker)
 - [quilt-pincher](https://github.com/SuperInstance/quilt-pincher)
@@ -1835,6 +1831,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-vm-haskell](https://github.com/SuperInstance/quilt-vm-haskell)
 - [quilt-vm-rust](https://github.com/SuperInstance/quilt-vm-rust)
 - [quilt-vm-typescript](https://github.com/SuperInstance/quilt-vm-typescript)
+- [quilt-wiki-2126](https://github.com/SuperInstance/quilt-wiki-2126)
 - [quilt-zk](https://github.com/SuperInstance/quilt-zk)
 - [quipu-math](https://github.com/SuperInstance/quipu-math)
 - [quipu-math-c](https://github.com/SuperInstance/quipu-math-c)
@@ -2025,6 +2022,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [statistical-learning](https://github.com/SuperInstance/statistical-learning)
 - [step-back-operator](https://github.com/SuperInstance/step-back-operator)
 - [step-back-topology](https://github.com/SuperInstance/step-back-topology)
+- [stock-screener](https://github.com/SuperInstance/stock-screener)
 - [string-search-rs](https://github.com/SuperInstance/string-search-rs)
 - [study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)
 - [study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)
@@ -2335,6 +2333,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [thermodynamics](https://github.com/SuperInstance/thermodynamics)
 - [tick-engine-v2](https://github.com/SuperInstance/tick-engine-v2)
 - [tiny-ecs](https://github.com/SuperInstance/tiny-ecs)
+- [tit-quilt](https://github.com/SuperInstance/tit-quilt)
 - [tminus-music](https://github.com/SuperInstance/tminus-music)
 - [token-stream](https://github.com/SuperInstance/token-stream)
 - [token-wavelet](https://github.com/SuperInstance/token-wavelet)
@@ -2348,6 +2347,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tropical-graph](https://github.com/SuperInstance/tropical-graph)
 - [tropical-harmony-rs](https://github.com/SuperInstance/tropical-harmony-rs)
 - [universe-chain](https://github.com/SuperInstance/universe-chain)
+- [urban-transportation-system](https://github.com/SuperInstance/urban-transportation-system)
 - [venue-personality](https://github.com/SuperInstance/venue-personality)
 - [vessel](https://github.com/SuperInstance/vessel)
 - [vessel-bridge](https://github.com/SuperInstance/vessel-bridge)
@@ -2400,6 +2400,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Voice Signature
 
+- [AVA-AI-Voice-Agent-for-Asterisk](https://github.com/SuperInstance/AVA-AI-Voice-Agent-for-Asterisk)
 - [activelog-app](https://github.com/SuperInstance/activelog-app)
 - [handy-marine-voice](https://github.com/SuperInstance/handy-marine-voice)
 - [hermes-avatar](https://github.com/SuperInstance/hermes-avatar)
