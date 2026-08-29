@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-28 17:11 UTC
+**Generated:** 2026-08-29 11:30 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -123,7 +123,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [emergency-dispatch-simulation-system](https://github.com/SuperInstance/emergency-dispatch-simulation-system)
 - [fleet-experiments](https://github.com/SuperInstance/fleet-experiments)
 - [fleet-stitch](https://github.com/SuperInstance/fleet-stitch)
-- [grand-synthesis](https://github.com/SuperInstance/grand-synthesis)
 - [h1-emergence](https://github.com/SuperInstance/h1-emergence)
 - [lau-conservation-experiment](https://github.com/SuperInstance/lau-conservation-experiment)
 - [lau-conservation-laws](https://github.com/SuperInstance/lau-conservation-laws)
@@ -498,7 +497,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-agent](https://github.com/SuperInstance/git-agent)
 - [git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)
 - [git-native-agents](https://github.com/SuperInstance/git-native-agents)
-- [grand-pattern-venue](https://github.com/SuperInstance/grand-pattern-venue)
 - [guard](https://github.com/SuperInstance/guard)
 - [harness-experiments](https://github.com/SuperInstance/harness-experiments)
 - [hebbian-router](https://github.com/SuperInstance/hebbian-router)
@@ -1400,6 +1398,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [deckhand-rs](https://github.com/SuperInstance/deckhand-rs)
 - [deepseek-harness-quilt](https://github.com/SuperInstance/deepseek-harness-quilt)
 - [domain-landing](https://github.com/SuperInstance/domain-landing)
+- [dsh-assessment](https://github.com/SuperInstance/dsh-assessment)
 - [ec2mud](https://github.com/SuperInstance/ec2mud)
 - [edge-compiler](https://github.com/SuperInstance/edge-compiler)
 - [edge-equipment-catalog](https://github.com/SuperInstance/edge-equipment-catalog)
@@ -1419,9 +1418,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [forgemaster-shell](https://github.com/SuperInstance/forgemaster-shell)
 - [git-native-mud](https://github.com/SuperInstance/git-native-mud)
 - [grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)
-- [grand-pattern-wasm](https://github.com/SuperInstance/grand-pattern-wasm)
-- [grand-pattern-zig](https://github.com/SuperInstance/grand-pattern-zig)
-- [granger-causality](https://github.com/SuperInstance/granger-causality)
 - [graph-algorithms](https://github.com/SuperInstance/graph-algorithms)
 - [graph-centrality](https://github.com/SuperInstance/graph-centrality)
 - [graph-coloring](https://github.com/SuperInstance/graph-coloring)
@@ -1795,6 +1791,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-casting](https://github.com/SuperInstance/quilt-casting)
 - [quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare)
 - [quilt-codespace](https://github.com/SuperInstance/quilt-codespace)
+- [quilt-conformance](https://github.com/SuperInstance/quilt-conformance)
 - [quilt-cordis](https://github.com/SuperInstance/quilt-cordis)
 - [quilt-core-os](https://github.com/SuperInstance/quilt-core-os)
 - [quilt-cowboy](https://github.com/SuperInstance/quilt-cowboy)
@@ -1806,6 +1803,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-evolve](https://github.com/SuperInstance/quilt-evolve)
 - [quilt-flow](https://github.com/SuperInstance/quilt-flow)
 - [quilt-foundation](https://github.com/SuperInstance/quilt-foundation)
+- [quilt-geometry](https://github.com/SuperInstance/quilt-geometry)
 - [quilt-id](https://github.com/SuperInstance/quilt-id)
 - [quilt-jetson](https://github.com/SuperInstance/quilt-jetson)
 - [quilt-k3s](https://github.com/SuperInstance/quilt-k3s)
@@ -1854,6 +1852,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [rc-20260824-09](https://github.com/SuperInstance/rc-20260824-09)
 - [rc-20260824-10](https://github.com/SuperInstance/rc-20260824-10)
 - [rc-20260824-11](https://github.com/SuperInstance/rc-20260824-11)
+- [rd](https://github.com/SuperInstance/rd)
 - [reallog-ai-pages](https://github.com/SuperInstance/reallog-ai-pages)
 - [recovered-copy-20260824-ACE-Step-1.5](https://github.com/SuperInstance/recovered-copy-20260824-ACE-Step-1.5)
 - [recovered-copy-20260824-DigitalTwin-RobotStudio-SmartComponent](https://github.com/SuperInstance/recovered-copy-20260824-DigitalTwin-RobotStudio-SmartComponent)
@@ -2334,6 +2333,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tick-engine-v2](https://github.com/SuperInstance/tick-engine-v2)
 - [tiny-ecs](https://github.com/SuperInstance/tiny-ecs)
 - [tit-quilt](https://github.com/SuperInstance/tit-quilt)
+- [tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)
 - [tminus-music](https://github.com/SuperInstance/tminus-music)
 - [token-stream](https://github.com/SuperInstance/token-stream)
 - [token-wavelet](https://github.com/SuperInstance/token-wavelet)

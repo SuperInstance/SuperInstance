@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-28 17:11 UTC
+**Generated:** 2026-08-29 11:30 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -407,7 +407,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[crab-trap-web](https://github.com/SuperInstance/crab-trap-web)** | CCC | Browser-based MUD explorer for the Crab Traps — 36+ rooms to explore | 🟢 active |
 | **[ensign-protocol](https://github.com/SuperInstance/ensign-protocol)** | CCC | Cocapn fleet crate | 🟢 active |
 | **[fm-experiments](https://github.com/SuperInstance/fm-experiments)** | CCC | Extracted from forgemaster/experiments — Cocapn fleet component | 🟢 active |
-| **[grand-pattern-wasm](https://github.com/SuperInstance/grand-pattern-wasm)** | CCC | WebAssembly port — Grand Pattern runs in any browser with JS visualization | 🟢 active |
 | **[handy-marine-voice](https://github.com/SuperInstance/handy-marine-voice)** | CCC | Voice-controlled marine autopilot. Handy hears you. CoCapn steers. No cloud required. | 🟢 active |
 | **[herdr-cocapn](https://github.com/SuperInstance/herdr-cocapn)** | CCC | herdr + cocapn-core: agent multiplexer meets fleet management. Automatic tier escalation and deadban | 🟢 active |
 | **[hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)** | CCC | Multi-model exploration of the hermit crab architecture — shell ecology, instance molting, and the i | 🟢 active |
@@ -526,6 +525,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[deckhand-rs](https://github.com/SuperInstance/deckhand-rs)** | Various | Rust BM25 retriever. Zero-dep. 10-100x faster than Python. | ⚪ unknown |
 | **[deepseek-harness-quilt](https://github.com/SuperInstance/deepseek-harness-quilt)** | Various | DeepSeek Harness: Everything is a Plugin. | ⚪ unknown |
 | **[domain-landing](https://github.com/SuperInstance/domain-landing)** | Various | Reusable landing page Worker — deploy to any custom domain | ⚪ unknown |
+| **[dsh-assessment](https://github.com/SuperInstance/dsh-assessment)** | Various | dsh-assessment | ⚪ unknown |
 | **[ec2mud](https://github.com/SuperInstance/ec2mud)** | Various | MUD (multi-user dungeon) game engine built on EC2 infrastructure | ⚪ unknown |
 | **[elephant](https://github.com/SuperInstance/elephant)** | Various | elephant | ⚪ unknown |
 | **[elephant-sim-worker](https://github.com/SuperInstance/elephant-sim-worker)** | Various | elephant-sim-worker | ⚪ unknown |
@@ -550,10 +550,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** | Various | Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o | 🟢 active |
 | **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** | Various | 🔮 The repo IS the world. Commits ARE actions. Zero server MUD. | ⚪ unknown |
 | **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** | Various | Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation | ⚪ unknown |
-| **[grand-pattern-venue](https://github.com/SuperInstance/grand-pattern-venue)** | Various | Venues are agents — JEPA prompt-injects the abstraction of the moment. Venues develop vibes like per | 🟢 active |
-| **[grand-pattern-zig](https://github.com/SuperInstance/grand-pattern-zig)** | Various | Zig Grand Pattern toolkit — comptime-powered cellular graph intelligence | ⚪ unknown |
-| **[grand-synthesis](https://github.com/SuperInstance/grand-synthesis)** | Various | Multi-model architectural competition for the Metronome Architecture — cross-model critiques and mer | ⚪ unknown |
-| **[granger-causality](https://github.com/SuperInstance/granger-causality)** | Various | granger-causality | ⚪ unknown |
 | **[graph-algorithms](https://github.com/SuperInstance/graph-algorithms)** | Various | Graph algorithms in Rust — connectivity, flows, shortest paths, spanning trees, spectral methods | ⚪ unknown |
 | **[graph-centrality](https://github.com/SuperInstance/graph-centrality)** | Various | Graph centrality measures: betweenness, closeness, eigenvector, PageRank — Rust graph library | ⚪ unknown |
 | **[graph-coloring](https://github.com/SuperInstance/graph-coloring)** | Various | Graph coloring with greedy, DSATUR, and backtracking algorithms — Rust graph library | ⚪ unknown |
@@ -1264,6 +1260,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-cellular-arch](https://github.com/SuperInstance/quilt-cellular-arch)** | Various | The cellular-relationship-first design: each cell plays as a first-person shooter; the cowboy sees t | ⚪ unknown |
 | **[quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare)** | Various | A Quilt reactive runtime on Cloudflare Workers, D1, Vectorize, KV, R2. | ⚪ unknown |
 | **[quilt-codespace](https://github.com/SuperInstance/quilt-codespace)** | Various | GitHub Codespace template that runs Quilt as a live, token-authenticated, federated runtime | ⚪ unknown |
+| **[quilt-conformance](https://github.com/SuperInstance/quilt-conformance)** | Various | quilt-conformance | ⚪ unknown |
 | **[quilt-cordis](https://github.com/SuperInstance/quilt-cordis)** | Various | The bridge between Quilt cells and Cordis plugins. Everything is a cell, everything is a plugin. | ⚪ unknown |
 | **[quilt-core-os](https://github.com/SuperInstance/quilt-core-os)** | Various | Quilt ecosystem component:  | ⚪ unknown |
 | **[quilt-cowboy](https://github.com/SuperInstance/quilt-cowboy)** | Various | The cowboy: reflection loop, morning ritual, and real-time reactor for the Quilt ecosystem. | ⚪ unknown |
@@ -1275,6 +1272,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-fleet](https://github.com/SuperInstance/quilt-fleet)** | Various | Quilt runtime for multi-tier federation orchestrator — discovery, health, quorum, migration, auto-sc | ⚪ unknown |
 | **[quilt-flow](https://github.com/SuperInstance/quilt-flow)** | Various | Quilt sketch — see README. | ⚪ unknown |
 | **[quilt-foundation](https://github.com/SuperInstance/quilt-foundation)** | Various | The 5-opcode Quilt VM. Foundation layer for cells, plugins, sheets, MUDs, TTRPGs, and the bay dance. | ⚪ unknown |
+| **[quilt-geometry](https://github.com/SuperInstance/quilt-geometry)** | Various | quilt-geometry | ⚪ unknown |
 | **[quilt-id](https://github.com/SuperInstance/quilt-id)** | Various | phi-Address Penrose content addressing | ⚪ unknown |
 | **[quilt-k3s](https://github.com/SuperInstance/quilt-k3s)** | Various | Quilt ecosystem component:  | ⚪ unknown |
 | **[quilt-llm-worker](https://github.com/SuperInstance/quilt-llm-worker)** | Various | Cloudflare Worker that proxies LLM calls for Quilt with rate limiting and Workers AI fallback. Self- | ⚪ unknown |
@@ -1317,6 +1315,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[rc-20260824-09](https://github.com/SuperInstance/rc-20260824-09)** | Various | rc-20260824-09 | ⚪ unknown |
 | **[rc-20260824-10](https://github.com/SuperInstance/rc-20260824-10)** | Various | rc-20260824-10 | ⚪ unknown |
 | **[rc-20260824-11](https://github.com/SuperInstance/rc-20260824-11)** | Various | rc-20260824-11 | ⚪ unknown |
+| **[rd](https://github.com/SuperInstance/rd)** | Various | rd | ⚪ unknown |
 | **[recovered-copy-20260824-ACE-Step-1.5](https://github.com/SuperInstance/recovered-copy-20260824-ACE-Step-1.5)** | Various | recovered-copy-20260824-ACE-Step-1.5 | ⚪ unknown |
 | **[recovered-copy-20260824-agent-writings-archive](https://github.com/SuperInstance/recovered-copy-20260824-agent-writings-archive)** | Various | recovered-copy-20260824-agent-writings-archive | 🟢 active |
 | **[recovered-copy-20260824-base60-lattice](https://github.com/SuperInstance/recovered-copy-20260824-base60-lattice)** | Various | recovered-copy-20260824-base60-lattice | ⚪ unknown |
@@ -1956,6 +1955,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tiny-agent-protocol](https://github.com/SuperInstance/tiny-agent-protocol)** | Various | Rust exocortex crate: tiny-agent-protocol | 🟢 active |
 | **[tiny-ecs](https://github.com/SuperInstance/tiny-ecs)** | Various | Minimal archetype-based Entity-Component-System in Rust | ⚪ unknown |
 | **[tiny-neural](https://github.com/SuperInstance/tiny-neural)** | Various | Tiny neural network library in Rust — from-scratch tensors, layers, backprop, optimizers. No GPU, no | ⚪ unknown |
+| **[tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)** | Various | tit_quilt_elixir | ⚪ unknown |
 | **[tminus-music](https://github.com/SuperInstance/tminus-music)** | Various | T-minus musical event prediction using conservation spectral theory | ⚪ unknown |
 | **[token-stream](https://github.com/SuperInstance/token-stream)** | Various | Token streaming library for LLM inference in SuperInstance | ⚪ unknown |
 | **[token-wavelet](https://github.com/SuperInstance/token-wavelet)** | Various | AI token spending intelligence: wavelet decomposition, conservation law budgeting, and spectral mode | ⚪ unknown |
@@ -4719,13 +4719,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
-### [grand-pattern-wasm](https://github.com/SuperInstance/grand-pattern-wasm)
-- **Domain:** Web & Browser
-- **Vessel:** CCC
-- **Purpose:** WebAssembly port — Grand Pattern runs in any browser with JS visualization
-- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
-- **Status:** active
-
 ### [handy-marine-voice](https://github.com/SuperInstance/handy-marine-voice)
 - **Domain:** Web & Browser
 - **Vessel:** CCC
@@ -5304,13 +5297,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead of databases or message queues
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [grand-pattern-venue](https://github.com/SuperInstance/grand-pattern-venue)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Venues are agents — JEPA prompt-injects the abstraction of the moment. Venues develop vibes like personality.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
