@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-29 11:30 UTC
+**Generated:** 2026-08-30 10:18 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1418,7 +1418,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [forgemaster-shell](https://github.com/SuperInstance/forgemaster-shell)
 - [git-native-mud](https://github.com/SuperInstance/git-native-mud)
 - [grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)
-- [graph-algorithms](https://github.com/SuperInstance/graph-algorithms)
 - [graph-centrality](https://github.com/SuperInstance/graph-centrality)
 - [graph-coloring](https://github.com/SuperInstance/graph-coloring)
 - [graph-flow](https://github.com/SuperInstance/graph-flow)
@@ -1825,6 +1824,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-tui](https://github.com/SuperInstance/quilt-tui)
 - [quilt-vault](https://github.com/SuperInstance/quilt-vault)
 - [quilt-velato](https://github.com/SuperInstance/quilt-velato)
+- [quilt-verilog](https://github.com/SuperInstance/quilt-verilog)
 - [quilt-vision](https://github.com/SuperInstance/quilt-vision)
 - [quilt-vm-haskell](https://github.com/SuperInstance/quilt-vm-haskell)
 - [quilt-vm-rust](https://github.com/SuperInstance/quilt-vm-rust)
