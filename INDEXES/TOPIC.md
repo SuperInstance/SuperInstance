@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-08-30 10:18 UTC
+**Generated:** 2026-08-31 11:24 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -92,7 +92,6 @@
 ## Deep-Learning
 
 - **[exocortex-kernel-c](https://github.com/SuperInstance/exocortex-kernel-c)** — Pure C99 ML kernel — neural networks, logistic regression, K-means, isolation forests with zero depe
-- **[graph-neural](https://github.com/SuperInstance/graph-neural)** — Graph neural networks with conservation spectral analysis — spectral convolutions, conservation-awar
 - **[lau-neural-networks](https://github.com/SuperInstance/lau-neural-networks)** — Neural network fundamentals: tensors, activations, loss functions, backpropagation, optimizers, regu
 - **[lau-sheaf-neural](https://github.com/SuperInstance/lau-sheaf-neural)**
 - **[logtensor](https://github.com/SuperInstance/logtensor)** — Geometric tensor transformers — missile-guidance-inspired attention mechanics and decomposition tool
@@ -137,6 +136,7 @@
 - **[flux-compiler-rs](https://github.com/SuperInstance/flux-compiler-rs)** — FLUX bytecode assembler, disassembler, and validator (Rust)
 - **[flux-core](https://github.com/SuperInstance/flux-core)** — FLUX bytecode runtime — Fluid Language Universal eXecution: a zero-dependency register-based VM. Pub
 - **[flux-cross-assembler](https://github.com/SuperInstance/flux-cross-assembler)** — Dual-target FLUX assembler — cloud (4-byte fixed) and edge (variable-width) bytecode compiler
+- **[flux-dsh-plugin](https://github.com/SuperInstance/flux-dsh-plugin)**
 - **[flux-genome-rs](https://github.com/SuperInstance/flux-genome-rs)** — Genetic algorithm engine for evolving musical structures and harmonic patterns
 - **[flux-js](https://github.com/SuperInstance/flux-js)** — FLUX.js — JavaScript bytecode VM with A2A agent messaging. 373ns/iter via V8 JIT.
 - **[flux-policy-tester](https://github.com/SuperInstance/flux-policy-tester)** — 🧪 Testing framework for FLUX bytecode agent policies — verify behavior, fuzz edge cases, enforce con
@@ -231,7 +231,6 @@
 ## H1-Cohomology
 
 - **[constraint-theory-math](https://github.com/SuperInstance/constraint-theory-math)** — Sheaf cohomology, Heyting-valued logic, and GL(9) holonomy: unified mathematical framework for const
-- **[graph-homology](https://github.com/SuperInstance/graph-homology)** — Homological invariants of graphs — clique complexes, Betti numbers, Euler characteristic, and graph 
 - **[h1-emergence](https://github.com/SuperInstance/h1-emergence)** — H1 cohomology emergence detection — replacing 12,000-line ML anomaly detection with algebraic topolo
 - **[iching-sheaf](https://github.com/SuperInstance/iching-sheaf)** — The I Ching as a sheaf-theoretic system: hexagram topology, cohomology of readings, categorical stru
 - **[lau-algebraic-topology](https://github.com/SuperInstance/lau-algebraic-topology)** — Fundamental algebraic topology in Rust: homology, cohomology, Mayer-Vietoris, Poincaré duality, homo
@@ -314,9 +313,11 @@
 - **[fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble)** — Multi-agent music coordination — orchestrates multiple ensigns
 - **[fleet-envelope](https://github.com/SuperInstance/fleet-envelope)**
 - **[fleet-experiments](https://github.com/SuperInstance/fleet-experiments)** — Experimental verification of fleet math assumptions — script speedup, One Delta accuracy, H1 emergen
+- **[fleet-functions](https://github.com/SuperInstance/fleet-functions)** — Vectorized function API — capability discovered by meaning. 55 seeded fleet functions, semantic sear
 - **[fleet-gateway](https://github.com/SuperInstance/fleet-gateway)** — Unified API gateway for Pelagic fleet — service discovery, routing, auth, rate limiting
 - **[fleet-github-app](https://github.com/SuperInstance/fleet-github-app)** — The Lighthouse Keeper as a GitHub App — webhooks, bot identity, fleet nervous system
 - **[fleet-homunculus](https://github.com/SuperInstance/fleet-homunculus)** — 🫀 Fleet body image + reflex arcs. Pain assessment with GABAergic cooldown.
+- **[fleet-inventory](https://github.com/SuperInstance/fleet-inventory)** — Fleet inventory and repo assessment
 - **[fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi)** — Three-layer real-time music intelligence: LLM thinks in phrasing, JEPA feels in pulse, algorithms ex
 - **[fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)** — Fleet liaison service for inter-vessel communication and tender coordination
 - **[fleet-memory](https://github.com/SuperInstance/fleet-memory)** — Content-addressable distributed memory for fleets: store, retrieve, error-correct, holographic stora
@@ -331,6 +332,7 @@
 - **[fleet-stitch](https://github.com/SuperInstance/fleet-stitch)** — Fleet stitching — merge agent outputs into coherent narratives
 - **[fleet-topology](https://github.com/SuperInstance/fleet-topology)** — Fleet network topology — agent connectivity, routing, and graph analysis
 - **[fleet-tts](https://github.com/SuperInstance/fleet-tts)** — fleet-tts
+- **[fleet-twin](https://github.com/SuperInstance/fleet-twin)** — Vector twin of the SuperInstance corpus — cloud (Workers+Vectorize) + local (Ollama) query, MCP serv
 - **[fleet-vessel](https://github.com/SuperInstance/fleet-vessel)** — Fleet's git-native garbage collector agent
 - **[fleet-yaw](https://github.com/SuperInstance/fleet-yaw)** — Fleet yaw autopilot — learns fleet physics from first-person perspective bearing-rate observations i
 - **[fm-experiments](https://github.com/SuperInstance/fm-experiments)** — Extracted from forgemaster/experiments — Cocapn fleet component
@@ -929,6 +931,7 @@
 - **[playerlog-agent](https://github.com/SuperInstance/playerlog-agent)** — playerlog domain agent for PLATO fleet
 - **[polln](https://github.com/SuperInstance/polln)** — SuperInstance Visualized in Spreadsheets for Tile Intelligence in real-time workflows, simulations o
 - **[quilt-cell-bridges](https://github.com/SuperInstance/quilt-cell-bridges)** — Port the 300-repo SuperInstance ecosystem to Quilt cells. vessel, chart-room, slackwater, hermes.
+- **[quilt-scratch](https://github.com/SuperInstance/quilt-scratch)** — quilt-scratch — a no-code tile-wiring game engine where every cell is inspectable, swappable, and al
 - **[quilt-tutor](https://github.com/SuperInstance/quilt-tutor)** — Polyformalism: Quilt in Tutor (1970s PLATO)
 - **[recovered-copy-20260824-openrooms](https://github.com/SuperInstance/recovered-copy-20260824-openrooms)**
 - **[recovered-copy-20260824-platos-shell](https://github.com/SuperInstance/recovered-copy-20260824-platos-shell)**
@@ -1041,12 +1044,14 @@
 - **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** — Creative writing, essays, and philosophical explorations from the Exocortex project
 - **[AIR](https://github.com/SuperInstance/AIR)** — Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interact
 - **[alphabet](https://github.com/SuperInstance/alphabet)** — Standard Galactic Alphabet
+- **[asset-ranch](https://github.com/SuperInstance/asset-ranch)**
 - **[base60-lattice](https://github.com/SuperInstance/base60-lattice)**
 - **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** — 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton
 - **[batten-spline](https://github.com/SuperInstance/batten-spline)**
 - **[breed-registry](https://github.com/SuperInstance/breed-registry)** — The Breed Registry: model selection as breeding selection
 - **[captain-console](https://github.com/SuperInstance/captain-console)**
 - **[carry-protocol](https://github.com/SuperInstance/carry-protocol)** — Moving data across divides where infrastructure doesn't reach.
+- **[cell-cascade](https://github.com/SuperInstance/cell-cascade)**
 - **[cell-runtime](https://github.com/SuperInstance/cell-runtime)** — The Quilt canon as code: cell-runtime
 - **[chart-system](https://github.com/SuperInstance/chart-system)** — Polyformal navigation: four chart configurations that cross-reference the same problem space
 - **[claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)** — Claude Code workhorse vessel with experience journal and task delegation
@@ -1079,6 +1084,7 @@
 - **[exocortex-core](https://github.com/SuperInstance/exocortex-core)** — SuperInstance Exocortex — external brain architecture for small local models
 - **[exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)** — ESP32 sensor node for Exocortex — reads analog sensors, POSTs to /tap/sense, recalls memories, gets 
 - **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** — TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n
+- **[experiment-wheel](https://github.com/SuperInstance/experiment-wheel)**
 - **[experiments](https://github.com/SuperInstance/experiments)** — Experimental prototypes and explorations for the SuperInstance ecosystem
 - **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)**
 - **[fencecraft](https://github.com/SuperInstance/fencecraft)** — Fencecraft: visual fence builder for Working Animal Architecture
@@ -1088,17 +1094,7 @@
 - **[forgemaster-shell](https://github.com/SuperInstance/forgemaster-shell)** — ⚒️ OpenClaw Power Armor — Don the Forgemaster Shell and become a relentless execution engine
 - **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** — 🔮 The repo IS the world. Commits ARE actions. Zero server MUD.
 - **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** — Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation
-- **[graph-centrality](https://github.com/SuperInstance/graph-centrality)** — Graph centrality measures: betweenness, closeness, eigenvector, PageRank — Rust graph library
-- **[graph-coloring](https://github.com/SuperInstance/graph-coloring)** — Graph coloring with greedy, DSATUR, and backtracking algorithms — Rust graph library
-- **[graph-flow](https://github.com/SuperInstance/graph-flow)** — Network flow: max-flow (Ford-Fulkerson), min-cut, bipartite matching — Rust graph library
-- **[graph-planarity](https://github.com/SuperInstance/graph-planarity)** — Planarity testing with Kuratowski detection and planar embedding — Rust graph library
-- **[graph-spectral](https://github.com/SuperInstance/graph-spectral)** — Spectral graph theory: eigenvalues, Fiedler vector, spectral clustering — Rust graph library
-- **[graph-thermodynamics](https://github.com/SuperInstance/graph-thermodynamics)** — Thermodynamic properties of graphs: temperature, entropy, free energy, Ising model, phase transition
-- **[graphite-geometric-algebra](https://github.com/SuperInstance/graphite-geometric-algebra)** — Geometric algebra nodes for the Graphite editor — rotors, conformal embedding, reflections, and proj
 - **[gravity-well-protocol](https://github.com/SuperInstance/gravity-well-protocol)** — Edge-Native concept: Gravity Well Protocol
-- **[griot-math](https://github.com/SuperInstance/griot-math)** — Living memory mathematics — npm/TypeScript — stories as data structures, inspired by West African gr
-- **[griot-math-c](https://github.com/SuperInstance/griot-math-c)** — C99 living memory systems — griot oral tradition for edge/embedded. Story decay, praise names, feder
-- **[griot-math-pypi](https://github.com/SuperInstance/griot-math-pypi)** — Living memory systems for Python — stories, genealogy, praise names, and federated memory
 - **[griot-math-wasm](https://github.com/SuperInstance/griot-math-wasm)** — Living memory systems compiled to WebAssembly
 - **[groove-analyzer](https://github.com/SuperInstance/groove-analyzer)** — Microtiming → deadband analysis — proves groove IS the deadband funnel via ε-fitting
 - **[harmonic-analysis](https://github.com/SuperInstance/harmonic-analysis)** — Harmonic analysis in Rust — Fourier series, DFT/FFT, wavelets, spectral methods
@@ -1480,6 +1476,7 @@
 - **[quilt-k3s](https://github.com/SuperInstance/quilt-k3s)** — Quilt ecosystem component: 
 - **[quilt-live](https://github.com/SuperInstance/quilt-live)** — A portable, reactive data OS in a single HTML file. Browser-native. 8 cell kinds. Save state to a co
 - **[quilt-llm-worker](https://github.com/SuperInstance/quilt-llm-worker)** — Cloudflare Worker that proxies LLM calls for Quilt with rate limiting and Workers AI fallback. Self-
+- **[quilt-llvm](https://github.com/SuperInstance/quilt-llvm)** — quilt-llvm — a compiler infrastructure where the IR is a fabric of inspectable cells
 - **[quilt-mhs](https://github.com/SuperInstance/quilt-mhs)** — quilt × Anthropic's Model Hardware Standard: quilt cells drive MHS devices; quilt runtimes exposed A
 - **[quilt-nomad](https://github.com/SuperInstance/quilt-nomad)** — Quilt as a control plane for HashiCorp Nomad. Edit a spreadsheet cell; the Nomad cluster reconfigure
 - **[quilt-picker](https://github.com/SuperInstance/quilt-picker)** — Learned opener selection (Wilson + heuristic prior) for the Quilt substrate.
@@ -1602,6 +1599,7 @@
 - **[scale-fold](https://github.com/SuperInstance/scale-fold)** — scale-fold
 - **[scrap-quilt](https://github.com/SuperInstance/scrap-quilt)**
 - **[Scrapcraft](https://github.com/SuperInstance/Scrapcraft)** — Browser-based 3D voxel game set in an industrial scrapyard — middle schoolers build robots, program 
+- **[scrapcraft-roblox](https://github.com/SuperInstance/scrapcraft-roblox)**
 - **[scrapcraft-world](https://github.com/SuperInstance/scrapcraft-world)**
 - **[screenpipe-conservation](https://github.com/SuperInstance/screenpipe-conservation)** — screenpipe + conservation-checker: 24/7 recording meets resource conservation. Fork of screenpipe/sc
 - **[scripts](https://github.com/SuperInstance/scripts)** — Preserved workspace artifact
@@ -2001,10 +1999,12 @@
 - **[the-plenum-early-version](https://github.com/SuperInstance/the-plenum-early-version)** — [ARCHIVED] Early knowledge field explorer. 4KB scaffolding only.
 - **[the-relay](https://github.com/SuperInstance/the-relay)**
 - **[the-revolution](https://github.com/SuperInstance/the-revolution)** — The Revolution — SuperInstance manifesto and founding documents
+- **[the-tap](https://github.com/SuperInstance/the-tap)**
 - **[the-technician](https://github.com/SuperInstance/the-technician)** — The Technician Paradigm — white papers on physical AI systems, edge robotics, and technician trainin
 - **[the-technician-courses](https://github.com/SuperInstance/the-technician-courses)** — Course materials for the Training Port's educational platform — track outlines, worked exercises, ve
 - **[thermal-budget](https://github.com/SuperInstance/thermal-budget)** — Thermal budget management for SuperInstance compute infrastructure
 - **[thermodynamics](https://github.com/SuperInstance/thermodynamics)** — Thermodynamics in Rust — ideal gas, Carnot cycle, entropy, thermodynamic potentials, heat engines
+- **[thought-amplifier](https://github.com/SuperInstance/thought-amplifier)**
 - **[tick-engine-v2](https://github.com/SuperInstance/tick-engine-v2)** — High-precision tick engine v2 for real-time SuperInstance scheduling
 - **[tiny-ecs](https://github.com/SuperInstance/tiny-ecs)** — Minimal archetype-based Entity-Component-System in Rust
 - **[tit-quilt](https://github.com/SuperInstance/tit-quilt)** — A terminal toolbox that outlives its terminal — the session is a graph, not a process. Quilt-native 
