@@ -2,6 +2,20 @@
 
 Real-time metrics dashboard for Cloudflare Workers fleets built on Cloudflare Pages + Functions.
 
+<p align="center"><img src="assets/images/hero.jpg" alt="The chartroom where the fleet's vitals glow on brass gauges, read from inside the watch" width="680"></p>
+
+## How the numbers travel
+
+```mermaid
+flowchart LR
+    W[Fleet Workers] -->|metrics events| F[Pages Functions]
+    F --> D[(D1 — daily events)]
+    F --> K[(KV — hot cache)]
+    D --> F
+    K --> F
+    F -->|30s auto-refresh| UI[Dashboard UI]
+```
+
 ## Features
 
 - 📊 Real-time fleet metrics visualization
