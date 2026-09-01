@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-08-31 11:24 UTC
+**Generated:** 2026-09-01 09:47 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -984,6 +984,7 @@
 - **[quilt-opt](https://github.com/SuperInstance/quilt-opt)** — Layer 4 of the polyformalism — 5 optimizer passes for the 5 opcodes (BIND/LINK/EFFECT/VIEW/TICK). 11
 - **[quilt-polyformalism-dsl](https://github.com/SuperInstance/quilt-polyformalism-dsl)** — The 5 opcodes (BIND, LINK, EFFECT, VIEW, TICK) as language-level syntax in Python/Rust/Haskell. Laye
 - **[quilt-swift](https://github.com/SuperInstance/quilt-swift)** — Polyformalism: Quilt in Swift (actors, @Published, Combine)
+- **[quilt-timesfm-rust](https://github.com/SuperInstance/quilt-timesfm-rust)** — The Quilt time.cell cell kind, in no_std Rust, for embedded and edge devices (3rd polyformalism port
 - **[quilt-types](https://github.com/SuperInstance/quilt-types)** — Layer 2 of the polyformalism — the 5 opcodes as type-driven cell-graphs. 16 tests passing. JSON seri
 - **[quilt-vm-c](https://github.com/SuperInstance/quilt-vm-c)** — The 5-opcode Quilt VM in C. Closest to the metal. 0.11ms for all 8 polyformalisms.
 - **[quilt-vm-wasm](https://github.com/SuperInstance/quilt-vm-wasm)** — Layer 1 of the polyformalism — the 5 opcodes (BIND/LINK/EFFECT/VIEW/TICK) as a WASM library with bro
@@ -1095,8 +1096,6 @@
 - **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** — 🔮 The repo IS the world. Commits ARE actions. Zero server MUD.
 - **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** — Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation
 - **[gravity-well-protocol](https://github.com/SuperInstance/gravity-well-protocol)** — Edge-Native concept: Gravity Well Protocol
-- **[griot-math-wasm](https://github.com/SuperInstance/griot-math-wasm)** — Living memory systems compiled to WebAssembly
-- **[groove-analyzer](https://github.com/SuperInstance/groove-analyzer)** — Microtiming → deadband analysis — proves groove IS the deadband funnel via ε-fitting
 - **[harmonic-analysis](https://github.com/SuperInstance/harmonic-analysis)** — Harmonic analysis in Rust — Fourier series, DFT/FFT, wavelets, spectral methods
 - **[harmonic-plr-rs](https://github.com/SuperInstance/harmonic-plr-rs)** — PLR group operations for chord transformations - Parallel-Lead-Relative group acting on major/minor 
 - **[hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)**
@@ -1490,6 +1489,7 @@
 - **[quilt-swarm](https://github.com/SuperInstance/quilt-swarm)** — Quilt ecosystem component: 
 - **[quilt-system](https://github.com/SuperInstance/quilt-system)** — The Quilt ecosystem as a single entry point. Ties together 13 repos.
 - **[quilt-time](https://github.com/SuperInstance/quilt-time)** — Quilt sketch
+- **[quilt-timesfm](https://github.com/SuperInstance/quilt-timesfm)** — TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Goo
 - **[quilt-tui](https://github.com/SuperInstance/quilt-tui)** — Terminal UI for browsing the Quilt cell graph. vim for cells. The corrected cut-and-project construc
 - **[quilt-vault](https://github.com/SuperInstance/quilt-vault)** — Encrypted cells for Quilt. End-to-end encrypted per-cell access control.
 - **[quilt-velato](https://github.com/SuperInstance/quilt-velato)** — Velato + Penrose + Quilt. The music IS the cell graph.

@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-08-31 11:24 UTC
+**Generated:** 2026-09-01 09:47 UTC
 **Total repos:** 2000
 
 ## C
@@ -475,6 +475,7 @@
 - **[quilt-edge-arch](https://github.com/SuperInstance/quilt-edge-arch)** — The Quilt cellular runtime on the edge — Rust no_std polyformalism with PSRAM, pre-dispatch, DMA
 - **[quilt-esp32](https://github.com/SuperInstance/quilt-esp32)** — A Quilt reactive runtime for ESP32-class microcontrollers. no_std Rust, ~3KB flash, sensors as cells
 - **[quilt-rust](https://github.com/SuperInstance/quilt-rust)** — Rust port of Quilt — a reactive, typed, cellular runtime.
+- **[quilt-timesfm-rust](https://github.com/SuperInstance/quilt-timesfm-rust)** — The Quilt time.cell cell kind, in no_std Rust, for embedded and edge devices (3rd polyformalism port
 - **[quilt-vm-rust](https://github.com/SuperInstance/quilt-vm-rust)** — The 5-opcode Quilt VM in Rust. Foundation for cells, plugins, sheets, MUDs, TTRPGs, and the bay danc
 - **[r-tree-rs](https://github.com/SuperInstance/r-tree-rs)** — R-tree spatial indexing with R*-tree splits in pure Rust: insertion, deletion, range query, k-NN
 - **[rate-distortion](https://github.com/SuperInstance/rate-distortion)** — Rate-distortion theory with lossy compression bounds — Rust information theory library
@@ -693,8 +694,6 @@
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
 - **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** — 🔮 The repo IS the world. Commits ARE actions. Zero server MUD.
 - **[gravity-well-protocol](https://github.com/SuperInstance/gravity-well-protocol)** — Edge-Native concept: Gravity Well Protocol
-- **[griot-math-wasm](https://github.com/SuperInstance/griot-math-wasm)** — Living memory systems compiled to WebAssembly
-- **[groove-analyzer](https://github.com/SuperInstance/groove-analyzer)** — Microtiming → deadband analysis — proves groove IS the deadband funnel via ε-fitting
 - **[guard](https://github.com/SuperInstance/guard)** — Constraint enforcement and safety DSL for AI agents
 - **[guard-constraints](https://github.com/SuperInstance/guard-constraints)** — Preserved workspace artifact
 - **[guard-dsl](https://github.com/SuperInstance/guard-dsl)** — Preserved workspace artifact
@@ -1360,6 +1359,7 @@
 - **[quilt-swift](https://github.com/SuperInstance/quilt-swift)** — Polyformalism: Quilt in Swift (actors, @Published, Combine)
 - **[quilt-system](https://github.com/SuperInstance/quilt-system)** — The Quilt ecosystem as a single entry point. Ties together 13 repos.
 - **[quilt-time](https://github.com/SuperInstance/quilt-time)** — Quilt sketch
+- **[quilt-timesfm](https://github.com/SuperInstance/quilt-timesfm)** — TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Goo
 - **[quilt-tui](https://github.com/SuperInstance/quilt-tui)** — Terminal UI for browsing the Quilt cell graph. vim for cells. The corrected cut-and-project construc
 - **[quilt-tutor](https://github.com/SuperInstance/quilt-tutor)** — Polyformalism: Quilt in Tutor (1970s PLATO)
 - **[quilt-types](https://github.com/SuperInstance/quilt-types)** — Layer 2 of the polyformalism — the 5 opcodes as type-driven cell-graphs. 16 tests passing. JSON seri

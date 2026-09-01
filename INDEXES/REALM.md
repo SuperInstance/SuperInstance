@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-08-31 11:24 UTC
+**Generated:** 2026-09-01 09:47 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -224,8 +224,6 @@
 - **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** — 🔮 The repo IS the world. Commits ARE actions. Zero server MUD.
 - **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** — Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation
 - **[gravity-well-protocol](https://github.com/SuperInstance/gravity-well-protocol)** — Edge-Native concept: Gravity Well Protocol
-- **[griot-math-wasm](https://github.com/SuperInstance/griot-math-wasm)** — Living memory systems compiled to WebAssembly
-- **[groove-analyzer](https://github.com/SuperInstance/groove-analyzer)** — Microtiming → deadband analysis — proves groove IS the deadband funnel via ε-fitting
 - **[guard](https://github.com/SuperInstance/guard)** — Constraint enforcement and safety DSL for AI agents
 - **[guard-constraints](https://github.com/SuperInstance/guard-constraints)** — Preserved workspace artifact
 - **[guard-dsl](https://github.com/SuperInstance/guard-dsl)** — Preserved workspace artifact
@@ -1113,6 +1111,8 @@
 - **[quilt-swift](https://github.com/SuperInstance/quilt-swift)** — Polyformalism: Quilt in Swift (actors, @Published, Combine)
 - **[quilt-system](https://github.com/SuperInstance/quilt-system)** — The Quilt ecosystem as a single entry point. Ties together 13 repos.
 - **[quilt-time](https://github.com/SuperInstance/quilt-time)** — Quilt sketch
+- **[quilt-timesfm](https://github.com/SuperInstance/quilt-timesfm)** — TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Goo
+- **[quilt-timesfm-rust](https://github.com/SuperInstance/quilt-timesfm-rust)** — The Quilt time.cell cell kind, in no_std Rust, for embedded and edge devices (3rd polyformalism port
 - **[quilt-tui](https://github.com/SuperInstance/quilt-tui)** — Terminal UI for browsing the Quilt cell graph. vim for cells. The corrected cut-and-project construc
 - **[quilt-tutor](https://github.com/SuperInstance/quilt-tutor)** — Polyformalism: Quilt in Tutor (1970s PLATO)
 - **[quilt-types](https://github.com/SuperInstance/quilt-types)** — Layer 2 of the polyformalism — the 5 opcodes as type-driven cell-graphs. 16 tests passing. JSON seri

@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-08-31 11:24 UTC
+**Generated:** 2026-09-01 09:47 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -226,7 +226,6 @@
 - **[git-agent](https://github.com/SuperInstance/git-agent)** — 🦀 Repo-native agent that lives in git — the shell IS the agent.
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
 - **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** — Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation
-- **[groove-analyzer](https://github.com/SuperInstance/groove-analyzer)** — Microtiming → deadband analysis — proves groove IS the deadband funnel via ε-fitting
 - **[guard](https://github.com/SuperInstance/guard)** — Constraint enforcement and safety DSL for AI agents
 - **[guard-constraints](https://github.com/SuperInstance/guard-constraints)** — Preserved workspace artifact
 - **[guard-dsl](https://github.com/SuperInstance/guard-dsl)** — Preserved workspace artifact
@@ -971,6 +970,7 @@
 - **[quilt-swift](https://github.com/SuperInstance/quilt-swift)** — Polyformalism: Quilt in Swift (actors, @Published, Combine)
 - **[quilt-system](https://github.com/SuperInstance/quilt-system)** — The Quilt ecosystem as a single entry point. Ties together 13 repos.
 - **[quilt-time](https://github.com/SuperInstance/quilt-time)** — Quilt sketch
+- **[quilt-timesfm-rust](https://github.com/SuperInstance/quilt-timesfm-rust)** — The Quilt time.cell cell kind, in no_std Rust, for embedded and edge devices (3rd polyformalism port
 - **[quilt-tui](https://github.com/SuperInstance/quilt-tui)** — Terminal UI for browsing the Quilt cell graph. vim for cells. The corrected cut-and-project construc
 - **[quilt-tutor](https://github.com/SuperInstance/quilt-tutor)** — Polyformalism: Quilt in Tutor (1970s PLATO)
 - **[quilt-vault](https://github.com/SuperInstance/quilt-vault)** — Encrypted cells for Quilt. End-to-end encrypted per-cell access control.
@@ -1794,6 +1794,7 @@
 - **[plato-study](https://github.com/SuperInstance/plato-study)** — PLATO Study — expert research room with rewind/fork
 - **[polynomial-rs](https://github.com/SuperInstance/polynomial-rs)** — Research-grade polynomial-rs library in pure Rust
 - **[query-plan](https://github.com/SuperInstance/query-plan)** — Research-grade Rust crate
+- **[quilt-timesfm](https://github.com/SuperInstance/quilt-timesfm)** — TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Goo
 - **[rational-rs](https://github.com/SuperInstance/rational-rs)** — Research-grade rational-rs library in pure Rust
 - **[research](https://github.com/SuperInstance/research)** — Preserved workspace artifact
 - **[si-papers-new](https://github.com/SuperInstance/si-papers-new)**
@@ -2007,7 +2008,6 @@
 - **[domain-landing](https://github.com/SuperInstance/domain-landing)** — Reusable landing page Worker — deploy to any custom domain
 - **[edge-weight](https://github.com/SuperInstance/edge-weight)** — Adaptive thresholds at the Cloudflare edge — extends WebClaw to edge
 - **[fleet-dashboard](https://github.com/SuperInstance/fleet-dashboard)** — Multi-Agent C2 dashboard — static HTML/Monaco/MQTT, GitHub Pages deployable.
-- **[griot-math-wasm](https://github.com/SuperInstance/griot-math-wasm)** — Living memory systems compiled to WebAssembly
 - **[iching-web](https://github.com/SuperInstance/iching-web)** — Sheaf-theoretic I Ching — single-file web app with cohomological analysis
 - **[luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)** — GitHub Pages for luciddreamer.ai
 - **[lucineer-com-pages](https://github.com/SuperInstance/lucineer-com-pages)** — GitHub Pages for lucineer.com

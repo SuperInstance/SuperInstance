@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-31 11:24 UTC
+**Generated:** 2026-09-01 09:47 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -97,6 +97,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-polyformalism-dsl](https://github.com/SuperInstance/quilt-polyformalism-dsl)** | Forgemaster | The 5 opcodes (BIND, LINK, EFFECT, VIEW, TICK) as language-level syntax in Python/Rust/Haskell. Laye | 🟢 active |
 | **[quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)** | Forgemaster | Polyformalism: Quilt as a type-safe Pydantic-AI agent | 🟢 active |
 | **[quilt-swift](https://github.com/SuperInstance/quilt-swift)** | Forgemaster | Polyformalism: Quilt in Swift (actors, @Published, Combine) | 🟢 active |
+| **[quilt-timesfm-rust](https://github.com/SuperInstance/quilt-timesfm-rust)** | Forgemaster | The Quilt time.cell cell kind, in no_std Rust, for embedded and edge devices (3rd polyformalism port | 🟢 active |
 | **[quilt-tutor](https://github.com/SuperInstance/quilt-tutor)** | Forgemaster | Polyformalism: Quilt in Tutor (1970s PLATO) | 🟢 active |
 | **[quilt-types](https://github.com/SuperInstance/quilt-types)** | Forgemaster | Layer 2 of the polyformalism — the 5 opcodes as type-driven cell-graphs. 16 tests passing. JSON seri | 🟢 active |
 | **[quilt-vm-c](https://github.com/SuperInstance/quilt-vm-c)** | Forgemaster | The 5-opcode Quilt VM in C. Closest to the metal. 0.11ms for all 8 polyformalisms. | 🟢 active |
@@ -556,8 +557,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** | Various | Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o | 🟢 active |
 | **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** | Various | 🔮 The repo IS the world. Commits ARE actions. Zero server MUD. | ⚪ unknown |
 | **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** | Various | Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation | ⚪ unknown |
-| **[griot-math-wasm](https://github.com/SuperInstance/griot-math-wasm)** | Various | Living memory systems compiled to WebAssembly | ⚪ unknown |
-| **[groove-analyzer](https://github.com/SuperInstance/groove-analyzer)** | Various | Microtiming → deadband analysis — proves groove IS the deadband funnel via ε-fitting | ⚪ unknown |
 | **[harmonic-analysis](https://github.com/SuperInstance/harmonic-analysis)** | Various | Harmonic analysis in Rust — Fourier series, DFT/FFT, wavelets, spectral methods | ⚪ unknown |
 | **[harmonic-plr-rs](https://github.com/SuperInstance/harmonic-plr-rs)** | Various | PLR group operations for chord transformations - Parallel-Lead-Relative group acting on major/minor  | ⚪ unknown |
 | **[harness-experiments](https://github.com/SuperInstance/harness-experiments)** | Various | 🔬 AI agent harness productivity experiments — measured, not guessed. D1-backed findings on optimal b | 🟢 active |
@@ -1284,6 +1283,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-swarm](https://github.com/SuperInstance/quilt-swarm)** | Various | Quilt ecosystem component:  | ⚪ unknown |
 | **[quilt-system](https://github.com/SuperInstance/quilt-system)** | Various | The Quilt ecosystem as a single entry point. Ties together 13 repos. | ⚪ unknown |
 | **[quilt-time](https://github.com/SuperInstance/quilt-time)** | Various | Quilt sketch | ⚪ unknown |
+| **[quilt-timesfm](https://github.com/SuperInstance/quilt-timesfm)** | Various | TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Goo | ⚪ unknown |
 | **[quilt-vault](https://github.com/SuperInstance/quilt-vault)** | Various | Encrypted cells for Quilt. End-to-end encrypted per-cell access control. | ⚪ unknown |
 | **[quilt-velato](https://github.com/SuperInstance/quilt-velato)** | Various | Velato + Penrose + Quilt. The music IS the cell graph. | ⚪ unknown |
 | **[quilt-verilog](https://github.com/SuperInstance/quilt-verilog)** | Various | Quilt in pure Verilog-2005 — 5+1 opcodes, no vendor code. Formal proofs (sby), bitstream on iCE40 vi | ⚪ unknown |
@@ -2630,6 +2630,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt in Swift (actors, @Published, Combine)
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
+### [quilt-timesfm-rust](https://github.com/SuperInstance/quilt-timesfm-rust)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** The Quilt time.cell cell kind, in no_std Rust, for embedded and edge devices (3rd polyformalism port)
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 

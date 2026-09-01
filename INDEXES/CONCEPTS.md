@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-31 11:24 UTC
+**Generated:** 2026-09-01 09:47 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1283,6 +1283,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-polyformalism-dsl](https://github.com/SuperInstance/quilt-polyformalism-dsl)
 - [quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)
 - [quilt-swift](https://github.com/SuperInstance/quilt-swift)
+- [quilt-timesfm-rust](https://github.com/SuperInstance/quilt-timesfm-rust)
 - [quilt-tutor](https://github.com/SuperInstance/quilt-tutor)
 - [quilt-types](https://github.com/SuperInstance/quilt-types)
 - [quilt-vm-c](https://github.com/SuperInstance/quilt-vm-c)
@@ -1425,8 +1426,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-native-mud](https://github.com/SuperInstance/git-native-mud)
 - [grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)
 - [gravity-well-protocol](https://github.com/SuperInstance/gravity-well-protocol)
-- [griot-math-wasm](https://github.com/SuperInstance/griot-math-wasm)
-- [groove-analyzer](https://github.com/SuperInstance/groove-analyzer)
 - [harmonic-analysis](https://github.com/SuperInstance/harmonic-analysis)
 - [harmonic-plr-rs](https://github.com/SuperInstance/harmonic-plr-rs)
 - [hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)
@@ -1818,6 +1817,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-swarm](https://github.com/SuperInstance/quilt-swarm)
 - [quilt-system](https://github.com/SuperInstance/quilt-system)
 - [quilt-time](https://github.com/SuperInstance/quilt-time)
+- [quilt-timesfm](https://github.com/SuperInstance/quilt-timesfm)
 - [quilt-tui](https://github.com/SuperInstance/quilt-tui)
 - [quilt-vault](https://github.com/SuperInstance/quilt-vault)
 - [quilt-velato](https://github.com/SuperInstance/quilt-velato)
