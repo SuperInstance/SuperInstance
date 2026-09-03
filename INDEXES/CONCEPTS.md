@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-09-02 09:20 UTC
+**Generated:** 2026-09-03 09:30 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -79,7 +79,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-topology-rs](https://github.com/SuperInstance/fleet-topology-rs)
 - [flux-compiler](https://github.com/SuperInstance/flux-compiler)
 - [flux-lucid](https://github.com/SuperInstance/flux-lucid)
-- [guard](https://github.com/SuperInstance/guard)
 - [guard-constraints](https://github.com/SuperInstance/guard-constraints)
 - [guard2mask](https://github.com/SuperInstance/guard2mask)
 - [guard2mask-gpu](https://github.com/SuperInstance/guard2mask-gpu)
@@ -315,7 +314,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-guardian](https://github.com/SuperInstance/conservation-guardian)
 - [dual-band-guard](https://github.com/SuperInstance/dual-band-guard)
 - [flux-compiler](https://github.com/SuperInstance/flux-compiler)
-- [guard](https://github.com/SuperInstance/guard)
 - [guard-constraints](https://github.com/SuperInstance/guard-constraints)
 - [guard-dsl](https://github.com/SuperInstance/guard-dsl)
 - [guard2mask](https://github.com/SuperInstance/guard2mask)
@@ -499,7 +497,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-agent](https://github.com/SuperInstance/git-agent)
 - [git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)
 - [git-native-agents](https://github.com/SuperInstance/git-native-agents)
-- [guard](https://github.com/SuperInstance/guard)
 - [harness-experiments](https://github.com/SuperInstance/harness-experiments)
 - [hebbian-router](https://github.com/SuperInstance/hebbian-router)
 - [herdr-cocapn](https://github.com/SuperInstance/herdr-cocapn)
@@ -1268,6 +1265,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermes-nmi](https://github.com/SuperInstance/hermes-nmi)
 - [murmur-agent](https://github.com/SuperInstance/murmur-agent)
 - [polyformalism](https://github.com/SuperInstance/polyformalism)
+- [quf-vhdl](https://github.com/SuperInstance/quf-vhdl)
 - [quilt-c](https://github.com/SuperInstance/quilt-c)
 - [quilt-chapel](https://github.com/SuperInstance/quilt-chapel)
 - [quilt-cobol](https://github.com/SuperInstance/quilt-cobol)
@@ -1314,7 +1312,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [cocapn-cli](https://github.com/SuperInstance/cocapn-cli)
 - [cocapn-zig](https://github.com/SuperInstance/cocapn-zig)
 - [fleet-constraint](https://github.com/SuperInstance/fleet-constraint)
-- [guard](https://github.com/SuperInstance/guard)
 - [guard2mask](https://github.com/SuperInstance/guard2mask)
 - [guardc](https://github.com/SuperInstance/guardc)
 - [multi-model-adversarial-testing](https://github.com/SuperInstance/multi-model-adversarial-testing)

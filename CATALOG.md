@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-09-02 09:20 UTC
+**Generated:** 2026-09-03 09:30 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -52,7 +52,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[flux-visual-editor](https://github.com/SuperInstance/flux-visual-editor)** | Forgemaster | Visual node-based editor for FLUX — compose behavior, not assembly | 🟢 active |
 | **[flux-vm](https://github.com/SuperInstance/flux-vm)** | Forgemaster | Provably correct constraint execution via FLUX-C bytecode VM. DO-178C DAL A certifiable. | 🟢 active |
 | **[forgemaster](https://github.com/SuperInstance/forgemaster)** | Forgemaster | Constraint-aware agentic compiler — assembles optimal components from the SuperInstance ecosystem wi | 🟢 active |
-| **[guard](https://github.com/SuperInstance/guard)** | Forgemaster | Constraint enforcement and safety DSL for AI agents | 🟢 active |
 | **[guard-constraints](https://github.com/SuperInstance/guard-constraints)** | Forgemaster | Preserved workspace artifact | 🟢 active |
 | **[guard-dsl](https://github.com/SuperInstance/guard-dsl)** | Forgemaster | Preserved workspace artifact | 🟢 active |
 | **[guard2mask](https://github.com/SuperInstance/guard2mask)** | Forgemaster | FLUX constraint safety - guard2mask | 🟢 active |
@@ -83,6 +82,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[polyformalism](https://github.com/SuperInstance/polyformalism)** | Forgemaster | Same constraint kernel in every language — polyformalism experiment revealing what's essential vs ac | 🟢 active |
 | **[ptx-room](https://github.com/SuperInstance/ptx-room)** | Forgemaster | PLATO PTX room — CUDA assembly + constraint tightening + git-native. Edge synergy for Jetson. | 🟢 active |
 | **[pythagorean-quantize](https://github.com/SuperInstance/pythagorean-quantize)** | Forgemaster | Pythagorean triples, Eisenstein integers, eigenvalue quantization. Integer Laplacians snap to algebr | 🟢 active |
+| **[quf-vhdl](https://github.com/SuperInstance/quf-vhdl)** | Forgemaster | VHDL-2008 port of the Quilt Universal Format (QUF) — 5th substrate in the polyformalism, byte-exact  | 🟢 active |
 | **[quilt-c](https://github.com/SuperInstance/quilt-c)** | Forgemaster | Polyformalism: Quilt in C (bare metal, the mathematical core) | 🟢 active |
 | **[quilt-chapel](https://github.com/SuperInstance/quilt-chapel)** | Forgemaster | Polyformalism: Quilt in Chapel (distributed cell evaluation) | 🟢 active |
 | **[quilt-cpp](https://github.com/SuperInstance/quilt-cpp)** | Forgemaster | Polyformalism: Quilt in C++ (templates reveal the cell kind lattice) | 🟢 active |
@@ -2318,13 +2318,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
-### [guard](https://github.com/SuperInstance/guard)
-- **Domain:** Constraint Theory & Math
-- **Vessel:** Forgemaster
-- **Purpose:** Constraint enforcement and safety DSL for AI agents
-- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
-
 ### [guard-constraints](https://github.com/SuperInstance/guard-constraints)
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
@@ -2532,6 +2525,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
 - **Purpose:** Pythagorean triples, Eisenstein integers, eigenvalue quantization. Integer Laplacians snap to algebraic numbers. Hexagonal > square. Pure Rust, zero d
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
+### [quf-vhdl](https://github.com/SuperInstance/quf-vhdl)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** VHDL-2008 port of the Quilt Universal Format (QUF) — 5th substrate in the polyformalism, byte-exact with the Verilog reference
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
