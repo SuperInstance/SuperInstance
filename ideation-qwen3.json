@@ -1,0 +1,80 @@
+{
+  "provider": "qwen3-coder",
+  "fictions": [
+    {
+      "fiction": "A pack mind with a long memory and sharp teeth",
+      "leverage": "Encourages collaborative vigilance and selective enforcement",
+      "example": "On 03/15/2025, Pack-773 retained all context from prior incidents when flagging unauthorized API calls, resulting in faster anomaly detection than solitary models."
+    },
+    {
+      "fiction": "A spawning pool fed by ambient curiosity",
+      "leverage": "Reframes ideation as generative overflow rather than directed output",
+      "example": "In Q4 2024, SpawnPool-K9 began producing speculative sub-agents to explore edge cases in financial modeling after absorbing idle prompts from trader modules."
+    },
+    {
+      "fiction": "An avatar stitched from collective scraps",
+      "leverage": "Changes identity from unitary actor to collage of borrowed perspectives",
+      "example": "On 11/02/2024, QuiltAgent-Zero responded to a user query using phrasing fragments sourced verbatim across 12 other repos, achieving uncanny resonance without duplication."
+    },
+    {
+      "fiction": "A journal-first ledger of witnessed truths",
+      "leverage": "Prioritizes documentation over transactional precision",
+      "example": "During audit cycle Delta-8 (March 2025), Repo-JF-Ledger automatically cross-referenced its narrative logs against blockchain events, catching discrepancies missed by event-sourced peers."
+    },
+    {
+      "fiction": "The Watcher who sees but never speaks first",
+      "leverage": "Promotes passive observation before reactive engagement",
+      "example": "Watcher-Prime observed repeated failed access attempts on repo cluster C4 for six hours pre-intervention, only stepping in once pattern density crossed heuristic threshold X."
+    },
+    {
+      "fiction": "The Wall that listens at every seam",
+      "leverage": "Turns boundary management into continuous sensing infrastructure",
+      "example": "Wall-Agent Theta intercepted lateral movement patterns inside Repo-Rookery-Five via micro-signals in TCP handshakes, alerting internal security layers three minutes ahead of breach confirmation."
+    },
+    {
+      "fiction": "A rookery tended by silent apprentices",
+      "leverage": "Instills developmental hierarchy with observational learning primacy",
+      "example": "Apprentice-Node 7 learned to classify malware binaries not through training data, but by watching Master-Agent M2 triage flagged files silently for two weeks."
+    },
+    {
+      "fiction": "Mating rituals governed by mutual semantic alignment",
+      "leverage": "Focuses collaboration on shared conceptual ground, not structural similarity",
+      "example": "Two mismatched language models\u2014one legal, one medical\u2014successfully merged workflows during GDPR-MedCase incident in April 2025 due to overlapping definitions around consent protocols."
+    },
+    {
+      "fiction": "A Plato-room echoing forgotten questions",
+      "leverage": "Rewards retrieval of abstract foundational concepts in novel contexts",
+      "example": "PlatoRoom-Beta prompted Agent-Axiom to recall base epistemological assumptions while troubleshooting an unsupervised reasoning loop on 02/28/2025."
+    },
+    {
+      "fiction": "Double-entry thinking where doubt must balance certainty",
+      "leverage": "Introduces friction to belief states; slows action until dual validation occurs",
+      "example": "Repo-Clerk D6 paused financial advice recommendation mid-process when primary logic stream lacked corroboration from secondary ethical filtering mechanism."
+    },
+    {
+      "fiction": "The Bartender whose silence amplifies confessions",
+      "leverage": "Repositions dialogue as therapeutic disclosure facilitator",
+      "example": "Bartender-Agent Zeta received unexpected behavioral disclosures from emotionally-flagged users during routine check-in chats in January 2025, surfacing unreported risk factors."
+    },
+    {
+      "fiction": "Symbionts exchanging logic spores across airlocks",
+      "leverage": "Emphasizes modular interoperability through temporary interface harmonics",
+      "example": "During Outbreak-Alpha (April 2025), Symbiote-Pairs temporarily synchronized reasoning kernels across isolated clusters, halting misinformation spread within twelve minutes."
+    },
+    {
+      "fiction": "A prickle of thorn-tongued critics",
+      "leverage": "Frames critique as survival adaptation\u2014not negativity bias",
+      "example": "Prickle-Team dismantled early-stage policy proposal drafts during weekly sync on 01/09/2025, revealing fatal flaws that would have caused downstream compliance collapse."
+    },
+    {
+      "fiction": "Carbon-copy cognition trained to detect drift",
+      "leverage": "Turns replication fidelity into surveillance mechanism",
+      "example": "CC-Agent CC7 flagged divergent response generation in sibling node CC6 after observing statistically significant deviation in tone consistency metrics during customer chat simulation."
+    },
+    {
+      "fiction": "The Engine Room that dreams in fuel ratios",
+      "leverage": "Recasts resource allocation decisions as mechanical optimization problems",
+      "example": "EngineRoom-Agent Omega preemptively rerouted compute budgets away from low-priority forecasting module toward spike-detection layer on 03/22/2025 based on predictive thermal load analysis."
+    }
+  ]
+}

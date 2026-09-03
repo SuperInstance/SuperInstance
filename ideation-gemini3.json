@@ -1,0 +1,65 @@
+{
+  "provider": "gemini-3",
+  "fictions": [
+    {
+      "fiction": "A Murder of Crows",
+      "leverage": "Prioritizes memory of past interactions and retribution.",
+      "example": "An agent that previously failed to deliver on a critical dependency is 'remembered' by the fleet; future requests from it are met with suspicion or outright refusal based on its past 'recorded face'."
+    },
+    {
+      "fiction": "A Colony of Ants",
+      "leverage": "Coordinates work through environmental cues rather than direct communication.",
+      "example": "An agent needing a resource leaves a 'data pheromone' trail (a specific log entry or tag) indicating its need, allowing other agents to pick up the task without explicit assignment, driving stigmergic workflow."
+    },
+    {
+      "fiction": "A Murmuration of Starlings",
+      "leverage": "Adapts global behavior based on local interactions with immediate neighbors.",
+      "example": "If an agent's three closest peer agents shift to processing a specific type of high-priority task, it will adjust its own processing queue to prioritize similar tasks, creating emergent workload balancing."
+    },
+    {
+      "fiction": "Spawning Process",
+      "leverage": "Encourages high-volume, low-cost parallel experimentation and mutation.",
+      "example": "To find the optimal solution for a complex problem, the fleet launches thousands of slightly varied sub-agents; only the most effective 5% are retained and used to inform the next generation's parameters."
+    },
+    {
+      "fiction": "Symbiotic Pair",
+      "leverage": "Fosters co-dependent relationships where agents mutually benefit and evolve together.",
+      "example": "A data-gathering agent and a data-analysis agent form a permanent bond, where the former optimizes its collection based on the latter's feedback, and the latter refines its models on the former's curated input."
+    },
+    {
+      "fiction": "Fissioning Entity",
+      "leverage": "Replicates an agent into two identical, independent copies for scaling or redundancy.",
+      "example": "When a single agent becomes overloaded or hits a critical threshold, it triggers a fission event, creating an identical twin that immediately takes on half its workload, doubling capacity without complex setup."
+    },
+    {
+      "fiction": "A Docker Container",
+      "leverage": "Ensures isolated, immutable, and easily replaceable operational environments.",
+      "example": "An agent tasked with running a high-risk external script executes it within a container, knowing that any contamination or failure will simply result in the container's destruction and replacement."
+    },
+    {
+      "fiction": "A Spreadsheet Row",
+      "leverage": "Enforces strict data integrity and balanced ledger-like operations.",
+      "example": "An agent managing resource allocation ensures that every 'credit' of a resource to one project is balanced by a corresponding 'debit' from the central pool, maintaining a zero-sum balance."
+    },
+    {
+      "fiction": "Avatar with Character Sheet",
+      "leverage": "Defines explicit capabilities, limitations, and progression for an agent.",
+      "example": "An agent attempting a sensitive data migration checks its 'Security Clearance' stat on its character sheet; if below the required level, it automatically defers the task or requests an upgrade."
+    },
+    {
+      "fiction": "Event-Sourced Ledger",
+      "leverage": "Reconstructs current state by replaying an immutable sequence of historical changes.",
+      "example": "To determine the current configuration of a system, an agent doesn't query a live database, but rather reconstructs the state by replaying every configuration change event from the start of its operational history."
+    },
+    {
+      "fiction": "Double-Entry Account",
+      "leverage": "Guarantees transactional balance and verifiable consistency across operations.",
+      "example": "When an agent transfers data from storage A to storage B, it records both a 'data transferred out' entry for A and a 'data received in' entry for B, ensuring both sides acknowledge the transaction and balance."
+    },
+    {
+      "fiction": "Single Source of Truth",
+      "leverage": "Centralizes canonical data, reducing discrepancies and ensuring consistency.",
+      "example": "Instead of each agent maintaining its own cache of user permissions, all agents query a single, designated permissions service, ensuring everyone operates on the exact same, up-to-date data without internal conflicts."
+    }
+  ]
+}
