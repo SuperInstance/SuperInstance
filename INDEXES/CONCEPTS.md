@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-09-04 09:22 UTC
+**Generated:** 2026-09-05 08:51 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -33,7 +33,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [cell-router-pkg](https://github.com/SuperInstance/cell-router-pkg)
 - [fleet-bottles](https://github.com/SuperInstance/fleet-bottles)
-- [i2i-protocol](https://github.com/SuperInstance/i2i-protocol)
 - [message-in-a-bottle](https://github.com/SuperInstance/message-in-a-bottle)
 - [quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)
 - [superinstance-protocol](https://github.com/SuperInstance/superinstance-protocol)
@@ -173,7 +172,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [constraint-theory-papers](https://github.com/SuperInstance/constraint-theory-papers)
 - [constraint-theory-py](https://github.com/SuperInstance/constraint-theory-py)
 - [eisenstein](https://github.com/SuperInstance/eisenstein)
-- [iching-sheaf](https://github.com/SuperInstance/iching-sheaf)
 - [plato-midi-bridge-rs](https://github.com/SuperInstance/plato-midi-bridge-rs)
 - [pythagorean-quantize](https://github.com/SuperInstance/pythagorean-quantize)
 - [slackwater-rust](https://github.com/SuperInstance/slackwater-rust)
@@ -320,7 +318,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [constraint-theory-math](https://github.com/SuperInstance/constraint-theory-math)
 - [fleet-coordinate-js](https://github.com/SuperInstance/fleet-coordinate-js)
-- [iching-sheaf](https://github.com/SuperInstance/iching-sheaf)
 - [jc1-ct-bridge](https://github.com/SuperInstance/jc1-ct-bridge)
 - [lau-algebraic-topology](https://github.com/SuperInstance/lau-algebraic-topology)
 - [lau-dg-algebra](https://github.com/SuperInstance/lau-dg-algebra)
@@ -374,7 +371,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [AgentGossip](https://github.com/SuperInstance/AgentGossip)
 - [Baton](https://github.com/SuperInstance/Baton)
 - [Equipment-Consensus-Engine](https://github.com/SuperInstance/Equipment-Consensus-Engine)
-- [I](https://github.com/SuperInstance/I)
 - [Luma](https://github.com/SuperInstance/Luma)
 - [MerkleMesh](https://github.com/SuperInstance/MerkleMesh)
 - [Murmur](https://github.com/SuperInstance/Murmur)
@@ -396,6 +392,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [agent-orchestration](https://github.com/SuperInstance/agent-orchestration)
 - [agent-priming](https://github.com/SuperInstance/agent-priming)
 - [agent-priming-toolkit](https://github.com/SuperInstance/agent-priming-toolkit)
+- [agent-priming-toolkit-pkg](https://github.com/SuperInstance/agent-priming-toolkit-pkg)
 - [agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)
 - [autoclaw](https://github.com/SuperInstance/autoclaw)
 - [bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)
@@ -422,6 +419,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ensign-protocol](https://github.com/SuperInstance/ensign-protocol)
 - [exocortex](https://github.com/SuperInstance/exocortex)
 - [exocortex-rs](https://github.com/SuperInstance/exocortex-rs)
+- [f170-experiment-kit](https://github.com/SuperInstance/f170-experiment-kit)
 - [fleet-agent-core](https://github.com/SuperInstance/fleet-agent-core)
 - [fleet-agent-early-version](https://github.com/SuperInstance/fleet-agent-early-version)
 - [fleet-audio](https://github.com/SuperInstance/fleet-audio)
@@ -485,7 +483,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermes-nmi](https://github.com/SuperInstance/hermes-nmi)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
 - [hermit-crab](https://github.com/SuperInstance/hermit-crab)
-- [i2i-protocol](https://github.com/SuperInstance/i2i-protocol)
 - [insight-cfp-bridge](https://github.com/SuperInstance/insight-cfp-bridge)
 - [integration-rs](https://github.com/SuperInstance/integration-rs)
 - [intelligence-hub](https://github.com/SuperInstance/intelligence-hub)
@@ -981,7 +978,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [crab-trap-web](https://github.com/SuperInstance/crab-trap-web)
 - [fleet-murmur-worker](https://github.com/SuperInstance/fleet-murmur-worker)
 - [fleet-scribe](https://github.com/SuperInstance/fleet-scribe)
-- [i2i-protocol](https://github.com/SuperInstance/i2i-protocol)
 - [insight-cfp-bridge](https://github.com/SuperInstance/insight-cfp-bridge)
 - [jester-plato-bridge](https://github.com/SuperInstance/jester-plato-bridge)
 - [keel-early-version](https://github.com/SuperInstance/keel-early-version)
@@ -1319,7 +1315,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [cell-router-pkg](https://github.com/SuperInstance/cell-router-pkg)
 - [fleet-bottles](https://github.com/SuperInstance/fleet-bottles)
-- [i2i-protocol](https://github.com/SuperInstance/i2i-protocol)
 - [lau-shell-transport](https://github.com/SuperInstance/lau-shell-transport)
 - [message-in-a-bottle](https://github.com/SuperInstance/message-in-a-bottle)
 - [quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)
@@ -1365,6 +1360,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [canon-graph](https://github.com/SuperInstance/canon-graph)
 - [canon-hash](https://github.com/SuperInstance/canon-hash)
 - [canon-paper](https://github.com/SuperInstance/canon-paper)
+- [canon-recs](https://github.com/SuperInstance/canon-recs)
 - [canon-suite](https://github.com/SuperInstance/canon-suite)
 - [canon-zoo](https://github.com/SuperInstance/canon-zoo)
 - [captain-console](https://github.com/SuperInstance/captain-console)
@@ -1403,7 +1399,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)
 - [experiment-wheel](https://github.com/SuperInstance/experiment-wheel)
 - [experiments](https://github.com/SuperInstance/experiments)
+- [f170-federated-tinyml-paper](https://github.com/SuperInstance/f170-federated-tinyml-paper)
 - [fabric-mcp](https://github.com/SuperInstance/fabric-mcp)
+- [federated-tinyml-npm](https://github.com/SuperInstance/federated-tinyml-npm)
+- [federated-tinyml-vessel](https://github.com/SuperInstance/federated-tinyml-vessel)
 - [fencecraft](https://github.com/SuperInstance/fencecraft)
 - [fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)
 - [fiedler-universal](https://github.com/SuperInstance/fiedler-universal)
@@ -1423,11 +1422,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermit-crab-ecology-archive-copy](https://github.com/SuperInstance/hermit-crab-ecology-archive-copy)
 - [holodeck](https://github.com/SuperInstance/holodeck)
 - [holodeck-c](https://github.com/SuperInstance/holodeck-c)
-- [i2i](https://github.com/SuperInstance/i2i)
-- [iching-web](https://github.com/SuperInstance/iching-web)
 - [ideation-games](https://github.com/SuperInstance/ideation-games)
-- [iii-observability](https://github.com/SuperInstance/iii-observability)
-- [iir-filter](https://github.com/SuperInstance/iir-filter)
 - [image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)
 - [immune-system](https://github.com/SuperInstance/immune-system)
 - [incubator](https://github.com/SuperInstance/incubator)
@@ -1762,6 +1757,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-bathy](https://github.com/SuperInstance/quilt-bathy)
 - [quilt-bus](https://github.com/SuperInstance/quilt-bus)
 - [quilt-canon-cli](https://github.com/SuperInstance/quilt-canon-cli)
+- [quilt-canvas-demo](https://github.com/SuperInstance/quilt-canvas-demo)
 - [quilt-casting](https://github.com/SuperInstance/quilt-casting)
 - [quilt-cell](https://github.com/SuperInstance/quilt-cell)
 - [quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare)

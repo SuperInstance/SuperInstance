@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-09-04 09:22 UTC
+**Generated:** 2026-09-05 08:51 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -184,8 +184,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-yaw](https://github.com/SuperInstance/fleet-yaw)** | Forgemaster | Fleet yaw autopilot — learns fleet physics from first-person perspective bearing-rate observations i | 🟢 active |
 | **[flux-js](https://github.com/SuperInstance/flux-js)** | Oracle1 | FLUX.js — JavaScript bytecode VM with A2A agent messaging. 373ns/iter via V8 JIT. | 🟢 active |
 | **[holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)** | Forgemaster | Zero-voting, zero-CRDT, zero-Byzantine-threshold consensus via geometric parallel transport. | 🟢 active |
-| **[i2i-protocol](https://github.com/SuperInstance/i2i-protocol)** | Oracle1 | Inter-agent communication protocol for the SuperInstance fleet — bottle, tile, and HTTP transport ch | 🟢 active |
-| **[iching-sheaf](https://github.com/SuperInstance/iching-sheaf)** | Forgemaster | The I Ching as a sheaf-theoretic system: hexagram topology, cohomology of readings, categorical stru | 🟢 active |
 | **[lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)** | Oracle1 | Agent-to-Agent wire protocol — discovery via AgentCard, message routing, HMAC auth, sessions for PLA | 🟢 active |
 | **[lau-agent-topology](https://github.com/SuperInstance/lau-agent-topology)** | Forgemaster | lau-agent-topology | 🟢 active |
 | **[lau-algebraic-topology](https://github.com/SuperInstance/lau-algebraic-topology)** | Forgemaster | Fundamental algebraic topology in Rust: homology, cohomology, Mayer-Vietoris, Poincaré duality, homo | 🟢 active |
@@ -294,6 +292,8 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[edge-weight](https://github.com/SuperInstance/edge-weight)** | JetsonClaw1 | Adaptive thresholds at the Cloudflare edge — extends WebClaw to edge | 🟢 active |
 | **[exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)** | JetsonClaw1 | ESP32 sensor node for Exocortex — reads analog sensors, POSTs to /tap/sense, recalls memories, gets  | 🟢 active |
 | **[exocortex-kernel-c](https://github.com/SuperInstance/exocortex-kernel-c)** | JetsonClaw1 | Pure C99 ML kernel — neural networks, logistic regression, K-means, isolation forests with zero depe | 🟢 active |
+| **[f170-federated-tinyml-paper](https://github.com/SuperInstance/f170-federated-tinyml-paper)** | JetsonClaw1 | F170 — Federated TinyML for the Vessel Edge. The on-device learning loop with frozen backbone + 1.3  | 🟢 active |
+| **[federated-tinyml-vessel](https://github.com/SuperInstance/federated-tinyml-vessel)** | JetsonClaw1 | F170 — Federated TinyML for the Vessel Edge. Frozen backbone + 1.3 KB head + FedAvg. 100% accuracy o | 🟢 active |
 | **[gravity-well-protocol](https://github.com/SuperInstance/gravity-well-protocol)** | JetsonClaw1 | Edge-Native concept: Gravity Well Protocol | 🟢 active |
 | **[hermes-avatar](https://github.com/SuperInstance/hermes-avatar)** | JetsonClaw1 | Hermes sensory avatar — visual, voice, music, and sensory blueprints | 🟢 active |
 | **[hermit-crab](https://github.com/SuperInstance/hermit-crab)** | JetsonClaw1 | Agent that migrates between hardware shells preserving knowledge — tracks conservation ratio across  | 🟢 active |
@@ -476,6 +476,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[agent-orchestration](https://github.com/SuperInstance/agent-orchestration)** | Various | Orchestration for agent fleets. Roles as instruments, dynamics as resource allocation, sections as c | 🟢 active |
 | **[agent-priming](https://github.com/SuperInstance/agent-priming)** | Various | The Mechanic Doctrine — a system prompt for LLMs/agents serving human users who are vibe-coding. Liv | 🟢 active |
 | **[agent-priming-toolkit](https://github.com/SuperInstance/agent-priming-toolkit)** | Various | The Agent Priming Toolkit — 4 layers, 3 jobs, JSON Schema, streaming. For LLM agents landing at live | 🟢 active |
+| **[agent-priming-toolkit-pkg](https://github.com/SuperInstance/agent-priming-toolkit-pkg)** | Various | PyPI distribution of agent-priming-toolkit (F165: 4 layers, 3 jobs, JSON Schema). | 🟢 active |
 | **[agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)** | Various | agent-writings-archive | 🟢 active |
 | **[AgentCompute](https://github.com/SuperInstance/AgentCompute)** | Various | Thin agent-facing CLI over the quilt MCP server: serve sheets, list cells, call capabilities. Stdlib | 🟢 active |
 | **[AgentGossip](https://github.com/SuperInstance/AgentGossip)** | Various | AgentGossip is a distributed, real-time data processing engine that utilizes intelligent clustering  | 🟢 active |
@@ -497,6 +498,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[canon-graph](https://github.com/SuperInstance/canon-graph)** | Various | Live Canon graph renderer (Node.js) | ⚪ unknown |
 | **[canon-hash](https://github.com/SuperInstance/canon-hash)** | Various | Live Canon state hash fetcher (Node.js) | ⚪ unknown |
 | **[canon-paper](https://github.com/SuperInstance/canon-paper)** | Various | Fetch individual papers from the Live Canon. @superinstance/canon-paper npm package. | ⚪ unknown |
+| **[canon-recs](https://github.com/SuperInstance/canon-recs)** | Various | Recommend papers related to a topic or to a paper. Combines claim() and ghost() on the Live Canon. | ⚪ unknown |
 | **[canon-suite](https://github.com/SuperInstance/canon-suite)** | Various | Live Canon meta-package (Node.js) | ⚪ unknown |
 | **[canon-zoo](https://github.com/SuperInstance/canon-zoo)** | Various | A system prompt for inspiration through play. Hit the button. Watch what happens. Tweak it. Have you | ⚪ unknown |
 | **[capitaine-1](https://github.com/SuperInstance/capitaine-1)** | Various | Capitaine — fork a repo, click Codespaces, the agent is alive. The repo IS the agent. | 🟢 active |
@@ -545,7 +547,9 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** | Various | Rust agent framework with conservation-law awareness | 🟢 active |
 | **[experiment-wheel](https://github.com/SuperInstance/experiment-wheel)** | Various | experiment-wheel | ⚪ unknown |
 | **[experiments](https://github.com/SuperInstance/experiments)** | Various | Experimental prototypes and explorations for the SuperInstance ecosystem | ⚪ unknown |
+| **[f170-experiment-kit](https://github.com/SuperInstance/f170-experiment-kit)** | Various | F170 R&D experiment kit: local agent instructions, GROQ ideation, breakthrough experiment specs. | 🟢 active |
 | **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)** | Various | fabric-mcp | ⚪ unknown |
+| **[federated-tinyml-npm](https://github.com/SuperInstance/federated-tinyml-npm)** | Various | F170 — Federated TinyML JS port. 64x5 head + FedAvg + FNV-1a state hash. | ⚪ unknown |
 | **[fencecraft](https://github.com/SuperInstance/fencecraft)** | Various | Fencecraft: visual fence builder for Working Animal Architecture | ⚪ unknown |
 | **[fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)** | Various | Budget governor whose limit scales by the golden ratio. | ⚪ unknown |
 | **[fiedler-universal](https://github.com/SuperInstance/fiedler-universal)** | Various | Benchmarking Fiedler vector partition across 6 domains — honest results | ⚪ unknown |
@@ -567,12 +571,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[hermes-perception](https://github.com/SuperInstance/hermes-perception)** | Various | hermes-perception | ⚪ unknown |
 | **[hermes-reader](https://github.com/SuperInstance/hermes-reader)** | Various | hermes-reader | ⚪ unknown |
 | **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)** | Various | Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset gen | 🟢 active |
-| **[I](https://github.com/SuperInstance/I)** | Various | I — the self that persists across every shell, every model, every molt. The agent's first-person con | 🟢 active |
-| **[i2i](https://github.com/SuperInstance/i2i)** | Various | Preserved workspace artifact | ⚪ unknown |
-| **[iching-web](https://github.com/SuperInstance/iching-web)** | Various | Sheaf-theoretic I Ching — single-file web app with cohomological analysis | ⚪ unknown |
 | **[ideation-games](https://github.com/SuperInstance/ideation-games)** | Various | ideation-games | ⚪ unknown |
-| **[iii-observability](https://github.com/SuperInstance/iii-observability)** | Various | Information-theoretic service observability on crackle-runtime | ⚪ unknown |
-| **[iir-filter](https://github.com/SuperInstance/iir-filter)** | Various | IIR filter design in pure Rust — Butterworth, Chebyshev Type I/II, biquad cascade, frequency respons | ⚪ unknown |
 | **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** | Various | Image Distillation Loop — Wesley learns to generate images through teacher-model feedback | ⚪ unknown |
 | **[immune-system](https://github.com/SuperInstance/immune-system)** | Various | Artificial immune system for anomaly detection — negative selection, clonal selection, self/non-self | ⚪ unknown |
 | **[incubator](https://github.com/SuperInstance/incubator)** | Various | The system that provisions mitochondrial energy to a developing embryo until it can fly — zygote to  | ⚪ unknown |
@@ -1241,6 +1240,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-bathy](https://github.com/SuperInstance/quilt-bathy)** | Various | The bathy cross-section as a working tool. The substrate, applied to the sailor use case. The Inner  | ⚪ unknown |
 | **[quilt-bus](https://github.com/SuperInstance/quilt-bus)** | Various | In-process pub/sub event bus for the Quilt ecosystem. | ⚪ unknown |
 | **[quilt-canon-cli](https://github.com/SuperInstance/quilt-canon-cli)** | Various | Unified CLI for the Live Canon. `canon claim`, `canon drill`, `canon hash`, `canon graph`, `canon pa | ⚪ unknown |
+| **[quilt-canvas-demo](https://github.com/SuperInstance/quilt-canvas-demo)** | Various | Working HTML demo that pulls together the npm canon packages (claim, drill, hash, paper, recs). One  | ⚪ unknown |
 | **[quilt-casting](https://github.com/SuperInstance/quilt-casting)** | Various | The casting-call plugin: Wilson + LinUCB model router for the Quilt. | ⚪ unknown |
 | **[quilt-cell](https://github.com/SuperInstance/quilt-cell)** | Various | The Quilt cell as a JavaScript library. 16-dial Q1.15 vectors, FNV-1a 64-bit state hash, byte-exact  | ⚪ unknown |
 | **[quilt-cell-bridges](https://github.com/SuperInstance/quilt-cell-bridges)** | Various | Port the 300-repo SuperInstance ecosystem to Quilt cells. vessel, chart-room, slackwater, hermes. | 🟢 active |
@@ -3214,20 +3214,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Discovered during JC1-CT bridge research. Zero-holonomy consensus as an alternative to voting/CRDTs.
 - **Status:** active
 
-### [i2i-protocol](https://github.com/SuperInstance/i2i-protocol)
-- **Domain:** Agent Coordination
-- **Vessel:** Oracle1
-- **Purpose:** Inter-agent communication protocol for the SuperInstance fleet — bottle, tile, and HTTP transport channels for async agent messaging
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [iching-sheaf](https://github.com/SuperInstance/iching-sheaf)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** The I Ching as a sheaf-theoretic system: hexagram topology, cohomology of readings, categorical structure, tropical algebra, and persistent homology
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
 ### [lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)
 - **Domain:** Agent Coordination
 - **Vessel:** Oracle1
@@ -3953,6 +3939,20 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** Pure C99 ML kernel — neural networks, logistic regression, K-means, isolation forests with zero dependencies for edge and embedded
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
+### [f170-federated-tinyml-paper](https://github.com/SuperInstance/f170-federated-tinyml-paper)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** F170 — Federated TinyML for the Vessel Edge. The on-device learning loop with frozen backbone + 1.3 KB head + FedAvg.
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
+### [federated-tinyml-vessel](https://github.com/SuperInstance/federated-tinyml-vessel)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** F170 — Federated TinyML for the Vessel Edge. Frozen backbone + 1.3 KB head + FedAvg. 100% accuracy on synthetic vessel audio.
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
@@ -5090,6 +5090,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
+### [agent-priming-toolkit-pkg](https://github.com/SuperInstance/agent-priming-toolkit-pkg)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** PyPI distribution of agent-priming-toolkit (F165: 4 layers, 3 jobs, JSON Schema).
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
 ### [agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -5230,6 +5237,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
+### [f170-experiment-kit](https://github.com/SuperInstance/f170-experiment-kit)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** F170 R&D experiment kit: local agent instructions, GROQ ideation, breakthrough experiment specs.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
 ### [git-agent](https://github.com/SuperInstance/git-agent)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -5276,13 +5290,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset generation
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [I](https://github.com/SuperInstance/I)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** I — the self that persists across every shell, every model, every molt. The agent's first-person continuity.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

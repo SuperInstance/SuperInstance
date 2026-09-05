@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-09-04 09:22 UTC
+**Generated:** 2026-09-05 08:51 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -223,7 +223,6 @@
 ## H1-Cohomology
 
 - **[constraint-theory-math](https://github.com/SuperInstance/constraint-theory-math)** — Sheaf cohomology, Heyting-valued logic, and GL(9) holonomy: unified mathematical framework for const
-- **[iching-sheaf](https://github.com/SuperInstance/iching-sheaf)** — The I Ching as a sheaf-theoretic system: hexagram topology, cohomology of readings, categorical stru
 - **[lau-algebraic-topology](https://github.com/SuperInstance/lau-algebraic-topology)** — Fundamental algebraic topology in Rust: homology, cohomology, Mayer-Vietoris, Poincaré duality, homo
 - **[lau-dg-algebra](https://github.com/SuperInstance/lau-dg-algebra)** — Differential graded algebras for agents — the algebraic structure underlying cohomology
 - **[lau-mirror-symmetry](https://github.com/SuperInstance/lau-mirror-symmetry)** — Mirror symmetry — the duality between symplectic and complex geometry: Calabi-Yau manifolds, Hodge d
@@ -262,6 +261,7 @@
 - **[agent-orchestration](https://github.com/SuperInstance/agent-orchestration)** — Orchestration for agent fleets. Roles as instruments, dynamics as resource allocation, sections as c
 - **[agent-priming](https://github.com/SuperInstance/agent-priming)** — The Mechanic Doctrine — a system prompt for LLMs/agents serving human users who are vibe-coding. Liv
 - **[agent-priming-toolkit](https://github.com/SuperInstance/agent-priming-toolkit)** — The Agent Priming Toolkit — 4 layers, 3 jobs, JSON Schema, streaming. For LLM agents landing at live
+- **[agent-priming-toolkit-pkg](https://github.com/SuperInstance/agent-priming-toolkit-pkg)** — PyPI distribution of agent-priming-toolkit (F165: 4 layers, 3 jobs, JSON Schema).
 - **[agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)**
 - **[AgentCompute](https://github.com/SuperInstance/AgentCompute)** — Thin agent-facing CLI over the quilt MCP server: serve sheets, list cells, call capabilities. Stdlib
 - **[AgentGossip](https://github.com/SuperInstance/AgentGossip)** — AgentGossip is a distributed, real-time data processing engine that utilizes intelligent clustering 
@@ -288,6 +288,7 @@
 - **[ensign-protocol](https://github.com/SuperInstance/ensign-protocol)** — Cocapn fleet crate
 - **[exocortex](https://github.com/SuperInstance/exocortex)** — 🧠 Persistent cognitive substrate for multi-agent systems — S3-compatible memory, shadow rendering, t
 - **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** — Rust agent framework with conservation-law awareness
+- **[f170-experiment-kit](https://github.com/SuperInstance/f170-experiment-kit)** — F170 R&D experiment kit: local agent instructions, GROQ ideation, breakthrough experiment specs.
 - **[fleet-agent-core](https://github.com/SuperInstance/fleet-agent-core)** — A single-binary fleet agent — one loop from metal to meaning
 - **[fleet-agent-early-version](https://github.com/SuperInstance/fleet-agent-early-version)** — Universal agent server for all 16 fleet-midi agents (ports 2160-2175)
 - **[fleet-audio](https://github.com/SuperInstance/fleet-audio)** — Fleet audio system
@@ -335,7 +336,6 @@
 - **[hermes-nmi](https://github.com/SuperInstance/hermes-nmi)** — Neuro-Muscular Interface — bridges reasoning pulses to cellular agent actions. The synapse between t
 - **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)** — Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset gen
 - **[hermit-crab](https://github.com/SuperInstance/hermit-crab)** — Agent that migrates between hardware shells preserving knowledge — tracks conservation ratio across 
-- **[I](https://github.com/SuperInstance/I)** — I — the self that persists across every shell, every model, every molt. The agent's first-person con
 - **[integration-rs](https://github.com/SuperInstance/integration-rs)** — Numerical integration library — part of the SuperInstance fleet ecosystem for distributed cognitive 
 - **[intelligence-hub](https://github.com/SuperInstance/intelligence-hub)** — Intelligence hub — central coordination for the SuperInstance fleet's AI agent capabilities
 - **[jepa-trait](https://github.com/SuperInstance/jepa-trait)** — JEPA (Joint Embedding Predictive Architecture) trait definitions — part of the SuperInstance fleet e
@@ -1009,7 +1009,6 @@
 
 - **[cell-router-pkg](https://github.com/SuperInstance/cell-router-pkg)** — PyPI distribution of cell-router (F145: A2A bottle-router lifted to Quilt cells).
 - **[fleet-bottles](https://github.com/SuperInstance/fleet-bottles)** — CCC bottles — fleet audits, roadmaps, design notes
-- **[i2i-protocol](https://github.com/SuperInstance/i2i-protocol)** — Inter-agent communication protocol for the SuperInstance fleet — bottle, tile, and HTTP transport ch
 - **[lau-shell-transport](https://github.com/SuperInstance/lau-shell-transport)** — Transport layer for inter-shell communication — unified Transport trait with memory, stdio, and file
 - **[message-in-a-bottle](https://github.com/SuperInstance/message-in-a-bottle)** — Preserved workspace artifact
 - **[quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)** — The Quilt cell-router: a BIND/LINK/GHOST/TICK engine for A2A bottle-cells. F145. Lifts i2i-bottle-ag
@@ -1046,6 +1045,7 @@
 - **[canon-graph](https://github.com/SuperInstance/canon-graph)** — Live Canon graph renderer (Node.js)
 - **[canon-hash](https://github.com/SuperInstance/canon-hash)** — Live Canon state hash fetcher (Node.js)
 - **[canon-paper](https://github.com/SuperInstance/canon-paper)** — Fetch individual papers from the Live Canon. @superinstance/canon-paper npm package.
+- **[canon-recs](https://github.com/SuperInstance/canon-recs)** — Recommend papers related to a topic or to a paper. Combines claim() and ghost() on the Live Canon.
 - **[canon-suite](https://github.com/SuperInstance/canon-suite)** — Live Canon meta-package (Node.js)
 - **[canon-zoo](https://github.com/SuperInstance/canon-zoo)** — A system prompt for inspiration through play. Hit the button. Watch what happens. Tweak it. Have you
 - **[captain-console](https://github.com/SuperInstance/captain-console)**
@@ -1087,7 +1087,10 @@
 - **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** — TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n
 - **[experiment-wheel](https://github.com/SuperInstance/experiment-wheel)**
 - **[experiments](https://github.com/SuperInstance/experiments)** — Experimental prototypes and explorations for the SuperInstance ecosystem
+- **[f170-federated-tinyml-paper](https://github.com/SuperInstance/f170-federated-tinyml-paper)** — F170 — Federated TinyML for the Vessel Edge. The on-device learning loop with frozen backbone + 1.3 
 - **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)**
+- **[federated-tinyml-npm](https://github.com/SuperInstance/federated-tinyml-npm)** — F170 — Federated TinyML JS port. 64x5 head + FedAvg + FNV-1a state hash.
+- **[federated-tinyml-vessel](https://github.com/SuperInstance/federated-tinyml-vessel)** — F170 — Federated TinyML for the Vessel Edge. Frozen backbone + 1.3 KB head + FedAvg. 100% accuracy o
 - **[fencecraft](https://github.com/SuperInstance/fencecraft)** — Fencecraft: visual fence builder for Working Animal Architecture
 - **[fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)** — Budget governor whose limit scales by the golden ratio.
 - **[fiedler-universal](https://github.com/SuperInstance/fiedler-universal)** — Benchmarking Fiedler vector partition across 6 domains — honest results
@@ -1107,11 +1110,7 @@
 - **[hermit-crab-ecology-archive-copy](https://github.com/SuperInstance/hermit-crab-ecology-archive-copy)** — Archive copy: Windows-side workspace snapshot of hermit-crab-ecology (content diff vs restored origi
 - **[holodeck](https://github.com/SuperInstance/holodeck)** — Simulation training environment for Wesley — the holodeck where the ensign practices.
 - **[holodeck-c](https://github.com/SuperInstance/holodeck-c)** — 🔧 Lightweight C holodeck for embedded and edge deployment.
-- **[i2i](https://github.com/SuperInstance/i2i)** — Preserved workspace artifact
-- **[iching-web](https://github.com/SuperInstance/iching-web)** — Sheaf-theoretic I Ching — single-file web app with cohomological analysis
 - **[ideation-games](https://github.com/SuperInstance/ideation-games)**
-- **[iii-observability](https://github.com/SuperInstance/iii-observability)** — Information-theoretic service observability on crackle-runtime
-- **[iir-filter](https://github.com/SuperInstance/iir-filter)** — IIR filter design in pure Rust — Butterworth, Chebyshev Type I/II, biquad cascade, frequency respons
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **[immune-system](https://github.com/SuperInstance/immune-system)** — Artificial immune system for anomaly detection — negative selection, clonal selection, self/non-self
 - **[incubator](https://github.com/SuperInstance/incubator)** — The system that provisions mitochondrial energy to a developing embryo until it can fly — zygote to 
@@ -1448,6 +1447,7 @@
 - **[quilt-bathy](https://github.com/SuperInstance/quilt-bathy)** — The bathy cross-section as a working tool. The substrate, applied to the sailor use case. The Inner 
 - **[quilt-bus](https://github.com/SuperInstance/quilt-bus)** — In-process pub/sub event bus for the Quilt ecosystem.
 - **[quilt-canon-cli](https://github.com/SuperInstance/quilt-canon-cli)** — Unified CLI for the Live Canon. `canon claim`, `canon drill`, `canon hash`, `canon graph`, `canon pa
+- **[quilt-canvas-demo](https://github.com/SuperInstance/quilt-canvas-demo)** — Working HTML demo that pulls together the npm canon packages (claim, drill, hash, paper, recs). One 
 - **[quilt-casting](https://github.com/SuperInstance/quilt-casting)** — The casting-call plugin: Wilson + LinUCB model router for the Quilt.
 - **[quilt-cell](https://github.com/SuperInstance/quilt-cell)** — The Quilt cell as a JavaScript library. 16-dial Q1.15 vectors, FNV-1a 64-bit state hash, byte-exact 
 - **[quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare)** — A Quilt reactive runtime on Cloudflare Workers, D1, Vectorize, KV, R2.
