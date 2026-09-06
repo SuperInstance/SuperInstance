@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-09-05 08:51 UTC
+**Generated:** 2026-09-06 09:11 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1424,7 +1424,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [holodeck-c](https://github.com/SuperInstance/holodeck-c)
 - [ideation-games](https://github.com/SuperInstance/ideation-games)
 - [image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)
-- [immune-system](https://github.com/SuperInstance/immune-system)
 - [incubator](https://github.com/SuperInstance/incubator)
 - [info-geo](https://github.com/SuperInstance/info-geo)
 - [information-geometry](https://github.com/SuperInstance/information-geometry)
@@ -1752,6 +1751,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [queueing-theory](https://github.com/SuperInstance/queueing-theory)
 - [quicunnel](https://github.com/SuperInstance/quicunnel)
 - [quilt](https://github.com/SuperInstance/quilt)
+- [quilt-Kuramoto](https://github.com/SuperInstance/quilt-Kuramoto)
 - [quilt-ai](https://github.com/SuperInstance/quilt-ai)
 - [quilt-base](https://github.com/SuperInstance/quilt-base)
 - [quilt-bathy](https://github.com/SuperInstance/quilt-bathy)
