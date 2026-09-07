@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-09-06 09:11 UTC
+**Generated:** 2026-09-07 09:59 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -73,6 +73,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quf-vhdl](https://github.com/SuperInstance/quf-vhdl)** | Forgemaster | VHDL-2008 port of the Quilt Universal Format (QUF) — 5th substrate in the polyformalism, byte-exact  | 🟢 active |
 | **[quilt-c](https://github.com/SuperInstance/quilt-c)** | Forgemaster | Polyformalism: Quilt in C (bare metal, the mathematical core) | 🟢 active |
 | **[quilt-chapel](https://github.com/SuperInstance/quilt-chapel)** | Forgemaster | Polyformalism: Quilt in Chapel (distributed cell evaluation) | 🟢 active |
+| **[quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts)** | Forgemaster | Claude-compatible artifacts for the Quilt polyformalism — cell taxonomy, fabric simulator, language  | 🟢 active |
 | **[quilt-cpp](https://github.com/SuperInstance/quilt-cpp)** | Forgemaster | Polyformalism: Quilt in C++ (templates reveal the cell kind lattice) | 🟢 active |
 | **[quilt-csharp](https://github.com/SuperInstance/quilt-csharp)** | Forgemaster | Polyformalism: Quilt in C# (records, delegates, events, LINQ) | 🟢 active |
 | **[quilt-edge-arch](https://github.com/SuperInstance/quilt-edge-arch)** | Forgemaster | The Quilt cellular runtime on the edge — Rust no_std polyformalism with PSRAM, pre-dispatch, DMA | 🟢 active |
@@ -573,9 +574,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)** | Various | Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset gen | 🟢 active |
 | **[ideation-games](https://github.com/SuperInstance/ideation-games)** | Various | ideation-games | ⚪ unknown |
 | **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** | Various | Image Distillation Loop — Wesley learns to generate images through teacher-model feedback | ⚪ unknown |
-| **[incubator](https://github.com/SuperInstance/incubator)** | Various | The system that provisions mitochondrial energy to a developing embryo until it can fly — zygote to  | ⚪ unknown |
-| **[info-geo](https://github.com/SuperInstance/info-geo)** | Various | Information geometry — Fisher information, Riemannian manifolds, natural gradient, exponential famil | ⚪ unknown |
-| **[information-geometry](https://github.com/SuperInstance/information-geometry)** | Various | Information geometry in Rust — Fisher information metric, statistical manifolds, natural gradient, e | ⚪ unknown |
 | **[information-theory](https://github.com/SuperInstance/information-theory)** | Various | Complete Shannon information theory in Rust — entropy, KL divergence, mutual information, channel ca | ⚪ unknown |
 | **[insight-engine](https://github.com/SuperInstance/insight-engine)** | Various | Self-iterating discovery runtime — 7 novel experiment types, frontier-driven hypothesis generation,  | ⚪ unknown |
 | **[integration-c](https://github.com/SuperInstance/integration-c)** | Various | Eight libraries. One theorem. These tests prove it. | ⚪ unknown |
@@ -1234,6 +1232,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[queueing-theory](https://github.com/SuperInstance/queueing-theory)** | Various | Queueing theory in Rust — M/M/1, M/M/c, Erlang, Jackson networks, priority queues. Model capacity be | ⚪ unknown |
 | **[quicunnel](https://github.com/SuperInstance/quicunnel)** | Various | High-performance QUIC tunnel with mTLS authentication and automatic reconnection | ⚪ unknown |
 | **[quilt-agent](https://github.com/SuperInstance/quilt-agent)** | Various | AI agents where every capability is a cell. Memory is values, tools are API cells, reasoning is a ch | 🟢 active |
+| **[quilt-agent-memory-archive](https://github.com/SuperInstance/quilt-agent-memory-archive)** | Various | ARCHIVED snapshots of the Mavis agent memory (MEMORY.md). Old ideas kept because they were often wro | 🟢 active |
 | **[quilt-ai](https://github.com/SuperInstance/quilt-ai)** | Various | AI cells for Quilt — 4 providers, 8 cell kinds, one uniform interface | ⚪ unknown |
 | **[quilt-base](https://github.com/SuperInstance/quilt-base)** | Various | Quilt ecosystem component: <!-- | ⚪ unknown |
 | **[quilt-bathy](https://github.com/SuperInstance/quilt-bathy)** | Various | The bathy cross-section as a working tool. The substrate, applied to the sailor use case. The Inner  | ⚪ unknown |
@@ -1260,6 +1259,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-flow](https://github.com/SuperInstance/quilt-flow)** | Various | Quilt sketch — see README. | ⚪ unknown |
 | **[quilt-foundation](https://github.com/SuperInstance/quilt-foundation)** | Various | The 5-opcode Quilt VM. Foundation layer for cells, plugins, sheets, MUDs, TTRPGs, and the bay dance. | ⚪ unknown |
 | **[quilt-geometry](https://github.com/SuperInstance/quilt-geometry)** | Various | quilt-geometry | ⚪ unknown |
+| **[quilt-go](https://github.com/SuperInstance/quilt-go)** | Various | The Quilt cell-fabric runtime in Go — stdlib only, byte-exact FNV-1a 64-bit hash. Generated by a Cla | ⚪ unknown |
 | **[quilt-id](https://github.com/SuperInstance/quilt-id)** | Various | phi-Address Penrose content addressing | ⚪ unknown |
 | **[quilt-k3s](https://github.com/SuperInstance/quilt-k3s)** | Various | Quilt ecosystem component:  | ⚪ unknown |
 | **[quilt-Kuramoto](https://github.com/SuperInstance/quilt-Kuramoto)** | Various | quilt-Kuramoto | ⚪ unknown |
@@ -2462,6 +2462,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt in Chapel (distributed cell evaluation)
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
+### [quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** Claude-compatible artifacts for the Quilt polyformalism — cell taxonomy, fabric simulator, language map, vibe-code protocol
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
@@ -6676,6 +6683,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** AI agents where every capability is a cell. Memory is values, tools are API cells, reasoning is a chain of program cells, the agent is a sheet.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [quilt-agent-memory-archive](https://github.com/SuperInstance/quilt-agent-memory-archive)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** ARCHIVED snapshots of the Mavis agent memory (MEMORY.md). Old ideas kept because they were often wrong here but useful somewhere else. See README.md.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

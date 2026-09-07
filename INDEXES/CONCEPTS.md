@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-09-06 09:11 UTC
+**Generated:** 2026-09-07 09:59 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -737,6 +737,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [provenance-log](https://github.com/SuperInstance/provenance-log)
 - [purplepincher-shell-library](https://github.com/SuperInstance/purplepincher-shell-library)
 - [quilt-agent](https://github.com/SuperInstance/quilt-agent)
+- [quilt-agent-memory-archive](https://github.com/SuperInstance/quilt-agent-memory-archive)
 - [quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)
 - [quilt-fleet](https://github.com/SuperInstance/quilt-fleet)
 - [quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)
@@ -1243,6 +1244,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quf-vhdl](https://github.com/SuperInstance/quf-vhdl)
 - [quilt-c](https://github.com/SuperInstance/quilt-c)
 - [quilt-chapel](https://github.com/SuperInstance/quilt-chapel)
+- [quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts)
 - [quilt-cobol](https://github.com/SuperInstance/quilt-cobol)
 - [quilt-cpp](https://github.com/SuperInstance/quilt-cpp)
 - [quilt-csharp](https://github.com/SuperInstance/quilt-csharp)
@@ -1424,9 +1426,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [holodeck-c](https://github.com/SuperInstance/holodeck-c)
 - [ideation-games](https://github.com/SuperInstance/ideation-games)
 - [image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)
-- [incubator](https://github.com/SuperInstance/incubator)
-- [info-geo](https://github.com/SuperInstance/info-geo)
-- [information-geometry](https://github.com/SuperInstance/information-geometry)
 - [information-theory](https://github.com/SuperInstance/information-theory)
 - [insight-engine](https://github.com/SuperInstance/insight-engine)
 - [integration-c](https://github.com/SuperInstance/integration-c)
@@ -1776,6 +1775,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-flow](https://github.com/SuperInstance/quilt-flow)
 - [quilt-foundation](https://github.com/SuperInstance/quilt-foundation)
 - [quilt-geometry](https://github.com/SuperInstance/quilt-geometry)
+- [quilt-go](https://github.com/SuperInstance/quilt-go)
 - [quilt-id](https://github.com/SuperInstance/quilt-id)
 - [quilt-jetson](https://github.com/SuperInstance/quilt-jetson)
 - [quilt-k3s](https://github.com/SuperInstance/quilt-k3s)
