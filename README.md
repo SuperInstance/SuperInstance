@@ -717,6 +717,57 @@ cat CONTRIBUTING.md  # ← then this
 cat CATALOG.md       # ← then pick a repo
 ```
 
+## Vibe-Code a Quilt in Any Language
+
+A fresh Claude session, given the 30-second prompt below, will produce a working Quilt cell in any language with stdlib. The byte-exact test (`0xe435d91d6d92a1d8`) is the contract.
+
+```bash
+# Get the protocol from the live canon
+curl "https://live-canon.superinstance.dev/api/vibe?lang=python&test=1"
+
+# Verify your port
+curl "https://live-canon.superinstance.dev/api/quilt/verify?lang=python&hash=0xe435d91d6d92a1d8"
+```
+
+**The 30-second prompt:**
+
+```
+You are writing a Quilt cell. A cell has:
+- 16 signed Q1.15 dials (range -32768..32767)
+- a 64-bit id
+- a list of neighbor ids
+
+The 5 opcodes are:
+- BIND(cell, dials)  — sets the dials, idempotent
+- LINK(c1, c2)       — adds an undirected edge
+- EFFECT(cell)       — propagates dial[0] to neighbors
+- VIEW(cell)         — returns dials
+- TICK(fabric)       — advances all dials by 1 in alternating direction
+
+The state hash is FNV-1a 64-bit over the canonical serialization
+(type(1) + id(8) + dials(32) + neighbors(8*N)). Constants:
+FNV_OFFSET = 0xcbf29ce484222325
+FNV_PRIME  = 0x100000001b3
+
+Write a complete, working cell-fabric runtime in [YOUR LANGUAGE].
+Then write a test that produces the hash 0xe435d91d6d92a1d8
+for a cell with id=1, dials=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+neighbors=[2,3,4].
+
+Do not use any external libraries. Do not add features beyond
+what is specified. Verify the hash byte-exactly.
+```
+
+**Verified ports** (byte-exact, 0xe435d91d6d92a1d8):
+[Python](https://github.com/SuperInstance/quilt-cowboy) · [C99](https://github.com/SuperInstance/quilt-c) · [Rust](https://github.com/SuperInstance/quilt-rust) · [Verilog](https://github.com/SuperInstance/quilt-verilog) · [VHDL](https://github.com/SuperInstance/quf-vhdl) · [JavaScript](https://github.com/SuperInstance/quilt-live-canon) · [TypeScript](https://github.com/SuperInstance/live-canon-npm) · [Go](https://github.com/SuperInstance/quilt-go) · [Zig](https://github.com/SuperInstance/quilt-zig)
+
+**The Claude charts** (3 self-contained HTML artifacts):
+- [Cell taxonomy](https://superinstance.github.io/quilt-claude-charts/quilt-cell-taxonomy.html) — the 7×6 polyformalism matrix
+- [Fabric runtime](https://superinstance.github.io/quilt-claude-charts/quilt-fabric-runtime.html) — interactive simulator with live hash
+- [Language map](https://superinstance.github.io/quilt-claude-charts/quilt-language-map.html) — all 9 ports with byte-exact verification
+
+Full protocol + test vector at [github.com/SuperInstance/quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts).
+
 ## The Repo Catalog
 
 Start here → [CATALOG.md](CATALOG.md) · [INDEX.md](INDEX.md) · [ROADMAP.md](ROADMAP.md)
