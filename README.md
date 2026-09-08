@@ -759,7 +759,7 @@ what is specified. Verify the hash byte-exactly.
 ```
 
 **Verified ports** (byte-exact, 0xe435d91d6d92a1d8):
-[Python](https://github.com/SuperInstance/quilt-cowboy) · [C99](https://github.com/SuperInstance/quilt-c) · [Rust](https://github.com/SuperInstance/quilt-rust) · [Verilog](https://github.com/SuperInstance/quilt-verilog) · [VHDL](https://github.com/SuperInstance/quf-vhdl) · [JavaScript](https://github.com/SuperInstance/quilt-live-canon) · [TypeScript](https://github.com/SuperInstance/live-canon-npm) · [Go](https://github.com/SuperInstance/quilt-go) · [Zig](https://github.com/SuperInstance/quilt-zig) · [Mojo](https://github.com/SuperInstance/quilt-mojo)
+[Python](https://github.com/SuperInstance/quilt-cowboy) · [C99](https://github.com/SuperInstance/quilt-c) · [Rust](https://github.com/SuperInstance/quilt-rust) · [Verilog](https://github.com/SuperInstance/quilt-verilog) · [VHDL](https://github.com/SuperInstance/quf-vhdl) · [JavaScript](https://github.com/SuperInstance/quilt-live-canon) · [TypeScript](https://github.com/SuperInstance/live-canon-npm) · [Go](https://github.com/SuperInstance/quilt-go) · [Zig](https://github.com/SuperInstance/quilt-zig) · [Mojo](https://github.com/SuperInstance/quilt-mojo) · [Rust (vibe)](https://github.com/SuperInstance/quilt-rust-vibe)
 
 **The Claude charts** (3 self-contained HTML artifacts):
 - [Cell taxonomy](https://superinstance.github.io/quilt-claude-charts/quilt-cell-taxonomy.html) — the 7×6 polyformalism matrix
