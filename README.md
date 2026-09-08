@@ -764,9 +764,48 @@ what is specified. Verify the hash byte-exactly.
 **The Claude charts** (3 self-contained HTML artifacts):
 - [Cell taxonomy](https://superinstance.github.io/quilt-claude-charts/quilt-cell-taxonomy.html) — the 7×6 polyformalism matrix
 - [Fabric runtime](https://superinstance.github.io/quilt-claude-charts/quilt-fabric-runtime.html) — interactive simulator with live hash
-- [Language map](https://superinstance.github.io/quilt-claude-charts/quilt-language-map.html) — all 9 ports with byte-exact verification
+- [Language map](https://superinstance.github.io/quilt-claude-charts/quilt-language-map.html) — all 11 ports with byte-exact verification
 
-Full protocol + test vector at [github.com/SuperInstance/quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts).
+Full protocol + test vector at [github.com/SuperInstance/quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts). Start with the [**Quilt Charter**](https://github.com/SuperInstance/quilt-claude-charts/blob/main/QUILT_CHARTER.md) — the educational root document that explains the 30-second version, canonical serialization, FNV-1a 64 hash, the 12+ languages, the 5 polyformalism levels, and how to port to a new language.
+
+### How to Port the Quilt to a New Language
+
+1. **Read the [Quilt Charter](https://github.com/SuperInstance/quilt-claude-charts/blob/main/QUILT_CHARTER.md)** — 5 minutes, the educational root
+2. **Copy the 30-second prompt above**, replace `[YOUR LANGUAGE]` with your target
+3. **Run the byte-exact test** — your port must produce `0xe435d91d6d92a1d8`
+4. **Push to GitHub** at `github.com/SuperInstance/quilt-{lang}` with the standard README structure (Why / How / Test / Cross-links)
+5. **Add a row to the table** in the [Language Map chart](https://superinstance.github.io/quilt-claude-charts/quilt-language-map.html)
+6. **Add a paper** to the canon (use the cowboy pipeline or write one yourself)
+
+A working port takes 5-30 minutes. The byte-exact hash makes verification trivial. Every port repo links back to the Charter, the canon, and the live worker.
+
+### The Cross-Pollination Map
+
+Every Quilt-related repo now points to every other Quilt-related repo. The educational value compounds:
+
+```
+                        ┌────────────────────┐
+                        │  QUILT_CHARTER.md  │  ← educational root
+                        │  (8KB)             │
+                        └────────┬───────────┘
+                                 │
+        ┌──────────┬──────────┬──┴──────┬──────────┬──────────┐
+        ▼          ▼          ▼         ▼          ▼          ▼
+   ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐
+   │ quilt- │ │ quilt- │ │ quilt- │ │ quilt- │ │quilt-  │ │quilt-  │
+   │  go    │ │  zig   │ │  mojo  │ │ rust-  │ │ live-  │ │ cowboy │
+   │        │ │        │ │        │ │  vibe  │ │ canon  │ │        │
+   └────┬───┘ └────┬───┘ └────┬───┘ └────┬───┘ └────┬───┘ └────┬───┘
+        │          │          │          │          │          │
+        └──────────┴──────────┴────┬─────┴──────────┴──────────┘
+                                   ▼
+                        ┌────────────────────┐
+                        │    AI-Writings     │  ← the canon (231 papers)
+                        │    + live-canon    │  ← the worker
+                        └────────────────────┘
+```
+
+Every port repo's README includes: the 5 opcodes, the test command, the byte-exact hash, the polyformalism table, and a "See also" section linking to all the other ports, the charter, the canon, and the live worker. Start at any port, find every other.
 
 ## The Repo Catalog
 
