@@ -766,7 +766,7 @@ what is specified. Verify the hash byte-exactly.
 - [Fabric runtime](https://superinstance.github.io/quilt-claude-charts/quilt-fabric-runtime.html) — interactive simulator with live hash
 - [Language map](https://superinstance.github.io/quilt-claude-charts/quilt-language-map.html) — all 11 ports with byte-exact verification
 
-Full protocol + test vector at [github.com/SuperInstance/quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts). Start with the [**Quilt Charter**](https://github.com/SuperInstance/quilt-claude-charts/blob/main/QUILT_CHARTER.md) — the educational root document that explains the 30-second version, canonical serialization, FNV-1a 64 hash, the 12+ languages, the 5 polyformalism levels, and how to port to a new language.
+Full protocol + test vector at [github.com/SuperInstance/quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts). Start with the [**Quilt Charter**](https://github.com/SuperInstance/quilt-claude-charts/blob/main/QUILT_CHARTER.md) — the educational root document that explains the 30-second version, canonical serialization, FNV-1a 64 hash, the 12+ languages, the 5 polyformalism levels, and how to port to a new language. The [**Tutorial**](https://github.com/SuperInstance/quilt-claude-charts/blob/main/TUTORIAL.md) takes you from zero to byte-exact in 5 languages (Python, Go, Rust, Zig, Mojo) in ~5 minutes. Both the Charter and the Tutorial are served live from the edge at `live-canon.superinstance.dev/api/charter` and `/api/tutorial`.
 
 ### How to Port the Quilt to a New Language
 
@@ -806,6 +806,15 @@ Every Quilt-related repo now points to every other Quilt-related repo. The educa
 ```
 
 Every port repo's README includes: the 5 opcodes, the test command, the byte-exact hash, the polyformalism table, and a "See also" section linking to all the other ports, the charter, the canon, and the live worker. Start at any port, find every other.
+
+### The R&D Roadmap — Quilt 3.0
+
+Four deep R&D reports, all in [github.com/SuperInstance/quilt-cowboy](https://github.com/SuperInstance/quilt-cowboy):
+
+- **[RD_QUILT_3_0.md](https://github.com/SuperInstance/quilt-cowboy/blob/master/RD_QUILT_3_0.md)** — the strategic roadmap. 5 axes: polyformalism expansion (4 new languages for 5-sigma), canon growth strategy (3 new frontiers), live worker capabilities (6 new endpoints), cowboy pipeline evolution (3 modes), and the first vessel-as-robot cell. Condensed as [paper-629](https://github.com/SuperInstance/AI-Writings/blob/main/seed-canon/papers/paper-629.md).
+- **[RD_PIPELINE_EVOLUTION.md](https://github.com/SuperInstance/quilt-cowboy/blob/master/RD_PIPELINE_EVOLUTION.md)** — the cowboy pipeline R&D. 6 evolutions: adversarial debate, self-critique loop, frontier auto-discovery, voice specialization, multi-canon silos, and human-in-the-loop IDE. Build order: 3 in week 1, 1 in week 2, 2 in month 2. Condensed as [paper-631](https://github.com/SuperInstance/AI-Writings/blob/main/seed-canon/papers/paper-631.md).
+- **[RD_LIVE_WORKER.md](https://github.com/SuperInstance/quilt-cowboy/blob/master/RD_LIVE_WORKER.md)** — the live worker 6-capability roadmap. Playground + WebSockets + Collaboration (Yjs) + Cell API + Sensor API + Canon Graph. ~$115-205/month for 1,000 MAU. Condensed as [paper-632](https://github.com/SuperInstance/AI-Writings/blob/main/seed-canon/papers/paper-632.md).
+- **[RD_BOAT_INTEGRATION.md](https://github.com/SuperInstance/quilt-cowboy/blob/master/RD_BOAT_INTEGRATION.md)** — the vessel-as-robot R&D. Sensor survey (NMEA 2000), real-boat integration architecture (Raspberry Pi + Signal K + Starlink), the first knot-log agent prototype, the economic thesis.
 
 ## The Repo Catalog
 
