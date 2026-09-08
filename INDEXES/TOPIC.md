@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-09-07 09:59 UTC
+**Generated:** 2026-09-08 11:27 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -144,7 +144,6 @@
 - **[flux-showcase](https://github.com/SuperInstance/flux-showcase)** — Compiler Explorer for FLUX bytecode — watch .bin files run identically across Python, Rust, and JS V
 - **[flux-visual-editor](https://github.com/SuperInstance/flux-visual-editor)** — Visual node-based editor for FLUX — compose behavior, not assembly
 - **[flux-vm](https://github.com/SuperInstance/flux-vm)** — FLUX-C constraint VM: 50 opcodes, stack-based, DAL A certifiable. TrustZone-style FLUX-C/FLUX-X brid
-- **[insight-cfp-bridge](https://github.com/SuperInstance/insight-cfp-bridge)** — Auto-encode insight engine discoveries as FLUX tiles for fleet sharing
 - **[lau-agent-runtime](https://github.com/SuperInstance/lau-agent-runtime)** — Self-compiling agent runtime — agents build their own mini-interpreters with bytecode, builtins, and
 - **[lau-bytecode](https://github.com/SuperInstance/lau-bytecode)** — Stack-based bytecode VM for agent programs — 28 opcodes, compiler, sensor/actuator I/O, emotional vi
 - **[lau-bytecode-c](https://github.com/SuperInstance/lau-bytecode-c)** — LAU bytecode VM - C port
@@ -336,7 +335,6 @@
 - **[hermes-nmi](https://github.com/SuperInstance/hermes-nmi)** — Neuro-Muscular Interface — bridges reasoning pulses to cellular agent actions. The synapse between t
 - **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)** — Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset gen
 - **[hermit-crab](https://github.com/SuperInstance/hermit-crab)** — Agent that migrates between hardware shells preserving knowledge — tracks conservation ratio across 
-- **[integration-rs](https://github.com/SuperInstance/integration-rs)** — Numerical integration library — part of the SuperInstance fleet ecosystem for distributed cognitive 
 - **[intelligence-hub](https://github.com/SuperInstance/intelligence-hub)** — Intelligence hub — central coordination for the SuperInstance fleet's AI agent capabilities
 - **[jepa-trait](https://github.com/SuperInstance/jepa-trait)** — JEPA (Joint Embedding Predictive Architecture) trait definitions — part of the SuperInstance fleet e
 - **[jetson-bootstrap](https://github.com/SuperInstance/jetson-bootstrap)** — Git-agent for Jetson replication — clone this repo on another Jetson and be a few commits behind, no
@@ -967,9 +965,13 @@
 - **[quilt-cpp](https://github.com/SuperInstance/quilt-cpp)** — Polyformalism: Quilt in C++ (templates reveal the cell kind lattice)
 - **[quilt-csharp](https://github.com/SuperInstance/quilt-csharp)** — Polyformalism: Quilt in C# (records, delegates, events, LINQ)
 - **[quilt-edge-arch](https://github.com/SuperInstance/quilt-edge-arch)** — The Quilt cellular runtime on the edge — Rust no_std polyformalism with PSRAM, pre-dispatch, DMA
+- **[quilt-forth](https://github.com/SuperInstance/quilt-forth)** — The Quilt cell-fabric runtime in Forth. Concatenative, stack-based. 5-sigma polyformalism port.
 - **[quilt-gc](https://github.com/SuperInstance/quilt-gc)** — Layer 5 of the polyformalism — a runtime/GC that uses the 5 opcodes as the garbage collection bounda
+- **[quilt-haskell](https://github.com/SuperInstance/quilt-haskell)** — The Quilt cell-fabric runtime in Haskell. Pure functional, lazy. 5-sigma polyformalism port.
+- **[quilt-j](https://github.com/SuperInstance/quilt-j)** — The Quilt cell-fabric runtime in J. Array language, point-free. 5-sigma polyformalism port.
 - **[quilt-julia](https://github.com/SuperInstance/quilt-julia)** — Polyformalism: Quilt in Julia (multiple dispatch = cell kinds)
 - **[quilt-linker](https://github.com/SuperInstance/quilt-linker)** — Layer 3 of the polyformalism — a linker-level 5-opcode linker for .qm modules. Catches dangling LINK
+- **[quilt-lua](https://github.com/SuperInstance/quilt-lua)** — The Quilt cell-fabric runtime in Lua. Embeddable, metatables. 5-sigma polyformalism port.
 - **[quilt-mojo](https://github.com/SuperInstance/quilt-mojo)** — Polyformalism: Quilt in Mojo (cells as types, SIMD-friendly formulas)
 - **[quilt-opt](https://github.com/SuperInstance/quilt-opt)** — Layer 4 of the polyformalism — 5 optimizer passes for the 5 opcodes (BIND/LINK/EFFECT/VIEW/TICK). 11
 - **[quilt-polyformalism-dsl](https://github.com/SuperInstance/quilt-polyformalism-dsl)** — The 5 opcodes (BIND, LINK, EFFECT, VIEW, TICK) as language-level syntax in Python/Rust/Haskell. Laye
@@ -1114,11 +1116,7 @@
 - **[holodeck-c](https://github.com/SuperInstance/holodeck-c)** — 🔧 Lightweight C holodeck for embedded and edge deployment.
 - **[ideation-games](https://github.com/SuperInstance/ideation-games)**
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
-- **[information-theory](https://github.com/SuperInstance/information-theory)** — Complete Shannon information theory in Rust — entropy, KL divergence, mutual information, channel ca
-- **[insight-engine](https://github.com/SuperInstance/insight-engine)** — Self-iterating discovery runtime — 7 novel experiment types, frontier-driven hypothesis generation, 
-- **[integration-c](https://github.com/SuperInstance/integration-c)** — Eight libraries. One theorem. These tests prove it.
 - **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** — Integration guides and documentation
-- **[integration_tests](https://github.com/SuperInstance/integration_tests)** — Preserved workspace artifact
 - **[intention-field-rs](https://github.com/SuperInstance/intention-field-rs)** — Self-Improving Band: intention-field-rs
 - **[interp-spline](https://github.com/SuperInstance/interp-spline)** — Research-grade interpolation and splines in pure Rust — linear, cubic Hermite, B-spline, Akima with 
 - **[interval-tree-rs](https://github.com/SuperInstance/interval-tree-rs)** — Interval tree data structure in pure Rust — O(log n) insertion, stabbing queries, range queries, ove
@@ -1482,6 +1480,7 @@
 - **[quilt-radio-orchestrator](https://github.com/SuperInstance/quilt-radio-orchestrator)** — Bootstrap Quilt radio-theater sheets from a seed using z.ai + DeepSeek + Kimi
 - **[quilt-rag](https://github.com/SuperInstance/quilt-rag)** — Quilt runtime for production RAG — loader, chunker, embedder, vector store, retriever, reranker, gen
 - **[quilt-rust](https://github.com/SuperInstance/quilt-rust)** — Rust port of Quilt — a reactive, typed, cellular runtime.
+- **[quilt-rust-vibe](https://github.com/SuperInstance/quilt-rust-vibe)** — The Quilt cell-fabric runtime in Rust — std-only, byte-exact FNV-1a 64-bit hash. Vibe-coded from QUI
 - **[quilt-saddle-bridge](https://github.com/SuperInstance/quilt-saddle-bridge)** — Bridge between the Quilt casting-call witness log and saddle double-entry ledger. FNV-1a64 hash chai
 - **[quilt-state](https://github.com/SuperInstance/quilt-state)** — Persistent state for the Quilt ecosystem. Atomic JSON/JSONL writes, schema versioning.
 - **[quilt-substrate-meta](https://github.com/SuperInstance/quilt-substrate-meta)** — The self-evolving substrate: 5 opcodes, mathematically derived, with a prover, a synthesizer, and 36
@@ -1498,6 +1497,7 @@
 - **[quilt-vm-rust](https://github.com/SuperInstance/quilt-vm-rust)** — The 5-opcode Quilt VM in Rust. Foundation for cells, plugins, sheets, MUDs, TTRPGs, and the bay danc
 - **[quilt-vm-typescript](https://github.com/SuperInstance/quilt-vm-typescript)** — The 5-opcode Quilt VM in TypeScript. Cordis-native. Hosts cells, plugins, sheets, MUDs, TTRPGs, and 
 - **[quilt-wiki-2126](https://github.com/SuperInstance/quilt-wiki-2126)** — The Quilt Wiki of 2126 — built backwards from function to calculation.
+- **[quilt-zig](https://github.com/SuperInstance/quilt-zig)** — The Quilt cell-fabric runtime in Zig — stdlib only, byte-exact FNV-1a 64-bit hash. Vibe-coded from Q
 - **[quilt-zk](https://github.com/SuperInstance/quilt-zk)** — Quilt sketch — see README.
 - **[quipu-math](https://github.com/SuperInstance/quipu-math)** — Mathematics of Incan knotted cord (quipu) data structures
 - **[quipu-math-c](https://github.com/SuperInstance/quipu-math-c)** — C99 Incan knotted cord encoding — base-10 positional knots, arithmetic, corruption detection for edg

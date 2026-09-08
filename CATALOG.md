@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-09-07 09:59 UTC
+**Generated:** 2026-09-08 11:27 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -52,7 +52,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[flux-visual-editor](https://github.com/SuperInstance/flux-visual-editor)** | Forgemaster | Visual node-based editor for FLUX — compose behavior, not assembly | 🟢 active |
 | **[flux-vm](https://github.com/SuperInstance/flux-vm)** | Forgemaster | Provably correct constraint execution via FLUX-C bytecode VM. DO-178C DAL A certifiable. | 🟢 active |
 | **[forgemaster](https://github.com/SuperInstance/forgemaster)** | Forgemaster | Constraint-aware agentic compiler — assembles optimal components from the SuperInstance ecosystem wi | 🟢 active |
-| **[insight-cfp-bridge](https://github.com/SuperInstance/insight-cfp-bridge)** | Forgemaster | Auto-encode insight engine discoveries as FLUX tiles for fleet sharing | 🟢 active |
 | **[intent-directed-compilation](https://github.com/SuperInstance/intent-directed-compilation)** | Forgemaster | Semantic criticality → instruction-level precision: AVX-512 mixed-precision constraint checking with | 🟢 active |
 | **[jc1-ct-bridge](https://github.com/SuperInstance/jc1-ct-bridge)** | Forgemaster | Constraint theory bridge replacing JC1 CUDA ML — 470 lines vs 12,000+ lines, 100% accuracy via Laman | 🟢 active |
 | **[lau-affordance](https://github.com/SuperInstance/lau-affordance)** | Forgemaster | Environment-as-teacher for PLATO agents — behavioral shaping via affordance walls and conservation b | 🟢 active |
@@ -77,9 +76,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-cpp](https://github.com/SuperInstance/quilt-cpp)** | Forgemaster | Polyformalism: Quilt in C++ (templates reveal the cell kind lattice) | 🟢 active |
 | **[quilt-csharp](https://github.com/SuperInstance/quilt-csharp)** | Forgemaster | Polyformalism: Quilt in C# (records, delegates, events, LINQ) | 🟢 active |
 | **[quilt-edge-arch](https://github.com/SuperInstance/quilt-edge-arch)** | Forgemaster | The Quilt cellular runtime on the edge — Rust no_std polyformalism with PSRAM, pre-dispatch, DMA | 🟢 active |
+| **[quilt-forth](https://github.com/SuperInstance/quilt-forth)** | Forgemaster | The Quilt cell-fabric runtime in Forth. Concatenative, stack-based. 5-sigma polyformalism port. | 🟢 active |
 | **[quilt-gc](https://github.com/SuperInstance/quilt-gc)** | Forgemaster | Layer 5 of the polyformalism — a runtime/GC that uses the 5 opcodes as the garbage collection bounda | 🟢 active |
+| **[quilt-haskell](https://github.com/SuperInstance/quilt-haskell)** | Forgemaster | The Quilt cell-fabric runtime in Haskell. Pure functional, lazy. 5-sigma polyformalism port. | 🟢 active |
+| **[quilt-j](https://github.com/SuperInstance/quilt-j)** | Forgemaster | The Quilt cell-fabric runtime in J. Array language, point-free. 5-sigma polyformalism port. | 🟢 active |
 | **[quilt-julia](https://github.com/SuperInstance/quilt-julia)** | Forgemaster | Polyformalism: Quilt in Julia (multiple dispatch = cell kinds) | 🟢 active |
 | **[quilt-linker](https://github.com/SuperInstance/quilt-linker)** | Forgemaster | Layer 3 of the polyformalism — a linker-level 5-opcode linker for .qm modules. Catches dangling LINK | 🟢 active |
+| **[quilt-lua](https://github.com/SuperInstance/quilt-lua)** | Forgemaster | The Quilt cell-fabric runtime in Lua. Embeddable, metatables. 5-sigma polyformalism port. | 🟢 active |
 | **[quilt-metal](https://github.com/SuperInstance/quilt-metal)** | Forgemaster | Polyformalism: Quilt in Metal (GPU-evaluated cells) | 🟢 active |
 | **[quilt-mojo](https://github.com/SuperInstance/quilt-mojo)** | Forgemaster | Polyformalism: Quilt in Mojo (cells as types, SIMD-friendly formulas) | 🟢 active |
 | **[quilt-opt](https://github.com/SuperInstance/quilt-opt)** | Forgemaster | Layer 4 of the polyformalism — 5 optimizer passes for the 5 opcodes (BIND/LINK/EFFECT/VIEW/TICK). 11 | 🟢 active |
@@ -574,12 +577,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)** | Various | Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset gen | 🟢 active |
 | **[ideation-games](https://github.com/SuperInstance/ideation-games)** | Various | ideation-games | ⚪ unknown |
 | **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** | Various | Image Distillation Loop — Wesley learns to generate images through teacher-model feedback | ⚪ unknown |
-| **[information-theory](https://github.com/SuperInstance/information-theory)** | Various | Complete Shannon information theory in Rust — entropy, KL divergence, mutual information, channel ca | ⚪ unknown |
-| **[insight-engine](https://github.com/SuperInstance/insight-engine)** | Various | Self-iterating discovery runtime — 7 novel experiment types, frontier-driven hypothesis generation,  | ⚪ unknown |
-| **[integration-c](https://github.com/SuperInstance/integration-c)** | Various | Eight libraries. One theorem. These tests prove it. | ⚪ unknown |
-| **[integration-rs](https://github.com/SuperInstance/integration-rs)** | Various | Numerical integration library — part of the SuperInstance fleet ecosystem for distributed cognitive  | 🟢 active |
 | **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** | Various | Integration guides and documentation | ⚪ unknown |
-| **[integration_tests](https://github.com/SuperInstance/integration_tests)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[intelligence-hub](https://github.com/SuperInstance/intelligence-hub)** | Various | Intelligence hub — central coordination for the SuperInstance fleet's AI agent capabilities | 🟢 active |
 | **[intention-field-rs](https://github.com/SuperInstance/intention-field-rs)** | Various | Self-Improving Band: intention-field-rs | ⚪ unknown |
 | **[interp-spline](https://github.com/SuperInstance/interp-spline)** | Various | Research-grade interpolation and splines in pure Rust — linear, cubic Hermite, B-spline, Akima with  | ⚪ unknown |
@@ -1274,6 +1272,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-radio-orchestrator](https://github.com/SuperInstance/quilt-radio-orchestrator)** | Various | Bootstrap Quilt radio-theater sheets from a seed using z.ai + DeepSeek + Kimi | ⚪ unknown |
 | **[quilt-rag](https://github.com/SuperInstance/quilt-rag)** | Various | Quilt runtime for production RAG — loader, chunker, embedder, vector store, retriever, reranker, gen | ⚪ unknown |
 | **[quilt-rust](https://github.com/SuperInstance/quilt-rust)** | Various | Rust port of Quilt — a reactive, typed, cellular runtime. | ⚪ unknown |
+| **[quilt-rust-vibe](https://github.com/SuperInstance/quilt-rust-vibe)** | Various | The Quilt cell-fabric runtime in Rust — std-only, byte-exact FNV-1a 64-bit hash. Vibe-coded from QUI | ⚪ unknown |
 | **[quilt-scratch](https://github.com/SuperInstance/quilt-scratch)** | Various | quilt-scratch — a no-code tile-wiring game engine where every cell is inspectable, swappable, and al | ⚪ unknown |
 | **[quilt-state](https://github.com/SuperInstance/quilt-state)** | Various | Persistent state for the Quilt ecosystem. Atomic JSON/JSONL writes, schema versioning. | ⚪ unknown |
 | **[quilt-substrate](https://github.com/SuperInstance/quilt-substrate)** | Various | The Quilt substrate as a working Python library. 11-primitive cells, tensor encoding, Schrödinger pa | ⚪ unknown |
@@ -1290,6 +1289,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-vm-rust](https://github.com/SuperInstance/quilt-vm-rust)** | Various | The 5-opcode Quilt VM in Rust. Foundation for cells, plugins, sheets, MUDs, TTRPGs, and the bay danc | ⚪ unknown |
 | **[quilt-vm-typescript](https://github.com/SuperInstance/quilt-vm-typescript)** | Various | The 5-opcode Quilt VM in TypeScript. Cordis-native. Hosts cells, plugins, sheets, MUDs, TTRPGs, and  | ⚪ unknown |
 | **[quilt-wiki-2126](https://github.com/SuperInstance/quilt-wiki-2126)** | Various | The Quilt Wiki of 2126 — built backwards from function to calculation. | ⚪ unknown |
+| **[quilt-zig](https://github.com/SuperInstance/quilt-zig)** | Various | The Quilt cell-fabric runtime in Zig — stdlib only, byte-exact FNV-1a 64-bit hash. Vibe-coded from Q | ⚪ unknown |
 | **[quilt-zk](https://github.com/SuperInstance/quilt-zk)** | Various | Quilt sketch — see README. | ⚪ unknown |
 | **[quipu-math](https://github.com/SuperInstance/quipu-math)** | Various | Mathematics of Incan knotted cord (quipu) data structures | ⚪ unknown |
 | **[quipu-math-npm](https://github.com/SuperInstance/quipu-math-npm)** | Various | Mathematics of Incan knotted cord (quipu) data structures — TypeScript/npm | ⚪ unknown |
@@ -2318,13 +2318,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
-### [insight-cfp-bridge](https://github.com/SuperInstance/insight-cfp-bridge)
-- **Domain:** Constraint Theory & Math
-- **Vessel:** Forgemaster
-- **Purpose:** Auto-encode insight engine discoveries as FLUX tiles for fleet sharing
-- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
-
 ### [intent-directed-compilation](https://github.com/SuperInstance/intent-directed-compilation)
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
@@ -2493,10 +2486,31 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
+### [quilt-forth](https://github.com/SuperInstance/quilt-forth)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** The Quilt cell-fabric runtime in Forth. Concatenative, stack-based. 5-sigma polyformalism port.
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
 ### [quilt-gc](https://github.com/SuperInstance/quilt-gc)
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
 - **Purpose:** Layer 5 of the polyformalism — a runtime/GC that uses the 5 opcodes as the garbage collection boundary. 12 tests passing.
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
+### [quilt-haskell](https://github.com/SuperInstance/quilt-haskell)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** The Quilt cell-fabric runtime in Haskell. Pure functional, lazy. 5-sigma polyformalism port.
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
+### [quilt-j](https://github.com/SuperInstance/quilt-j)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** The Quilt cell-fabric runtime in J. Array language, point-free. 5-sigma polyformalism port.
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
@@ -2511,6 +2525,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
 - **Purpose:** Layer 3 of the polyformalism — a linker-level 5-opcode linker for .qm modules. Catches dangling LINKs and depends_on cycles at compile time.
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
+### [quilt-lua](https://github.com/SuperInstance/quilt-lua)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** The Quilt cell-fabric runtime in Lua. Embeddable, metatables. 5-sigma polyformalism port.
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
@@ -5297,13 +5318,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset generation
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [integration-rs](https://github.com/SuperInstance/integration-rs)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Numerical integration library — part of the SuperInstance fleet ecosystem for distributed cognitive agent orchestration
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

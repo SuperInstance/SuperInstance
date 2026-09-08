@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-09-07 09:59 UTC
+**Generated:** 2026-09-08 11:27 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -209,7 +209,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flux-showcase](https://github.com/SuperInstance/flux-showcase)
 - [flux-visual-editor](https://github.com/SuperInstance/flux-visual-editor)
 - [flux-vm](https://github.com/SuperInstance/flux-vm)
-- [insight-cfp-bridge](https://github.com/SuperInstance/insight-cfp-bridge)
 - [lau-agent-runtime](https://github.com/SuperInstance/lau-agent-runtime)
 - [lau-bytecode](https://github.com/SuperInstance/lau-bytecode)
 - [lau-bytecode-c](https://github.com/SuperInstance/lau-bytecode-c)
@@ -483,8 +482,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermes-nmi](https://github.com/SuperInstance/hermes-nmi)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
 - [hermit-crab](https://github.com/SuperInstance/hermit-crab)
-- [insight-cfp-bridge](https://github.com/SuperInstance/insight-cfp-bridge)
-- [integration-rs](https://github.com/SuperInstance/integration-rs)
 - [intelligence-hub](https://github.com/SuperInstance/intelligence-hub)
 - [jepa-trait](https://github.com/SuperInstance/jepa-trait)
 - [jetson-bootstrap](https://github.com/SuperInstance/jetson-bootstrap)
@@ -979,7 +976,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [crab-trap-web](https://github.com/SuperInstance/crab-trap-web)
 - [fleet-murmur-worker](https://github.com/SuperInstance/fleet-murmur-worker)
 - [fleet-scribe](https://github.com/SuperInstance/fleet-scribe)
-- [insight-cfp-bridge](https://github.com/SuperInstance/insight-cfp-bridge)
 - [jester-plato-bridge](https://github.com/SuperInstance/jester-plato-bridge)
 - [keel-early-version](https://github.com/SuperInstance/keel-early-version)
 - [lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)
@@ -1249,9 +1245,13 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-cpp](https://github.com/SuperInstance/quilt-cpp)
 - [quilt-csharp](https://github.com/SuperInstance/quilt-csharp)
 - [quilt-edge-arch](https://github.com/SuperInstance/quilt-edge-arch)
+- [quilt-forth](https://github.com/SuperInstance/quilt-forth)
 - [quilt-gc](https://github.com/SuperInstance/quilt-gc)
+- [quilt-haskell](https://github.com/SuperInstance/quilt-haskell)
+- [quilt-j](https://github.com/SuperInstance/quilt-j)
 - [quilt-julia](https://github.com/SuperInstance/quilt-julia)
 - [quilt-linker](https://github.com/SuperInstance/quilt-linker)
+- [quilt-lua](https://github.com/SuperInstance/quilt-lua)
 - [quilt-metal](https://github.com/SuperInstance/quilt-metal)
 - [quilt-mojo](https://github.com/SuperInstance/quilt-mojo)
 - [quilt-opt](https://github.com/SuperInstance/quilt-opt)
@@ -1426,10 +1426,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [holodeck-c](https://github.com/SuperInstance/holodeck-c)
 - [ideation-games](https://github.com/SuperInstance/ideation-games)
 - [image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)
-- [information-theory](https://github.com/SuperInstance/information-theory)
-- [insight-engine](https://github.com/SuperInstance/insight-engine)
-- [integration-c](https://github.com/SuperInstance/integration-c)
-- [integration_tests](https://github.com/SuperInstance/integration_tests)
 - [intention-field-rs](https://github.com/SuperInstance/intention-field-rs)
 - [interp-spline](https://github.com/SuperInstance/interp-spline)
 - [interval-tree-rs](https://github.com/SuperInstance/interval-tree-rs)
@@ -1792,6 +1788,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-radio-orchestrator](https://github.com/SuperInstance/quilt-radio-orchestrator)
 - [quilt-rag](https://github.com/SuperInstance/quilt-rag)
 - [quilt-rust](https://github.com/SuperInstance/quilt-rust)
+- [quilt-rust-vibe](https://github.com/SuperInstance/quilt-rust-vibe)
 - [quilt-saddle-bridge](https://github.com/SuperInstance/quilt-saddle-bridge)
 - [quilt-state](https://github.com/SuperInstance/quilt-state)
 - [quilt-substrate-meta](https://github.com/SuperInstance/quilt-substrate-meta)
@@ -1808,6 +1805,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-vm-rust](https://github.com/SuperInstance/quilt-vm-rust)
 - [quilt-vm-typescript](https://github.com/SuperInstance/quilt-vm-typescript)
 - [quilt-wiki-2126](https://github.com/SuperInstance/quilt-wiki-2126)
+- [quilt-zig](https://github.com/SuperInstance/quilt-zig)
 - [quilt-zk](https://github.com/SuperInstance/quilt-zk)
 - [quipu-math](https://github.com/SuperInstance/quipu-math)
 - [quipu-math-c](https://github.com/SuperInstance/quipu-math-c)
