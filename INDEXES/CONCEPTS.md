@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-09-14 10:22 UTC
+**Generated:** 2026-09-15 09:48 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -83,7 +83,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flux-compiler](https://github.com/SuperInstance/flux-compiler)
 - [flux-lucid](https://github.com/SuperInstance/flux-lucid)
 - [intent-directed-compilation](https://github.com/SuperInstance/intent-directed-compilation)
-- [jc1-ct-bridge](https://github.com/SuperInstance/jc1-ct-bridge)
 - [lau-affordance](https://github.com/SuperInstance/lau-affordance)
 - [lau-optimization](https://github.com/SuperInstance/lau-optimization)
 - [marine-gpu-edge](https://github.com/SuperInstance/marine-gpu-edge)
@@ -236,8 +235,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [autoclaw](https://github.com/SuperInstance/autoclaw)
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
 - [cudaclaw](https://github.com/SuperInstance/cudaclaw)
+- [flx-cuda](https://github.com/SuperInstance/flx-cuda)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
-- [jc1-ct-bridge](https://github.com/SuperInstance/jc1-ct-bridge)
 - [jetsonclaw1](https://github.com/SuperInstance/jetsonclaw1)
 - [lau-bench](https://github.com/SuperInstance/lau-bench)
 - [lau-cudaclaw-bridge](https://github.com/SuperInstance/lau-cudaclaw-bridge)
@@ -317,7 +316,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [constraint-theory-math](https://github.com/SuperInstance/constraint-theory-math)
 - [fleet-coordinate-js](https://github.com/SuperInstance/fleet-coordinate-js)
-- [jc1-ct-bridge](https://github.com/SuperInstance/jc1-ct-bridge)
 - [lau-algebraic-topology](https://github.com/SuperInstance/lau-algebraic-topology)
 - [lau-dg-algebra](https://github.com/SuperInstance/lau-dg-algebra)
 - [lau-mirror-symmetry](https://github.com/SuperInstance/lau-mirror-symmetry)
@@ -355,7 +353,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core)
 - [fleet-coordinate-js](https://github.com/SuperInstance/fleet-coordinate-js)
 - [fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)
-- [jc1-ct-bridge](https://github.com/SuperInstance/jc1-ct-bridge)
 - [superinstance-ffi](https://github.com/SuperInstance/superinstance-ffi)
 
 ## Lures
@@ -482,7 +479,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermes-nmi](https://github.com/SuperInstance/hermes-nmi)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
 - [hermit-crab](https://github.com/SuperInstance/hermit-crab)
-- [intelligence-hub](https://github.com/SuperInstance/intelligence-hub)
 - [jepa-trait](https://github.com/SuperInstance/jepa-trait)
 - [jetson-bootstrap](https://github.com/SuperInstance/jetson-bootstrap)
 - [jetsonclaw1](https://github.com/SuperInstance/jetsonclaw1)
@@ -1332,11 +1328,15 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ACE-Step-1.5](https://github.com/SuperInstance/ACE-Step-1.5)
 - [AI-Writings](https://github.com/SuperInstance/AI-Writings)
 - [AIR](https://github.com/SuperInstance/AIR)
+- [ChainForgeLegend-Quilt](https://github.com/SuperInstance/ChainForgeLegend-Quilt)
 - [CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)
 - [CrashPilot](https://github.com/SuperInstance/CrashPilot)
 - [Edge-Native](https://github.com/SuperInstance/Edge-Native)
+- [Full-stack-Free-Movie-Streaming-Website](https://github.com/SuperInstance/Full-stack-Free-Movie-Streaming-Website)
 - [INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)
+- [MCPMempool-quilt](https://github.com/SuperInstance/MCPMempool-quilt)
 - [OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)
+- [Quilt-Robotic-Arm---Gesture-Controlled](https://github.com/SuperInstance/Quilt-Robotic-Arm---Gesture-Controlled)
 - [RTSnavigator](https://github.com/SuperInstance/RTSnavigator)
 - [Scrapcraft](https://github.com/SuperInstance/Scrapcraft)
 - [SubForge](https://github.com/SuperInstance/SubForge)
@@ -1376,6 +1376,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [cns-monitor](https://github.com/SuperInstance/cns-monitor)
 - [cocapn-pushdown](https://github.com/SuperInstance/cocapn-pushdown)
 - [cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)
+- [collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)
 - [collective-unconscious](https://github.com/SuperInstance/collective-unconscious)
 - [compaction-teacher](https://github.com/SuperInstance/compaction-teacher)
 - [confidence-cascade](https://github.com/SuperInstance/confidence-cascade)
@@ -1426,12 +1427,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [holodeck-c](https://github.com/SuperInstance/holodeck-c)
 - [ideation-games](https://github.com/SuperInstance/ideation-games)
 - [image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)
-- [intention-field-rs](https://github.com/SuperInstance/intention-field-rs)
-- [interp-spline](https://github.com/SuperInstance/interp-spline)
-- [interval-tree-rs](https://github.com/SuperInstance/interval-tree-rs)
-- [iterative-solvers](https://github.com/SuperInstance/iterative-solvers)
-- [jazz-voicing-engine](https://github.com/SuperInstance/jazz-voicing-engine)
-- [jepa-core](https://github.com/SuperInstance/jepa-core)
 - [jepa-perception-lab](https://github.com/SuperInstance/jepa-perception-lab)
 - [jepa-predict](https://github.com/SuperInstance/jepa-predict)
 - [kalman-filter](https://github.com/SuperInstance/kalman-filter)
@@ -1746,6 +1741,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [queueing-theory](https://github.com/SuperInstance/queueing-theory)
 - [quicunnel](https://github.com/SuperInstance/quicunnel)
 - [quilt](https://github.com/SuperInstance/quilt)
+- [quilt-Countroller](https://github.com/SuperInstance/quilt-Countroller)
 - [quilt-Kuramoto](https://github.com/SuperInstance/quilt-Kuramoto)
 - [quilt-ai](https://github.com/SuperInstance/quilt-ai)
 - [quilt-base](https://github.com/SuperInstance/quilt-base)
@@ -2009,6 +2005,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [suffix-array-rs](https://github.com/SuperInstance/suffix-array-rs)
 - [suffix-automaton-rs](https://github.com/SuperInstance/suffix-automaton-rs)
 - [suna](https://github.com/SuperInstance/suna)
+- [superinstance-advisor](https://github.com/SuperInstance/superinstance-advisor)
 - [superinstance-ai](https://github.com/SuperInstance/superinstance-ai)
 - [superinstance-ai-pages](https://github.com/SuperInstance/superinstance-ai-pages)
 - [superinstance-cli](https://github.com/SuperInstance/superinstance-cli)
