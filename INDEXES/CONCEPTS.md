@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-09-15 09:48 UTC
+**Generated:** 2026-09-16 09:43 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -19,6 +19,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lau-training-room](https://github.com/SuperInstance/lau-training-room)
 - [plato-a2a](https://github.com/SuperInstance/plato-a2a)
 - [quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)
+- [quilt-mermaid](https://github.com/SuperInstance/quilt-mermaid)
 
 ## Beacon Protocol
 
@@ -141,6 +142,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-shard-merge](https://github.com/SuperInstance/ternary-shard-merge)
 - [ternary-version](https://github.com/SuperInstance/ternary-version)
 - [treap-rs](https://github.com/SuperInstance/treap-rs)
+- [twist-engine](https://github.com/SuperInstance/twist-engine)
 
 ## Deep Learning
 
@@ -237,7 +239,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [cudaclaw](https://github.com/SuperInstance/cudaclaw)
 - [flx-cuda](https://github.com/SuperInstance/flx-cuda)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
-- [jetsonclaw1](https://github.com/SuperInstance/jetsonclaw1)
 - [lau-bench](https://github.com/SuperInstance/lau-bench)
 - [lau-cudaclaw-bridge](https://github.com/SuperInstance/lau-cudaclaw-bridge)
 - [lau-gpu-compute](https://github.com/SuperInstance/lau-gpu-compute)
@@ -374,6 +375,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
 - [OpenRoom](https://github.com/SuperInstance/OpenRoom)
 - [PersonalLog](https://github.com/SuperInstance/PersonalLog)
+- [Spreadsheet-ai](https://github.com/SuperInstance/Spreadsheet-ai)
 - [SuperInstance](https://github.com/SuperInstance/SuperInstance)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
 - [VaaS](https://github.com/SuperInstance/VaaS)
@@ -479,9 +481,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermes-nmi](https://github.com/SuperInstance/hermes-nmi)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
 - [hermit-crab](https://github.com/SuperInstance/hermit-crab)
-- [jepa-trait](https://github.com/SuperInstance/jepa-trait)
-- [jetson-bootstrap](https://github.com/SuperInstance/jetson-bootstrap)
-- [jetsonclaw1](https://github.com/SuperInstance/jetsonclaw1)
 - [keel-early-version](https://github.com/SuperInstance/keel-early-version)
 - [lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)
 - [lau-adinkra](https://github.com/SuperInstance/lau-adinkra)
@@ -732,6 +731,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-agent](https://github.com/SuperInstance/quilt-agent)
 - [quilt-agent-memory-archive](https://github.com/SuperInstance/quilt-agent-memory-archive)
 - [quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)
+- [quilt-conversation](https://github.com/SuperInstance/quilt-conversation)
 - [quilt-fleet](https://github.com/SuperInstance/quilt-fleet)
 - [quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)
 - [random-walk-agent](https://github.com/SuperInstance/random-walk-agent)
@@ -959,6 +959,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
 - [OpenRoom](https://github.com/SuperInstance/OpenRoom)
 - [Spreader-tool](https://github.com/SuperInstance/Spreader-tool)
+- [Spreadsheet-ai](https://github.com/SuperInstance/Spreadsheet-ai)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
 - [activeledger-agent](https://github.com/SuperInstance/activeledger-agent)
 - [adaptive-plato-early-version](https://github.com/SuperInstance/adaptive-plato-early-version)
@@ -972,7 +973,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [crab-trap-web](https://github.com/SuperInstance/crab-trap-web)
 - [fleet-murmur-worker](https://github.com/SuperInstance/fleet-murmur-worker)
 - [fleet-scribe](https://github.com/SuperInstance/fleet-scribe)
-- [jester-plato-bridge](https://github.com/SuperInstance/jester-plato-bridge)
 - [keel-early-version](https://github.com/SuperInstance/keel-early-version)
 - [lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)
 - [lau-a2ui](https://github.com/SuperInstance/lau-a2ui)
@@ -1397,6 +1397,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [elephant](https://github.com/SuperInstance/elephant)
 - [elephant-sim-worker](https://github.com/SuperInstance/elephant-sim-worker)
 - [email-oracle](https://github.com/SuperInstance/email-oracle)
+- [erised](https://github.com/SuperInstance/erised)
+- [erised-cli](https://github.com/SuperInstance/erised-cli)
 - [exocortex-core](https://github.com/SuperInstance/exocortex-core)
 - [exocortex-esp32](https://github.com/SuperInstance/exocortex-esp32)
 - [exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)
@@ -1427,9 +1429,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [holodeck-c](https://github.com/SuperInstance/holodeck-c)
 - [ideation-games](https://github.com/SuperInstance/ideation-games)
 - [image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)
-- [jepa-perception-lab](https://github.com/SuperInstance/jepa-perception-lab)
-- [jepa-predict](https://github.com/SuperInstance/jepa-predict)
-- [kalman-filter](https://github.com/SuperInstance/kalman-filter)
 - [kan-extension](https://github.com/SuperInstance/kan-extension)
 - [kd-tree-rs](https://github.com/SuperInstance/kd-tree-rs)
 - [kernel-conservation](https://github.com/SuperInstance/kernel-conservation)
@@ -1896,6 +1895,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [rom24-quickmud](https://github.com/SuperInstance/rom24-quickmud)
 - [routing-table](https://github.com/SuperInstance/routing-table)
 - [run-length](https://github.com/SuperInstance/run-length)
+- [rune-quilt](https://github.com/SuperInstance/rune-quilt)
 - [rusty-series](https://github.com/SuperInstance/rusty-series)
 - [salidiere](https://github.com/SuperInstance/salidiere)
 - [scale-fold](https://github.com/SuperInstance/scale-fold)
