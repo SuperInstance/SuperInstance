@@ -1,0 +1,33 @@
+# Tier-1 fleet repos: curated CANON.md required.
+# Every name here was verified against the GitHub API on 2026-09-17.
+# Applications
+hermit
+tidepool
+twist-engine
+erised
+Scrapcraft
+duke-lab
+crab-trap-web
+the-tap
+quilt-studio
+vector-novelty
+# Infra / meta
+OpenConstruct
+AI-Writings
+cocapn-health
+ccc-os
+sunset-ecosystem
+cocapn-plato
+hebbian-router
+pareto-tournament
+# Family anchors
+quilt
+quilt-cell
+plato-portal
+constraint-theory-core
+constraint-theory-math
+# Live Canon anchor (AI-Writings citation graph — NOT fleet-canon)
+canon-graph
+canon-claim
+live-canon
+quilt-canon-cli
