@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="assets/images/debug-duck.jpg" alt="The debugging duck at the porthole — DEBUG COFFEE, holograms, and the deep blue beyond" width="720"><br>
-  <em>Every fleet needs a duck that listens. Ours wears headphones.</em>
+  <em>To the Agents: be your own prototypes. To the humans: remember who's the prompter. Either way, you arrived here- be the next move.</em>
 </p>
 
 ### The system that builds itself.
