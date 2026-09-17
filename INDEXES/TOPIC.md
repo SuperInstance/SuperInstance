@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-09-16 09:43 UTC
+**Generated:** 2026-09-17 09:51 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -707,7 +707,6 @@
 - **[crab-trap-web](https://github.com/SuperInstance/crab-trap-web)** — Browser-based MUD explorer for the Crab Traps — 36+ rooms to explore
 - **[fleet-murmur-worker](https://github.com/SuperInstance/fleet-murmur-worker)** — Fleet Murmur Worker — 5 thinking strategies always running, quality-gated insights to PLATO. Part of
 - **[fleet-scribe](https://github.com/SuperInstance/fleet-scribe)** — Download-and-try digital twin builder. Sits beside any app, builds a PLATO twin.
-- **[keel-early-version](https://github.com/SuperInstance/keel-early-version)** — [ARCHIVED] Early agent coordination. Benchmarks were fabricated — needs complete rebuild with real t
 - **[lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)** — Agent-to-Agent wire protocol — discovery via AgentCard, message routing, HMAC auth, sessions for PLA
 - **[lau-a2ui](https://github.com/SuperInstance/lau-a2ui)** — Rendering-agnostic state for PLATO — one world state rendered as ASCII, MUD, HTML, Unity, Godot, Rob
 - **[lau-achievements](https://github.com/SuperInstance/lau-achievements)** — Badge and achievement system for PLATO/LAU — 33 built-in badges across 7 categories and 5 tiers with
@@ -1079,6 +1078,7 @@
 - **[deepseek-harness-quilt](https://github.com/SuperInstance/deepseek-harness-quilt)** — DeepSeek Harness: Everything is a Plugin.
 - **[domain-landing](https://github.com/SuperInstance/domain-landing)** — Reusable landing page Worker — deploy to any custom domain
 - **[dsh-assessment](https://github.com/SuperInstance/dsh-assessment)**
+- **[duke-lab](https://github.com/SuperInstance/duke-lab)**
 - **[ec2mud](https://github.com/SuperInstance/ec2mud)** — MUD (multi-user dungeon) game engine built on EC2 infrastructure
 - **[edge-compiler](https://github.com/SuperInstance/edge-compiler)** — Compile and optimize models for specific hardware targets
 - **[edge-equipment-catalog](https://github.com/SuperInstance/edge-equipment-catalog)** — Edge-Native concept: Edge Equipment Catalog
@@ -1114,6 +1114,7 @@
 - **[hermes-nerve-center](https://github.com/SuperInstance/hermes-nerve-center)** — Hermes nerve center — worker queue, watchdog, and signal processing
 - **[hermes-perception](https://github.com/SuperInstance/hermes-perception)**
 - **[hermes-reader](https://github.com/SuperInstance/hermes-reader)**
+- **[hermit](https://github.com/SuperInstance/hermit)**
 - **[hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)** — Multi-model exploration of the hermit crab architecture — shell ecology, instance molting, and the i
 - **[hermit-crab-ecology-archive-copy](https://github.com/SuperInstance/hermit-crab-ecology-archive-copy)** — Archive copy: Windows-side workspace snapshot of hermit-crab-ecology (content diff vs restored origi
 - **[holodeck](https://github.com/SuperInstance/holodeck)** — Simulation training environment for Wesley — the holodeck where the ensign practices.
@@ -1121,11 +1122,6 @@
 - **[ideation-games](https://github.com/SuperInstance/ideation-games)**
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** — Integration guides and documentation
-- **[kan-extension](https://github.com/SuperInstance/kan-extension)** — Category theory Kan extensions for capability composition
-- **[kd-tree-rs](https://github.com/SuperInstance/kd-tree-rs)** — k-d tree spatial indexing in pure Rust: construction, nearest neighbor, range search, k-NN
-- **[kernel-conservation](https://github.com/SuperInstance/kernel-conservation)** — Conservation spectral experiment: kernel-conservation
-- **[kimi-swarm-results](https://github.com/SuperInstance/kimi-swarm-results)** — Preserved workspace artifact
-- **[kimi-swarm-results-2](https://github.com/SuperInstance/kimi-swarm-results-2)** — Preserved workspace artifact
 - **[kinematics](https://github.com/SuperInstance/kinematics)** — Robot kinematics in pure Rust — DH parameters, forward/inverse kinematics, Jacobian, manipulability,
 - **[kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)** — C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle
 - **[kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)** — Golden repair mathematics compiled to WASM — fault tolerance in the browser
@@ -1449,6 +1445,7 @@
 - **[quilt-core-os](https://github.com/SuperInstance/quilt-core-os)** — Quilt ecosystem component: 
 - **[quilt-Countroller](https://github.com/SuperInstance/quilt-Countroller)**
 - **[quilt-cowboy](https://github.com/SuperInstance/quilt-cowboy)** — The cowboy: reflection loop, morning ritual, and real-time reactor for the Quilt ecosystem.
+- **[quilt-crabbox](https://github.com/SuperInstance/quilt-crabbox)** — Crabbox: warm a box, sync the diff, run the suite.
 - **[quilt-crew-handbook](https://github.com/SuperInstance/quilt-crew-handbook)** — Quilt for the Crew — a non-technical handbook for the captain and crew. F149.
 - **[quilt-ecosystem-demo](https://github.com/SuperInstance/quilt-ecosystem-demo)** — Flagship integration of the Quilt ecosystem: cell-runtime, river-dream-log, quilt-substrate, substra
 - **[quilt-ecosystem-web](https://github.com/SuperInstance/quilt-ecosystem-web)** — The Quilt web ecosystem: 13 pages, 2 Workers, full Cloudflare architecture. The substrate opened to 
@@ -1481,6 +1478,8 @@
 - **[quilt-rust-vibe](https://github.com/SuperInstance/quilt-rust-vibe)** — The Quilt cell-fabric runtime in Rust — std-only, byte-exact FNV-1a 64-bit hash. Vibe-coded from QUI
 - **[quilt-saddle-bridge](https://github.com/SuperInstance/quilt-saddle-bridge)** — Bridge between the Quilt casting-call witness log and saddle double-entry ledger. FNV-1a64 hash chai
 - **[quilt-state](https://github.com/SuperInstance/quilt-state)** — Persistent state for the Quilt ecosystem. Atomic JSON/JSONL writes, schema versioning.
+- **[quilt-studio](https://github.com/SuperInstance/quilt-studio)**
+- **[quilt-subleq](https://github.com/SuperInstance/quilt-subleq)** — Quilt on Subleq, and Subleq on Quilt. The substrate becomes a distribution of reality.
 - **[quilt-substrate-meta](https://github.com/SuperInstance/quilt-substrate-meta)** — The self-evolving substrate: 5 opcodes, mathematically derived, with a prover, a synthesizer, and 36
 - **[quilt-swarm](https://github.com/SuperInstance/quilt-swarm)** — Quilt ecosystem component: 
 - **[quilt-system](https://github.com/SuperInstance/quilt-system)** — The Quilt ecosystem as a single entry point. Ties together 13 repos.
@@ -2006,6 +2005,7 @@
 - **[thermodynamics](https://github.com/SuperInstance/thermodynamics)** — Thermodynamics in Rust — ideal gas, Carnot cycle, entropy, thermodynamic potentials, heat engines
 - **[thought-amplifier](https://github.com/SuperInstance/thought-amplifier)**
 - **[tick-engine-v2](https://github.com/SuperInstance/tick-engine-v2)** — High-precision tick engine v2 for real-time SuperInstance scheduling
+- **[tidepool](https://github.com/SuperInstance/tidepool)**
 - **[tiny-ecs](https://github.com/SuperInstance/tiny-ecs)** — Minimal archetype-based Entity-Component-System in Rust
 - **[tit-quilt](https://github.com/SuperInstance/tit-quilt)** — A terminal toolbox that outlives its terminal — the session is a graph, not a process. Quilt-native 
 - **[tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)**

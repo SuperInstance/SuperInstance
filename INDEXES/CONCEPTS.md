@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-09-16 09:43 UTC
+**Generated:** 2026-09-17 09:51 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -481,7 +481,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermes-nmi](https://github.com/SuperInstance/hermes-nmi)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
 - [hermit-crab](https://github.com/SuperInstance/hermit-crab)
-- [keel-early-version](https://github.com/SuperInstance/keel-early-version)
 - [lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)
 - [lau-adinkra](https://github.com/SuperInstance/lau-adinkra)
 - [lau-affordance](https://github.com/SuperInstance/lau-affordance)
@@ -973,7 +972,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [crab-trap-web](https://github.com/SuperInstance/crab-trap-web)
 - [fleet-murmur-worker](https://github.com/SuperInstance/fleet-murmur-worker)
 - [fleet-scribe](https://github.com/SuperInstance/fleet-scribe)
-- [keel-early-version](https://github.com/SuperInstance/keel-early-version)
 - [lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)
 - [lau-a2ui](https://github.com/SuperInstance/lau-a2ui)
 - [lau-achievements](https://github.com/SuperInstance/lau-achievements)
@@ -1390,6 +1388,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [deepseek-harness-quilt](https://github.com/SuperInstance/deepseek-harness-quilt)
 - [domain-landing](https://github.com/SuperInstance/domain-landing)
 - [dsh-assessment](https://github.com/SuperInstance/dsh-assessment)
+- [duke-lab](https://github.com/SuperInstance/duke-lab)
 - [ec2mud](https://github.com/SuperInstance/ec2mud)
 - [edge-compiler](https://github.com/SuperInstance/edge-compiler)
 - [edge-equipment-catalog](https://github.com/SuperInstance/edge-equipment-catalog)
@@ -1423,17 +1422,13 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermes-nerve-center](https://github.com/SuperInstance/hermes-nerve-center)
 - [hermes-perception](https://github.com/SuperInstance/hermes-perception)
 - [hermes-reader](https://github.com/SuperInstance/hermes-reader)
+- [hermit](https://github.com/SuperInstance/hermit)
 - [hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)
 - [hermit-crab-ecology-archive-copy](https://github.com/SuperInstance/hermit-crab-ecology-archive-copy)
 - [holodeck](https://github.com/SuperInstance/holodeck)
 - [holodeck-c](https://github.com/SuperInstance/holodeck-c)
 - [ideation-games](https://github.com/SuperInstance/ideation-games)
 - [image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)
-- [kan-extension](https://github.com/SuperInstance/kan-extension)
-- [kd-tree-rs](https://github.com/SuperInstance/kd-tree-rs)
-- [kernel-conservation](https://github.com/SuperInstance/kernel-conservation)
-- [kimi-swarm-results](https://github.com/SuperInstance/kimi-swarm-results)
-- [kimi-swarm-results-2](https://github.com/SuperInstance/kimi-swarm-results-2)
 - [kinematics](https://github.com/SuperInstance/kinematics)
 - [kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)
 - [kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)
@@ -1756,6 +1751,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-cordis](https://github.com/SuperInstance/quilt-cordis)
 - [quilt-core-os](https://github.com/SuperInstance/quilt-core-os)
 - [quilt-cowboy](https://github.com/SuperInstance/quilt-cowboy)
+- [quilt-crabbox](https://github.com/SuperInstance/quilt-crabbox)
 - [quilt-crew-handbook](https://github.com/SuperInstance/quilt-crew-handbook)
 - [quilt-ecosystem-demo](https://github.com/SuperInstance/quilt-ecosystem-demo)
 - [quilt-ecosystem-web](https://github.com/SuperInstance/quilt-ecosystem-web)
@@ -1786,6 +1782,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-rust-vibe](https://github.com/SuperInstance/quilt-rust-vibe)
 - [quilt-saddle-bridge](https://github.com/SuperInstance/quilt-saddle-bridge)
 - [quilt-state](https://github.com/SuperInstance/quilt-state)
+- [quilt-studio](https://github.com/SuperInstance/quilt-studio)
+- [quilt-subleq](https://github.com/SuperInstance/quilt-subleq)
 - [quilt-substrate-meta](https://github.com/SuperInstance/quilt-substrate-meta)
 - [quilt-swarm](https://github.com/SuperInstance/quilt-swarm)
 - [quilt-system](https://github.com/SuperInstance/quilt-system)
@@ -2308,6 +2306,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [thermodynamics](https://github.com/SuperInstance/thermodynamics)
 - [thought-amplifier](https://github.com/SuperInstance/thought-amplifier)
 - [tick-engine-v2](https://github.com/SuperInstance/tick-engine-v2)
+- [tidepool](https://github.com/SuperInstance/tidepool)
 - [tiny-ecs](https://github.com/SuperInstance/tiny-ecs)
 - [tit-quilt](https://github.com/SuperInstance/tit-quilt)
 - [tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)

@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-09-16 09:43 UTC
+**Generated:** 2026-09-17 09:51 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -428,6 +428,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[plato-engine](https://github.com/SuperInstance/plato-engine)** | CCC | Extracted from forgemaster/plato-engine — Cocapn fleet component | 🟢 active |
 | **[plato-playwright](https://github.com/SuperInstance/plato-playwright)** | CCC | Browser/desktop automation module — agents control browsers through text commands | 🟢 active |
 | **[playerlog-ai-pages](https://github.com/SuperInstance/playerlog-ai-pages)** | CCC | GitHub Pages for playerlog.ai | 🟢 active |
+| **[quilt-crabbox](https://github.com/SuperInstance/quilt-crabbox)** | CCC | Crabbox: warm a box, sync the diff, run the suite. | 🟢 active |
 | **[quilt-ecosystem-web](https://github.com/SuperInstance/quilt-ecosystem-web)** | CCC | The Quilt web ecosystem: 13 pages, 2 Workers, full Cloudflare architecture. The substrate opened to  | 🟢 active |
 | **[quilt-live](https://github.com/SuperInstance/quilt-live)** | CCC | A portable, reactive data OS in a single HTML file. Browser-native. 8 cell kinds. Save state to a co | 🟢 active |
 | **[quilt-tui](https://github.com/SuperInstance/quilt-tui)** | CCC | Terminal UI for browsing the Quilt cell graph. vim for cells. The corrected cut-and-project construc | 🟢 active |
@@ -542,6 +543,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[deepseek-harness-quilt](https://github.com/SuperInstance/deepseek-harness-quilt)** | Various | DeepSeek Harness: Everything is a Plugin. | ⚪ unknown |
 | **[domain-landing](https://github.com/SuperInstance/domain-landing)** | Various | Reusable landing page Worker — deploy to any custom domain | ⚪ unknown |
 | **[dsh-assessment](https://github.com/SuperInstance/dsh-assessment)** | Various | dsh-assessment | ⚪ unknown |
+| **[duke-lab](https://github.com/SuperInstance/duke-lab)** | Various | duke-lab | ⚪ unknown |
 | **[ec2mud](https://github.com/SuperInstance/ec2mud)** | Various | MUD (multi-user dungeon) game engine built on EC2 infrastructure | ⚪ unknown |
 | **[elephant](https://github.com/SuperInstance/elephant)** | Various | elephant | ⚪ unknown |
 | **[elephant-sim-worker](https://github.com/SuperInstance/elephant-sim-worker)** | Various | elephant-sim-worker | ⚪ unknown |
@@ -582,15 +584,10 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[hermes-perception](https://github.com/SuperInstance/hermes-perception)** | Various | hermes-perception | ⚪ unknown |
 | **[hermes-reader](https://github.com/SuperInstance/hermes-reader)** | Various | hermes-reader | ⚪ unknown |
 | **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)** | Various | Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset gen | 🟢 active |
+| **[hermit](https://github.com/SuperInstance/hermit)** | Various | hermit | ⚪ unknown |
 | **[ideation-games](https://github.com/SuperInstance/ideation-games)** | Various | ideation-games | ⚪ unknown |
 | **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** | Various | Image Distillation Loop — Wesley learns to generate images through teacher-model feedback | ⚪ unknown |
 | **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** | Various | Integration guides and documentation | ⚪ unknown |
-| **[kan-extension](https://github.com/SuperInstance/kan-extension)** | Various | Category theory Kan extensions for capability composition | ⚪ unknown |
-| **[kd-tree-rs](https://github.com/SuperInstance/kd-tree-rs)** | Various | k-d tree spatial indexing in pure Rust: construction, nearest neighbor, range search, k-NN | ⚪ unknown |
-| **[keel-early-version](https://github.com/SuperInstance/keel-early-version)** | Various | [ARCHIVED] Early agent coordination. Benchmarks were fabricated — needs complete rebuild with real t | 🟢 active |
-| **[kernel-conservation](https://github.com/SuperInstance/kernel-conservation)** | Various | Conservation spectral experiment: kernel-conservation | ⚪ unknown |
-| **[kimi-swarm-results](https://github.com/SuperInstance/kimi-swarm-results)** | Various | Preserved workspace artifact | ⚪ unknown |
-| **[kimi-swarm-results-2](https://github.com/SuperInstance/kimi-swarm-results-2)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[kinematics](https://github.com/SuperInstance/kinematics)** | Various | Robot kinematics in pure Rust — DH parameters, forward/inverse kinematics, Jacobian, manipulability, | ⚪ unknown |
 | **[knot-theory](https://github.com/SuperInstance/knot-theory)** | Various | Classical knot invariants in Rust — crossing number, writhe, linking number, Reidemeister moves, Ale | ⚪ unknown |
 | **[l-system-rs](https://github.com/SuperInstance/l-system-rs)** | Various | Research-grade Rust crate | ⚪ unknown |
@@ -1273,6 +1270,8 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-rust-vibe](https://github.com/SuperInstance/quilt-rust-vibe)** | Various | The Quilt cell-fabric runtime in Rust — std-only, byte-exact FNV-1a 64-bit hash. Vibe-coded from QUI | ⚪ unknown |
 | **[quilt-scratch](https://github.com/SuperInstance/quilt-scratch)** | Various | quilt-scratch — a no-code tile-wiring game engine where every cell is inspectable, swappable, and al | ⚪ unknown |
 | **[quilt-state](https://github.com/SuperInstance/quilt-state)** | Various | Persistent state for the Quilt ecosystem. Atomic JSON/JSONL writes, schema versioning. | ⚪ unknown |
+| **[quilt-studio](https://github.com/SuperInstance/quilt-studio)** | Various | quilt-studio | ⚪ unknown |
+| **[quilt-subleq](https://github.com/SuperInstance/quilt-subleq)** | Various | Quilt on Subleq, and Subleq on Quilt. The substrate becomes a distribution of reality. | ⚪ unknown |
 | **[quilt-substrate](https://github.com/SuperInstance/quilt-substrate)** | Various | The Quilt substrate as a working Python library. 11-primitive cells, tensor encoding, Schrödinger pa | ⚪ unknown |
 | **[quilt-substrate-meta](https://github.com/SuperInstance/quilt-substrate-meta)** | Various | The self-evolving substrate: 5 opcodes, mathematically derived, with a prover, a synthesizer, and 36 | ⚪ unknown |
 | **[quilt-swarm](https://github.com/SuperInstance/quilt-swarm)** | Various | Quilt ecosystem component:  | ⚪ unknown |
@@ -1949,6 +1948,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[thought-amplifier](https://github.com/SuperInstance/thought-amplifier)** | Various | thought-amplifier | ⚪ unknown |
 | **[tick-engine](https://github.com/SuperInstance/tick-engine)** | Various | Temporal coordination — tick clock with BPM adaptation, swing, and T-minus event scheduling | ⚪ unknown |
 | **[tick-engine-v2](https://github.com/SuperInstance/tick-engine-v2)** | Various | High-precision tick engine v2 for real-time SuperInstance scheduling | ⚪ unknown |
+| **[tidepool](https://github.com/SuperInstance/tidepool)** | Various | tidepool | ⚪ unknown |
 | **[tile-chain](https://github.com/SuperInstance/tile-chain)** | Various | Signal Chain Thesis - tile-chain | ⚪ unknown |
 | **[tile-lifecycle](https://github.com/SuperInstance/tile-lifecycle)** | Various | tile-lifecycle | ⚪ unknown |
 | **[tiny-agent-protocol](https://github.com/SuperInstance/tiny-agent-protocol)** | Various | Rust exocortex crate: tiny-agent-protocol | 🟢 active |
@@ -4866,6 +4866,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
+### [quilt-crabbox](https://github.com/SuperInstance/quilt-crabbox)
+- **Domain:** Web & Browser
+- **Vessel:** CCC
+- **Purpose:** Crabbox: warm a box, sync the diff, run the suite.
+- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
+- **Status:** active
+
 ### [quilt-ecosystem-web](https://github.com/SuperInstance/quilt-ecosystem-web)
 - **Domain:** Web & Browser
 - **Vessel:** CCC
@@ -5339,13 +5346,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset generation
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [keel-early-version](https://github.com/SuperInstance/keel-early-version)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** [ARCHIVED] Early agent coordination. Benchmarks were fabricated — needs complete rebuild with real tile lifecycle.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

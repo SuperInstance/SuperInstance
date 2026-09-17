@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-09-16 09:43 UTC
+**Generated:** 2026-09-17 09:51 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -143,6 +143,7 @@
 - **[domain-landing](https://github.com/SuperInstance/domain-landing)** — Reusable landing page Worker — deploy to any custom domain
 - **[dsh-assessment](https://github.com/SuperInstance/dsh-assessment)**
 - **[dual-band-guard](https://github.com/SuperInstance/dual-band-guard)**
+- **[duke-lab](https://github.com/SuperInstance/duke-lab)**
 - **[ec2mud](https://github.com/SuperInstance/ec2mud)** — MUD (multi-user dungeon) game engine built on EC2 infrastructure
 - **[edge-compiler](https://github.com/SuperInstance/edge-compiler)** — Compile and optimize models for specific hardware targets
 - **[edge-equipment-catalog](https://github.com/SuperInstance/edge-equipment-catalog)** — Edge-Native concept: Edge Equipment Catalog
@@ -262,6 +263,7 @@
 - **[hermes-perception](https://github.com/SuperInstance/hermes-perception)**
 - **[hermes-reader](https://github.com/SuperInstance/hermes-reader)**
 - **[hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)** — Lua framework for AI-driven Roblox agents and games — voice control, event simulation, GPU asset gen
+- **[hermit](https://github.com/SuperInstance/hermit)**
 - **[hermit-crab](https://github.com/SuperInstance/hermit-crab)** — Agent that migrates between hardware shells preserving knowledge — tracks conservation ratio across 
 - **[hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)** — Multi-model exploration of the hermit crab architecture — shell ecology, instance molting, and the i
 - **[hermit-crab-ecology-archive-copy](https://github.com/SuperInstance/hermit-crab-ecology-archive-copy)** — Archive copy: Windows-side workspace snapshot of hermit-crab-ecology (content diff vs restored origi
@@ -271,12 +273,6 @@
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** — Integration guides and documentation
 - **[intent-directed-compilation](https://github.com/SuperInstance/intent-directed-compilation)** — Semantic criticality → instruction-level precision: AVX-512 mixed-precision constraint checking with
-- **[kan-extension](https://github.com/SuperInstance/kan-extension)** — Category theory Kan extensions for capability composition
-- **[kd-tree-rs](https://github.com/SuperInstance/kd-tree-rs)** — k-d tree spatial indexing in pure Rust: construction, nearest neighbor, range search, k-NN
-- **[keel-early-version](https://github.com/SuperInstance/keel-early-version)** — [ARCHIVED] Early agent coordination. Benchmarks were fabricated — needs complete rebuild with real t
-- **[kernel-conservation](https://github.com/SuperInstance/kernel-conservation)** — Conservation spectral experiment: kernel-conservation
-- **[kimi-swarm-results](https://github.com/SuperInstance/kimi-swarm-results)** — Preserved workspace artifact
-- **[kimi-swarm-results-2](https://github.com/SuperInstance/kimi-swarm-results-2)** — Preserved workspace artifact
 - **[kinematics](https://github.com/SuperInstance/kinematics)** — Robot kinematics in pure Rust — DH parameters, forward/inverse kinematics, Jacobian, manipulability,
 - **[kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)** — C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle
 - **[kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)** — Golden repair mathematics compiled to WASM — fault tolerance in the browser
@@ -1046,6 +1042,7 @@
 - **[quilt-Countroller](https://github.com/SuperInstance/quilt-Countroller)**
 - **[quilt-cowboy](https://github.com/SuperInstance/quilt-cowboy)** — The cowboy: reflection loop, morning ritual, and real-time reactor for the Quilt ecosystem.
 - **[quilt-cpp](https://github.com/SuperInstance/quilt-cpp)** — Polyformalism: Quilt in C++ (templates reveal the cell kind lattice)
+- **[quilt-crabbox](https://github.com/SuperInstance/quilt-crabbox)** — Crabbox: warm a box, sync the diff, run the suite.
 - **[quilt-crew-handbook](https://github.com/SuperInstance/quilt-crew-handbook)** — Quilt for the Crew — a non-technical handbook for the captain and crew. F149.
 - **[quilt-csharp](https://github.com/SuperInstance/quilt-csharp)** — Polyformalism: Quilt in C# (records, delegates, events, LINQ)
 - **[quilt-cuda](https://github.com/SuperInstance/quilt-cuda)** — The GPU side of the quilt substrate — 5+1 opcodes as CUDA operations. A cudaGraph IS a compiled cell
@@ -1097,6 +1094,8 @@
 - **[quilt-saddle-bridge](https://github.com/SuperInstance/quilt-saddle-bridge)** — Bridge between the Quilt casting-call witness log and saddle double-entry ledger. FNV-1a64 hash chai
 - **[quilt-scratch](https://github.com/SuperInstance/quilt-scratch)** — quilt-scratch — a no-code tile-wiring game engine where every cell is inspectable, swappable, and al
 - **[quilt-state](https://github.com/SuperInstance/quilt-state)** — Persistent state for the Quilt ecosystem. Atomic JSON/JSONL writes, schema versioning.
+- **[quilt-studio](https://github.com/SuperInstance/quilt-studio)**
+- **[quilt-subleq](https://github.com/SuperInstance/quilt-subleq)** — Quilt on Subleq, and Subleq on Quilt. The substrate becomes a distribution of reality.
 - **[quilt-substrate](https://github.com/SuperInstance/quilt-substrate)** — The Quilt substrate as a working Python library. 11-primitive cells, tensor encoding, Schrödinger pa
 - **[quilt-substrate-meta](https://github.com/SuperInstance/quilt-substrate-meta)** — The self-evolving substrate: 5 opcodes, mathematically derived, with a prover, a synthesizer, and 36
 - **[quilt-swarm](https://github.com/SuperInstance/quilt-swarm)** — Quilt ecosystem component: 
@@ -1911,6 +1910,7 @@
 - **[thought-amplifier](https://github.com/SuperInstance/thought-amplifier)**
 - **[tick-engine](https://github.com/SuperInstance/tick-engine)** — Temporal coordination — tick clock with BPM adaptation, swing, and T-minus event scheduling
 - **[tick-engine-v2](https://github.com/SuperInstance/tick-engine-v2)** — High-precision tick engine v2 for real-time SuperInstance scheduling
+- **[tidepool](https://github.com/SuperInstance/tidepool)**
 - **[tile-chain](https://github.com/SuperInstance/tile-chain)** — Signal Chain Thesis - tile-chain
 - **[tile-lifecycle](https://github.com/SuperInstance/tile-lifecycle)** — tile-lifecycle
 - **[tile-memory-early-version](https://github.com/SuperInstance/tile-memory-early-version)** — [ARCHIVED] Early lossy memory experiment. See SuperInstance/fleet-memory for lifecycle-aware distrib
