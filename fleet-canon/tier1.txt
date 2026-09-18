@@ -1,0 +1,31 @@
+# Fleet Canon — Tier-1 roster (27): fleet-critical repos, judged by CCC 2026-09-18.
+# A repo is Tier-1 if the fleet materially breaks when it breaks.
+# Renames are first-class: 2026-09-18 live-canon → quilt-live-canon
+# (bare 'live-canon' repo deleted; service now at quilt-live-canon).
+hermit
+tidepool
+twist-engine
+erised
+Scrapcraft
+duke-lab
+crab-trap-web
+the-tap
+quilt-studio
+vector-novelty
+OpenConstruct
+AI-Writings
+cocapn-health
+ccc-os
+sunset-ecosystem
+cocapn-plato
+hebbian-router
+pareto-tournament
+quilt
+quilt-cell
+plato-portal
+constraint-theory-core
+constraint-theory-math
+canon-graph
+canon-claim
+quilt-live-canon
+quilt-canon-cli
