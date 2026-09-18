@@ -1,0 +1,34 @@
+name: canon-generate
+# Layer G upkeep: regenerate fleet-canon/graph.json from CATALOG.md.
+# canon-lint consumes graph.json + CANON.md stubs; this workflow keeps
+# the generated layer fresh without human hands.
+on:
+  workflow_dispatch:
+  schedule:
+    # Sunday 21:47 UTC — off-peak per fleet cron doctrine
+    - cron: '47 21 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerate graph.json
+        run: python3 fleet-canon/generate.py
+      - name: Commit if changed
+        run: |
+          git config user.name "fleet-canon-bot"
+          git config user.email "fleet-canon-bot@users.noreply.github.com"
+          git add fleet-canon/graph.json
+          if git diff --cached --quiet; then
+            echo "graph.json already current"
+          else
+            git commit -m "canon: regenerate graph.json from CATALOG.md [skip ci]"
+            git push
+          fi
