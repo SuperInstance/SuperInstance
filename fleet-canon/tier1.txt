@@ -29,5 +29,7 @@ constraint-theory-math
 # Live Canon anchor (AI-Writings citation graph — NOT fleet-canon)
 canon-graph
 canon-claim
-live-canon
+live-canon → quilt-live-canon (rename; the Live Canon service now lives at
+# quilt-live-canon, with npm/pypi/gh mirrors as siblings)
+quilt-live-canon
 quilt-canon-cli

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T04:19:36Z",
+ "generated": "2026-09-18T04:34:50Z",
  "source": "CATALOG.md",
  "catalogGenerated": "2026-09-17",
  "catalogTotal": 2000,
@@ -8,12 +8,12 @@
   "ccc-os",
   "cocapn-plato",
   "hebbian-router",
-  "live-canon"
+  "live-canon → quilt-live-canon (rename; the Live Canon service now lives at"
  ],
  "tier3Note": "CATALOG marks every row active; tier-3 (orphan+stale) needs org-API pushedAt — pending access",
  "tiers": {
-  "1": 27,
-  "2": 1977,
+  "1": 28,
+  "2": 1976,
   "3": 0
  },
  "vessels": [
@@ -5421,8 +5421,8 @@
    "tier": 2
   },
   {
-   "name": "live-canon",
-   "family": "canon",
+   "name": "live-canon → quilt-live-canon (rename; the Live Canon service now lives at",
+   "family": "misc",
    "vessel": "",
    "mission": "",
    "state": "active",
@@ -9500,12 +9500,12 @@
   },
   {
    "name": "quilt-live-canon",
-   "family": "other-uncategorized",
+   "family": "applications",
    "vessel": "Various",
    "mission": "The Live Canon — read AI-Writings as a navigable cell fabric, exposed as a Cloudflare Worker",
    "state": "active",
    "bornFrom": [],
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "quilt-live-canon-npm",
