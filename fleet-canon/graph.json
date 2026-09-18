@@ -1,18 +1,17 @@
 {
- "generated": "2026-09-18T04:34:50Z",
+ "generated": "2026-09-18T04:35:37Z",
  "source": "CATALOG.md",
  "catalogGenerated": "2026-09-17",
  "catalogTotal": 2000,
- "parsed": 2004,
+ "parsed": 2003,
  "catalogMissing": [
   "ccc-os",
   "cocapn-plato",
-  "hebbian-router",
-  "live-canon → quilt-live-canon (rename; the Live Canon service now lives at"
+  "hebbian-router"
  ],
  "tier3Note": "CATALOG marks every row active; tier-3 (orphan+stale) needs org-API pushedAt — pending access",
  "tiers": {
-  "1": 28,
+  "1": 27,
   "2": 1976,
   "3": 0
  },
@@ -5419,16 +5418,6 @@
    "state": "active",
    "bornFrom": [],
    "tier": 2
-  },
-  {
-   "name": "live-canon → quilt-live-canon (rename; the Live Canon service now lives at",
-   "family": "misc",
-   "vessel": "",
-   "mission": "",
-   "state": "active",
-   "bornFrom": [],
-   "tier": 1,
-   "catalogMissing": true
   },
   {
    "name": "live-canon-gh",

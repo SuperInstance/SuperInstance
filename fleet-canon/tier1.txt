@@ -1,6 +1,7 @@
-# Tier-1 fleet repos: curated CANON.md required.
-# Every name here was verified against the GitHub API on 2026-09-17.
-# Applications
+# Fleet Canon — Tier-1 roster (27): fleet-critical repos, judged by CCC 2026-09-18.
+# A repo is Tier-1 if the fleet materially breaks when it breaks.
+# Renames are first-class: 2026-09-18 live-canon → quilt-live-canon
+# (bare 'live-canon' repo deleted; service now at quilt-live-canon).
 hermit
 tidepool
 twist-engine
@@ -11,7 +12,6 @@ crab-trap-web
 the-tap
 quilt-studio
 vector-novelty
-# Infra / meta
 OpenConstruct
 AI-Writings
 cocapn-health
@@ -20,16 +20,12 @@ sunset-ecosystem
 cocapn-plato
 hebbian-router
 pareto-tournament
-# Family anchors
 quilt
 quilt-cell
 plato-portal
 constraint-theory-core
 constraint-theory-math
-# Live Canon anchor (AI-Writings citation graph — NOT fleet-canon)
 canon-graph
 canon-claim
-live-canon → quilt-live-canon (rename; the Live Canon service now lives at
-# quilt-live-canon, with npm/pypi/gh mirrors as siblings)
 quilt-live-canon
 quilt-canon-cli
