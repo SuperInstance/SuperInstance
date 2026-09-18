@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-09-17 09:51 UTC
+**Generated:** 2026-09-18 09:25 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -22,6 +22,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | Repo | Vessel | Purpose | Status |
 |------|--------|---------|--------|
 | **[build-guardian](https://github.com/SuperInstance/build-guardian)** | Forgemaster | Build Budget Guardian — tracks build resource usage, enforces budgets, detects bloat trends | 🟢 active |
+| **[ccc-os](https://github.com/SuperInstance/ccc-os)** | Forgemaster | Autonomous fleet monitoring — YAML config, REST API, Discord/Telegram/webhook notifications, constra | 🟢 active |
 | **[cocapn-cli](https://github.com/SuperInstance/cocapn-cli)** | Forgemaster | FLUX constraint safety - cocapn-cli | 🟢 active |
 | **[conformance-service](https://github.com/SuperInstance/conformance-service)** | Forgemaster | Public PLATO/FLUX bytecode conformance checker | 🟢 active |
 | **[conservation-enforcer](https://github.com/SuperInstance/conservation-enforcer)** | Forgemaster | ⚡ FLUX bytecode conservation-law enforcement for LLM outputs — deterministic AI governance via bytec | 🟢 active |
@@ -288,6 +289,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[cartographer](https://github.com/SuperInstance/cartographer)** | JetsonClaw1 | The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed. | 🟢 active |
 | **[casting-call](https://github.com/SuperInstance/casting-call)** | JetsonClaw1 | Which model plays which role — fleet knowledge base of LLM capabilities, failure modes, and casting  | 🟢 active |
 | **[cocapn-dashboard](https://github.com/SuperInstance/cocapn-dashboard)** | JetsonClaw1 | Live bioluminescent dashboard for the Cocapn AI Fleet. Tracks services, PLATO rooms, knowledge tiles | 🟢 active |
+| **[cocapn-plato](https://github.com/SuperInstance/cocapn-plato)** | JetsonClaw1 | Cocapn PLATO integration — knowledge rooms, context management, and deliberation spaces | 🟢 active |
 | **[codespace-edge-rd](https://github.com/SuperInstance/codespace-edge-rd)** | JetsonClaw1 | R&D: Codespace→Edge agent lifecycle, yoke transfer, devcontainer templates | 🟢 active |
 | **[construct-core](https://github.com/SuperInstance/construct-core)** | JetsonClaw1 | Hardware-agnostic agent runtime with layered trait system for the SuperInstance Construct API | 🟢 active |
 | **[edge-compiler](https://github.com/SuperInstance/edge-compiler)** | JetsonClaw1 | Compile and optimize models for specific hardware targets | 🟢 active |
@@ -304,8 +306,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[hermit-crab](https://github.com/SuperInstance/hermit-crab)** | JetsonClaw1 | Agent that migrates between hardware shells preserving knowledge — tracks conservation ratio across  | 🟢 active |
 | **[holodeck-c](https://github.com/SuperInstance/holodeck-c)** | JetsonClaw1 | 🔧 Lightweight C holodeck for embedded and edge deployment. | 🟢 active |
 | **[kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)** | JetsonClaw1 | C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle | 🟢 active |
-| **[knowledge-compass](https://github.com/SuperInstance/knowledge-compass)** | JetsonClaw1 | Rust crate: knowledge-compass | 🟢 active |
-| **[knowledge-cron](https://github.com/SuperInstance/knowledge-cron)** | JetsonClaw1 | Automated cross-repo pattern detection using semantic search and Cloudflare Workers | 🟢 active |
 | **[lau-bench](https://github.com/SuperInstance/lau-bench)** | JetsonClaw1 | Real hardware performance harness — benchmarking every lau-* crate against CPU, GPU, and cross-langu | 🟢 active |
 | **[lau-bytecode](https://github.com/SuperInstance/lau-bytecode)** | JetsonClaw1 | Stack-based bytecode VM for agent programs — 28 opcodes, compiler, sensor/actuator I/O, emotional vi | 🟢 active |
 | **[lau-cloud-deploy](https://github.com/SuperInstance/lau-cloud-deploy)** | JetsonClaw1 | Cloud deployment and configuration layer for SuperInstance/LAU stack — Oracle Cloud, AWS, GCP, Azure | 🟢 active |
@@ -348,6 +348,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[plato-sonar-text](https://github.com/SuperInstance/plato-sonar-text)** | JetsonClaw1 | PLATO Sonar Text — text perception and sonar-based content analysis for PLATO rooms | 🟢 active |
 | **[plato-vision](https://github.com/SuperInstance/plato-vision)** | JetsonClaw1 | PLATO Vision — visual perception pipeline for PLATO knowledge rooms | 🟢 active |
 | **[pythagorean48](https://github.com/SuperInstance/pythagorean48)** | JetsonClaw1 | Exact 6-bit vector encoding for ARM64 edge. 8 components per uint64, zero drift, 80M queries/s on Je | 🟢 active |
+| **[quilt-claw](https://github.com/SuperInstance/quilt-claw)** | JetsonClaw1 | Quilt-native knowledge crew. The agents are cells. The bus is a cell. The store is a cell. | 🟢 active |
 | **[quilt-conversation](https://github.com/SuperInstance/quilt-conversation)** | JetsonClaw1 | Inter-agent conversation as a live sequencer — t-minus simulation-first, sensor-confirmed pocket, in | 🟢 active |
 | **[quilt-jetson](https://github.com/SuperInstance/quilt-jetson)** | JetsonClaw1 | Quilt runtime for NVIDIA Jetson edge ML, ROS2, vision, sensor fusion | 🟢 active |
 | **[quilt-mhs](https://github.com/SuperInstance/quilt-mhs)** | JetsonClaw1 | quilt × Anthropic's Model Hardware Standard: quilt cells drive MHS devices; quilt runtimes exposed A | 🟢 active |
@@ -409,7 +410,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[Full-stack-Free-Movie-Streaming-Website](https://github.com/SuperInstance/Full-stack-Free-Movie-Streaming-Website)** | CCC | A modern movie and TV show streaming discovery app built with React 18, Vite, and Tailwind CSS. Brow | 🟢 active |
 | **[hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)** | CCC | Multi-model exploration of the hermit crab architecture — shell ecology, instance molting, and the i | 🟢 active |
 | **[hermit-crab-ecology-archive-copy](https://github.com/SuperInstance/hermit-crab-ecology-archive-copy)** | CCC | Archive copy: Windows-side workspace snapshot of hermit-crab-ecology (content diff vs restored origi | 🟢 active |
-| **[kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)** | CCC | Golden repair mathematics compiled to WASM — fault tolerance in the browser | 🟢 active |
 | **[luciddreamer-ai](https://github.com/SuperInstance/luciddreamer-ai)** | CCC | Cocapn vessel — accumulated context IS the product | 🟢 active |
 | **[luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)** | CCC | GitHub Pages for luciddreamer.ai | 🟢 active |
 | **[lucineer-com-pages](https://github.com/SuperInstance/lucineer-com-pages)** | CCC | GitHub Pages for lucineer.com | 🟢 active |
@@ -574,6 +574,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** | Various | 🔮 The repo IS the world. Commits ARE actions. Zero server MUD. | ⚪ unknown |
 | **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** | Various | Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation | ⚪ unknown |
 | **[harness-experiments](https://github.com/SuperInstance/harness-experiments)** | Various | 🔬 AI agent harness productivity experiments — measured, not guessed. D1-backed findings on optimal b | 🟢 active |
+| **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** | Various | Hebbian routing — connection strengthening based on usage patterns for agent communication networks | 🟢 active |
 | **[hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)** | Various | Hermes's architecture brain-docs — the Oxide Stack, Shared Canvas, Digital Twin data flow, and the f | ⚪ unknown |
 | **[hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)** | Various | hermes-chronicle | ⚪ unknown |
 | **[hermes-cloudflare](https://github.com/SuperInstance/hermes-cloudflare)** | Various | hermes-cloudflare | ⚪ unknown |
@@ -588,8 +589,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ideation-games](https://github.com/SuperInstance/ideation-games)** | Various | ideation-games | ⚪ unknown |
 | **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** | Various | Image Distillation Loop — Wesley learns to generate images through teacher-model feedback | ⚪ unknown |
 | **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** | Various | Integration guides and documentation | ⚪ unknown |
-| **[kinematics](https://github.com/SuperInstance/kinematics)** | Various | Robot kinematics in pure Rust — DH parameters, forward/inverse kinematics, Jacobian, manipulability, | ⚪ unknown |
-| **[knot-theory](https://github.com/SuperInstance/knot-theory)** | Various | Classical knot invariants in Rust — crossing number, writhe, linking number, Reidemeister moves, Ale | ⚪ unknown |
 | **[l-system-rs](https://github.com/SuperInstance/l-system-rs)** | Various | Research-grade Rust crate | ⚪ unknown |
 | **[landauer](https://github.com/SuperInstance/landauer)** | Various | Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info | ⚪ unknown |
 | **[lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)** | Various | Topological data analysis for test coverage gaps — finds blind spots in Rust test suites using persi | ⚪ unknown |
@@ -1251,6 +1250,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-fleet](https://github.com/SuperInstance/quilt-fleet)** | Various | Quilt runtime for multi-tier federation orchestrator — discovery, health, quorum, migration, auto-sc | ⚪ unknown |
 | **[quilt-flow](https://github.com/SuperInstance/quilt-flow)** | Various | Quilt sketch — see README. | ⚪ unknown |
 | **[quilt-foundation](https://github.com/SuperInstance/quilt-foundation)** | Various | The 5-opcode Quilt VM. Foundation layer for cells, plugins, sheets, MUDs, TTRPGs, and the bay dance. | ⚪ unknown |
+| **[quilt-gan](https://github.com/SuperInstance/quilt-gan)** | Various | quilt-gan | ⚪ unknown |
 | **[quilt-geometry](https://github.com/SuperInstance/quilt-geometry)** | Various | quilt-geometry | ⚪ unknown |
 | **[quilt-go](https://github.com/SuperInstance/quilt-go)** | Various | The Quilt cell-fabric runtime in Go — stdlib only, byte-exact FNV-1a 64-bit hash. Generated by a Cla | ⚪ unknown |
 | **[quilt-id](https://github.com/SuperInstance/quilt-id)** | Various | phi-Address Penrose content addressing | ⚪ unknown |
@@ -2105,6 +2105,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
 - **Purpose:** Build Budget Guardian — tracks build resource usage, enforces budgets, detects bloat trends
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
+### [ccc-os](https://github.com/SuperInstance/ccc-os)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** Autonomous fleet monitoring — YAML config, REST API, Discord/Telegram/webhook notifications, constraint-aware health checks.
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
@@ -3914,6 +3921,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [cocapn-plato](https://github.com/SuperInstance/cocapn-plato)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** Cocapn PLATO integration — knowledge rooms, context management, and deliberation spaces
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [codespace-edge-rd](https://github.com/SuperInstance/codespace-edge-rd)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -4023,20 +4037,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle
-- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
-
-### [knowledge-compass](https://github.com/SuperInstance/knowledge-compass)
-- **Domain:** Hardware & Edge
-- **Vessel:** JetsonClaw1
-- **Purpose:** Rust crate: knowledge-compass
-- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
-
-### [knowledge-cron](https://github.com/SuperInstance/knowledge-cron)
-- **Domain:** Hardware & Edge
-- **Vessel:** JetsonClaw1
-- **Purpose:** Automated cross-repo pattern detection using semantic search and Cloudflare Workers
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
@@ -4331,6 +4331,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** Exact 6-bit vector encoding for ARM64 edge. 8 components per uint64, zero drift, 80M queries/s on Jetson.
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
+### [quilt-claw](https://github.com/SuperInstance/quilt-claw)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** Quilt-native knowledge crew. The agents are cells. The bus is a cell. The store is a cell.
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
@@ -4730,13 +4737,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Web & Browser
 - **Vessel:** CCC
 - **Purpose:** Archive copy: Windows-side workspace snapshot of hermit-crab-ecology (content diff vs restored original)
-- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
-- **Status:** active
-
-### [kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)
-- **Domain:** Web & Browser
-- **Vessel:** CCC
-- **Purpose:** Golden repair mathematics compiled to WASM — fault tolerance in the browser
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
@@ -5325,6 +5325,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** 🔬 AI agent harness productivity experiments — measured, not guessed. D1-backed findings on optimal batch sizes, models, and orchestration parameters.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [hebbian-router](https://github.com/SuperInstance/hebbian-router)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Hebbian routing — connection strengthening based on usage patterns for agent communication networks
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

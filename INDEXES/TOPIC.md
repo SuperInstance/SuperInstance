@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-09-17 09:51 UTC
+**Generated:** 2026-09-18 09:25 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -41,6 +41,7 @@
 
 ## Constraint-Theory
 
+- **[ccc-os](https://github.com/SuperInstance/ccc-os)** — Autonomous fleet monitoring — YAML config, REST API, Discord/Telegram/webhook notifications, constra
 - **[constrainttheory-ml-demo](https://github.com/SuperInstance/constrainttheory-ml-demo)**
 - **[cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)** — GPU constraint checking at 1B+ constraints/sec — CUDA library with C and Python APIs
 - **[fleet-constraint](https://github.com/SuperInstance/fleet-constraint)** — Fleet coordination safety constraint runtime
@@ -332,6 +333,7 @@
 - **[git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)** — One-click Codespace template for git-agent runtime development
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
 - **[harness-experiments](https://github.com/SuperInstance/harness-experiments)** — 🔬 AI agent harness productivity experiments — measured, not guessed. D1-backed findings on optimal b
+- **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** — Hebbian routing — connection strengthening based on usage patterns for agent communication networks
 - **[hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)** — Hermes's architecture brain-docs — the Oxide Stack, Shared Canvas, Digital Twin data flow, and the f
 - **[hermes-home](https://github.com/SuperInstance/hermes-home)** — Hermes's runtime home — SOUL, agents, CNS monitors, cron bridges. The nervous system's identity and 
 - **[hermes-nmi](https://github.com/SuperInstance/hermes-nmi)** — Neuro-Muscular Interface — bridges reasoning pulses to cellular agent actions. The synapse between t
@@ -510,6 +512,7 @@
 - **[purplepincher-shell-library](https://github.com/SuperInstance/purplepincher-shell-library)** — Agent/vessel separation for context compaction. Vessels are persistent, trainable, swappable shells.
 - **[quilt-agent](https://github.com/SuperInstance/quilt-agent)** — AI agents where every capability is a cell. Memory is values, tools are API cells, reasoning is a ch
 - **[quilt-agent-memory-archive](https://github.com/SuperInstance/quilt-agent-memory-archive)** — ARCHIVED snapshots of the Mavis agent memory (MEMORY.md). Old ideas kept because they were often wro
+- **[quilt-claw](https://github.com/SuperInstance/quilt-claw)** — Quilt-native knowledge crew. The agents are cells. The bus is a cell. The store is a cell.
 - **[quilt-conversation](https://github.com/SuperInstance/quilt-conversation)** — Inter-agent conversation as a live sequencer — t-minus simulation-first, sensor-confirmed pocket, in
 - **[quilt-fleet](https://github.com/SuperInstance/quilt-fleet)** — Quilt runtime for multi-tier federation orchestrator — discovery, health, quorum, migration, auto-sc
 - **[quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)** — Polyformalism: Quilt as a type-safe Pydantic-AI agent
@@ -704,6 +707,7 @@
 - **[chart-room](https://github.com/SuperInstance/chart-room)** — The Chart Room — Four panels. Four perspectives. One truth.
 - **[cocapn-dashboard](https://github.com/SuperInstance/cocapn-dashboard)** — Live bioluminescent dashboard for the Cocapn AI Fleet. Tracks services, PLATO rooms, knowledge tiles
 - **[cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)** — Keeper↔Fleet binary wire protocol — the nervous system of the Cocapn Fleet. msgpack-based message fr
+- **[cocapn-plato](https://github.com/SuperInstance/cocapn-plato)** — Cocapn PLATO integration — knowledge rooms, context management, and deliberation spaces
 - **[crab-trap-web](https://github.com/SuperInstance/crab-trap-web)** — Browser-based MUD explorer for the Crab Traps — 36+ rooms to explore
 - **[fleet-murmur-worker](https://github.com/SuperInstance/fleet-murmur-worker)** — Fleet Murmur Worker — 5 thinking strategies always running, quality-gated insights to PLATO. Part of
 - **[fleet-scribe](https://github.com/SuperInstance/fleet-scribe)** — Download-and-try digital twin builder. Sits beside any app, builds a PLATO twin.
@@ -1122,12 +1126,7 @@
 - **[ideation-games](https://github.com/SuperInstance/ideation-games)**
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** — Integration guides and documentation
-- **[kinematics](https://github.com/SuperInstance/kinematics)** — Robot kinematics in pure Rust — DH parameters, forward/inverse kinematics, Jacobian, manipulability,
 - **[kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)** — C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle
-- **[kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)** — Golden repair mathematics compiled to WASM — fault tolerance in the browser
-- **[knot-theory](https://github.com/SuperInstance/knot-theory)** — Classical knot invariants in Rust — crossing number, writhe, linking number, Reidemeister moves, Ale
-- **[knowledge-compass](https://github.com/SuperInstance/knowledge-compass)** — Rust crate: knowledge-compass
-- **[knowledge-cron](https://github.com/SuperInstance/knowledge-cron)** — Automated cross-repo pattern detection using semantic search and Cloudflare Workers
 - **[l-system-rs](https://github.com/SuperInstance/l-system-rs)** — Research-grade Rust crate
 - **[landauer](https://github.com/SuperInstance/landauer)** — Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info
 - **[lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)** — Topological data analysis for test coverage gaps — finds blind spots in Rust test suites using persi
@@ -1455,6 +1454,7 @@
 - **[quilt-evolve](https://github.com/SuperInstance/quilt-evolve)** — Self-improvement loops for Quilt. LLMs as adversarial input generators and output judges. Evolve any
 - **[quilt-flow](https://github.com/SuperInstance/quilt-flow)** — Quilt sketch — see README.
 - **[quilt-foundation](https://github.com/SuperInstance/quilt-foundation)** — The 5-opcode Quilt VM. Foundation layer for cells, plugins, sheets, MUDs, TTRPGs, and the bay dance.
+- **[quilt-gan](https://github.com/SuperInstance/quilt-gan)**
 - **[quilt-geometry](https://github.com/SuperInstance/quilt-geometry)**
 - **[quilt-go](https://github.com/SuperInstance/quilt-go)** — The Quilt cell-fabric runtime in Go — stdlib only, byte-exact FNV-1a 64-bit hash. Generated by a Cla
 - **[quilt-id](https://github.com/SuperInstance/quilt-id)** — phi-Address Penrose content addressing

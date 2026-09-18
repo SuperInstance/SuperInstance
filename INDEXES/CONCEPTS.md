@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-09-17 09:51 UTC
+**Generated:** 2026-09-18 09:25 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -71,6 +71,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Constraint Theory
 
+- [ccc-os](https://github.com/SuperInstance/ccc-os)
 - [cocapn-cli](https://github.com/SuperInstance/cocapn-cli)
 - [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core)
 - [constraint-theory-math](https://github.com/SuperInstance/constraint-theory-math)
@@ -401,6 +402,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [cartographer](https://github.com/SuperInstance/cartographer)
 - [casting-call](https://github.com/SuperInstance/casting-call)
 - [categorical-agents](https://github.com/SuperInstance/categorical-agents)
+- [ccc-os](https://github.com/SuperInstance/ccc-os)
 - [cns-bridge](https://github.com/SuperInstance/cns-bridge)
 - [cns-echo](https://github.com/SuperInstance/cns-echo)
 - [cocapn-browser-agent](https://github.com/SuperInstance/cocapn-browser-agent)
@@ -476,6 +478,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)
 - [git-native-agents](https://github.com/SuperInstance/git-native-agents)
 - [harness-experiments](https://github.com/SuperInstance/harness-experiments)
+- [hebbian-router](https://github.com/SuperInstance/hebbian-router)
 - [hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)
 - [hermes-home](https://github.com/SuperInstance/hermes-home)
 - [hermes-nmi](https://github.com/SuperInstance/hermes-nmi)
@@ -730,6 +733,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-agent](https://github.com/SuperInstance/quilt-agent)
 - [quilt-agent-memory-archive](https://github.com/SuperInstance/quilt-agent-memory-archive)
 - [quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)
+- [quilt-claw](https://github.com/SuperInstance/quilt-claw)
 - [quilt-conversation](https://github.com/SuperInstance/quilt-conversation)
 - [quilt-fleet](https://github.com/SuperInstance/quilt-fleet)
 - [quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)
@@ -968,6 +972,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [chart-room](https://github.com/SuperInstance/chart-room)
 - [cocapn-dashboard](https://github.com/SuperInstance/cocapn-dashboard)
 - [cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)
+- [cocapn-plato](https://github.com/SuperInstance/cocapn-plato)
 - [conformance-service](https://github.com/SuperInstance/conformance-service)
 - [crab-trap-web](https://github.com/SuperInstance/crab-trap-web)
 - [fleet-murmur-worker](https://github.com/SuperInstance/fleet-murmur-worker)
@@ -1429,12 +1434,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [holodeck-c](https://github.com/SuperInstance/holodeck-c)
 - [ideation-games](https://github.com/SuperInstance/ideation-games)
 - [image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)
-- [kinematics](https://github.com/SuperInstance/kinematics)
 - [kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)
-- [kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)
-- [knot-theory](https://github.com/SuperInstance/knot-theory)
-- [knowledge-compass](https://github.com/SuperInstance/knowledge-compass)
-- [knowledge-cron](https://github.com/SuperInstance/knowledge-cron)
 - [l-system-rs](https://github.com/SuperInstance/l-system-rs)
 - [landauer](https://github.com/SuperInstance/landauer)
 - [lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)
@@ -1761,6 +1761,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-evolve](https://github.com/SuperInstance/quilt-evolve)
 - [quilt-flow](https://github.com/SuperInstance/quilt-flow)
 - [quilt-foundation](https://github.com/SuperInstance/quilt-foundation)
+- [quilt-gan](https://github.com/SuperInstance/quilt-gan)
 - [quilt-geometry](https://github.com/SuperInstance/quilt-geometry)
 - [quilt-go](https://github.com/SuperInstance/quilt-go)
 - [quilt-id](https://github.com/SuperInstance/quilt-id)

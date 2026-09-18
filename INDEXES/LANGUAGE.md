@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-09-17 09:51 UTC
+**Generated:** 2026-09-18 09:25 UTC
 **Total repos:** 2000
 
 ## C
@@ -40,7 +40,6 @@
 - **[holodeck-c](https://github.com/SuperInstance/holodeck-c)** — 🔧 Lightweight C holodeck for embedded and edge deployment.
 - **[intent-directed-compilation](https://github.com/SuperInstance/intent-directed-compilation)** — Semantic criticality → instruction-level precision: AVX-512 mixed-precision constraint checking with
 - **[kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)** — C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle
-- **[knowledge-cron](https://github.com/SuperInstance/knowledge-cron)** — Automated cross-repo pattern detection using semantic search and Cloudflare Workers
 - **[lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)** — Agent-to-Agent wire protocol — discovery via AgentCard, message routing, HMAC auth, sessions for PLA
 - **[lau-a2ui](https://github.com/SuperInstance/lau-a2ui)** — Rendering-agnostic state for PLATO — one world state rendered as ASCII, MUD, HTML, Unity, Godot, Rob
 - **[lau-bytecode-c](https://github.com/SuperInstance/lau-bytecode-c)** — LAU bytecode VM - C port
@@ -402,9 +401,6 @@
 - **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** — Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation
 - **[hermit-crab](https://github.com/SuperInstance/hermit-crab)** — Agent that migrates between hardware shells preserving knowledge — tracks conservation ratio across 
 - **[holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)** — GL(9) zero-holonomy consensus — cycle-based trust verification for constraint systems (Rust)
-- **[kinematics](https://github.com/SuperInstance/kinematics)** — Robot kinematics in pure Rust — DH parameters, forward/inverse kinematics, Jacobian, manipulability,
-- **[knot-theory](https://github.com/SuperInstance/knot-theory)** — Classical knot invariants in Rust — crossing number, writhe, linking number, Reidemeister moves, Ale
-- **[knowledge-compass](https://github.com/SuperInstance/knowledge-compass)** — Rust crate: knowledge-compass
 - **[l-system-rs](https://github.com/SuperInstance/l-system-rs)** — Research-grade Rust crate
 - **[lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)** — Topological data analysis for test coverage gaps — finds blind spots in Rust test suites using persi
 - **[lattice-crypto-rs](https://github.com/SuperInstance/lattice-crypto-rs)** — Lattice-based cryptography primitives: LWE, Ring-LWE, Gaussian sampling, LLL in pure Rust
@@ -588,6 +584,7 @@
 - **[carry-protocol](https://github.com/SuperInstance/carry-protocol)** — Moving data across divides where infrastructure doesn't reach.
 - **[cartographer](https://github.com/SuperInstance/cartographer)** — The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed.
 - **[casting-call](https://github.com/SuperInstance/casting-call)** — Which model plays which role — fleet knowledge base of LLM capabilities, failure modes, and casting 
+- **[ccc-os](https://github.com/SuperInstance/ccc-os)** — Autonomous fleet monitoring — YAML config, REST API, Discord/Telegram/webhook notifications, constra
 - **[cell-cascade](https://github.com/SuperInstance/cell-cascade)**
 - **[cell-router-pkg](https://github.com/SuperInstance/cell-router-pkg)** — PyPI distribution of cell-router (F145: A2A bottle-router lifted to Quilt cells).
 - **[cell-runtime](https://github.com/SuperInstance/cell-runtime)** — The Quilt canon as code: cell-runtime
@@ -602,6 +599,7 @@
 - **[cocapn-dashboard](https://github.com/SuperInstance/cocapn-dashboard)** — Live bioluminescent dashboard for the Cocapn AI Fleet. Tracks services, PLATO rooms, knowledge tiles
 - **[cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)** — Keeper↔Fleet binary wire protocol — the nervous system of the Cocapn Fleet. msgpack-based message fr
 - **[cocapn-health](https://github.com/SuperInstance/cocapn-health)** — Cocapn fleet health monitoring — vessel status, heartbeat, and observability utilities
+- **[cocapn-plato](https://github.com/SuperInstance/cocapn-plato)** — Cocapn PLATO integration — knowledge rooms, context management, and deliberation spaces
 - **[cocapn-pushdown](https://github.com/SuperInstance/cocapn-pushdown)** — CoCapn push-down engine — AI-optional feature degradation, device profiles, A/B versioned fallback c
 - **[cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)** — CoCapn in WebAssembly — the browser tier. Same deadband, same PID, runs in Chrome.
 - **[cocapn-zig](https://github.com/SuperInstance/cocapn-zig)** — CoCapn in Zig — comptime safety for bare metal. Verify your deadbands before the boat leaves the doc
@@ -708,6 +706,7 @@
 - **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** — 🔮 The repo IS the world. Commits ARE actions. Zero server MUD.
 - **[gravity-well-protocol](https://github.com/SuperInstance/gravity-well-protocol)** — Edge-Native concept: Gravity Well Protocol
 - **[harness-experiments](https://github.com/SuperInstance/harness-experiments)** — 🔬 AI agent harness productivity experiments — measured, not guessed. D1-backed findings on optimal b
+- **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** — Hebbian routing — connection strengthening based on usage patterns for agent communication networks
 - **[hermes-avatar](https://github.com/SuperInstance/hermes-avatar)** — Hermes sensory avatar — visual, voice, music, and sensory blueprints
 - **[hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)** — Hermes's architecture brain-docs — the Oxide Stack, Shared Canvas, Digital Twin data flow, and the f
 - **[hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)**
@@ -726,7 +725,6 @@
 - **[ideation-games](https://github.com/SuperInstance/ideation-games)**
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** — Integration guides and documentation
-- **[kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)** — Golden repair mathematics compiled to WASM — fault tolerance in the browser
 - **[landauer](https://github.com/SuperInstance/landauer)** — Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info
 - **[lattice-crypto](https://github.com/SuperInstance/lattice-crypto)** — See README
 - **[lattice-hamiltonian](https://github.com/SuperInstance/lattice-hamiltonian)** — Lattice Hamiltonian systems — Ising/Potts models, transfer matrices, phase transitions, Metropolis M
@@ -1303,6 +1301,7 @@
 - **[quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)** — The Quilt cell-router: a BIND/LINK/GHOST/TICK engine for A2A bottle-cells. F145. Lifts i2i-bottle-ag
 - **[quilt-cellular-arch](https://github.com/SuperInstance/quilt-cellular-arch)** — The cellular-relationship-first design: each cell plays as a first-person shooter; the cowboy sees t
 - **[quilt-chapel](https://github.com/SuperInstance/quilt-chapel)** — Polyformalism: Quilt in Chapel (distributed cell evaluation)
+- **[quilt-claw](https://github.com/SuperInstance/quilt-claw)** — Quilt-native knowledge crew. The agents are cells. The bus is a cell. The store is a cell.
 - **[quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare)** — A Quilt reactive runtime on Cloudflare Workers, D1, Vectorize, KV, R2.
 - **[quilt-cobol](https://github.com/SuperInstance/quilt-cobol)** — Polyformalism: Quilt in COBOL (the cell model is older than spreadsheets)
 - **[quilt-codespace](https://github.com/SuperInstance/quilt-codespace)** — GitHub Codespace template that runs Quilt as a live, token-authenticated, federated runtime
@@ -1323,6 +1322,7 @@
 - **[quilt-fleet](https://github.com/SuperInstance/quilt-fleet)** — Quilt runtime for multi-tier federation orchestrator — discovery, health, quorum, migration, auto-sc
 - **[quilt-flow](https://github.com/SuperInstance/quilt-flow)** — Quilt sketch — see README.
 - **[quilt-foundation](https://github.com/SuperInstance/quilt-foundation)** — The 5-opcode Quilt VM. Foundation layer for cells, plugins, sheets, MUDs, TTRPGs, and the bay dance.
+- **[quilt-gan](https://github.com/SuperInstance/quilt-gan)**
 - **[quilt-geometry](https://github.com/SuperInstance/quilt-geometry)**
 - **[quilt-id](https://github.com/SuperInstance/quilt-id)** — phi-Address Penrose content addressing
 - **[quilt-jetson](https://github.com/SuperInstance/quilt-jetson)** — Quilt runtime for NVIDIA Jetson edge ML, ROS2, vision, sensor fusion

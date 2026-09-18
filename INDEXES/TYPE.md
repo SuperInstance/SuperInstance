@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-09-17 09:51 UTC
+**Generated:** 2026-09-18 09:25 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -142,6 +142,7 @@
 - **[cns-echo](https://github.com/SuperInstance/cns-echo)** — CNS echo agent — receives USCP signals, echoes back with analysis
 - **[cns-monitor](https://github.com/SuperInstance/cns-monitor)** — Real-time CNS traffic monitor — htop for USCP signals
 - **[cocapn-browser-agent](https://github.com/SuperInstance/cocapn-browser-agent)** — Browser-native fleet agent using Chrome's built-in Gemini Nano AI. Zero-install fleet coordination.
+- **[cocapn-plato](https://github.com/SuperInstance/cocapn-plato)** — Cocapn PLATO integration — knowledge rooms, context management, and deliberation spaces
 - **[cocapn-pushdown](https://github.com/SuperInstance/cocapn-pushdown)** — CoCapn push-down engine — AI-optional feature degradation, device profiles, A/B versioned fallback c
 - **[cocapn-zig](https://github.com/SuperInstance/cocapn-zig)** — CoCapn in Zig — comptime safety for bare metal. Verify your deadbands before the boat leaves the doc
 - **[codespace-edge-rd](https://github.com/SuperInstance/codespace-edge-rd)** — R&D: Codespace→Edge agent lifecycle, yoke transfer, devcontainer templates
@@ -249,6 +250,7 @@
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
 - **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** — Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation
 - **[harness-experiments](https://github.com/SuperInstance/harness-experiments)** — 🔬 AI agent harness productivity experiments — measured, not guessed. D1-backed findings on optimal b
+- **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** — Hebbian routing — connection strengthening based on usage patterns for agent communication networks
 - **[hermes-avatar](https://github.com/SuperInstance/hermes-avatar)** — Hermes sensory avatar — visual, voice, music, and sensory blueprints
 - **[hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)** — Hermes's architecture brain-docs — the Oxide Stack, Shared Canvas, Digital Twin data flow, and the f
 - **[hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)**
@@ -270,12 +272,7 @@
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** — Integration guides and documentation
 - **[intent-directed-compilation](https://github.com/SuperInstance/intent-directed-compilation)** — Semantic criticality → instruction-level precision: AVX-512 mixed-precision constraint checking with
-- **[kinematics](https://github.com/SuperInstance/kinematics)** — Robot kinematics in pure Rust — DH parameters, forward/inverse kinematics, Jacobian, manipulability,
 - **[kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)** — C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle
-- **[kintsugi-math-wasm](https://github.com/SuperInstance/kintsugi-math-wasm)** — Golden repair mathematics compiled to WASM — fault tolerance in the browser
-- **[knot-theory](https://github.com/SuperInstance/knot-theory)** — Classical knot invariants in Rust — crossing number, writhe, linking number, Reidemeister moves, Ale
-- **[knowledge-compass](https://github.com/SuperInstance/knowledge-compass)** — Rust crate: knowledge-compass
-- **[knowledge-cron](https://github.com/SuperInstance/knowledge-cron)** — Automated cross-repo pattern detection using semantic search and Cloudflare Workers
 - **[landauer](https://github.com/SuperInstance/landauer)** — Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info
 - **[lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)** — Topological data analysis for test coverage gaps — finds blind spots in Rust test suites using persi
 - **[lattice-crypto](https://github.com/SuperInstance/lattice-crypto)** — See README
@@ -890,6 +887,7 @@
 - **[quilt-cell](https://github.com/SuperInstance/quilt-cell)** — The Quilt cell as a JavaScript library. 16-dial Q1.15 vectors, FNV-1a 64-bit state hash, byte-exact 
 - **[quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)** — The Quilt cell-router: a BIND/LINK/GHOST/TICK engine for A2A bottle-cells. F145. Lifts i2i-bottle-ag
 - **[quilt-chapel](https://github.com/SuperInstance/quilt-chapel)** — Polyformalism: Quilt in Chapel (distributed cell evaluation)
+- **[quilt-claw](https://github.com/SuperInstance/quilt-claw)** — Quilt-native knowledge crew. The agents are cells. The bus is a cell. The store is a cell.
 - **[quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare)** — A Quilt reactive runtime on Cloudflare Workers, D1, Vectorize, KV, R2.
 - **[quilt-cobol](https://github.com/SuperInstance/quilt-cobol)** — Polyformalism: Quilt in COBOL (the cell model is older than spreadsheets)
 - **[quilt-codespace](https://github.com/SuperInstance/quilt-codespace)** — GitHub Codespace template that runs Quilt as a live, token-authenticated, federated runtime
@@ -913,6 +911,7 @@
 - **[quilt-flow](https://github.com/SuperInstance/quilt-flow)** — Quilt sketch — see README.
 - **[quilt-forth](https://github.com/SuperInstance/quilt-forth)** — The Quilt cell-fabric runtime in Forth. Concatenative, stack-based. 5-sigma polyformalism port.
 - **[quilt-foundation](https://github.com/SuperInstance/quilt-foundation)** — The 5-opcode Quilt VM. Foundation layer for cells, plugins, sheets, MUDs, TTRPGs, and the bay dance.
+- **[quilt-gan](https://github.com/SuperInstance/quilt-gan)**
 - **[quilt-gc](https://github.com/SuperInstance/quilt-gc)** — Layer 5 of the polyformalism — a runtime/GC that uses the 5 opcodes as the garbage collection bounda
 - **[quilt-geometry](https://github.com/SuperInstance/quilt-geometry)**
 - **[quilt-haskell](https://github.com/SuperInstance/quilt-haskell)** — The Quilt cell-fabric runtime in Haskell. Pure functional, lazy. 5-sigma polyformalism port.
@@ -1858,6 +1857,7 @@
 
 - **[activelog-backend](https://github.com/SuperInstance/activelog-backend)** — Backend service for activity logging.
 - **[agent-priming](https://github.com/SuperInstance/agent-priming)** — The Mechanic Doctrine — a system prompt for LLMs/agents serving human users who are vibe-coding. Liv
+- **[ccc-os](https://github.com/SuperInstance/ccc-os)** — Autonomous fleet monitoring — YAML config, REST API, Discord/Telegram/webhook notifications, constra
 - **[cocapn-dashboard](https://github.com/SuperInstance/cocapn-dashboard)** — Live bioluminescent dashboard for the Cocapn AI Fleet. Tracks services, PLATO rooms, knowledge tiles
 - **[conformance-service](https://github.com/SuperInstance/conformance-service)** — Public PLATO/FLUX bytecode conformance checker
 - **[construct-core](https://github.com/SuperInstance/construct-core)** — Hardware-agnostic agent runtime with layered trait system for the SuperInstance Construct API
