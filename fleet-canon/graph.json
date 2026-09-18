@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T04:35:37Z",
+ "generated": "2026-09-18T05:51:45Z",
  "source": "CATALOG.md",
  "catalogGenerated": "2026-09-17",
  "catalogTotal": 2000,
@@ -9,7 +9,7 @@
   "cocapn-plato",
   "hebbian-router"
  ],
- "tier3Note": "CATALOG marks every row active; tier-3 (orphan+stale) needs org-API pushedAt — pending access",
+ "tier3Note": "tier-3 (orphan+stale) populates once the CATALOG generator fetches pushedAt/isArchived (meta repo PR #19, catalog-v2); until then every row reads active",
  "tiers": {
   "1": 27,
   "2": 1976,

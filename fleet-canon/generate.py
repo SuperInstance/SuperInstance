@@ -90,7 +90,8 @@ TIER1_FAMILY = {
     "canon-graph": "canon", "canon-claim": "canon", "live-canon": "canon",
     "quilt-canon-cli": "canon",
 }
-STATUS_MAP = {"🟢": "active", "🟡": "experimental", "🔴": "sunset"}
+STATUS_MAP = {"🟢": "active", "🟡": "experimental", "🔴": "sunset",
+            "⚫": "sunset", "⚪": "active"}
 
 
 def slugify(header: str) -> str:
@@ -204,8 +205,9 @@ def main() -> int:
         "catalogTotal": meta["catalogTotal"],
         "parsed": len(nodes),
         "catalogMissing": missing,
-        "tier3Note": "CATALOG marks every row active; tier-3 (orphan+stale) "
-                     "needs org-API pushedAt — pending access",
+        "tier3Note": "tier-3 (orphan+stale) populates once the CATALOG "
+                     "generator fetches pushedAt/isArchived (meta repo PR #19, "
+                     "catalog-v2); until then every row reads active",
         "tiers": {str(t): sum(1 for n in nodes if n["tier"] == t) for t in (1, 2, 3)},
         "vessels": sorted({n["vessel"] for n in nodes if n["vessel"]}),
         "nodes": nodes,
