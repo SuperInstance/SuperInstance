@@ -24,7 +24,7 @@ jobs:
 
       - name: Fetch all repos
         run: |
-          gh repo list SuperInstance --limit 2000 --json name,description,url,updatedAt > /tmp/all-repos.json
+          gh repo list SuperInstance --limit 10000 --json name,description,url,updatedAt,pushedAt,isArchived,defaultBranchRef > /tmp/all-repos.json
           echo "Fetched $(python3 -c "import json; print(len(json.load(open('/tmp/all-repos.json'))))") repos"
 
       - name: Generate INDEX.md

@@ -6,13 +6,18 @@ For each repo, captures:
 - Vessel: who built/maintains it
 - Research lineage: what it evolved from or was inspired by
 - Purpose: what it does in one sentence
-- Status: active, stalled, experimental, deprecated
+- Status: derived from pushedAt + isArchived when not curated
+  (🟢 active ≤90d, 🔴 stalled 91–365d, ⚫ deprecated archived or >365d)
 
 Outputs CATALOG.md — a structured, searchable catalog of the entire fleet.
+
+The workflow fetches repos via `gh repo list SuperInstance --limit 10000`.
+The previous --limit 2000 silently dropped ~2/5 of the org (3,951 repos,
+2026-09-18); the all-🟢 status column traced to never reading pushedAt.
 """
 
 import json, subprocess, os, sys
-from datetime import datetime
+from datetime import datetime, timezone
 
 REPO_DATA_FILE = os.path.join(os.path.dirname(__file__), '..', 'repo-catalog-data.json')
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), '..', 'CATALOG.md')
@@ -162,11 +167,12 @@ def main():
     except (FileNotFoundError, json.JSONDecodeError):
         repos = []
     
-    now = datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
+    now = datetime.now(timezone.utc)
     
+    generated = now.strftime('%Y-%m-%d %H:%M UTC')
     lines = []
     lines.append(f"# Fleet Catalog\n")
-    lines.append(f"**Generated:** {now}\n")
+    lines.append(f"**Generated:** {generated}\n")
     lines.append(f"**Total repositories:** {len(repos)}\n")
     lines.append(f"A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.\n")
     lines.append(f"---\n")
@@ -177,6 +183,25 @@ def main():
         name = r['name']
         desc = r.get('description', '') or ''
         info = auto_categorize(name, desc, KNOWN_REPOS)
+        # Curated entries keep their status; auto entries derive it from
+        # real repo metadata (pushedAt / isArchived) so the status column
+        # stops being all-🟢.
+        if name not in KNOWN_REPOS:
+            pushed = r.get('pushedAt') or r.get('pushed_at') or ''
+            archived = r.get('isArchived') or r.get('is_archived') or False
+            age_days = None
+            if pushed:
+                try:
+                    age_days = (now - datetime.fromisoformat(
+                        pushed.replace('Z', '+00:00'))).days
+                except ValueError:
+                    age_days = None
+            if archived or (age_days is not None and age_days > 365):
+                info['status'] = 'deprecated'
+            elif age_days is not None and age_days > 90:
+                info['status'] = 'stalled'
+            else:
+                info['status'] = 'active'
         domain = info.get('domain', 'other')
         
         # Assign domain based on vessel/type
