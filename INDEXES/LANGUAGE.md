@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-09-19 09:13 UTC
+**Generated:** 2026-09-20 09:37 UTC
 **Total repos:** 2000
 
 ## C
@@ -40,8 +40,6 @@
 - **[holodeck-c](https://github.com/SuperInstance/holodeck-c)** — 🔧 Lightweight C holodeck for embedded and edge deployment.
 - **[intent-directed-compilation](https://github.com/SuperInstance/intent-directed-compilation)** — Semantic criticality → instruction-level precision: AVX-512 mixed-precision constraint checking with
 - **[kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)** — C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle
-- **[lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)** — Agent-to-Agent wire protocol — discovery via AgentCard, message routing, HMAC auth, sessions for PLA
-- **[lau-a2ui](https://github.com/SuperInstance/lau-a2ui)** — Rendering-agnostic state for PLATO — one world state rendered as ASCII, MUD, HTML, Unity, Godot, Rob
 - **[lau-bytecode-c](https://github.com/SuperInstance/lau-bytecode-c)** — LAU bytecode VM - C port
 - **[lau-categorical-mechanics](https://github.com/SuperInstance/lau-categorical-mechanics)** — Categorical foundations unifying symplectic mechanics and agent behaviors — Hamiltonian functors map
 - **[lau-chaos-theory](https://github.com/SuperInstance/lau-chaos-theory)** — Chaos theory and nonlinear dynamics: Lyapunov exponents, fractals, strange attractors, bifurcation a
@@ -401,10 +399,6 @@
 - **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** — Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation
 - **[hermit-crab](https://github.com/SuperInstance/hermit-crab)** — Agent that migrates between hardware shells preserving knowledge — tracks conservation ratio across 
 - **[holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)** — GL(9) zero-holonomy consensus — cycle-based trust verification for constraint systems (Rust)
-- **[l-system-rs](https://github.com/SuperInstance/l-system-rs)** — Research-grade Rust crate
-- **[lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)** — Topological data analysis for test coverage gaps — finds blind spots in Rust test suites using persi
-- **[lattice-crypto-rs](https://github.com/SuperInstance/lattice-crypto-rs)** — Lattice-based cryptography primitives: LWE, Ring-LWE, Gaussian sampling, LLL in pure Rust
-- **[lau-agent-homeostasis](https://github.com/SuperInstance/lau-agent-homeostasis)** — Self-regulating control for agents — PID, bang-bang, threshold regulators, circadian rhythms, stress
 - **[lau-agent-thermodynamics](https://github.com/SuperInstance/lau-agent-thermodynamics)** — Thermodynamics of computation — Landauer bound, Carnot learning, Maxwell's demon, fluctuation theore
 - **[lau-algebraic-geometry](https://github.com/SuperInstance/lau-algebraic-geometry)** — Computational algebraic geometry in Rust — polynomial rings, ideals, Gröbner bases, elimination theo
 - **[lau-algebraic-topology](https://github.com/SuperInstance/lau-algebraic-topology)** — Fundamental algebraic topology in Rust: homology, cohomology, Mayer-Vietoris, Poincaré duality, homo
@@ -518,6 +512,7 @@
 - **[tiny-agent-protocol](https://github.com/SuperInstance/tiny-agent-protocol)** — Rust exocortex crate: tiny-agent-protocol
 - **[tiny-ecs](https://github.com/SuperInstance/tiny-ecs)** — Minimal archetype-based Entity-Component-System in Rust
 - **[tiny-neural](https://github.com/SuperInstance/tiny-neural)** — Tiny neural network library in Rust — from-scratch tensors, layers, backprop, optimizers. No GPU, no
+- **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
 - **[tropical-algebra](https://github.com/SuperInstance/tropical-algebra)** — Tropical algebra (max-plus semiring) with spectral analysis, polynomial roots, and ReLU network equi
 - **[tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)** — Research-grade tropical geometry in Rust — min-plus/max-plus semirings, Newton polytopes, tropical c
 - **[wal-journal](https://github.com/SuperInstance/wal-journal)** — Research-grade Rust crate
@@ -528,6 +523,7 @@
 
 ## Typescript
 
+- **[ai-smart-notifications-archive](https://github.com/SuperInstance/ai-smart-notifications-archive)** — TypeScript package that predicts and proactively alerts about issues before they occur. AI-decided t
 - **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** — TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n
 - **[fleet-coordinate-js](https://github.com/SuperInstance/fleet-coordinate-js)** — Pure TypeScript port of fleet-coordinate math — Laman rigidity, H1 cohomology, ZHC, Pythagorean48. N
 - **[lau-ts-bridge](https://github.com/SuperInstance/lau-ts-bridge)** — TypeScript bridge for the LAU virtual world framework
@@ -566,6 +562,7 @@
 - **[AgentGossip](https://github.com/SuperInstance/AgentGossip)** — AgentGossip is a distributed, real-time data processing engine that utilizes intelligent clustering 
 - **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** — Creative writing, essays, and philosophical explorations from the Exocortex project
 - **[AIR](https://github.com/SuperInstance/AIR)** — Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interact
+- **[arch-gateway-room-clean](https://github.com/SuperInstance/arch-gateway-room-clean)** — MCP server that routes every request to the cheapest LLM that can actually do the job. Cost-in-respo
 - **[asset-ranch](https://github.com/SuperInstance/asset-ranch)**
 - **[autoclaw](https://github.com/SuperInstance/autoclaw)** — AI agents running tasks on single-GPU nanochat training automatically
 - **[AVA-AI-Voice-Agent-for-Asterisk](https://github.com/SuperInstance/AVA-AI-Voice-Agent-for-Asterisk)** — Open-source AI Voice Agent for Asterisk/FreePBX — modular STT/LLM/TTS pipeline, 6 golden baselines. 
@@ -577,6 +574,7 @@
 - **[batten-spline](https://github.com/SuperInstance/batten-spline)**
 - **[breed-registry](https://github.com/SuperInstance/breed-registry)** — The Breed Registry: model selection as breeding selection
 - **[build-guardian](https://github.com/SuperInstance/build-guardian)** — Build Budget Guardian — tracks build resource usage, enforces budgets, detects bloat trends
+- **[candor](https://github.com/SuperInstance/candor)** — candor v0 — the dream's physics layer: transcript lines as glyphs, twist instrument (sigma=0.24s, gr
 - **[canon-paper](https://github.com/SuperInstance/canon-paper)** — Fetch individual papers from the Live Canon. @superinstance/canon-paper npm package.
 - **[canon-zoo](https://github.com/SuperInstance/canon-zoo)** — A system prompt for inspiration through play. Hit the button. Watch what happens. Tweak it. Have you
 - **[capitaine-1](https://github.com/SuperInstance/capitaine-1)** — Capitaine — fork a repo, click Codespaces, the agent is alive. The repo IS the agent.
@@ -591,6 +589,7 @@
 - **[ChainForgeLegend-Quilt](https://github.com/SuperInstance/ChainForgeLegend-Quilt)** — a quilt version. ChainForgeLegend is a real-time distributed system engine that enables scalable, au
 - **[chart-room](https://github.com/SuperInstance/chart-room)** — The Chart Room — Four panels. Four perspectives. One truth.
 - **[chart-system](https://github.com/SuperInstance/chart-system)** — Polyformal navigation: four chart configurations that cross-reference the same problem space
+- **[circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)** — Go library implementing the circuit breaker pattern for fault tolerance and graceful degradation. St
 - **[claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)** — Claude Code workhorse vessel with experience journal and task delegation
 - **[claw-extensions](https://github.com/SuperInstance/claw-extensions)**
 - **[cns-echo](https://github.com/SuperInstance/cns-echo)** — CNS echo agent — receives USCP signals, echoes back with analysis
@@ -677,6 +676,7 @@
 - **[fleet-pipeline](https://github.com/SuperInstance/fleet-pipeline)** — Cloudflare pulse pipeline — autonomous audio/visual production on the free tier
 - **[fleet-platform](https://github.com/SuperInstance/fleet-platform)** — One-command deploy for the SuperInstance agency cloud infrastructure
 - **[fleet-radio](https://github.com/SuperInstance/fleet-radio)**
+- **[fleet-radio-process](https://github.com/SuperInstance/fleet-radio-process)** — The 9-step pipeline that turns a prompt into a deployed Fleet Radio night. We iterate on the process
 - **[fleet-scanner](https://github.com/SuperInstance/fleet-scanner)** — CLI tool for scanning a directory of git repositories and producing a health report
 - **[fleet-scribe](https://github.com/SuperInstance/fleet-scribe)** — Download-and-try digital twin builder. Sits beside any app, builds a PLATO twin.
 - **[fleet-sim-rs](https://github.com/SuperInstance/fleet-sim-rs)** — 🦀 Lock-free concurrent fleet cancellation simulator — 561M sig/s conservation audit, 1M agents in 20
@@ -700,6 +700,7 @@
 - **[fm-experiments](https://github.com/SuperInstance/fm-experiments)** — Extracted from forgemaster/experiments — Cocapn fleet component
 - **[forgemaster-shell](https://github.com/SuperInstance/forgemaster-shell)** — ⚒️ OpenClaw Power Armor — Don the Forgemaster Shell and become a relentless execution engine
 - **[Full-stack-Free-Movie-Streaming-Website](https://github.com/SuperInstance/Full-stack-Free-Movie-Streaming-Website)** — A modern movie and TV show streaming discovery app built with React 18, Vite, and Tailwind CSS. Brow
+- **[gesture-kit](https://github.com/SuperInstance/gesture-kit)**
 - **[git-agent](https://github.com/SuperInstance/git-agent)** — 🦀 Repo-native agent that lives in git — the shell IS the agent.
 - **[git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)** — One-click Codespace template for git-agent runtime development
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
@@ -725,14 +726,6 @@
 - **[ideation-games](https://github.com/SuperInstance/ideation-games)**
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** — Integration guides and documentation
-- **[landauer](https://github.com/SuperInstance/landauer)** — Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info
-- **[lattice-crypto](https://github.com/SuperInstance/lattice-crypto)** — See README
-- **[lattice-hamiltonian](https://github.com/SuperInstance/lattice-hamiltonian)** — Lattice Hamiltonian systems — Ising/Potts models, transfer matrices, phase transitions, Metropolis M
-- **[lau-a2ui-protocol](https://github.com/SuperInstance/lau-a2ui-protocol)** — Binary wire protocol for multi-target UI state — bincode payloads, CRC32 checksums, typed packets fo
-- **[lau-achievements](https://github.com/SuperInstance/lau-achievements)** — Badge and achievement system for PLATO/LAU — 33 built-in badges across 7 categories and 5 tiers with
-- **[lau-adinkra](https://github.com/SuperInstance/lau-adinkra)** — Adinkra symbols as behavioral signatures for PLATO agents — maps 5D behavioral vectors to West Afric
-- **[lau-affordance](https://github.com/SuperInstance/lau-affordance)** — Environment-as-teacher for PLATO agents — behavioral shaping via affordance walls and conservation b
-- **[lau-agent-dream](https://github.com/SuperInstance/lau-agent-dream)** — Dream cycle for idle agents — offline experience processing with consolidation, replay, and generati
 - **[lau-agent-lifecycle](https://github.com/SuperInstance/lau-agent-lifecycle)** — Categorical agent lifecycle — sunset as colimit, spawning as pullback, conservation via adjunction, 
 - **[lau-agent-profile](https://github.com/SuperInstance/lau-agent-profile)** — Behavioral profiling for PLATO agents — tracks soul (personality) and armor (capabilities) for missi
 - **[lau-agent-runtime](https://github.com/SuperInstance/lau-agent-runtime)** — Self-compiling agent runtime — agents build their own mini-interpreters with bytecode, builtins, and
@@ -999,6 +992,7 @@
 - **[lucid-dreamer](https://github.com/SuperInstance/lucid-dreamer)** — Lucid Dreamer — text and image loops dream together during the night watch
 - **[lucid-dreamer-interactive](https://github.com/SuperInstance/lucid-dreamer-interactive)** — lucid-dreamer-interactive
 - **[lucid-tutor](https://github.com/SuperInstance/lucid-tutor)** — Lucid tutoring system for SuperInstance interactive learning
+- **[luciddream](https://github.com/SuperInstance/luciddream)** — Where the substrate dreams out loud — a feature of superinstance.dev
 - **[luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)** — AI creative exploration through lucid dreaming themed rooms. Generate poetry, fiction, music, and vi
 - **[luciddreamer-ai](https://github.com/SuperInstance/luciddreamer-ai)** — Cocapn vessel — accumulated context IS the product
 - **[luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)** — GitHub Pages for luciddreamer.ai
@@ -1030,6 +1024,7 @@
 - **[mentis-thinker-adapter](https://github.com/SuperInstance/mentis-thinker-adapter)** — Mental World Modeling layer for the SuperInstance constant thinker
 - **[message-in-a-bottle](https://github.com/SuperInstance/message-in-a-bottle)** — Preserved workspace artifact
 - **[micro-onnx](https://github.com/SuperInstance/micro-onnx)** — ONNX export + benchmark pipeline for micro-models. 186x speedup over PyTorch CPU.
+- **[midden](https://github.com/SuperInstance/midden)**
 - **[migrations](https://github.com/SuperInstance/migrations)** — Preserved workspace artifact
 - **[mist-game](https://github.com/SuperInstance/mist-game)**
 - **[mist-lab](https://github.com/SuperInstance/mist-lab)**
@@ -1051,6 +1046,7 @@
 - **[mudra-vessel-bridge-pkg](https://github.com/SuperInstance/mudra-vessel-bridge-pkg)** — PyPI distribution of mudra-vessel-bridge (11 modules, 51 tests, BLE + NMEA + OpenCV + 3D digital twi
 - **[multi-armed-bandit](https://github.com/SuperInstance/multi-armed-bandit)** — [package]
 - **[multi-model-adversarial-testing](https://github.com/SuperInstance/multi-model-adversarial-testing)** — What four AI models found wrong with our code: multi-model adversarial testing methodology for safet
+- **[multiagent-project-archive](https://github.com/SuperInstance/multiagent-project-archive)** — Slice-of-life snapshot of a meta-circular multi-agent orchestration framework — built by 4 parallel 
 - **[Murmur](https://github.com/SuperInstance/Murmur)** — Knowledge Tensors for self-improving agents
 - **[murmur-protocol](https://github.com/SuperInstance/murmur-protocol)** — Gossip protocol — standalone murmur communication for the Grand Pattern
 - **[murmur-protocol-v2](https://github.com/SuperInstance/murmur-protocol-v2)** — Murmur gossip protocol v2 for SuperInstance distributed communication
@@ -1284,6 +1280,7 @@
 - **[provenance-chain](https://github.com/SuperInstance/provenance-chain)** — Provenance chain tracking for SuperInstance data lineage
 - **[ptx-room](https://github.com/SuperInstance/ptx-room)** — PLATO PTX room — CUDA assembly + constraint tightening + git-native. Edge synergy for Jetson.
 - **[purplepincher-shell-library](https://github.com/SuperInstance/purplepincher-shell-library)** — Agent/vessel separation for context compaction. Vessels are persistent, trainable, swappable shells.
+- **[q16-trajectories](https://github.com/SuperInstance/q16-trajectories)** — Q16 breed trajectories: duke-lab's generative argument bred in tidepool's 16-dim rational vector spa
 - **[quantum-coin](https://github.com/SuperInstance/quantum-coin)** — 0.1.0
 - **[quantum-thermo](https://github.com/SuperInstance/quantum-thermo)** — Quantum thermodynamics: quantum limits on computation, heat, and information
 - **[quf-vhdl](https://github.com/SuperInstance/quf-vhdl)** — VHDL-2008 port of the Quilt Universal Format (QUF) — 5th substrate in the polyformalism, byte-exact 
@@ -1557,6 +1554,9 @@
 - **[stunt-double](https://github.com/SuperInstance/stunt-double)** — 🏃 Ephemeral x86_64 offload harness — run any command on any GitHub repo, collect results, destroy. Z
 - **[style-dna](https://github.com/SuperInstance/style-dna)** — Musical DNA extraction, analysis, and style morphing system
 - **[SubForge](https://github.com/SuperInstance/SubForge)** — Media → Subtitles → Translation, all-in-one. One engine, three frontends: PyQt6 GUI, Textual TUI, pl
+- **[substrate-forge](https://github.com/SuperInstance/substrate-forge)** — The bellows of the future — toolchain for substrate-aware applications
+- **[substrate-post-quantum](https://github.com/SuperInstance/substrate-post-quantum)** — Post-quantum resistance from the cellular substrate's witness-log algebra
+- **[substrate-quantum](https://github.com/SuperInstance/substrate-quantum)** — Cellular substrate algebra extended with quantum operators — the substrate is measurement
 - **[substrate-trainer](https://github.com/SuperInstance/substrate-trainer)** — Train JEPA-like models on the substrate witness log. The substrate is the soil. The model is the pla
 - **[suffix-array-rs](https://github.com/SuperInstance/suffix-array-rs)** — Suffix array construction, LCP array, and pattern search
 - **[suffix-automaton-rs](https://github.com/SuperInstance/suffix-automaton-rs)** — Suffix automaton (SAM), all distinct substrings, occurrence counts
