@@ -20,3 +20,12 @@ in the [SuperInstance](https://github.com/SuperInstance) organization.
 2000
 
 <!-- Warning: gh repo list returned empty output -->
+
+---
+
+## Canon (disambiguation)
+
+Two canon systems, two jobs:
+
+- **[fleet-canon/](fleet-canon/)** — the fleet canon: what repos ARE (mission, state, lineage, edges). `CANON.md` stubs in Tier-1 repos + `lint.py` consistency gate. Schema: [fleet-canon/CANON.schema.md](fleet-canon/CANON.schema.md).
+- **`canon-*` packages / Live Canon** — the AI-Writings citation graph (CLAIM/DRILL). Story layer, different layer entirely.
