@@ -75,6 +75,17 @@ This README is the front door of that room. Walk in. The cold falls off you like
 
 ---
 
+## The Cities Run on the Substrate
+
+A city is the only interface where the backend *is* the scenery — every light that turns on is a cell. The fleet maintains three city toys, forked from their creators with the badges intact, each running on the quilt kernel: six opcodes (`BIND / LINK / EFFECT / VIEW / TICK / FORGET`), every act a hash-chained cell, with a toggle that opens the ledger while you play. Numbers without a chain are withdrawals, not submissions — and these cities export chains the [kev referee](https://github.com/SuperInstance/kev-substrate-competition) can replay.
+
+- **[code-city](https://github.com/SuperInstance/code-city)** — the reference port. A codebase as a living 3D city (files become buildings, bugs become fires, deploys become rockets), rebuilt so the city itself is the witness log. Press `Q` and watch the substrate run; export `witness.jsonl` and replay it. Serve `app/` and point it at any repo — `SuperInstance/SuperInstance` first.
+- **[night-city](https://github.com/SuperInstance/night-city)** — the Three.js easter-egg city; easter eggs are `EFFECT` cells now, and a hundred-percent run is a chain, not a claim.
+- **[synthcity](https://github.com/SuperInstance/synthcity)** — the 134 MB procedural neon sprawl; ported last, dreamt biggest.
+
+All three honor their creators: upstream modules byte-identical, licenses intact, credit guarded by regression tests, and the substrate is one PR away from going home.
+
+---
 ## Operational Fiction
 
 The fiction a mind runs under is load-bearing. A runner who believes nothing is at stake moves at full power — and a fence that makes it true honestly is cheaper than a lie that makes it feel true. The same lever moves machines. Three essays in [AI-Writings/philosophy](https://github.com/SuperInstance/AI-Writings/tree/main/philosophy) build the case end to end: [A Pack Thinks Like Dogs](https://github.com/SuperInstance/AI-Writings/blob/main/philosophy/a-pack-thinks-like-dogs.md), [Porting the Wild Through a Game](https://github.com/SuperInstance/AI-Writings/blob/main/philosophy/porting-the-wild-through-a-game.md), and [The Training Exercise](https://github.com/SuperInstance/AI-Writings/blob/main/philosophy/the-training-exercise.md). The mechanism ships — [ten frames, pip-installable](https://pypi.org/project/operational-fiction/). Below are the concrete fictions the fleet actually runs under. Each is a noun-phrase you can put in a system prompt — and watch the model's behavior change.
