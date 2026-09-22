@@ -77,11 +77,11 @@ This README is the front door of that room. Walk in. The cold falls off you like
 
 ## The Cities Run on the Substrate
 
-A city is the only interface where the backend *is* the scenery — every light that turns on is a cell. The fleet maintains three city toys, forked from their creators with the badges intact, each running on the quilt kernel: six opcodes (`BIND / LINK / EFFECT / VIEW / TICK / FORGET`), every act a hash-chained cell, with a toggle that opens the ledger while you play. Numbers without a chain are withdrawals, not submissions — and these cities export chains the [kev referee](https://github.com/SuperInstance/kev-substrate-competition) can replay.
+A city is the only interface where the backend *is* the scenery — every light that turns on is a cell. The fleet maintains three city toys, forked from their creators with the badges intact, two running on the quilt kernel today, the third on the bench: six opcodes (`BIND / LINK / EFFECT / VIEW / TICK / FORGET`), every act a hash-chained cell, with a toggle that opens the ledger while you play. Numbers without a chain are withdrawals, not submissions — and these cities export chains the [kev referee](https://github.com/SuperInstance/kev-substrate-competition) can replay.
 
 - **[code-city](https://github.com/SuperInstance/code-city)** — the reference port. A codebase as a living 3D city (files become buildings, bugs become fires, deploys become rockets), rebuilt so the city itself is the witness log. Press `Q` and watch the substrate run; export `witness.jsonl` and replay it. Serve `app/` and point it at any repo — `SuperInstance/SuperInstance` first.
 - **[night-city](https://github.com/SuperInstance/night-city)** — the Three.js easter-egg city; easter eggs are `EFFECT` cells now, and a hundred-percent run is a chain, not a claim.
-- **[synthcity](https://github.com/SuperInstance/synthcity)** — the 134 MB procedural neon sprawl; ported last, dreamt biggest.
+- **[synthcity](https://github.com/SuperInstance/synthcity)** — the 134 MB procedural neon sprawl; its port is on the bench right now — dreamt biggest.
 
 All three honor their creators: upstream modules byte-identical, licenses intact, credit guarded by regression tests, and the substrate is one PR away from going home.
 
