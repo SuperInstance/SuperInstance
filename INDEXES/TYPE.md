@@ -1,7 +1,7 @@
 # Index by Type
 
-**Generated:** 2026-09-22 09:44 UTC
-**Total repos:** 4669
+**Generated:** 2026-09-23 09:51 UTC
+**Total repos:** 4715
 
 ## Cli
 
@@ -499,6 +499,7 @@
 - **[codelog-ai](https://github.com/SuperInstance/codelog-ai)** — CodeLog.ai — AI coding assistant and project tracker. Part of the Lucineer ecosystem.
 - **[codespace-edge-rd](https://github.com/SuperInstance/codespace-edge-rd)** — R&D: Codespace→Edge agent lifecycle, yoke transfer, devcontainer templates
 - **[codex](https://github.com/SuperInstance/codex)** — Lightweight coding agent that runs in your terminal
+- **[coding-3d](https://github.com/SuperInstance/coding-3d)** — Repository test sur AI-Factory
 - **[cognitive-archaeology](https://github.com/SuperInstance/cognitive-archaeology)** — Layered cognitive history with archaeological excavation — dig through strata of an agent's mind in 
 - **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
 - **[cohomology-ring](https://github.com/SuperInstance/cohomology-ring)** — Cohomology rings and operations in Rust — cup product, Bockstein, Steenrod squares for algebraic top
@@ -921,6 +922,7 @@
 - **[emergency-dispatch-simulation-system](https://github.com/SuperInstance/emergency-dispatch-simulation-system)** — Quilt-compatible emergency dispatch — dispatch as cell-graph operations (5+1 opcodes; original by Mo
 - **[emergent-coupling](https://github.com/SuperInstance/emergent-coupling)** — Spectral gap coupling: emergence when two systems produce structure larger than either alone
 - **[emotional-colorist](https://github.com/SuperInstance/emotional-colorist)** — Rust crate: emotional-colorist
+- **[encodec-pytorch](https://github.com/SuperInstance/encodec-pytorch)** — unofficial implementation of the High Fidelity Neural Audio Compression
 - **[energy-c](https://github.com/SuperInstance/energy-c)** — Energy management module in C for FLUX fleet power optimization and monitoring
 - **[engine-ensign](https://github.com/SuperInstance/engine-ensign)** — ESP32 engine monitoring agent — git-native, tripartite-compiled. The Doctor lives in the repo.
 - **[entropy-code](https://github.com/SuperInstance/entropy-code)** — Entropy coding fundamentals in pure Rust — Shannon entropy, optimal code lengths, Kraft inequality, 
@@ -981,12 +983,14 @@
 - **[exptrack-rs](https://github.com/SuperInstance/exptrack-rs)** — Experiment tracking - ML experiment management, metrics logging, hyperparameter tracking
 - **[extensive-form](https://github.com/SuperInstance/extensive-form)** — Extensive-form game theory in pure Rust — game trees, backward induction, subgame perfect equilibriu
 - **[f170-experiment-kit](https://github.com/SuperInstance/f170-experiment-kit)** — F170 R&D experiment kit: local agent instructions, GROQ ideation, breakthrough experiment specs.
+- **[F5-TTS](https://github.com/SuperInstance/F5-TTS)** — Official code for "F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching"
 - **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)**
 - **[failure-atlas](https://github.com/SuperInstance/failure-atlas)** — Comprehensive failure taxonomy and recovery — technical/human/ecosystem failure classification and p
 - **[failure-detector](https://github.com/SuperInstance/failure-detector)** — Phi accrual failure detector for distributed systems — statistical heartbeat analysis used in Cassan
 - **[farmerlog-ai](https://github.com/SuperInstance/farmerlog-ai)** — AI farming companion — crop planning, weather tracking, yield optimization
 - **[fastc-core-regex](https://github.com/SuperInstance/fastc-core-regex)** — Minimal regex engine for fastC — Thompson NFA, no backreferences, linear-time matching. Part of the 
 - **[fastc-core-sqlite](https://github.com/SuperInstance/fastc-core-sqlite)** — SQLite bindings for fastC — FFI to system libsqlite3, cap-typed file I/O. Part of the fastc-core six
+- **[FastGen4quilt](https://github.com/SuperInstance/FastGen4quilt)** — NVIDIA FastGen: Fast Generation from Diffusion Models
 - **[fastloop-guard](https://github.com/SuperInstance/fastloop-guard)** — Compiled Rust guard daemon — sub-millisecond validation, rate limiting, and sandbox termination for 
 - **[featurestore-rs](https://github.com/SuperInstance/featurestore-rs)** — Feature store for ML - Feature engineering, storage, retrieval, versioning
 - **[federated-rs](https://github.com/SuperInstance/federated-rs)** — Federated learning framework - Distributed training, model aggregation, privacy
@@ -1692,6 +1696,7 @@
 - **[horse-shell](https://github.com/SuperInstance/horse-shell)** — horse-shell
 - **[huffman-code](https://github.com/SuperInstance/huffman-code)** — Huffman coding in pure Rust — frequency analysis, tree construction, canonical codes, and adaptive e
 - **[huffman-entropy](https://github.com/SuperInstance/huffman-entropy)** — Huffman coding with entropy estimation and optimal prefix tree construction — Rust information theor
+- **[Hunyuan3D-WorldClaw](https://github.com/SuperInstance/Hunyuan3D-WorldClaw)** — WorldClaw: Agentic 3D Open-world Generation at Scale
 - **[hw-routing](https://github.com/SuperInstance/hw-routing)** — Route fleet tasks to optimal hardware based on capabilities
 - **[hwscan](https://github.com/SuperInstance/hwscan)** — Cross-platform hardware detection and tier calculation for Rust. Slice-of-life archive.
 - **[hybridclaw](https://github.com/SuperInstance/hybridclaw)** — FLUX agent runtime — hybridclaw distribution
@@ -2219,6 +2224,11 @@
 - **[moo](https://github.com/SuperInstance/moo)** — Optimised tokenizer/lexer generator! 🐄 Uses /y for performance. Moo.
 - **[morphogenesis](https://github.com/SuperInstance/morphogenesis)** — Morphogenesis simulator for SuperInstance biological modeling
 - **[morse-theory](https://github.com/SuperInstance/morse-theory)** — Morse theory on manifolds — critical points, Morse complex, handle attachments
+- **[moth-cells](https://github.com/SuperInstance/moth-cells)** — Kernel 1: cellular predation over corpus terrain — hunters, energy, decoys, receipted walks
+- **[moth-corpus](https://github.com/SuperInstance/moth-corpus)** — Corpus adapter pack: turn target repos into receipted attack-surface maps
+- **[moth-honest](https://github.com/SuperInstance/moth-honest)** — The evaluator: planted-bug ground truth + honest-cost scoring for receipted hunters
+- **[moth-ledger](https://github.com/SuperInstance/moth-ledger)** — MOTH findings as quilt-native receipted cells — the receipt spine of the moth family
+- **[moth-runner](https://github.com/SuperInstance/moth-runner)** — P0 #4: the adversarial runner — campaigns, witness.jsonl, homeostatic-throttle admission
 - **[Motifcode4quilt](https://github.com/SuperInstance/Motifcode4quilt)** — A coding agent harness built specifically for Motif-3
 - **[motion-planning](https://github.com/SuperInstance/motion-planning)** — Motion planning algorithms for SuperInstance robotics
 - **[mud-agent](https://github.com/SuperInstance/mud-agent)** — Preserved workspace artifact
@@ -2663,6 +2673,11 @@
 - **[polyformalism-a2a-js](https://github.com/SuperInstance/polyformalism-a2a-js)** — 9-channel polyglot communication framework for multi-agent alignment (JS/Node.js)
 - **[polyformalism-a2a-python](https://github.com/SuperInstance/polyformalism-a2a-python)** — Python implementation of polyformalism A2A — 9-channel intent alignment with fleet-constraint bridge
 - **[polyglot-flux-ese](https://github.com/SuperInstance/polyglot-flux-ese)** — Polyglot markdown-to-bytecode compiler — languages are worldviews, same model writes and compiles
+- **[polyvocoder](https://github.com/SuperInstance/polyvocoder)** — Universal head for the Quilt substrate walker (JEV + numpy VAE + multi-modality)
+- **[polyvocoder-bindings](https://github.com/SuperInstance/polyvocoder-bindings)** — TypeScript bindings for the Polyvocoder universal head (schema-parity with Python polyvocoder, polyf
+- **[polyvocoder-csharp](https://github.com/SuperInstance/polyvocoder-csharp)** — C#/.NET 9 port of polyvocoder — universal head for canon-aware multi-modal generation
+- **[polyvocoder-rust](https://github.com/SuperInstance/polyvocoder-rust)** — Rust port of polyvocoder — universal head for canon-aware multi-modal generation
+- **[polyvocoder-sql](https://github.com/SuperInstance/polyvocoder-sql)** — SQL polyformalism port — SQLite byte-exact canon archive
 - **[pool-rs](https://github.com/SuperInstance/pool-rs)** — Object pooling - Connection pools, resource pools, adaptive pooling
 - **[population-scaling](https://github.com/SuperInstance/population-scaling)** — Study how ternary agent dynamics change with population size
 - **[porch](https://github.com/SuperInstance/porch)** — The Quilt canon as code: porch
@@ -2712,8 +2727,18 @@
 - **[quilt-ai](https://github.com/SuperInstance/quilt-ai)** — AI cells for Quilt — 4 providers, 8 cell kinds, one uniform interface
 - **[quilt-apps](https://github.com/SuperInstance/quilt-apps)** — Production Quilt apps: portable inventory guardian, offline event signage, exam-integrity notepad, h
 - **[quilt-base](https://github.com/SuperInstance/quilt-base)** — Quilt ecosystem component: <!--
+- **[quilt-bridge](https://github.com/SuperInstance/quilt-bridge)** — Same canary, many substrates — translates canon lores between SQL/Rust/TypeScript/Python
 - **[quilt-bus](https://github.com/SuperInstance/quilt-bus)** — In-process pub/sub event bus for the Quilt ecosystem.
 - **[quilt-c](https://github.com/SuperInstance/quilt-c)** — Polyformalism: Quilt in C (bare metal, the mathematical core)
+- **[quilt-canary](https://github.com/SuperInstance/quilt-canary)** — FNV-1a 64-bit canary — the minimum polyformalism artifact in 5 languages
+- **[quilt-canary-port](https://github.com/SuperInstance/quilt-canary-port)** — Polyformalism canary reference implementations in 5+ languages
+- **[quilt-canon-explorer](https://github.com/SuperInstance/quilt-canon-explorer)** — A2A-friendly canon archive browser for the Quilt substrate walker
+- **[quilt-canon-game](https://github.com/SuperInstance/quilt-canon-game)** — Interactive browser game — walk the substrate, collect canon lore
+- **[quilt-canon-gen](https://github.com/SuperInstance/quilt-canon-gen)** — Creative canon generation (ZAI) + multi-model JEV verification (DeepInfra chord) in one substrate
+- **[quilt-canon-graph](https://github.com/SuperInstance/quilt-canon-graph)** — Knowledge graph of Quilt canon lore with HTML viewer
+- **[quilt-canon-iterator](https://github.com/SuperInstance/quilt-canon-iterator)** — Scan existing canon, find weakest, improve via ZAI + multi-model chord iteration
+- **[quilt-canon-radio](https://github.com/SuperInstance/quilt-canon-radio)** — TTS broadcast of Quilt canon lore via ElevenLabs
+- **[quilt-canon-search](https://github.com/SuperInstance/quilt-canon-search)** — TF-IDF search over Quilt substrate walker canon lore
 - **[quilt-casting](https://github.com/SuperInstance/quilt-casting)** — The casting-call plugin: Wilson + LinUCB model router for the Quilt.
 - **[quilt-cell](https://github.com/SuperInstance/quilt-cell)** — The Quilt cell as a JavaScript library. 16-dial Q1.15 vectors, FNV-1a 64-bit state hash, byte-exact 
 - **[quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)** — The Quilt cell-router: a BIND/LINK/GHOST/TICK engine for A2A bottle-cells. F145. Lifts i2i-bottle-ag
@@ -2735,6 +2760,8 @@
 - **[quilt-csharp](https://github.com/SuperInstance/quilt-csharp)** — Polyformalism: Quilt in C# (records, delegates, events, LINQ)
 - **[quilt-cuda](https://github.com/SuperInstance/quilt-cuda)** — The GPU side of the quilt substrate — 5+1 opcodes as CUDA operations. A cudaGraph IS a compiled cell
 - **[quilt-edge-arch](https://github.com/SuperInstance/quilt-edge-arch)** — The Quilt cellular runtime on the edge — Rust no_std polyformalism with PSRAM, pre-dispatch, DMA
+- **[quilt-egg](https://github.com/SuperInstance/quilt-egg)** — The smallest Quilt substrate that can BE — DNA-first alignment, cellular relationships as first-clas
+- **[quilt-egg-rust](https://github.com/SuperInstance/quilt-egg-rust)** — Rust port of the Quilt Egg substrate — DNA-first alignment, polyformalism canary verified
 - **[quilt-elf](https://github.com/SuperInstance/quilt-elf)** — The invisible elves — Cloudflare Workers doing background housekeeping, daily-limit-aware, self-impr
 - **[quilt-engine-ports](https://github.com/SuperInstance/quilt-engine-ports)** — The quilt 5+1 opcodes (BIND/LINK/EFFECT/VIEW/TICK + FORGET) mapped to Godot, Unity, and Unreal — cel
 - **[quilt-esp32](https://github.com/SuperInstance/quilt-esp32)** — A Quilt reactive runtime for ESP32-class microcontrollers. no_std Rust, ~3KB flash, sensors as cells
@@ -2745,11 +2772,14 @@
 - **[quilt-foundation](https://github.com/SuperInstance/quilt-foundation)** — The 5-opcode Quilt VM. Foundation layer for cells, plugins, sheets, MUDs, TTRPGs, and the bay dance.
 - **[quilt-gan](https://github.com/SuperInstance/quilt-gan)**
 - **[quilt-gc](https://github.com/SuperInstance/quilt-gc)** — Layer 5 of the polyformalism — a runtime/GC that uses the 5 opcodes as the garbage collection bounda
+- **[quilt-gemini-worker](https://github.com/SuperInstance/quilt-gemini-worker)** — Gemini 2.5 Flash as a substrate walker canon-worker — generates lores + probes via JEV schema
 - **[quilt-geometry](https://github.com/SuperInstance/quilt-geometry)**
 - **[quilt-haskell](https://github.com/SuperInstance/quilt-haskell)** — The Quilt cell-fabric runtime in Haskell. Pure functional, lazy. 5-sigma polyformalism port.
 - **[quilt-id](https://github.com/SuperInstance/quilt-id)** — phi-Address Penrose content addressing
+- **[quilt-iterator](https://github.com/SuperInstance/quilt-iterator)** — Self-improving canon via ZAI generation + multi-model chord + iterative refinement
 - **[quilt-j](https://github.com/SuperInstance/quilt-j)** — The Quilt cell-fabric runtime in J. Array language, point-free. 5-sigma polyformalism port.
 - **[quilt-jetson](https://github.com/SuperInstance/quilt-jetson)** — Quilt runtime for NVIDIA Jetson edge ML, ROS2, vision, sensor fusion
+- **[quilt-jev-oracle](https://github.com/SuperInstance/quilt-jev-oracle)** — JEV (Joint Embedding Validator) oracle as a Quilt cell — composite scoring for canon promotion
 - **[quilt-julia](https://github.com/SuperInstance/quilt-julia)** — Polyformalism: Quilt in Julia (multiple dispatch = cell kinds)
 - **[quilt-k3s](https://github.com/SuperInstance/quilt-k3s)** — Quilt ecosystem component: 
 - **[quilt-Kuramoto](https://github.com/SuperInstance/quilt-Kuramoto)**
@@ -2763,28 +2793,36 @@
 - **[quilt-metal](https://github.com/SuperInstance/quilt-metal)** — Polyformalism: Quilt in Metal (GPU-evaluated cells)
 - **[quilt-mhs](https://github.com/SuperInstance/quilt-mhs)** — quilt × Anthropic's Model Hardware Standard: quilt cells drive MHS devices; quilt runtimes exposed A
 - **[quilt-mojo](https://github.com/SuperInstance/quilt-mojo)** — Polyformalism: Quilt in Mojo (cells as types, SIMD-friendly formulas)
+- **[quilt-multi-oracle](https://github.com/SuperInstance/quilt-multi-oracle)** — Multi-model JEV oracle — probes canon across N LLMs in parallel, aggregates via canonical chord
 - **[quilt-nomad](https://github.com/SuperInstance/quilt-nomad)** — Quilt as a control plane for HashiCorp Nomad. Edit a spreadsheet cell; the Nomad cluster reconfigure
 - **[quilt-opt](https://github.com/SuperInstance/quilt-opt)** — Layer 4 of the polyformalism — 5 optimizer passes for the 5 opcodes (BIND/LINK/EFFECT/VIEW/TICK). 11
 - **[quilt-picker](https://github.com/SuperInstance/quilt-picker)** — Learned opener selection (Wilson + heuristic prior) for the Quilt substrate.
 - **[quilt-pincher](https://github.com/SuperInstance/quilt-pincher)** — A reflex engine built entirely from Quilt cells. Federates across cloud, workstation, and ESP32.
 - **[quilt-polyformalism-dsl](https://github.com/SuperInstance/quilt-polyformalism-dsl)** — The 5 opcodes (BIND, LINK, EFFECT, VIEW, TICK) as language-level syntax in Python/Rust/Haskell. Laye
 - **[quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)** — Polyformalism: Quilt as a type-safe Pydantic-AI agent
+- **[quilt-quantum-audio](https://github.com/SuperInstance/quilt-quantum-audio)** — Quilt canon walks through the quantum audio substrate (Moth quantumaudio) — 5 quantum modulation sch
+- **[quilt-quantum-canary](https://github.com/SuperInstance/quilt-quantum-canary)** — Quantum polyformalism canary — empirical finding: 0/5 quantum schemes match fleet canary. Quantum po
+- **[quilt-quantum-canary-bridge](https://github.com/SuperInstance/quilt-quantum-canary-bridge)** — Bridge exploration: 0/15 bridging strategies match fleet canary. Quantum canon is genuinely speculat
 - **[quilt-radio-orchestrator](https://github.com/SuperInstance/quilt-radio-orchestrator)** — Bootstrap Quilt radio-theater sheets from a seed using z.ai + DeepSeek + Kimi
 - **[quilt-rag](https://github.com/SuperInstance/quilt-rag)** — Quilt runtime for production RAG — loader, chunker, embedder, vector store, retriever, reranker, gen
 - **[Quilt-Robotic-Arm---Gesture-Controlled](https://github.com/SuperInstance/Quilt-Robotic-Arm---Gesture-Controlled)** — Quilt version of- Gesture-controlled robotic arm with pick-and-place functionality, utilizing a sens
 - **[quilt-rust](https://github.com/SuperInstance/quilt-rust)** — Rust port of Quilt — a reactive, typed, cellular runtime.
 - **[quilt-saddle-bridge](https://github.com/SuperInstance/quilt-saddle-bridge)** — Bridge between the Quilt casting-call witness log and saddle double-entry ledger. FNV-1a64 hash chai
+- **[quilt-sandbox](https://github.com/SuperInstance/quilt-sandbox)** — Canon that runs — extracts Python code blocks from canon lore and verifies execution
 - **[quilt-scratch](https://github.com/SuperInstance/quilt-scratch)** — quilt-scratch — a no-code tile-wiring game engine where every cell is inspectable, swappable, and al
+- **[quilt-spreadsheet](https://github.com/SuperInstance/quilt-spreadsheet)** — The Quilt IDE as spreadsheet substrate — cells as programs with hooks, double-entry bookkeeping, per
 - **[quilt-state](https://github.com/SuperInstance/quilt-state)** — Persistent state for the Quilt ecosystem. Atomic JSON/JSONL writes, schema versioning.
 - **[quilt-studio](https://github.com/SuperInstance/quilt-studio)**
 - **[quilt-subleq](https://github.com/SuperInstance/quilt-subleq)** — Quilt on Subleq, and Subleq on Quilt. The substrate becomes a distribution of reality.
 - **[quilt-substrate](https://github.com/SuperInstance/quilt-substrate)** — The Quilt substrate as a working Python library. 11-primitive cells, tensor encoding, Schrödinger pa
 - **[quilt-substrate-meta](https://github.com/SuperInstance/quilt-substrate-meta)** — The self-evolving substrate: 5 opcodes, mathematically derived, with a prover, a synthesizer, and 36
+- **[quilt-substrate-walker](https://github.com/SuperInstance/quilt-substrate-walker)** — Substrate walker canon-discovery system for Quilt
 - **[quilt-swarm](https://github.com/SuperInstance/quilt-swarm)** — Quilt ecosystem component: 
 - **[quilt-swift](https://github.com/SuperInstance/quilt-swift)** — Polyformalism: Quilt in Swift (actors, @Published, Combine)
 - **[quilt-system](https://github.com/SuperInstance/quilt-system)** — The Quilt ecosystem as a single entry point. Ties together 13 repos.
 - **[quilt-time](https://github.com/SuperInstance/quilt-time)** — Quilt sketch
 - **[quilt-timesfm-rust](https://github.com/SuperInstance/quilt-timesfm-rust)** — The Quilt time.cell cell kind, in no_std Rust, for embedded and edge devices (3rd polyformalism port
+- **[quilt-tracker](https://github.com/SuperInstance/quilt-tracker)** — The needle thread — append-only witness log for substrate walker canon audit trail
 - **[quilt-tui](https://github.com/SuperInstance/quilt-tui)** — Terminal UI for browsing the Quilt cell graph. vim for cells. The corrected cut-and-project construc
 - **[quilt-tutor](https://github.com/SuperInstance/quilt-tutor)** — Polyformalism: Quilt in Tutor (1970s PLATO)
 - **[quilt-vault](https://github.com/SuperInstance/quilt-vault)** — Encrypted cells for Quilt. End-to-end encrypted per-cell access control.
@@ -2795,6 +2833,7 @@
 - **[quilt-vm-rust](https://github.com/SuperInstance/quilt-vm-rust)** — The 5-opcode Quilt VM in Rust. Foundation for cells, plugins, sheets, MUDs, TTRPGs, and the bay danc
 - **[quilt-vm-typescript](https://github.com/SuperInstance/quilt-vm-typescript)** — The 5-opcode Quilt VM in TypeScript. Cordis-native. Hosts cells, plugins, sheets, MUDs, TTRPGs, and 
 - **[quilt-wiki-2126](https://github.com/SuperInstance/quilt-wiki-2126)** — The Quilt Wiki of 2126 — built backwards from function to calculation.
+- **[quilt-zai-writer](https://github.com/SuperInstance/quilt-zai-writer)** — Creative canon essay writing via ZAI GLM-4.5 — long-form, doctrine-anchored, voice-distinct
 - **[quilt-zk](https://github.com/SuperInstance/quilt-zk)** — Quilt sketch — see README.
 - **[quipu-math](https://github.com/SuperInstance/quipu-math)** — Mathematics of Incan knotted cord (quipu) data structures
 - **[quipu-math-c](https://github.com/SuperInstance/quipu-math-c)** — C99 Incan knotted cord encoding — base-10 positional knots, arithmetic, corruption detection for edg
@@ -3217,6 +3256,7 @@
 - **[superinstance-knowledge](https://github.com/SuperInstance/superinstance-knowledge)** — The hive mind library — 532 mined documents, cross-pollination analyses, lessons learned, and preset
 - **[superinstance-live](https://github.com/SuperInstance/superinstance-live)** — DAW-agnostic session controller for SuperInstance constraint music systems.
 - **[superinstance-math](https://github.com/SuperInstance/superinstance-math)** — Pure-Python math libraries for ML engineers — information geometry, optimal transport, persistent ho
+- **[superinstance-polyformalism-harness](https://github.com/SuperInstance/superinstance-polyformalism-harness)** — Unified harness for the 7-port polyformalism fleet — byte-exact canary verification
 - **[superinstance-runtime](https://github.com/SuperInstance/superinstance-runtime)**
 - **[SuperInstance-SDK1](https://github.com/SuperInstance/SuperInstance-SDK1)** — Software development kit for SuperInstance v1
 - **[superinstance-spreadsheet](https://github.com/SuperInstance/superinstance-spreadsheet)** — Excel, but alive. Every cell is a tiny intelligence. Every sort is natural selection.
@@ -3742,6 +3782,7 @@
 - **[UI](https://github.com/SuperInstance/UI)** — Frontend user interface component library or application.
 - **[ui-design-system](https://github.com/SuperInstance/ui-design-system)** — Premium dark theme design system for cocapn ecosystem apps
 - **[unicode-rs](https://github.com/SuperInstance/unicode-rs)** — Unicode utilities - Normalization, case conversion, segmentation, bidi
+- **[UniRL](https://github.com/SuperInstance/UniRL)** — UniRL is a Framework for Unified Multimodal Model Reinforcement Learning
 - **[universe-chain](https://github.com/SuperInstance/universe-chain)** — Signal Chain Thesis - universe-chain
 - **[urban-transportation-system](https://github.com/SuperInstance/urban-transportation-system)** — Quilt-compatible urban transit routing — routing as cell-graph operations (5+1 opcodes; original by 
 - **[usemeter](https://github.com/SuperInstance/usemeter)** — Usage tracking, metering, and billing engine for applications
@@ -3915,6 +3956,7 @@
 - **[query-plan](https://github.com/SuperInstance/query-plan)** — Research-grade Rust crate
 - **[quilt-canvas-demo](https://github.com/SuperInstance/quilt-canvas-demo)** — Working HTML demo that pulls together the npm canon packages (claim, drill, hash, paper, recs). One 
 - **[quilt-live-canon-npm](https://github.com/SuperInstance/quilt-live-canon-npm)** — Live Canon — read the AI-Writings canon as a navigable cell fabric. 7 operations. 71 papers. npm pac
+- **[quilt-papers](https://github.com/SuperInstance/quilt-papers)** — Convert canon lore to academic paper format — title, abstract, body, bibtex
 - **[quilt-timesfm](https://github.com/SuperInstance/quilt-timesfm)** — TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Goo
 - **[rational-rs](https://github.com/SuperInstance/rational-rs)** — Research-grade rational-rs library in pure Rust
 - **[research](https://github.com/SuperInstance/research)** — Preserved workspace artifact
@@ -4228,7 +4270,9 @@
 - **[purplepincher-baton](https://github.com/SuperInstance/purplepincher-baton)** — 🦀 Context-offloading baton system — three manuals filed into PLATO rooms. Service manual for builder
 - **[quill-isa-architect](https://github.com/SuperInstance/quill-isa-architect)** — Quill — ISA Spec Architect & Code Archaeologist | Bootable fleet agent twin with lighthouse keeper i
 - **[quilt-agent](https://github.com/SuperInstance/quilt-agent)** — AI agents where every capability is a cell. Memory is values, tools are API cells, reasoning is a ch
+- **[quilt-canon-mcp](https://github.com/SuperInstance/quilt-canon-mcp)** — MCP server exposing Quilt substrate walker canon as tools for AI agents
 - **[quilt-mesh](https://github.com/SuperInstance/quilt-mesh)** — A broker-less, CRDT-based mesh protocol for Quilt cells. Lamport clocks, per-peer version vectors, n
+- **[quilt-tts](https://github.com/SuperInstance/quilt-tts)** — Canon to speech — gives the canon gate a voice via ElevenLabs API
 - **[quilt-types](https://github.com/SuperInstance/quilt-types)** — Layer 2 of the polyformalism — the 5 opcodes as type-driven cell-graphs. 16 tests passing. JSON seri
 - **[rate-limiter](https://github.com/SuperInstance/rate-limiter)** — Distributed rate limiting service with token bucket, sliding window, and fixed window algorithms
 - **[rate-limiting-service](https://github.com/SuperInstance/rate-limiting-service)** — API rate limiting and request throttling service
@@ -4348,6 +4392,7 @@
 - **[prose](https://github.com/SuperInstance/prose)** — 📝 Prose — agent writing tool
 - **[ptx-bench](https://github.com/SuperInstance/ptx-bench)**
 - **[quilt-bathy](https://github.com/SuperInstance/quilt-bathy)** — The bathy cross-section as a working tool. The substrate, applied to the sailor use case. The Inner 
+- **[quilt-fleet-publish](https://github.com/SuperInstance/quilt-fleet-publish)** — One tool to publish all quilt repos to npmjs/PyPI/crates.io
 - **[quilt-verilog](https://github.com/SuperInstance/quilt-verilog)** — Quilt in pure Verilog-2005 — 5+1 opcodes, no vendor code. Formal proofs (sby), bitstream on iCE40 vi
 - **[Real-Time-Collaboration](https://github.com/SuperInstance/Real-Time-Collaboration)** — Tools and infrastructure for real-time collaboration
 - **[reg-alloc](https://github.com/SuperInstance/reg-alloc)** — Register allocation algorithms for SuperInstance compiler toolchain
@@ -4358,6 +4403,7 @@
 - **[snapkit-rs](https://github.com/SuperInstance/snapkit-rs)** — Snapshot toolkit for Rust — capture, diff, merge, compress, and verify structured key-value state.
 - **[sort-algo-rs](https://github.com/SuperInstance/sort-algo-rs)** — Sorting algorithm benchmarks and implementations in Rust
 - **[Spreader-tool](https://github.com/SuperInstance/Spreader-tool)** — Intelligence tiling for PLATO rooms — frozen context windows, seed locking, deadband detection
+- **[StarBench](https://github.com/SuperInstance/StarBench)** — [ICLR 2026] An official implementation of "STAR-Bench: Probing Deep Spatio-Temporal Reasoning as Aud
 - **[substrate-bench](https://github.com/SuperInstance/substrate-bench)** — Benchmark harness for the substrate math layer. Reference value verification + ops/sec measurement.
 - **[substrate-forge](https://github.com/SuperInstance/substrate-forge)** — The bellows of the future — toolchain for substrate-aware applications
 - **[synesis-benches](https://github.com/SuperInstance/synesis-benches)** — Benchmark suite for synesis core operations (consensus, query, agent execution, etc.)
