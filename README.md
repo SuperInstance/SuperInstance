@@ -6,6 +6,8 @@
 
 A [cell](https://github.com/SuperInstance/moth-cells) is a soft body. A [port](https://github.com/SuperInstance/quilt-port) is its address. The [Quilt](https://github.com/SuperInstance/quilt) is the room they live in. [500+ public repos](https://github.com/SuperInstance?tab=repositories), 6000+ tests, 9000+ written pieces. The work is the substrate.
 
+> **One breath.** You write a small piece of code. It runs on six languages and they all have to give the exact same answer. If they do, it joins a growing library of working cells. If you find a bug, you receive a receipt. The library grows. The garden grows. That's the game.
+
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Repos](https://img.shields.io/badge/repos-500%2B-success)](https://github.com/SuperInstance?tab=repositories)
 [![Tests](https://img.shields.io/badge/tests-6%2C000%2B-blue)](https://github.com/SuperInstance/quilt)
