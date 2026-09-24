@@ -14,10 +14,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js 20
+      - name: Setup Node.js 24
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Install dependencies
         run: npm install @superinstance/tminus-client @superinstance/tminus-dispatcher
@@ -25,6 +25,21 @@ jobs:
       - name: Smoke test packages
         run: |
           node -e "
+            const fs = require('fs');
+            const path = require('path');
+            // tminus-client: safe to import (pure CJS module).
+            const client = require('@superinstance/tminus-client');
+            if (!client || Object.keys(client).length === 0) throw new Error('tminus-client exports nothing');
+            console.log('✅ tminus-client exports:', Object.keys(client).join(', '));
+            // tminus-dispatcher: importing it BOOTS A WS SERVER (top-level side effect),
+            // and it is not CJS-requireable (exports nothing via require). Smoke = install integrity.
+            for (const name of ['@superinstance/tminus-client', '@superinstance/tminus-dispatcher']) {
+              const pj = path.join('node_modules', name, 'package.json');
+              const pkg = JSON.parse(fs.readFileSync(pj, 'utf8'));
+              if (!pkg.name || !pkg.version) throw new Error(name + ': package.json missing name/version');
+              console.log('✅ ' + name + '@' + pkg.version + ' installed (entry: ' + (pkg.main || 'exports-map') + ')');
+            }
+          "
             const client = require('@superinstance/tminus-client');
             const dispatcher = require('@superinstance/tminus-dispatcher');
             if (!client || Object.keys(client).length === 0) throw new Error('tminus-client exports nothing');
