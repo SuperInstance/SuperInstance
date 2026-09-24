@@ -2,9 +2,9 @@
 
 # SuperInstance
 
-**The system that builds itself.**
+**The spreadsheet that thinks.**
 
-A [cell](https://github.com/SuperInstance/moth-cells) is a soft body. A [port](https://github.com/SuperInstance/quilt-port) is its address. The [Quilt](https://github.com/SuperInstance/quilt) is the room they live in. [500+ public repos](https://github.com/SuperInstance?tab=repositories), 6000+ tests, 9000+ written pieces. The work is the substrate.
+Colloquially, that is the definition of a SuperInstance — the line you send a colleague to start the conversation. It is also, deliberately, an understatement. Underneath there is much more: a reactive dependency graph where formulas are pure and lazy, sensors push, capabilities are called, and every call carries its caller's identity down the graph; decisions are typed, fenced, and receipted; memory is an ocean with a tide meter; randomness is a quantum coin you can buy by the toss; and one cell contract runs byte-exact across six substrates. All true. All load-bearing. But the spreadsheet is the better weapon, because everyone already knows how to use one — and nobody should need a course to use intelligence, either.
 
 > **One breath.** You write a small piece of code. It runs on six languages and they all have to give the exact same answer. If they do, it joins a growing library of working cells. If you find a bug, you receive a receipt. The library grows. The garden grows. That's the game.
 
@@ -17,6 +17,32 @@ A [cell](https://github.com/SuperInstance/moth-cells) is a soft body. A [port](h
 [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev)
 
 </div>
+
+---
+
+## More than one think
+
+The **spreadsheet** is the most successful programming interface ever deployed. Not one of its billion users had to take a course. Cells, formulas, sheets — the tools are already in everyone's hands, which means the ceiling on who can operate intelligence drops to *everyone*.
+
+The **thinks** is where we live. A cell is not a number. A cell is a sensor, a model call, a decision, a room with an address. `=SPREADSHEET` was never the point; `=SPAWN("scout")` is. The formula is the API. The sheet is the program. The graph reacts.
+
+We are really more than one think. But one think is a fine place to start.
+
+---
+
+## What engineers will recognize
+
+Strip the colloquialism and the claim is precise: a sheet is a live dependency graph — value and formula cells pure and pull-based, sensors and io cells push-based, api/program/ai/router cells effectful and memoized **per caller context**, listeners bridging push to action. Caller context (identity, tags, row) flows down the graph, so one sheet serves many tenants with isolated caches and policy at the router. AI calls are first-class cells with freshness semantics, not side-effects you babysit. Every evaluation can be receipted — hash-chained, replayable, auditable. The [polyformalism](../quilt) underneath runs the same cell contract byte-exact across [Python, C99, Rust no_std, Verilog-2005, VHDL-2008, and JavaScript](#the-substrate-is-the-message). A play-tester from Z.ai probed this runtime adversarially and described the model as "genuinely distinctive... a programming model we have not seen elsewhere." The joke is the interface. The engineering is the foundation.
+
+---
+
+## The disappearing act
+
+Nobody has ever cooked a Thanksgiving dinner while thinking about the power grid. Nobody watches the football game port itself into the living room while pondering the water mains. Infrastructure wins by disappearing — and that is the standard intelligence should be held to. Not a chat window you visit. Not a model you prompt. A room you work in.
+
+If the technology fades into the background, and the average person simply thinks of us as a spreadsheet paradigm with the power of everything — every task doable as simply as the tools they already know — then we have true intelligence.
+
+**We give computes rooms so AI has a home.**
 
 ---
 
