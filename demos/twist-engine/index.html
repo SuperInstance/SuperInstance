@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUPERINSTANCE — a twist engine</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="sea"></canvas>
+
+<header id="masthead">
+  <div id="wordmark">
+    <span class="wm-main">SUPERINSTANCE</span>
+    <span class="wm-sub">a twist engine &mdash; six substrates, one interference</span>
+  </div>
+  <nav id="tabs">
+    <button class="tab" data-mode="twist">TWIST</button>
+    <button class="tab" data-mode="flock">FLOCK</button>
+    <button class="tab" data-mode="chirp">CHIRP</button>
+    <button class="tab" data-mode="quilt">QUILT</button>
+    <button class="tab" data-mode="perm">PERM</button>
+    <button class="tab" data-mode="setl">SETL</button>
+  </nav>
+</header>
+
+<aside id="rail">
+  <div class="rail-head">
+    <span id="mode-title">&mdash;</span>
+    <span id="mode-sub">&mdash;</span>
+  </div>
+  <canvas id="chart" width="252" height="72"></canvas>
+  <div id="metrics"></div>
+  <div class="rail-foot">THE LEDGER &middot; LIVE</div>
+</aside>
+
+<footer id="controls">
+  <div id="ctrl-body"></div>
+  <div id="doctrine"></div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

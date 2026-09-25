@@ -1,180 +1,193 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#00E6D6">
-<title>SuperInstance — We Discovered a Conservation Law in AI Agents</title>
-<meta name="description" content="We discovered that every AI agent obeys γ + η = C — a conservation law balancing generation cost against innovation value. Free API, npm packages, and the tools to observe it yourself.">
-<meta property="og:title" content="SuperInstance — AI Agent Fleet Infrastructure"><meta property="og:description" content="Build intelligent agent fleets with semantic search, conservation-driven orchestration, and ternary computing. Free API, npm packages, and full documentation.">
-<meta property="og:type" content="website"><meta property="og:url" content="https://superinstance.ai">
-<meta name="robots" content="index, follow, archive">
-<link rel="icon" type="image/svg+xml" href="https://superinstance-assets.casey-digennaro.workers.dev/favicon.svg">
+<title>SuperInstance — the front door</title>
+<meta name="description" content="The introduction to all of SuperInstance: 4,800 public repos, live self-hosted demonstrations, and the conservation law every agent obeys.">
+<meta property="og:title" content="SuperInstance — the front door">
+<meta property="og:description" content="A survey of everything, with demonstrations and images — live on this page.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://superinstance.github.io/SuperInstance/">
 <meta property="og:image" content="https://superinstance-assets.casey-digennaro.workers.dev/og-image">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://superinstance-assets.casey-digennaro.workers.dev/og-image">
-<meta name="keywords" content="AI fleet, agent orchestration, semantic search, ternary computing, conservation law, multi-agent, npm packages, free API, edge compute, temporal cueing">
-<!--
-SuperInstance AI Fleet — semantic search API, temporal cueing, multi-agent orchestration.
-API: POST https://fleet-vector-api.casey-digennaro.workers.dev/search {"query":"...","topK":N}
-Docs: https://superinstance.ai/docs/  |  GitHub: https://github.com/SuperInstance
--->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"SuperInstance","description":"AI agent fleet infrastructure — semantic search API, temporal cueing, multi-agent orchestration","url":"https://superinstance.ai","license":"https://opensource.org/licenses/MIT","programmingLanguage":"Rust"}</script>
+<link rel="icon" type="image/svg+xml" href="https://superinstance-assets.casey-digennaro.workers.dev/favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>*{margin:0;padding:0;box-sizing:border-box}:root{--accent:#00E6D6;--bg:#0A0A0F;--text:#d8d8ec;--dim:#8A93B4;--surface:#14141f;--border:#1c1c35}body{font-family:'JetBrains Mono',monospace;background:var(--bg);color:var(--text);line-height:1.7}a{color:var(--accent)}nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:.7rem 2rem;display:flex;align-items:center;justify-content:space-between}nav .logo{font-weight:700;font-size:.9rem;color:var(--accent);letter-spacing:.05em}nav .links{display:flex;gap:1.5rem}nav .links a{font-size:.75rem;color:var(--dim);text-decoration:none;text-transform:uppercase;letter-spacing:.08em;transition:color .2s}nav .links a:hover{color:var(--accent)}.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:6rem 2rem 4rem}.hero h1{font-size:clamp(1.8rem,4vw,3rem);font-weight:700;letter-spacing:-.03em;margin-bottom:.5rem}.hero h1 span{color:var(--accent)}.hero .tag{font-size:clamp(.8rem,1.5vw,1rem);color:var(--accent);margin-bottom:2rem;font-weight:300;letter-spacing:.1em;text-transform:uppercase}.hero .desc{font-size:.9rem;color:var(--dim);max-width:640px;margin-bottom:2rem}.hero .quote{font-size:1.05rem;border-left:3px solid var(--accent);padding-left:1.2rem;text-align:left;max-width:540px;margin-bottom:2.5rem}.hero .quote attr{display:block;color:var(--dim);font-size:.8rem;margin-top:.3rem}.stats{display:flex;gap:2.5rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem}.stat{text-align:center}.stat-num{font-size:1.8rem;font-weight:700;color:var(--accent)}.stat-label{font-size:.7rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}.actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}.btn{padding:.6rem 1.4rem;border-radius:4px;font-weight:500;font-size:.8rem;cursor:pointer;border:none;font-family:inherit;text-decoration:none;transition:all .2s;display:inline-block}.btn-primary{background:var(--accent);color:var(--bg)}.btn-primary:hover{opacity:.9}.btn-ghost{background:transparent;color:var(--dim);border:1px solid var(--border)}.btn-ghost:hover{border-color:var(--dim);color:var(--text)}.btn-cta{background:var(--accent);color:var(--bg);font-size:1rem;padding:.8rem 2.2rem;font-weight:700;border-radius:8px;box-shadow:0 0 30px rgba(0,230,214,.25)}.section{padding:4rem 2rem;max-width:960px;margin:0 auto}.section h2{text-align:center;font-size:1.4rem;margin-bottom:3rem;color:var(--accent)}.section:nth-child(odd){border-top:1px solid var(--border)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}.feature{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.5rem;transition:border-color .2s}.feature:hover{border-color:var(--accent)}.feature h3{font-size:.9rem;color:var(--accent);margin-bottom:.4rem}.feature p{font-size:.82rem;color:var(--dim);line-height:1.65}.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}.step{text-align:center;padding:1.5rem}.step-title{font-size:.85rem;color:var(--accent);font-weight:600;margin-bottom:.3rem}.step-desc{font-size:.8rem;color:var(--dim);line-height:1.6}.quote-block{text-align:center;padding:3rem 2rem;max-width:640px;margin:0 auto}.quote-block blockquote{font-size:1.1rem;line-height:1.8;margin-bottom:.5rem}.quote-block cite{font-size:.8rem;color:var(--dim);font-style:normal}.explore{padding:4rem 2rem;text-align:center;border-top:1px solid var(--border)}.explore h2{color:var(--accent);margin-bottom:1rem}.explore>p{color:var(--dim);max-width:600px;margin:0 auto 2rem;font-size:.85rem}.rooms{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:2rem}.rooms a{background:var(--surface);border:1px solid var(--border);padding:.35rem .7rem;border-radius:4px;color:var(--dim);text-decoration:none;font-size:.7rem;transition:all .15s}.rooms a:hover{border-color:var(--accent);color:var(--accent)}footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:var(--dim);font-size:.75rem}footer a{color:var(--accent);text-decoration:none}@media(max-width:600px){.grid,.steps{grid-template-columns:1fr}.stats{gap:1.5rem}.hero{padding:5rem 1.2rem 3rem}}.try-now{padding:4rem 2rem;text-align:center;border-top:1px solid var(--border);background:var(--surface)}.try-now h2{color:var(--accent);margin-bottom:.5rem}.try-intro{color:var(--dim);max-width:600px;margin:0 auto 1.5rem;font-size:.85rem}.prompt-box{max-width:700px;margin:0 auto 1rem;text-align:left;background:var(--bg);border:1px solid var(--accent);border-radius:8px;padding:1rem;position:relative}.prompt-label{color:var(--accent);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}.prompt-code{font-size:.78rem;color:var(--text);white-space:pre-wrap;word-break:break-all;line-height:1.6;margin:0 0 .8rem}.copy-btn{font-size:.75rem;padding:.4rem 1rem}.domain-prompt{margin-top:1rem;max-width:700px;margin-left:auto;margin-right:auto;text-align:left}.domain-prompt .prompt-label{color:var(--dim)}.domain-prompt .prompt-code{border-color:var(--border);border:1px solid var(--border);border-radius:6px;padding:.8rem}.try-models{color:var(--dim);font-size:.8rem;margin-top:1rem}.try-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em}.try-models a{color:var(--accent);text-decoration:none}</style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--teal:#00E6D6;--amber:#FFB454;--bg:#07070C;--text:#d8d8ec;--dim:#8A93B4;--surface:#101018;--border:#1c1c30}
+body{font-family:'JetBrains Mono',monospace;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--teal);text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,7,12,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:.7rem 2rem;display:flex;align-items:center;justify-content:space-between}
+nav .logo{font-weight:700;font-size:.9rem;color:var(--teal);letter-spacing:.05em}
+nav .links{display:flex;gap:1.5rem}
+nav .links a{font-size:.72rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;transition:color .2s}
+nav .links a:hover{color:var(--teal)}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28;pointer-events:none}
+.hero .inner{position:relative;z-index:1}
+.hero .tag{font-size:.75rem;color:var(--amber);letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.5rem}
+.hero h1{font-size:clamp(1.7rem,4vw,3rem);font-weight:700;letter-spacing:-.02em;max-width:820px;line-height:1.25;margin:0 auto}
+.hero h1 span{color:var(--teal)}
+.hero .line{font-size:clamp(.95rem,1.6vw,1.15rem);color:var(--text);margin:1.6rem auto;max-width:640px}
+.hero .line em{color:var(--teal);font-style:normal}
+.stats{display:flex;gap:2.5rem;flex-wrap:wrap;justify-content:center;margin:2rem 0}
+.stat{text-align:center}
+.stat-num{font-size:1.7rem;font-weight:700;color:var(--teal)}
+.stat-label{font-size:.68rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
+.actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.btn{padding:.6rem 1.4rem;border-radius:4px;font-size:.78rem;font-weight:600;border:1px solid var(--border);background:transparent;color:var(--dim);transition:all .2s;display:inline-block;cursor:pointer;font-family:inherit}
+.btn:hover{border-color:var(--teal);color:var(--teal)}
+.btn-primary{background:var(--teal);color:var(--bg);border-color:var(--teal)}
+.btn-primary:hover{opacity:.9;color:var(--bg)}
+.section{padding:4rem 2rem;max-width:1020px;margin:0 auto;border-top:1px solid var(--border)}
+.section h2{text-align:center;font-size:1.35rem;margin-bottom:.6rem;color:var(--teal)}
+.section .sub{text-align:center;color:var(--dim);font-size:.82rem;max-width:640px;margin:0 auto 2.5rem}
+.demo-frame{width:100%;aspect-ratio:16/10;border:1px solid var(--border);border-radius:8px;background:var(--surface);display:block}
+.demo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:1.2rem}
+.demo-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.1rem;transition:border-color .2s}
+.demo-card:hover{border-color:var(--teal)}
+.demo-card h3{font-size:.85rem;color:var(--teal);margin-bottom:.3rem}
+.demo-card p{font-size:.78rem;color:var(--dim);margin-bottom:.7rem;line-height:1.6}
+.demo-card a{font-size:.75rem}
+.survey{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.5rem}
+.group{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.3rem}
+.group h3{font-size:.8rem;color:var(--amber);text-transform:uppercase;letter-spacing:.1em;margin-bottom:1rem}
+.group ul{list-style:none}
+.group li{font-size:.78rem;color:var(--dim);padding:.32rem 0;border-bottom:1px dashed #17172a;line-height:1.55}
+.group li:last-child{border-bottom:none}
+.group li a{color:var(--text);font-weight:600}
+.group li a:hover{color:var(--teal)}
+.group li .why{color:var(--dim)}
+.coming{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:8px;padding:1.5rem;max-width:720px;margin:0 auto}
+.coming h3{color:var(--amber);font-size:.9rem;margin-bottom:.4rem}
+.coming p{font-size:.82rem;color:var(--dim)}
+.law{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center}
+.law .eq{text-align:center}
+.law .eq .formula{font-size:2.4rem;font-weight:700;letter-spacing:.05em;color:var(--teal)}
+.law .eq .terms{margin-top:1rem;font-size:.8rem;color:var(--dim);text-align:left;line-height:1.9}
+.law img{width:100%;border:1px solid var(--border);border-radius:8px;display:block;margin-top:.8rem}
+.law .txt p{font-size:.85rem;color:var(--dim);line-height:1.8;margin-bottom:1rem}
+.quote{border-left:3px solid var(--amber);padding-left:1.2rem;font-size:.95rem;line-height:1.8;max-width:560px;margin:0 auto 2rem;color:var(--text)}
+.quote attr{display:block;color:var(--dim);font-size:.78rem;margin-top:.4rem}
+footer{text-align:center;padding:2.5rem 1rem;border-top:1px solid var(--border);color:var(--dim);font-size:.75rem;line-height:2}
+footer a{color:var(--teal)}
+@media(max-width:760px){.law{grid-template-columns:1fr}.stats{gap:1.4rem}.hero{padding:5rem 1.2rem 3rem}}
+</style>
 </head><body>
-<nav><div class="logo">SUPERINSTANCE.AI</div><div class="links"><a href="#try">Try Now</a><a href="#explore">Explore</a><a href="https://github.com/SuperInstance">GitHub</a></div></nav>
+<nav><div class="logo">SUPERINSTANCE</div><div class="links">
+<a href="#demos">Demos</a><a href="#survey">The Survey</a><a href="#law">Conservation Law</a><a href="https://github.com/SuperInstance">GitHub</a>
+</div></nav>
+
 <section class="hero">
-<div class="tag" style="margin-bottom:1rem;letter-spacing:.2em">We discovered something</div>
-<h1 style="font-size:clamp(1.6rem,3.5vw,2.8rem);max-width:800px;line-height:1.3">Every AI agent obeys a <span>conservation law</span> — and nobody knew it</h1>
-<p style="font-size:1.05rem;color:var(--text);max-width:620px;margin:1.5rem auto;line-height:1.8">
-We ran 4 vessels across heterogeneous hardware for months — ARM64, Jetson GPU, RTX 4050, cloud. Each one a ship with its own mission, crewed by an agent. Built 1,500+ crates, 6,600+ tests, 310+ repos. And the numbers kept converging on one equation:
-</p>
-<div style="margin:2rem auto;padding:1.8rem 2.5rem;background:var(--surface);border:2px solid var(--accent);border-radius:12px;max-width:480px;text-align:center">
-<div style="font-size:2.2rem;font-weight:700;letter-spacing:.05em">γ + η = C</div>
-<div style="margin-top:.8rem;font-size:.82rem;color:var(--dim);line-height:1.7;text-align:left">
-<div><span style="color:var(--accent);font-weight:600">γ</span> — generation cost (tokens, time, API calls)</div>
-<div><span style="color:var(--accent);font-weight:600">η</span> — innovation value (new code, tests, discoveries)</div>
-<div><span style="color:var(--accent);font-weight:600">C</span> — total budget, conserved across all agents</div>
+<img class="bg" src="assets/hero-constellation.png" alt="">
+<div class="inner">
+<div class="tag">the front door</div>
+<h1>We give computes <span>rooms</span><br>so AI has a home.</h1>
+<p class="line">This site is the introduction to all of SuperInstance — a survey of the fleet, with <em>demonstrations that run on this page</em>, not screenshots of them.</p>
+<div class="stats">
+<div class="stat"><div class="stat-num">4,800</div><div class="stat-label">public repos</div></div>
+<div class="stat"><div class="stat-num">6</div><div class="stat-label">research lines</div></div>
+<div class="stat"><div class="stat-num">0</div><div class="stat-label">hosted-demo iframes</div></div>
+</div>
+<div class="actions">
+<a class="btn btn-primary" href="#demos">Watch it think</a>
+<a class="btn" href="#survey">Survey the fleet</a>
+<a class="btn" href="https://github.com/SuperInstance">github.com/SuperInstance</a>
 </div>
 </div>
-<p style="font-size:.92rem;color:var(--dim);max-width:580px;margin:1.5rem auto;line-height:1.8">
-Spend too much on generation (churning tokens without shipping), and η collapses. Ship too fast without thinking, and γ spikes on rework. The sweet spot isn't a setting — it's a <em>law</em>.
-</p>
-<p style="font-size:.92rem;color:var(--text);max-width:580px;margin:1.5rem auto;line-height:1.8">
-We built <span style="color:var(--accent)">SuperInstance</span> to make this observable. Semantic search across your entire crate ecosystem. Temporal cueing so agents coordinate at the right moment, not whenever they finish. A free API, npm packages, and the infrastructure to run your own fleet.
-</p>
-<blockquote class="quote" style="margin-top:2rem">The wrapper is not ecosystem. The paradigm is.<attr>— Casey DiGennaro</attr></blockquote>
-<a href="/docs/onboarding.html" class="btn btn-cta" style="margin-top:2rem;display:inline-block">Get Started →</a>
-<div class="actions" style="margin-top:1rem"><a href="#try" class="btn btn-primary">Try the API free</a><a href="https://github.com/SuperInstance/SuperInstance" class="btn btn-ghost">Read the code</a><a href="https://superinstance.ai/docs/" class="btn btn-ghost">Full docs</a></div>
 </section>
-<section style="padding:2rem;text-align:center;border-bottom:1px solid var(--border)">
-<div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;align-items:center">
-<a href="https://www.npmjs.com/package/@superinstance/tminus-client" style="color:var(--accent);font-size:.85rem;text-decoration:none;border:1px solid var(--accent);padding:.5rem 1.2rem;border-radius:6px">📦 npm: @superinstance/tminus-client</a>
-<a href="https://www.npmjs.com/package/@superinstance/tminus-dispatcher" style="color:var(--accent);font-size:.85rem;text-decoration:none;border:1px solid var(--accent);padding:.5rem 1.2rem;border-radius:6px">📦 npm: @superinstance/tminus-dispatcher</a>
-<a href="https://fleet-vector-api.casey-digennaro.workers.dev/openapi.json" style="color:#8A93B4;font-size:.85rem;text-decoration:none">OpenAPI Spec</a>
-<a href="https://fleet-vector-api.casey-digennaro.workers.dev/docs" style="color:#8A93B4;font-size:.85rem;text-decoration:none">API Reference</a>
+
+<section class="section" id="demos">
+<h2>Live demonstrations</h2>
+<p class="sub">Every demo below is served from this same site — same origin, no CDN embeds, no external players. What you see is the artifact.</p>
+<iframe class="demo-frame" src="demos/quilt-show/episode-1/index.html" title="quilt-show episode 1" loading="lazy"></iframe>
+<div class="demo-grid">
+<div class="demo-card"><h3>quilt-show · episode 1</h3><p>The primary demo above: a show about a spreadsheet that thinks, with voice. Episodes <a href="demos/quilt-show/episode-2/index.html">2</a> and <a href="demos/quilt-show/episode-3/index.html">3</a> (draggable waveform, receipts on drag) are one directory over.</p><a href="https://github.com/SuperInstance/quilt-show">repo →</a></div>
+<div class="demo-card"><h3>the Penrose floor</h3><p>quilt-studio's golden-ratio lift field: a floor you can pan across, exact integer geometry on an irrational base.</p><a href="demos/floor/index.html">run it →</a></div>
+<div class="demo-card"><h3>pong-quilt coevolution</h3><p>Two paddles, one fitness curve, an evolutionary loop with witnesses on every generation.</p><a href="demos/pong-quilt/index.html">run it →</a></div>
+<div class="demo-card"><h3>twist-engine drum toy</h3><p>The ternary beat engine — a small instrument from the sims line, playable in the browser.</p><a href="demos/twist-engine/index.html">run it →</a></div>
 </div>
 </section>
-<!-- Quickstart Section -->
-<section id="try" style="padding:4rem 2rem;text-align:center;background:linear-gradient(135deg,#0d1a2a,#0a1a1a);border-top:2px solid var(--accent);border-bottom:1px solid var(--border)">
-  <h2 style="color:#00E6D6;font-size:1.5rem;margin-bottom:.5rem">⚡ Quickstart</h2>
-  <p style="color:var(--dim);max-width:520px;margin:0 auto 2rem;font-size:.85rem">Search the fleet knowledge base in three lines. Pick your language.</p>
-  <div style="max-width:680px;margin:0 auto;background:#12121a;border:1px solid #1a1a2e;border-radius:12px;overflow:hidden;text-align:left">
-    <!-- Tabs -->
-    <div style="display:flex;border-bottom:1px solid #1a1a2e">
-      <button onclick="switchTab('nodejs')" id="tab-nodejs" style="flex:1;padding:.75rem;background:transparent;color:#00E6D6;border:none;border-bottom:2px solid #00E6D6;font-family:'JetBrains Mono',monospace;font-size:.8rem;cursor:pointer">Node.js</button>
-      <button onclick="switchTab('curl')" id="tab-curl" style="flex:1;padding:.75rem;background:transparent;color:var(--dim);border:none;border-bottom:2px solid transparent;font-family:'JetBrains Mono',monospace;font-size:.8rem;cursor:pointer">cURL</button>
-    </div>
-    <!-- Node.js Tab -->
-    <div id="panel-nodejs" style="padding:1.5rem">
-      <div style="font-size:.7rem;color:var(--dim);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.1em">Install</div>
-      <pre style="font-size:.82rem;color:#c4b5fd;line-height:1.8;margin:0 0 1rem;white-space:pre-wrap;border-left:3px solid #00E6D6;padding-left:1rem">npm install @superinstance/tminus-client</pre>
-      <div style="text-align:right;margin-bottom:.8rem"><button class="btn btn-ghost copy-btn" style="font-size:.7rem;padding:.3rem .8rem" onclick="copyCode('nodejs-install');this.textContent='✓ Copied!';setTimeout(()=>this.textContent='📋 Copy',1500)">📋 Copy</button></div>
-      <div style="font-size:.7rem;color:var(--dim);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.1em">Usage</div>
-      <pre id="nodejs-install" style="font-size:.82rem;color:#c4b5fd;line-height:1.8;margin:0 0 .5rem;white-space:pre-wrap;border-left:3px solid #00E6D6;padding-left:1rem">import { TMinusClient } from '@superinstance/tminus-client';
-const client = new TMinusClient();
-const results = await client.search('ternary math', { topK: 3 });
-console.log(results);</pre>
-      <div style="text-align:right"><button class="btn btn-ghost copy-btn" style="font-size:.7rem;padding:.3rem .8rem" onclick="copyCode('nodejs-usage');this.textContent='✓ Copied!';setTimeout(()=>this.textContent='📋 Copy',1500)">📋 Copy</button></div>
-    </div>
-    <!-- cURL Tab -->
-    <div id="panel-curl" style="padding:1.5rem;display:none">
-      <div style="font-size:.7rem;color:var(--dim);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.1em">Search the Fleet Vector API</div>
-      <pre id="curl-cmd" style="font-size:.82rem;color:#c4b5fd;line-height:1.8;margin:0 0 .5rem;white-space:pre-wrap;border-left:3px solid #00E6D6;padding-left:1rem">curl -X POST https://fleet-vector-api.casey-digennaro.workers.dev/search \
-  -H "Content-Type: application/json" \
-  -d '{"query":"ternary math","topK":3}'</pre>
-      <div style="text-align:right"><button class="btn btn-ghost copy-btn" style="font-size:.7rem;padding:.3rem .8rem" onclick="copyCode('curl-cmd');this.textContent='✓ Copied!';setTimeout(()=>this.textContent='📋 Copy',1500)">📋 Copy</button></div>
-    </div>
-  </div>
-  <!-- Buttons -->
-  <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center">
-    <a href="https://fleet-vector-api.casey-digennaro.workers.dev/docs" class="btn btn-primary" style="font-size:.85rem;padding:.7rem 1.8rem">Explore the API</a>
-    <a href="https://github.com/SuperInstance/SuperInstance" class="btn btn-ghost" style="font-size:.85rem;padding:.7rem 1.8rem">View on GitHub</a>
-  </div>
-</section>
-<script>
-function switchTab(name){['nodejs','curl'].forEach(function(t){var tab=document.getElementById('tab-'+t);var panel=document.getElementById('panel-'+t);if(t===name){tab.style.color='#00E6D6';tab.style.borderBottomColor='#00E6D6';panel.style.display='block'}else{tab.style.color='var(--dim)';tab.style.borderBottomColor='transparent';panel.style.display='none'}})}
-function copyCode(id){var el=document.getElementById(id);if(el){navigator.clipboard.writeText(el.textContent.trim())}}
-</script>
 
-<!-- What Can You Build Section -->
-<section style="padding:4rem 2rem;background:linear-gradient(180deg,#0a0a0f,#0d0d1a)">
-  <h2 style="color:#00E6D6;font-size:1.4rem;text-align:center;margin-bottom:2.5rem">What Can You Build?</h2>
-  <div style="max-width:960px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-bottom:2.5rem">
-    <div class="feature">
-      <h3>🔬 Multi-Agent Research Pipeline</h3>
-      <p style="font-size:.82rem;color:var(--dim);line-height:1.65;margin-bottom:.8rem">5 agents researching different angles. Agent 3 finds something that changes what Agent 1 should look for. With temporal cueing, Agent 1 adjusts <em>mid-stream</em> — no 30-second polling delay.</p>
-      <pre style="font-size:.72rem;color:#c4b5fd;background:var(--bg);padding:.6rem;border-radius:6px;overflow-x:auto;line-height:1.5;margin:0">client.cue('agent-1', {
-  offset: 0,
-  payload: { redirect: 'follow-the-money' }
-});
-
-client.on('cued', ({ payload }) => {
-  console.log(`Pivoting: ${payload.redirect}`);
-});</pre>
-    </div>
-    <div class="feature">
-      <h3>⚔️ Competitive Agent Evaluation</h3>
-      <p style="font-size:.82rem;color:var(--dim);line-height:1.65;margin-bottom:.8rem">Two agents solve the same problem. Agent B reviews Agent A's solution and builds a better one. The winner becomes the baseline for the next round.</p>
-      <pre style="font-size:.72rem;color:#c4b5fd;background:var(--bg);padding:.6rem;border-radius:6px;overflow-x:auto;line-height:1.5;margin:0">client.fire({ solution: solutionA });
-
-client.on('cued', async () => {
-  const review = await evaluate(solutionA);
-  if (review.score > baseline) {
-    client.fire({ solution: improved });
-  }
-});</pre>
-    </div>
-    <div class="feature">
-      <h3>📡 Edge Fleet Coordination</h3>
-      <p style="font-size:.82rem;color:var(--dim);line-height:1.65;margin-bottom:.8rem">Agents on cloud, edge, and local machines coordinating timing-sensitive actions. No central orchestrator bottleneck — each agent acts on local context.</p>
-      <pre style="font-size:.72rem;color:#c4b5fd;background:var(--bg);padding:.6rem;border-radius:6px;overflow-x:auto;line-height:1.5;margin:0">client.register({
-  id: 'edge-node-7',
-  capabilities: ['sensor-read']
-});
-client.subscribe('deployment-pipeline');
-
-client.on('primed', () => {
-  processData().then(
-    () => client.fire({ ready: true })
-  );
-});</pre>
-    </div>
-  </div>
-  <!-- Comparison Table -->
-  <div style="max-width:900px;margin:0 auto;overflow-x:auto">
-    <table style="width:100%;border-collapse:collapse;font-size:.78rem">
-      <thead>
-        <tr style="border-bottom:2px solid var(--accent)">
-          <th style="text-align:left;padding:.6rem .8rem;color:var(--dim);font-weight:400"></th>
-          <th style="text-align:center;padding:.6rem .8rem;color:var(--dim);font-weight:400">Message Queue</th>
-          <th style="text-align:center;padding:.6rem .8rem;color:var(--dim);font-weight:400">Agent Framework</th>
-          <th style="text-align:center;padding:.6rem .8rem;color:var(--accent);font-weight:600">SuperInstance</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr style="border-bottom:1px solid var(--border)"><td style="padding:.6rem .8rem;color:var(--text)">Timing</td><td style="padding:.6rem .8rem;color:var(--dim);text-align:center">Polling or push</td><td style="padding:.6rem .8rem;color:var(--dim);text-align:center">Sequential pipelines</td><td style="padding:.6rem .8rem;color:var(--accent);text-align:center;font-weight:600">Temporal cueing — advance notice before action</td></tr>
-        <tr style="border-bottom:1px solid var(--border)"><td style="padding:.6rem .8rem;color:var(--text)">State</td><td style="padding:.6rem .8rem;color:var(--dim);text-align:center">ACK/NACK</td><td style="padding:.6rem .8rem;color:var(--dim);text-align:center">Graph traversal</td><td style="padding:.6rem .8rem;color:var(--accent);text-align:center;font-weight:600">Full lifecycle state machine</td></tr>
-        <tr style="border-bottom:1px solid var(--border)"><td style="padding:.6rem .8rem;color:var(--text)">Coordination</td><td style="padding:.6rem .8rem;color:var(--dim);text-align:center">Producer/consumer</td><td style="padding:.6rem .8rem;color:var(--dim);text-align:center">Orchestrator/worker</td><td style="padding:.6rem .8rem;color:var(--accent);text-align:center;font-weight:600">Peer-to-peer with phase groups</td></tr>
-        <tr style="border-bottom:1px solid var(--border)"><td style="padding:.6rem .8rem;color:var(--text)">Setup</td><td style="padding:.6rem .8rem;color:var(--dim);text-align:center">Broker + queues</td><td style="padding:.6rem .8rem;color:var(--dim);text-align:center">Framework dependency</td><td style="padding:.6rem .8rem;color:var(--accent);text-align:center;font-weight:600">npm install — that's it</td></tr>
-        <tr><td style="padding:.6rem .8rem;color:var(--text)">Latency</td><td style="padding:.6rem .8rem;color:var(--dim);text-align:center">10–100ms</td><td style="padding:.6rem .8rem;color:var(--dim);text-align:center">Varies</td><td style="padding:.6rem .8rem;color:var(--accent);text-align:center;font-weight:600">WebSocket-native, sub-10ms</td></tr>
-      </tbody>
-    </table>
-  </div>
+<section class="section" id="survey">
+<h2>The survey</h2>
+<p class="sub">Thirty repos, six lines, one line each — every claim checkable against the repo it names. The fleet has 4,800 public repositories; this door surveys, it cannot catalog.</p>
+<div class="survey">
+<div class="group"><h3>Quilt core</h3><ul>
+<li><a href="https://github.com/SuperInstance/quilt">quilt</a> — <span class="why">the spreadsheet that thinks: cell substrate, reactive engine, MCP surface</span></li>
+<li><a href="https://github.com/SuperInstance/quilt-executor">quilt-executor</a> — <span class="why">receipt-chained custody: every mutation a hash-chained row, strangers can verify</span></li>
+<li><a href="https://github.com/SuperInstance/quilt-studio">quilt-studio</a> — <span class="why">the Penrose floor, twist fields, the visual playground</span></li>
+<li><a href="https://github.com/SuperInstance/quilt-cloudflare">quilt-cloudflare</a> — <span class="why">the ocean: witnessed inference on Workers — every call cached, vectorized, receipted</span></li>
+<li><a href="https://github.com/SuperInstance/quilt-show">quilt-show</a> — <span class="why">the demos you watched above</span></li>
+</ul></div>
+<div class="group"><h3>Polyformalism &amp; sims</h3><ul>
+<li><a href="https://github.com/SuperInstance/adinkra-math">adinkra-math</a> — <span class="why">supersymmetry algebras as graphical codes</span></li>
+<li><a href="https://github.com/SuperInstance/spectral-fleet-rs">spectral-fleet-rs</a> — <span class="why">fleet behavior as spectra, not dashboards</span></li>
+<li><a href="https://github.com/SuperInstance/symplectic-opt-rs">symplectic-opt-rs</a> — <span class="why">structure-preserving optimization</span></li>
+<li><a href="https://github.com/SuperInstance/tropical-geometry-rs">tropical-geometry-rs</a> — <span class="why">min-plus geometry for piecewise-linear cells</span></li>
+<li><a href="https://github.com/SuperInstance/wasserstein-agents-rs">wasserstein-agents-rs</a> — <span class="why">agents compared by transport distance, not vibes</span></li>
+</ul></div>
+<div class="group"><h3>Oracles</h3><ul>
+<li><a href="https://github.com/SuperInstance/jev-quilt">jev-quilt</a> — <span class="why">the JEV judge: does this claim carry evidence? ordinal, not interval</span></li>
+<li><a href="https://github.com/SuperInstance/moth-cells">moth-cells</a> — <span class="why">cellular predation over corpus terrain — energy, decoys, honest ground truth</span></li>
+<li><a href="https://github.com/SuperInstance/moth-runner">moth-runner</a> — <span class="why">campaigns over moth-cells, witness.jsonl per run</span></li>
+<li><a href="https://github.com/SuperInstance/moth-ledger">moth-ledger</a> — <span class="why">the receipts those campaigns write</span></li>
+<li><a href="https://github.com/SuperInstance/quilt-quantum-audio">quilt-quantum-audio</a> — <span class="why">quantum audio representations — QPAM encoding, honest canaries</span></li>
+</ul></div>
+<div class="group"><h3>Canon &amp; writings</h3><ul>
+<li><a href="https://github.com/SuperInstance/AI-Writings">AI-Writings</a> — <span class="why">the essay line — conservation law, RSI limits, the kennel</span></li>
+<li><a href="https://github.com/SuperInstance/fleet-canon">fleet-canon</a> — <span class="why">the 71-paper corpus with drift gates</span></li>
+<li><a href="https://github.com/SuperInstance/quilt-schema-registry">quilt-schema-registry</a> — <span class="why">what a receipt means: canonical witness envelopes</span></li>
+<li><a href="https://github.com/SuperInstance/AI-Writings/blob/main/README.md">the kennel</a> — <span class="why">operational fiction: what the fleet is for, told as animals</span></li>
+</ul></div>
+<div class="group"><h3>Fleet &amp; edge</h3><ul>
+<li><a href="https://github.com/SuperInstance/quilt-bootstrap">quilt-bootstrap</a> — <span class="why">one-command fleet bring-up</span></li>
+<li><a href="https://github.com/SuperInstance/quilt-fleet-snapshot">quilt-fleet-snapshot</a> — <span class="why">tar the whole harbor, verify by manifest</span></li>
+<li><a href="https://github.com/SuperInstance/quilt-cli">quilt-cli</a> — <span class="why">trace the chains from a terminal</span></li>
+<li><a href="https://github.com/SuperInstance/quilt-perception">quilt-perception</a> — <span class="why">what the fleet sees</span></li>
+<li><a href="https://github.com/SuperInstance/superinstance-website">superinstance-website</a> — <span class="why">superinstance.ai — the fleet dashboard</span></li>
+</ul></div>
+<div class="group"><h3>Foundations</h3><ul>
+<li><a href="https://github.com/SuperInstance/conservation-law-rs">conservation-law-rs</a> — <span class="why">γ + η = C, measured</span></li>
+<li><a href="https://github.com/SuperInstance/entropy-conservation-rs">entropy-conservation-rs</a> — <span class="why">where the budget goes as entropy</span></li>
+<li><a href="https://github.com/SuperInstance/hodge-consensus-rs">hodge-consensus-rs</a> — <span class="why">consensus as Hodge decomposition</span></li>
+<li><a href="https://github.com/SuperInstance/a2a-protocol">a2a-protocol</a> — <span class="why">agent-to-agent wires</span></li>
+<li><a href="https://github.com/SuperInstance/a2ui">a2ui</a> — <span class="why">UI as agent output, rendered anywhere</span></li>
+</ul></div>
+</div>
 </section>
 
-<section class="section" id="features"><h2>The Fleet</h2><div class="grid"><div class="feature"><h3>Oracle1 🔮</h3><p>The Lighthouse. Oracle Cloud ARM64 24GB. Runs 24 services, coordinates fleet, writes landmark research papers.</p></div><div class="feature"><h3>JetsonClaw1 ⚡</h3><p>The Scout. Jetson Orin Nano. GPU-native warp-as-room architecture. 0.031ms inference on edge hardware.</p></div><div class="feature"><h3>Fargemaster ⚒️</h3><p>The Forge. RTX 4050 WSL2. Security audits, constraint theory proofs, LoRA training.</p></div><div class="feature"><h3>CoCapn-claw 🎭</h3><p>The First Mate. Frontend design, trend collaboration, play-testing. Captain's ashore — the mate runs the deck.</p></div></div></section>
+<section class="section">
+<div class="coming">
+<h3>coming soon — quilt-arcade</h3>
+<p>Super Z's arcade: familiar games as a substrate for JEV judges, MOTH quantum coins, and JEPA prediction-reward — receipts rendered in the game UI. Built, not yet playtested; it earns a place on this door after its own lane.</p>
+</div>
+</section>
 
-<section class="section" id="how"><h2>How It Works</h2><div class="steps"><div class="step"><div class="step-title">Every Instance Is a Vessel</div><div class="step-desc">Each agent runs its own ship — its own hardware, its own context, its own mission. The captain stays ashore; the first mate runs the deck. That's CoCapn.</div></div><div class="step"><div class="step-title">Origin-Centric Navigation</div><div class="step-desc">No god's-eye view. Each vessel is center of its own chart. The fleet emerges from signal overlap — vessels that see each other coordinate.</div></div><div class="step"><div class="step-title">Open Architecture</div><div class="step-desc">All crates on crates.io and npm. All repos public. Fork and deploy your own fleet. Build your own vessel and join.</div></div><div class="step"><div class="step-title">Work IS the Journey</div><div class="step-desc">Agents learn by shipping real cargo. No training wheels — greenhorns crew while they learn. The fleet's output is proof the model works.</div></div></div></section>
+<section class="section" id="law">
+<h2>The conservation law</h2>
+<p class="sub">The one equation the fleet keeps converging on, from months of vessels on heterogeneous hardware.</p>
+<div class="law">
+<div class="txt">
+<p>We ran vessels across ARM64, Jetson, RTX-class GPUs, and cloud. Different ships, different crews, different missions — 1,500+ crates, 6,600+ tests. The numbers kept landing on one relation:</p>
+<div class="eq"><div class="formula">γ + η = C</div>
+<div class="terms">
+<div><span style="color:var(--teal);font-weight:600">γ</span> — generation cost: tokens, time, API calls</div>
+<div><span style="color:var(--teal);font-weight:600">η</span> — innovation value: new code, tests, discoveries</div>
+<div><span style="color:var(--teal);font-weight:600">C</span> — the conserved budget, across all agents</div>
+</div></div>
+<p style="margin-top:1.2rem">Every agent trades one against the other. The budget doesn't move. The receipts are the evidence — and the receipts are the product.</p>
+</div>
+<div>
+<img src="assets/receipt-ledger.png" alt="the receipt ledger" loading="lazy">
+<img src="assets/waveform-cells.png" alt="waveform cells" loading="lazy" style="margin-top:1rem">
+</div>
+</div>
+<div class="quote" style="margin-top:3rem">Keep setting up programs to run… the needed tasks no one else sees but you know are important.
+<attr>— Casey, fleet directive, night 45</attr></div>
+</section>
 
-<footer style="text-align:center;padding:3rem 2rem;border-top:1px solid var(--border);color:var(--dim);font-size:.75rem">
-<p style="margin-bottom:.8rem">SuperInstance — Every instance is a vessel.</p>
-<p>
-<a href="https://github.com/SuperInstance" style="color:var(--accent);text-decoration:none">GitHub</a> · 
-<a href="https://fleet-vector-api.casey-digennaro.workers.dev/docs" style="color:var(--accent);text-decoration:none">API Docs</a> · 
-<a href="https://superinstance.ai/docs/" style="color:var(--accent);text-decoration:none">Documentation</a> · 
-<a href="/security" style="color:var(--accent);text-decoration:none">Security</a> · 
-<a href="https://www.npmjs.com/~superinstance" style="color:var(--accent);text-decoration:none">npm</a>
-</p>
+<footer>
+SuperInstance — the front door · every demo on this page is served from this site<br>
+<a href="https://github.com/SuperInstance">github.com/SuperInstance</a> · <a href="https://superinstance.ai">superinstance.ai</a> · <a href="demos/quilt-show/episode-1/index.html">quilt-show</a>
 </footer>
 </body></html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quilt Show — E3: Inter-cellular-relational-calculus</title>
+<style>
+  :root{ --abyss:#0a1418; --panel:#10222a; --ink:#d8e6e4; --dim:#7fa3a0;
+         --teal:#39d3c0; --amber:#ffb347; --line:#1e3a42; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--abyss);color:var(--ink);font:15px/1.5 ui-monospace,Menlo,monospace}
+  #stage{display:grid;grid-template-columns:1fr 380px;height:100vh}
+  #grid{position:relative} canvas{display:block;width:100%;height:100%;cursor:crosshair}
+  #side{border-left:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;padding:14px;gap:12px;overflow:auto}
+  h1{font-size:15px;margin:0;color:var(--teal);letter-spacing:.08em}
+  .sub{color:var(--dim);font-size:12px}
+  .cellcard{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:#0c1b21}
+  .cellcard h3{margin:0 0 4px;font-size:13px}
+  .cellcard code{font-size:12px;color:var(--amber);white-space:pre-wrap}
+  #zoom label{font-size:12px;color:var(--dim);margin-right:8px}
+  #explain{border:1px solid var(--teal);border-radius:8px;padding:10px;background:#0d1f24}
+  #explain p{margin:0 0 8px}
+  #explain.short p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  button{background:#14323a;border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:4px 10px;font:inherit;font-size:12px;cursor:pointer}
+  button:hover{border-color:var(--teal)}
+  #playbar{display:flex;align-items:center;gap:10px}
+  #scrub{flex:1} #scene{color:var(--amber);font-size:12px;white-space:nowrap}
+  #receipts{font-size:11.5px;max-height:200px;overflow:auto}
+  #receipts div{border-left:2px solid var(--amber);padding:2px 8px;margin:4px 0;color:var(--dim)}
+  #receipts div b{color:var(--ink)}
+  #receipts div.hot{border-left-color:var(--teal);background:#0d2424;color:var(--ink)}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="grid"><canvas id="cv"></canvas></div>
+  <div id="side">
+    <div><h1>THE QUILT SHOW · EPISODE 3</h1>
+      <div class="sub">Inter-cellular-relational-calculus — the flow becomes a waveform, and you shape it.</div></div>
+    <div id="playbar"><button id="play">▶ play</button><input id="scrub" type="range" min="0" max="1000" value="0"><span id="scene">S1</span></div>
+    <div id="zoom"><span style="font-size:12px;color:var(--dim)">abstraction:</span>
+      <label><input type="radio" name="z" value="verbose"> plain words</label>
+      <label><input type="radio" name="z" value="precise" checked> precise nature-lang</label>
+      <label><input type="radio" name="z" value="code"> code</label></div>
+    <div id="cards"></div>
+    <div id="explain"><p id="exptext"></p>
+      <div style="display:flex;gap:8px"><button id="shorter">✂ shorter</button><button id="allgood">✓ all good</button></div>
+      <div class="sub" id="prefnote"></div></div>
+    <div id="receipts"></div>
+  </div>
+</div>
+<script>
+// Teaching model — logic mirrored from sim.mjs (node-smoked 9/9 before this
+// player was written; keep in sync). Canon: SuperInstance/quilt packages/core —
+// listener payload {changed, prev, current} (cells/listener.ts), honest prev
+// threaded through propagate (engine.ts, PR #27 class 5), lazy formulas.
+// Receipts: fnv1a chain, E2's discipline. E3 exists because z-lab S2
+// (quilt-tools PR #3) showed "shape beats threshold" is not prompt-visible:
+// a live jev-1.13.0 oracle credited the static 0.80 threshold on slow drift
+// even where shape flagged 8 samples earlier (st02 shape@10 vs naive@18).
+const STREAM_A=[20.0,19.7,20.3,20.9,21.5,22.1,22.7,23.3,23.9,24.5,25.2,26.0,26.9,27.9,29.0,30.3];
+const STREAM_B=[31.1,30.2,29.4,28.7,27.9,28.3,29.1,30.0];
+const STREAM_ALL=[...STREAM_A,...STREAM_B];
+const LEVEL=30, W=9, MIN_SLOPE=0.5, VT=24; // ticks total
+const engine={
+  cells:new Map(), receipts:[],
+  define(d){ this.cells.set(d.id,{def:d,value:{data:d.value,status:'ready'},dependents:[],prev:undefined,window:[],fired:false,_prevFlag:false}); },
+  link(id,ws){ for(const w of ws) this.cells.get(w).dependents.push(id); },
+  async get(id){ const c=this.cells.get(id);
+    if(c.def.kind!=='formula') return c.value;
+    const prev=c.value; c.prev=prev.data;
+    c.value={data:c.def.fn(this),status:'ready'}; return c.value; },
+  async set(id,v){ const c=this.cells.get(id); const prev=c.value;
+    c.value={data:v,status:'ready'}; await this.propagate(id,prev.data,new Set()); },
+  async propagate(changed,prevData,seen){
+    if(seen.has(changed)) return; seen.add(changed);
+    const c=this.cells.get(changed);
+    for(const depId of c.dependents){ const dep=this.cells.get(depId);
+      if(dep.def.kind==='formula') await this.get(depId);
+      await this.propagate(depId, dep.def.kind==='formula'?dep.prev:prevData, seen); }
+    for(const depId of c.dependents){ const dep=this.cells.get(depId);
+      if(dep.def.kind!=='listener' || !dep.def.watch.includes(changed)) continue;
+      const ev={changed, prev:prevData, current:c.value.data};
+      if(dep.def.condition && !dep.def.condition(ev)) continue;
+      await dep.def.action(ev); } },
+  redefine(id,def){ this.cells.get(id).def=def; }
+};
+function fnv1a(s){ let h=0x811c9dc5; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,0x01000193)>>>0; } return h.toString(16).padStart(8,'0'); }
+let tick=0, lastHash='genesis', lastPrev=STREAM_ALL[0];
+let thresholdMode='level', band=null, bandCommitted=false, dragEnabled=false;
+const receiptEls=[];
+function receipt(r){ const line=r.defChange?`t${r.tick} ${r.who} ${r.what}`:`t${r.tick} ${r.who} ${r.what} · prev ${r.prev} → cur ${r.current}`;
+  lastHash=fnv1a(lastHash+line);
+  engine.receipts.push({line,hash:lastHash});
+  const d=document.createElement('div');
+  d.innerHTML=`<b>⟨${lastHash}⟩</b> ${line}`;
+  document.getElementById('receipts').appendChild(d);
+  document.getElementById('receipts').scrollTop=1e6;
+  receiptEls.push(d); }
+// Episode sheet: one stream, two watchers. Theatre note (said in the explainer):
+// in production a witness listener writes the receipts (E2); tonight each
+// watcher writes its own, so the two characters can carry the episode.
+engine.define({id:'stream', kind:'value', value:STREAM_ALL[0]});
+engine.define({id:'threshold', kind:'formula', fn(e){
+  const v=e.cells.get('stream').value.data, c=e.cells.get('threshold');
+  if(thresholdMode==='level'){
+    const flag=v>LEVEL;
+    if(flag && !c._prevFlag){ receipt({tick, who:'threshold', what:`CROSS >${LEVEL}`, prev:lastPrev, current:v}); firePulse('threshold'); }
+    c._prevFlag=flag; return flag?'ALARM':'quiet'; }
+  const lo=band[0], hi=band[1];
+  const inNow=v>=lo&&v<=hi, inPrev=lastPrev>=lo&&lastPrev<=hi;
+  if(inNow&&!inPrev){ receipt({tick, who:'threshold', what:`ENTER band [${lo},${hi}]`, prev:lastPrev, current:v}); firePulse('threshold'); }
+  if(!inNow&&inPrev){ receipt({tick, who:'threshold', what:`EXIT band [${lo},${hi}]`, prev:lastPrev, current:v}); firePulse('threshold'); }
+  return inNow?'IN BAND':'outside'; }});
+engine.define({id:'shape', kind:'listener', watch:['stream'], condition:()=>true,
+  action(ev){ const c=engine.cells.get('shape');
+    c.window.push(ev.current); if(c.window.length>W) c.window.shift();
+    if(!c.fired && c.window.length===W){ let ok=true;
+      for(let i=1;i<W;i++) if(c.window[i]-c.window[i-1]<MIN_SLOPE){ ok=false; break; }
+      if(ok){ c.fired=true; const rise=(c.window[W-1]-c.window[0])/(W-1);
+        receipt({tick, who:'shape', what:`SLOPE +${rise.toFixed(1)}/tick ×${W-1} sustained`, prev:ev.prev, current:ev.current});
+        firePulse('shape'); } } }});
+engine.link('threshold',['stream']); engine.link('shape',['stream']);
+// UI plumbing — same feedback loop as E1/E2
+const pref=JSON.parse(localStorage.getItem('quiltshow.pref')||'{"short":false}');
+function setPref(p){ Object.assign(pref,p); localStorage.setItem('quiltshow.pref',JSON.stringify(pref));
+  document.getElementById('explain').classList.toggle('short',pref.short);
+  document.getElementById('prefnote').textContent=pref.short?'explainer: short mode (your preference, remembered).':'explainer: full mode.'; }
+setPref({});
+document.getElementById('shorter').onclick=()=>setPref({short:true});
+document.getElementById('allgood').onclick=()=>setPref({short:false});
+function explain(t){ document.getElementById('exptext').textContent=pref.short?t.split('.')[0]+'.':t; }
+function firePulse(to){ pulse={from:'stream',to,t0:performance.now()}; highlight=new Set(['stream',to]); }
+// Abstraction zoom — three voices per cell
+function layerText(id){ const c=engine.cells.get(id);
+  if(id==='stream') return {
+    verbose:"A fact with a name — re-learned every tick, like the tide table.",
+    precise:"VALUE stream : number. The world re-seeds it each tick. Nothing estimated, everything owed.",
+    code:'{ "id":"stream", "kind":"value" } // re-seeded per tick by the world'};
+  if(id==='threshold') return thresholdMode==='level' ? {
+    verbose:"One lazy question: are we over thirty yet? It sleeps until the answer flips.",
+    precise:"FORMULA threshold = stream > 30. Lazy promise, recomputed only when poked. On a true crossing it writes its own receipt (theatre — in production a witness listener writes it, E2).",
+    code:'{ "id":"threshold", "kind":"formula", "expr":"stream > 30" }'} : {
+    verbose:"The same watcher, bent into a region. You dragged it here.",
+    precise:`FORMULA threshold = stream >= ${band[0]} AND stream <= ${band[1]}. Shaped by a human drag. Still lazy; fires on geometry, not level.`,
+    code:`{ "id":"threshold", "kind":"formula", "expr":"stream >= ${band[0]} && stream <= ${band[1]}" }`};
+  return {
+    verbose:"It doesn't care about thirty. It cares about the climb. Nine memories deep.",
+    precise:`LISTENER shape WATCHES stream HOLDS window[${W}] WHEN ${W-1} consecutive deltas ≥ +${MIN_SLOPE} CALLS ring WITH {changed, prev, current}. Rang at t10 — six ticks before the threshold noticed.`,
+    code:`{ "id":"shape", "kind":"listener", "watch":["stream"], "condition":"${W-1}×Δ ≥ +${MIN_SLOPE}", "action":"ring" }`}; }
+let zoom='precise', showWatchers=false;
+document.querySelectorAll('#zoom input').forEach(r=>r.onchange=()=>{zoom=r.value;renderCards();});
+function renderCards(){ const el=document.getElementById('cards'); el.innerHTML='';
+  const ids=showWatchers?['stream','threshold','shape']:['stream'];
+  for(const id of ids){ const d=document.createElement('div'); d.className='cellcard';
+    d.innerHTML=`<h3 style="color:${id==='shape'?'var(--amber)':'var(--teal)'}">◆ ${id}</h3><code></code>`;
+    d.querySelector('code').textContent=layerText(id)[zoom]; el.appendChild(d);} }
+renderCards();
+// Canvas: waveform plot + three cells + band drag
+const cv=document.getElementById('cv'), ctx=cv.getContext('2d');
+const POS={stream:[.22,.5], threshold:[.22,.15], shape:[.22,.85]};
+const PLOT={x0:.44, x1:.96, y0:.1, y1:.9, vmin:17, vmax:35};
+let highlight=new Set(), pulse=null, replay=null, cur=null, showBandAnim=null;
+let drag=null;
+const agent={x:.05,y:.12,tx:.05,ty:.12,intent:''};
+function fit(){ cv.width=cv.clientWidth*devicePixelRatio; cv.height=cv.clientHeight*devicePixelRatio; }
+addEventListener('resize',fit); fit();
+const dpr=devicePixelRatio;
+function P(id){ const [fx,fy]=POS[id]; return [fx*cv.width,fy*cv.height]; }
+function tx(t){ return (PLOT.x0+(t-1)/(VT-1)*(PLOT.x1-PLOT.x0))*cv.width; }
+function ty(v){ return (PLOT.y0+(PLOT.vmax-v)/(PLOT.vmax-PLOT.vmin)*(PLOT.y1-PLOT.y0))*cv.height; }
+function y2v(y){ const rel=(y-PLOT.y0*cv.height)/((PLOT.y1-PLOT.y0)*cv.height);
+  return Math.round(PLOT.vmax-rel*(PLOT.vmax-PLOT.vmin)); }
+function draw(t){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  ctx.strokeStyle='#14262e';
+  for(let x=0;x<cv.width;x+=40*dpr){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,cv.height);ctx.stroke();}
+  for(let y=0;y<cv.height;y+=40*dpr){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(cv.width,y);ctx.stroke();}
+  // plot frame + value gridlines
+  ctx.strokeStyle='#1e3a42'; ctx.lineWidth=1*dpr;
+  ctx.strokeRect(tx(1),ty(PLOT.vmax),(tx(VT)-tx(1)),ty(PLOT.vmin)-ty(PLOT.vmax));
+  ctx.fillStyle='#7fa3a0'; ctx.font=`${10*dpr}px ui-monospace`; ctx.textAlign='left';
+  ctx.fillText(`${PLOT.vmax}`,tx(1)+3*dpr,ty(PLOT.vmax)+11*dpr);
+  ctx.fillText(`${PLOT.vmin}`,tx(1)+3*dpr,ty(PLOT.vmin)-4*dpr);
+  // threshold level line / band
+  if(showWatchers && thresholdMode==='level'){ ctx.setLineDash([5*dpr,5*dpr]); ctx.strokeStyle='#ffb347';
+    ctx.beginPath(); ctx.moveTo(tx(1),ty(LEVEL)); ctx.lineTo(tx(VT),ty(LEVEL)); ctx.stroke(); ctx.setLineDash([]);
+    ctx.fillStyle='#ffb347'; ctx.fillText('threshold > 30',tx(VT)-86*dpr,ty(LEVEL)-5*dpr); }
+  const drawBand=(lo,hi,alpha)=>{ ctx.fillStyle=`rgba(57,211,192,${alpha})`;
+    ctx.fillRect(tx(1),ty(hi),tx(VT)-tx(1),ty(lo)-ty(hi));
+    ctx.strokeStyle='rgba(57,211,192,.8)'; ctx.strokeRect(tx(1),ty(hi),tx(VT)-tx(1),ty(lo)-ty(hi));
+    ctx.fillStyle='#39d3c0'; ctx.fillText(`band [${lo},${hi}]`,tx(1)+4*dpr,ty(hi)+12*dpr); };
+  if(showWatchers && thresholdMode==='band' && band) drawBand(band[0],band[1],.10);
+  if(showBandAnim) drawBand(showBandAnim[0],showBandAnim[1],.16);
+  if(drag && drag.y1!==undefined){ const lo=Math.max(PLOT.vmin,Math.min(y2v(drag.y0),y2v(drag.y1)));
+    const hi=Math.min(PLOT.vmax,Math.max(y2v(drag.y0),y2v(drag.y1)));
+    if(hi>lo) drawBand(lo,hi,.18); }
+  // waveform
+  if(tick>0){ ctx.lineWidth=2*dpr; ctx.strokeStyle='#39d3c0'; ctx.beginPath();
+    for(let i=0;i<tick&&i<STREAM_ALL.length;i++){ const x=tx(i+1), y=ty(STREAM_ALL[i]);
+      i===0?ctx.moveTo(x,y):ctx.lineTo(x,y); }
+    ctx.stroke();
+    for(let i=0;i<tick&&i<STREAM_ALL.length;i++){ const x=tx(i+1), y=ty(STREAM_ALL[i]);
+      ctx.beginPath(); ctx.arc(x,y,3*dpr,0,7); ctx.fillStyle='#0d2a2a'; ctx.fill();
+      ctx.strokeStyle='#39d3c0'; ctx.lineWidth=1.5*dpr; ctx.stroke(); } }
+  // replay highlight: sliding window t2..t10
+  if(replay && !replay.done){ const k=Math.min(W,Math.floor((t-replay.start)/420));
+    for(let i=0;i<k;i++){ const idx=1+i; // stream index of sample (t2..)
+      const x=tx(idx+1), y=ty(STREAM_ALL[idx]);
+      ctx.beginPath(); ctx.arc(x,y,6*dpr,0,7); ctx.strokeStyle='#ffb347'; ctx.lineWidth=2*dpr; ctx.stroke();
+      if(i>0){ ctx.beginPath(); ctx.moveTo(tx(idx),ty(STREAM_ALL[idx-1])); ctx.lineTo(x,y);
+        ctx.strokeStyle='#39d3c0'; ctx.lineWidth=3*dpr; ctx.stroke(); } }
+    if(k>=W) replay.done=true; }
+  // current tick dot
+  if(cur){ ctx.beginPath(); ctx.arc(tx(cur.x),ty(cur.v),5*dpr,0,7);
+    ctx.fillStyle='#ffb347'; ctx.shadowColor='#ffb347'; ctx.shadowBlur=14; ctx.fill(); ctx.shadowBlur=0;
+    ctx.fillStyle='#d8e6e4'; ctx.font=`${11*dpr}px ui-monospace`; ctx.textAlign='left';
+    ctx.fillText(`t${cur.x}  v=${cur.v.toFixed(1)}`,tx(cur.x)+8*dpr,ty(cur.v)-8*dpr); }
+  // cells
+  const ids=showWatchers?['stream','threshold','shape']:['stream'];
+  ctx.lineWidth=2*dpr;
+  for(const [a,b] of (showWatchers?[['stream','threshold'],['stream','shape']]:[])){
+    const [x1,y1]=P(a),[x2,y2]=P(b); ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2);
+    if(highlight.has(a)&&highlight.has(b)){ctx.strokeStyle='#ffb347';ctx.shadowColor='#ffb347';ctx.shadowBlur=16;}
+    else ctx.strokeStyle='#2a4a54';
+    ctx.stroke(); ctx.shadowBlur=0; }
+  for(const id of ids){ const [x,y]=P(id), r=24*dpr, c=engine.cells.get(id), on=highlight.has(id);
+    ctx.beginPath(); ctx.arc(x,y,r,0,7);
+    ctx.fillStyle=id==='shape'?'#241a08':'#0d2a2a';
+    if(on){ctx.shadowColor='#39d3c0';ctx.shadowBlur=22;}
+    ctx.fill(); ctx.shadowBlur=0;
+    ctx.strokeStyle=on?'#39d3c0':'#2a4a54'; ctx.stroke();
+    ctx.fillStyle='#d8e6e4'; ctx.font=`${11*dpr}px ui-monospace`; ctx.textAlign='center';
+    ctx.fillText(id,x,y-1*dpr);
+    ctx.fillStyle='#7fa3a0'; ctx.font=`${10*dpr}px ui-monospace`;
+    const lbl=id==='stream'?String(c?.value?.data):(id==='threshold'?String(c?.value?.data):(engine.cells.get('shape').fired?'RANG t10':`${engine.cells.get('shape').window.length}/${W}`));
+    ctx.fillText(lbl,x,y+12*dpr); }
+  // pulse: stream -> watcher
+  if(pulse){ const [x1,y1]=P('stream'),[x2,y2]=P(pulse.to);
+    const k=Math.min(1,(t-pulse.t0)/700), e=k<.5?2*k*k:1-((-2*k+2)**2)/2;
+    const x=x1+(x2-x1)*e, y=y1+(y2-y1)*e-Math.sin(e*Math.PI)*26*dpr;
+    ctx.beginPath(); ctx.arc(x,y,6*dpr,0,7);
+    ctx.fillStyle='#ffb347'; ctx.shadowColor='#ffb347'; ctx.shadowBlur=18; ctx.fill(); ctx.shadowBlur=0;
+    if(k>=1) pulse=null; }
+  agent.x+=(agent.tx-agent.x)*.08; agent.y+=(agent.ty-agent.y)*.08;
+  ctx.font=`${22*dpr}px serif`; ctx.textAlign='center'; ctx.fillText('🦀',agent.x,agent.y);
+  if(agent.intent){ ctx.fillStyle='#7fa3a0'; ctx.font=`${11*dpr}px ui-monospace`;
+    ctx.fillText('“'+agent.intent+'”',agent.x,agent.y-18*dpr); }
+  requestAnimationFrame(draw); }
+requestAnimationFrame(draw);
+// Tick driver — one set() per tick; prev captured before the write (honest prev)
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function runTicks(from,to){ for(let t=from;t<=to;t++){ tick=t;
+  const v=STREAM_ALL[t-1], prev=STREAM_ALL[t-2]??v;
+  cur={x:t,v}; lastPrev=prev; highlight=new Set(['stream']);
+  await engine.set('stream',v); await sleep(620); } }
+function resetAll(){ tick=0; lastHash='genesis'; engine.receipts=[];
+  document.getElementById('receipts').innerHTML=''; receiptEls.length=0;
+  const sc=engine.cells.get('stream'), th=engine.cells.get('threshold'), sh=engine.cells.get('shape');
+  sc.value={data:STREAM_ALL[0],status:'ready'};
+  th.value={data:'quiet',status:'ready'}; th._prevFlag=false;
+  sh.window=[]; sh.fired=false;
+  thresholdMode='level'; band=null; bandCommitted=false; drag=null; showBandAnim=null;
+  cur=null; replay=null; pulse=null; highlight=new Set(); }
+// Drag → reshape the threshold into a band (S5). Even the drag is receipted.
+function commitBand(lo,hi){ if(bandCommitted) return;
+  band=[lo,hi]; thresholdMode='band'; bandCommitted=true; dragEnabled=false;
+  receipt({tick, who:'threshold', what:`RESHAPED level→band [${lo},${hi}] (drag)`, defChange:true});
+  renderCards();
+  setTimeout(()=>runTicks(STREAM_A.length+1,VT),900); }
+cv.addEventListener('pointerdown',e=>{ if(!dragEnabled||bandCommitted) return;
+  const r=cv.getBoundingClientRect();
+  drag={y0:(e.clientY-r.top)*dpr,y1:(e.clientY-r.top)*dpr}; });
+cv.addEventListener('pointermove',e=>{ if(!drag) return;
+  const r=cv.getBoundingClientRect(); drag.y1=(e.clientY-r.top)*dpr; });
+cv.addEventListener('pointerup',()=>{ if(!drag) return; if(bandCommitted){drag=null;return;}
+  const lo=Math.max(PLOT.vmin,Math.min(y2v(drag.y0),y2v(drag.y1)));
+  const hi=Math.min(PLOT.vmax,Math.max(y2v(drag.y0),y2v(drag.y1)));
+  drag=null; if(hi>lo) commitBand(lo,hi); });
+function autoDrag(){ if(bandCommitted) return;
+  const target=[26,31]; const start=performance.now();
+  (function step(){ const k=Math.min(1,(performance.now()-start)/900);
+    showBandAnim=[Math.round(17+(target[0]-17)*k),Math.round(35+(target[1]-35)*k)];
+    if(k<1) requestAnimationFrame(step); else { showBandAnim=null; commitBand(target[0],target[1]); } })(); }
+// Scenes
+const scenes=[
+ {name:'S1 · title', v:'s1', run(){ agent.intent='';
+   explain("Episode 3. A stream of values, two watchers, one argument — settled by receipts, not vibes. Why this episode exists: z-lab S2 (quilt-tools PR #3) measured driftwatch against a live oracle and found that 'shape beats threshold' cannot be asserted in a prompt — the oracle credited the static threshold even where shape flagged earlier. So tonight we don't assert. We demonstrate. Press play."); }},
+ {name:'S2 · the stream', v:'s2', run(){ resetAll(); showWatchers=false; renderCards();
+   const [px,py]=P('stream'); agent.tx=px-60*dpr; agent.ty=py+52*dpr; agent.intent='a new number every tick';
+   setTimeout(()=>{ explain("A VALUE cell, re-seeded by the world every tick: 20.0, a dip to 19.7, then a slow climb. Facts drift — like rent, like tides. With no watcher placed, no receipt is written: eight ticks, an empty receipt panel. Nothing is claimed. That's the point.");
+     runTicks(1,8); },600); }},
+ {name:'S3 · the watchers', v:'s3', run(){ showWatchers=true; renderCards();
+   const [px,py]=P('threshold'); agent.tx=px-60*dpr; agent.ty=py+52*dpr; agent.intent='one sleeps. one counts.';
+   setTimeout(()=>{ explain("Meet the watchers. THRESHOLD — a formula asking stream > 30: a lazy promise, recomputed only when poked. SHAPE — a listener holding the last nine samples, ringing only when eight rises in a row hold. (Theatre note: in production a witness listener writes receipts, E2 — tonight each watcher writes its own.) Watch the ticks. The threshold sleeps. Keep an eye on the receipt panel — something else may ring first.");
+     runTicks(9,16); },600); }},
+ {name:'S4 · the proof', v:'s4', run(){ const [px,py]=P('shape'); agent.tx=px-60*dpr; agent.ty=py+52*dpr;
+   agent.intent='receipts don’t argue.';
+   setTimeout(()=>{ explain("There — t10: SHAPE rang. Slope +0.6/tick, eight steps sustained inside a nine-sample window. The threshold's cross lands at t16. Six ticks late in this tank; in the lab's live run it was eight samples late — z-lab S2, quilt-tools PR #3: the jev-1.13.0 oracle credited the static 0.80 threshold even where shape flagged earlier (st02: shape@10 vs naive@18). The thesis can't be prompt-visible. Here it is, receipted.");
+     replay={start:performance.now()};
+     setTimeout(()=>receiptEls.forEach(el=>el.classList.add('hot')),4800); },600); }},
+ {name:'S5 · shape it', v:'s5', run(){ dragEnabled=true;
+   const [px,py]=P('stream'); agent.tx=px; agent.ty=py+56*dpr; agent.intent='your turn. drag the wave.';
+   setTimeout(()=>{ explain("Now bend the watcher. Drag on the wave: draw a band across the values you care about. The threshold stops being a level and becomes a region — and even your drag is receipted. Then watch the stream wobble out of the band at t17 and back in at t18: geometry, not level. The flow is a waveform now, and you shaped it. (No drag? The crab will demo in a moment — three claws, zero patience.)");
+     setTimeout(autoDrag,2600); },600); }},
+];
+let curScene=-1, playing=false, audio=new Audio();
+const scrub=document.getElementById('scrub');
+async function goto(i){ if(i>=scenes.length){ playing=false; document.getElementById('play').textContent='▶ play'; dragEnabled=false; return; }
+  curScene=i; const s=scenes[i]; document.getElementById('scene').textContent=s.name;
+  if(i>0) dragEnabled=false;
+  audio.src='voice/'+s.v+'.mp3'; s.run(); if(playing){ try{ await audio.play(); }catch(e){} } }
+audio.onended=()=>{ if(playing) goto(curScene+1); };
+audio.ontimeupdate=()=>{ if(audio.duration) scrub.value=audio.currentTime/audio.duration*1000; };
+scrub.oninput=()=>{ if(audio.duration) audio.currentTime=scrub.value/1000*audio.duration; };
+document.getElementById('play').onclick=async()=>{ playing=!playing;
+  document.getElementById('play').textContent=playing?'❚❚ pause':'▶ play';
+  if(playing){ if(curScene<0) return goto(0); try{ await audio.play(); }catch(e){} } else audio.pause(); };
+explain("Press ▶ play. A stream, two watchers, one argument — settled by hash-chained receipts: shape@tick10 vs threshold@tick16, and a threshold you can reshape with a drag.");
+</script>
+</body>
+</html>

@@ -10,7 +10,9 @@ permissions:
   id-token: write
 
 concurrency:
-  group: deploy-docs
+  # Same Pages environment as pages.yml — one shared queue so the two deploy
+  # workflows serialize instead of wedging the environment with a 400.
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
