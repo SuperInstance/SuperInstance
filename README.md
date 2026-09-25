@@ -3,7 +3,8 @@
 # SuperInstance
  
 **The spreadsheet that thinks.**
- 
+
+ 
 That's the short answer.
  
 The longer answer is that SuperInstance is a growing collection of tools, agents, cells, and experiments that all share the same belief:
