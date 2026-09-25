@@ -83,10 +83,7 @@ We are really more than one think. But one think is a fine place to start.
 ## Nuts and Bolts
  
 At first glance, SuperInstance looks like a spreadsheet.
- 
-That's intentional.
- 
-Spreadsheets are already one of the most successful programming models ever invented: cells, dependencies, recalculation, composition, and immediate feedback.
+That's intentional: cells, dependencies, recalculation, composition, and immediate feedback.
  
 SuperInstance keeps that mental model and extends it.
  
