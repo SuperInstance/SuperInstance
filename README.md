@@ -56,6 +56,10 @@ Concretely, Do I want a bathymetric recorder? Tell my designer-agent to port the
 
 That's the application. That's why I built this. Everything below is the same idea, abstracted further.
 
+My Github Accounts outputs are evolving proofs of concepts around this idea. I started by looking at my boat as a robot with a float chassis, And it wasn't very well automated. This spreadsheet idea made decomposing an autopilot parts and logic easy and visual to the IO at every point. Porting engine sensor sends off arduino or esp32 pins via converters to a cell decouples how it got there from what kind of dashboard you're going to port it to. Or like a bathy record, link the rpms to a servo on the throttle lever and tell your ship with a watch-up word to "increase speed 100 RPMs" and when you hear verbally back correctly enough times, like claude code, you turn on auto accapt for that robotic automation. Quilt can vibe-code a working version of this before I can get it wired up. And if I'm missing a component, the agent can know my inventory and order it. I plan to push the production-repos to a separate organization soon. But the point of having so many prototypes is to prove how easy this is. And to accumulate a growing collection of solutions for developing SuperInstance-aligned agents that understand the system from many angles. 
+
+I am not a programmer by trade. I produce fish by trading time for it with my tools. I want better tools. I don't want to sell tools. I want to inspire better tool-makers than me to run with these concepts and make them killer-apps. I think Quilt already is; and the proof is in this accounts output on a couple coding-plans and a captain iterating while he worked. 
+
 ---
 
 ## Three words
