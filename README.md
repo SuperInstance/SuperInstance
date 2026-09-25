@@ -99,17 +99,11 @@ chart = render(bottom)
 Those are all just cells.
 
 A formula can be a cell.
-
 A sensor can be a cell.
-
 A database query can be a cell.
-
 An API call can be a cell.
-
 An AI invocation can be a cell.
-
 A hardware module can be a cell.
-
 The graph doesn't particularly care.
 
 Some cells are pure and pull-based. Others receive pushes from the outside world. Some produce effects. Some simply transform values. Everything plugs into the same contract.
@@ -117,46 +111,35 @@ Some cells are pure and pull-based. Others receive pushes from the outside world
 Context flows with evaluation.
 
 Who asked?
-
 Which tenant?
-
 Which permissions?
-
 Which tags?
-
 Which row?
 
 Those answers travel naturally down the graph, allowing caches, routing, policy, and memoization to remain local while the model stays global.
 
 AI is not a framework bolted onto the side.
-
 It is a cell.
-
 It has inputs, outputs, freshness rules, dependencies, receipts, and reproducible behavior like everything else.
 
 Every evaluation can be receipted.
-
 Results are hash-chained, replayable, and auditable. Dependencies can be inspected long after execution. Bugs become evidence instead of anecdotes.
-
 Underneath, Quilt carries this same contract across Python, JavaScript, C99, Rust no_std, Verilog-2005, and VHDL-2008.
 
 The remarkable thing is not that it runs on six substrates.
-
 The remarkable thing is that a cell means the same thing on all of them.
 
 Write a cell once.
-
 Verify it once.
-
 Run it anywhere.
-
 Compose it forever.
 
 The spreadsheet is the interface.
-
 The dependency graph is the machinery.
 
 The portable cell contract is the invention.
+
+
 ---
 
 ## The disappearing act
