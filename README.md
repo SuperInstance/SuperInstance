@@ -47,7 +47,7 @@ Just step aboard.
 The rest reveals itself through use.
 
  
-> **One breath.**
+> **One breath:**
 >
 > Build something useful once.
 > Make it reproducible.
