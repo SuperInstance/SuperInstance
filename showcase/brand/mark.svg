@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" role="img" aria-label="SuperInstance mark — the watching cell">
+  <defs>
+    <linearGradient id="lit" x1="52" y1="52" x2="88" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4CF2D8"/>
+      <stop offset="1" stop-color="#1FA8BE"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.55" stop-color="#3FE0C5" stop-opacity="0"/>
+      <stop offset="0.8" stop-color="#3FE0C5" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#3FE0C5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- three quiet cells -->
+  <rect x="8" y="8" width="36" height="36" rx="9" fill="#FFFFFF" fill-opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5"/>
+  <rect x="52" y="8" width="36" height="36" rx="9" fill="#FFFFFF" fill-opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5"/>
+  <rect x="8" y="52" width="36" height="36" rx="9" fill="#FFFFFF" fill-opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5"/>
+  <!-- the watching cell -->
+  <circle cx="70" cy="70" r="24" fill="url(#pulse)"/>
+  <rect x="52" y="52" width="36" height="36" rx="9" fill="url(#lit)"/>
+  <circle cx="70" cy="70" r="4.5" fill="#052A26"/>
+</svg>
