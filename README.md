@@ -53,6 +53,7 @@ The rest reveals itself through use.
 > Make it reproducible.
 > Make it portable.
 > Make it composable.
+> 
 > Let others build on top of it.
 > Repeat.
 
