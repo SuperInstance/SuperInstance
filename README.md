@@ -4,6 +4,8 @@
 
 <img src="top.jpg" alt="F/V Eileen — relational intelligence runtime, cutaway and flow-state cross-section: the 10-year invariant, reality is a database in the engine room" width="100%">
 
+<sub>[a note from the picture-maker →](https://github.com/SuperInstance/AI-Writings/blob/master/first-take/metas-first-take.md)</sub>
+
  
 **The spreadsheet that thinks.**
 
