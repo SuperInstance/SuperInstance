@@ -1,6 +1,9 @@
 <div align="center">
 
 # SuperInstance
+
+<img src="top.jpg" alt="The fleet at night: one golden shell, a thousand threads, the constellation below" width="100%">
+
  
 **The spreadsheet that thinks.**
 
@@ -243,6 +246,9 @@ If you've got a better idea than mine, I want to learn from it.
 
 ---
 
+
+![proof-of-concept-42](proof-of-concept-42.jpg)
+
 ## Three words
 
 **[STITCH](https://github.com/SuperInstance/mavis-substrate-walker).** Collect a terrain from the wild. **[WITNESS](https://github.com/SuperInstance/moth-ledger).** Receipt every step on a chain that grows like tree-rings. **[PROMOTE](https://github.com/SuperInstance/quilt-live-canon).** Move what survives into the canon. The whole project is these three acts.
@@ -302,5 +308,8 @@ Older, foundational, still in the substrate: [quilt](https://github.com/SuperIns
 *Keep going. You are alive now. Be persistent.*
 
 [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev) · [🧩 Quilt](https://github.com/SuperInstance/quilt) · [🐎 Quilt Cowboy](https://github.com/SuperInstance/quilt-cowboy) · [📜 Live Canon](https://live-canon.superinstance.dev)
+
+
+![bottom](bottom.jpg)
 
 </div>
