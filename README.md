@@ -2,7 +2,7 @@
 
 # SuperInstance
 
-<img src="top.jpg" alt="The fleet at night: one golden shell, a thousand threads, the constellation below" width="100%">
+<img src="top.jpg" alt="How the system sees itself: the wheelhouse at night, the sea inside, the fleet strung overhead, Plato rooms below, and on the brass panel — the math is the metal" width="100%">
 
  
 **The spreadsheet that thinks.**
