@@ -204,13 +204,10 @@ The missing piece was giving the parts a common language.
  
 The same pattern repeats everywhere.
  
-A camera becomes a fish classifier.
- 
-A microphone counts trolling-wire beads.
- 
-A scale becomes labeled training data.
- 
-A timestamp becomes an audit trail.
+A camera becomes a fish classifier with labeled totes.
+A microphone becomes crew-led supervised-learning.
+A scale or measuring stick in camera-view becomes labeled training data.
+ A timestamp becomes an audit trail.
  
 A fleet becomes a live information network.
  
@@ -223,29 +220,21 @@ Because useful tools were ported into a shared environment and allowed to learn.
 ### Why Quilt Exists
  
 I built Quilt because I wanted my boat to be easier to work with.
- 
 I wanted every sensor, device, workflow, and experiment to become something I could wire together as easily as a spreadsheet formula.
+ I wanted the bridge to become a place where intentions are expressed and systems coordinate themselves.
  
-I wanted the bridge to become a place where intentions are expressed and systems coordinate themselves.
- 
-Not the engine room.
- 
-Not the wiring cabinet.
- 
+Not the engine room;
+ Not the wiring cabinet:
 The bridge.
  
 ### An Open Invitation
  
 I am not a software engineer by trade.
- 
 I catch fish.
- 
 The prototypes in this organization are working notes from that journey.
  
 Many of them are rough. Some of them are strange. Most of them were built because I needed an answer to a real operational problem.
- 
 I build the systems I need aboard my own vessel. Shipwrights, captains, programmers, designers, and tinkerers build the next version.
- 
 The point is not that I have the final answer.
  
 The point is that we finally have a way to move ideas from tools, to cells, to agents, and back into reality.
