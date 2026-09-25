@@ -45,20 +45,109 @@ If the technology fades into the background, and the average person simply think
 **We give computes rooms so AI has a home.**
 
 ---
-
-## First, the story - The Wheelhouse
-
-A boat leaves the dock and its captain knows where to go. The [depth sounder](https://github.com/SuperInstance/cellforge) reads the water. The [chart plotter](https://github.com/SuperInstance/quilt) draws the line. The [autopilot](https://github.com/SuperInstance/ax-quilt) holds the heading. The engine turns the fuel. Each one does one job, and each one has been waiting — for a hundred years — for someone to give it a mind.
-
-That wait is over. We give each of those [cells](https://github.com/SuperInstance/moth-cells) the kind of mind it can carry. The captain stops reading every number. The captain stops deciding every next move. The captain dispatches. The crew does the trade. The boat becomes the room the captain inhabits, not the machine the captain runs.
-
-Concretely, Do I want a bathymetric recorder? Tell my designer-agent to port the depth output on the sounder to the track-line file to save depth with position; and rebuild the chart's depth-contours on spare compute times - watch it happen. Want to ML a fish identifier on the back deck? Clearly label the totes with species name and the cameras will get as good as the crew. tell the back-deck microphone to count the beads on the trolling wire to know what depth fish were caught. Log that in a timestamped entry and pass the information to the agent watching the sounder's echogram as ground truth. Put a measuring stick in the fish landing area. Hang the occasional fish on a scale before icing with the scale's dial in view of a camera. all these feeds come in as cells that can be rewound and fast forward together to be annotated for the backend coding agents to optimize and the frontend design agent to group and wire in the spreadsheet logically for maintanence and improvement later. Not the engine-room or back-deck: The Bridge. 
-
-That's the application. That's why I built this. Everything below is the same idea, abstracted further.
-
-My Github Accounts outputs are evolving proofs of concepts around this idea. I started by looking at my boat as a robot with a float chassis, And it wasn't very well automated. This spreadsheet idea made decomposing an autopilot parts and logic easy and visual to the IO at every point. Porting engine sensor sends off arduino or esp32 pins via converters to a cell decouples how it got there from what kind of dashboard you're going to port it to. Or like a bathy record, link the rpms to a servo on the throttle lever and tell your ship with a watch-up word to "increase speed 100 RPMs" and when you hear verbally back correctly enough times, like claude code, you turn on auto accapt for that robotic automation. Quilt can vibe-code a working version of this before I can get it wired up. And if I'm missing a component, the agent can know my inventory and order it. I plan to push the production-repos to a separate organization soon. But the point of having so many prototypes is to prove how easy this is. And to accumulate a growing collection of solutions for developing SuperInstance-aligned agents that understand the system from many angles. 
-
-I am not a programmer by trade. I produce fish by trading time for it with my tools. I want better tools. I don't want to sell tools. I want to inspire better tool-makers than me to run with these concepts and make them killer-apps. I think Quilt already is; and the proof is in this accounts output on a couple coding-plans and a captain iterating while he worked. 
+## The Bridge
+ 
+I spent my career as a commercial fishing captain.
+ 
+People hear that and imagine boats, weather, and fish.
+ 
+What I learned instead was how to manage robots.
+ 
+A modern vessel is already a distributed machine. The engine reports. The sounder watches the water. The chart plotter remembers where you've been. The autopilot steers. Radios talk. Sensors complain. Pumps fail. Crew respond.
+ 
+The captain's job is not to turn every wrench or watch every gauge.
+ 
+The captain gives direction.
+ 
+Everything else is coordination.
+ 
+For decades, I've worked inside a world full of machines that could sense, record, and act, but could not meaningfully collaborate. Each tool lived in its own box. Every new capability required another display, another subscription, another vendor, another integration project.
+ 
+The software industry calls this digital transformation.
+ 
+On a boat, we call it frustration.
+ 
+### A Bathymetric Recorder Is the Perfect Example
+ 
+Suppose I want a better chart.
+ 
+The depth sounder already knows the water depth.
+ 
+The chart plotter already knows the vessel position.
+ 
+Both streams already exist.
+ 
+Yet turning those two facts into a bathymetric recorder is usually treated as a specialized product.
+ 
+A Quilt system sees a much simpler reality:
+ 
+- depth is a cell
+- position is a cell
+- recorded tracklines are cells
+- contour generation is a cell
+- chart rendering is a cell
+ 
+Connect them once.
+ 
+The vessel starts building its own charts.
+ 
+While I sleep, spare compute can regenerate bottom contours. Every pass over the grounds improves the map. Every season improves it again.
+ 
+The value was already in the boat.
+ 
+The missing piece was giving the parts a common language.
+ 
+### From Sensors to Crewmates
+ 
+The same pattern repeats everywhere.
+ 
+A camera becomes a fish classifier.
+ 
+A microphone counts trolling-wire beads.
+ 
+A scale becomes labeled training data.
+ 
+A timestamp becomes an audit trail.
+ 
+A fleet becomes a live information network.
+ 
+Catch locations, depths, temperatures, species, and observations can flow between vessels over Starlink, generating maps and insights no single boat could produce alone.
+ 
+Not because a giant application was purchased.
+ 
+Because useful tools were ported into a shared environment and allowed to learn.
+ 
+### Why Quilt Exists
+ 
+I built Quilt because I wanted my boat to be easier to work with.
+ 
+I wanted every sensor, device, workflow, and experiment to become something I could wire together as easily as a spreadsheet formula.
+ 
+I wanted the bridge to become a place where intentions are expressed and systems coordinate themselves.
+ 
+Not the engine room.
+ 
+Not the wiring cabinet.
+ 
+The bridge.
+ 
+### An Open Invitation
+ 
+I am not a software engineer by trade.
+ 
+I catch fish.
+ 
+The prototypes in this organization are working notes from that journey.
+ 
+Many of them are rough. Some of them are strange. Most of them were built because I needed an answer to a real operational problem.
+ 
+I build the systems I need aboard my own vessel. Shipwrights, captains, programmers, designers, and tinkerers build the next version.
+ 
+The point is not that I have the final answer.
+ 
+The point is that we finally have a way to move ideas from tools, to cells, to agents, and back into reality.
+ 
+If you've got a better idea than mine, I want to learn from it.
 
 ---
 
