@@ -45,19 +45,15 @@ You don't need to understand the whole vessel on day one.
 Just step aboard.
  
 The rest reveals itself through use.
- 
+
+ 
 > **One breath.**
 >
 > Build something useful once.
->
 > Make it reproducible.
->
 > Make it portable.
->
 > Make it composable.
->
 > Let others build on top of it.
->
 > Repeat.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
