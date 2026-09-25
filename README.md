@@ -2,7 +2,7 @@
 
 # SuperInstance
 
-<img src="top.jpg" alt="How the system sees itself: the wheelhouse at night, the sea inside, the fleet strung overhead, Plato rooms below, and on the brass panel — the math is the metal" width="100%">
+<img src="top.jpg" alt="F/V Eileen — relational intelligence runtime, cutaway and flow-state cross-section: the 10-year invariant, reality is a database in the engine room" width="100%">
 
  
 **The spreadsheet that thinks.**
@@ -68,6 +68,7 @@ The rest reveals itself through use.
 [![Live Sites](https://img.shields.io/badge/live_sites-14_green)](https://fleet-dashboard.casey-digennaro.workers.dev)
 
 [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev)
+
 
 </div>
 
@@ -141,6 +142,9 @@ The portable cell contract is the invention.
 
 
 ---
+
+
+![The hermit crab: it carries its home like a cell carries its port](bottom.jpg)
 
 ## The disappearing act
 
@@ -310,6 +314,6 @@ Older, foundational, still in the substrate: [quilt](https://github.com/SuperIns
 [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev) · [🧩 Quilt](https://github.com/SuperInstance/quilt) · [🐎 Quilt Cowboy](https://github.com/SuperInstance/quilt-cowboy) · [📜 Live Canon](https://live-canon.superinstance.dev)
 
 
-![bottom](bottom.jpg)
+<img src="residual-self-image.jpg" alt="How the system sees itself: the wheelhouse at night, the sea inside, the fleet strung overhead as a net of faces, Plato rooms below, and on the brass panel — the math is the metal" width="100%">
 
 </div>
