@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quilt Show — E1: A Cell Learns It Is Alive</title>
+<style>
+  :root{
+    --abyss:#0a1418; --panel:#10222a; --ink:#d8e6e4; --dim:#7fa3a0;
+    --teal:#39d3c0; --amber:#ffb347; --line:#1e3a42; --hot:#ff6b6b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--abyss);color:var(--ink);
+       font:15px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+  #stage{display:grid;grid-template-columns:1fr 340px;height:100vh}
+  #grid{position:relative}
+  canvas{display:block;width:100%;height:100%}
+  #side{border-left:1px solid var(--line);background:var(--panel);
+        display:flex;flex-direction:column;padding:14px;gap:12px;overflow:auto}
+  h1{font-size:15px;margin:0;color:var(--teal);letter-spacing:.08em}
+  .sub{color:var(--dim);font-size:12px}
+  .cellcard{border:1px solid var(--line);border-radius:8px;padding:10px;background:#0c1b21}
+  .cellcard h3{margin:0 0 6px;font-size:13px}
+  .cellcard code{font-size:12px;color:var(--amber);white-space:pre-wrap}
+  #zoom label{font-size:12px;color:var(--dim);margin-right:8px}
+  #explain{border:1px solid var(--teal);border-radius:8px;padding:10px;background:#0d1f24}
+  #explain p{margin:0 0 8px}
+  #explain.short p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #explain .fb{display:flex;gap:8px}
+  button{background:#14323a;border:1px solid var(--line);color:var(--ink);
+         border-radius:6px;padding:4px 10px;font:inherit;font-size:12px;cursor:pointer}
+  button:hover{border-color:var(--teal)}
+  #playbar{display:flex;align-items:center;gap:10px}
+  #scrub{flex:1}
+  #scene{color:var(--amber);font-size:12px;white-space:nowrap}
+  #eventlog{font-size:12px;color:var(--dim);max-height:140px;overflow:auto}
+  #eventlog div{border-left:2px solid var(--teal);padding-left:8px;margin:4px 0}
+  .tag{position:absolute;background:#0d1f24;border:1px solid var(--line);border-radius:6px;
+       padding:2px 8px;font-size:11px;color:var(--dim);pointer-events:none}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="grid"><canvas id="cv"></canvas><div id="tags"></div></div>
+  <div id="side">
+    <div>
+      <h1>THE QUILT SHOW · EPISODE 1</h1>
+      <div class="sub">A Cell Learns It Is Alive — a crab builds a heat alarm with an agent, live.</div>
+    </div>
+    <div id="playbar">
+      <button id="play">▶ play</button>
+      <input id="scrub" type="range" min="0" max="1000" value="0">
+      <span id="scene">S1 · title</span>
+    </div>
+    <div id="zoom">
+      <span style="font-size:12px;color:var(--dim)">abstraction:</span>
+      <label><input type="radio" name="z" value="verbose"> plain words</label>
+      <label><input type="radio" name="z" value="precise" checked> precise nature-lang</label>
+      <label><input type="radio" name="z" value="code"> code</label>
+    </div>
+    <div id="cards"></div>
+    <div id="explain">
+      <p id="exptext"></p>
+      <div class="fb">
+        <button id="shorter">✂ shorter</button>
+        <button id="allgood">✓ all good</button>
+      </div>
+      <div class="sub" id="prefnote"></div>
+    </div>
+    <div id="eventlog"></div>
+  </div>
+</div>
+<script>
+// ─── Teaching model — a faithful mini reactive engine ────────────────────────
+// Semantics match SuperInstance/quilt packages/core canon (the repo is the
+// source of truth; this inline model exists so the episode runs from file://):
+//  - value cell:  a fact with a name            (cells/value.ts)
+//  - formula:     a promise, kept lazily; a pull seeds the graph
+//                 and the computed value persists on the cell      (cells/formula.ts, PATCH 9)
+//  - listener:    {kind:'listener', watch:[...], condition?, action}
+//                 receives an event {changed, prev, current}       (cells/listener.ts)
+//  - propagate threads the watched cell's pre-change value        (engine.ts, PR #27 class 5)
+const engine = {
+  cells: new Map(),
+  define(def){ const c = {def, value:{data:def.value, status:'ready'}, dependents:[], prev:null};
+               this.cells.set(def.id, c); return c; },
+  link(id, watches){ for(const w of watches) this.cells.get(w).dependents.push(id); },
+  async get(id){ const c=this.cells.get(id);
+    if(c.def.kind!=='formula') return c.value;
+    const prev = c.value;
+    const data = c.def.fn(this);
+    c.prev = prev.data;                       // PATCH 9: a pull seeds the graph
+    c.value = {data, status:'ready'};
+    return c.value; },
+  async set(id, v){ const c=this.cells.get(id);
+    const prev=c.value; c.value={data:v,status:'ready'};
+    await this.propagate(id, prev.data); },
+  async propagate(changed, prevData, seen=new Set()){
+    if(seen.has(changed)) return; seen.add(changed);      // cycle guard (class 4)
+    const c=this.cells.get(changed);
+    for(const depId of c.dependents){
+      const dep=this.cells.get(depId);
+      if(dep.def.kind==='formula'){ await this.get(depId); }   // eager for the show
+      await this.propagate(depId, dep.def.kind==='formula'?dep.prev:prevData, seen);
+    }
+    for(const depId of c.dependents){
+      const dep=this.cells.get(depId);
+      if(dep.def.kind!=='listener' || !dep.def.watch.includes(changed)) continue;
+      const cur=c.value.data;
+      const ev={changed, prev:prevData, current:cur};        // honest prev (class 5)
+      if(dep.def.condition && !dep.def.condition(ev)) continue;
+      await dep.def.action(ev);
+      bus.emit('listener', {id:depId, ev});
+    }
+  }
+};
+// ─── Episode sheet ───────────────────────────────────────────────────────────
+engine.define({id:'temp', kind:'value', value:20});
+engine.define({id:'sev',  kind:'formula', fn:e=> e.cells.get('temp').value.data>30 ? 2 : 1});
+engine.define({id:'alarm',kind:'listener', watch:['sev'],
+               condition:ev=>ev.current!==ev.prev,
+               action:async ev=>logEvent(`alarm fired · {changed:"${ev.changed}", prev:${ev.prev}, current:${ev.current}}`)});
+engine.link('sev',['temp']); engine.link('alarm',['sev']);
+// ─── Bus + explainer (learns your length preference) ────────────────────────
+const bus={h:{},on(k,f){(this.h[k]??=[]).push(f)},emit(k,d){(this.h[k]??[]).forEach(f=>f(d))}};
+const pref = JSON.parse(localStorage.getItem('quiltshow.pref')||'{"short":false}');
+function setPref(p){ Object.assign(pref,p); localStorage.setItem('quiltshow.pref',JSON.stringify(pref));
+  document.getElementById('explain').classList.toggle('short',pref.short);
+  document.getElementById('prefnote').textContent = pref.short
+    ? 'explainer: short mode — you asked, it remembers.'
+    : 'explainer: full mode. Tell it “shorter” once and it stays shorter.'; }
+setPref({});
+document.getElementById('shorter').onclick=()=>setPref({short:true});
+document.getElementById('allgood').onclick=()=>setPref({short:false});
+function explain(txt){ document.getElementById('exptext').textContent =
+  pref.short ? txt.split('.')[0]+'.' : txt; }
+function logEvent(msg){ const d=document.createElement('div'); d.textContent='› '+msg;
+  document.getElementById('eventlog').prepend(d); }
+// ─── Abstraction layers (the three zooms) ───────────────────────────────────
+const LAYERS = {
+  temp: { verbose:"A fact with a name: the temperature right now.",
+          precise:"VALUE temp : number. Seed 20. May be overwritten by set().",
+          code:'{ "id":"temp", "kind":"value", "value":20 }' },
+  sev:  { verbose:"Looks at the temperature and admits how bad things are.",
+          precise:"FORMULA sev : 1 if temp ≤ 30, else 2. Kept lazily; recomputed on poke.",
+          code:'{ "id":"sev", "kind":"formula", "expr":"temp > 30 ? 2 : 1" }' },
+  alarm:{ verbose:"The watcher. Proud to do nothing until severity changes.",
+          precise:"LISTENER alarm WATCHES sev WHEN current ≠ prev CALLS record WITH {changed, prev, current}.",
+          code:'{ "id":"alarm", "kind":"listener", "watch":["sev"],\n  "condition":"current !== prev", "action":"record" }' } };
+let zoom='precise';
+document.querySelectorAll('#zoom input').forEach(r=>r.onchange=()=>{zoom=r.value;renderCards();});
+function renderCards(){ const el=document.getElementById('cards'); el.innerHTML='';
+  for(const id of ['temp','sev','alarm']){
+    const d=document.createElement('div'); d.className='cellcard';
+    d.innerHTML=`<h3 style="color:${id==='alarm'?'var(--amber)':'var(--teal)'}">◆ ${id}</h3><code></code>`;
+    d.querySelector('code').textContent = LAYERS[id][zoom]; el.appendChild(d);} }
+renderCards();
+// ─── Canvas: grid, cells, agent cursor, fuel-drop tracer ────────────────────
+const cv=document.getElementById('cv'), ctx=cv.getContext('2d');
+const POS={temp:[.22,.55], sev:[.5,.35], alarm:[.78,.55]};
+let highlight=new Set(), drop=null, agent={x:.06,y:.9,tx:.06,ty:.9,intent:''};
+function fit(){ cv.width=cv.clientWidth*devicePixelRatio; cv.height=cv.clientHeight*devicePixelRatio; }
+addEventListener('resize',fit); fit();
+function P(id){ const [fx,fy]=POS[id]; return [fx*cv.width, fy*cv.height]; }
+function draw(t){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  ctx.strokeStyle='#14262e'; ctx.lineWidth=1;
+  for(let x=0;x<cv.width;x+=40*devicePixelRatio){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,cv.height);ctx.stroke();}
+  for(let y=0;y<cv.height;y+=40*devicePixelRatio){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(cv.width,y);ctx.stroke();}
+  // edges
+  ctx.strokeStyle='#2a4a54'; ctx.lineWidth=2*devicePixelRatio;
+  for(const [a,b] of [['temp','sev'],['sev','alarm']]){
+    const [x1,y1]=P(a),[x2,y2]=P(b);
+    ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2);
+    if(highlight.has(a)&&highlight.has(b)){ctx.strokeStyle='#ffb347';ctx.shadowColor='#ffb347';ctx.shadowBlur=18;}
+    ctx.stroke(); ctx.shadowBlur=0; ctx.strokeStyle='#2a4a54'; }
+  // cells
+  for(const id of ['temp','sev','alarm']){
+    const [x,y]=P(id), r=26*devicePixelRatio, c=engine.cells.get(id);
+    const on=highlight.has(id);
+    ctx.beginPath(); ctx.arc(x,y,r,0,7);
+    ctx.fillStyle = id==='alarm' ? '#241a08' : '#0d2a2a';
+    if(on){ctx.shadowColor='#39d3c0';ctx.shadowBlur=26;}
+    ctx.fill(); ctx.shadowBlur=0;
+    ctx.strokeStyle = on ? '#39d3c0' : '#2a4a54'; ctx.lineWidth=2*devicePixelRatio; ctx.stroke();
+    ctx.fillStyle='#d8e6e4'; ctx.font=`${12*devicePixelRatio}px ui-monospace`; ctx.textAlign='center';
+    ctx.fillText(id, x, y-2*devicePixelRatio);
+    ctx.fillStyle='#7fa3a0';
+    ctx.fillText(String(c.value?.data), x, y+13*devicePixelRatio); }
+  // fuel-drop tracer (gallon of fuel: tank → promise → watcher)
+  if(drop){ const [x1,y1]=P(drop.from),[x2,y2]=P(drop.to);
+    const k=Math.min(1,(t-drop.t0)/900), e=k<.5?2*k*k:1-((-2*k+2)**2)/2;
+    const x=x1+(x2-x1)*e, y=y1+(y2-y1)*e - Math.sin(e*Math.PI)*40*devicePixelRatio;
+    ctx.beginPath(); ctx.arc(x,y,6*devicePixelRatio,0,7);
+    ctx.fillStyle='#ffb347'; ctx.shadowColor='#ffb347'; ctx.shadowBlur=20; ctx.fill(); ctx.shadowBlur=0;
+    if(k>=1 && drop.next){ drop={...drop.next,t0:t}; highlight.add(drop.to); drop.next=null; } }
+  // agent crab cursor
+  agent.x+=(agent.tx-agent.x)*.08; agent.y+=(agent.ty-agent.y)*.08;
+  ctx.font=`${22*devicePixelRatio}px serif`; ctx.textAlign='center';
+  ctx.fillText('🦀', agent.x, agent.y);
+  if(agent.intent){ ctx.fillStyle='#7fa3a0'; ctx.font=`${11*devicePixelRatio}px ui-monospace`;
+    ctx.fillText('“'+agent.intent+'”', agent.x, agent.y-20*devicePixelRatio); }
+  requestAnimationFrame(draw);
+}
+requestAnimationFrame(draw);
+// ─── Scenes (driven by the voice tracks; durations from audio) ──────────────
+const scenes=[
+ {name:'S1 · title', v:'s1', run(){ agent.intent=''; explain("Episode 1. A heat alarm, built cell by cell, with the agent building it on camera. The abstraction slider on the right works at any moment — plain words, precise nature-language, or the actual cell definitions.");
+    logEvent('episode start · sheet loaded with 3 empty intentions'); }},
+ {name:'S2 · place temp', v:'s2', run(){ agent.tx=P('temp')[0]; agent.ty=P('temp')[1]+46; agent.intent='I want to know when it gets hot.';
+    setTimeout(()=>{highlight.add('temp'); explain("A VALUE cell is a fact with a name. temp = 20. It only changes when someone set()s it — the world writes here by pushing the button later.");},600); }},
+ {name:'S3 · place sev', v:'s3', run(){ agent.tx=P('sev')[0]; agent.ty=P('sev')[1]+46; agent.intent='cool is 1, hot is 2 — but only when asked';
+    setTimeout(()=>{highlight.add('sev'); explain("A FORMULA is a promise kept lazily. sev reads temp and returns 1 or 2. Nothing recomputes until a get() pulls it or a poke propagates — and after a pull, the computed value persists on the cell (patch 9: a pull seeds the graph).");},600); }},
+ {name:'S4 · place alarm', v:'s4', run(){ agent.tx=P('alarm')[0]; agent.ty=P('alarm')[1]+46; agent.intent='wake me when it changes — and only then';
+    setTimeout(()=>{highlight.add('alarm'); explain("A LISTENER is a watcher: {watch:['sev'], condition, action}. It is proud to do nothing until sev actually changes. This one wakes when current ≠ prev and receives the event payload {changed, prev, current}.");},600); }},
+ {name:'S5 · FIRE', v:'s5', run(){ agent.intent='set(temp, 35). here we go.';
+    setTimeout(async()=>{ highlight=new Set(['temp']); drop={from:'temp',to:'sev',t0:performance.now(),next:{from:'sev',to:'alarm',t0:0}};
+      await engine.set('temp',35);
+      explain("The chain fires: fact 20→35, promise recomputes 1→2, watcher wakes with {changed:'sev', prev:1, current:2}. The amber drop is a gallon of fuel — follow it from tank to exhaust. prev used to equal current here (the trap had a hole); now the crossing tells the truth.");},900); }},
+ {name:'S6 · feedback', v:'s6', run(){ agent.intent='the explainer learns you too';
+    explain("That box that explains itself? Tell it ✂ shorter or ✓ all good — it remembers (localStorage) and next scene speaks your length. That's the whole shape of it: a spreadsheet that gets to know you, and a WHY you can open. Next episode: the double-entry ledger, where every change leaves a receipt."); }},
+];
+// ─── Player ──────────────────────────────────────────────────────────────────
+let cur=-1, playing=false, audio=new Audio();
+const scrub=document.getElementById('scrub');
+async function goto(i){
+  if(i>=scenes.length){ playing=false; document.getElementById('play').textContent='▶ play'; return; }
+  cur=i; const s=scenes[i]; document.getElementById('scene').textContent=s.name;
+  audio.src='voice/'+s.v+'.mp3'; s.run();
+  if(playing){ try{ await audio.play(); }catch(e){} }
+}
+audio.onended=()=>{ if(playing) goto(cur+1); };
+audio.ontimeupdate=()=>{ if(audio.duration) scrub.value=audio.currentTime/audio.duration*1000; };
+scrub.oninput=()=>{ if(audio.duration) audio.currentTime=scrub.value/1000*audio.duration; };
+document.getElementById('play').onclick=async()=>{ playing=!playing;
+  document.getElementById('play').textContent=playing?'❚❚ pause':'▶ play';
+  if(playing){ if(cur<0) return goto(0); try{ await audio.play(); }catch(e){} } else audio.pause(); };
+// ambient: nothing plays until you press play — file:// friendly, no autoplay wars.
+explain("Press ▶ play. The crab builds a value cell, a formula, and a listener — then pulls the trigger. The slider shows every cell as plain words, precise nature-language, or code. The box that explains things learns your preferred length.");
+</script>
+</body>
+</html>

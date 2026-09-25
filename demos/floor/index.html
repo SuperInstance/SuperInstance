@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>quilt-view — the Penrose floor, live</title>
+<style>
+  html,body{margin:0;height:100%;background:#08141d;color:#bee1eb;
+    font:12px ui-monospace,monospace}
+  #wrap{display:grid;grid-template-columns:1fr 320px;height:100%}
+  canvas{display:block;width:100%;height:100%}
+  #side{padding:12px;border-left:1px solid #16303f;overflow:auto}
+  h1{font-size:13px;color:#46e0c0;margin:0 0 8px}
+  p{color:#5b8494;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="stage" width="900" height="900"></canvas>
+  <div id="side">
+    <h1>quilt-view — the floor, live</h1>
+    <p>Left: the Penrose vertex lattice, stage floor. Right canvas:
+    the kernel scene — <b>penfield.z</b> orbit swarm advancing one
+    coherent step per beat; <b>twist.curve</b> the twist-engine
+    instrument's registrations on this lattice; <b>twist.live</b> the
+    sweep re-measuring R(θ) every 400 ms.</p>
+    <canvas id="view" width="300" height="560"></canvas>
+    <p>Everything on the right is a frame diff from
+    <code>RenderModel.drain()</code> — subscription → scene → frames,
+    on the Contract v5 kernel.</p>
+  </div>
+</div>
+<script type="module" src="./main.mjs"></script>
+</body>
+</html>

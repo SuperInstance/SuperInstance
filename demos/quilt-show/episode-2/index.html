@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quilt Show — E2: The Receipt</title>
+<style>
+  :root{ --abyss:#0a1418; --panel:#10222a; --ink:#d8e6e4; --dim:#7fa3a0;
+         --teal:#39d3c0; --amber:#ffb347; --line:#1e3a42; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--abyss);color:var(--ink);font:15px/1.5 ui-monospace,Menlo,monospace}
+  #stage{display:grid;grid-template-columns:1fr 380px;height:100vh}
+  #grid{position:relative} canvas{display:block;width:100%;height:100%}
+  #side{border-left:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;padding:14px;gap:12px;overflow:auto}
+  h1{font-size:15px;margin:0;color:var(--teal);letter-spacing:.08em}
+  .sub{color:var(--dim);font-size:12px}
+  .cellcard{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:#0c1b21}
+  .cellcard h3{margin:0 0 4px;font-size:13px}
+  .cellcard code{font-size:12px;color:var(--amber);white-space:pre-wrap}
+  #zoom label{font-size:12px;color:var(--dim);margin-right:8px}
+  #explain{border:1px solid var(--teal);border-radius:8px;padding:10px;background:#0d1f24}
+  #explain p{margin:0 0 8px}
+  #explain.short p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  button{background:#14323a;border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:4px 10px;font:inherit;font-size:12px;cursor:pointer}
+  button:hover{border-color:var(--teal)}
+  #playbar{display:flex;align-items:center;gap:10px}
+  #scrub{flex:1} #scene{color:var(--amber);font-size:12px;white-space:nowrap}
+  #receipts{font-size:11.5px;max-height:200px;overflow:auto}
+  #receipts div{border-left:2px solid var(--amber);padding:2px 8px;margin:4px 0;color:var(--dim)}
+  #receipts div b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="grid"><canvas id="cv"></canvas></div>
+  <div id="side">
+    <div><h1>THE QUILT SHOW · EPISODE 2</h1>
+      <div class="sub">The Receipt — double-entry, hash-chained, auditor-approved.</div></div>
+    <div id="playbar"><button id="play">▶ play</button><input id="scrub" type="range" min="0" max="1000" value="0"><span id="scene">S1</span></div>
+    <div id="zoom"><span style="font-size:12px;color:var(--dim)">abstraction:</span>
+      <label><input type="radio" name="z" value="verbose"> plain words</label>
+      <label><input type="radio" name="z" value="precise" checked> precise nature-lang</label>
+      <label><input type="radio" name="z" value="code"> code</label></div>
+    <div id="cards"></div>
+    <div id="explain"><p id="exptext"></p>
+      <div style="display:flex;gap:8px"><button id="shorter">✂ shorter</button><button id="allgood">✓ all good</button></div>
+      <div class="sub" id="prefnote"></div></div>
+    <div id="receipts"></div>
+  </div>
+</div>
+<script>
+// Teaching model — same mini engine as E1, plus a hash-chained witness.
+// Canon: SuperInstance/quilt packages/core; receipts mirror the fleet's
+// fnv1a-chained WAL discipline (hermit quilt_wal / SignedWAL lineage).
+const engine = {
+  cells:new Map(), receipts:[],
+  define(d){ this.cells.set(d.id,{def:d,value:{data:d.value,status:'ready'},dependents:[],prev:undefined}); },
+  link(id,ws){ for(const w of ws) this.cells.get(w).dependents.push(id); },
+  async get(id){ const c=this.cells.get(id);
+    if(c.def.kind!=='formula') return c.value;
+    const prev=c.value; c.prev=prev.data;
+    c.value={data:c.def.fn(this),status:'ready'}; return c.value; },
+  async set(id,v){ const c=this.cells.get(id); const prev=c.value;
+    c.value={data:v,status:'ready'}; await this.propagate(id,prev.data,new Set()); },
+  async propagate(changed,prevData,seen){
+    if(seen.has(changed)) return; seen.add(changed);
+    const c=this.cells.get(changed);
+    for(const depId of c.dependents){ const dep=this.cells.get(depId);
+      if(dep.def.kind==='formula') await this.get(depId);
+      await this.propagate(depId, dep.def.kind==='formula'?dep.prev:prevData, seen); }
+    for(const depId of c.dependents){ const dep=this.cells.get(depId);
+      if(dep.def.kind!=='listener' || !dep.def.watch.includes(changed)) continue;
+      const ev={changed, prev:prevData, current:c.value.data};
+      if(dep.def.condition && !dep.def.condition(ev)) continue;
+      await dep.def.action(ev); }
+  }
+};
+function fnv1a(s){ let h=0x811c9dc5; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,0x01000193)>>>0; } return h.toString(16).padStart(8,'0'); }
+let tick=0, lastHash='genesis';
+function receipt(r){ const line=`t${r.tick} ${r.from} ${r.amount>0?'+':''}${r.amount} → ${r.to} · prev ${r.prev} → cur ${r.current}`;
+  lastHash=fnv1a(lastHash+line);
+  engine.receipts.push({line,hash:lastHash});
+  const d=document.createElement('div');
+  d.innerHTML=`<b>⟨${lastHash}⟩</b> ${line}`;
+  document.getElementById('receipts').prepend(d); }
+// Episode sheet: double-entry fuel ledger
+engine.define({id:'tank', kind:'value', value:100});
+engine.define({id:'burn', kind:'value', value:2});
+engine.define({id:'tank_level', kind:'formula', fn:e=>e.cells.get('tank').value.data});
+engine.define({id:'engine_takes', kind:'formula', fn:e=>e.cells.get('burn').value.data});
+engine.define({id:'exhaust_out', kind:'formula', fn:e=>e.cells.get('engine_takes').value.data});
+engine.define({id:'witness', kind:'listener', watch:['tank_level','engine_takes','exhaust_out'],
+  condition:ev=>true,
+  action:async ev=>{
+    if(ev.changed==='tank_level'){ receipt({tick, from:'tank', to:'engine', amount:ev.current-ev.prev, prev:ev.prev, current:ev.current}); }
+    if(ev.changed==='engine_takes'){ receipt({tick, from:'engine', to:'exhaust', amount:ev.current, prev:0, current:ev.current}); }
+  }});
+engine.link('tank_level',['tank']); engine.link('engine_takes',['burn','tank_level']);
+engine.link('exhaust_out',['engine_takes']); engine.link('witness',['tank_level','engine_takes','exhaust_out']);
+// Seed the graph (Patch 9 discipline): pull every formula once so the FIRST
+// receipt has an honest prev. Unseeded, tick 1's tank receipt would read NaN.
+(async()=>{ await engine.get('tank_level'); await engine.get('engine_takes'); await engine.get('exhaust_out'); })();
+// UI plumbing
+const pref=JSON.parse(localStorage.getItem('quiltshow.pref')||'{"short":false}');
+function setPref(p){ Object.assign(pref,p); localStorage.setItem('quiltshow.pref',JSON.stringify(pref));
+  document.getElementById('explain').classList.toggle('short',pref.short);
+  document.getElementById('prefnote').textContent=pref.short?'explainer: short mode (your preference, remembered).':'explainer: full mode.'; }
+setPref({});
+document.getElementById('shorter').onclick=()=>setPref({short:true});
+document.getElementById('allgood').onclick=()=>setPref({short:false});
+function explain(t){ document.getElementById('exptext').textContent=pref.short?t.split('.')[0]+'.':t; }
+const LAYERS={
+ tank:{verbose:"A fact: one hundred gallons, owed to the engine.", precise:"VALUE tank : gallons. Seed 100. Decremented only by burns that arrive elsewhere.", code:'{ "id":"tank", "kind":"value", "value":100 }'},
+ burn:{verbose:"A fact: two gallons leave per tick.", precise:"VALUE burn : gallons/tick. Seed 2. The pace of the whole sheet.", code:'{ "id":"burn", "kind":"value", "value":2 }'},
+ tank_level:{verbose:"What the tank owes after the last burn.", precise:"FORMULA tank_level = tank. Written down so the leaving is witnessed.", code:'{ "id":"tank_level", "kind":"formula", "expr":"tank" }'},
+ engine_takes:{verbose:"The mirror: what the engine received.", precise:"FORMULA engine_takes = burn. Double-entry: every gallon leaving tank arrives here. Mirror must hold.", code:'{ "id":"engine_takes", "kind":"formula", "expr":"burn" }'},
+ exhaust_out:{verbose:"What left the engine. The walk's end.", precise:"FORMULA exhaust_out = engine_takes. Third hop of the gallon.", code:'{ "id":"exhaust_out", "kind":"formula", "expr":"engine_takes" }'},
+ witness:{verbose:"The writer. It never judges, only records.", precise:"LISTENER witness WATCHES tank_level, engine_takes, exhaust_out WRITES a hash-chained receipt per crossing.", code:'{ "id":"witness", "kind":"listener", "watch":[...3 ids], "action":"receipt" }'}};
+let zoom='precise';
+document.querySelectorAll('#zoom input').forEach(r=>r.onchange=()=>{zoom=r.value;renderCards();});
+function renderCards(){ const el=document.getElementById('cards'); el.innerHTML='';
+  for(const id of ['tank','burn','tank_level','engine_takes','exhaust_out','witness']){
+    const d=document.createElement('div'); d.className='cellcard';
+    d.innerHTML=`<h3 style="color:${id==='witness'?'var(--amber)':'var(--teal)'}">◆ ${id}</h3><code></code>`;
+    d.querySelector('code').textContent=LAYERS[id][zoom]; el.appendChild(d);} }
+renderCards();
+// Canvas: ledger row + tracer walking tank → engine → exhaust
+const cv=document.getElementById('cv'), ctx=cv.getContext('2d');
+const POS={tank:[.15,.5], burn:[.15,.82], tank_level:[.38,.3], engine_takes:[.62,.3], exhaust_out:[.85,.5], witness:[.5,.72]};
+let highlight=new Set(), drop=null, agent={x:.05,y:.12,tx:.05,ty:.12,intent:''};
+function fit(){ cv.width=cv.clientWidth*devicePixelRatio; cv.height=cv.clientHeight*devicePixelRatio; }
+addEventListener('resize',fit); fit();
+function P(id){ const [fx,fy]=POS[id]; return [fx*cv.width,fy*cv.height]; }
+function draw(t){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  ctx.strokeStyle='#14262e';
+  for(let x=0;x<cv.width;x+=40*devicePixelRatio){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,cv.height);ctx.stroke();}
+  for(let y=0;y<cv.height;y+=40*devicePixelRatio){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(cv.width,y);ctx.stroke();}
+  ctx.lineWidth=2*devicePixelRatio;
+  for(const [a,b] of [['tank','tank_level'],['burn','engine_takes'],['tank_level','engine_takes'],['engine_takes','exhaust_out'],['tank_level','witness'],['engine_takes','witness'],['exhaust_out','witness']]){
+    const [x1,y1]=P(a),[x2,y2]=P(b); ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2);
+    if(highlight.has(a)&&highlight.has(b)){ctx.strokeStyle='#ffb347';ctx.shadowColor='#ffb347';ctx.shadowBlur=16;}
+    else ctx.strokeStyle='#2a4a54';
+    ctx.stroke(); ctx.shadowBlur=0; }
+  for(const id of Object.keys(POS)){
+    const [x,y]=P(id), r=24*devicePixelRatio, c=engine.cells.get(id), on=highlight.has(id);
+    ctx.beginPath(); ctx.arc(x,y,r,0,7);
+    ctx.fillStyle=id==='witness'?'#241a08':'#0d2a2a';
+    if(on){ctx.shadowColor='#39d3c0';ctx.shadowBlur=22;}
+    ctx.fill(); ctx.shadowBlur=0;
+    ctx.strokeStyle=on?'#39d3c0':'#2a4a54'; ctx.stroke();
+    ctx.fillStyle='#d8e6e4'; ctx.font=`${11*devicePixelRatio}px ui-monospace`; ctx.textAlign='center';
+    ctx.fillText(id,x,y-1*devicePixelRatio);
+    ctx.fillStyle='#7fa3a0'; ctx.fillText(String(c?.value?.data),x,y+12*devicePixelRatio); }
+  if(drop){ const [x1,y1]=P(drop.from),[x2,y2]=P(drop.to);
+    const k=Math.min(1,(t-drop.t0)/800), e=k<.5?2*k*k:1-((-2*k+2)**2)/2;
+    const x=x1+(x2-x1)*e, y=y1+(y2-y1)*e-Math.sin(e*Math.PI)*30*devicePixelRatio;
+    ctx.beginPath(); ctx.arc(x,y,6*devicePixelRatio,0,7);
+    ctx.fillStyle='#ffb347'; ctx.shadowColor='#ffb347'; ctx.shadowBlur=18; ctx.fill(); ctx.shadowBlur=0;
+    if(k>=1&&drop.next){ drop={...drop.next,t0:t}; highlight.add(drop.to); drop.next=null; } }
+  agent.x+=(agent.tx-agent.x)*.08; agent.y+=(agent.ty-agent.y)*.08;
+  ctx.font=`${22*devicePixelRatio}px serif`; ctx.textAlign='center'; ctx.fillText('🦀',agent.x,agent.y);
+  if(agent.intent){ ctx.fillStyle='#7fa3a0'; ctx.font=`${11*devicePixelRatio}px ui-monospace`;
+    ctx.fillText('“'+agent.intent+'”',agent.x,agent.y-18*devicePixelRatio); }
+  requestAnimationFrame(draw); }
+requestAnimationFrame(draw);
+async function burnTick(){ tick++;
+  highlight=new Set(['tank','burn']);
+  const tank=engine.cells.get('tank'), burn=engine.cells.get('burn');
+  const next=tank.value.data-burn.value.data;
+  drop={from:'tank',to:'tank_level',t0:performance.now(),next:{from:'tank_level',to:'engine_takes',t0:0,next:{from:'engine_takes',to:'exhaust_out',t0:0}}};
+  await engine.set('tank', next);
+  highlight.add('witness'); }
+const scenes=[
+ {name:'S1 · title', v:'s1', run(){ agent.intent=''; explain("Episode 2. Every change in the Quilt leaves a receipt — hash-chained, double-entry, replayable. Boring like an audit. Strong like an audit."); }},
+ {name:'S2 · facts', v:'s2', run(){ agent.tx=P('tank')[0]; agent.ty=P('tank')[1]+44; agent.intent='a tank, a burn rate — owed, not estimated';
+   setTimeout(()=>{highlight=new Set(['tank','burn']); explain("Two VALUE cells: tank=100 gallons, burn=2 gallons/tick. Facts are numbers with a spine. Nothing estimated, everything owed.");},600); }},
+ {name:'S3 · double-entry', v:'s3', run(){ agent.tx=P('engine_takes')[0]; agent.ty=P('engine_takes')[1]+44; agent.intent='every leaving arrives somewhere';
+   setTimeout(()=>{highlight=new Set(['tank_level','engine_takes']); explain("Double-entry: tank_level records the tank's side, engine_takes records the engine's side, and both read the same burn. Formulas are pulled once at load — a pull seeds the graph — so even the first receipt carries an honest previous. If the mirror ever breaks, the sheet is lying, and the sheet knows.");},600); }},
+ {name:'S4 · witness', v:'s4', run(){ agent.tx=P('witness')[0]; agent.ty=P('witness')[1]+44; agent.intent='write it down. all of it.';
+   setTimeout(()=>{highlight=new Set(['witness']); explain("The witness LISTENER writes a receipt per crossing — tick, from, to, amount, prev, current — each hashed into the last (fnv1a, same discipline as the fleet's WAL). Rewind the chain, replay the engine.");},600); }},
+ {name:'S5 · run', v:'s5', run(){ agent.intent='three ticks. walk the gallons.';
+   setTimeout(async()=>{ explain("Three burns. Each gallon walks tank → tank_level → engine_takes → exhaust, one receipt per hop, hashes chained. This is debugging by following fuel, not by guessing. Next episode: the ledger becomes a waveform you can shape.");
+     for(let i=0;i<3;i++){ await burnTick(); await new Promise(r=>setTimeout(r,1400)); } },700); }},
+];
+let cur=-1, playing=false, audio=new Audio();
+const scrub=document.getElementById('scrub');
+async function goto(i){ if(i>=scenes.length){ playing=false; document.getElementById('play').textContent='▶ play'; return; }
+  cur=i; const s=scenes[i]; document.getElementById('scene').textContent=s.name;
+  audio.src='voice/'+s.v+'.mp3'; s.run(); if(playing){ try{ await audio.play(); }catch(e){} } }
+audio.onended=()=>{ if(playing) goto(cur+1); };
+audio.ontimeupdate=()=>{ if(audio.duration) scrub.value=audio.currentTime/audio.duration*1000; };
+scrub.oninput=()=>{ if(audio.duration) audio.currentTime=scrub.value/1000*audio.duration; };
+document.getElementById('play').onclick=async()=>{ playing=!playing;
+  document.getElementById('play').textContent=playing?'❚❚ pause':'▶ play';
+  if(playing){ if(cur<0) return goto(0); try{ await audio.play(); }catch(e){} } else audio.pause(); };
+explain("Press ▶ play. Double-entry programming: two facts, three formulas, one witness — and a gallon you can follow from tank to exhaust, receipt by receipt.");
+</script>
+</body>
+</html>

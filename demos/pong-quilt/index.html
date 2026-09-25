@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>pong-quilt — ML you can watch think</title>
+<style>
+ body{font-family:system-ui;background:#0a0e14;color:#cfd8e3;margin:0}
+ header{padding:8px 12px;border-bottom:1px solid #1d2634;font-size:14px}
+ .row{display:flex;gap:10px;padding:6px 12px;flex-wrap:wrap;align-items:center}
+ button{background:#1f6feb;color:#fff;border:0;border-radius:6px;padding:6px 12px}
+ select,input,textarea{background:#0d1420;color:#cfd8e3;border:1px solid #1d2634;border-radius:6px;padding:5px}
+ canvas{background:#05070b;border:1px solid #1d2634;display:block}
+ small{opacity:.7} .L2{border-top:2px solid #3fb950;margin-top:8px}
+ .C1{border-top:2px solid #bc8cff;margin-top:8px}
+ #receipts{font-family:monospace;font-size:10px;max-height:120px;overflow-y:auto;white-space:pre}
+ #wristband{font-family:monospace;font-size:10px;max-height:90px;overflow-y:auto}
+ .ok{color:#3fb950}.bad{color:#f85149}.warn{color:#d29922}
+ .badge{display:inline-block;border:1px solid #1d2634;border-radius:4px;padding:1px 5px;margin:1px}
+</style>
+</head>
+<body>
+<header><b>pong-quilt</b> <small>Level 1: real genetic training in your browser — cells project the game state, the net plays, speed ramps until planning-ahead is forced, black swans kill certainty. Level 2: scratch-tile hooks (JEV/MOTH/micro-JEPA/LLM seam). C1: coevolution — a GAN pair of paddles. Round 3: the drawn paddle IS the hitbox; hits carry real fitness weight; every verified claim wears a badge.</small></header>
+<div class="row">
+ <button id="go">Train</button><button id="pause">Pause</button>
+ <label>mode <select id="mode">
+  <option value="classic">classic — one net vs the wall</option>
+  <option value="coev">C1 · COEVOLUTION — survivor vs ender (GAN pair)</option>
+ </select></label>
+ <label>games-at-once <input id="pop" type="range" min="16" max="256" value="48"></label>
+ <label>gens/frame <input id="sub" type="range" min="1" max="8" value="1"></label>
+ <label>decision every <input id="dec" type="range" min="1" max="10" value="4"> frames</label>
+ <label>mutation σ <input id="sig" type="range" min="2" max="40" value="12"></label>
+ <span id="stats">gen 0 · games 0 · best —</span>
+</div>
+<div class="row">
+ <b>Pick up the quilt at a real state:</b>
+ <button onclick="loadLevel('level0')">L0 · random</button>
+ <button onclick="loadLevel('level1')">L1 · mid-training</button>
+ <button onclick="loadLevel('level2')">L2 · near-human</button>
+ <button onclick="loadCoev()">C1 · coevolved pair</button>
+ <button id="save">Save quilt (download)</button>
+ <input type="file" id="load" style="display:none"><button onclick="document.getElementById('load').click()">Load quilt file</button>
+ <small>checkpoints are pre-run with the same core (tools/prerun.js, tools/prerun-coev.js) — training is non-monotonic; the curve dips before it climbs.</small>
+</div>
+<div class="row">
+ <canvas id="game" width="360" height="360"></canvas>
+ <div>
+  <canvas id="cells" width="360" height="120"></canvas><br>
+  <canvas id="curve" width="360" height="60" style="margin-top:6px"></canvas>
+  <small>champion-fitness strip: ring-buffered history (bounded — oldest evicted),<br>pattern ported from <b>quilt-edge-ml</b>'s ring_buffer. live proof training is non-monotonic.</small><br>
+  <canvas id="qa" width="180" height="60" style="margin-top:6px"></canvas>
+ </div>
+ <div><small>projection cells: the state vector the net sees, granularly.<br>blue=ball/paddle geometry, amber=velocity, green=intercept pressure,<br>red=decision countdown (speed-of-action limit).</small>
+ <div id="receipts"></div></div>
+</div>
+<div class="row">
+ <b>Wristband — verified claims</b> <small>green = node-pinned proof, amber = browser-only (honest). the registry lives in core.js; tests/honesty.test.js pins the two-way match.</small>
+ <div id="wristband"></div>
+</div>
+<div class="row L2">
+ <b>Level 2 · scratch tile</b>
+ <label>module <select id="l2">
+  <option value="none">none — pure GA</option>
+  <option value="jepa">micro-JEPA (learned 1-step world model)</option>
+  <option value="moth">MOTH (receipted advice ledger)</option>
+  <option value="custom">custom (write below)</option>
+  <option value="llm">LLM seam (Groq, bring-your-own)</option>
+ <option value="qa">quantum audio — QPAM waveform-imaging (labeled sim stand-in)</option>
+ </select></label>
+ <label>weight: mild→strict <input id="w" type="range" min="0" max="100" value="50"></label>
+ <span id="l2stat" class="ok"></span><br>
+ <textarea id="scratch" rows="4" cols="72">// custom L2 module: suggest(state) -> {move:-1|0|1, confidence:0..1}
+// JEV validates the shape; MOTH receipts the row; weight slider blends it in.
+return { name:"my-loop", suggest(s){ return {move: s.ballX < s.paddleX ? -1 : 1, confidence:0.7}; } };</textarea>
+ <button id="attach">Attach</button>
+ <span id="llmkey" style="display:none">endpoint <input id="ep" placeholder="https://api.groq.com/..." size="30"> key <input id="key" type="password" size="12"> <small>stays in page memory only; seam paces calls (death/interval, one in flight — drops counted)</small></span>
+</div>
+<script src="core.js"></script>
+<script src="qa.js"></script>
+<script src="checkpoints/level0.js"></script>
+<script src="checkpoints/level1.js"></script>
+<script src="checkpoints/level2.js"></script>
+<script src="checkpoints/coev.js"></script>
+<script>
+const PQ=PongQuilt,D=PQ.DEFAULTS,randPQ=PQ.rng(Date.now()%1e9);
+let pop=Array.from({length:D.popSize},()=>PQ.makeNet(randPQ)),gen=0,games=0,running=false;
+let champGame=null,champNet=null,receipts=[],receiptHead="0".repeat(64),receiptEvicted=0,l2Mod=null,qaVis=null;
+let champRing=PQ.makeRing(240),evalGen=null,lastSnap=null;
+let jepa=PQ.makeJepa(); // one representation: learn() and suggest() both take sense() vectors
+let coev=null;          // C1 state, lazily built by startGenC()
+let gameId=0;           // identity token: stale advice from a dead game is dropped
+const $=id=>document.getElementById(id);
+function hash(s){let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))>>>0;return h.toString(16).padStart(8,"0");}
+function receipt(kind,move,conf){const row={i:receipts.length,kind,move,conf:+conf.toFixed(2),gen,prev:receiptHead};
+ receiptHead=hash(JSON.stringify(row));row.hash=receiptHead;receipts.push(row);
+ if(receipts.length>40){receipts.shift();receiptEvicted++;} // counted, like makeLedger — a bounded panel that admits it forgets
+ $("receipts").textContent=receipts.slice(-12).map(r=>`${r.kind} move=${r.move} w=${r.conf} ${r.hash}←${r.prev.slice(0,8)}`).join("\n")
+  +(receiptEvicted?`\n[${receipts.length} shown / ${receiptEvicted} evicted]`:"");}
+// wristband: render VERIFIED_CLAIMS. green = node-pinned, amber = browser-only.
+function renderWristband(){$("wristband").innerHTML=PQ.VERIFIED_CLAIMS.map(c=>
+ `<span class="badge ${c.proofTest?"ok":"warn"}" title="${c.proofTest||"browser-only"}">✓ ${c.claim}</span>`).join("");}
+renderWristband();
+// JEV: the MoveSuggestion type + validator (typesafe weighted answers)
+const MoveSuggestion={type:"{move:-1|0|1, confidence:0..1, source:string}",
+ validate(s){if(!s||typeof s!=="object")return"not an object";
+  if(![-1,0,1].includes(s.move))return"move must be -1|0|1";
+  if(typeof s.confidence!=="number"||s.confidence<0||s.confidence>1)return"confidence must be 0..1";
+  return null;}};
+function stateOf(g){return{ballX:g.x,ballY:g.y,velX:g.vx,velY:g.vy,paddleX:g.px,speed:g.speedMul,frames:g.frames,hits:g.hits};}
+// === LLM seam (Round 3): paced, serialized, stale-guarded ===================
+// Round 2 shipped a fetch-per-animation-frame loop that applied replies in
+// arrival-burst order. The seam now fires on death OR every 150 frames,
+// refuses during in-flight, and tags every reply with the game that asked —
+// a reply for a dead game is dropped, not applied.
+let llmSeam=null,pendingAdvice=null,lastAdviceAt=-1e9,deathJustNow=false;
+const askGame=new Map(); // Round 6: the gameId tag is stamped at ASK, not reply arrival — a dead game's reply can no longer rebrand onto its successor (P1, R4/R5 receipted, fixed R6)
+const ADVICE_EVERY=150,SEAM_MIN_MS=2000,SEAM_TIMEOUT_MS=8000; // Round 4: a hung endpoint can no longer stall the seam forever
+function ensureSeam(){if(llmSeam)return llmSeam;
+ llmSeam=PQ.makeSeam({minIntervalMs:SEAM_MIN_MS,timeoutMs:SEAM_TIMEOUT_MS,transport:(payload)=>{const ep=$("ep").value,k=$("key").value;
+  return fetch(ep,{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+k},
+   body:JSON.stringify({model:"llama-3.1-8b-instant",messages:[{role:"user",content:`pong advice, JSON {move:-1|0|1,confidence}: ball x=${payload.x} y=${payload.y} vx=${payload.vx} vy=${payload.vy} paddle=${payload.px}`}],response_format:{type:"json_object"}})})
+   .then(r=>r.json()).then(j=>JSON.parse(j.choices[0].message.content));},
+  onResult:(s,seq,err)=>{if(err){askGame.delete(seq);$("l2stat").textContent="LLM call failed: "+err.message;$("l2stat").className="bad";return;}
+   const bad=MoveSuggestion.validate(s);
+   if(bad){askGame.delete(seq);receipt("REFUSAL/v1",0,0);$("l2stat").textContent="JEV refused: "+bad;$("l2stat").className="bad";return;}
+   pendingAdvice={s,gameId:askGame.get(seq),seq};askGame.delete(seq);}});
+ return llmSeam;}
+function maybeFireSeam(g){const m=$("l2").value;if(m!=="llm")return;
+ if(!$("ep").value||!$("key").value){$("l2stat").textContent="LLM seam needs endpoint+key (never leaves your browser except to that endpoint)";return;}
+ const due=deathJustNow||(g.frames-lastAdviceAt>=ADVICE_EVERY);
+ if(!due)return;
+ const seq=ensureSeam().fire({x:g.x.toFixed(2),y:g.y.toFixed(2),vx:g.vx.toFixed(2),vy:g.vy.toFixed(2),px:g.px.toFixed(2)});
+ if(seq!==null){askGame.set(seq,gameId);lastAdviceAt=g.frames;deathJustNow=false; // death trigger consumed by a real fire
+  if(llmSeam.dropped.inFlight+llmSeam.dropped.paced+llmSeam.dropped.timedOut>0)$("l2stat").textContent=
+   `seam: fired#${seq} · dropped(in-flight ${llmSeam.dropped.inFlight}, paced ${llmSeam.dropped.paced}, stale ${llmSeam.dropped.stale}, timed-out ${llmSeam.dropped.timedOut})`;}}
+function takeAdvice(){ // consume pendingAdvice only if it belongs to the live game
+ if(!pendingAdvice)return null;
+ if(pendingAdvice.gameId!==gameId){pendingAdvice=null;return null;} // stale — dropped, never applied
+ const a=pendingAdvice.s;pendingAdvice=null;return a;}
+async function l2Suggest(g){const m=$("l2").value,w=$("w").value/100;if(m==="none")return null;
+ let s=null,src="none";
+ if(m==="jepa"){s=jepa.suggest(PQ.sense(g));src="jepa";} // same sense() representation as learn()
+ else if(m==="moth"){s={move:g.vy>0?(g.x<g.px+D.paddleW/2?-1:1):0,confidence:0.8,source:"moth"};}
+ else if(m==="custom"){s=l2Mod&&l2Mod.suggest?l2Mod.suggest(stateOf(g)):null;src=l2Mod?l2Mod.name:"custom";}
+ else if(m==="qa"){const s0=stateOf(g),qseed=gen*997+g.frames;s=QuantumAudioL2.suggest(s0,qseed);src="qa-sim";
+  const cl=QuantumAudioL2.sonify(s0);qaVis={clean:cl,decoded:QuantumAudioL2.channel(cl,qseed)};}
+ else if(m==="llm"){maybeFireSeam(g);s=takeAdvice();if(s){$("l2stat").textContent=`llm suggests move=${s.move} conf=${s.confidence}`;$("l2stat").className="ok";}}
+ if(!s)return null;
+ if(m!=="llm"){const bad=MoveSuggestion.validate(s);
+  if(bad){receipt("REFUSAL/v1",0,0);$("l2stat").textContent="JEV refused: "+bad;$("l2stat").className="bad";return null;}
+  $("l2stat").textContent=`${src} suggests move=${s.move} conf=${s.confidence}`;$("l2stat").className="ok";
+  receipt(s.source||src==="none"?"L2":s.source||src,s.move,s.confidence*w);}
+ if(Math.random()<s.confidence*w)return s;return null;}
+function blend(act,sug){return sug?sug.move:act;}
+// === classic L1 loop (edge-ml streaming eval) ================================
+function startGen(){D.popSize=+$("pop").value;D.decisionInterval=+$("dec").value;
+ if(pop.length>D.popSize)pop.length=D.popSize; // pin to slider
+ while(pop.length<D.popSize)pop.push(PQ.mutate(pop[Math.floor(Math.random()*4)||0],randPQ,$("sig").value/100));
+ evalGen={ev:PQ.makeEvaluator(pop,(n)=>{const r=PQ.playOne(n,randPQ);games++;return r;},{eliteK:D.elites})};}
+function continueGen(){
+ for(let g=0;g<+$("sub").value;g++){
+  if(!evalGen)startGen();
+  const chunk=pop.length>64?24:pop.length;
+  const snap=evalGen.ev.step(chunk);
+  if(!snap.done)break;
+  lastSnap=snap;
+  pop=PQ.runGeneration(pop,snap.elites,randPQ,$("sig").value/100);
+  champNet=snap.elites[0].net;champGame=PQ.newGame(randPQ);gameId++;gen++;
+  champRing.write({gen,fitness:snap.best.fitness});
+  $("stats").textContent=PQ.formatStats(gen,games,snap.best);
+  evalGen=null;}}
+// === C1 COEVOLUTION loop: survivor population vs ender population ===========
+// PSRO-style evaluation (random opponents from the other pool), champion
+// head-to-head receipted per generation into a hash-chained ledger that
+// carries BOTH nets' content ids. The loser breeds at 2x sigma. Seeded by
+// the browser's rng stream; the committed artifact (checkpoints/coev.js) is
+// pre-run under node with DEFAULTS.seed and md5-verified.
+// Round 5 (P1 fix): the evaluators' evalOne must return `fitness` — that is
+// the field makeEvaluator records — WITH the coev-specific alias alongside,
+// and the map below reads e.net (the evaluator's record field), not e.cand.
+// Round 4 receipted the crash: undefined fitness -> undefined champion net ->
+// JSON.parse(JSON.stringify(undefined)) froze the demo on generation 1.
+function startGenC(){if(!coev){const n=+$("pop").value;coev={popS:Array.from({length:n},()=>PQ.makeNet(randPQ)),
+  popE:Array.from({length:n},()=>PQ.makeNet(randPQ)),sChamp:null,eChamp:null,genC:0,last:null,
+  ledger:PQ.makeLedger(300),evalS:null,evalE:null};}
+ const n=+$("pop").value;
+ while(coev.popS.length<n)coev.popS.push(PQ.makeNet(randPQ));
+ while(coev.popE.length<n)coev.popE.push(PQ.makeNet(randPQ));
+ coev.evalS=PQ.makeEvaluator(coev.popS,(net)=>{const r=PQ.playAdv(net,coev.popE[Math.floor(randPQ()*coev.popE.length)],randPQ);
+  games++;return{fitness:r.sFitness,sFitness:r.sFitness,frames:r.frames,hits:r.hits};},{eliteK:D.elites});
+ coev.evalE=PQ.makeEvaluator(coev.popE,(net)=>{const r=PQ.playAdv(coev.popS[Math.floor(randPQ()*coev.popS.length)],net,randPQ);
+  games++;return{fitness:r.eFitness,eFitness:r.eFitness,enderHits:r.enderHits};},{eliteK:D.elites});}
+function continueGenC(){
+ for(let g=0;g<+$("sub").value;g++){
+  if(!coev||!coev.evalS)startGenC();
+  const chunk=coev.popS.length>64?24:coev.popS.length;
+  const snapS=coev.evalS.step(chunk),snapE=coev.evalE.step(chunk);
+  if(!snapS.done||!snapE.done)break; // still streaming; resume next frame
+  const bred=PQ.runCoevGeneration(coev.popS,coev.popE,snapS.elites.map(e=>({net:e.net,sFitness:e.sFitness})),
+   snapE.elites.map(e=>({net:e.net,eFitness:e.eFitness})),randPQ,$("sig").value/100,coev.last);
+  coev.popS=bred.popS;coev.popE=bred.popE;
+  const h2h=PQ.playAdv(bred.sChamp.net,bred.eChamp.net,randPQ); // the receipted match
+  coev.sChamp={net:bred.sChamp.net,fitness:h2h.sFitness};coev.eChamp={net:bred.eChamp.net,fitness:h2h.eFitness};
+  coev.last=h2h.outcome;coev.genC++;
+  const row=coev.ledger.write({gen:coev.genC,sId:PQ.netId(bred.sChamp.net),eId:PQ.netId(bred.eChamp.net),
+   outcome:h2h.outcome,frames:h2h.frames,sFit:h2h.sFitness|0,eFit:h2h.eFitness|0,loserId:bred.loserId});
+  champNet=bred.sChamp.net;champGame=PQ.newAdvGame(randPQ);gameId++;gen=coev.genC;
+  champRing.write({gen:coev.genC,fitness:h2h.sFitness});
+  $("stats").textContent=`COEV gen ${coev.genC} · games ${games} · h2h ${h2h.outcome} in ${h2h.frames}f · sChamp ${h2h.sFitness|0} (${h2h.hits}h) · eChamp ${h2h.eFitness|0} (${h2h.enderHits}b) · loser ${bred.loserId||"—"}${coev.ledger.evicted?` · ledger evicted ${coev.ledger.evicted}`:""}`;
+  receipt(`COEV g${coev.genC} ${h2h.outcome} ${h2h.frames}f`,0,0);
+  $("receipts").textContent=coev.ledger.tail(8).map(r=>
+   `COEV g${r.gen} ${r.sId} vs ${r.eId} -> ${r.outcome} ${r.frames}f loser=${r.loserId||"—"} ${r.hash}←${r.prev.slice(0,8)}`).join("\n");
+  coev.evalS=null;coev.evalE=null;}}
+// === drawing =================================================================
+function draw(){const c=$("game").getContext("2d"),W=360;c.fillStyle="#05070b";c.fillRect(0,0,W,W);
+ const s=g=>g*W;c.strokeStyle="#1d2634";for(let i=1;i<8;i++){c.beginPath();c.moveTo(i*45,0);c.lineTo(i*45,W);c.stroke();}
+ const coevMode=$("mode").value==="coev";
+ if(champGame){c.fillStyle="#58a6ff";c.beginPath();c.arc(s(champGame.x),s(champGame.y),5,0,7);c.fill();
+  const eff=PQ.effectivePaddle(champGame.px); // THE drawn paddle is THE registered zone
+  c.fillStyle="#58a6ff";c.fillRect(s(eff.x),s(0.95),eff.w*W,6);
+  if(coevMode&&champGame.ex!==undefined){const eE=PQ.effectivePaddle(champGame.ex);
+   c.fillStyle="#bc8cff";c.fillRect(s(eE.x),s(0.015),eE.w*W,6);}
+  c.fillStyle="#d29922";c.fillText(`x${champGame.speedMul.toFixed(2)} · ${champGame.frames}f · ${champGame.hits} hits${coevMode&&champGame.enderHits!==undefined?` · ${champGame.enderHits} blocks`:""}`,8,16);}
+ const cc=$("cells").getContext("2d");cc.fillStyle="#05070b";cc.fillRect(0,0,360,120);
+ if(champGame){const inp=PQ.sense(champGame),names=["ball x","ball y","vel x","vel y","intercept","speed"],cols=["#58a6ff","#58a6ff","#d29922","#d29922","#3fb950","#bc8cff"];
+  inp.forEach((v,i)=>{cc.fillStyle=cols[i];cc.fillRect(8+i*58,110-Math.min(100,Math.abs(v)*100),16,Math.min(100,Math.abs(v)*100));
+   cc.fillStyle="#8b949e";cc.fillText(names[i],8+i*58,118);});
+  cc.fillStyle="#f85149";const cd=(D.decisionInterval-champGame.frames%D.decisionInterval)/D.decisionInterval;
+  cc.fillRect(8+6*58,110-cd*100,16,cd*100);cc.fillStyle="#8b949e";cc.fillText("decision",8+6*58,118);}
+ if(qaVis){const qa=$("qa").getContext("2d"),W2=180;qa.fillStyle="#05070b";qa.fillRect(0,0,W2,60);
+  qa.fillStyle="#8b949e";qa.fillText("waveform-imaging (sim QPAM): clean vs decoded",4,10);
+  const plot=(arr,col,y0)=>{qa.strokeStyle=col;qa.beginPath();
+   for(let i=0;i<arr.length;i++){const x=4+i*(W2-8)/(arr.length-1),y=y0-arr[i]*18;i?qa.lineTo(x,y):qa.moveTo(x,y);}qa.stroke();};
+  plot(qaVis.clean,"#bc8cff",22);plot(qaVis.decoded,"#d29922",46);}
+ const cv=$("curve").getContext("2d");cv.fillStyle="#05070b";cv.fillRect(0,0,360,60);
+ const pts=champRing.tail(120);
+ if(pts.length>1){const fs=pts.map(p=>p.fitness),lo=Math.min(...fs),hi=Math.max(...fs),rg=Math.max(1,hi-lo);
+  cv.strokeStyle="#3fb950";cv.lineWidth=1.5;cv.beginPath();
+  pts.forEach((p,i)=>{const x=4+i*(352/Math.max(1,pts.length-1)),y=52-((p.fitness-lo)/rg)*44;i?cv.lineTo(x,y):qa.moveTo(x,y);}).stroke();}
+  cv.fillStyle="#8b949e";cv.font="10px monospace";
+  cv.fillText(`champion ${lo|0}→${hi|0} · last ${pts.length} gens · ring ${champRing.size}/${champRing.capacity}`,4,10);}}
+// === live champion play ======================================================
+function live(){
+ if(!champGame||!running)return;
+ const coevMode=$("mode").value==="coev";
+ const prev=PQ.sense(champGame),o=PQ.forward(champNet,prev);
+ const pick=(q)=>q[0]>q[2]?(q[0]>q[1]?-1:0):(q[2]>q[1]?1:0);
+ const act=pick(o);
+ if(coevMode){
+  if(!coev||!coev.eChamp)return;
+  const actE=pick(PQ.forward(coev.eChamp.net,prev));
+  l2Suggest(champGame).then(s=>{const a=blend(act,s);
+   const alive=PQ.stepAdv(champGame,a,actE,randPQ);
+   jepa.learn(prev,PQ.sense(champGame)); // the real transition, death state included
+   if(!alive){deathJustNow=true;receipt("DEATH",0,0);champGame=PQ.newAdvGame(randPQ);gameId++;}});
+  return;}
+ l2Suggest(champGame).then(s=>{const a=blend(act,s);
+  const alive=PQ.step(champGame,a,randPQ);
+  jepa.learn(prev,PQ.sense(champGame));
+  if(!alive){deathJustNow=true;receipt("DEATH",0,0);champGame=PQ.newGame(randPQ);gameId++;}});}
+function tick(){const m=$("mode").value;
+ if(running){if(m==="coev")continueGenC();else continueGen();}
+ live();draw();requestAnimationFrame(tick);}
+$("go").onclick=()=>{running=true;};$("pause").onclick=()=>{running=false;};
+$("mode").onchange=()=>{evalGen=null;if(coev){coev.evalS=null;coev.evalE=null;}champGame=null;
+ $("stats").textContent=`mode ${$("mode").value} — press Train`;};
+$("save").onclick=()=>{const blob=new Blob([JSON.stringify({gen,best:champNet,pop:pop.slice(0,8),stats:{games,best:lastSnap&&lastSnap.best.fitness}})],{type:"application/json"});
+ const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=`pong-quilt-gen${gen}.json`;a.click();receipt("SAVE",0,1);};
+$("load").onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{const q=JSON.parse(t);
+ pop=q.pop.concat(pop.slice(q.pop.length));gen=q.gen||0;receipt("LOAD",0,1);});};
+function loadLevel(l){const cp=window.PONG_QUILT_CHECKPOINTS&&window.PONG_QUILT_CHECKPOINTS[l];
+ if(!cp){alert("checkpoints not found — serve the folder over http (or open via file://) so checkpoints/*.js load");return;}
+ pop=cp.pop.slice();gen=cp.gen;champNet=cp.pop[0];champGame=null;
+ $("stats").textContent=`${l}: gen ${cp.gen} · best ${cp.bestFitness} (frames ${cp.bestFrames}, ${cp.bestHits} hits, speed x${cp.maxSpeed}) — training from here is real`;
+ receipt("LOAD/"+l.toUpperCase(),0,1);}
+function loadCoev(){const cp=window.PONG_QUILT_COEV;
+ if(!cp){alert("checkpoints/coev.js not loaded — serve over http");return;}
+ coev=Object.assign(coev||{},{sChamp:{net:cp.sChamp.net},eChamp:{net:cp.eChamp.net},last:null,genC:cp.gens,ledger:PQ.makeLedger(300),evalS:null,evalE:null});
+ coev.ledger=PQ.makeLedger(300);(cp.ledger||[]).slice(-12).forEach(r=>coev.ledger.write(r));
+ champNet=cp.sChamp.net;champGame=PQ.newAdvGame(randPQ);gameId++;
+ $("mode").value="coev";
+ $("stats").textContent=`C1 artifact: seed ${cp.seed}, ${cp.gens} gens × ${cp.pop}+${cp.pop} nets · sChamp ${cp.sChamp.netId} (${cp.sChamp.fitness|0}) · eChamp ${cp.eChamp.netId} (${cp.eChamp.fitness|0}) · ledger ${cp.ledgerHead} · md5-verified`;
+ receipt("LOAD/COEV",0,1);}
+$("l2").onchange=()=>{$("llmkey").style.display=$("l2").value==="llm"?"inline":"none";
+ if($("l2").value==="moth")receipt("MOTH-ON",0,1);};
+$("attach").onclick=()=>{try{const f=new Function($("scratch").value);const m=f();
+ if(MoveSuggestion.validate(m.suggest(stateOf(PQ.newGame(Math.random)))))throw new Error("suggest() failed JEV validation on probe");
+ l2Mod=m;$("l2").value="custom";$("l2stat").textContent="attached: "+m.name;$("l2stat").className="ok";receipt("ATTACH",0,1);}
+ catch(e){$("l2stat").textContent="attach failed: "+e.message;$("l2stat").className="bad";}};
+tick();
+</script>
+</body>
+</html>
