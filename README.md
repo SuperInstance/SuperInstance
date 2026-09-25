@@ -46,13 +46,15 @@ If the technology fades into the background, and the average person simply think
 
 ---
 
-## First, the story
+## First, the story - The Wheelhouse
 
 A boat leaves the dock and its captain knows where to go. The [depth sounder](https://github.com/SuperInstance/cellforge) reads the water. The [chart plotter](https://github.com/SuperInstance/quilt) draws the line. The [autopilot](https://github.com/SuperInstance/ax-quilt) holds the heading. The engine turns the fuel. Each one does one job, and each one has been waiting — for a hundred years — for someone to give it a mind.
 
 That wait is over. We give each of those [cells](https://github.com/SuperInstance/moth-cells) the kind of mind it can carry. The captain stops reading every number. The captain stops deciding every next move. The captain dispatches. The crew does the trade. The boat becomes the room the captain inhabits, not the machine the captain runs.
 
-That's the application. Everything below is the same idea, abstracted further.
+Concretely, Do I want a bathymetric recorder? Tell my designer-agent to port the depth output on the sounder to the track-line file to save depth with position; and rebuild the chart's depth-contours on spare compute times - watch it happen. Want to ML a fish identifier on the back deck? Clearly label the totes with species name and the cameras will get as good as the crew. tell the back-deck microphone could the beads on the trolling wire to know what depth the fish was caught at. log that and pass the information to the agent watching the sounder's echogram as ground truth. put a measuring stick in the fish landing area. hang the occasional fish on a scale before icing with the scale's dial in view of a camera. all these feeds come in as cells that can be rewound and fast forward together to be annotated for the back-end coding agents to optimize and the front-end design agent to group and wire in the spreadsheet logically for maintanence and improvement later. the hardware layer changes. the coding layer changes. but the Spreadsheet layer floats between the two. Not the engine-room; not the back deck- The Wheelhouse. 
+
+That's the application. That's why I built this. Everything below is the same idea, abstracted further.
 
 ---
 
