@@ -254,8 +254,7 @@ If you've got a better idea than mine, I want to learn from it.
 
 
 ![proof-of-concept-42](proof-of-concept-42.jpg)
-This was 4 prompts and a half-day of OpenClaw screen-capturing on a pulse. we don't need software- we need tools and simple ways to wire them.
-## Three words
+This was a few back and forth prompts and a half day of a claw screen-capturing the navigation and sounder on a pulse. we don't software - suites we need novel tools.
 
 **[STITCH](https://github.com/SuperInstance/mavis-substrate-walker).** Collect a terrain from the wild. **[WITNESS](https://github.com/SuperInstance/moth-ledger).** Receipt every step on a chain that grows like tree-rings. **[PROMOTE](https://github.com/SuperInstance/quilt-live-canon).** Move what survives into the canon. The whole project is these three acts.
 
