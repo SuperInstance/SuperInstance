@@ -146,7 +146,7 @@ The portable cell contract is the invention.
 ---
 
 
-![The hermit crab: it carries its home like a cell carries its port](bottom.jpg)
+![The model is the shell, the code is the rigging, the data is alive — the keel every repo hangs off.](keel.jpg)
 
 ## The disappearing act
 
