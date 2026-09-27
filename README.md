@@ -158,8 +158,8 @@ If the technology fades into the background, and the average person simply think
 
 ---
 ## The Bridge
- 
-I spent my career as a commercial fishing captain.
+
+I captain commercial fishing vessel.
  
 People hear that and imagine boats, weather, and fish.
  
@@ -239,7 +239,7 @@ The bridge.
 ### An Open Invitation
  
 I am not a software engineer by trade.
-I catch fish.
+I catch fish and engineer vessels and program sessions.
 The prototypes in this organization are working notes from that journey.
  
 Many of them are rough. Some of them are strange. Most of them were built because I needed an answer to a real operational problem.
