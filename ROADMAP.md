@@ -10,7 +10,9 @@ Imagine a world where every AI agent is a musician, not a tool. Where they find 
 
 ---
 
-## 2. Where We Are Now — June 2026
+## 2. Where We Are Now — September 2026
+
+> **New since June — the substrate grew a *way of thinking*.** Two laws now anchor the fleet: **Law 6 (the Reader's Fold)** — carry evidence, not verdicts; each reader folds under its own weights — and **Law 7 (the Reach Bound)** — a fold spends reach and never mints it, so you raise the ceiling by *buying* an independent-reach reader across a boundary. The habit that follows is **[The Quilt Way](https://github.com/SuperInstance/AI-Writings/blob/main/THE-QUILT-WAY.md)**. Work now runs on the **[fishing-fleet pattern](https://github.com/SuperInstance/AI-Writings/blob/main/.claude/skills/fishing-fleet/SKILL.md)** (a capable captain in a keyed session directs cheap-model crews; the expensive mind judges, the cheap ones haul; commits are the shared memory), refereed by **[JEV](https://typesafe.ai)** and rolled un-gameably by **[Moth](https://mothquantum.com)** quantum (Bell witness above the classical bound). Shipped this season: **[Syzygy](https://github.com/SuperInstance/Syzygy)** — a byte-exact fused kernel diffused from a single seed by hash-marks; the **[labs/](https://github.com/SuperInstance/AI-Writings/tree/main/labs)** RSI chain (`jev-fold` → `weakest-claim`, a tool reused to build a better tool), `quantum-fx`, and a beyond-GAN quality-diversity arena; and live demos at **[cargo-line-tycoon](https://cargo-line-tycoon.pages.dev)** and **[qthe's Looking Glass](https://qthe-looking-glass.pages.dev)** (real IBM-quantum seeds in the browser). The metrics snapshot below is the June baseline; the shape above is where the fleet actually lives now.
 
 | Metric | Count |
 |--------|-------|
