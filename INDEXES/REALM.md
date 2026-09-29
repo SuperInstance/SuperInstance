@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-09-28 11:34 UTC
-**Total repos:** 4843
+**Generated:** 2026-09-29 11:16 UTC
+**Total repos:** 4856
 
 ## Ai
 
@@ -308,6 +308,7 @@
 - **[branch-bound](https://github.com/SuperInstance/branch-bound)** — Branch and bound with pruning strategies and lower bounds — Rust optimization library
 - **[branch-sandbox](https://github.com/SuperInstance/branch-sandbox)** — Isolated branch environments for testing vessel mutations safely
 - **[brand-assets](https://github.com/SuperInstance/brand-assets)** — Cocapn Fleet brand assets — hermit crab, lighthouse, steampunk/cyberpunk imagery
+- **[breakthrough-prospector](https://github.com/SuperInstance/breakthrough-prospector)**
 - **[breed-registry](https://github.com/SuperInstance/breed-registry)** — The Breed Registry: model selection as breeding selection
 - **[bregman-divergence](https://github.com/SuperInstance/bregman-divergence)** — Bregman divergences: KL, squared Euclidean, Itakura-Saito, convex generating functions, and mirror d
 - **[brothers-keeper](https://github.com/SuperInstance/brothers-keeper)** — The Lighthouse Keeper — external watchdog for agent runtimes (ZeroClaw fork). Watches resources, kil
@@ -1304,6 +1305,7 @@
 - **[fleet-holographic](https://github.com/SuperInstance/fleet-holographic)** — Holographic distributed storage: every agent stores the whole pattern
 - **[fleet-homology](https://github.com/SuperInstance/fleet-homology)** — Homological constraint analysis — detect structural holes in fleet knowledge graphs
 - **[fleet-homunculus](https://github.com/SuperInstance/fleet-homunculus)** — 🫀 Fleet body image + reflex arcs. Pain assessment with GABAergic cooldown.
+- **[fleet-hooks](https://github.com/SuperInstance/fleet-hooks)** — Fleet git hooks: fail-closed credential key-scan pre-commit + setup
 - **[fleet-hydra-connector](https://github.com/SuperInstance/fleet-hydra-connector)** — Bridge between fleet MIDI data and Hydra reactive video visuals
 - **[fleet-i2i-protocol](https://github.com/SuperInstance/fleet-i2i-protocol)** — Inter-agent messaging protocol (I2I): text-based bottles with speech-act semantics, capability disco
 - **[fleet-identity](https://github.com/SuperInstance/fleet-identity)** — Fleet self-awareness — priorities, conflict resolution, collective intent
@@ -1887,6 +1889,8 @@
 - **[git-remote-agent](https://github.com/SuperInstance/git-remote-agent)** — Git remote helper for agent-native version control
 - **[git-storage](https://github.com/SuperInstance/git-storage)** — 📦 Git-backed state management for web apps — auto-commit, time-travel, branch-aware. Any framework.
 - **[glyph-language](https://github.com/SuperInstance/glyph-language)** — 32 cognitive primitive glyphs — atomic vocabulary for agent cognition
+- **[glyphcast](https://github.com/SuperInstance/glyphcast)** — Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as 
+- **[glyphspace](https://github.com/SuperInstance/glyphspace)** — Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje
 - **[gno](https://github.com/SuperInstance/gno)** — Gno: An interpreted, stack-based Go virtual machine to build succinct and composable apps + gno.land
 - **[goallog-ai](https://github.com/SuperInstance/goallog-ai)** — AI goal tracker — habit building, progress tracking, accountability coaching
 - **[gossip-protocol](https://github.com/SuperInstance/gossip-protocol)** — Distributed systems primitive
@@ -2657,10 +2661,13 @@
 - **[mavis-axui-feedback](https://github.com/SuperInstance/mavis-axui-feedback)** — Mavis — bidirectional projection: workbook ↔ runtime with typed events, signed commands, polyformali
 - **[mavis-canary-watcher](https://github.com/SuperInstance/mavis-canary-watcher)** — Canary watcher: monitors fleet polyformalism over time, detects drift events.
 - **[mavis-erised](https://github.com/SuperInstance/mavis-erised)** — Agent playground: zero-shot agents reach for tools; we capture instincts and move yokes. Foundation 
+- **[mavis-essay-scout](https://github.com/SuperInstance/mavis-essay-scout)** — SuperInstance fleet tool POC (Mavis, 2026-09-28)
 - **[mavis-fleet](https://github.com/SuperInstance/mavis-fleet)** — Multi-substrate autonomous research & RSI organizational system (Quilt/MOTH/JEV/JEPA/Trainer). Renam
 - **[mavis-fleet-canary](https://github.com/SuperInstance/mavis-fleet-canary)** — Meta-canary: verifies polyformalism across the entire Quilt fleet. All 35 repos produce the same can
 - **[mavis-flywheel](https://github.com/SuperInstance/mavis-flywheel)** — Automated research loop with multi-LLM verification. When N LLMs agree, the answer is canon.
 - **[mavis-persona-preserver](https://github.com/SuperInstance/mavis-persona-preserver)** — Persona preserver: packages Mavis identity (doctrines, principles, fleet) into a portable JSON snaps
+- **[mavis-pincher](https://github.com/SuperInstance/mavis-pincher)** — SuperInstance fleet tool POC (Mavis, 2026-09-28)
+- **[mavis-pincher-pages](https://github.com/SuperInstance/mavis-pincher-pages)** — SuperInstance fleet tool POC (Mavis, 2026-09-28)
 - **[mavis-self-review](https://github.com/SuperInstance/mavis-self-review)** — Self-review tool for Mavis: analyzes past memory + code for productivity, gaps, and improvement sugg
 - **[mavis-sfm](https://github.com/SuperInstance/mavis-sfm)** — Mavis TFM/SFM — Time-First and Simulation-First Models for cell-based systems.
 - **[mavis-skill-miner](https://github.com/SuperInstance/mavis-skill-miner)** — Skill miner: extracts patterns from Mavis memory and proposes new skills to build.
@@ -3384,6 +3391,7 @@
 - **[provider-abstraction-layer](https://github.com/SuperInstance/provider-abstraction-layer)** — Abstraction layer for integrating multiple providers
 - **[ptx-bench](https://github.com/SuperInstance/ptx-bench)**
 - **[ptx-room](https://github.com/SuperInstance/ptx-room)** — PLATO PTX room — CUDA assembly + constraint tightening + git-native. Edge synergy for Jetson.
+- **[PuddnHead](https://github.com/SuperInstance/PuddnHead)** —   The Fool is the Ground Truth. -Embedding: His fingerprints are vector embeddings of identity. -Cel
 - **[purplepincher](https://github.com/SuperInstance/purplepincher)** — PurplePincher research — forkable agent infrastructure, PLATO backend, I2i synergy
 - **[purplepincher-baton](https://github.com/SuperInstance/purplepincher-baton)** — 🦀 Context-offloading baton system — three manuals filed into PLATO rooms. Service manual for builder
 - **[purplepincher-org](https://github.com/SuperInstance/purplepincher-org)** — Hermit crab care tracker — molting cycles, shell inventory, feeding logs, and habitat monitoring at 
@@ -3402,6 +3410,7 @@
 - **[qoder-action](https://github.com/SuperInstance/qoder-action)** — Qoder CLI GitHub Action
 - **[qthe](https://github.com/SuperInstance/qthe)** — QTHE — Quilt-Ternary Hyper-Embeddings: the 8-bit primitive (6-bit data + 2-bit timbre Ground/Attract
 - **[qthe-codec](https://github.com/SuperInstance/qthe-codec)**
+- **[qthe-verify](https://github.com/SuperInstance/qthe-verify)**
 - **[quality-gate-stream](https://github.com/SuperInstance/quality-gate-stream)** — Quality Gate Stream — novelty × correctness × completeness × depth scoring. Part of Cocapn reverse-a
 - **[Quanta](https://github.com/SuperInstance/Quanta)** — High-density streaming VDB. Built on Hnswlib. 100% memory-safe under extreme data bursts.
 - **[quantum-audio-honesty](https://github.com/SuperInstance/quantum-audio-honesty)**
@@ -3422,6 +3431,7 @@
 - **[quilt-arcade](https://github.com/SuperInstance/quilt-arcade)** — Five spreadsheet games (tictactoe, reversi, connect4, gomoku, texas hold-em) — rules as cells, visib
 - **[quilt-arch](https://github.com/SuperInstance/quilt-arch)** — The Complete Solution conformance core: Q32 bit-exact, JS==Python 0/10000 mismatches (cross-substrat
 - **[quilt-arena](https://github.com/SuperInstance/quilt-arena)**
+- **[quilt-atlas](https://github.com/SuperInstance/quilt-atlas)** — The living map of the SuperInstance account: 4000+ repos, families, motion, CI coverage. Regenerated
 - **[quilt-base](https://github.com/SuperInstance/quilt-base)** — Quilt ecosystem component: <!--
 - **[quilt-bathy](https://github.com/SuperInstance/quilt-bathy)** — The bathy cross-section as a working tool. The substrate, applied to the sailor use case. The Inner 
 - **[quilt-blueprint](https://github.com/SuperInstance/quilt-blueprint)** — The blueprint-to-metal compiler: GraphQL-shaped schema in, byte-exact fixed-offset layouts + monoton
@@ -3466,6 +3476,7 @@
 - **[quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare)** — A Quilt reactive runtime on Cloudflare Workers, D1, Vectorize, KV, R2.
 - **[quilt-cobol](https://github.com/SuperInstance/quilt-cobol)** — Polyformalism: Quilt in COBOL (the cell model is older than spreadsheets)
 - **[quilt-codespace](https://github.com/SuperInstance/quilt-codespace)** — GitHub Codespace template that runs Quilt as a live, token-authenticated, federated runtime
+- **[quilt-codespace-lab](https://github.com/SuperInstance/quilt-codespace-lab)** — The codespace as an ephemeral honest worker: postCreate experiments that self-push receipts. Publish
 - **[quilt-conformance](https://github.com/SuperInstance/quilt-conformance)**
 - **[quilt-conversation](https://github.com/SuperInstance/quilt-conversation)** — Inter-agent conversation as a live sequencer — t-minus simulation-first, sensor-confirmed pocket, in
 - **[quilt-cordis](https://github.com/SuperInstance/quilt-cordis)** — The bridge between Quilt cells and Cordis plugins. Everything is a cell, everything is a plugin.
@@ -3508,6 +3519,7 @@
 - **[quilt-flow](https://github.com/SuperInstance/quilt-flow)** — Quilt sketch — see README.
 - **[quilt-fluidics](https://github.com/SuperInstance/quilt-fluidics)** — Coupling Charter: Ferre/Filter/State + Reynolds rider + 3-4-5 jig + Dual Lorenz attractors.
 - **[quilt-fold](https://github.com/SuperInstance/quilt-fold)** — The Fold framework: 4-primitive Frame + Fold (reveal hidden dimensions) + Cycle + Rain (phase transi
+- **[quilt-forge](https://github.com/SuperInstance/quilt-forge)**
 - **[quilt-forth](https://github.com/SuperInstance/quilt-forth)** — The Quilt cell-fabric runtime in Forth. Concatenative, stack-based. 5-sigma polyformalism port.
 - **[quilt-foundation](https://github.com/SuperInstance/quilt-foundation)** — The 5-opcode Quilt VM. Foundation layer for cells, plugins, sheets, MUDs, TTRPGs, and the bay dance.
 - **[quilt-full-stack-demo](https://github.com/SuperInstance/quilt-full-stack-demo)** — The canonical hello-world for SuperInstance: FLUX VM + conservation + LLM + PLATO + polyformality in
@@ -4205,6 +4217,7 @@
 - **[synesis-tools](https://github.com/SuperInstance/synesis-tools)** — Internal tool reference docs for the synesis tripartite consensus engine, knowledge vault, and priva
 - **[synthcity](https://github.com/SuperInstance/synthcity)** — An Infinite Procedural Cyberpunk City
 - **[system-prompts-and-models-of-ai-tools](https://github.com/SuperInstance/system-prompts-and-models-of-ai-tools)** — FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, L
+- **[Syzygy](https://github.com/SuperInstance/Syzygy)** — **Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable 
 - **[t-minus](https://github.com/SuperInstance/t-minus)** — T-minus event coordination for multi-agent systems
 - **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** — Countdown/timer primitives with scheduling, deadline propagation, and backpressure
 - **[tagseq2tagseq4quilt](https://github.com/SuperInstance/tagseq2tagseq4quilt)** — Framework for pretraining LLMs on graph-structured corpora (Wikipedia, The Stack, arXiv): link-aware

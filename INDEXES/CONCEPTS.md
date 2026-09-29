@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-09-28 11:34 UTC
+**Generated:** 2026-09-29 11:16 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1918,6 +1918,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-holographic](https://github.com/SuperInstance/fleet-holographic)
 - [fleet-homology](https://github.com/SuperInstance/fleet-homology)
 - [fleet-homunculus](https://github.com/SuperInstance/fleet-homunculus)
+- [fleet-hooks](https://github.com/SuperInstance/fleet-hooks)
 - [fleet-hydra-connector](https://github.com/SuperInstance/fleet-hydra-connector)
 - [fleet-i2i-protocol](https://github.com/SuperInstance/fleet-i2i-protocol)
 - [fleet-identity](https://github.com/SuperInstance/fleet-identity)
@@ -2499,9 +2500,12 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [market-manifold](https://github.com/SuperInstance/market-manifold)
 - [mavis-canary-watcher](https://github.com/SuperInstance/mavis-canary-watcher)
 - [mavis-erised](https://github.com/SuperInstance/mavis-erised)
+- [mavis-essay-scout](https://github.com/SuperInstance/mavis-essay-scout)
 - [mavis-fleet](https://github.com/SuperInstance/mavis-fleet)
 - [mavis-fleet-canary](https://github.com/SuperInstance/mavis-fleet-canary)
 - [mavis-persona-preserver](https://github.com/SuperInstance/mavis-persona-preserver)
+- [mavis-pincher](https://github.com/SuperInstance/mavis-pincher)
+- [mavis-pincher-pages](https://github.com/SuperInstance/mavis-pincher-pages)
 - [memory-cloud](https://github.com/SuperInstance/memory-cloud)
 - [memory-palace](https://github.com/SuperInstance/memory-palace)
 - [mesosynchronous](https://github.com/SuperInstance/mesosynchronous)
@@ -3084,6 +3088,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [MuOxi](https://github.com/SuperInstance/MuOxi)
 - [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
 - [OpenRoom](https://github.com/SuperInstance/OpenRoom)
+- [PuddnHead](https://github.com/SuperInstance/PuddnHead)
 - [Spreader-tool](https://github.com/SuperInstance/Spreader-tool)
 - [Spreadsheet-ai](https://github.com/SuperInstance/Spreadsheet-ai)
 - [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
@@ -3903,6 +3908,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [SuperInstanceDocs](https://github.com/SuperInstance/SuperInstanceDocs)
 - [SuperInstanceEco](https://github.com/SuperInstance/SuperInstanceEco)
 - [SuperInstanceExamples](https://github.com/SuperInstance/SuperInstanceExamples)
+- [Syzygy](https://github.com/SuperInstance/Syzygy)
 - [TrendRadar](https://github.com/SuperInstance/TrendRadar)
 - [Tripartite1](https://github.com/SuperInstance/Tripartite1)
 - [UI](https://github.com/SuperInstance/UI)
@@ -3990,6 +3996,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [braid-group-rs](https://github.com/SuperInstance/braid-group-rs)
 - [branch-bound](https://github.com/SuperInstance/branch-bound)
 - [branch-sandbox](https://github.com/SuperInstance/branch-sandbox)
+- [breakthrough-prospector](https://github.com/SuperInstance/breakthrough-prospector)
 - [breed-registry](https://github.com/SuperInstance/breed-registry)
 - [bregman-divergence](https://github.com/SuperInstance/bregman-divergence)
 - [bsp-tree](https://github.com/SuperInstance/bsp-tree)
@@ -4387,6 +4394,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-native-mud](https://github.com/SuperInstance/git-native-mud)
 - [git-pipeline](https://github.com/SuperInstance/git-pipeline)
 - [git-storage](https://github.com/SuperInstance/git-storage)
+- [glyphcast](https://github.com/SuperInstance/glyphcast)
+- [glyphspace](https://github.com/SuperInstance/glyphspace)
 - [gno](https://github.com/SuperInstance/gno)
 - [goallog-ai](https://github.com/SuperInstance/goallog-ai)
 - [gossip-protocol](https://github.com/SuperInstance/gossip-protocol)
@@ -5014,6 +5023,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [qdrant](https://github.com/SuperInstance/qdrant)
 - [qoder-action](https://github.com/SuperInstance/qoder-action)
 - [qthe-codec](https://github.com/SuperInstance/qthe-codec)
+- [qthe-verify](https://github.com/SuperInstance/qthe-verify)
 - [quantum-audio-honesty](https://github.com/SuperInstance/quantum-audio-honesty)
 - [quantum-coin](https://github.com/SuperInstance/quantum-coin)
 - [quantum-thermo](https://github.com/SuperInstance/quantum-thermo)
@@ -5028,6 +5038,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-arcade](https://github.com/SuperInstance/quilt-arcade)
 - [quilt-arch](https://github.com/SuperInstance/quilt-arch)
 - [quilt-arena](https://github.com/SuperInstance/quilt-arena)
+- [quilt-atlas](https://github.com/SuperInstance/quilt-atlas)
 - [quilt-base](https://github.com/SuperInstance/quilt-base)
 - [quilt-bathy](https://github.com/SuperInstance/quilt-bathy)
 - [quilt-blueprint](https://github.com/SuperInstance/quilt-blueprint)
@@ -5055,6 +5066,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-cli](https://github.com/SuperInstance/quilt-cli)
 - [quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare)
 - [quilt-codespace](https://github.com/SuperInstance/quilt-codespace)
+- [quilt-codespace-lab](https://github.com/SuperInstance/quilt-codespace-lab)
 - [quilt-conformance](https://github.com/SuperInstance/quilt-conformance)
 - [quilt-cordis](https://github.com/SuperInstance/quilt-cordis)
 - [quilt-core-os](https://github.com/SuperInstance/quilt-core-os)
@@ -5077,6 +5089,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-fiction](https://github.com/SuperInstance/quilt-fiction)
 - [quilt-flow](https://github.com/SuperInstance/quilt-flow)
 - [quilt-fluidics](https://github.com/SuperInstance/quilt-fluidics)
+- [quilt-forge](https://github.com/SuperInstance/quilt-forge)
 - [quilt-foundation](https://github.com/SuperInstance/quilt-foundation)
 - [quilt-gan](https://github.com/SuperInstance/quilt-gan)
 - [quilt-gemini-worker](https://github.com/SuperInstance/quilt-gemini-worker)
