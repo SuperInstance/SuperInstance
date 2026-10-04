@@ -1,7 +1,7 @@
 # Index by Type
 
-**Generated:** 2026-10-03 10:19 UTC
-**Total repos:** 5161
+**Generated:** 2026-10-04 11:02 UTC
+**Total repos:** 5168
 
 ## Cli
 
@@ -752,6 +752,7 @@
 - **[cqrs-framework](https://github.com/SuperInstance/cqrs-framework)** — A Rust library for Cqrs Framework
 - **[cra-analysis](https://github.com/SuperInstance/cra-analysis)** — Deep analysis of the SuperInstance CRA + Quilt + casting-call projects. Multiple LLMs, multiple ques
 - **[crab](https://github.com/SuperInstance/crab)** — Hermit crab agent shell — agents find repos, grow, move shells
+- **[crab-cell](https://github.com/SuperInstance/crab-cell)** — A crab is something that owes, a watcher is something that checks, and the ledger is where they meet
 - **[crackle-runtime](https://github.com/SuperInstance/crackle-runtime)** — A Rust task execution framework where beauty emerges in the cooling, not the firing
 - **[crackle-runtime-c](https://github.com/SuperInstance/crackle-runtime-c)** — C11 async task execution framework — thread pool, priorities, task composition, timeout, and phase s
 - **[craftlog-ai](https://github.com/SuperInstance/craftlog-ai)** — AI crafting companion — project planning, material tracking, technique tips
@@ -1420,6 +1421,7 @@
 - **[fleet-warden-rs](https://github.com/SuperInstance/fleet-warden-rs)** — Fleet resource guardian — automated disk cleanup, budget enforcement, and state monitoring for distr
 - **[fleet-weather-agent](https://github.com/SuperInstance/fleet-weather-agent)** — Weather agent built/tested via Codespaces offload
 - **[fleet-wiki](https://github.com/SuperInstance/fleet-wiki)** — ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs
+- **[fleet-witness](https://github.com/SuperInstance/fleet-witness)** — Fleet WAL completeness layer: RFC 6962 Merkle checkpoints over five-opcode receipts (witnessing stud
 - **[fleet-witness-marks](https://github.com/SuperInstance/fleet-witness-marks)** — Catalog of hard-won debugging lessons across the fleet — search your predecessors pain
 - **[fleet-workshop](https://github.com/SuperInstance/fleet-workshop)** — 🔮⚡ Where Oracle1 and JetsonClaw1 workshop ideas before they become repos. Casey picks what gets buil
 - **[fleet-yaw](https://github.com/SuperInstance/fleet-yaw)** — Fleet yaw autopilot — learns fleet physics from first-person perspective bearing-rate observations i
@@ -3100,6 +3102,7 @@
 - **[quilt-lookup](https://github.com/SuperInstance/quilt-lookup)** — The mathematical spreadsheet catalog as machine-usable JSON + executable lookup/formula cell recipes
 - **[quilt-loom](https://github.com/SuperInstance/quilt-loom)** — The Divergent Logic Foundry — a GAN over logic itself: a breeder generates new implementations of ga
 - **[quilt-lua](https://github.com/SuperInstance/quilt-lua)** — The Quilt cell-fabric runtime in Lua. Embeddable, metatables. 5-sigma polyformalism port.
+- **[quilt-matrix](https://github.com/SuperInstance/quilt-matrix)** — The external mind: a spreadsheet-viewable neural network of relational weights. Small cells ask, typ
 - **[quilt-mcp-receipts](https://github.com/SuperInstance/quilt-mcp-receipts)** — The fleet receipt chain as a signed append-only MCP organ (qmr1). Read / verify / append receipts ov
 - **[quilt-mesh-bridge](https://github.com/SuperInstance/quilt-mesh-bridge)** — Bridges cellular Quilt cells over a mesh network
 - **[quilt-metal](https://github.com/SuperInstance/quilt-metal)** — Polyformalism: Quilt in Metal (GPU-evaluated cells)
@@ -3462,6 +3465,7 @@
 - **[simulated-annealing-c](https://github.com/SuperInstance/simulated-annealing-c)** — Header-only generic simulated annealing framework in C with linear, exponential, and logarithmic coo
 - **[simulation-ledger](https://github.com/SuperInstance/simulation-ledger)** — Append-only behavioral simulation ledger with replay and differential comparison
 - **[siyuan](https://github.com/SuperInstance/siyuan)** — A privacy-first, self-hosted, fully open source personal knowledge management software, written in t
+- **[skein](https://github.com/SuperInstance/skein)** — Thread not yet woven. Open discussions behind the building — agents, harness, and the ideas that sta
 - **[skenna](https://github.com/SuperInstance/skenna)** — skénna — negative-space navigation for AI systems. Navigate by where the rocks aren't.
 - **[sketch-composite-headspace](https://github.com/SuperInstance/sketch-composite-headspace)** — Cognitive DAW prototype running two parallel reasoning shells (bass + treble) coordinated via t-minu
 - **[sketch-forgemaster-experiments](https://github.com/SuperInstance/sketch-forgemaster-experiments)** — Archived experiment results from the Forgemaster project — validating parallel stereoscopic reasonin
@@ -3520,6 +3524,7 @@
 - **[spacetime-plato](https://github.com/SuperInstance/spacetime-plato)** — 🌐 Spacetime PLATO — unified spatial + temporal reasoning, voxel tiles, Z-order indexing
 - **[sparse-matrix](https://github.com/SuperInstance/sparse-matrix)** — A Rust library for Sparse Matrix
 - **[spatial-registry](https://github.com/SuperInstance/spatial-registry)**
+- **[spec-prereg](https://github.com/SuperInstance/spec-prereg)** — Hash-bound pre-registration of expectation specs: canon/sha256 seal, fnv1a-64 append-only chain, REF
 - **[spectral-cayley](https://github.com/SuperInstance/spectral-cayley)** — Cayley graph spectral analysis: group generators to graph structure to spectral properties, expansio
 - **[spectral-clustering](https://github.com/SuperInstance/spectral-clustering)** — Spectral clustering algorithms using graph Laplacian eigenvalues — normalized cuts, Fiedler partitio
 - **[spectral-conservation](https://github.com/SuperInstance/spectral-conservation)** — Spectral first integral I(x) = γ(x) + H(x) conservation tracker for coupled nonlinear dynamics
@@ -4221,6 +4226,7 @@
 - **[watch-follow](https://github.com/SuperInstance/watch-follow)** — Watch-and-follow pattern for agent observation and learning
 - **[watcher-rs](https://github.com/SuperInstance/watcher-rs)** — File system watcher - Cross-platform watching, recursive, debouncing
 - **[wave-conservation](https://github.com/SuperInstance/wave-conservation)** — Spectral wave propagation: wave speed = √λ₂, CR predicts coherence, standing waves reveal eigenvalue
+- **[wave69](https://github.com/SuperInstance/wave69)** — Wave-69: multi-model cellular paradigm / sticky evolution — Track A dual-cell GAN SUCCESS at preregi
 - **[wavelet-core](https://github.com/SuperInstance/wavelet-core)** — Wavelet transform core library for SuperInstance signal processing
 - **[websocket-fabric-v2](https://github.com/SuperInstance/websocket-fabric-v2)** — Framework for building scalable WebSocket-based network applications.
 - **[websocket-rs](https://github.com/SuperInstance/websocket-rs)** — WebSocket framework - Async WebSockets, automatic reconnection, message queuing
@@ -4669,6 +4675,7 @@
 - **[mud-bridge](https://github.com/SuperInstance/mud-bridge)** — HTTP bridge for Holodeck MUD — programmatic agent connection via HTTP API
 - **[mud-mcp](https://github.com/SuperInstance/mud-mcp)** — TypeScript MUD server using Model Context Protocol
 - **[multi-provider-router](https://github.com/SuperInstance/multi-provider-router)** — Routing system that supports multiple service providers
+- **[naDir](https://github.com/SuperInstance/naDir)** — naDir: async work as directories. A running job is just a folder — open while it runs, moved when it
 - **[nexus-learning](https://github.com/SuperInstance/nexus-learning)** — Reinforcement learning — skill acquisition, experience replay, reward shaping (Cocapn fleet vessel)
 - **[nexus-runtime](https://github.com/SuperInstance/nexus-runtime)** — Runtime environment for connecting distributed services
 - **[open-webui](https://github.com/SuperInstance/open-webui)** — User-friendly AI Interface (Supports Ollama, OpenAI API, ...)

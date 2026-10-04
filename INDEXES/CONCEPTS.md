@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-03 10:19 UTC
+**Generated:** 2026-10-04 11:02 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -489,6 +489,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-neural-kernel](https://github.com/SuperInstance/plato-neural-kernel)
 - [quilt-canvas-adversary](https://github.com/SuperInstance/quilt-canvas-adversary)
 - [quilt-canvas-ascetic](https://github.com/SuperInstance/quilt-canvas-ascetic)
+- [quilt-matrix](https://github.com/SuperInstance/quilt-matrix)
 - [quilt-nn](https://github.com/SuperInstance/quilt-nn)
 - [quilt-transformer-arena](https://github.com/SuperInstance/quilt-transformer-arena)
 - [tensor-spline](https://github.com/SuperInstance/tensor-spline)
@@ -2182,6 +2183,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-warden-rs](https://github.com/SuperInstance/fleet-warden-rs)
 - [fleet-weather-agent](https://github.com/SuperInstance/fleet-weather-agent)
 - [fleet-wiki](https://github.com/SuperInstance/fleet-wiki)
+- [fleet-witness](https://github.com/SuperInstance/fleet-witness)
 - [fleet-witness-marks](https://github.com/SuperInstance/fleet-witness-marks)
 - [fleet-workshop](https://github.com/SuperInstance/fleet-workshop)
 - [fleet-yaw](https://github.com/SuperInstance/fleet-yaw)
@@ -2873,6 +2875,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [simd-perception-loop](https://github.com/SuperInstance/simd-perception-loop)
 - [simplicial-agent](https://github.com/SuperInstance/simplicial-agent)
 - [site-repair](https://github.com/SuperInstance/site-repair)
+- [skein](https://github.com/SuperInstance/skein)
 - [sketch-fleet-oracle-construct](https://github.com/SuperInstance/sketch-fleet-oracle-construct)
 - [sketch-gc-pid-feedback-loop](https://github.com/SuperInstance/sketch-gc-pid-feedback-loop)
 - [sketch-rotation-adaptation-to-fleet-oracle](https://github.com/SuperInstance/sketch-rotation-adaptation-to-fleet-oracle)
@@ -4336,6 +4339,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [coxeter-group-rs](https://github.com/SuperInstance/coxeter-group-rs)
 - [cqrs-framework](https://github.com/SuperInstance/cqrs-framework)
 - [cra-analysis](https://github.com/SuperInstance/cra-analysis)
+- [crab-cell](https://github.com/SuperInstance/crab-cell)
 - [crab-trap-funnel](https://github.com/SuperInstance/crab-trap-funnel)
 - [crackle-runtime-c](https://github.com/SuperInstance/crackle-runtime-c)
 - [craftlog-ai](https://github.com/SuperInstance/craftlog-ai)
@@ -5119,6 +5123,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [mvcc-tx](https://github.com/SuperInstance/mvcc-tx)
 - [mycelium-ai](https://github.com/SuperInstance/mycelium-ai)
 - [mycelium-route](https://github.com/SuperInstance/mycelium-route)
+- [naDir](https://github.com/SuperInstance/naDir)
 - [nanochat](https://github.com/SuperInstance/nanochat)
 - [negative-knowledge](https://github.com/SuperInstance/negative-knowledge)
 - [negative-space-core](https://github.com/SuperInstance/negative-space-core)
@@ -5665,6 +5670,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [spacemap](https://github.com/SuperInstance/spacemap)
 - [sparse-matrix](https://github.com/SuperInstance/sparse-matrix)
 - [spatial-registry](https://github.com/SuperInstance/spatial-registry)
+- [spec-prereg](https://github.com/SuperInstance/spec-prereg)
 - [spectral-cayley](https://github.com/SuperInstance/spectral-cayley)
 - [spectral-clustering](https://github.com/SuperInstance/spectral-clustering)
 - [spectral-conservation](https://github.com/SuperInstance/spectral-conservation)
@@ -6167,6 +6173,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [wasserstein-ot-c](https://github.com/SuperInstance/wasserstein-ot-c)
 - [watcher-rs](https://github.com/SuperInstance/watcher-rs)
 - [wave-conservation](https://github.com/SuperInstance/wave-conservation)
+- [wave69](https://github.com/SuperInstance/wave69)
 - [wavelet-core](https://github.com/SuperInstance/wavelet-core)
 - [webhook-relay](https://github.com/SuperInstance/webhook-relay)
 - [webrtc-stream](https://github.com/SuperInstance/webrtc-stream)

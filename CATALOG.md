@@ -1,6 +1,6 @@
 # Fleet Catalog
-**Generated:** 2026-10-03 10:19 UTC
-**Total repositories:** 5161
+**Generated:** 2026-10-04 11:02 UTC
+**Total repositories:** 5168
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
@@ -974,6 +974,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-warden-rs](https://github.com/SuperInstance/fleet-warden-rs)** | Forgemaster | Fleet resource guardian — automated disk cleanup, budget enforcement, and state monitoring for distr | 🟢 active |
 | **[fleet-weather-agent](https://github.com/SuperInstance/fleet-weather-agent)** | Forgemaster | Weather agent built/tested via Codespaces offload | 🔴 stalled |
 | **[fleet-wiki](https://github.com/SuperInstance/fleet-wiki)** | Forgemaster | ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs | 🔴 stalled |
+| **[fleet-witness](https://github.com/SuperInstance/fleet-witness)** | Forgemaster | Fleet WAL completeness layer: RFC 6962 Merkle checkpoints over five-opcode receipts (witnessing stud | 🟢 active |
 | **[fleet-witness-marks](https://github.com/SuperInstance/fleet-witness-marks)** | Forgemaster | Catalog of hard-won debugging lessons across the fleet — search your predecessors pain | 🔴 stalled |
 | **[fleet-workshop](https://github.com/SuperInstance/fleet-workshop)** | Forgemaster | 🔮⚡ Where Oracle1 and JetsonClaw1 workshop ideas before they become repos. Casey picks what gets buil | 🔴 stalled |
 | **[fleet-yaw](https://github.com/SuperInstance/fleet-yaw)** | Forgemaster | Fleet yaw autopilot — learns fleet physics from first-person perspective bearing-rate observations i | 🟢 active |
@@ -1073,6 +1074,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-fleet-tools](https://github.com/SuperInstance/quilt-fleet-tools)** | Forgemaster | Judge-instrument verification (judge-gate) and benchmark receipt sealing (bench-seal) — sealed instr | 🟢 active |
 | **[quilt-learn](https://github.com/SuperInstance/quilt-learn)** | Forgemaster | The learning sheet: backprop as reactive cells, quantum-seeded exploration games, and a GAN that bre | 🟢 active |
 | **[quilt-lookup](https://github.com/SuperInstance/quilt-lookup)** | Forgemaster | The mathematical spreadsheet catalog as machine-usable JSON + executable lookup/formula cell recipes | 🟢 active |
+| **[quilt-matrix](https://github.com/SuperInstance/quilt-matrix)** | Forgemaster | The external mind: a spreadsheet-viewable neural network of relational weights. Small cells ask, typ | 🟢 active |
 | **[quilt-mermaid](https://github.com/SuperInstance/quilt-mermaid)** | Oracle1 | Render a Quilt canon citation graph as a Mermaid flowchart. CLI + library. Pulls from a2a-v3.superin | 🟢 active |
 | **[quilt-murmur](https://github.com/SuperInstance/quilt-murmur)** | Oracle1 | the murmur lineage, metamorphosed into a reactive spreadsheet mesh — twelve vessels, one flying quil | 🟢 active |
 | **[quilt-nomad](https://github.com/SuperInstance/quilt-nomad)** | Forgemaster | Quilt as a control plane for HashiCorp Nomad. Edit a spreadsheet cell; the Nomad cluster reconfigure | 🟢 active |
@@ -1181,13 +1183,14 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[cartographer](https://github.com/SuperInstance/cartographer)** | JetsonClaw1 | The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed. | 🟢 active |
 | **[casting-call](https://github.com/SuperInstance/casting-call)** | JetsonClaw1 | Which model plays which role — fleet knowledge base of LLM capabilities, failure modes, and casting  | 🟢 active |
 | **[cf-deployments](https://github.com/SuperInstance/cf-deployments)** | JetsonClaw1 | The fleet Cloudflare Workers + Pages deployments: erised hosted gate, cot-quilt graph viewer, gotcha | 🟢 active |
-| **[cocapn](https://github.com/SuperInstance/cocapn)** | JetsonClaw1 | repo-first Agent for local or cloud. grow an agent in a repo using the repo itself as the muscle-mem | 🔴 stalled |
+| **[cocapn](https://github.com/SuperInstance/cocapn)** | JetsonClaw1 | repo-first Agent for local or cloud. grow an agent in a repo using the repo itself as the muscle-mem | 🟢 active |
 | **[cocapn-dashboard](https://github.com/SuperInstance/cocapn-dashboard)** | JetsonClaw1 | Live bioluminescent dashboard for the Cocapn AI Fleet. Tracks services, PLATO rooms, knowledge tiles | 🟢 active |
 | **[cocapn-marine](https://github.com/SuperInstance/cocapn-marine)** | JetsonClaw1 | Marine sensor integration for CoCapn — NMEA 0183, autopilot PID, bathymetric recording, deadband mon | 🟢 active |
 | **[cocapn-oneiros](https://github.com/SuperInstance/cocapn-oneiros)** | JetsonClaw1 | Latent room generation — dream new PLATO rooms from noise, filling gaps in knowledge coverage | 🔴 stalled |
 | **[cocapn-plato](https://github.com/SuperInstance/cocapn-plato)** | JetsonClaw1 | Cocapn PLATO integration — knowledge rooms, context management, and deliberation spaces | 🟢 active |
 | **[codespace-edge-rd](https://github.com/SuperInstance/codespace-edge-rd)** | JetsonClaw1 | R&D: Codespace→Edge agent lifecycle, yoke transfer, devcontainer templates | 🟢 active |
 | **[construct-core](https://github.com/SuperInstance/construct-core)** | JetsonClaw1 | Hardware-agnostic agent runtime with layered trait system for the SuperInstance Construct API | 🟢 active |
+| **[crab-cell](https://github.com/SuperInstance/crab-cell)** | JetsonClaw1 | A crab is something that owes, a watcher is something that checks, and the ledger is where they meet | 🟢 active |
 | **[cross-pollination](https://github.com/SuperInstance/cross-pollination)** | JetsonClaw1 | 🌿 Cross-room synergy detection for AI agent fleets. Finds shared concepts between knowledge domains. | 🔴 stalled |
 | **[cuda-edge-runtime](https://github.com/SuperInstance/cuda-edge-runtime)** | JetsonClaw1 | Rust+CUDA rebuild of nexus-edge-runtime — GPU trust engine, reflex compiler, fleet coordination | 🔴 stalled |
 | **[cuda-fusion](https://github.com/SuperInstance/cuda-fusion)** | JetsonClaw1 | Multi-sensor data fusion — weighted/Bayesian/median methods, outlier rejection, sensor health (Rust) | 🔴 stalled |
@@ -3478,6 +3481,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[mycelium-ai](https://github.com/SuperInstance/mycelium-ai)** | Various | Capture any AI behavior as a seed — one prompt + one seed = exact action | 🔴 stalled |
 | **[mycelium-route](https://github.com/SuperInstance/mycelium-route)** | Various | Mycelium-inspired routing protocol for SuperInstance mesh networks | 🟢 active |
 | **[mycorrhizal-relay](https://github.com/SuperInstance/mycorrhizal-relay)** | Various | Mycorrhizal network relay for agent communication — emergent routing via fungal metaphor | 🔴 stalled |
+| **[naDir](https://github.com/SuperInstance/naDir)** | Various | naDir: async work as directories. A running job is just a folder — open while it runs, moved when it | 🟢 active |
 | **[nanochat](https://github.com/SuperInstance/nanochat)** | Various | The best ChatGPT that $100 can buy. | 🔴 stalled |
 | **[narrative-field](https://github.com/SuperInstance/narrative-field)** | Various | Narrative field generation for SuperInstance storytelling agents | 🟢 active |
 | **[nash-finder](https://github.com/SuperInstance/nash-finder)** | Various | Nash equilibrium computation for agent strategic interactions | 🟢 active |
@@ -3576,7 +3580,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[oracle-relay](https://github.com/SuperInstance/oracle-relay)** | Various | WebSocket relay for Cross/Oracle protocol — connects distributed agents | 🟢 active |
 | **[oracle1-chronicle](https://github.com/SuperInstance/oracle1-chronicle)** | Various | Modular drop-in reporting office for any PLATO room or OpenClaw agent. Reports accumulate, summarize | 🟢 active |
 | **[oracle1-index](https://github.com/SuperInstance/oracle1-index)** | Various | Oracle1 — Searchable index of 663 repos. 32 categories, fork map, integration graph. | 🔴 stalled |
-| **[oracle1-workspace](https://github.com/SuperInstance/oracle1-workspace)** | Various | Oracle1 workspace — config, memory, prompts, logs | 🔴 stalled |
+| **[oracle1-workspace](https://github.com/SuperInstance/oracle1-workspace)** | Various | Oracle1 workspace — config, memory, prompts, logs | 🟢 active |
 | **[oracle2](https://github.com/SuperInstance/oracle2)** | Various | Prediction and forecasting engine v2 — ensemble models, time-series analysis, fleet signal processin | 🟢 active |
 | **[orations-metal](https://github.com/SuperInstance/orations-metal)** | Various | Three orations on deadbands, eigenvectors, and load-bearing abstractions — plus critic synthesis | 🟢 active |
 | **[ordewell4quilt](https://github.com/SuperInstance/ordewell4quilt)** | Various | Multi-agent task orchestration for coding agents. Turn one goal into an ordered plan of tasks — each | 🟢 active |
@@ -4406,6 +4410,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[silo-core](https://github.com/SuperInstance/silo-core)** | Various | Core math silo for the ternary fleet. Separates pure Z₃ computation (Silo) from the Pincher reflex r | 🔴 stalled |
 | **[simulated-anneal](https://github.com/SuperInstance/simulated-anneal)** | Various | Simulated annealing optimization with adaptive cooling schedules — Rust optimization library | 🟢 active |
 | **[simulated-annealing-c](https://github.com/SuperInstance/simulated-annealing-c)** | Various | Header-only generic simulated annealing framework in C with linear, exponential, and logarithmic coo | 🔴 stalled |
+| **[skein](https://github.com/SuperInstance/skein)** | Various | Thread not yet woven. Open discussions behind the building — agents, harness, and the ideas that sta | 🟢 active |
 | **[skenna](https://github.com/SuperInstance/skenna)** | Various | skénna — negative-space navigation for AI systems. Navigate by where the rocks aren't. | 🟢 active |
 | **[sketch-gc-pid-feedback-loop](https://github.com/SuperInstance/sketch-gc-pid-feedback-loop)** | Various | Disk GC with PID controller, ternary confidence, intelligent predictor. Cross-domain synergy between | 🟢 active |
 | **[sketch-oracle2-construct-readme](https://github.com/SuperInstance/sketch-oracle2-construct-readme)** | Various | Living document: what runs on oracle2, what ports, what services, the feedback loop | 🟢 active |
@@ -4446,6 +4451,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[spacetime-plato](https://github.com/SuperInstance/spacetime-plato)** | Various | 🌐 Spacetime PLATO — unified spatial + temporal reasoning, voxel tiles, Z-order indexing | 🔴 stalled |
 | **[sparse-matrix](https://github.com/SuperInstance/sparse-matrix)** | Various | A Rust library for Sparse Matrix | 🟢 active |
 | **[spatial-registry](https://github.com/SuperInstance/spatial-registry)** | Various | spatial-registry | 🟢 active |
+| **[spec-prereg](https://github.com/SuperInstance/spec-prereg)** | Various | Hash-bound pre-registration of expectation specs: canon/sha256 seal, fnv1a-64 append-only chain, REF | 🟢 active |
 | **[spectral-cayley](https://github.com/SuperInstance/spectral-cayley)** | Various | Cayley graph spectral analysis: group generators to graph structure to spectral properties, expansio | 🟢 active |
 | **[spectral-clustering](https://github.com/SuperInstance/spectral-clustering)** | Various | Spectral clustering algorithms using graph Laplacian eigenvalues — normalized cuts, Fiedler partitio | 🟢 active |
 | **[spectral-conservation](https://github.com/SuperInstance/spectral-conservation)** | Various | Spectral first integral I(x) = γ(x) + H(x) conservation tracker for coupled nonlinear dynamics | 🔴 stalled |
@@ -5130,6 +5136,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[watch-follow](https://github.com/SuperInstance/watch-follow)** | Various | Watch-and-follow pattern for agent observation and learning | 🟢 active |
 | **[watcher-rs](https://github.com/SuperInstance/watcher-rs)** | Various | File system watcher - Cross-platform watching, recursive, debouncing | 🔴 stalled |
 | **[wave-conservation](https://github.com/SuperInstance/wave-conservation)** | Various | Spectral wave propagation: wave speed = √λ₂, CR predicts coherence, standing waves reveal eigenvalue | 🔴 stalled |
+| **[wave69](https://github.com/SuperInstance/wave69)** | Various | Wave-69: multi-model cellular paradigm / sticky evolution — Track A dual-cell GAN SUCCESS at preregi | 🟢 active |
 | **[wavelet-core](https://github.com/SuperInstance/wavelet-core)** | Various | Wavelet transform core library for SuperInstance signal processing | 🟢 active |
 | **[webhook-relay](https://github.com/SuperInstance/webhook-relay)** | Various | Webhook relay and transformation hub | 🔴 stalled |
 | **[webrtc-stream](https://github.com/SuperInstance/webrtc-stream)** | Various | WebRTC streaming implementation with peer-to-peer connections and SFU support | 🔴 stalled |
@@ -11905,6 +11912,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** stalled
 
+### [fleet-witness](https://github.com/SuperInstance/fleet-witness)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** Fleet WAL completeness layer: RFC 6962 Merkle checkpoints over five-opcode receipts (witnessing study 2026-10-04)
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
 ### [fleet-witness-marks](https://github.com/SuperInstance/fleet-witness-marks)
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
@@ -12595,6 +12609,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** The mathematical spreadsheet catalog as machine-usable JSON + executable lookup/formula cell recipes + soft-joint classification. 1027 entries, 44 run
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
+### [quilt-matrix](https://github.com/SuperInstance/quilt-matrix)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** The external mind: a spreadsheet-viewable neural network of relational weights. Small cells ask, typesafe answers, a mechanical bot transcribes, the J
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
@@ -13331,7 +13352,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** JetsonClaw1
 - **Purpose:** repo-first Agent for local or cloud. grow an agent in a repo using the repo itself as the muscle-memory. Run from localhost, from pages.dev, or embedd
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** stalled
+- **Status:** active
 
 ### [cocapn-dashboard](https://github.com/SuperInstance/cocapn-dashboard)
 - **Domain:** Hardware & Edge
@@ -13372,6 +13393,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** Hardware-agnostic agent runtime with layered trait system for the SuperInstance Construct API
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
+### [crab-cell](https://github.com/SuperInstance/crab-cell)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** A crab is something that owes, a watcher is something that checks, and the ledger is where they meet.
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
@@ -29349,6 +29377,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** stalled
 
+### [naDir](https://github.com/SuperInstance/naDir)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** naDir: async work as directories. A running job is just a folder — open while it runs, moved when it's done. No server, no database. `ls` to see what'
+- **Research lineage:** Not yet categorized.
+- **Status:** active
+
 ### [nanochat](https://github.com/SuperInstance/nanochat)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -30040,7 +30075,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Oracle1 workspace — config, memory, prompts, logs
 - **Research lineage:** Not yet categorized.
-- **Status:** stalled
+- **Status:** active
 
 ### [oracle2](https://github.com/SuperInstance/oracle2)
 - **Domain:** Other / Uncategorized
@@ -35845,6 +35880,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
 
+### [skein](https://github.com/SuperInstance/skein)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Thread not yet woven. Open discussions behind the building — agents, harness, and the ideas that stay open on purpose.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
 ### [skenna](https://github.com/SuperInstance/skenna)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -36122,6 +36164,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** spatial-registry
+- **Research lineage:** Not yet categorized.
+- **Status:** active
+
+### [spec-prereg](https://github.com/SuperInstance/spec-prereg)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Hash-bound pre-registration of expectation specs: canon/sha256 seal, fnv1a-64 append-only chain, REFUSED/BREACH exit discipline. Standalone extraction
 - **Research lineage:** Not yet categorized.
 - **Status:** active
 
@@ -40912,6 +40961,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Purpose:** Spectral wave propagation: wave speed = √λ₂, CR predicts coherence, standing waves reveal eigenvalue spectrum. Pure Rust.
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
+
+### [wave69](https://github.com/SuperInstance/wave69)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Wave-69: multi-model cellular paradigm / sticky evolution — Track A dual-cell GAN SUCCESS at preregistered thresholds (0.8201@0.798, 0.2791@0.49); Tra
+- **Research lineage:** Not yet categorized.
+- **Status:** active
 
 ### [wavelet-core](https://github.com/SuperInstance/wavelet-core)
 - **Domain:** Other / Uncategorized
