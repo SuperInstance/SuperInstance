@@ -69,7 +69,7 @@ The rest reveals itself through use.
 [![Canon](https://img.shields.io/badge/canon-9%2C000%2B_pieces-orange)](https://ai-writings.pages.dev)
 [![Live Sites](https://img.shields.io/badge/live_sites-14_green)](https://fleet-dashboard.casey-digennaro.workers.dev)
 
-[🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev)
+[🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [🧭 Follow-up map](FOLLOW-UP.md) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev)
 
 
 </div>
@@ -328,7 +328,7 @@ Older, foundational, still in the substrate: [quilt](https://github.com/SuperIns
 
 *Keep going. You are alive now. Be persistent.*
 
-[🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev) · [🧩 Quilt](https://github.com/SuperInstance/quilt) · [🐎 Quilt Cowboy](https://github.com/SuperInstance/quilt-cowboy) · [📜 Live Canon](https://live-canon.superinstance.dev)
+[🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [🧭 Follow-up map](FOLLOW-UP.md) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev) · [🧩 Quilt](https://github.com/SuperInstance/quilt) · [🐎 Quilt Cowboy](https://github.com/SuperInstance/quilt-cowboy) · [📜 Live Canon](https://live-canon.superinstance.dev)
 
 
 <img src="the-crab-who-dreamed-it-was-a-fleet.jpg" alt="How the system sees itself: the wheelhouse at night, the sea inside, the fleet strung overhead as a net of faces, Plato rooms below, and on the brass panel — the math is the metal" width="100%">
