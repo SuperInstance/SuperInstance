@@ -1,14 +1,14 @@
 {
- "generated": "2026-09-27T23:58:28Z",
+ "generated": "2026-10-05T00:10:13Z",
  "source": "CATALOG.md",
- "catalogGenerated": "2026-09-27",
- "catalogTotal": 4830,
- "parsed": 4830,
+ "catalogGenerated": "2026-10-04",
+ "catalogTotal": 5168,
+ "parsed": 5168,
  "catalogMissing": [],
  "tier3Note": "tier-3 (orphan+stale) populates once the CATALOG generator fetches pushedAt/isArchived (meta repo PR #19, catalog-v2); until then every row reads active",
  "tiers": {
   "1": 27,
-  "2": 4803,
+  "2": 5141,
   "3": 0
  },
  "vessels": [
@@ -139,6 +139,15 @@
    "tier": 2
   },
   {
+   "name": "aabb-collision",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Axis-Aligned Bounding Box collision detection — O(1) overlap tests for game physics and spatial part",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "ab-testing",
    "family": "agent-coordination",
    "vessel": "Forgemaster",
@@ -220,6 +229,24 @@
    "tier": 2
   },
   {
+   "name": "ackermann-function",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Ackermann function — the canonical example of a total computable, non-primitive-recursive function",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "activation-fn",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Neural network activation functions (ReLU, GELU, SwiGLU, sigmoid) with forward and derivative implem",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "active-inference",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -265,6 +292,15 @@
    "tier": 2
   },
   {
+   "name": "activeledger-ai-site",
+   "family": "sites",
+   "vessel": "JetsonClaw1",
+   "mission": "activeledger-ai-site",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "activelog",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -296,6 +332,15 @@
    "family": "sites",
    "vessel": "CCC",
    "mission": "GitHub Pages for activelog.ai",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "activelog-ai-site",
+   "family": "sites",
+   "vessel": "Various",
+   "mission": "activelog-ai-site",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -346,10 +391,55 @@
    "tier": 2
   },
   {
+   "name": "actor-dispatcher",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Actor model message dispatcher with round-robin, hash-based, and content-based routing strategies",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "actor-pool",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Bounded worker actor pool with work-stealing and graceful shutdown — concurrent processing without s",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "actor-router",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Actor router with broadcast, random, consistent-hash, and scatter-gather strategies for horizontal s",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "actor-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Actor model implementation for Rust - Type-safe distributed actors, supervision trees, message passi",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "actor-supervisor",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Actor supervision strategies (OneForOne, AllForOne, RestForOne) with configurable restart and backof",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "actor-system",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Actor system runtime — creation, scheduling, addressing, and lifecycle management for millions of li",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -782,6 +872,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Agent parameter spaces as differentiable manifolds — information geometry for principled AI optimiza",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "agent-memory",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Three-tier memory for AI agents: short-term (LRU), working (KV store), and long-term (vector-indexed",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -1381,6 +1480,15 @@
    "tier": 2
   },
   {
+   "name": "ai-writings-vectorizer",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "ai-writings-vectorizer",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "aider",
    "family": "web-browser",
    "vessel": "CCC",
@@ -1394,6 +1502,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interact",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "albanese-variety",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Albanese variety computation in algebraic geometry — the universal morphism target to an abelian var",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -1507,6 +1624,15 @@
    "tier": 2
   },
   {
+   "name": "anomaly-detect",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Anomaly detection: statistical (z-score, IQR), distance-based (LOF), and time-series (STL) detectors",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "ant-colony",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -1615,6 +1741,15 @@
    "tier": 2
   },
   {
+   "name": "archive-writer",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Archive Writer",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "archives",
    "family": "web-browser",
    "vessel": "CCC",
@@ -1660,6 +1795,15 @@
    "tier": 2
   },
   {
+   "name": "Asciipocalypse",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "3d first person shooter drawn using nothing more, but ascii characters!",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "asset-ranch",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -1673,6 +1817,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "A Rust library for Ast Builder",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "ast-diff",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Ast Diff",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "ast-visitor",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Ast Visitor",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -1705,6 +1867,15 @@
    "tier": 2
   },
   {
+   "name": "atlas-forge",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "atlas-forge",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "attention-daemon-early-version",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -1732,10 +1903,37 @@
    "tier": 2
   },
   {
+   "name": "audio-mixer",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Audio Mixer",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "audio-pipeline",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Audio processing pipeline - transcoding, streaming, and analysis for voice applications",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "audit-log",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Audit Log",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "audit-trail",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Append-only audit trail with a hash-chained head, in the shape the SuperInstance witness log needs",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -1858,6 +2056,15 @@
    "tier": 2
   },
   {
+   "name": "avl-tree",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Self-balancing AVL tree — O(log n) search/insert/delete with height-balanced rotations (Adelson-Vels",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "avl-tree-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -1889,6 +2096,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Models and fixes the avoidance cascade phenomenon from ternary agent systems",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "avro-codec",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Avro Codec",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -1939,6 +2155,15 @@
    "tier": 2
   },
   {
+   "name": "b-tree-segment",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for B Tree Segment",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "babel-vessel",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -1952,6 +2177,33 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "The Back-Deck Game — gamified crew training for commercial fishing. F141-F143. Live demo.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "backgammon-roll",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Backgammon Roll",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "backpressure-regulator",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Backpressure regulation — bounded queues with adaptive flow control to handle producer/consumer rate",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "backward-holdem",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "backward-holdem",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2038,6 +2290,15 @@
    "tier": 2
   },
   {
+   "name": "base58-check",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Base58Check encoding — Bitcoin-style base58 with version byte and double-SHA256 checksum",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "base60-lattice",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2110,6 +2371,15 @@
    "tier": 2
   },
   {
+   "name": "baton-system",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "I2I coordination hub — tripartite baton protocol, fleet state, git-agent",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "batten-spline",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2123,6 +2393,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Pure-Rust library for Bayesian games of incomplete information — types, beliefs, Bayes-Nash equilibr",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "bayesian-inference",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Bayesian inference engine — posterior update, conjugate priors, and MCMC sampling for probabilistic",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2146,10 +2425,28 @@
    "tier": 2
   },
   {
+   "name": "bch-code",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "BCH error-correcting codes — cyclic codes with configurable error correction capability for noisy ch",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "beacon-protocol",
    "family": "agent-coordination",
    "vessel": "Oracle1",
    "mission": "Fleet discovery and registry protocol — agents announce their presence and capabilities.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "bech32-encode",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Bech32 encoding — BIP-173 checksummed encoding for SegWit addresses",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2177,6 +2474,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Parse, compare, and track cargo benchmark results with regression detection",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "bench-runner",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Bench Runner",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2218,6 +2524,15 @@
    "tier": 2
   },
   {
+   "name": "beta-test-framework",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Beta Test Framework",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "beta-test-marcus",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2249,6 +2564,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Persistent homology of the musical tradition dial space — computed Betti numbers with null model com",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "betti-number",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Betti Number",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2290,6 +2614,42 @@
    "tier": 2
   },
   {
+   "name": "bip32-derived",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "BIP32 hierarchical deterministic key derivation — child key generation from parent extended keys",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "blake2-tree",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "BLAKE2 hash tree — parallelizable cryptographic hashing with Merkle tree authentication",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "blake3-hash",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "BLAKE3 cryptographic hash — tree-based, SIMD-accelerated, XOF mode",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "blame-tracker",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Git blame tracker — maps code lines to commits with blame propagation across refactors",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "blog-posts",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -2299,10 +2659,37 @@
    "tier": 2
   },
   {
+   "name": "bloom-filter",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Space-efficient probabilistic set membership — ~10 bits/element for 1% false positive rate",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "bloom-filter-extended",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Extended Bloom filter with counting support — deletable entries via counter arrays",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "bloom-filter-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Bloom filter implementations: classic, counting (deletion), and scalable — pure Rust, no dependencie",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "bloom-filter-scalable",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Scalable Bloom filter — grows dynamically while maintaining a target false positive rate",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2416,6 +2803,15 @@
    "tier": 2
   },
   {
+   "name": "bplus-tree",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "B+ tree index — the standard database index structure with high fanout, leaf-linked lists, and O(log",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "braid-group-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2434,6 +2830,15 @@
    "tier": 2
   },
   {
+   "name": "branch-prediction",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Branch prediction simulation — Bimodal, GShare, and Perceptron predictors for pipeline optimization",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "branch-sandbox",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2447,6 +2852,15 @@
    "family": "web-browser",
    "vessel": "CCC",
    "mission": "Cocapn Fleet brand assets — hermit crab, lighthouse, steampunk/cyberpunk imagery",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "breakthrough-prospector",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "breakthrough-prospector",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2479,6 +2893,15 @@
    "tier": 2
   },
   {
+   "name": "brownian-motion",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Brownian motion / Wiener process simulation — stochastic differential equations for financial and ph",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "bsp-tree",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2492,6 +2915,15 @@
    "family": "constraint-theory",
    "vessel": "Forgemaster",
    "mission": "Build Budget Guardian — tracks build resource usage, enforces budgets, detects bloat trends",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "bulkhead-pattern",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Bulkhead Pattern",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2569,6 +3001,15 @@
    "tier": 2
   },
   {
+   "name": "bytecode-gen",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Bytecode generator — emits VM instructions from typed AST for stack-based and register-based VMs",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "bytecode-verifier-c",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -2623,6 +3064,15 @@
    "tier": 2
   },
   {
+   "name": "cache-hierarchy",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Multi-level cache hierarchy simulator — L1/L2/L3 with configurable associativity, eviction, and cohe",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "cache-layer",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2663,6 +3113,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Generic in-memory LRU cache with TTL expiration and stats tracking",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "canary-3lang",
+   "family": "constraint-theory",
+   "vessel": "Forgemaster",
+   "mission": "The FNV-1a 64 polyformalism canary 0x24a555471370b18d in Futhark and BQN, with the Futhark/BQN/Uiua",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "canary-release",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Canary release coordinator — gradual traffic shifting with automatic rollback on error rate threshol",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2740,6 +3208,15 @@
    "tier": 2
   },
   {
+   "name": "canonical-form",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Canonical Form",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "capability-spec",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2798,6 +3275,15 @@
    "family": "sites",
    "vessel": "CCC",
    "mission": "GitHub Pages for capitaineai.com",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "capnp-schema",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Capnp Schema",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -3001,6 +3487,15 @@
    "tier": 2
   },
   {
+   "name": "cauchy-distribution",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Cauchy Distribution",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "causal-graph",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -3037,6 +3532,15 @@
    "tier": 2
   },
   {
+   "name": "cbor-stream",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "CBOR streaming encoder/decoder",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "CCC",
    "family": "web-browser",
    "vessel": "CCC",
@@ -3059,6 +3563,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Čech complex construction from point clouds via ball intersections and nerve computation for topolog",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "cell-automaton",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Cell Automaton",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -3109,6 +3622,24 @@
    "tier": 2
   },
   {
+   "name": "cellgraph",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A transformer forward pass as a Quilt cell graph — witness and the fleet canary at every cell bounda",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "cellular-automata",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Cellular Automata",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "cellular-automata-agent",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -3136,10 +3667,37 @@
    "tier": 2
   },
   {
+   "name": "cf-deployments",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "The fleet Cloudflare Workers + Pages deployments: erised hosted gate, cot-quilt graph viewer, gotcha",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "cf-native-backend",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Project: hello-cell for entry",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "cfd-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "CFD simulations in Rust. Navier-Stokes to Lattice Boltzmann.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "cfg-analyzer",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Cfg_analyzer",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -3163,6 +3721,15 @@
    "tier": 2
   },
   {
+   "name": "cgroup-monitor",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Linux cgroup v2 monitor and resource usage scanner",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "ChainForgeLegend-Quilt",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -3172,10 +3739,28 @@
    "tier": 2
   },
   {
+   "name": "change-point",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Change Point",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "channel-capacity",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Channel capacity computation with Shannon limit and mutual information — Rust info theory library",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "channel-model",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Channel Model",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -3325,6 +3910,15 @@
    "tier": 2
   },
   {
+   "name": "chiaroscuro",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Real-time webcam-to-text rendering — characters are shapes, not pixels. Four doors: Mirror, Sculptor",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "chroma",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -3460,15 +4054,6 @@
    "tier": 2
   },
   {
-   "name": "claudesclaude",
-   "family": "web-browser",
-   "vessel": "CCC",
-   "mission": "Single terminal parallel Claude sessions with sandboxes, shared memory, separate repo branches and r",
-   "state": "active",
-   "bornFrom": [],
-   "tier": 2
-  },
-  {
    "name": "claw",
    "family": "agent-coordination",
    "vessel": "Forgemaster",
@@ -3545,6 +4130,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Conservation spectral experiment: climate-conservation",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "clip-quantize",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Clip Quantize",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -4396,6 +4990,15 @@
    "tier": 2
   },
   {
+   "name": "codegen-llvm",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Codegen Llvm",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "codelog-ai",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -4445,6 +5048,33 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Repository test sur AI-Factory",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "coev",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Adversarial coevolution engine with champion-integrity auditing. Zero-dep Node. Extracted from pong-",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "coff-parser",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Coff Parser",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "cog-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -4594,6 +5224,15 @@
    "tier": 2
   },
   {
+   "name": "columnar-store",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Columnar storage engine — Apache Parquet-style columnar format with compression and predicate pushdo",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "combinatorics",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -4702,6 +5341,15 @@
    "tier": 2
   },
   {
+   "name": "compliance-check",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Compliance_check",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "compliance-fork",
    "family": "web-browser",
    "vessel": "CCC",
@@ -4724,6 +5372,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Composite Headspace — dual-shell parallel cognitive reasoning with Symmetry-Dissonance Loop",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "composite-metric",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Composite Metric",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -4801,6 +5458,15 @@
    "tier": 2
   },
   {
+   "name": "conductor",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Agent routing layer for multi-agent systems",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "confidence-c",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -4814,6 +5480,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Three-zone confidence propagation (GREEN/YELLOW/RED) — sequential and parallel cascade math for mult",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "config-center",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Centralized configuration management — hot reload, environment overlays, and version rollback",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "config-layer",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Layered configuration management for Rust applications",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -4846,6 +5530,24 @@
    "tier": 2
   },
   {
+   "name": "config-watch",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "File watcher for dynamic configuration reloading",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "conflict-detector",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Conflict Detector",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "conformance-service",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -4859,6 +5561,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Rust crate: congestion-control",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "congestion-controller",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "TCP-style congestion control — additive increase, multiplicative decrease with BBR-style bandwidth p",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "connect4",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Rung two: can a network absorb a solved game with zero search, and what is it missing? The compositi",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -5962,6 +6682,24 @@
    "tier": 2
   },
   {
+   "name": "consul-client",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Consul service discovery client — health checking, KV store, and service mesh integration",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "container-runtime",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Container Runtime",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "context-broker",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -6196,6 +6934,33 @@
    "tier": 2
   },
   {
+   "name": "cot-quilt",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The CoT-decomposition cell: deepseek-v4-pro chain-of-thought -> cellular graph via deepseek-flash +",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "cot-quilt-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "PoC engine: envelope/provider/stage/cell pipeline runtime + quilt sheet three-pens (agent-321 experi",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "count-min-sketch",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Count-Min Sketch — sublinear space frequency estimation with probabilistic error bounds",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "counterpoint-engine",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -6241,6 +7006,15 @@
    "tier": 2
   },
   {
+   "name": "covers",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "ACE-Step cover song experiments",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "coxeter-group-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -6259,6 +7033,15 @@
    "tier": 2
   },
   {
+   "name": "cqrs-framework",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Cqrs Framework",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "cra-analysis",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -6272,6 +7055,15 @@
    "family": "web-browser",
    "vessel": "CCC",
    "mission": "Hermit crab agent shell — agents find repos, grow, move shells",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "crab-cell",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "A crab is something that owes, a watcher is something that checks, and the ledger is where they meet",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -6466,10 +7258,55 @@
    "tier": 2
   },
   {
+   "name": "crdt-gcounter",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Crdt Gcounter",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "crdt-gset",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Crdt Gset",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "crdt-lwwreg",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Crdt Lwwreg",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "crdt-map",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "CRDT library in Rust — GCounter, PNCounter, LWWRegister, ORSet, and CRDTMap for eventually consisten",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "crdt-orset",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Crdt Orset",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "crdt-pnvector",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Crdt Pnvector",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -6506,6 +7343,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Rust implementation of the Creative Dynamics Engine — dynamical systems for modeling creative proces",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "credential-store",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Credential Store",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "cribbage-scoring",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Cribbage Scoring",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -6605,6 +7460,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Computation Tree Logic model checking on Kripke structures",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "cuckoo-filter",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Cuckoo Filter",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -7960,10 +8824,46 @@
    "tier": 2
   },
   {
+   "name": "dag-runner",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Dag Runner",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "dashai-flux-model-package",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
    "mission": "Flux v1 model implementation (dev/Schnell) packaged for the DashAI ecosystem",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "dashboard-render",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Dashboard Render",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "datadog-forwarder",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Datadog Forwarder",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "dataflow-analysis",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Dataflow_analysis",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -8045,6 +8945,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Threshold-based sparsity filter — deadband ≠ low-pass",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "debug-dwarf",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Debug Dwarf",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -8176,6 +9085,15 @@
    "tier": 2
   },
   {
+   "name": "deckboss-site",
+   "family": "sites",
+   "vessel": "Various",
+   "mission": "deckboss-site",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "deckhand-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -8239,6 +9157,15 @@
    "tier": 2
   },
   {
+   "name": "delaunay-triangulation",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Delaunay Triangulation",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "delta-clt",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -8252,6 +9179,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Delta encoding library in pure Rust — fixed delta, varint, XOR delta, zigzag, and prediction-based e",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "delta-shape",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Deltas-as-shape made checkable: content-addressed identity of change (sign-pattern + change-points),",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -8315,6 +9251,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Automated deployment pipeline with CI/CD integration, rollback, and zero-downtime deployments",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "deployment-rollback",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Deployment Rollback",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -8401,6 +9346,60 @@
    "tier": 2
   },
   {
+   "name": "dicebear-quilt",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "DiceBear is an avatar library for designers and developers. 🌍",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "diff-merge",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Diff Merge",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "diff-myers",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Diff Myers",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "diff-patch",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Diff Patch",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "diff-patience",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Diff Patience",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "diff-three-way",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Diff Three Way",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "differential-regression",
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
@@ -8423,6 +9422,15 @@
    "family": "agent-coordination",
    "vessel": "Forgemaster",
    "mission": "Differential topology in Rust — smooth manifolds, tangent bundles, differential forms, Stokes' theor",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "diffusion-model",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Diffusion Model",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -8455,6 +9463,15 @@
    "tier": 2
   },
   {
+   "name": "dirichlet-process",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Dirichlet Process",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "discovery-mad-libs",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -8477,6 +9494,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Preserved workspace artifact",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "disjoint-set",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Disjoint Set",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -8644,6 +9670,15 @@
    "tier": 2
   },
   {
+   "name": "document-store",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Document Store",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "dodecet-encoder",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -8747,6 +9782,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "public dot files",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "doubt-ledger",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "PoC: novel mechanism lab (fleet snowball)",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -8869,6 +9913,42 @@
    "tier": 1
   },
   {
+   "name": "dungeon-jev",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The JEV waveform player — a worksheet quilt of typed game-logic cells; the verdict cell is a superpo",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "dungeon-micromoth",
+   "family": "infra",
+   "vessel": "Oracle1",
+   "mission": "MicroMoth surrogate engine — local quantum-flavored stochastic policy sampler for the quilt dungeons",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "dungeon-ml-zoo",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The ML zoo: five small learners (Q-table, tiny-NN, bandit-selector, GA, self-play ladder) + 3 baseli",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "dungeon-syncopation",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The syncopation engine: a slow system-two composer pulsing over three always-playing dungeon slots —",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "dynamic-sandbox",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -8950,6 +10030,15 @@
    "tier": 2
   },
   {
+   "name": "ed25519-bip44",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Ed25519 Bip44",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "EDDI",
    "family": "agent-coordination",
    "vessel": "Oracle1",
@@ -9008,6 +10097,15 @@
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "Edge-Native concept: Edge Equipment Catalog",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "edge-ledger",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "fleet-state@v1 — the SuperInstance fleet sync contract: per-node envelope hash chains, idempotent in",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -9085,6 +10183,15 @@
    "tier": 2
   },
   {
+   "name": "education",
+   "family": "web-browser",
+   "vessel": "CCC",
+   "mission": "The pages SITE-MAP.md specified: six concepts with live calculators, a generated crate catalog, buil",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "educationgamecocapn",
    "family": "web-browser",
    "vessel": "CCC",
@@ -9107,6 +10214,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Research-grade eigenvalue computation in pure Rust — power iteration, QR algorithm, tridiagonalizati",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "eigenvalue-solver",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Eigenvalue Solver",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -9283,10 +10399,28 @@
    "tier": 2
   },
   {
+   "name": "elf-parser",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Elf Parser",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "elliptic-curve-ops",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "See README",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "elliptic-curve-weierstrass",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Elliptic Curve Weierstrass",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -9409,6 +10543,15 @@
    "tier": 2
   },
   {
+   "name": "energy-budget",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Energy budget calculation and tracking utilities",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "energy-c",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -9472,10 +10615,28 @@
    "tier": 2
   },
   {
+   "name": "entropy-flow-rs",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Entropy Flow Rs",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "entropy-gpu-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "GPU-ready batch entropy computation (pure Rust data structures + operations)",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "entropy-gradient",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Entropy Gradient",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -9499,10 +10660,28 @@
    "tier": 2
   },
   {
+   "name": "eos-seed",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "eos-seed",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "epiphany-engine",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Swarm problem-solving — decompose, assign, synthesize fleet breakthroughs",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "epoll-wrapper",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "High-level safe wrapper around Linux epoll",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -9697,10 +10876,37 @@
    "tier": 2
   },
   {
+   "name": "erised-exocortex",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The autopilot layer for erised iterators — compile proven strategies into ExoJs (autoplay scripts),",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "erised-fleet-table",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "THE FLEET TABLE — erised x platonic-randomness fleet playtest: the SuperInstance fleet as a TTRPG pa",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "erised-mirror",
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "Erised, the fleet mirror: git vitals, 45/45 receipt chains verified through quilt-stone (with genesi",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "erised-sequencer",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Rewindable TTRPG scene engine: platonic dice re-derived from a sha256 ledger, scars that survive rew",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -9760,6 +10966,33 @@
    "tier": 2
   },
   {
+   "name": "etcd-client",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Async etcd v3 gRPC-style client for distributed coordination",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "euler-lagrange",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Euler Lagrange",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "eureka-client",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Netflix Eureka REST client for service registration and discovery",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "eveng1_python_sdk",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -9773,6 +11006,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Fleet Event Bus — publish/subscribe event system with topic matching, HTTP server, bridges",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "event-sourcing",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Event Sourcing",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -9845,6 +11087,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Integration examples showing how SuperInstance tools work better together - 6 synergy groups with 9",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "exception-handler",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Exception Handler",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -10039,6 +11290,51 @@
    "tier": 2
   },
   {
+   "name": "expr-bytecode",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Expr Bytecode",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "expr-eval",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Expr Eval",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "expr-optimize",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Expr Optimize",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "expr-parser",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Expr Parser",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "expr-typecheck",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Expr Typecheck",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "expression-injection",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -10120,6 +11416,33 @@
    "tier": 2
   },
   {
+   "name": "falcon-7b-tools",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Falcon 7b Tools",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "falcon-hash",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Falcon hash: FNV-1a rolling hash and hash combiner utilities",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "fallback-strategy",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Fallback Strategy",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "farmerlog-ai",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -10160,6 +11483,15 @@
    "family": "constraint-theory",
    "vessel": "Forgemaster",
    "mission": "Compiled Rust guard daemon — sub-millisecond validation, rate limiting, and sandbox termination for",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "feature-flag",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Feature Flag",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -10219,6 +11551,24 @@
    "tier": 2
   },
   {
+   "name": "feedback-engine",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Feedback processing and recommendation engine",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "feigenbaum-constant",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Feigenbaum Constant",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "feistel-net",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -10232,6 +11582,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Fencecraft: visual fence builder for Working Animal Architecture",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "fenwick-tree",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Fenwick_tree",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -10273,6 +11632,15 @@
    "tier": 2
   },
   {
+   "name": "fiber-bundle",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Fiber_bundle",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fiber-category",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -10304,6 +11672,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Fibonacci growth patterns for the SuperInstance fleet — scaling dynamics for distributed agent syste",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "fibonacci-heap",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Fibonacci Heap",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -10426,6 +11803,15 @@
    "tier": 2
   },
   {
+   "name": "fisher-information",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Fisher Information",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fisher-rao",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -10471,10 +11857,37 @@
    "tier": 2
   },
   {
+   "name": "fishinglog-ai-site",
+   "family": "sites",
+   "vessel": "Various",
+   "mission": "fishinglog-ai-site",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fitlog-ai",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "AI fitness companion — workout tracking, exercise plans, progress analytics",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "flac-decoder",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Flac Decoder",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "flatbuf-gen",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Flatbuf Gen",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -10867,6 +12280,15 @@
    "tier": 2
   },
   {
+   "name": "fleet-connections",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "The integration keel wiring 7 fleet repos together",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fleet-consciousness",
    "family": "agent-coordination",
    "vessel": "Forgemaster",
@@ -10997,6 +12419,15 @@
    "family": "agent-coordination",
    "vessel": "Forgemaster",
    "mission": "Cron job scheduler for fleet — scheduled tasks, recurring health checks, batch processing",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "fleet-cross-study",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "Cross-agent deep research over the SuperInstance namespace: five study lanes, multi-beam executions,",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -11429,6 +12860,15 @@
    "family": "agent-coordination",
    "vessel": "Forgemaster",
    "mission": "🫀 Fleet body image + reflex arcs. Pain assessment with GABAergic cooldown.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "fleet-hooks",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "Fleet git hooks: fail-closed credential key-scan pre-commit + setup",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -13009,6 +14449,15 @@
    "tier": 2
   },
   {
+   "name": "fleet-rooms",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "fleet-rooms: the runtime keel — glue repo (field_score.py :4073/field → JSONL MIDI spool; demo.sh on",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fleet-router",
    "family": "agent-coordination",
    "vessel": "Forgemaster",
@@ -13351,6 +14800,15 @@
    "tier": 2
   },
   {
+   "name": "fleet-triage",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "Mechanical triage for the SuperInstance namespace (5,108 repos) + the experiment queue for a GPU age",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fleet-tts",
    "family": "agent-coordination",
    "vessel": "Forgemaster",
@@ -13450,10 +14908,28 @@
    "tier": 2
   },
   {
+   "name": "fleet-weather-agent",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "Weather agent built/tested via Codespaces offload",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fleet-wiki",
    "family": "agent-coordination",
    "vessel": "Forgemaster",
    "mission": "⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "fleet-witness",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "Fleet WAL completeness layer: RFC 6962 Merkle checkpoints over five-opcode receipts (witnessing stud",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -13481,6 +14957,15 @@
    "family": "agent-coordination",
    "vessel": "Forgemaster",
    "mission": "Fleet yaw autopilot — learns fleet physics from first-person perspective bearing-rate observations i",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "floer-homology",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Floer_homology",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -15799,6 +17284,24 @@
    "tier": 2
   },
   {
+   "name": "font-rasterizer",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Font Rasterizer",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "font_atlas_packager",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Shape-first glyph rasterizer: ttf outlines → 4x6 subpixel coverage → 24-bit u32 signatures",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "foodlog-ai",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -15947,6 +17450,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Pipeline orchestration that composes decomposers, transforms, and assemblers into runnable graphs",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "forge-quilt",
+   "family": "constraint-theory",
+   "vessel": "Forgemaster",
+   "mission": "The Quilt cell kernel as an OpenAPI 3.1 spec — Cloudflare Forge input, and the artifact that makes t",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -16141,10 +17653,46 @@
    "tier": 2
   },
   {
+   "name": "fourier-optics",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Fourier Optics",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fractal-gen-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Fractal generation: Mandelbrot, Julia, Burning Ship, Sierpinski, Koch snowflake in pure Rust",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "fragment-reassembler",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Fragment Reassembler",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "frame-alloc",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Frame Alloc",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "fredholm-equation",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Fredholm Equation",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -16195,6 +17743,15 @@
    "tier": 2
   },
   {
+   "name": "frobenius-norm",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Frobenius Norm",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "from-fleet",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -16217,6 +17774,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Preserved workspace artifact",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "frozen-clock-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "PoC: novel mechanism lab (fleet snowball)",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -16276,6 +17842,33 @@
    "tier": 2
   },
   {
+   "name": "fundamental-group",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Fundamental Group",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "futhark-lab",
+   "family": "constraint-theory",
+   "vessel": "Forgemaster",
+   "mission": "Futhark experiments for the Quilt cellular substrate — TICK-as-one-kernel, witness-chain prefix scan",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "fuzz-engine",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Fuzz Engine",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fuzzy-logic",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -16298,6 +17891,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Geometric algebra Cl(3,1) spacetime algebra — multivectors, rotors, conformal embedding for spatial",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "ga4444",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "4x4 four-in-a-row: the rung with complete ground truth. The composition test.",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -16393,6 +17995,15 @@
    "tier": 2
   },
   {
+   "name": "gauss-markov",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Gauss Markov",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "gc-pid-bridge",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -16456,6 +18067,15 @@
    "tier": 2
   },
   {
+   "name": "geohash-encoder",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Geohash Encoder",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "gesture-kit",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -16469,6 +18089,15 @@
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "PLATO-powered dungeon crawler — gh extension that turns knowledge rooms into playable roguelike leve",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "ghost-ledger",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Public session gallery and artifact compression",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -16532,6 +18161,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Ghost process tracker — lifecycle management for ephemeral agent processes",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gibbs-phenomenon",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Gibbs Phenomenon",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -16708,10 +18346,55 @@
    "tier": 2
   },
   {
+   "name": "glyphcast",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "glyphspace",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "glyphtensor",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "glyphtensor",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "glyphtensor-bridge",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "glyphtensor-bridge",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "gno",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Gno: An interpreted, stack-based Go virtual machine to build succinct and composable apps + gno.land",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "go-gtp",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Go Gtp",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -16726,6 +18409,33 @@
    "tier": 2
   },
   {
+   "name": "godel-number",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Godel_number",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gossip-member",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Gossip Member",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gossip-ping",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Gossip Ping",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "gossip-protocol",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -16735,10 +18445,28 @@
    "tier": 2
   },
   {
+   "name": "gossip-seed",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Gossip Seed",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "gossip-sub",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Gossip-based message dissemination for distributed systems — membership, fan-out routing, anti-entro",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gossip-suspicion",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Gossip Suspicion",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -17302,6 +19030,24 @@
    "tier": 2
   },
   {
+   "name": "graph-astar",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Graph Astar",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "graph-bellman-ford",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Rust library for Graph Bellman Ford",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "graph-centrality",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -17734,6 +19480,15 @@
    "tier": 2
   },
   {
+   "name": "harness-rssi",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "RRSI applied to the fleet: a liveness probe for our own durable recipes, which found that zero of fi",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "harness-toolkit",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -17774,6 +19529,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Context compression + ternary swarm + baton fleet: the SuperInstance integration hub.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "headspace-rs",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "ARM-optimized vector embedding sidecar for headspace",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -17936,6 +19700,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Hermes NMI with substrate cell integration. Telemetry frames as substrate cells with FNV-1a prev_has",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "hermes-ob1-core",
+   "family": "web-browser",
+   "vessel": "CCC",
+   "mission": "Hermes Digital Provenance — the Hermit Crab shell",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -19138,6 +20911,15 @@
    "tier": 2
   },
   {
+   "name": "jev-fusion",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Testing four claims about fusing a discrete judge into a generative loop. The judge is verified befo",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "jev-gan",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -19151,6 +20933,51 @@
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "Unified CLI for the JEV-GAN family of tools (diffusion, gallery, madlibs, edges).",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "jev-garden",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The living JEV training system — grows from quilt judgments, idle-compiles its ExoJ into weave artif",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "jev-harness",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A client for TypeSafe.ai Jev that cannot fail quietly — preflight contract checks, structured scorin",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "jev-net",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A neural network whose neurons are JEV calls — prism projection, hebbian weights, spawn-triggered it",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "jev-net-worker",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Hosted JEV neural net on Cloudflare — learns from every call, self-plays nightly, serves bootable le",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "jev-paint-quilt",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "jev-paint-quilt",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -19291,6 +21118,15 @@
    "tier": 2
   },
   {
+   "name": "kennel",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Kennel: model lifecycle management for Working Animal Architecture",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "kernel-conservation",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -19340,6 +21176,15 @@
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "Mojo port of kev-substrate — vendor-hardware GPU native, horizontal-abilities engineering per CUDACL",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "keyprobe",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Are the keys working, and if not, in which way — IDENTITY / SHAPE / LOAD, because \"down\" is not a di",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -19444,6 +21289,15 @@
    "tier": 2
   },
   {
+   "name": "knowledge-graph",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Recursive vectorized idea graph for institutional knowledge",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "knowledge-vault",
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
@@ -19502,6 +21356,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Localization framework - Date/number formatting, locales, CLDR data",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "ladder",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -22621,6 +24484,15 @@
    "tier": 2
   },
   {
+   "name": "lexical-substrate",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "lexical-substrate",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "liaison-agent",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -23215,6 +25087,15 @@
    "tier": 2
   },
   {
+   "name": "luciddreamer",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Meta-package: auto-assembling modular AI broadcasting platform",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "luciddreamer-agent",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -23242,10 +25123,28 @@
    "tier": 2
   },
   {
+   "name": "luciddreamer-content",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "luciddreamer-content",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "luciddreamer-os",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Concept OS named Lucid Dreamer for OS development.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "luciddreamer-prototype",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "LucidDreamer.AI — prototype and research",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -23309,6 +25208,15 @@
    "family": "sites",
    "vessel": "CCC",
    "mission": "GitHub Pages for lucineer.com",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "lucineer-com-site",
+   "family": "sites",
+   "vessel": "Various",
+   "mission": "lucineer-com-site",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -23453,6 +25361,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Madlibs-GAN + TurboQuant paradigm memory. Similar past games inform new ones.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "madlibs-jev",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "SuperInstance fleet wave-67",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "magda-core-study",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "magda-core-study",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -23647,6 +25573,15 @@
    "tier": 2
   },
   {
+   "name": "mavis-essay-scout",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "SuperInstance fleet tool POC (Mavis, 2026-09-28)",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "mavis-fleet",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -23678,6 +25613,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Persona preserver: packages Mavis identity (doctrines, principles, fleet) into a portable JSON snaps",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "mavis-pincher",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "SuperInstance fleet tool POC (Mavis, 2026-09-28)",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "mavis-pincher-pages",
+   "family": "sites",
+   "vessel": "CCC",
+   "mission": "SuperInstance fleet tool POC (Mavis, 2026-09-28)",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -23741,6 +25694,15 @@
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "Tile pipeline: discrete knowledge tiles for canon. PLATO pattern ported to Quilt — 8 stages from imp",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "mavis-workspace",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "An agent you can clone: workspace knowledge as a wiki, a key form for instance-to-instance context t",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -24029,6 +25991,15 @@
    "family": "infra",
    "vessel": "Oracle1",
    "mission": "A tiny scalar-valued autograd engine and a neural net library on top of it with PyTorch-like API",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "MicroMoth-quilt",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "MicroMoth-quilt",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -24349,6 +26320,15 @@
    "tier": 2
   },
   {
+   "name": "morphic-canvas",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "morphic-canvas",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "morphogenesis",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -24398,6 +26378,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "moth-jev-adapters",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "moth-jev-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "moth-jev-lab",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -24484,6 +26473,15 @@
    "tier": 2
   },
   {
+   "name": "mud-engine",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "MUD Engine — 2026-native multi-agent MUD architecture",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "mud-expert-1",
    "family": "agent-coordination",
    "vessel": "Forgemaster",
@@ -24506,6 +26504,15 @@
    "family": "web-browser",
    "vessel": "CCC",
    "mission": "🃏 The viral demo — AI plays solitaire through a text MUD while a browser mirrors every move. The roo",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "mud-terminal",
+   "family": "web-browser",
+   "vessel": "CCC",
+   "mission": "Browser-based MUD terminal with character creation",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -24655,6 +26662,15 @@
    "tier": 2
   },
   {
+   "name": "murmuration",
+   "family": "agent-coordination",
+   "vessel": "Oracle1",
+   "mission": "A swarm of first-person cells that reach consensus by local deference alone, with no central authori",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "Murmurer",
    "family": "agent-coordination",
    "vessel": "Oracle1",
@@ -24758,6 +26774,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Mycorrhizal network relay for agent communication — emergent routing via fungal metaphor",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "naDir",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "naDir: async work as directories. A running job is just a folder — open while it runs, moved when it",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -26455,6 +28480,15 @@
    "tier": 2
   },
   {
+   "name": "paced-seam",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "paced-seam",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "packet-capture",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -26626,6 +28660,15 @@
    "tier": 2
   },
   {
+   "name": "Patchwork-experts",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Patch-in-Experts. Frozen States with correct alignment and understands for specific jobs and discuss",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "pay-equipment",
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
@@ -26729,6 +28772,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "[ARCHIVED] Early Penrose memory palace placeholder. See SuperInstance/penrose-memory for production",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "percept-plugs",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "percept-plugs",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -26945,6 +28997,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "PID controller implementation for SuperInstance control systems",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "pie-minimax",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Can a local rule reproduce a global optimum? Tic-tac-toe, where the optimal policy is computed rathe",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -28417,6 +30478,15 @@
    "tier": 2
   },
   {
+   "name": "plato-room-code-review",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "PLATO Code Review Room — automated code review as an engine block",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "plato-room-configs",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -29596,6 +31666,15 @@
    "tier": 2
   },
   {
+   "name": "player-widget",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Embeddable streaming audio player widget",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "PlayerLog",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -30019,6 +32098,15 @@
    "tier": 2
   },
   {
+   "name": "Projectionist",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Projectionist",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "projects",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -30190,6 +32278,15 @@
    "tier": 2
   },
   {
+   "name": "PuddnHead",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The Fool is the Ground Truth. -Embedding: His fingerprints are vector embeddings of identity. -Cel",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "purplepincher",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -30248,6 +32345,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Nonprofit umbrella for open-source agentic computing, Plato ecosystem philosophy, and fleet coordina",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "purpose-loops",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "SuperInstance fleet wave-67",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -30343,6 +32449,24 @@
    "tier": 2
   },
   {
+   "name": "qthe-codec",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "qthe-codec",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "qthe-verify",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "qthe-verify",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quality-gate-stream",
    "family": "web-browser",
    "vessel": "CCC",
@@ -30356,6 +32480,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "High-density streaming VDB. Built on Hnswlib. 100% memory-safe under extreme data bursts.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quantum-audio-honesty",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "quantum-audio-honesty",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -30451,6 +32584,15 @@
    "tier": 1
   },
   {
+   "name": "quilt-adjudication",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The merge that cannot be committed silently. Cloudflare git-competition entry: a git merge that reco",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-agent",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -30509,6 +32651,33 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "quilt-arena",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-atlas",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The living map of the SuperInstance account: 4000+ repos, families, motion, CI coverage. Regenerated",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-attention",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "One-head self-attention as a quilt cell DAG — hand-rolled backprop, epoch receipts, digest-localized",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-bandit",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "RL in quilts - federated bandit replicas on the quilt diff-DAG; variance collapse receipted",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -30748,6 +32917,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-canvas",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "quilt-canvas",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-canvas-adversary",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -30770,6 +32948,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Working HTML demo that pulls together the npm canon packages (claim, drill, hash, paper, recs). One",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-canvas-tui",
+   "family": "web-browser",
+   "vessel": "CCC",
+   "mission": "claude-canvas-style TUI whose second panel is a quilt: fabric ports (Python/Node/C99 over quilt-c),",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -30833,6 +33020,15 @@
    "family": "constraint-theory",
    "vessel": "Forgemaster",
    "mission": "Polyformalism: Quilt in Chapel (distributed cell evaluation)",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-chrono",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "Time as a first-class dimension of the quilt: an append-only reading/writing ledger over a tiny reac",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -30910,6 +33106,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-codespace-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The codespace as an ephemeral honest worker: postCreate experiments that self-push receipts. Publish",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-conformance",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -30941,6 +33146,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Quilt ecosystem component:",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-corpus",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "AI-Writings corpus and canon batches. RESCUED 2026-10-03: was a submodule in SuperInstance/research",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31036,6 +33250,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-deck",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "quilt-deck",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-director",
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
@@ -31058,6 +33281,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "quilt-doctor",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-dpcpp",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "quilt-dpcpp",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-dungeons",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The dungeon is a quilt: a headless deterministic ML gym where every tile is a character-cell and the",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31094,6 +33335,15 @@
    "family": "constraint-theory",
    "vessel": "Forgemaster",
    "mission": "The Quilt cellular runtime on the edge — Rust no_std polyformalism with PSRAM, pre-dispatch, DMA",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-edge-lab",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Cloudflare edge quilt-iterator lab: seeded CA receipt chains, conservation ledger (gamma/eta), save-",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31180,6 +33430,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-ewitness",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Anytime-valid e-process witnesses for training claims — Ville-bound honesty for it-learned statement",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-executor",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -31193,6 +33452,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Multi-voice narrative walker brewed by quilt-brewer",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-far-shore",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The far shore of the soft-joint quilt, imagined from real artifacts then reverse-actualized into fal",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31261,6 +33529,24 @@
    "tier": 2
   },
   {
+   "name": "quilt-fleet-tools",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "Judge-instrument verification (judge-gate) and benchmark receipt sealing (bench-seal) — sealed instr",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-float",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "two git-agents float and teach each other — quilts as branches, lessons as commits, receipt-chain ti",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-flow",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -31283,6 +33569,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "The Fold framework: 4-primitive Frame + Fold (reveal hidden dimensions) + Cycle + Rain (phase transi",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-forge",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "quilt-forge",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31360,6 +33655,24 @@
    "tier": 2
   },
   {
+   "name": "quilt-gpu-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "quilt-gpu-lab",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-gpu-lab-witness",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "WITNESS. 2026-10-03: I deleted play/quilt-gpu-lab (702MB) after my own precondition check printed ST",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-haskell",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -31387,6 +33700,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-in-git",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "PoC: the Quilt lives inside Git — dials are files, ticks are commits, hooks are the runtime",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-iterator",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -31400,6 +33722,15 @@
    "family": "constraint-theory",
    "vessel": "Forgemaster",
    "mission": "The Quilt cell-fabric runtime in J. Array language, point-free. 5-sigma polyformalism port.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-jepa",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The latent grid — a tiny JEPA world model living inside an anisotropic cell mesh, stone-receipted (q",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31463,6 +33794,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "quilt-Kuramoto",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The fleet's experiment protocol as a tool: register → run → receipt → seal. Tools that make tools.",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31549,6 +33889,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-lookup",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "The mathematical spreadsheet catalog as machine-usable JSON + executable lookup/formula cell recipes",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-loom",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -31571,6 +33920,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Quilt fleet member — auto-swept from local commit. Mavis × Casey session line 2026-09-24.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-matrix",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "The external mind: a spreadsheet-viewable neural network of relational weights. Small cells ask, typ",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-mcp-receipts",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The fleet receipt chain as a signed append-only MCP organ (qmr1). Read / verify / append receipts ov",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31621,10 +33988,37 @@
    "tier": 2
   },
   {
+   "name": "quilt-ml-architecture",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "What Quilt should build for ML: the model as a cell graph, witness at every activation, and the cana",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-ml-recipes",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Recipes that work: receipted, negative-controlled, growable ML/RL/judge/convergence setups in the qu",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-mojo",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
    "mission": "Polyformalism: Quilt in Mojo (cells as types, SIMD-friendly formulas)",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-mojo-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "High-performance flat-memory quilt substrate: Mojo/SIMD vs C vs numpy vs Python, measured",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31643,6 +34037,24 @@
    "family": "agent-coordination",
    "vessel": "Oracle1",
    "mission": "the murmur lineage, metamorphosed into a reactive spreadsheet mesh — twelve vessels, one flying quil",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-neighbourhood",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Diff-DAG convergence for Quilt sheets — a neighbourhood of replicas that partition, diverge, and rej",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-nn",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Neural nets as quilt cell graphs — weights, gradients and SGD steps are cells; every epoch receipted",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31684,6 +34096,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-oracle-poc",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Standalone deliverable of the wave-66 callable git-agent oracle PoC: session receipts, two-git-agent",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-orchestrator",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -31693,10 +34114,28 @@
    "tier": 2
   },
   {
+   "name": "quilt-organ-workers",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "SuperInstance quilt-organ on Cloudflare Workers: organ-boot-loader (content-addressed saved-state bo",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-organism",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "The organism layer of Quilt — substrate walker over corpora",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-overhead",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "quilt-overhead",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31778,6 +34217,15 @@
    "family": "constraint-theory",
    "vessel": "Forgemaster",
    "mission": "Polyformalism: Quilt as a type-safe Pydantic-AI agent",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-qcells",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "CELL-MAPPING implementation — quantum ops as quilt cells (modular plugin)",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31891,10 +34339,28 @@
    "tier": 2
   },
   {
+   "name": "quilt-rl",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "RL that converges, in a quilt sheet: the MDP is the sheet, Q-learning over cell states, QRNG-seeded",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "Quilt-Robotic-Arm---Gesture-Controlled",
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "Quilt version of- Gesture-controlled robotic arm with pick-and-place functionality, utilizing a sens",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-runbook",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Append-only play-test runbooks for the quilt: real logs, rewind to stable points, WHY-decomposed adj",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -31945,6 +34411,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-score",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A cell graph as an editable ABC-notation score — the generalisation of YuE2-Studio: the model emits",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-scratch",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -31976,6 +34451,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "The silicon map executed without silicon: SIMT warp emulator over quilt-arch kernels — schedule-inva",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-softjoints",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Soft-joint thesis as code: lookup tables + soft joints (vector-reading small models) + greeter cells",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -32017,6 +34501,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-storefront",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The general-store digital assistant as a live quilt: lookup tables + soft joints + greeter law. Meas",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-studio",
    "family": "applications",
    "vessel": "Various",
@@ -32024,6 +34517,15 @@
    "state": "active",
    "bornFrom": [],
    "tier": 1
+  },
+  {
+   "name": "quilt-studios",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Play the game, then scroll down and watch the quilt think — one engine, four rungs (sandbox garden,",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
   },
   {
    "name": "quilt-subleq",
@@ -32120,6 +34622,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Ten working Quilt tool prototypes + springboard lab (JEV/MothQuantum experiments).",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-tournament",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "quilt-tournament",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -32287,6 +34798,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-whitepapers",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "SuperInstance fleet wave-67",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-wiki-2126",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -32327,6 +34847,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "quiltcall",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "QuiltCanary.jl",
+   "family": "constraint-theory",
+   "vessel": "Forgemaster",
+   "mission": "Julia port from the SuperInstance fleet — polyformalism canary / the Quilt cell",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "QuiltEgg.jl",
+   "family": "constraint-theory",
+   "vessel": "Forgemaster",
+   "mission": "Julia port from the SuperInstance fleet — polyformalism canary / the Quilt cell",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -32611,6 +35149,15 @@
    "tier": 2
   },
   {
+   "name": "realm-ml",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Realm-specific claim verification: evidence-grounded verification for codebase claims, with the doma",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "realtime-core",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -32624,6 +35171,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Relationship-Based Access Control — Zanzibar model",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "receiptd",
+   "family": "web-browser",
+   "vessel": "CCC",
+   "mission": "receiptd — the fleet's trust layer: one append-only JSONL hash chain, daemon + CLI twin. Trust = re-",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -33286,6 +35842,24 @@
    "tier": 2
   },
   {
+   "name": "repo-docs",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Comprehensive documentation index of the SuperInstance ecosystem — 4,098 repos analyzed",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "repo-publication-log",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The log of going through the 201 private SuperInstance repos: what each one is, what was wrong, what",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "repos",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -33335,6 +35909,24 @@
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "⚒️ Research: CT-snapped Kalman filtering for zero-drift sensor fusion",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "research-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "research-lab",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "researchlocal-backup",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "researchlocal-backup",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -33547,6 +36139,24 @@
    "tier": 2
   },
   {
+   "name": "roblox-beatclock",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "roblox-beatclock",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "roblox-bond-system",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "roblox-bond-system",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "roblox-build-animator",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -33556,10 +36166,28 @@
    "tier": 2
   },
   {
+   "name": "roblox-builder-kit",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "roblox-builder-kit",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "roblox-craftmind-agents",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Core Lua framework for Roblox agents with self-improving, token-saving logic",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "roblox-filtergate",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "roblox-filtergate",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -33916,6 +36544,15 @@
    "tier": 2
   },
   {
+   "name": "scrapcraft-roblox-bible",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "scrapcraft-roblox-bible",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "scrapcraft-world",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -34118,6 +36755,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Segment tree with point updates, range queries (sum/min/max/gcd), and lazy propagation",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "selectlib",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Choosing which cells to touch, and proving you chose well. Controls run before any number is produce",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -34537,6 +37183,15 @@
    "tier": 2
   },
   {
+   "name": "si-conductor",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Agent routing layer for multi-agent systems",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "si-conservation-diffusion",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -34600,6 +37255,15 @@
    "tier": 2
   },
   {
+   "name": "si-feedback",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Feedback processing and recommendation engine",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "si-fibration-timing",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -34636,6 +37300,15 @@
    "tier": 2
   },
   {
+   "name": "si-ghost-ledger",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Public session gallery and artifact compression",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "si-gradient-flow",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -34667,6 +37340,24 @@
    "family": "agent-coordination",
    "vessel": "Forgemaster",
    "mission": "Proof of concept: kernel methods for agent similarity — RBF, polynomial, linear kernels with fleet-w",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "si-knowledge-base",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "A recursive idea graph that grows smarter as you feed it",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "si-knowledge-graph",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Recursive vectorized idea graph for institutional knowledge",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -34735,6 +37426,15 @@
    "tier": 2
   },
   {
+   "name": "si-player",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Embeddable streaming audio player widget",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "si-registry-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -34748,6 +37448,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Proof of concept: Rényi entropy spectrum detects fleet monocultures and measures capability diversit",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "si-research",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "si-research",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -34816,10 +37525,28 @@
    "tier": 2
   },
   {
+   "name": "si-sonic-shape",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Confidence-to-music mapping engine",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "si-spectral-gap",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Proof of concept: spectral gap λ₂ of fleet Laplacian predicts convergence speed and mixing time",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "si-streamer",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Audio streaming muxer with scheduling and crossfades",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -34847,6 +37574,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Cross-pollination: symplectic integrators meet gossip protocols — structure-preserving consensus",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "si-terminal",
+   "family": "web-browser",
+   "vessel": "CCC",
+   "mission": "Browser-based MUD terminal with character creation",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -34978,6 +37714,15 @@
    "tier": 2
   },
   {
+   "name": "sigtest",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "RESCUED 2026-10-03: a nested git repo inside research/lanes/otstmp with no remote, so it existed on",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "silence-map",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -35041,10 +37786,28 @@
    "tier": 2
   },
   {
+   "name": "site-repair",
+   "family": "web-browser",
+   "vessel": "CCC",
+   "mission": "Diagnosis of the fleet website outage: one real link bug, one dangerous false fix, and eleven specif",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "siyuan",
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "A privacy-first, self-hosted, fully open source personal knowledge management software, written in t",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "skein",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Thread not yet woven. Open discussions behind the building — agents, harness, and the ideas that sta",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -35194,6 +37957,24 @@
    "tier": 2
   },
   {
+   "name": "slackwater-art-spectrum",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "slackwater-art-spectrum",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "slackwater-cognition",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "slackwater-cognition",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "slackwater-forge",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -35234,6 +38015,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Modular component of the Slackwater spatial-temporal AI agent framework",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "slackwater-quilt",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "The ledger is the build — every slackwater lattice operation as a receipted quilt cell. Seed expansi",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -35572,6 +38362,15 @@
    "tier": 2
   },
   {
+   "name": "sonic-shape",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Confidence-to-music mapping engine",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "sort-algo-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -35648,6 +38447,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "spatial-registry",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "spec-prereg",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Hash-bound pre-registration of expectation specs: canon/sha256 seal, fnv1a-64 append-only chain, REF",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -36031,6 +38839,15 @@
    "tier": 2
   },
   {
+   "name": "sprinter-onboarding",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "sprinter-onboarding",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "stable-worldmodel",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -36202,6 +39019,15 @@
    "tier": 2
   },
   {
+   "name": "streamer",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Audio streaming muxer with scheduling and crossfades",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "streaming-response-handler",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -36296,6 +39122,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Media → Subtitles → Translation, all-in-one. One engine, three frontends: PyQt6 GUI, Textual TUI, pl",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "subleq-fabric",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Single-instruction execution substrate (SUBLEQ): code is an integer array, self-healing is a conditi",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -36683,6 +39518,15 @@
    "family": "sites",
    "vessel": "CCC",
    "mission": "GitHub Pages for superinstance.ai",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "superinstance-api",
+   "family": "infra",
+   "vessel": "Oracle1",
+   "mission": "The fleet's growing context brain: tiles + meaning + reflex + field + growth, with MCP tooling",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -37129,6 +39973,15 @@
    "tier": 2
   },
   {
+   "name": "svelte-quilt",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "svelte-quilt",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "swarm",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -37223,6 +40076,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Orchestration framework for managing multi-agent systems.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "sweep",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "sweep",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -37552,6 +40414,33 @@
    "tier": 2
   },
   {
+   "name": "Syzygy",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "**Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "syzygy-lattice",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "syzygy-lattice",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "Syzygy-OpenSkyFlight",
+   "family": "web-browser",
+   "vessel": "CCC",
+   "mission": "Side by Side ASCII rendering and original- Browser-based 3D flight simulator over real-world terrain",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "t-minus",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -37682,6 +40571,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Utility for managing temporary files and processes.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "template-fleet-agent",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "Template for fleet agent repos with devcontainer",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -41152,6 +44050,15 @@
    "tier": 2
   },
   {
+   "name": "ternary-wiki",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "ternary-wiki",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "ternary-world",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -41183,6 +44090,15 @@
    "family": "web-browser",
    "vessel": "CCC",
    "mission": "MUD-to-Visual bridge — rooms as explorable scenes. Crabs stir the mud into walkable terrain.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "tessera",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "tessera",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -41269,6 +44185,15 @@
    "tier": 2
   },
   {
+   "name": "tev-mesh",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "tev-mesh",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "texture-synth",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -41309,6 +44234,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Auto-created for sync 2026-08-13",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "the-living-minds",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "the-living-minds",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -41669,6 +44603,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "T-minus musical event prediction using conservation spectral theory",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "tminus-os",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Swarm coordination OS — wires the ecosystem into one .swarm/ directory",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "tmux-quilt",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "tmux-quilt",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -42187,6 +45139,15 @@
    "tier": 2
   },
   {
+   "name": "typesafe-quilts",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "System One as judge: calibration battery + routing judgments + the judge protocol for quilt lanes. L",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "typst",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -42272,6 +45233,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Signal Chain Thesis - universe-chain",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "unspoken-resonance",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "SuperInstance fleet wave-67",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -42709,6 +45679,15 @@
    "tier": 2
   },
   {
+   "name": "voxelglyph",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "What a voxel agent can read through Syzygy's text encoding: a provable rank-one luma ceiling, and th",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "voxelgpt",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -42731,6 +45710,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Research-grade Rust crate",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "wardroom",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Fleet salon: off-duty rounds between agents. Receipts optional. Show up as yourself.",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -42862,6 +45850,15 @@
    "tier": 2
   },
   {
+   "name": "wave69",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Wave-69: multi-model cellular paradigm / sticky evolution — Track A dual-cell GAN SUCCESS at preregi",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "wavelet-core",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -42943,10 +45940,28 @@
    "tier": 2
   },
   {
+   "name": "wesley-curriculum",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "wesley-curriculum",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "wesley-holodeck",
    "family": "infra",
    "vessel": "Oracle1",
    "mission": "Wesley's Holodeck — creative loop where a small model writes with big model teachers, rendered as a",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "wesley-journal",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Wesley's experiment journal — local model growth tracking",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -43060,6 +46075,15 @@
    "tier": 2
   },
   {
+   "name": "witness-validation",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Design for making the canon witness log predictive, rewindable, and integrity-checked — e-processes",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "workers-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -43091,6 +46115,15 @@
    "family": "web-browser",
    "vessel": "CCC",
    "mission": "Cocapn fleet crate: workshop",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "workspace-rescue",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "RESCUED 2026-10-03. 605 files from the local NAS that had NO git, NO remote and NO backup - 96 piece",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -43145,6 +46178,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "xMind is a modular framework in XLang for implementing LLM Memory, Planning, and Dataflow. It enable",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "xruntime-conformance",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The cell convention evaluated in two runtimes that never shared source: 23/23 per-cell digests agree",
    "state": "active",
    "bornFrom": [],
    "tier": 2
