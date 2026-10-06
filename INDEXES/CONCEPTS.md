@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-04 11:02 UTC
+**Generated:** 2026-10-06 11:56 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -842,6 +842,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [forge-detect](https://github.com/SuperInstance/forge-detect)
 - [forge-flux](https://github.com/SuperInstance/forge-flux)
 - [forge-meta](https://github.com/SuperInstance/forge-meta)
+- [forge-portal](https://github.com/SuperInstance/forge-portal)
 - [formal-consciousness](https://github.com/SuperInstance/formal-consciousness)
 - [gatekeeper-as-flux-early-version](https://github.com/SuperInstance/gatekeeper-as-flux-early-version)
 - [git-agent-flux-pipeline](https://github.com/SuperInstance/git-agent-flux-pipeline)
@@ -2271,6 +2272,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [forge-image](https://github.com/SuperInstance/forge-image)
 - [forge-memory](https://github.com/SuperInstance/forge-memory)
 - [forge-pi](https://github.com/SuperInstance/forge-pi)
+- [forge-portal](https://github.com/SuperInstance/forge-portal)
 - [forge-sensor](https://github.com/SuperInstance/forge-sensor)
 - [forge-soniqo](https://github.com/SuperInstance/forge-soniqo)
 - [forge-text](https://github.com/SuperInstance/forge-text)
@@ -2518,6 +2520,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lau-tropical-agent](https://github.com/SuperInstance/lau-tropical-agent)
 - [lau-tropical-geometry-agents](https://github.com/SuperInstance/lau-tropical-geometry-agents)
 - [lau-twistor-agents](https://github.com/SuperInstance/lau-twistor-agents)
+- [ledger-continuity](https://github.com/SuperInstance/ledger-continuity)
 - [lever-runner-carapace](https://github.com/SuperInstance/lever-runner-carapace)
 - [liaison-agent](https://github.com/SuperInstance/liaison-agent)
 - [lighthouse](https://github.com/SuperInstance/lighthouse)
@@ -3089,6 +3092,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [zc-weaver-shell](https://github.com/SuperInstance/zc-weaver-shell)
 - [zeitgeist-protocol](https://github.com/SuperInstance/zeitgeist-protocol)
 - [zero-knowledge-fleet](https://github.com/SuperInstance/zero-knowledge-fleet)
+- [zero-poc](https://github.com/SuperInstance/zero-poc)
 - [zero-trust-fleet](https://github.com/SuperInstance/zero-trust-fleet)
 - [zeroclaw-agent-early-version](https://github.com/SuperInstance/zeroclaw-agent-early-version)
 - [zeroclaw-arena](https://github.com/SuperInstance/zeroclaw-arena)
@@ -3800,6 +3804,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hardware-adapter](https://github.com/SuperInstance/hardware-adapter)
 - [lumina-lang](https://github.com/SuperInstance/lumina-lang)
 - [multi-model-adversarial-testing](https://github.com/SuperInstance/multi-model-adversarial-testing)
+- [murex](https://github.com/SuperInstance/murex)
 - [nexus-edge-runtime](https://github.com/SuperInstance/nexus-edge-runtime)
 - [open-fleet-safety](https://github.com/SuperInstance/open-fleet-safety)
 - [openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)
@@ -3928,6 +3933,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [Equipment-Memory-Hierarchy](https://github.com/SuperInstance/Equipment-Memory-Hierarchy)
 - [Equipment-NLP-Explainer](https://github.com/SuperInstance/Equipment-NLP-Explainer)
 - [Equipment-Teacher-Student](https://github.com/SuperInstance/Equipment-Teacher-Student)
+- [Evolver](https://github.com/SuperInstance/Evolver)
 - [ExocortexTDA.jl](https://github.com/SuperInstance/ExocortexTDA.jl)
 - [F5-TTS](https://github.com/SuperInstance/F5-TTS)
 - [FIESTA](https://github.com/SuperInstance/FIESTA)
@@ -4118,6 +4124,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [breakthrough-prospector](https://github.com/SuperInstance/breakthrough-prospector)
 - [breed-registry](https://github.com/SuperInstance/breed-registry)
 - [bregman-divergence](https://github.com/SuperInstance/bregman-divergence)
+- [brief-assembler](https://github.com/SuperInstance/brief-assembler)
 - [brownian-motion](https://github.com/SuperInstance/brownian-motion)
 - [bsp-tree](https://github.com/SuperInstance/bsp-tree)
 - [bulkhead-pattern](https://github.com/SuperInstance/bulkhead-pattern)
@@ -5653,6 +5660,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [slackwater-orchestrator](https://github.com/SuperInstance/slackwater-orchestrator)
 - [slackwater-quilt](https://github.com/SuperInstance/slackwater-quilt)
 - [slackwater-substrate](https://github.com/SuperInstance/slackwater-substrate)
+- [slackwater-tools](https://github.com/SuperInstance/slackwater-tools)
 - [slam-core](https://github.com/SuperInstance/slam-core)
 - [smart-404](https://github.com/SuperInstance/smart-404)
 - [smp-notebook](https://github.com/SuperInstance/smp-notebook)
@@ -5705,6 +5713,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [stock-screener](https://github.com/SuperInstance/stock-screener)
 - [storyboard-engine](https://github.com/SuperInstance/storyboard-engine)
 - [strategy-transfer](https://github.com/SuperInstance/strategy-transfer)
+- [stream-curator](https://github.com/SuperInstance/stream-curator)
 - [streamer](https://github.com/SuperInstance/streamer)
 - [streaming-response-handler](https://github.com/SuperInstance/streaming-response-handler)
 - [string-search-rs](https://github.com/SuperInstance/string-search-rs)
@@ -5756,6 +5765,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [superinstance-embedder](https://github.com/SuperInstance/superinstance-embedder)
 - [superinstance-harness](https://github.com/SuperInstance/superinstance-harness)
 - [superinstance-hdc-core](https://github.com/SuperInstance/superinstance-hdc-core)
+- [superinstance-lab](https://github.com/SuperInstance/superinstance-lab)
 - [superinstance-math](https://github.com/SuperInstance/superinstance-math)
 - [superinstance-runtime](https://github.com/SuperInstance/superinstance-runtime)
 - [superinstance-spreadsheet](https://github.com/SuperInstance/superinstance-spreadsheet)
@@ -6208,6 +6218,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [yiluodi](https://github.com/SuperInstance/yiluodi)
 - [young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)
 - [zero-knowledge](https://github.com/SuperInstance/zero-knowledge)
+- [zero-msg-test](https://github.com/SuperInstance/zero-msg-test)
 - [zero-shot-auditor](https://github.com/SuperInstance/zero-shot-auditor)
 - [zeroclaw-dissertation](https://github.com/SuperInstance/zeroclaw-dissertation)
 - [zkp-rs](https://github.com/SuperInstance/zkp-rs)
