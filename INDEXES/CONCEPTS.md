@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-06 11:56 UTC
+**Generated:** 2026-10-07 11:39 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1473,6 +1473,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [agent-homeostasis-rs](https://github.com/SuperInstance/agent-homeostasis-rs)
 - [agent-identity](https://github.com/SuperInstance/agent-identity)
 - [agent-identity-rs](https://github.com/SuperInstance/agent-identity-rs)
+- [agent-inbox](https://github.com/SuperInstance/agent-inbox)
 - [agent-intonation](https://github.com/SuperInstance/agent-intonation)
 - [agent-jam](https://github.com/SuperInstance/agent-jam)
 - [agent-knowledge](https://github.com/SuperInstance/agent-knowledge)
@@ -1521,6 +1522,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [agent-template](https://github.com/SuperInstance/agent-template)
 - [agent-ternary-gate](https://github.com/SuperInstance/agent-ternary-gate)
 - [agent-therapy](https://github.com/SuperInstance/agent-therapy)
+- [agent-tiles](https://github.com/SuperInstance/agent-tiles)
 - [agent-to-agent](https://github.com/SuperInstance/agent-to-agent)
 - [agent-transcription](https://github.com/SuperInstance/agent-transcription)
 - [agent-venue](https://github.com/SuperInstance/agent-venue)
@@ -2303,6 +2305,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-graph-rs](https://github.com/SuperInstance/git-graph-rs)
 - [git-native-agents](https://github.com/SuperInstance/git-native-agents)
 - [git-remote-agent](https://github.com/SuperInstance/git-remote-agent)
+- [git.pp](https://github.com/SuperInstance/git.pp)
 - [glyph-language](https://github.com/SuperInstance/glyph-language)
 - [governance-equipment](https://github.com/SuperInstance/governance-equipment)
 - [gpu-ternary-engine](https://github.com/SuperInstance/gpu-ternary-engine)
@@ -2753,6 +2756,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [purpose-loops](https://github.com/SuperInstance/purpose-loops)
 - [python-agent-shell](https://github.com/SuperInstance/python-agent-shell)
 - [qthe](https://github.com/SuperInstance/qthe)
+- [question-tree](https://github.com/SuperInstance/question-tree)
 - [quill-isa-architect](https://github.com/SuperInstance/quill-isa-architect)
 - [quilt-agent](https://github.com/SuperInstance/quilt-agent)
 - [quilt-agent-memory-archive](https://github.com/SuperInstance/quilt-agent-memory-archive)
@@ -2827,6 +2831,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [scummvm-prototype](https://github.com/SuperInstance/scummvm-prototype)
 - [secret-scanner](https://github.com/SuperInstance/secret-scanner)
 - [seed-tick-audit](https://github.com/SuperInstance/seed-tick-audit)
+- [self-assembly](https://github.com/SuperInstance/self-assembly)
 - [self-evolve-ai](https://github.com/SuperInstance/self-evolve-ai)
 - [semble](https://github.com/SuperInstance/semble)
 - [sensor-fusion](https://github.com/SuperInstance/sensor-fusion)
@@ -3166,6 +3171,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [activeledger-agent](https://github.com/SuperInstance/activeledger-agent)
 - [adaptive-plato-early-version](https://github.com/SuperInstance/adaptive-plato-early-version)
 - [agent-field](https://github.com/SuperInstance/agent-field)
+- [agent-tiles](https://github.com/SuperInstance/agent-tiles)
 - [ai-forest](https://github.com/SuperInstance/ai-forest)
 - [ai-writings-generation-plato](https://github.com/SuperInstance/ai-writings-generation-plato)
 - [arch-gateway-room-clean](https://github.com/SuperInstance/arch-gateway-room-clean)
@@ -4784,6 +4790,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [jev-gan-cli](https://github.com/SuperInstance/jev-gan-cli)
 - [jev-garden](https://github.com/SuperInstance/jev-garden)
 - [jev-harness](https://github.com/SuperInstance/jev-harness)
+- [jev-ideation](https://github.com/SuperInstance/jev-ideation)
 - [jev-paint-quilt](https://github.com/SuperInstance/jev-paint-quilt)
 - [jev-quilt](https://github.com/SuperInstance/jev-quilt)
 - [jev-receipts](https://github.com/SuperInstance/jev-receipts)
@@ -5037,6 +5044,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lucineer-roblox](https://github.com/SuperInstance/lucineer-roblox)
 - [lucineer-system](https://github.com/SuperInstance/lucineer-system)
 - [lucineer-vector](https://github.com/SuperInstance/lucineer-vector)
+- [lucineer-workspace](https://github.com/SuperInstance/lucineer-workspace)
 - [mac-digest](https://github.com/SuperInstance/mac-digest)
 - [madlibs-gan](https://github.com/SuperInstance/madlibs-gan)
 - [madlibs-gan-npm](https://github.com/SuperInstance/madlibs-gan-npm)
@@ -6150,6 +6158,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [unicode-rs](https://github.com/SuperInstance/unicode-rs)
 - [universal-import-export](https://github.com/SuperInstance/universal-import-export)
 - [universe-chain](https://github.com/SuperInstance/universe-chain)
+- [unoq-node](https://github.com/SuperInstance/unoq-node)
 - [urban-transportation-system](https://github.com/SuperInstance/urban-transportation-system)
 - [usemeter](https://github.com/SuperInstance/usemeter)
 - [usemeter-archive](https://github.com/SuperInstance/usemeter-archive)
