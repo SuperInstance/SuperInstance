@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-07 11:39 UTC
+**Generated:** 2026-10-08 11:55 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -87,8 +87,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Bottle Protocol
 
+- [bottle-seed](https://github.com/SuperInstance/bottle-seed)
 - [cell-router-pkg](https://github.com/SuperInstance/cell-router-pkg)
 - [cuda-bottleneck](https://github.com/SuperInstance/cuda-bottleneck)
+- [dad-son-channel](https://github.com/SuperInstance/dad-son-channel)
 - [fleet-a2a-bridge](https://github.com/SuperInstance/fleet-a2a-bridge)
 - [fleet-bottle](https://github.com/SuperInstance/fleet-bottle)
 - [fleet-bottles](https://github.com/SuperInstance/fleet-bottles)
@@ -359,6 +361,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [SmartCRDT](https://github.com/SuperInstance/SmartCRDT)
 - [agent-counterpoint](https://github.com/SuperInstance/agent-counterpoint)
 - [agent-ensemble](https://github.com/SuperInstance/agent-ensemble)
+- [anti-gan-test](https://github.com/SuperInstance/anti-gan-test)
 - [automerge](https://github.com/SuperInstance/automerge)
 - [b-tree-rs](https://github.com/SuperInstance/b-tree-rs)
 - [character-build](https://github.com/SuperInstance/character-build)
@@ -2601,6 +2604,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [nexus-simulation](https://github.com/SuperInstance/nexus-simulation)
 - [nexus-swarm](https://github.com/SuperInstance/nexus-swarm)
 - [noether-bridge](https://github.com/SuperInstance/noether-bridge)
+- [nursery](https://github.com/SuperInstance/nursery)
 - [observatory](https://github.com/SuperInstance/observatory)
 - [open-agents](https://github.com/SuperInstance/open-agents)
 - [open-fleet-safety](https://github.com/SuperInstance/open-fleet-safety)
@@ -2830,6 +2834,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [screen-agent](https://github.com/SuperInstance/screen-agent)
 - [scummvm-prototype](https://github.com/SuperInstance/scummvm-prototype)
 - [secret-scanner](https://github.com/SuperInstance/secret-scanner)
+- [seed](https://github.com/SuperInstance/seed)
 - [seed-tick-audit](https://github.com/SuperInstance/seed-tick-audit)
 - [self-assembly](https://github.com/SuperInstance/self-assembly)
 - [self-evolve-ai](https://github.com/SuperInstance/self-evolve-ai)
@@ -3096,6 +3101,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [zc-tinker-shell](https://github.com/SuperInstance/zc-tinker-shell)
 - [zc-weaver-shell](https://github.com/SuperInstance/zc-weaver-shell)
 - [zeitgeist-protocol](https://github.com/SuperInstance/zeitgeist-protocol)
+- [zero-innate](https://github.com/SuperInstance/zero-innate)
 - [zero-knowledge-fleet](https://github.com/SuperInstance/zero-knowledge-fleet)
 - [zero-poc](https://github.com/SuperInstance/zero-poc)
 - [zero-trust-fleet](https://github.com/SuperInstance/zero-trust-fleet)
@@ -3863,6 +3869,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Ttl
 
 - [analog-spectral](https://github.com/SuperInstance/analog-spectral)
+- [bottle-seed](https://github.com/SuperInstance/bottle-seed)
 - [cache-rs](https://github.com/SuperInstance/cache-rs)
 - [caching-service-rs](https://github.com/SuperInstance/caching-service-rs)
 - [cell-router-pkg](https://github.com/SuperInstance/cell-router-pkg)
@@ -3871,6 +3878,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [cuda-bottleneck](https://github.com/SuperInstance/cuda-bottleneck)
 - [cuda-cache](https://github.com/SuperInstance/cuda-cache)
 - [cuda-lease](https://github.com/SuperInstance/cuda-lease)
+- [dad-son-channel](https://github.com/SuperInstance/dad-son-channel)
 - [fleet-a2a-bridge](https://github.com/SuperInstance/fleet-a2a-bridge)
 - [fleet-bottle](https://github.com/SuperInstance/fleet-bottle)
 - [fleet-bottles](https://github.com/SuperInstance/fleet-bottles)
@@ -4191,6 +4199,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [character-library](https://github.com/SuperInstance/character-library)
 - [character-sheet](https://github.com/SuperInstance/character-sheet)
 - [character-skill-trees](https://github.com/SuperInstance/character-skill-trees)
+- [character-tensor](https://github.com/SuperInstance/character-tensor)
 - [chart-system](https://github.com/SuperInstance/chart-system)
 - [cheetahclaws](https://github.com/SuperInstance/cheetahclaws)
 - [cheflog-ai](https://github.com/SuperInstance/cheflog-ai)
@@ -4586,6 +4595,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [foodlog-ai](https://github.com/SuperInstance/foodlog-ai)
 - [forge-code-archaeologist](https://github.com/SuperInstance/forge-code-archaeologist)
 - [forge-pipeline](https://github.com/SuperInstance/forge-pipeline)
+- [forge-seed](https://github.com/SuperInstance/forge-seed)
 - [forgecode](https://github.com/SuperInstance/forgecode)
 - [forgemaster-shell](https://github.com/SuperInstance/forgemaster-shell)
 - [forgetting-curve](https://github.com/SuperInstance/forgetting-curve)
@@ -4615,6 +4625,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [galois_retrieval](https://github.com/SuperInstance/galois_retrieval)
 - [game-chain](https://github.com/SuperInstance/game-chain)
 - [garden-path](https://github.com/SuperInstance/garden-path)
+- [garden-seed](https://github.com/SuperInstance/garden-seed)
 - [gardenlog-ai](https://github.com/SuperInstance/gardenlog-ai)
 - [gauge](https://github.com/SuperInstance/gauge)
 - [gauss-markov](https://github.com/SuperInstance/gauss-markov)
@@ -4701,6 +4712,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [grove-ast](https://github.com/SuperInstance/grove-ast)
 - [grpc-rs](https://github.com/SuperInstance/grpc-rs)
 - [grpc-rust](https://github.com/SuperInstance/grpc-rust)
+- [harbor-seed](https://github.com/SuperInstance/harbor-seed)
 - [hardware-capability-profiler](https://github.com/SuperInstance/hardware-capability-profiler)
 - [harmonic-analysis](https://github.com/SuperInstance/harmonic-analysis)
 - [harmonic-plr-rs](https://github.com/SuperInstance/harmonic-plr-rs)
@@ -4794,6 +4806,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [jev-paint-quilt](https://github.com/SuperInstance/jev-paint-quilt)
 - [jev-quilt](https://github.com/SuperInstance/jev-quilt)
 - [jev-receipts](https://github.com/SuperInstance/jev-receipts)
+- [jev-semantic](https://github.com/SuperInstance/jev-semantic)
 - [jev-turbovec](https://github.com/SuperInstance/jev-turbovec)
 - [jeviter](https://github.com/SuperInstance/jeviter)
 - [jira-cli](https://github.com/SuperInstance/jira-cli)
@@ -4987,6 +5000,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [license-compliance](https://github.com/SuperInstance/license-compliance)
 - [lie-algebra](https://github.com/SuperInstance/lie-algebra)
 - [lighthouse-cli-early-version](https://github.com/SuperInstance/lighthouse-cli-early-version)
+- [lighthouse-seed](https://github.com/SuperInstance/lighthouse-seed)
 - [limits-colimits](https://github.com/SuperInstance/limits-colimits)
 - [line-sweep-rs](https://github.com/SuperInstance/line-sweep-rs)
 - [lineage-tracker](https://github.com/SuperInstance/lineage-tracker)
