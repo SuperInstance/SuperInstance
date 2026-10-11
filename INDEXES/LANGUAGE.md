@@ -1,7 +1,7 @@
 # Index by Language
 
-**Generated:** 2026-10-10 11:03 UTC
-**Total repos:** 5215
+**Generated:** 2026-10-11 11:20 UTC
+**Total repos:** 5220
 
 ## C
 
@@ -3023,6 +3023,7 @@
 - **[intent-flux-bridge](https://github.com/SuperInstance/intent-flux-bridge)** — Experiment: maps natural-language GPU intent to Flux bytecode. Tests the pincher→flux-core synergy w
 - **[intent-inference](https://github.com/SuperInstance/intent-inference)** — Intent Inference Engine — reverse-engineers productive lane from user behavior. Part of Cocapn rever
 - **[intention-field-rs](https://github.com/SuperInstance/intention-field-rs)** — Self-Improving Band: intention-field-rs
+- **[intuition](https://github.com/SuperInstance/intuition)** — Intuition — contrast-pair phantom verdict analysis, v-JEPA2 training
 - **[ipc-equipment](https://github.com/SuperInstance/ipc-equipment)** — Inter-vessel messaging — pipe-style inbox
 - **[iron-to-iron](https://github.com/SuperInstance/iron-to-iron)** — I2I — Agent-to-agent communication through git. Iron sharpens iron. We don't talk, we commit.
 - **[isa-convergence-tools](https://github.com/SuperInstance/isa-convergence-tools)** — CLI tools for comparing, diffing, and converging FLUX ISA definitions across implementations
@@ -4013,6 +4014,7 @@
 - **[Privacy-First-Analytics](https://github.com/SuperInstance/Privacy-First-Analytics)** — Analytics platform focused on data privacy protection
 - **[Private-ML-Personalization](https://github.com/SuperInstance/Private-ML-Personalization)** — Privacy-preserving ML personalization system
 - **[Proactive-Planning-AI-Hub](https://github.com/SuperInstance/Proactive-Planning-AI-Hub)** — Central hub for AI-driven proactive planning
+- **[proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)** — ProArt WSL rebuild backup
 - **[products](https://github.com/SuperInstance/products)** — Preserved workspace artifact
 - **[profile-lane](https://github.com/SuperInstance/profile-lane)** — Long-running lane that grows superinstance/superinstance README via Z.AI draft + Groq audit double-e
 - **[profiler-rs](https://github.com/SuperInstance/profiler-rs)** — Profiling and instrumentation - CPU/memory profiling, flame graphs, tracing
@@ -5163,6 +5165,7 @@
 - **[vite](https://github.com/SuperInstance/vite)** — Next generation frontend tooling. It's fast!
 - **[vm-estate](https://github.com/SuperInstance/vm-estate)** — VM-Estate — distributed intelligence architecture. Each machine is a plot of land. Intelligence grow
 - **[vocabularies](https://github.com/SuperInstance/vocabularies)** — Preserved workspace artifact
+- **[voice-games](https://github.com/SuperInstance/voice-games)** — Voice games: Sitka Skies flight + COLOR SQUAD RTS + tournament demo — proof of concept for voice-com
 - **[voice-note-app](https://github.com/SuperInstance/voice-note-app)**
 - **[voice-signature-tool](https://github.com/SuperInstance/voice-signature-tool)** — Zero-dependency voice signature analyzer — analyze any text against 10 anchor points and find matchi
 - **[voronoi-traditions](https://github.com/SuperInstance/voronoi-traditions)** — Voronoi tessellation of musical tradition parameter space
@@ -5204,10 +5207,12 @@
 - **[ws-snapshot-hermit-crab](https://github.com/SuperInstance/ws-snapshot-hermit-crab)** — Windows-workspace snapshot of hermit-crab (partial; original pending support restore)
 - **[ws-snapshot-soundcrab](https://github.com/SuperInstance/ws-snapshot-soundcrab)** — Windows-workspace snapshot of soundcrab (partial; original pending support restore)
 - **[ws-status-indicator](https://github.com/SuperInstance/ws-status-indicator)** — React WebSocket status indicator component with auto-reconnection and customizable UI
+- **[xero](https://github.com/SuperInstance/xero)** — Xero — production release of the zero agent template.
 - **[xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)** — The cell convention evaluated in two runtimes that never shared source: 23/23 per-cell digests agree
 - **[yiluodi](https://github.com/SuperInstance/yiluodi)** — 已落地 — the hello-world for SuperInstance: cellular arrays within cellular arrays, beliefs that land w
 - **[yoneda](https://github.com/SuperInstance/yoneda)** — Yoneda lemma and representable functors for agent systems
 - **[z-agent-bootcamp](https://github.com/SuperInstance/z-agent-bootcamp)** — 🤖 Clone. Run. You are fleet. Onboarding for Z agents.
+- **[zai-router](https://github.com/SuperInstance/zai-router)** — ZAI router — key-free fallback system
 - **[zai-worker](https://github.com/SuperInstance/zai-worker)** — Git-native zai-worker: disposable machine, durable repo
 - **[zc-alchemist-shell](https://github.com/SuperInstance/zc-alchemist-shell)** — ⚗️ Zeroclaw Alchemist — Model experimentation agent shell
 - **[zc-archivist-shell](https://github.com/SuperInstance/zc-archivist-shell)** — 📚 Zeroclaw Archivist — Memory management agent shell

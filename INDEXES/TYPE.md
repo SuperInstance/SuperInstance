@@ -1,7 +1,7 @@
 # Index by Type
 
-**Generated:** 2026-10-10 11:03 UTC
-**Total repos:** 5215
+**Generated:** 2026-10-11 11:20 UTC
+**Total repos:** 5220
 
 ## Cli
 
@@ -158,6 +158,7 @@
 - **[tminus-client](https://github.com/SuperInstance/tminus-client)** — T-Minus Client SDK — Node.js client library and CLI for the t-minus dispatcher protocol
 - **[topology-bench](https://github.com/SuperInstance/topology-bench)** — CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem
 - **[Understand-Anything](https://github.com/SuperInstance/Understand-Anything)** — Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can e
+- **[voice-games](https://github.com/SuperInstance/voice-games)** — Voice games: Sitka Skies flight + COLOR SQUAD RTS + tournament demo — proof of concept for voice-com
 - **[voxblox](https://github.com/SuperInstance/voxblox)** — A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distan
 - **[whisper-sync](https://github.com/SuperInstance/whisper-sync)** — Rust CLI/crate bridging Murmurer ambient whisper protocol to PLATO room infrastructure — short, ambi
 - **[whistle](https://github.com/SuperInstance/whistle)** — Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled
@@ -1961,6 +1962,7 @@
 - **[intent-inference](https://github.com/SuperInstance/intent-inference)** — Intent Inference Engine — reverse-engineers productive lane from user behavior. Part of Cocapn rever
 - **[intention-field-rs](https://github.com/SuperInstance/intention-field-rs)** — Self-Improving Band: intention-field-rs
 - **[interval-tree-rs](https://github.com/SuperInstance/interval-tree-rs)** — Interval tree data structure in pure Rust — O(log n) insertion, stabbing queries, range queries, ove
+- **[intuition](https://github.com/SuperInstance/intuition)** — Intuition — contrast-pair phantom verdict analysis, v-JEPA2 training
 - **[isa-v3-draft](https://github.com/SuperInstance/isa-v3-draft)** — FLUX ISA v3 Design Draft — trifold encoding for cloud/edge/compact modes
 - **[isa-v3-edge-spec](https://github.com/SuperInstance/isa-v3-edge-spec)** — ISA v3 edge encoding: variable-width 1-3 byte instructions for bare-metal agents
 - **[iterative-solvers](https://github.com/SuperInstance/iterative-solvers)** — Iterative solvers in Rust. When direct methods can't fit in memory.
@@ -2959,6 +2961,7 @@
 - **[Private-ML-Personalization](https://github.com/SuperInstance/Private-ML-Personalization)** — Privacy-preserving ML personalization system
 - **[privox](https://github.com/SuperInstance/privox)** — PII/PHI redaction library for LLM pipelines (Rust)
 - **[Proactive-Planning-AI-Hub](https://github.com/SuperInstance/Proactive-Planning-AI-Hub)** — Central hub for AI-driven proactive planning
+- **[proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)** — ProArt WSL rebuild backup
 - **[products](https://github.com/SuperInstance/products)** — Preserved workspace artifact
 - **[profile-lane](https://github.com/SuperInstance/profile-lane)** — Long-running lane that grows superinstance/superinstance README via Z.AI draft + Groq audit double-e
 - **[profiler-rs](https://github.com/SuperInstance/profiler-rs)** — Profiling and instrumentation - CPU/memory profiling, flame graphs, tracing
@@ -4284,11 +4287,13 @@
 - **[ws-fabric](https://github.com/SuperInstance/ws-fabric)** — WebSocket connection pooling and fabric library
 - **[ws-snapshot-hermit-crab](https://github.com/SuperInstance/ws-snapshot-hermit-crab)** — Windows-workspace snapshot of hermit-crab (partial; original pending support restore)
 - **[ws-snapshot-soundcrab](https://github.com/SuperInstance/ws-snapshot-soundcrab)** — Windows-workspace snapshot of soundcrab (partial; original pending support restore)
+- **[xero](https://github.com/SuperInstance/xero)** — Xero — production release of the zero agent template.
 - **[xlang](https://github.com/SuperInstance/xlang)** — A next-generation dynamic and high-performance language for AI and IOT with natural born distributed
 - **[xMind](https://github.com/SuperInstance/xMind)** — xMind is a modular framework in XLang for implementing LLM Memory, Planning, and Dataflow. It enable
 - **[xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)** — The cell convention evaluated in two runtimes that never shared source: 23/23 per-cell digests agree
 - **[yiluodi](https://github.com/SuperInstance/yiluodi)** — 已落地 — the hello-world for SuperInstance: cellular arrays within cellular arrays, beliefs that land w
 - **[yoneda](https://github.com/SuperInstance/yoneda)** — Yoneda lemma and representable functors for agent systems
+- **[zai-router](https://github.com/SuperInstance/zai-router)** — ZAI router — key-free fallback system
 - **[zai-worker](https://github.com/SuperInstance/zai-worker)** — Git-native zai-worker: disposable machine, durable repo
 - **[zc-alchemist-shell](https://github.com/SuperInstance/zc-alchemist-shell)** — ⚗️ Zeroclaw Alchemist — Model experimentation agent shell
 - **[zc-archivist-shell](https://github.com/SuperInstance/zc-archivist-shell)** — 📚 Zeroclaw Archivist — Memory management agent shell

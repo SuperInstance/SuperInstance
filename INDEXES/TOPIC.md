@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-10-10 11:03 UTC
-**Total repos:** 5215
+**Generated:** 2026-10-11 11:20 UTC
+**Total repos:** 5220
 
 ## A2A
 
@@ -2262,6 +2262,7 @@
 - **[workflow-engineer](https://github.com/SuperInstance/workflow-engineer)** — AI agent specialized in designing and automating software workflows.
 - **[workshop](https://github.com/SuperInstance/workshop)** — Cocapn fleet crate: workshop
 - **[workspace-rescue](https://github.com/SuperInstance/workspace-rescue)** — RESCUED 2026-10-03. 605 files from the local NAS that had NO git, NO remote and NO backup - 96 piece
+- **[xero](https://github.com/SuperInstance/xero)** — Xero — production release of the zero agent template.
 - **[yoneda](https://github.com/SuperInstance/yoneda)** — Yoneda lemma and representable functors for agent systems
 - **[z-agent-bootcamp](https://github.com/SuperInstance/z-agent-bootcamp)** — 🤖 Clone. Run. You are fleet. Onboarding for Z agents.
 - **[zc-alchemist-shell](https://github.com/SuperInstance/zc-alchemist-shell)** — ⚗️ Zeroclaw Alchemist — Model experimentation agent shell
@@ -3754,6 +3755,7 @@
 - **[intention-field-rs](https://github.com/SuperInstance/intention-field-rs)** — Self-Improving Band: intention-field-rs
 - **[interp-spline](https://github.com/SuperInstance/interp-spline)** — Research-grade interpolation and splines in pure Rust — linear, cubic Hermite, B-spline, Akima with 
 - **[interval-tree-rs](https://github.com/SuperInstance/interval-tree-rs)** — Interval tree data structure in pure Rust — O(log n) insertion, stabbing queries, range queries, ove
+- **[intuition](https://github.com/SuperInstance/intuition)** — Intuition — contrast-pair phantom verdict analysis, v-JEPA2 training
 - **[ipc-equipment](https://github.com/SuperInstance/ipc-equipment)** — Inter-vessel messaging — pipe-style inbox
 - **[iterative-solvers](https://github.com/SuperInstance/iterative-solvers)** — Iterative solvers in Rust. When direct methods can't fit in memory.
 - **[jam](https://github.com/SuperInstance/jam)** — Generic project for Jamming, likely audio or CI/CD.
@@ -4278,6 +4280,7 @@
 - **[Private-ML-Personalization](https://github.com/SuperInstance/Private-ML-Personalization)** — Privacy-preserving ML personalization system
 - **[privox](https://github.com/SuperInstance/privox)** — PII/PHI redaction library for LLM pipelines (Rust)
 - **[Proactive-Planning-AI-Hub](https://github.com/SuperInstance/Proactive-Planning-AI-Hub)** — Central hub for AI-driven proactive planning
+- **[proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)** — ProArt WSL rebuild backup
 - **[products](https://github.com/SuperInstance/products)** — Preserved workspace artifact
 - **[profile-lane](https://github.com/SuperInstance/profile-lane)** — Long-running lane that grows superinstance/superinstance README via Z.AI draft + Groq audit double-e
 - **[profiler-rs](https://github.com/SuperInstance/profiler-rs)** — Profiling and instrumentation - CPU/memory profiling, flame graphs, tracing
@@ -5271,6 +5274,7 @@
 - **[xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)** — The cell convention evaluated in two runtimes that never shared source: 23/23 per-cell digests agree
 - **[yiluodi](https://github.com/SuperInstance/yiluodi)** — 已落地 — the hello-world for SuperInstance: cellular arrays within cellular arrays, beliefs that land w
 - **[young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)** — Research-grade Rust crate
+- **[zai-router](https://github.com/SuperInstance/zai-router)** — ZAI router — key-free fallback system
 - **[zai-worker](https://github.com/SuperInstance/zai-worker)** — Git-native zai-worker: disposable machine, durable repo
 - **[zero-knowledge](https://github.com/SuperInstance/zero-knowledge)** — Zero-knowledge proof primitives: Schnorr, DLEQ, range proofs, sigma protocols, Fiat-Shamir
 - **[zero-msg-test](https://github.com/SuperInstance/zero-msg-test)**
@@ -5315,6 +5319,7 @@
 - **[spreadsheet-plr-bridge](https://github.com/SuperInstance/spreadsheet-plr-bridge)** — Bridge between spreadsheet cells and PLR voice leading — the spreadsheet moment for AI music
 - **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** — Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden
 - **[Turing-tensor-midi](https://github.com/SuperInstance/Turing-tensor-midi)** — A sophisticated, JARVIS-inspired voice assistant with passive listening, natural language processing
+- **[voice-games](https://github.com/SuperInstance/voice-games)** — Voice games: Sitka Skies flight + COLOR SQUAD RTS + tournament demo — proof of concept for voice-com
 - **[voice-note-app](https://github.com/SuperInstance/voice-note-app)**
 - **[voice-reflex-gate](https://github.com/SuperInstance/voice-reflex-gate)** — STT output as hash key for deterministic response routing — the voice reflex gate.
 - **[voice-signature-tool](https://github.com/SuperInstance/voice-signature-tool)** — Zero-dependency voice signature analyzer — analyze any text against 10 anchor points and find matchi

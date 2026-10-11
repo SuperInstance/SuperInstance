@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-10 11:03 UTC
+**Generated:** 2026-10-11 11:20 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -3090,6 +3090,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [workflow-engineer](https://github.com/SuperInstance/workflow-engineer)
 - [workshop](https://github.com/SuperInstance/workshop)
 - [workspace-rescue](https://github.com/SuperInstance/workspace-rescue)
+- [xero](https://github.com/SuperInstance/xero)
 - [yoneda](https://github.com/SuperInstance/yoneda)
 - [z-agent-bootcamp](https://github.com/SuperInstance/z-agent-bootcamp)
 - [zc-alchemist-shell](https://github.com/SuperInstance/zc-alchemist-shell)
@@ -4791,6 +4792,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [intention-field-rs](https://github.com/SuperInstance/intention-field-rs)
 - [interp-spline](https://github.com/SuperInstance/interp-spline)
 - [interval-tree-rs](https://github.com/SuperInstance/interval-tree-rs)
+- [intuition](https://github.com/SuperInstance/intuition)
 - [ipc-equipment](https://github.com/SuperInstance/ipc-equipment)
 - [iterative-solvers](https://github.com/SuperInstance/iterative-solvers)
 - [jam](https://github.com/SuperInstance/jam)
@@ -5292,6 +5294,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [position-aware-embed](https://github.com/SuperInstance/position-aware-embed)
 - [prism](https://github.com/SuperInstance/prism)
 - [privox](https://github.com/SuperInstance/privox)
+- [proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)
 - [products](https://github.com/SuperInstance/products)
 - [profile-lane](https://github.com/SuperInstance/profile-lane)
 - [profiler-rs](https://github.com/SuperInstance/profiler-rs)
@@ -6255,6 +6258,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)
 - [yiluodi](https://github.com/SuperInstance/yiluodi)
 - [young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)
+- [zai-router](https://github.com/SuperInstance/zai-router)
 - [zai-worker](https://github.com/SuperInstance/zai-worker)
 - [zero-knowledge](https://github.com/SuperInstance/zero-knowledge)
 - [zero-msg-test](https://github.com/SuperInstance/zero-msg-test)
@@ -6334,6 +6338,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-cuda-kernels-v2](https://github.com/SuperInstance/ternary-cuda-kernels-v2)
 - [tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)
 - [topo-sonata](https://github.com/SuperInstance/topo-sonata)
+- [voice-games](https://github.com/SuperInstance/voice-games)
 - [voice-note-app](https://github.com/SuperInstance/voice-note-app)
 - [voice-reflex-gate](https://github.com/SuperInstance/voice-reflex-gate)
 - [voice-signature-tool](https://github.com/SuperInstance/voice-signature-tool)
