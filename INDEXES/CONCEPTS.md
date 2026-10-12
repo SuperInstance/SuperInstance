@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-11 11:20 UTC
+**Generated:** 2026-10-12 12:55 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -3683,6 +3683,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [superinstance-architecture](https://github.com/SuperInstance/superinstance-architecture)
 - [superinstance-fleet-proto](https://github.com/SuperInstance/superinstance-fleet-proto)
 - [swarm-rooms](https://github.com/SuperInstance/swarm-rooms)
+- [syzygy-demo](https://github.com/SuperInstance/syzygy-demo)
 - [terax-fleet-modules](https://github.com/SuperInstance/terax-fleet-modules)
 - [ternary-anchor](https://github.com/SuperInstance/ternary-anchor)
 - [ternary-bus](https://github.com/SuperInstance/ternary-bus)
@@ -4269,6 +4270,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [collective-unconscious](https://github.com/SuperInstance/collective-unconscious)
 - [collision-detect](https://github.com/SuperInstance/collision-detect)
 - [color-space](https://github.com/SuperInstance/color-space)
+- [color-squad](https://github.com/SuperInstance/color-squad)
 - [columnar-store](https://github.com/SuperInstance/columnar-store)
 - [combinatorics](https://github.com/SuperInstance/combinatorics)
 - [commitment-scheme](https://github.com/SuperInstance/commitment-scheme)
@@ -4599,6 +4601,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flow-state-orchestra](https://github.com/SuperInstance/flow-state-orchestra)
 - [flowstate](https://github.com/SuperInstance/flowstate)
 - [fluid-sim](https://github.com/SuperInstance/fluid-sim)
+- [fold-bout](https://github.com/SuperInstance/fold-bout)
 - [font-rasterizer](https://github.com/SuperInstance/font-rasterizer)
 - [foodlog-ai](https://github.com/SuperInstance/foodlog-ai)
 - [forge-code-archaeologist](https://github.com/SuperInstance/forge-code-archaeologist)
@@ -5223,6 +5226,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [openmind-cellular](https://github.com/SuperInstance/openmind-cellular)
 - [openmind-esp32-bridge](https://github.com/SuperInstance/openmind-esp32-bridge)
 - [openshell-compatibility-audit](https://github.com/SuperInstance/openshell-compatibility-audit)
+- [opensky-terrain](https://github.com/SuperInstance/opensky-terrain)
 - [opensmile](https://github.com/SuperInstance/opensmile)
 - [operational-fiction](https://github.com/SuperInstance/operational-fiction)
 - [optimal-control](https://github.com/SuperInstance/optimal-control)
@@ -5840,7 +5844,12 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [synesis-status](https://github.com/SuperInstance/synesis-status)
 - [synesis-templates](https://github.com/SuperInstance/synesis-templates)
 - [synthcity](https://github.com/SuperInstance/synthcity)
+- [syzygy-curriculum](https://github.com/SuperInstance/syzygy-curriculum)
+- [syzygy-forge](https://github.com/SuperInstance/syzygy-forge)
 - [syzygy-lattice](https://github.com/SuperInstance/syzygy-lattice)
+- [syzygy-program](https://github.com/SuperInstance/syzygy-program)
+- [syzygy-studio](https://github.com/SuperInstance/syzygy-studio)
+- [syzygy-video](https://github.com/SuperInstance/syzygy-video)
 - [t-minus-rs](https://github.com/SuperInstance/t-minus-rs)
 - [tap-frontend](https://github.com/SuperInstance/tap-frontend)
 - [tap-gamenight](https://github.com/SuperInstance/tap-gamenight)

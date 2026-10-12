@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-10-11 11:20 UTC
-**Total repos:** 5220
+**Generated:** 2026-10-12 12:55 UTC
+**Total repos:** 5229
 
 ## Ai
 
@@ -621,6 +621,7 @@
 - **[colony-cell](https://github.com/SuperInstance/colony-cell)** — Filesystem-based agent sandbox: Rust cell runtime with XP, leveling, breeding, mutation, sandbox iso
 - **[colony-games](https://github.com/SuperInstance/colony-games)** — Agentic psychology games for autonomous agent colonies: Prisoner's Dilemma, Trust Auctions, Empathy 
 - **[color-space](https://github.com/SuperInstance/color-space)** — Color space conversions in pure Rust — RGB, HSV, HSL, CMYK, XYZ, Lab with gamma and delta-E
+- **[color-squad](https://github.com/SuperInstance/color-squad)** — COLOR SQUAD: JSON strategy scripts play deterministic 4v4 capture-the-flag; a running season with in
 - **[columnar-store](https://github.com/SuperInstance/columnar-store)** — Columnar storage engine — Apache Parquet-style columnar format with compression and predicate pushdo
 - **[combinatorics](https://github.com/SuperInstance/combinatorics)** — Combinatorics in Rust — counting, Burnside's lemma, Catalan numbers, generating functions, graph enu
 - **[commit-caster](https://github.com/SuperInstance/commit-caster)** — I2I notification system — scans fleet repos for tagged commits
@@ -1958,6 +1959,7 @@
 - **[fm-papers](https://github.com/SuperInstance/fm-papers)** — Extracted from forgemaster/papers — Cocapn fleet component
 - **[fm-research](https://github.com/SuperInstance/fm-research)** — Extracted from forgemaster/research — Cocapn fleet component
 - **[fm-research-archive](https://github.com/SuperInstance/fm-research-archive)** — Archived research from forgemaster — Cocapn fleet component
+- **[fold-bout](https://github.com/SuperInstance/fold-bout)** — Judged head-to-head: MiniMax vs Claude Code implement the deterministic fold (task-atom state deriva
 - **[fold-compression](https://github.com/SuperInstance/fold-compression)** — Permutation group constraint compression — N-1 evaluations, N! reachable states
 - **[folding-order](https://github.com/SuperInstance/folding-order)** — 5-stage RG flow for temporal anomaly detection — the Ground Truth agent's core algorithm
 - **[font-rasterizer](https://github.com/SuperInstance/font-rasterizer)** — A Rust library for Font Rasterizer
@@ -3163,6 +3165,7 @@
 - **[openrooms](https://github.com/SuperInstance/openrooms)** — Agent-powered collaborative rooms with topology, intention fields, and Hodge decomposition
 - **[openshell-compatibility-audit](https://github.com/SuperInstance/openshell-compatibility-audit)** — Categorizes all SuperInstance repos for OpenShell integration — native, wrapper, backend, tool, depr
 - **[openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)** — OpenShell wrapper re-exporting pythagorean48-codes (48-directional trust encoding)
+- **[opensky-terrain](https://github.com/SuperInstance/opensky-terrain)** — Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum
 - **[opensmile](https://github.com/SuperInstance/opensmile)** — The Munich Open-Source Large-Scale Multimedia Feature Extractor
 - **[opensmile-bridge](https://github.com/SuperInstance/opensmile-bridge)** — Modular OpenSMILE bridge for fleet voice feature extraction. WebSocket server, MIDI CC mapping, I2I 
 - **[operational-fiction](https://github.com/SuperInstance/operational-fiction)**
@@ -4556,8 +4559,14 @@
 - **[synthcity](https://github.com/SuperInstance/synthcity)** — An Infinite Procedural Cyberpunk City
 - **[system-prompts-and-models-of-ai-tools](https://github.com/SuperInstance/system-prompts-and-models-of-ai-tools)** — FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, L
 - **[Syzygy](https://github.com/SuperInstance/Syzygy)** — **Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable 
+- **[syzygy-curriculum](https://github.com/SuperInstance/syzygy-curriculum)** — The Syzygy reading experiments: can text-only models read a scene rendered as text? Episodes, frozen
+- **[syzygy-demo](https://github.com/SuperInstance/syzygy-demo)** — A playable demo: an AI plays an ASCII raycaster by reading its screen as text. Only the seeing is le
+- **[syzygy-forge](https://github.com/SuperInstance/syzygy-forge)** — Syzygy-forge: teaching the Syzygy tokenizer a learned codebook — integer k-means tables, honest eval
 - **[syzygy-lattice](https://github.com/SuperInstance/syzygy-lattice)**
 - **[Syzygy-OpenSkyFlight](https://github.com/SuperInstance/Syzygy-OpenSkyFlight)** — Side by Side ASCII rendering and original- Browser-based 3D flight simulator over real-world terrain
+- **[syzygy-program](https://github.com/SuperInstance/syzygy-program)** — The Syzygy program office: plan, architecture synthesis, design notes, seed vetting — and the map to
+- **[syzygy-studio](https://github.com/SuperInstance/syzygy-studio)** — Syzygy studio — the public site: watch it play, learn at three levels, one camera one job, receipts
+- **[syzygy-video](https://github.com/SuperInstance/syzygy-video)** — Real video through the Syzygy kernel — frames become readable text (glyphs, Braille, tone); side-by-
 - **[t-minus](https://github.com/SuperInstance/t-minus)** — T-minus event coordination for multi-agent systems
 - **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** — Countdown/timer primitives with scheduling, deadline propagation, and backpressure
 - **[tagseq2tagseq4quilt](https://github.com/SuperInstance/tagseq2tagseq4quilt)** — Framework for pretraining LLMs on graph-structured corpora (Wikipedia, The Stack, arXiv): link-aware

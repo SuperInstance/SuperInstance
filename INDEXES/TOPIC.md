@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-10-11 11:20 UTC
-**Total repos:** 5220
+**Generated:** 2026-10-12 12:55 UTC
+**Total repos:** 5229
 
 ## A2A
 
@@ -2786,6 +2786,7 @@
 - **[superinstance-fleet-proto](https://github.com/SuperInstance/superinstance-fleet-proto)** — Shared PLATO client, I2I protocol, and FleetAgent trait for Cocapn fleet
 - **[SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)** — Automatically Deconstruct logic into Spread Sheet Tiles and Cells, Instances Interconnected w/ Origi
 - **[swarm-rooms](https://github.com/SuperInstance/swarm-rooms)** — Extracted from plato-training
+- **[syzygy-demo](https://github.com/SuperInstance/syzygy-demo)** — A playable demo: an AI plays an ASCII raycaster by reading its screen as text. Only the seeing is le
 - **[terax-fleet-modules](https://github.com/SuperInstance/terax-fleet-modules)** — Terax fleet TypeScript modules — PLATO bridge, casting-call
 - **[ternary-anchor](https://github.com/SuperInstance/ternary-anchor)** — ternary-anchor: Stability and persistence for rooms in dynamic fleet environments
 - **[ternary-bus](https://github.com/SuperInstance/ternary-bus)** — ternary-bus Communication bus for inter-room messaging with ternary payloads
@@ -3207,6 +3208,7 @@
 - **[collective-unconscious](https://github.com/SuperInstance/collective-unconscious)**
 - **[collision-detect](https://github.com/SuperInstance/collision-detect)** — Broad-phase and narrow-phase collision detection in pure Rust — AABB, GJK, EPA for robotics and game
 - **[color-space](https://github.com/SuperInstance/color-space)** — Color space conversions in pure Rust — RGB, HSV, HSL, CMYK, XYZ, Lab with gamma and delta-E
+- **[color-squad](https://github.com/SuperInstance/color-squad)** — COLOR SQUAD: JSON strategy scripts play deterministic 4v4 capture-the-flag; a running season with in
 - **[columnar-store](https://github.com/SuperInstance/columnar-store)** — Columnar storage engine — Apache Parquet-style columnar format with compression and predicate pushdo
 - **[combinatorics](https://github.com/SuperInstance/combinatorics)** — Combinatorics in Rust — counting, Burnside's lemma, Catalan numbers, generating functions, graph enu
 - **[commitment-scheme](https://github.com/SuperInstance/commitment-scheme)** — Pedersen commitments, polynomial commitments, batch opening/verification in Rust
@@ -3554,6 +3556,7 @@
 - **[flow-state-orchestra](https://github.com/SuperInstance/flow-state-orchestra)** — 4 cheap LLM instruments playing basketball combo as r̂-first intelligence loop — the doctrines in ac
 - **[flowstate](https://github.com/SuperInstance/flowstate)** — State management library for efficient data flow.
 - **[fluid-sim](https://github.com/SuperInstance/fluid-sim)** — A Rust library for Fluid Sim
+- **[fold-bout](https://github.com/SuperInstance/fold-bout)** — Judged head-to-head: MiniMax vs Claude Code implement the deterministic fold (task-atom state deriva
 - **[font-rasterizer](https://github.com/SuperInstance/font-rasterizer)** — A Rust library for Font Rasterizer
 - **[foodlog-ai](https://github.com/SuperInstance/foodlog-ai)** — AI food companion — meal logging, nutrition tracking, recipe suggestions
 - **[forge-code-archaeologist](https://github.com/SuperInstance/forge-code-archaeologist)** — Ability Forge: produces the Code Archaeologist attunement — sees structural rot others walk over
@@ -4204,6 +4207,7 @@
 - **[OpenMythos](https://github.com/SuperInstance/OpenMythos)** — A theoretical reconstruction of the Claude Mythos architecture, built from first principles using th
 - **[openPlan3D](https://github.com/SuperInstance/openPlan3D)** — Open source 2D/3D floor plan editor built with SvelteKit and Three.js
 - **[openshell-compatibility-audit](https://github.com/SuperInstance/openshell-compatibility-audit)** — Categorizes all SuperInstance repos for OpenShell integration — native, wrapper, backend, tool, depr
+- **[opensky-terrain](https://github.com/SuperInstance/opensky-terrain)** — Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum
 - **[opensmile](https://github.com/SuperInstance/opensmile)** — The Munich Open-Source Large-Scale Multimedia Feature Extractor
 - **[operational-fiction](https://github.com/SuperInstance/operational-fiction)**
 - **[optimal-control](https://github.com/SuperInstance/optimal-control)** — Optimal control in Rust. From LQR to HJB.
@@ -4850,8 +4854,13 @@
 - **[synesis-templates](https://github.com/SuperInstance/synesis-templates)** — Extraction and conversion templates used to peel synesis subcrates out of the monorepo
 - **[synthcity](https://github.com/SuperInstance/synthcity)** — An Infinite Procedural Cyberpunk City
 - **[Syzygy](https://github.com/SuperInstance/Syzygy)** — **Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable 
+- **[syzygy-curriculum](https://github.com/SuperInstance/syzygy-curriculum)** — The Syzygy reading experiments: can text-only models read a scene rendered as text? Episodes, frozen
+- **[syzygy-forge](https://github.com/SuperInstance/syzygy-forge)** — Syzygy-forge: teaching the Syzygy tokenizer a learned codebook — integer k-means tables, honest eval
 - **[syzygy-lattice](https://github.com/SuperInstance/syzygy-lattice)**
 - **[Syzygy-OpenSkyFlight](https://github.com/SuperInstance/Syzygy-OpenSkyFlight)** — Side by Side ASCII rendering and original- Browser-based 3D flight simulator over real-world terrain
+- **[syzygy-program](https://github.com/SuperInstance/syzygy-program)** — The Syzygy program office: plan, architecture synthesis, design notes, seed vetting — and the map to
+- **[syzygy-studio](https://github.com/SuperInstance/syzygy-studio)** — Syzygy studio — the public site: watch it play, learn at three levels, one camera one job, receipts
+- **[syzygy-video](https://github.com/SuperInstance/syzygy-video)** — Real video through the Syzygy kernel — frames become readable text (glyphs, Braille, tone); side-by-
 - **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** — Countdown/timer primitives with scheduling, deadline propagation, and backpressure
 - **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** — Auto-created for sync 2026-08-13
 - **[tap-gamenight](https://github.com/SuperInstance/tap-gamenight)**

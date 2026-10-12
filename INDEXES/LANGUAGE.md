@@ -1,7 +1,7 @@
 # Index by Language
 
-**Generated:** 2026-10-11 11:20 UTC
-**Total repos:** 5220
+**Generated:** 2026-10-12 12:55 UTC
+**Total repos:** 5229
 
 ## C
 
@@ -78,6 +78,7 @@
 - **[cocapn-marine](https://github.com/SuperInstance/cocapn-marine)** — Marine sensor integration for CoCapn — NMEA 0183, autopilot PID, bathymetric recording, deadband mon
 - **[cocapn-site](https://github.com/SuperInstance/cocapn-site)** — Cocapn.com — Open source agent infrastructure. Membership, billing, token economy. Pay only for conv
 - **[cocapn-tutor](https://github.com/SuperInstance/cocapn-tutor)** — Domain-specific language for agent pedagogy in the Cocapn Fleet
+- **[color-squad](https://github.com/SuperInstance/color-squad)** — COLOR SQUAD: JSON strategy scripts play deterministic 4v4 capture-the-flag; a running season with in
 - **[compiled-policy-c](https://github.com/SuperInstance/compiled-policy-c)** — Zero-dependency C99 library for deploying compiled RL policies on microcontrollers — train with grad
 - **[compress-rle-rs](https://github.com/SuperInstance/compress-rle-rs)** — Run-length encoding: basic RLE, PackBits, modified bitmap RLE, encode/decode
 - **[compress-rs](https://github.com/SuperInstance/compress-rs)** — Unified compression library - Multiple formats, streaming, async support
@@ -261,6 +262,7 @@
 - **[flux-vm-v3](https://github.com/SuperInstance/flux-vm-v3)** — FLUX-C v3 VM — proof-carrying, SIMD-native, terminating constraint VM
 - **[fluxkeeper-go](https://github.com/SuperInstance/fluxkeeper-go)** — Go package — system watchdog: /proc monitoring, health scoring, trend analysis, ring buffer
 - **[fluxstigmergy-go](https://github.com/SuperInstance/fluxstigmergy-go)** — Go package — stigmergic communication: shared environment traces, decay, waypoints, queries
+- **[fold-bout](https://github.com/SuperInstance/fold-bout)** — Judged head-to-head: MiniMax vs Claude Code implement the deterministic fold (task-atom state deriva
 - **[forge-flux](https://github.com/SuperInstance/forge-flux)** — Generalized input decomposition for agent pipelines — tiles as atomic units with conservation ratio 
 - **[forge-quilt](https://github.com/SuperInstance/forge-quilt)** — The Quilt cell kernel as an OpenAPI 3.1 spec — Cloudflare Forge input, and the artifact that makes t
 - **[forgiveness-function](https://github.com/SuperInstance/forgiveness-function)** — Strategic forgiveness in autonomous agents — conditional momentum-based recovery
@@ -416,6 +418,7 @@
 - **[openconstruct-c](https://github.com/SuperInstance/openconstruct-c)** — C bindings for OpenConstruct — header file, examples, and test harness for the C ABI
 - **[openconstruct-docs](https://github.com/SuperInstance/openconstruct-docs)** — Agent-centric documentation for OpenConstruct — educational, A2A-native, zero-shot onboarding.
 - **[OpenMAIC](https://github.com/SuperInstance/OpenMAIC)** — Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just o
+- **[opensky-terrain](https://github.com/SuperInstance/opensky-terrain)** — Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum
 - **[opensmile-bridge](https://github.com/SuperInstance/opensmile-bridge)** — Modular OpenSMILE bridge for fleet voice feature extraction. WebSocket server, MIDI CC mapping, I2I 
 - **[oracle-tui](https://github.com/SuperInstance/oracle-tui)** — Agentic terminal dashboard for the SuperInstance fleet — nebula, crates, system, evolution
 - **[orations-metal](https://github.com/SuperInstance/orations-metal)** — Three orations on deadbands, eigenvectors, and load-bearing abstractions — plus critic synthesis
@@ -566,6 +569,7 @@
 - **[symplectic-opt](https://github.com/SuperInstance/symplectic-opt)** — Symplectic optimization — Hamiltonian integrators, conservation laws, natural gradient descent on Ri
 - **[symplectic-physics](https://github.com/SuperInstance/symplectic-physics)** — Symplectic physics engine — Hamiltonian mechanics, phase space, and conservation laws for physical s
 - **[synclink-protocol](https://github.com/SuperInstance/synclink-protocol)** — 🔗 SyncLink — binary edge-cloud sync protocol for Jetson↔Cloud agent communication
+- **[syzygy-studio](https://github.com/SuperInstance/syzygy-studio)** — Syzygy studio — the public site: watch it play, learn at three levels, one camera one job, receipts
 - **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** — Auto-created for sync 2026-08-13
 - **[tda-c](https://github.com/SuperInstance/tda-c)**
 - **[telepathy-c](https://github.com/SuperInstance/telepathy-c)** — Pure C11 A2A message transport — bare-metal 1050-byte messages, mailbox, router, receipts
@@ -4690,7 +4694,12 @@
 - **[synthcity](https://github.com/SuperInstance/synthcity)** — An Infinite Procedural Cyberpunk City
 - **[system-prompts-and-models-of-ai-tools](https://github.com/SuperInstance/system-prompts-and-models-of-ai-tools)** — FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, L
 - **[Syzygy](https://github.com/SuperInstance/Syzygy)** — **Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable 
+- **[syzygy-curriculum](https://github.com/SuperInstance/syzygy-curriculum)** — The Syzygy reading experiments: can text-only models read a scene rendered as text? Episodes, frozen
+- **[syzygy-demo](https://github.com/SuperInstance/syzygy-demo)** — A playable demo: an AI plays an ASCII raycaster by reading its screen as text. Only the seeing is le
+- **[syzygy-forge](https://github.com/SuperInstance/syzygy-forge)** — Syzygy-forge: teaching the Syzygy tokenizer a learned codebook — integer k-means tables, honest eval
 - **[syzygy-lattice](https://github.com/SuperInstance/syzygy-lattice)**
+- **[syzygy-program](https://github.com/SuperInstance/syzygy-program)** — The Syzygy program office: plan, architecture synthesis, design notes, seed vetting — and the map to
+- **[syzygy-video](https://github.com/SuperInstance/syzygy-video)** — Real video through the Syzygy kernel — frames become readable text (glyphs, Braille, tone); side-by-
 - **[t-minus](https://github.com/SuperInstance/t-minus)** — T-minus event coordination for multi-agent systems
 - **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** — Countdown/timer primitives with scheduling, deadline propagation, and backpressure
 - **[tagseq2tagseq4quilt](https://github.com/SuperInstance/tagseq2tagseq4quilt)** — Framework for pretraining LLMs on graph-structured corpora (Wikipedia, The Stack, arXiv): link-aware
