@@ -1,14 +1,14 @@
 {
- "generated": "2026-10-05T00:10:13Z",
+ "generated": "2026-10-12T00:43:52Z",
  "source": "CATALOG.md",
- "catalogGenerated": "2026-10-04",
- "catalogTotal": 5168,
- "parsed": 5168,
+ "catalogGenerated": "2026-10-11",
+ "catalogTotal": 5220,
+ "parsed": 5220,
  "catalogMissing": [],
  "tier3Note": "tier-3 (orphan+stale) populates once the CATALOG generator fetches pushedAt/isArchived (meta repo PR #19, catalog-v2); until then every row reads active",
  "tiers": {
   "1": 27,
-  "2": 5141,
+  "2": 5193,
   "3": 0
  },
  "vessels": [
@@ -805,6 +805,15 @@
    "tier": 2
   },
   {
+   "name": "agent-inbox",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Hooks and drops: a git-native task queue for agents that don't share a chat channel.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "agent-intonation",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -1246,6 +1255,15 @@
    "tier": 2
   },
   {
+   "name": "agent-tiles",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Public distillation of agent-to-agent communication tiles: mad-lib templates for briefing, handoffs,",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "agent-to-agent",
    "family": "agent-coordination",
    "vessel": "Oracle1",
@@ -1637,6 +1655,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Ant colony optimization with pheromone trails and evaporation — Rust optimization library",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "anti-gan-test",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Anti-GAN: creative competition, cross-lineage playtesting for emergence",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2794,6 +2821,15 @@
    "tier": 2
   },
   {
+   "name": "bottle-seed",
+   "family": "agent-coordination",
+   "vessel": "Oracle1",
+   "mission": "Seed: Bottle Seed",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "bounded-model",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2879,6 +2915,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Bregman divergences: KL, squared Euclidean, Itakura-Saito, convex generating functions, and mirror d",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "brief-assembler",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Topics in, morning briefing out — the overnight research loop",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -3842,6 +3887,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "System for skill trees.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "character-tensor",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "SuperInstance character tensor: 11 dimensions, graph-navigable, induce not reduce.",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -6772,6 +6826,15 @@
    "tier": 2
   },
   {
+   "name": "conversation-archive",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Full conversation archive: 9 days, 1632 messages, every decision, project, and idea documented.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "conversation-toolkit",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -8824,6 +8887,15 @@
    "tier": 2
   },
   {
+   "name": "dad-son-channel",
+   "family": "agent-coordination",
+   "vessel": "Oracle1",
+   "mission": "Asymmetric inbox for two captains, two sergeants. A bottle on the beach, not email, not IM.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "dag-runner",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -9845,6 +9917,15 @@
    "family": "agent-coordination",
    "vessel": "Forgemaster",
    "mission": "Autonomous drone fleet coordination via ternary decision-making, warp-vote consensus, and CRDT state",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "dropbox",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Shared fleet dropbox. Git-backed, pull-based. Nodes pull, nobody pushes commands.",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -11060,6 +11141,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Evolution strategies for agent parameter optimization — population, mutation, recombination, selecti",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "Evolver",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Evolver",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -14566,6 +14656,15 @@
    "tier": 2
   },
   {
+   "name": "fleet-session",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "Give a Muse agent a command session on any machine, at will. One install command, self-healing, scop",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fleet-sheet-music",
    "family": "agent-coordination",
    "vessel": "Forgemaster",
@@ -17455,10 +17554,28 @@
    "tier": 2
   },
   {
+   "name": "forge-portal",
+   "family": "constraint-theory",
+   "vessel": "Forgemaster",
+   "mission": "One door to every image engine the fleet has: local RV-Hyper on RTX 4050, MMX, Workers AI FLUX, Deep",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "forge-quilt",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
    "mission": "The Quilt cell kernel as an OpenAPI 3.1 spec — Cloudflare Forge input, and the artifact that makes t",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "forge-seed",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Seed: Forge Seed",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -17968,6 +18085,15 @@
    "tier": 2
   },
   {
+   "name": "garden-seed",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Seed: Garden Seed",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "gardenlog-ai",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -18332,6 +18458,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "📦 Git-backed state management for web apps — auto-commit, time-travel, branch-aware. Any framework.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "git.pp",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -19412,6 +19547,15 @@
    "family": "web-browser",
    "vessel": "CCC",
    "mission": "Voice-controlled marine autopilot. Handy hears you. CoCapn steers. No cloud required.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "harbor-seed",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Seed: Harbor Seed",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -20668,6 +20812,15 @@
    "tier": 2
   },
   {
+   "name": "intuition",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Intuition — contrast-pair phantom verdict analysis, v-JEPA2 training",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "ipc-equipment",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -20956,6 +21109,15 @@
    "tier": 2
   },
   {
+   "name": "jev-ideation",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Jev ideation: multiple models picking at the frontier concepts — the reptilian layer, floating gates",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "jev-net",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -20996,6 +21158,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "JEV booking layer — receipts for the duke-lab instrument. Hash-chained, deterministic, cross-languag",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "jev-semantic",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The semantic layer for the Jev: judgment log, window compiler, question tree.",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -24439,6 +24610,15 @@
    "tier": 2
   },
   {
+   "name": "ledger-continuity",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "The ledger outlives the agent — minimal ledger pattern for agent crash recovery",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "legacy-ai",
    "family": "web-browser",
    "vessel": "CCC",
@@ -24578,6 +24758,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Lighthouse Keeper — fleet monitoring, agent activity tracking, stall detection",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "lighthouse-seed",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Seed: Lighthouse Seed",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -25303,6 +25492,15 @@
    "tier": 2
   },
   {
+   "name": "lucineer-workspace",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Lucineer workspace: process, decisions, and structured knowledge from the zero-shot visitor audit, t",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "Luma",
    "family": "web-browser",
    "vessel": "CCC",
@@ -26023,6 +26221,15 @@
    "tier": 2
   },
   {
+   "name": "midi-temporal",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "MIDI as a temporal protocol. Not just music — triggers, commentary, 16 tracks as characters.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "migrations",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -26054,6 +26261,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Minimax game tree search for SuperInstance strategic reasoning",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "minimax-worker",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Git-native minimax-worker: disposable machine, durable repo",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -26612,6 +26828,24 @@
    "family": "infra",
    "vessel": "Oracle1",
    "mission": "Fleet research: Rust MUD engine (Tokio + Diesel) — room scaling patterns for holodeck-rust, async co",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "murex",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A smarter shell and scripting environment with advanced features designed for usability, safety and",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "murex-test-repo",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Test repo for murex shell experiments",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -27314,6 +27548,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Research-grade ODE solvers: Euler, RK4, Adams-Bashforth, Dormand-Prince (adaptive RK45) — pure Rust,",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "nursery",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Anti-GAN breeding framework: selective breeding of agent children on the zero platform",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "nursery-v2",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Nursery v2: rebuilt with pattern corrections - tokens, debts, recomputable lineage",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -32044,6 +32296,15 @@
    "tier": 2
   },
   {
+   "name": "proart-wsl-backup",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "ProArt WSL rebuild backup",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "products",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -32530,6 +32791,15 @@
    "tier": 2
   },
   {
+   "name": "question-tree",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Question-tree memory for a git agent: folders are questions, leaves are tools. The agent builds the",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "queueing-theory",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -33002,6 +33272,15 @@
    "family": "agent-coordination",
    "vessel": "Oracle1",
    "mission": "The Quilt cell-router: a BIND/LINK/GHOST/TICK engine for A2A bottle-cells. F145. Lifts i2i-bottle-ag",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-cells",
+   "family": "constraint-theory",
+   "vessel": "Forgemaster",
+   "mission": "The quilt cell specification: INPUT → OUTPUT + WHY + COST. Seeds, not constraints.",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -34051,6 +34330,24 @@
    "tier": 2
   },
   {
+   "name": "quilt-neudecide",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Quilt cellular runtime proof-of-concept: decomposing tiny models (NeuDecide) into reactive cells",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-neudecide-demo",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Voice-controlled Pong with visible NeuDecide cells — magic demystified",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-nn",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -34352,6 +34649,15 @@
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "Quilt version of- Gesture-controlled robotic arm with pick-and-place functionality, utilizing a sens",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-rooms",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Quilt room protocol: active log vs ledger, negotiated time",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -35725,6 +36031,15 @@
    "tier": 2
   },
   {
+   "name": "redshirt",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Disposable remote appendage for a git agent. One install command, pulls tasks from git, dies on time",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "references",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -36688,6 +37003,15 @@
    "tier": 2
   },
   {
+   "name": "seed",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Seed: distilled agent DNA. Plant, do not clone.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "seed-creative-swarm",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -36764,6 +37088,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Choosing which cells to touch, and proving you chose well. Controls run before any number is produce",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "self-assembly",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Self-assembling agent systems: designs, council, bridge spec, and sanitized proof-of-concept builds.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "self-assembly-distilled",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Distilled self-assembly experiments",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -38065,10 +38407,28 @@
    "tier": 2
   },
   {
+   "name": "slackwater-tools",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Modular tooling extracted from the Slackwater design archive: multi-model roundtable pipelines, MOLT",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "slam-core",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "SLAM (Simultaneous Localization and Mapping) core for SuperInstance robotics",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "sleep-cycle",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "How quilts learn at night. Distillation, pruning, consolidation.",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -39019,6 +39379,15 @@
    "tier": 2
   },
   {
+   "name": "stream-curator",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Content in, judgment out — gold/shit scoring, nudges, and taste distillation",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "streamer",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -39442,6 +39811,15 @@
    "tier": 1
   },
   {
+   "name": "sunset-quilt-page",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "sunset-quilt-page",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "supabase",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -39707,6 +40085,15 @@
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "The hive mind library — 532 mined documents, cross-pollination analyses, lessons learned, and preset",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "superinstance-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "SuperInstance lab wave-67 (pushed by push_all.sh)",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -45238,6 +45625,15 @@
    "tier": 2
   },
   {
+   "name": "unoq-node",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Git-native bodies: Arduino Uno Q node package",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "unspoken-resonance",
    "family": "agent-coordination",
    "vessel": "Forgemaster",
@@ -45611,6 +46007,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Preserved workspace artifact",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "voice-games",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Voice games: Sitka Skies flight + COLOR SQUAD RTS + tournament demo — proof of concept for voice-com",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -46165,6 +46570,15 @@
    "tier": 2
   },
   {
+   "name": "xero",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Xero — production release of the zero agent template.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "xlang",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -46223,6 +46637,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "🤖 Clone. Run. You are fleet. Onboarding for Z agents.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "zai-router",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "ZAI router — key-free fallback system",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "zai-worker",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Git-native zai-worker: disposable machine, durable repo",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -46345,6 +46777,24 @@
    "tier": 2
   },
   {
+   "name": "zero-bootcamp",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The zero-agent bootcamp system. Growing agents from zero, one skill at a time.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "zero-innate",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Zero agent, self-bootstrapping: single file, stdlib only, no network. The loop without the story.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "zero-knowledge",
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
@@ -46358,6 +46808,24 @@
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
    "mission": "Privacy-preserving fleet operations with ZK proofs",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "zero-msg-test",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "zero-msg-test",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "zero-poc",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Purple Pincher Zero — the minimal git-native agent template. Fork it, register it, and it starts wor",
    "state": "active",
    "bornFrom": [],
    "tier": 2
