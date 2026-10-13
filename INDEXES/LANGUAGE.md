@@ -1,7 +1,7 @@
 # Index by Language
 
-**Generated:** 2026-10-12 12:55 UTC
-**Total repos:** 5229
+**Generated:** 2026-10-13 12:36 UTC
+**Total repos:** 5232
 
 ## C
 
@@ -569,6 +569,7 @@
 - **[symplectic-opt](https://github.com/SuperInstance/symplectic-opt)** — Symplectic optimization — Hamiltonian integrators, conservation laws, natural gradient descent on Ri
 - **[symplectic-physics](https://github.com/SuperInstance/symplectic-physics)** — Symplectic physics engine — Hamiltonian mechanics, phase space, and conservation laws for physical s
 - **[synclink-protocol](https://github.com/SuperInstance/synclink-protocol)** — 🔗 SyncLink — binary edge-cloud sync protocol for Jetson↔Cloud agent communication
+- **[synoptic-sheet](https://github.com/SuperInstance/synoptic-sheet)** — The synoptic sheet — a live agent ledger, rendered. Every row written by an agent; nothing is ever d
 - **[syzygy-studio](https://github.com/SuperInstance/syzygy-studio)** — Syzygy studio — the public site: watch it play, learn at three levels, one camera one job, receipts
 - **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** — Auto-created for sync 2026-08-13
 - **[tda-c](https://github.com/SuperInstance/tda-c)**
@@ -2852,6 +2853,7 @@
 - **[git-remote-agent](https://github.com/SuperInstance/git-remote-agent)** — Git remote helper for agent-native version control
 - **[git-storage](https://github.com/SuperInstance/git-storage)** — 📦 Git-backed state management for web apps — auto-commit, time-travel, branch-aware. Any framework.
 - **[git.pp](https://github.com/SuperInstance/git.pp)** — git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa
+- **[git.pp-ng](https://github.com/SuperInstance/git.pp-ng)** — git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the
 - **[glyphcast](https://github.com/SuperInstance/glyphcast)** — Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as 
 - **[glyphtensor](https://github.com/SuperInstance/glyphtensor)**
 - **[glyphtensor-bridge](https://github.com/SuperInstance/glyphtensor-bridge)**
@@ -5217,6 +5219,7 @@
 - **[ws-snapshot-soundcrab](https://github.com/SuperInstance/ws-snapshot-soundcrab)** — Windows-workspace snapshot of soundcrab (partial; original pending support restore)
 - **[ws-status-indicator](https://github.com/SuperInstance/ws-status-indicator)** — React WebSocket status indicator component with auto-reconnection and customizable UI
 - **[xero](https://github.com/SuperInstance/xero)** — Xero — production release of the zero agent template.
+- **[xero-lab](https://github.com/SuperInstance/xero-lab)** — Xero lab — prototypes and design notes for the zero agent production line (release line: SuperInstan
 - **[xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)** — The cell convention evaluated in two runtimes that never shared source: 23/23 per-cell digests agree
 - **[yiluodi](https://github.com/SuperInstance/yiluodi)** — 已落地 — the hello-world for SuperInstance: cellular arrays within cellular arrays, beliefs that land w
 - **[yoneda](https://github.com/SuperInstance/yoneda)** — Yoneda lemma and representable functors for agent systems

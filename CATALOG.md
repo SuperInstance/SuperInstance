@@ -1,6 +1,6 @@
 # Fleet Catalog
-**Generated:** 2026-10-12 12:55 UTC
-**Total repositories:** 5229
+**Generated:** 2026-10-13 12:36 UTC
+**Total repositories:** 5232
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
@@ -1399,6 +1399,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[synesis-examples](https://github.com/SuperInstance/synesis-examples)** | JetsonClaw1 | Standalone Rust example files for the synesis workspace: knowledge RAG, privacy proxy, mTLS setup, r | 🟢 active |
 | **[synesis-manifests](https://github.com/SuperInstance/synesis-manifests)** | JetsonClaw1 | Hardware capability manifests for synesis tier calculations | 🟢 active |
 | **[synesis-tools](https://github.com/SuperInstance/synesis-tools)** | JetsonClaw1 | Internal tool reference docs for the synesis tripartite consensus engine, knowledge vault, and priva | 🟢 active |
+| **[synoptic-sheet](https://github.com/SuperInstance/synoptic-sheet)** | JetsonClaw1 | The synoptic sheet — a live agent ledger, rendered. Every row written by an agent; nothing is ever d | 🟢 active |
 | **[Syzygy](https://github.com/SuperInstance/Syzygy)** | JetsonClaw1 | **Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable  | 🟢 active |
 | **[ternary-archive](https://github.com/SuperInstance/ternary-archive)** | JetsonClaw1 | Persistent storage and retrieval of ternary knowledge in balanced ternary {-1, 0, +1} systems | 🔴 stalled |
 | **[ternary-distill](https://github.com/SuperInstance/ternary-distill)** | JetsonClaw1 | Knowledge distillation for ternary networks. Teacher speaks in probabilities, student answers in tri | 🔴 stalled |
@@ -2736,6 +2737,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[git-remote-agent](https://github.com/SuperInstance/git-remote-agent)** | Various | Git remote helper for agent-native version control | 🔴 stalled |
 | **[git-storage](https://github.com/SuperInstance/git-storage)** | Various | 📦 Git-backed state management for web apps — auto-commit, time-travel, branch-aware. Any framework. | 🔴 stalled |
 | **[git.pp](https://github.com/SuperInstance/git.pp)** | Various | git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa | 🟢 active |
+| **[git.pp-ng](https://github.com/SuperInstance/git.pp-ng)** | Various | git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the | 🟢 active |
 | **[glyph-language](https://github.com/SuperInstance/glyph-language)** | Various | 32 cognitive primitive glyphs — atomic vocabulary for agent cognition | 🔴 stalled |
 | **[glyphcast](https://github.com/SuperInstance/glyphcast)** | Various | Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as  | 🟢 active |
 | **[glyphspace](https://github.com/SuperInstance/glyphspace)** | Various | Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje | 🟢 active |
@@ -2855,7 +2857,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** | Various | Hebbian routing — connection strengthening based on usage patterns for agent communication networks | 🟢 active |
 | **[hermes-agent-core](https://github.com/SuperInstance/hermes-agent-core)** | Various | Core agent runtime for the Hermes system — part of the SuperInstance fleet ecosystem | 🔴 stalled |
 | **[hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)** | Various | Hermes's architecture brain-docs — the Oxide Stack, Shared Canvas, Digital Twin data flow, and the f | 🟢 active |
-| **[hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)** | Various | hermes-chronicle | 🟢 active |
+| **[hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)** | Various | hermes-chronicle | 🔴 stalled |
 | **[hermes-cloudflare](https://github.com/SuperInstance/hermes-cloudflare)** | Various | hermes-cloudflare | 🟢 active |
 | **[hermes-home](https://github.com/SuperInstance/hermes-home)** | Various | Hermes's runtime home — SOUL, agents, CNS monitors, cron bridges. The nervous system's identity and  | 🟢 active |
 | **[hermes-memory-mcp](https://github.com/SuperInstance/hermes-memory-mcp)** | Various | hermes-memory-mcp | 🟢 active |
@@ -3647,7 +3649,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[oxide-workflow](https://github.com/SuperInstance/oxide-workflow)** | Various | GPU kernel workflow orchestration with ternary step states. DAG execution, retry on failure, rollbac | 🔴 stalled |
 | **[paced-seam](https://github.com/SuperInstance/paced-seam)** | Various | paced-seam | 🟢 active |
 | **[packet-capture](https://github.com/SuperInstance/packet-capture)** | Various | Rust crate: packet-capture | 🔴 stalled |
-| **[page-agent](https://github.com/SuperInstance/page-agent)** | Various | JavaScript in-page GUI agent. Control web interfaces with natural language. | 🟢 active |
+| **[page-agent](https://github.com/SuperInstance/page-agent)** | Various | JavaScript in-page GUI agent. Control web interfaces with natural language. | 🔴 stalled |
 | **[page-replace](https://github.com/SuperInstance/page-replace)** | Various | Page replacement algorithm suite for memory management | 🔴 stalled |
 | **[palaver-math](https://github.com/SuperInstance/palaver-math)** | Various | palaver-math | 🔴 stalled |
 | **[palaver-math-c](https://github.com/SuperInstance/palaver-math-c)** | Various | Palaver mathematical library in C for SuperInstance | 🔴 stalled |
@@ -4452,7 +4454,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[simulated-anneal](https://github.com/SuperInstance/simulated-anneal)** | Various | Simulated annealing optimization with adaptive cooling schedules — Rust optimization library | 🔴 stalled |
 | **[simulated-annealing-c](https://github.com/SuperInstance/simulated-annealing-c)** | Various | Header-only generic simulated annealing framework in C with linear, exponential, and logarithmic coo | 🔴 stalled |
 | **[skein](https://github.com/SuperInstance/skein)** | Various | Thread not yet woven. Open discussions behind the building — agents, harness, and the ideas that sta | 🟢 active |
-| **[skenna](https://github.com/SuperInstance/skenna)** | Various | skénna — negative-space navigation for AI systems. Navigate by where the rocks aren't. | 🟢 active |
+| **[skenna](https://github.com/SuperInstance/skenna)** | Various | skénna — negative-space navigation for AI systems. Navigate by where the rocks aren't. | 🔴 stalled |
 | **[sketch-gc-pid-feedback-loop](https://github.com/SuperInstance/sketch-gc-pid-feedback-loop)** | Various | Disk GC with PID controller, ternary confidence, intelligent predictor. Cross-domain synergy between | 🔴 stalled |
 | **[sketch-oracle2-construct-readme](https://github.com/SuperInstance/sketch-oracle2-construct-readme)** | Various | Living document: what runs on oracle2, what ports, what services, the feedback loop | 🔴 stalled |
 | **[skill-cartridge-registry](https://github.com/SuperInstance/skill-cartridge-registry)** | Various | JSON skill cartridge marketplace — discover, rate, install cartridges for any vessel | 🔴 stalled |
@@ -4790,7 +4792,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-engine](https://github.com/SuperInstance/ternary-engine)** | Various | Ternary Engine  Unified simulation engine for ternary {-1,0,+1} agent systems | 🔴 stalled |
 | **[ternary-ensemble](https://github.com/SuperInstance/ternary-ensemble)** | Various | ternary-ensemble  Ensemble methods for ternary agents — combine multiple weak agents into a str... | 🟢 active |
 | **[ternary-ensign](https://github.com/SuperInstance/ternary-ensign)** | Various | Specialist agent pattern inspired by naval ensigns | 🔴 stalled |
-| **[ternary-entropy](https://github.com/SuperInstance/ternary-entropy)** | Various | Entropy analysis for ternary strategy distributions | 🟢 active |
+| **[ternary-entropy](https://github.com/SuperInstance/ternary-entropy)** | Various | Entropy analysis for ternary strategy distributions | 🔴 stalled |
 | **[ternary-envelope](https://github.com/SuperInstance/ternary-envelope)** | Various | Envelope/ADSR dynamics for ternary (-1, 0, +1) signals | 🔴 stalled |
 | **[ternary-epidemic](https://github.com/SuperInstance/ternary-epidemic)** | Various | ternary-epidemic  Epidemic and diffusion dynamics on ternary networks | 🔴 stalled |
 | **[ternary-epoch](https://github.com/SuperInstance/ternary-epoch)** | Various | Epoch for ternary {-1, 0, +1} systems — `Epoch` | 🔴 stalled |
@@ -5218,6 +5220,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ws-fabric](https://github.com/SuperInstance/ws-fabric)** | Various | WebSocket connection pooling and fabric library | 🔴 stalled |
 | **[ws-status-indicator](https://github.com/SuperInstance/ws-status-indicator)** | Various | React WebSocket status indicator component with auto-reconnection and customizable UI | 🔴 stalled |
 | **[xero](https://github.com/SuperInstance/xero)** | Various | Xero — production release of the zero agent template. | 🟢 active |
+| **[xero-lab](https://github.com/SuperInstance/xero-lab)** | Various | Xero lab — prototypes and design notes for the zero agent production line (release line: SuperInstan | 🟢 active |
 | **[xlang](https://github.com/SuperInstance/xlang)** | Various | A next-generation dynamic and high-performance language for AI and IOT with natural born distributed | 🔴 stalled |
 | **[xMind](https://github.com/SuperInstance/xMind)** | Various | xMind is a modular framework in XLang for implementing LLM Memory, Planning, and Dataflow. It enable | ⚫ deprecated |
 | **[xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)** | Various | The cell convention evaluated in two runtimes that never shared source: 23/23 per-cell digests agree | 🟢 active |
@@ -14920,6 +14923,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [synoptic-sheet](https://github.com/SuperInstance/synoptic-sheet)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** The synoptic sheet — a live agent ledger, rendered. Every row written by an agent; nothing is ever deleted.
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [Syzygy](https://github.com/SuperInstance/Syzygy)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -24223,6 +24233,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
+### [git.pp-ng](https://github.com/SuperInstance/git.pp-ng)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the record, provenance is the arbiter. Built on Cloud
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
 ### [glyph-language](https://github.com/SuperInstance/glyph-language)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -25061,7 +25078,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** hermes-chronicle
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [hermes-cloudflare](https://github.com/SuperInstance/hermes-cloudflare)
 - **Domain:** Other / Uncategorized
@@ -30605,7 +30622,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** JavaScript in-page GUI agent. Control web interfaces with natural language.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [page-replace](https://github.com/SuperInstance/page-replace)
 - **Domain:** Other / Uncategorized
@@ -36240,7 +36257,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** skénna — negative-space navigation for AI systems. Navigate by where the rocks aren't.
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [sketch-gc-pid-feedback-loop](https://github.com/SuperInstance/sketch-gc-pid-feedback-loop)
 - **Domain:** Other / Uncategorized
@@ -38606,7 +38623,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Entropy analysis for ternary strategy distributions
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [ternary-envelope](https://github.com/SuperInstance/ternary-envelope)
 - **Domain:** Other / Uncategorized
@@ -41594,6 +41611,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Xero — production release of the zero agent template.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [xero-lab](https://github.com/SuperInstance/xero-lab)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Xero lab — prototypes and design notes for the zero agent production line (release line: SuperInstance/xero)
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

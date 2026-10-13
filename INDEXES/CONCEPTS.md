@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-12 12:55 UTC
+**Generated:** 2026-10-13 12:36 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -2312,6 +2312,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-native-agents](https://github.com/SuperInstance/git-native-agents)
 - [git-remote-agent](https://github.com/SuperInstance/git-remote-agent)
 - [git.pp](https://github.com/SuperInstance/git.pp)
+- [git.pp-ng](https://github.com/SuperInstance/git.pp-ng)
 - [glyph-language](https://github.com/SuperInstance/glyph-language)
 - [governance-equipment](https://github.com/SuperInstance/governance-equipment)
 - [gpu-ternary-engine](https://github.com/SuperInstance/gpu-ternary-engine)
@@ -2973,6 +2974,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [synesis-agents](https://github.com/SuperInstance/synesis-agents)
 - [synesis-benches](https://github.com/SuperInstance/synesis-benches)
 - [synesis-prompts](https://github.com/SuperInstance/synesis-prompts)
+- [synoptic-sheet](https://github.com/SuperInstance/synoptic-sheet)
 - [system-prompts-and-models-of-ai-tools](https://github.com/SuperInstance/system-prompts-and-models-of-ai-tools)
 - [t-minus](https://github.com/SuperInstance/t-minus)
 - [taskflow](https://github.com/SuperInstance/taskflow)
@@ -3091,6 +3093,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [workshop](https://github.com/SuperInstance/workshop)
 - [workspace-rescue](https://github.com/SuperInstance/workspace-rescue)
 - [xero](https://github.com/SuperInstance/xero)
+- [xero-lab](https://github.com/SuperInstance/xero-lab)
 - [yoneda](https://github.com/SuperInstance/yoneda)
 - [z-agent-bootcamp](https://github.com/SuperInstance/z-agent-bootcamp)
 - [zc-alchemist-shell](https://github.com/SuperInstance/zc-alchemist-shell)

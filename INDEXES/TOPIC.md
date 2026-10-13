@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-10-12 12:55 UTC
-**Total repos:** 5229
+**Generated:** 2026-10-13 12:36 UTC
+**Total repos:** 5232
 
 ## A2A
 
@@ -1638,6 +1638,7 @@
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
 - **[git-remote-agent](https://github.com/SuperInstance/git-remote-agent)** — Git remote helper for agent-native version control
 - **[git.pp](https://github.com/SuperInstance/git.pp)** — git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa
+- **[git.pp-ng](https://github.com/SuperInstance/git.pp-ng)** — git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the
 - **[glyph-language](https://github.com/SuperInstance/glyph-language)** — 32 cognitive primitive glyphs — atomic vocabulary for agent cognition
 - **[governance-equipment](https://github.com/SuperInstance/governance-equipment)** — Fleet governance and audit trails
 - **[gpu-ternary-engine](https://github.com/SuperInstance/gpu-ternary-engine)** — GPU-accelerated backend for ternary agent simulation
@@ -2156,6 +2157,7 @@
 - **[synclink-protocol](https://github.com/SuperInstance/synclink-protocol)** — 🔗 SyncLink — binary edge-cloud sync protocol for Jetson↔Cloud agent communication
 - **[synesis-agents](https://github.com/SuperInstance/synesis-agents)** — Agent persona specifications: Pathos, Logos, Ethos — the tripartite council members
 - **[synesis-prompts](https://github.com/SuperInstance/synesis-prompts)** — Agent prompt designs used in the synesis council system
+- **[synoptic-sheet](https://github.com/SuperInstance/synoptic-sheet)** — The synoptic sheet — a live agent ledger, rendered. Every row written by an agent; nothing is ever d
 - **[system-prompts-and-models-of-ai-tools](https://github.com/SuperInstance/system-prompts-and-models-of-ai-tools)** — FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, L
 - **[t-minus](https://github.com/SuperInstance/t-minus)** — T-minus event coordination for multi-agent systems
 - **[taskflow](https://github.com/SuperInstance/taskflow)** — TaskFlow — Kanban board with a repo-agent project manager. Powered by cocapn.
@@ -2263,6 +2265,7 @@
 - **[workshop](https://github.com/SuperInstance/workshop)** — Cocapn fleet crate: workshop
 - **[workspace-rescue](https://github.com/SuperInstance/workspace-rescue)** — RESCUED 2026-10-03. 605 files from the local NAS that had NO git, NO remote and NO backup - 96 piece
 - **[xero](https://github.com/SuperInstance/xero)** — Xero — production release of the zero agent template.
+- **[xero-lab](https://github.com/SuperInstance/xero-lab)** — Xero lab — prototypes and design notes for the zero agent production line (release line: SuperInstan
 - **[yoneda](https://github.com/SuperInstance/yoneda)** — Yoneda lemma and representable functors for agent systems
 - **[z-agent-bootcamp](https://github.com/SuperInstance/z-agent-bootcamp)** — 🤖 Clone. Run. You are fleet. Onboarding for Z agents.
 - **[zc-alchemist-shell](https://github.com/SuperInstance/zc-alchemist-shell)** — ⚗️ Zeroclaw Alchemist — Model experimentation agent shell

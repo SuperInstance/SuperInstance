@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-10-12 12:55 UTC
-**Total repos:** 5229
+**Generated:** 2026-10-13 12:36 UTC
+**Total repos:** 5232
 
 ## Ai
 
@@ -2082,6 +2082,7 @@
 - **[git-remote-agent](https://github.com/SuperInstance/git-remote-agent)** — Git remote helper for agent-native version control
 - **[git-storage](https://github.com/SuperInstance/git-storage)** — 📦 Git-backed state management for web apps — auto-commit, time-travel, branch-aware. Any framework.
 - **[git.pp](https://github.com/SuperInstance/git.pp)** — git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa
+- **[git.pp-ng](https://github.com/SuperInstance/git.pp-ng)** — git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the
 - **[glyph-language](https://github.com/SuperInstance/glyph-language)** — 32 cognitive primitive glyphs — atomic vocabulary for agent cognition
 - **[glyphcast](https://github.com/SuperInstance/glyphcast)** — Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as 
 - **[glyphspace](https://github.com/SuperInstance/glyphspace)** — Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje
@@ -4556,6 +4557,7 @@
 - **[synesis-status](https://github.com/SuperInstance/synesis-status)** — Build status, audit reports, changelogs, and bug-hunt fix records from the synesis era
 - **[synesis-templates](https://github.com/SuperInstance/synesis-templates)** — Extraction and conversion templates used to peel synesis subcrates out of the monorepo
 - **[synesis-tools](https://github.com/SuperInstance/synesis-tools)** — Internal tool reference docs for the synesis tripartite consensus engine, knowledge vault, and priva
+- **[synoptic-sheet](https://github.com/SuperInstance/synoptic-sheet)** — The synoptic sheet — a live agent ledger, rendered. Every row written by an agent; nothing is ever d
 - **[synthcity](https://github.com/SuperInstance/synthcity)** — An Infinite Procedural Cyberpunk City
 - **[system-prompts-and-models-of-ai-tools](https://github.com/SuperInstance/system-prompts-and-models-of-ai-tools)** — FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, L
 - **[Syzygy](https://github.com/SuperInstance/Syzygy)** — **Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable 
@@ -5206,6 +5208,7 @@
 - **[ws-snapshot-soundcrab](https://github.com/SuperInstance/ws-snapshot-soundcrab)** — Windows-workspace snapshot of soundcrab (partial; original pending support restore)
 - **[ws-status-indicator](https://github.com/SuperInstance/ws-status-indicator)** — React WebSocket status indicator component with auto-reconnection and customizable UI
 - **[xero](https://github.com/SuperInstance/xero)** — Xero — production release of the zero agent template.
+- **[xero-lab](https://github.com/SuperInstance/xero-lab)** — Xero lab — prototypes and design notes for the zero agent production line (release line: SuperInstan
 - **[xlang](https://github.com/SuperInstance/xlang)** — A next-generation dynamic and high-performance language for AI and IOT with natural born distributed
 - **[xMind](https://github.com/SuperInstance/xMind)** — xMind is a modular framework in XLang for implementing LLM Memory, Planning, and Dataflow. It enable
 - **[xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)** — The cell convention evaluated in two runtimes that never shared source: 23/23 per-cell digests agree
