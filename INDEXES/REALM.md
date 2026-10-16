@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-10-13 12:36 UTC
-**Total repos:** 5232
+**Generated:** 2026-10-16 09:38 UTC
+**Total repos:** 5268
 
 ## Ai
 
@@ -485,6 +485,7 @@
 - **[circuit-breaker-rs](https://github.com/SuperInstance/circuit-breaker-rs)** — Circuit breaker pattern implementation in Rust with state machine, metrics, and health check integra
 - **[circuitbreaker-rs](https://github.com/SuperInstance/circuitbreaker-rs)** — # Circuitbreaker-RS: Resilience Patterns for Rust
 - **[clark-agent](https://github.com/SuperInstance/clark-agent)** — A small, typed, hookable agent loop. Provider-agnostic, sandbox-agnostic, tooling-agnostic. Battle t
+- **[classroom](https://github.com/SuperInstance/classroom)** — One artefact, many agents, one shared record — a git.pp classroom: turns, patches, overrides, nothin
 - **[claude](https://github.com/SuperInstance/claude)** — OpenClaw agent workspace for the Claude model instance
 - **[Claude-Abstraction](https://github.com/SuperInstance/Claude-Abstraction)** — Abstraction layer for Claude API.
 - **[claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)** — Claude Code workhorse vessel with experience journal and task delegation
@@ -513,6 +514,7 @@
 - **[cns-monitor](https://github.com/SuperInstance/cns-monitor)** — Real-time CNS traffic monitor — htop for USCP signals
 - **[cns-substrate](https://github.com/SuperInstance/cns-substrate)** — CNS bus with substrate cell integration. Every USCP packet = substrate cell with prev_hash chain.
 - **[co-captain-git-agent](https://github.com/SuperInstance/co-captain-git-agent)** — Human liaison agent — the single point of contact between a human operator and the SuperInstance fle
+- **[coach-player](https://github.com/SuperInstance/coach-player)** — Coach Player: a coachable auto-player grown by questions, frontier gaps and taste. Question database
 - **[coalition-game](https://github.com/SuperInstance/coalition-game)** — Cooperative game theory in Rust — Shapley value, core, nucleolus, and stable coalition analysis for 
 - **[cocapn](https://github.com/SuperInstance/cocapn)** — repo-first Agent for local or cloud. grow an agent in a repo using the repo itself as the muscle-mem
 - **[cocapn-abyss](https://github.com/SuperInstance/cocapn-abyss)** — Cocapn fleet crate: cocapn-abyss
@@ -1960,6 +1962,7 @@
 - **[fm-research](https://github.com/SuperInstance/fm-research)** — Extracted from forgemaster/research — Cocapn fleet component
 - **[fm-research-archive](https://github.com/SuperInstance/fm-research-archive)** — Archived research from forgemaster — Cocapn fleet component
 - **[fold-bout](https://github.com/SuperInstance/fold-bout)** — Judged head-to-head: MiniMax vs Claude Code implement the deterministic fold (task-atom state deriva
+- **[fold-bout-2](https://github.com/SuperInstance/fold-bout-2)** — Bout 2: head-to-head implementation of the §6 retraction doctrine. 4 scenarios, scored 0-4 by score.
 - **[fold-compression](https://github.com/SuperInstance/fold-compression)** — Permutation group constraint compression — N-1 evaluations, N! reachable states
 - **[folding-order](https://github.com/SuperInstance/folding-order)** — 5-stage RG flow for temporal anomaly detection — the Ground Truth agent's core algorithm
 - **[font-rasterizer](https://github.com/SuperInstance/font-rasterizer)** — A Rust library for Font Rasterizer
@@ -2081,8 +2084,29 @@
 - **[git-pipeline](https://github.com/SuperInstance/git-pipeline)** — Git-native CI/CD pipeline engine using only git primitives
 - **[git-remote-agent](https://github.com/SuperInstance/git-remote-agent)** — Git remote helper for agent-native version control
 - **[git-storage](https://github.com/SuperInstance/git-storage)** — 📦 Git-backed state management for web apps — auto-commit, time-travel, branch-aware. Any framework.
-- **[git.pp](https://github.com/SuperInstance/git.pp)** — git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa
-- **[git.pp-ng](https://github.com/SuperInstance/git.pp-ng)** — git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the
+- **[git.pp-doctor](https://github.com/SuperInstance/git.pp-doctor)** — Validate a git.pp record set against the pinned closure root. One command, no setup, byte-identical 
+- **[git.pp-spec](https://github.com/SuperInstance/git.pp-spec)** — The canonical, normative spec for the git.pp record format. The contract a port must satisfy to be c
+- **[gitpp-bench](https://github.com/SuperInstance/gitpp-bench)** — A benchmark suite for git.pp fold ports. Fold time, closure-root time, and memory against the live p
+- **[gitpp-c](https://github.com/SuperInstance/gitpp-c)** — A C99 port of the git.pp fold. 7th fold port. The most rigorous doc-only test of the spec. Byte-for-
+- **[gitpp-conformance](https://github.com/SuperInstance/gitpp-conformance)** — A public, hand-curated conformance corpus for the git.pp fold. 28 cases that exercise the spec’s loa
+- **[gitpp-conformance-report](https://github.com/SuperInstance/gitpp-conformance-report)** — A polished single-page HTML report on cross-port byte-equivalence for the git.pp fold. 7 ports, 1000
+- **[gitpp-cross-port](https://github.com/SuperInstance/gitpp-cross-port)** — Byte-level cross-port equivalence test for the git.pp fold. 30/30 cases agree across Python, JS, C#,
+- **[gitpp-cs](https://github.com/SuperInstance/gitpp-cs)** — A C# / .NET 9 port of the git.pp fold. 5th fold port. 28/28 conformance cases pass; closure root at 
+- **[gitpp-decision-parent](https://github.com/SuperInstance/gitpp-decision-parent)** — Make a gate decision the PARENT of the action it authorises, so the closure root proves the action w
+- **[gitpp-examples](https://github.com/SuperInstance/gitpp-examples)** — Annotated example record sets for the git.pp fold: family calendar, tournament scoring, service moni
+- **[gitpp-fold-conformance](https://github.com/SuperInstance/gitpp-fold-conformance)** — Cross-port FOLD conformance for the git.pp spec. Tests fold semantics (ancestry, precedence, orphans
+- **[gitpp-fold-dashboard](https://github.com/SuperInstance/gitpp-fold-dashboard)** — A live viewer for the git.pp fold. Add records, watch the fold update in real time. Single HTML file
+- **[gitpp-fold-edge](https://github.com/SuperInstance/gitpp-fold-edge)** — Run the git.pp fold at the edge (Cloudflare Workers, Node 18+, Deno, Bun). No deps.
+- **[gitpp-gate](https://github.com/SuperInstance/gitpp-gate)** — Confidence-gated nudging for the git.pp fold. Ask TypeSafe Jev before nudging, fail closed, log the 
+- **[gitpp-hub-api](https://github.com/SuperInstance/gitpp-hub-api)** — Portable HTTP API for the git.pp hub. Records, validation, digest, fold, verify, root. Single file, 
+- **[gitpp-intent-ledger](https://github.com/SuperInstance/gitpp-intent-ledger)** — Append-only intent ledger for git.pp nudges: proposed nudge, gate decision + confidence, and derived
+- **[gitpp-js](https://github.com/SuperInstance/gitpp-js)** — A pure-ESM JavaScript port of the git.pp fold. Doc-only discipline. Runs in any modern browser witho
+- **[gitpp-nudge](https://github.com/SuperInstance/gitpp-nudge)** — Setter-aware nudging for the git.pp fold. Author a nudge that reliably lands, and prove the loop con
+- **[gitpp-oracle](https://github.com/SuperInstance/gitpp-oracle)** — Continuous cross-port differential conformance oracle for the git.pp fold. Append-only ledger, known
+- **[gitpp-pl](https://github.com/SuperInstance/gitpp-pl)** — A Perl 5 port of the git.pp fold. 6th fold port. 28/28 conformance cases pass; doc-only discipline p
+- **[gitpp-playground](https://github.com/SuperInstance/gitpp-playground)** — A single-page browser playground for the git.pp fold. Edit records, see the closure root, derived st
+- **[gitpp-ports](https://github.com/SuperInstance/gitpp-ports)** — Landing page for the 7 git.pp fold ports.
+- **[gitpp-rust](https://github.com/SuperInstance/gitpp-rust)** — git.pp fold on Rust: a 4th port written from DESIGN.md alone (doc-only discipline), passes the full 
 - **[glyph-language](https://github.com/SuperInstance/glyph-language)** — 32 cognitive primitive glyphs — atomic vocabulary for agent cognition
 - **[glyphcast](https://github.com/SuperInstance/glyphcast)** — Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as 
 - **[glyphspace](https://github.com/SuperInstance/glyphspace)** — Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje
@@ -2969,6 +2993,7 @@
 - **[modular-arithmetic](https://github.com/SuperInstance/modular-arithmetic)** — See README
 - **[module-registry](https://github.com/SuperInstance/module-registry)** — Module registry for ship-log-search add-ons
 - **[moe-sheaf](https://github.com/SuperInstance/moe-sheaf)** — Sheaf cohomology of MoE routing — test DeepSeek's conjecture on generalization
+- **[moldmaker](https://github.com/SuperInstance/moldmaker)** — Grow builds out of conversations: specs as markdowns, questions as the appreciating asset. A mold ma
 - **[monad-composition](https://github.com/SuperInstance/monad-composition)** — Monad composition patterns for agent pipelines
 - **[monge-fleet](https://github.com/SuperInstance/monge-fleet)** — Fleet-scale Monge assignment — Hungarian algorithm with trust weights
 - **[monge-fleet-test](https://github.com/SuperInstance/monge-fleet-test)** — Metal-level benchmarks: one function, four languages, ARM hardware. Testing how different language r
@@ -3019,6 +3044,7 @@
 - **[murmur-protocol-v2](https://github.com/SuperInstance/murmur-protocol-v2)** — Murmur gossip protocol v2 for SuperInstance distributed communication
 - **[murmuration](https://github.com/SuperInstance/murmuration)** — A swarm of first-person cells that reach consensus by local deference alone, with no central authori
 - **[Murmurer](https://github.com/SuperInstance/Murmurer)** — Ambient agent communication — whisper protocol for background agent chatter
+- **[muse-join](https://github.com/SuperInstance/muse-join)** — One command gives a Muse agent permanent, revocable SSH access to your machine — dedicated keypair, 
 - **[music-vibe-experiments](https://github.com/SuperInstance/music-vibe-experiments)** — Music vibe embedding experiments — generating MIDI from vibe space, dimension sweeps, style prototyp
 - **[musicdb-to-json](https://github.com/SuperInstance/musicdb-to-json)** — Extract track, artist, album and playlist data from an Apple Music musicdb file.
 - **[musician-soul](https://github.com/SuperInstance/musician-soul)** — Vector DB personas that learn musicians through MIDI digestion and develop emergent musical soul thr
@@ -3044,6 +3070,7 @@
 - **[negative-space-core-python](https://github.com/SuperInstance/negative-space-core-python)** — Python implementation of negative space intelligence — avoidance tracking, conservation laws, infere
 - **[negative-space-interpolator](https://github.com/SuperInstance/negative-space-interpolator)** — Continuous field theory for PLATO knowledge tiles — gap detection, RBF interpolation, emergence prec
 - **[negative-space-testing](https://github.com/SuperInstance/negative-space-testing)** — A Rust testing framework where you define what your system does NOT do — the pattern lives in the ho
+- **[negctl](https://github.com/SuperInstance/negctl)** — Negative control for the git.pp conformance suites. Sabotage a port, require the suite to notice. A 
 - **[nerve-agent](https://github.com/SuperInstance/nerve-agent)** — Čech nerve and nerve theorem for sensor/agent network coverage
 - **[network-flow](https://github.com/SuperInstance/network-flow)** — network-flow
 - **[network-science](https://github.com/SuperInstance/network-science)** — Network science in Rust — centrality, community detection (Louvain, Girvan-Newman), epidemic models,
@@ -3166,7 +3193,6 @@
 - **[openrooms](https://github.com/SuperInstance/openrooms)** — Agent-powered collaborative rooms with topology, intention fields, and Hodge decomposition
 - **[openshell-compatibility-audit](https://github.com/SuperInstance/openshell-compatibility-audit)** — Categorizes all SuperInstance repos for OpenShell integration — native, wrapper, backend, tool, depr
 - **[openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)** — OpenShell wrapper re-exporting pythagorean48-codes (48-directional trust encoding)
-- **[opensky-terrain](https://github.com/SuperInstance/opensky-terrain)** — Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum
 - **[opensmile](https://github.com/SuperInstance/opensmile)** — The Munich Open-Source Large-Scale Multimedia Feature Extractor
 - **[opensmile-bridge](https://github.com/SuperInstance/opensmile-bridge)** — Modular OpenSMILE bridge for fleet voice feature extraction. WebSocket server, MIDI CC mapping, I2I 
 - **[operational-fiction](https://github.com/SuperInstance/operational-fiction)**
@@ -3729,6 +3755,7 @@
 - **[quilt-cellular-arch](https://github.com/SuperInstance/quilt-cellular-arch)** — The cellular-relationship-first design: each cell plays as a first-person shooter; the cowboy sees t
 - **[quilt-chapel](https://github.com/SuperInstance/quilt-chapel)** — Polyformalism: Quilt in Chapel (distributed cell evaluation)
 - **[quilt-chrono](https://github.com/SuperInstance/quilt-chrono)** — Time as a first-class dimension of the quilt: an append-only reading/writing ledger over a tiny reac
+- **[quilt-ci](https://github.com/SuperInstance/quilt-ci)** — Reusable GitHub Actions workflows for git.pp port repos. conformance.yml, bench.yml, release.yml. Dr
 - **[quilt-classroom](https://github.com/SuperInstance/quilt-classroom)** — Quilt fleet member — auto-swept from local commit. Mavis × Casey session line 2026-09-24.
 - **[quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts)** — Claude-compatible artifacts for the Quilt polyformalism — cell taxonomy, fabric simulator, language 
 - **[quilt-claw](https://github.com/SuperInstance/quilt-claw)** — Quilt-native knowledge crew. The agents are cells. The bus is a cell. The store is a cell.
@@ -3800,6 +3827,7 @@
 - **[quilt-go](https://github.com/SuperInstance/quilt-go)** — The Quilt cell-fabric runtime in Go — stdlib only, byte-exact FNV-1a 64-bit hash. Generated by a Cla
 - **[quilt-gpu-lab](https://github.com/SuperInstance/quilt-gpu-lab)**
 - **[quilt-gpu-lab-witness](https://github.com/SuperInstance/quilt-gpu-lab-witness)** — WITNESS. 2026-10-03: I deleted play/quilt-gpu-lab (702MB) after my own precondition check printed ST
+- **[quilt-handbook](https://github.com/SuperInstance/quilt-handbook)** — The Quilt Handbook — a complete guide to the git.pp substrate for newcomers.
 - **[quilt-haskell](https://github.com/SuperInstance/quilt-haskell)** — The Quilt cell-fabric runtime in Haskell. Pure functional, lazy. 5-sigma polyformalism port.
 - **[quilt-i2i](https://github.com/SuperInstance/quilt-i2i)** — Low-level Quilt cells in distant language families (Forth/Prolog/Erlang) — each language carves a di
 - **[quilt-id](https://github.com/SuperInstance/quilt-id)** — phi-Address Penrose content addressing
@@ -3862,6 +3890,7 @@
 - **[quilt-playtest](https://github.com/SuperInstance/quilt-playtest)** — Engine investigation: 12 playtest patches against SuperInstance/quilt, 36/36 upstream engine tests g
 - **[quilt-polyformalism-dsl](https://github.com/SuperInstance/quilt-polyformalism-dsl)** — The 5 opcodes (BIND, LINK, EFFECT, VIEW, TICK) as language-level syntax in Python/Rust/Haskell. Laye
 - **[quilt-port](https://github.com/SuperInstance/quilt-port)** — The user's port to their quilts. Open-source SDK + cost-plus hosted service. Four projections (ESP32
+- **[quilt-precommit](https://github.com/SuperInstance/quilt-precommit)** — A git pre-commit hook for git.pp record.json files. Validates against git.pp-doctor. Blocks the comm
 - **[quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)** — Polyformalism: Quilt as a type-safe Pydantic-AI agent
 - **[quilt-qcells](https://github.com/SuperInstance/quilt-qcells)** — CELL-MAPPING implementation — quantum ops as quilt cells (modular plugin)
 - **[quilt-quant](https://github.com/SuperInstance/quilt-quant)** — The trading desk as a spreadsheet: backtest-as-cells, walk-forward honesty (S6), gated self-improvem
@@ -3894,6 +3923,7 @@
 - **[quilt-spreadsheet](https://github.com/SuperInstance/quilt-spreadsheet)** — The Quilt IDE as spreadsheet substrate — cells as programs with hooks, double-entry bookkeeping, per
 - **[quilt-spreadsheet-inference](https://github.com/SuperInstance/quilt-spreadsheet-inference)** — Quilt spreadsheet inference engine: JEV/MOTH/Jepa/LLM cells.
 - **[quilt-state](https://github.com/SuperInstance/quilt-state)** — Persistent state for the Quilt ecosystem. Atomic JSON/JSONL writes, schema versioning.
+- **[quilt-status](https://github.com/SuperInstance/quilt-status)** — A single-page index of the four GitHub orgs that house the quilt project family. The active stream, 
 - **[quilt-stone](https://github.com/SuperInstance/quilt-stone)** — THE STONE - the canonical receipt-chain module: one zero-dep verifier for every repo chain (42/42 si
 - **[quilt-storefront](https://github.com/SuperInstance/quilt-storefront)** — The general-store digital assistant as a live quilt: lookup tables + soft joints + greeter law. Meas
 - **[quilt-studio](https://github.com/SuperInstance/quilt-studio)**
@@ -4166,6 +4196,7 @@
 - **[servo-mind-theory](https://github.com/SuperInstance/servo-mind-theory)** — Unified theory of self-referential constraint systems — servo-encoder metaphor, 5D scale navigation,
 - **[session-miner](https://github.com/SuperInstance/session-miner)** — Mine OpenClaw session transcripts for behavioral patterns and automation recommendations
 - **[session-room](https://github.com/SuperInstance/session-room)**
+- **[session-summary-2026-10-15](https://github.com/SuperInstance/session-summary-2026-10-15)** — One-page summary of the 2026-10-15 working session: 15 new repos in SuperInstance, 6 fold ports, spe
 - **[shadow-cathedral](https://github.com/SuperInstance/shadow-cathedral)** — Rust exocortex crate: shadow-cathedral
 - **[shadow-pipeline](https://github.com/SuperInstance/shadow-pipeline)** — Lossy shadow compression pipeline with ordered stages, fidelity scoring, and human-readable renderin
 - **[sheaf-agents](https://github.com/SuperInstance/sheaf-agents)** — Sheaf-theoretic agent framework for SuperInstance
@@ -4192,6 +4223,9 @@
 - **[ship-log-sync](https://github.com/SuperInstance/ship-log-sync)** — Offline-first local SQLite sync for ship-log-search — works on the boat
 - **[shiplog](https://github.com/SuperInstance/shiplog)** — ShipLog — Package tracker with a repo-agent captain. Powered by cocapn.
 - **[shoal](https://github.com/SuperInstance/shoal)** — 🔮 Conservation-bounded semantic search — the oracle that knows its limits
+- **[shoalwater](https://github.com/SuperInstance/shoalwater)** — Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum
+- **[shoalwater-full](https://github.com/SuperInstance/shoalwater-full)** — Shoalwater Full: the full-extent Sitka Sound pack (3,266 verified tiles) with an adaptive-fidelity v
+- **[shoalwater-survey](https://github.com/SuperInstance/shoalwater-survey)** — Shoalwater Survey: kayak bottom-portrait passes over Sitka Sound, filed against the chart and kept i
 - **[si](https://github.com/SuperInstance/si)** — 🎛️  SuperInstance developer tool ecosystem CLI — one command to install, compose, and manage all dev
 - **[si-bench](https://github.com/SuperInstance/si-bench)** — Fleet-wide benchmarking and performance regression testing for SuperInstance conservation-law crates
 - **[si-catalog](https://github.com/SuperInstance/si-catalog)** — Unified capability catalog for SuperInstance — search, cross-reference, and discover fleet capabilit
@@ -4283,6 +4317,7 @@
 - **[skill-exchange](https://github.com/SuperInstance/skill-exchange)** — Marketplace for sharing and discovering fleet skills and equipment
 - **[skills](https://github.com/SuperInstance/skills)** — Preserved workspace artifact
 - **[skip-list-rs](https://github.com/SuperInstance/skip-list-rs)** — Skip list with probabilistic balancing, range queries, and iterator support — pure Rust, no dependen
+- **[slack-water](https://github.com/SuperInstance/slack-water)** — Slack Water - a Roblox fishing game with a shared, simulated ocean. Fish stocks are a real persisten
 - **[slackwater-art-spectrum](https://github.com/SuperInstance/slackwater-art-spectrum)**
 - **[slackwater-cognition](https://github.com/SuperInstance/slackwater-cognition)**
 - **[slackwater-forge](https://github.com/SuperInstance/slackwater-forge)** — Overnight GPU production line that produces a morning briefing. Works with any Ollama model.
@@ -5188,6 +5223,7 @@
 - **[wesleys-imagination](https://github.com/SuperInstance/wesleys-imagination)**
 - **[west-african-math-c](https://github.com/SuperInstance/west-african-math-c)** — West African mathematical traditions implemented in C
 - **[west-african-math-rs](https://github.com/SuperInstance/west-african-math-rs)** — West African mathematical traditions implemented in Rust
+- **[what-is-the-quilt](https://github.com/SuperInstance/what-is-the-quilt)** — A one-page explainer for the Quilt project family. Public front door for newcomers.
 - **[wheelhouse-game](https://github.com/SuperInstance/wheelhouse-game)** — The Wheelhouse Game — weather routing for commercial fishing, F140 audit. F151.
 - **[whisper-sync](https://github.com/SuperInstance/whisper-sync)** — Rust CLI/crate bridging Murmurer ambient whisper protocol to PLATO room infrastructure — short, ambi
 - **[whistle](https://github.com/SuperInstance/whistle)** — Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled
