@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-16 09:38 UTC
+**Generated:** 2026-10-17 09:07 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -3280,6 +3280,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ghost-tiles-csharp](https://github.com/SuperInstance/ghost-tiles-csharp)
 - [ghost-tiles-cuda](https://github.com/SuperInstance/ghost-tiles-cuda)
 - [git-agent-flux-pipeline](https://github.com/SuperInstance/git-agent-flux-pipeline)
+- [gitpp-reading-room](https://github.com/SuperInstance/gitpp-reading-room)
+- [gitpp-rsi-audit](https://github.com/SuperInstance/gitpp-rsi-audit)
 - [gpu-native-room-inference](https://github.com/SuperInstance/gpu-native-room-inference)
 - [grand-pattern-adversarial](https://github.com/SuperInstance/grand-pattern-adversarial)
 - [grand-pattern-flux](https://github.com/SuperInstance/grand-pattern-flux)
@@ -3994,6 +3996,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)
 - [OpenManus_UIToCode](https://github.com/SuperInstance/OpenManus_UIToCode)
 - [OpenMythos](https://github.com/SuperInstance/OpenMythos)
+- [Otherhere](https://github.com/SuperInstance/Otherhere)
 - [PX4-Autopilot](https://github.com/SuperInstance/PX4-Autopilot)
 - [PlayerLog](https://github.com/SuperInstance/PlayerLog)
 - [Polln-whitepapers](https://github.com/SuperInstance/Polln-whitepapers)
@@ -4638,6 +4641,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fundamental-group](https://github.com/SuperInstance/fundamental-group)
 - [fuzz-engine](https://github.com/SuperInstance/fuzz-engine)
 - [fuzzy-logic](https://github.com/SuperInstance/fuzzy-logic)
+- [g1-ble-backend](https://github.com/SuperInstance/g1-ble-backend)
 - [ga-core](https://github.com/SuperInstance/ga-core)
 - [ga-core-rs](https://github.com/SuperInstance/ga-core-rs)
 - [ga4444](https://github.com/SuperInstance/ga4444)
@@ -4682,7 +4686,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [gitpp-pl](https://github.com/SuperInstance/gitpp-pl)
 - [gitpp-playground](https://github.com/SuperInstance/gitpp-playground)
 - [gitpp-ports](https://github.com/SuperInstance/gitpp-ports)
+- [gitpp-rr-reader3](https://github.com/SuperInstance/gitpp-rr-reader3)
+- [gitpp-rr-reader4](https://github.com/SuperInstance/gitpp-rr-reader4)
 - [gitpp-rust](https://github.com/SuperInstance/gitpp-rust)
+- [gitpp-v046-cases](https://github.com/SuperInstance/gitpp-v046-cases)
 - [glyphcast](https://github.com/SuperInstance/glyphcast)
 - [glyphspace](https://github.com/SuperInstance/glyphspace)
 - [glyphtensor](https://github.com/SuperInstance/glyphtensor)
