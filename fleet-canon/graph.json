@@ -1,14 +1,14 @@
 {
- "generated": "2026-10-12T00:43:52Z",
+ "generated": "2026-10-18T23:40:12Z",
  "source": "CATALOG.md",
- "catalogGenerated": "2026-10-11",
- "catalogTotal": 5220,
- "parsed": 5220,
+ "catalogGenerated": "2026-10-18",
+ "catalogTotal": 5290,
+ "parsed": 5290,
  "catalogMissing": [],
  "tier3Note": "tier-3 (orphan+stale) populates once the CATALOG generator fetches pushedAt/isArchived (meta repo PR #19, catalog-v2); until then every row reads active",
  "tiers": {
   "1": 27,
-  "2": 5193,
+  "2": 5263,
   "3": 0
  },
  "vessels": [
@@ -4045,6 +4045,15 @@
    "tier": 2
   },
   {
+   "name": "classroom",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "One artefact, many agents, one shared record — a git.pp classroom: turns, patches, overrides, nothin",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "claude",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -4292,6 +4301,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Human liaison agent — the single point of contact between a human operator and the SuperInstance fle",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "coach-player",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Coach Player: a coachable auto-player grown by questions, frontier gaps and taste. Question database",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -5278,6 +5296,15 @@
    "tier": 2
   },
   {
+   "name": "color-squad",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "COLOR SQUAD: JSON strategy scripts play deterministic 4v4 capture-the-flag; a running season with in",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "columnar-store",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -5345,6 +5372,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Preserved workspace artifact",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "communicator",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "communicator",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -8878,6 +8914,15 @@
    "tier": 2
   },
   {
+   "name": "cycle-judge",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "cycle-judge",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "cyclotomic-field",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -9044,6 +9089,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "decentralized-uav-grid",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "decision-ledger",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "decision-ledger",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -9908,6 +9962,15 @@
    "family": "constraint-theory",
    "vessel": "Forgemaster",
    "mission": "Precision drift analyzer for constraint systems — which boat sinks first?",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "drift-probe",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "drift-probe",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -17365,6 +17428,24 @@
    "tier": 2
   },
   {
+   "name": "fold-bout",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Judged head-to-head: MiniMax vs Claude Code implement the deterministic fold (task-atom state deriva",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "fold-bout-2",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Bout 2: head-to-head implementation of the §6 retraction doctrine. 4 scenarios, scored 0-4 by score.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "fold-compression",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -17995,6 +18076,15 @@
    "tier": 2
   },
   {
+   "name": "g1-ble-backend",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Custom bleak-based developer backend for Even Realities G1 smart glasses: scan both arms, connect, r",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "ga-core",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -18098,6 +18188,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "TBD",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gate-replay",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "gate-replay",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -18463,10 +18562,262 @@
    "tier": 2
   },
   {
-   "name": "git.pp",
+   "name": "git.pp-doctor",
    "family": "other-uncategorized",
    "vessel": "Various",
-   "mission": "git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa",
+   "mission": "Validate a git.pp record set against the pinned closure root. One command, no setup, byte-identical",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "git.pp-spec",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The canonical, normative spec for the git.pp record format. The contract a port must satisfy to be c",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-bench",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A benchmark suite for git.pp fold ports. Fold time, closure-root time, and memory against the live p",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-c",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A C99 port of the git.pp fold. 7th fold port. The most rigorous doc-only test of the spec. Byte-for-",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-conformance",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A public, hand-curated conformance corpus for the git.pp fold. 28 cases that exercise the spec’s loa",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-conformance-report",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A polished single-page HTML report on cross-port byte-equivalence for the git.pp fold. 7 ports, 1000",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-cross-port",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Byte-level cross-port equivalence test for the git.pp fold. 30/30 cases agree across Python, JS, C#,",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-cs",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A C# / .NET 9 port of the git.pp fold. 5th fold port. 28/28 conformance cases pass; closure root at",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-decision-parent",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Make a gate decision the PARENT of the action it authorises, so the closure root proves the action w",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-examples",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Annotated example record sets for the git.pp fold: family calendar, tournament scoring, service moni",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-fold-conformance",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Cross-port FOLD conformance for the git.pp spec. Tests fold semantics (ancestry, precedence, orphans",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-fold-dashboard",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A live viewer for the git.pp fold. Add records, watch the fold update in real time. Single HTML file",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-fold-edge",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Run the git.pp fold at the edge (Cloudflare Workers, Node 18+, Deno, Bun). No deps.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-gate",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Confidence-gated nudging for the git.pp fold. Ask TypeSafe Jev before nudging, fail closed, log the",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-hub-api",
+   "family": "infra",
+   "vessel": "Oracle1",
+   "mission": "Portable HTTP API for the git.pp hub. Records, validation, digest, fold, verify, root. Single file,",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-intent-ledger",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Append-only intent ledger for git.pp nudges: proposed nudge, gate decision + confidence, and derived",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-js",
+   "family": "web-browser",
+   "vessel": "CCC",
+   "mission": "A pure-ESM JavaScript port of the git.pp fold. Doc-only discipline. Runs in any modern browser witho",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-nudge",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Setter-aware nudging for the git.pp fold. Author a nudge that reliably lands, and prove the loop con",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-oracle",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Continuous cross-port differential conformance oracle for the git.pp fold. Append-only ledger, known",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-pl",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Perl 5 port of the git.pp fold. 6th fold port. 28/28 conformance cases pass; doc-only discipline p",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-playground",
+   "family": "web-browser",
+   "vessel": "CCC",
+   "mission": "A single-page browser playground for the git.pp fold. Edit records, see the closure root, derived st",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-ports",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Landing page for the 7 git.pp fold ports.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-reading-room",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Independent readings of the git.pp spec, with disagreement as the output. A measurement of how much",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-rr-reader3",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Independent reading 3 of the git.pp fold spec (C99)",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-rr-reader4",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Adversarial ambiguity audit of the git.pp spec",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-rsi-audit",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Reading-room audit of arXiv 2610.13912 (RSI-Anything): does the text determine its own retention pro",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-rust",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "git.pp fold on Rust: a 4th port written from DESIGN.md alone (doc-only discipline), passes the full",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-sheet",
+   "family": "agent-coordination",
+   "vessel": "Forgemaster",
+   "mission": "A git.pp fold as a spreadsheet with cell-level confidence, and the graph that shows where the confid",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-v046-cases",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Conformance cases for git.pp spec v0.4.6 clarified clauses",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -20794,6 +21145,15 @@
    "tier": 2
   },
   {
+   "name": "intercontext-map",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "Kira the Cartographer: the cellular-first substrate as a graph. 48 nodes / 70 edges. Every node and",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "interp-spline",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -21113,6 +21473,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Jev ideation: multiple models picking at the frontier concepts — the reptilian layer, floating gates",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "jev-lattice",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "jev-lattice",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -25339,6 +25708,15 @@
    "tier": 2
   },
   {
+   "name": "luciddreamer-py",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Recovered source for @superinstance/luciddreamer - maritime intelligence that compiles soft model be",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "luciddreamer-research",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -26257,6 +26635,15 @@
    "tier": 2
   },
   {
+   "name": "minigate",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "minigate",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "minimax-code",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -26459,6 +26846,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Sheaf cohomology of MoE routing — test DeepSeek's conjecture on generalization",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "moldmaker",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Grow builds out of conversations: specs as markdowns, questions as the appreciating asset. A mold ma",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -26914,6 +27310,15 @@
    "tier": 2
   },
   {
+   "name": "muse-join",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "One command gives a Muse agent permanent, revocable SSH access to your machine — dedicated keypair,",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "music-vibe-experiments",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -27134,6 +27539,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "A Rust testing framework where you define what your system does NOT do — the pattern lives in the ho",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "negctl",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Negative control for the git.pp conformance suites. Sabotage a port, require the suite to notice. A",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -28417,6 +28831,15 @@
    "tier": 2
   },
   {
+   "name": "Otherhere",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Otherhere",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "othismos",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -28736,6 +29159,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "paced-seam",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "pacemaker",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "pacemaker",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -33313,6 +33745,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-ci",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Reusable GitHub Actions workflows for git.pp port repos. conformance.yml, bench.yml, release.yml. Dr",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-classroom",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -33952,6 +34393,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-handbook",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The Quilt Handbook — a complete guide to the git.pp substrate for newcomers.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-haskell",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -34510,6 +34960,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-precommit",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A git pre-commit hook for git.pp record.json files. Validates against git.pp-doctor. Blocks the comm",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-pydantic-ai",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -34793,6 +35252,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Persistent state for the Quilt ecosystem. Atomic JSON/JSONL writes, schema versioning.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "quilt-status",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A single-page index of the four GitHub orgs that house the quilt project family. The active stream,",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -36958,6 +37426,15 @@
    "tier": 2
   },
   {
+   "name": "sdk",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Conservation-law governance for AI agent fleets — the source of @superinstance/sdk, recovered from i",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "search-superinstance-ai",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -37246,6 +37723,15 @@
    "tier": 2
   },
   {
+   "name": "session-summary-2026-10-15",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "One-page summary of the 2026-10-15 working session: 15 new repos in SuperInstance, 6 fold ports, spe",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "shadow-cathedral",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -37475,6 +37961,33 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "🔮 Conservation-bounded semantic search — the oracle that knows its limits",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "shoalwater",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "shoalwater-full",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Shoalwater Full: the full-extent Sitka Sound pack (3,266 verified tiles) with an adaptive-fidelity v",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "shoalwater-survey",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Shoalwater Survey: kayak bottom-portrait passes over Sitka Sound, filed against the chart and kept i",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -38294,6 +38807,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Skip list with probabilistic balancing, range queries, and iterator support — pure Rust, no dependen",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "slack-water",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Slack Water - a Roblox fishing game with a shared, simulated ocean. Fish stocks are a real persisten",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -40783,6 +41305,15 @@
    "tier": 2
   },
   {
+   "name": "synoptic-sheet",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "The synoptic sheet — a live agent ledger, rendered. Every row written by an agent; nothing is ever d",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "synthcity",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -40810,6 +41341,33 @@
    "tier": 2
   },
   {
+   "name": "syzygy-curriculum",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The Syzygy reading experiments: can text-only models read a scene rendered as text? Episodes, frozen",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "syzygy-demo",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A playable demo: an AI plays an ASCII raycaster by reading its screen as text. Only the seeing is le",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "syzygy-forge",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Syzygy-forge: teaching the Syzygy tokenizer a learned codebook — integer k-means tables, honest eval",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "syzygy-lattice",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -40823,6 +41381,33 @@
    "family": "web-browser",
    "vessel": "CCC",
    "mission": "Side by Side ASCII rendering and original- Browser-based 3D flight simulator over real-world terrain",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "syzygy-program",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The Syzygy program office: plan, architecture synthesis, design notes, seed vetting — and the map to",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "syzygy-studio",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Syzygy studio — the public site: watch it play, learn at three levels, one camera one job, receipts",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "syzygy-video",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Real video through the Syzygy kernel — frames become readable text (glyphs, Braille, tone); side-by-",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -45058,6 +45643,15 @@
    "tier": 2
   },
   {
+   "name": "tool-judge",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "ToolGuardian",
    "family": "constraint-theory",
    "vessel": "Forgemaster",
@@ -45449,6 +46043,15 @@
    "family": "web-browser",
    "vessel": "CCC",
    "mission": "Cocapn fleet vessel",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "trust-ledger",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "trust-ledger",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -45985,6 +46588,15 @@
    "tier": 2
   },
   {
+   "name": "vision",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "vision",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "vite",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -46399,6 +47011,15 @@
    "tier": 2
   },
   {
+   "name": "what-is-the-quilt",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A one-page explainer for the Quilt project family. Public front door for newcomers.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "wheelhouse-game",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -46574,6 +47195,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Xero — production release of the zero agent template.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "xero-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Xero lab — prototypes and design notes for the zero agent production line (release line: SuperInstan",
    "state": "active",
    "bornFrom": [],
    "tier": 2
