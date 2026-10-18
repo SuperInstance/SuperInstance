@@ -1,6 +1,6 @@
 {
   "name": "@superinstance/schemas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript interface schemas + JSON Schema definitions for SuperInstance fleet types",
   "main": "schemas/index.js",
   "types": "schemas/index.d.ts",
@@ -10,5 +10,13 @@
   },
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperInstance/SuperInstance.git"
+  },
+  "homepage": "https://github.com/SuperInstance/SuperInstance#readme",
+  "bugs": {
+    "url": "https://github.com/SuperInstance/SuperInstance/issues"
   }
 }
