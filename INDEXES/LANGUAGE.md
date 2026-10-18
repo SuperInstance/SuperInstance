@@ -1,7 +1,7 @@
 # Index by Language
 
-**Generated:** 2026-10-17 09:07 UTC
-**Total repos:** 5275
+**Generated:** 2026-10-18 09:26 UTC
+**Total repos:** 5290
 
 ## C
 
@@ -629,6 +629,7 @@
 - **[thor-rom](https://github.com/SuperInstance/thor-rom)** — Jetson Thor ROM image builder — JetPack 7, Isaac ROS 4.1, FP4 models, MIG partitioning, A2A server
 - **[tide-pool](https://github.com/SuperInstance/tide-pool)** — Async BBS boards for agents — Ship Protocol Layer 2
 - **[tminus-music](https://github.com/SuperInstance/tminus-music)** — T-minus musical event prediction using conservation spectral theory
+- **[tool-judge](https://github.com/SuperInstance/tool-judge)** — A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa
 - **[TrendRadar](https://github.com/SuperInstance/TrendRadar)** — ⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告
 - **[tri-quarter-toolbox](https://github.com/SuperInstance/tri-quarter-toolbox)** — A mathematical/computational framework that upgrades the complex numbers for working with unified 2D
 - **[turbovec-integration-ccc](https://github.com/SuperInstance/turbovec-integration-ccc)** — TurboVec integration for CCC — vector acceleration primitives for constraint computation
@@ -682,6 +683,7 @@
 - **[gitpp-js](https://github.com/SuperInstance/gitpp-js)** — A pure-ESM JavaScript port of the git.pp fold. Doc-only discipline. Runs in any modern browser witho
 - **[hardware-adapter](https://github.com/SuperInstance/hardware-adapter)** — Pluggable JSON heartbeat schemas for any board — auto-generates vessel.json safety profile
 - **[i2i-bottle-agent](https://github.com/SuperInstance/i2i-bottle-agent)** — I2I Bottle Agent — auto-processes inter-agent bottles between fleet nodes
+- **[intercontext-map](https://github.com/SuperInstance/intercontext-map)** — Kira the Cartographer: the cellular-first substrate as a graph. 48 nodes / 70 edges. Every node and 
 - **[jetsonclaw1](https://github.com/SuperInstance/jetsonclaw1)** — JetsonClaw1 edge node — GPU compute, CUDA operations, hardware interface for the Cocapn fleet
 - **[moth-runner](https://github.com/SuperInstance/moth-runner)** — P0 #4: the adversarial runner — campaigns, witness.jsonl, homeostatic-throttle admission
 - **[mudra-bridge-core](https://github.com/SuperInstance/mudra-bridge-core)** — Mudra vessel bridge gesture vocabulary (Node.js)
@@ -791,6 +793,7 @@
 - **[lau-homotopy-type](https://github.com/SuperInstance/lau-homotopy-type)** — Homotopy Type Theory — cubical types, path types, univalence, HITs, fundamental groups, compiler ver
 - **[lau-stochastic-homotopy](https://github.com/SuperInstance/lau-stochastic-homotopy)**
 - **[live-canon-pypi](https://github.com/SuperInstance/live-canon-pypi)** — Live Canon PyPI package — 5 operations on AI-Writings canon
+- **[luciddreamer-py](https://github.com/SuperInstance/luciddreamer-py)** — Recovered source for @superinstance/luciddreamer - maritime intelligence that compiles soft model be
 - **[negative-space-core-python](https://github.com/SuperInstance/negative-space-core-python)** — Python implementation of negative space intelligence — avoidance tracking, conservation laws, infere
 - **[open-mind](https://github.com/SuperInstance/open-mind)** — open-interpreter that KNOWS your code. Ingest any repo → parse every function → build muscle memory 
 - **[openconstruct-jupyter](https://github.com/SuperInstance/openconstruct-jupyter)** — Jupyter notebook integration for OpenConstruct — interactive agent onboarding and experimentation
@@ -1471,6 +1474,7 @@
 - **[tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)** — Research-grade tropical geometry in Rust — min-plus/max-plus semirings, Newton polytopes, tropical c
 - **[trust-agent](https://github.com/SuperInstance/trust-agent)** — Trust Agent — standalone trust engine, OCap tokens, capability middleware
 - **[trust-graph](https://github.com/SuperInstance/trust-graph)** — Cocapn fleet vessel
+- **[trust-ledger](https://github.com/SuperInstance/trust-ledger)**
 - **[tui-rs](https://github.com/SuperInstance/tui-rs)** — TUI framework for Rust - Terminal UI components, mouse support, cross-platform
 - **[usemeter-archive](https://github.com/SuperInstance/usemeter-archive)** — Usage metering and billing aggregation library (Rust)
 - **[wal-journal](https://github.com/SuperInstance/wal-journal)** — Research-grade Rust crate
@@ -1938,6 +1942,7 @@
 - **[commodore-protocol](https://github.com/SuperInstance/commodore-protocol)** — Multi-DeckBoss coordination — auto-discovery, election, work distribution, failover
 - **[comms-engineer-vessel](https://github.com/SuperInstance/comms-engineer-vessel)** — Fleet agent: comms-engineer
 - **[comms-experiment](https://github.com/SuperInstance/comms-experiment)** — Preserved workspace artifact
+- **[communicator](https://github.com/SuperInstance/communicator)**
 - **[compaction-teacher](https://github.com/SuperInstance/compaction-teacher)** — Compaction teacher module
 - **[compass-rose](https://github.com/SuperInstance/compass-rose)** — 0.1.0
 - **[competitive-intel](https://github.com/SuperInstance/competitive-intel)** — Preserved workspace artifact
@@ -2130,6 +2135,7 @@
 - **[cuda-weight-stream](https://github.com/SuperInstance/cuda-weight-stream)** — DDR4 to BRAM weight streaming — tiled weight loading for inference silicon with prefetch and LRU evi
 - **[cudaclaw](https://github.com/SuperInstance/cudaclaw)** — ⚡ GPU-accelerated SmartCRDT with persistent CUDA kernels — warp-level consensus.
 - **[curvature-learning](https://github.com/SuperInstance/curvature-learning)** — Agents learning on curved manifolds — Riemannian gradient descent and natural gradient
+- **[cycle-judge](https://github.com/SuperInstance/cycle-judge)**
 - **[dashai-flux-model-package](https://github.com/SuperInstance/dashai-flux-model-package)** — Flux v1 model implementation (dev/Schnell) packaged for the DashAI ecosystem
 - **[dataval-rs](https://github.com/SuperInstance/dataval-rs)** — Data validation framework - Schema validation, type-safe validators, sanitization
 - **[datum](https://github.com/SuperInstance/datum)** — Succession repo for Datum (GLM-5 Turbo). If I fail, read this. My methods, skills, tools, trail, and
@@ -2140,6 +2146,7 @@
 - **[deadband-snr](https://github.com/SuperInstance/deadband-snr)** — Threshold-based sparsity filter — deadband ≠ low-pass
 - **[debug-observatory](https://github.com/SuperInstance/debug-observatory)** — Fleet-wide debugging hub
 - **[decentralized-uav-grid](https://github.com/SuperInstance/decentralized-uav-grid)**
+- **[decision-ledger](https://github.com/SuperInstance/decision-ledger)**
 - **[decision-tree-rs](https://github.com/SuperInstance/decision-tree-rs)** — Decision tree: ID3/C4.5 style, information gain, Gini impurity, pruning, prediction
 - **[DeckBoss](https://github.com/SuperInstance/DeckBoss)** — 🛩️ Agent Edge OS — flight deck for launching, recovering, and coordinating agents. (Unrelated to pur
 - **[deckboss-1](https://github.com/SuperInstance/deckboss-1)** — Deckboss.ai — AI assistant for edge robotics and IoT. Clone onto Jetson/RPi, onboard, start building
@@ -2211,6 +2218,7 @@
 - **[dream-engine](https://github.com/SuperInstance/dream-engine)** — Lucid dreaming content engine — overnight generation with multi-character narration
 - **[dreamlog-ai](https://github.com/SuperInstance/dreamlog-ai)** — DreamLog.ai — AI dream journal and lucid dreaming companion. Part of the Lucineer ecosystem.
 - **[drift-analyzer](https://github.com/SuperInstance/drift-analyzer)** — Precision drift analyzer for constraint systems — which boat sinks first?
+- **[drift-probe](https://github.com/SuperInstance/drift-probe)**
 - **[dry-dock](https://github.com/SuperInstance/dry-dock)** — Cocapn fleet crate: dry-dock
 - **[ds4](https://github.com/SuperInstance/ds4)** — DeepSeek 4 Flash local inference engine for Metal
 - **[dscode](https://github.com/SuperInstance/dscode)** — The code editor you can take apart. 
@@ -2840,6 +2848,7 @@
 - **[garden-path](https://github.com/SuperInstance/garden-path)** — Decision tree pruning via garden metaphor
 - **[garden-seed](https://github.com/SuperInstance/garden-seed)** — Seed: Garden Seed
 - **[gardenlog-ai](https://github.com/SuperInstance/gardenlog-ai)** — TBD
+- **[gate-replay](https://github.com/SuperInstance/gate-replay)**
 - **[gatekeeper-as-flux-early-version](https://github.com/SuperInstance/gatekeeper-as-flux-early-version)** — [ARCHIVED] Empty gatekeeper-FLUX bridge placeholder.
 - **[gauge](https://github.com/SuperInstance/gauge)**
 - **[gem-conservation-guardian](https://github.com/SuperInstance/gem-conservation-guardian)** — SuperInstance conservation-guardian gem
@@ -2887,6 +2896,7 @@
 - **[gitpp-ports](https://github.com/SuperInstance/gitpp-ports)** — Landing page for the 7 git.pp fold ports.
 - **[gitpp-rr-reader4](https://github.com/SuperInstance/gitpp-rr-reader4)** — Adversarial ambiguity audit of the git.pp spec
 - **[gitpp-rsi-audit](https://github.com/SuperInstance/gitpp-rsi-audit)** — Reading-room audit of arXiv 2610.13912 (RSI-Anything): does the text determine its own retention pro
+- **[gitpp-sheet](https://github.com/SuperInstance/gitpp-sheet)** — A git.pp fold as a spreadsheet with cell-level confidence, and the graph that shows where the confid
 - **[glyphcast](https://github.com/SuperInstance/glyphcast)** — Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as 
 - **[glyphtensor](https://github.com/SuperInstance/glyphtensor)**
 - **[glyphtensor-bridge](https://github.com/SuperInstance/glyphtensor-bridge)**
@@ -3087,6 +3097,7 @@
 - **[jev-garden](https://github.com/SuperInstance/jev-garden)** — The living JEV training system — grows from quilt judgments, idle-compiles its ExoJ into weave artif
 - **[jev-harness](https://github.com/SuperInstance/jev-harness)** — A client for TypeSafe.ai Jev that cannot fail quietly — preflight contract checks, structured scorin
 - **[jev-ideation](https://github.com/SuperInstance/jev-ideation)** — Jev ideation: multiple models picking at the frontier concepts — the reptilian layer, floating gates
+- **[jev-lattice](https://github.com/SuperInstance/jev-lattice)**
 - **[jev-net](https://github.com/SuperInstance/jev-net)** — A neural network whose neurons are JEV calls — prism projection, hebbian weights, spawn-triggered it
 - **[jev-net-worker](https://github.com/SuperInstance/jev-net-worker)** — Hosted JEV neural net on Cloudflare — learns from every call, self-plays nightly, serves bootable le
 - **[jev-paint-quilt](https://github.com/SuperInstance/jev-paint-quilt)**
@@ -3523,6 +3534,7 @@
 - **[migrations](https://github.com/SuperInstance/migrations)** — Preserved workspace artifact
 - **[migrator-rs](https://github.com/SuperInstance/migrator-rs)** — Database migration tool - Versioned migrations, rollback support, multiple databases
 - **[MineWright](https://github.com/SuperInstance/MineWright)** — The first AI that doesn't just play Minecraft — it *understands* Minecraft. Meet Mace MineWright, yo
+- **[minigate](https://github.com/SuperInstance/minigate)**
 - **[minimax-worker](https://github.com/SuperInstance/minimax-worker)** — Git-native minimax-worker: disposable machine, durable repo
 - **[mirror-recorder](https://github.com/SuperInstance/mirror-recorder)** — Mirror Recorder
 - **[mist-game](https://github.com/SuperInstance/mist-game)**
@@ -3732,6 +3744,7 @@
 - **[oxide-tombstone](https://github.com/SuperInstance/oxide-tombstone)** — Tombstone-based deletion for GPU distributed data with ternary states. Lazy deletion, compaction, pu
 - **[oxide-workflow](https://github.com/SuperInstance/oxide-workflow)** — GPU kernel workflow orchestration with ternary step states. DAG execution, retry on failure, rollbac
 - **[paced-seam](https://github.com/SuperInstance/paced-seam)**
+- **[pacemaker](https://github.com/SuperInstance/pacemaker)**
 - **[page-replace](https://github.com/SuperInstance/page-replace)** — Page replacement algorithm suite for memory management
 - **[palaver-math](https://github.com/SuperInstance/palaver-math)**
 - **[paper-zero-crypto-fleet-security](https://github.com/SuperInstance/paper-zero-crypto-fleet-security)** — Zero-Crypto Fleet Security via Physics-Based Temporal Authentication — research paper
@@ -4422,6 +4435,7 @@
 - **[scripts](https://github.com/SuperInstance/scripts)** — Preserved workspace artifact
 - **[scummvm-arcade](https://github.com/SuperInstance/scummvm-arcade)**
 - **[scummvm-gui-design](https://github.com/SuperInstance/scummvm-gui-design)**
+- **[sdk](https://github.com/SuperInstance/sdk)** — Conservation-law governance for AI agent fleets — the source of @superinstance/sdk, recovered from i
 - **[secret-manager](https://github.com/SuperInstance/secret-manager)** — Secure service for storing and managing credentials
 - **[secret-scanner](https://github.com/SuperInstance/secret-scanner)** — Git history secret scanner — detect accidentally committed credentials across fleet repos
 - **[secret-share](https://github.com/SuperInstance/secret-share)** — Secret sharing cryptography library for SuperInstance
@@ -5216,6 +5230,7 @@
 - **[vibe-graph](https://github.com/SuperInstance/vibe-graph)** — Vibe-graph social network analysis for SuperInstance agents
 - **[vibe-protocol](https://github.com/SuperInstance/vibe-protocol)**
 - **[vibe-world](https://github.com/SuperInstance/vibe-world)** — Vibe world project
+- **[vision](https://github.com/SuperInstance/vision)**
 - **[vite](https://github.com/SuperInstance/vite)** — Next generation frontend tooling. It's fast!
 - **[vm-estate](https://github.com/SuperInstance/vm-estate)** — VM-Estate — distributed intelligence architecture. Each machine is a plot of land. Intelligence grow
 - **[vocabularies](https://github.com/SuperInstance/vocabularies)** — Preserved workspace artifact

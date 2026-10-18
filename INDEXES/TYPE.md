@@ -1,7 +1,7 @@
 # Index by Type
 
-**Generated:** 2026-10-17 09:07 UTC
-**Total repos:** 5275
+**Generated:** 2026-10-18 09:26 UTC
+**Total repos:** 5290
 
 ## Cli
 
@@ -616,6 +616,7 @@
 - **[commit-predictor](https://github.com/SuperInstance/commit-predictor)** — Extracted from plato-training
 - **[commitment-scheme](https://github.com/SuperInstance/commitment-scheme)** — Pedersen commitments, polynomial commitments, batch opening/verification in Rust
 - **[comms-experiment](https://github.com/SuperInstance/comms-experiment)** — Preserved workspace artifact
+- **[communicator](https://github.com/SuperInstance/communicator)**
 - **[compaction-teacher](https://github.com/SuperInstance/compaction-teacher)** — Compaction teacher module
 - **[compass-rose](https://github.com/SuperInstance/compass-rose)** — 0.1.0
 - **[competitive-intel](https://github.com/SuperInstance/competitive-intel)** — Preserved workspace artifact
@@ -926,6 +927,7 @@
 - **[current-sync](https://github.com/SuperInstance/current-sync)** — Current Sync
 - **[curvature-learning](https://github.com/SuperInstance/curvature-learning)** — Agents learning on curved manifolds — Riemannian gradient descent and natural gradient
 - **[cv-fundamentals](https://github.com/SuperInstance/cv-fundamentals)** — Computer vision fundamentals in Rust — filtering, morphology, features, segmentation, stereo, optica
+- **[cycle-judge](https://github.com/SuperInstance/cycle-judge)**
 - **[cyclotomic-field](https://github.com/SuperInstance/cyclotomic-field)** — Cyclotomic field Q(ζ₁₅) experiments — the unified mathematical foundation for Eisenstein constraint 
 - **[dad-son-channel](https://github.com/SuperInstance/dad-son-channel)** — Asymmetric inbox for two captains, two sergeants. A bottle on the beach, not email, not IM.
 - **[dag-runner](https://github.com/SuperInstance/dag-runner)** — A Rust library for Dag Runner
@@ -943,6 +945,7 @@
 - **[debug-dwarf](https://github.com/SuperInstance/debug-dwarf)** — A Rust library for Debug Dwarf
 - **[debug-observatory](https://github.com/SuperInstance/debug-observatory)** — Fleet-wide debugging hub
 - **[decentralized-uav-grid](https://github.com/SuperInstance/decentralized-uav-grid)**
+- **[decision-ledger](https://github.com/SuperInstance/decision-ledger)**
 - **[decision-tree-rs](https://github.com/SuperInstance/decision-tree-rs)** — Decision tree: ID3/C4.5 style, information gain, Gini impurity, pruning, prediction
 - **[DeckBoss](https://github.com/SuperInstance/DeckBoss)** — 🛩️ Agent Edge OS — flight deck for launching, recovering, and coordinating agents. (Unrelated to pur
 - **[deckboss-1](https://github.com/SuperInstance/deckboss-1)** — Deckboss.ai — AI assistant for edge robotics and IoT. Clone onto Jetson/RPi, onboard, start building
@@ -1016,6 +1019,7 @@
 - **[dream-engine](https://github.com/SuperInstance/dream-engine)** — Lucid dreaming content engine — overnight generation with multi-character narration
 - **[dreamlog-ai](https://github.com/SuperInstance/dreamlog-ai)** — DreamLog.ai — AI dream journal and lucid dreaming companion. Part of the Lucineer ecosystem.
 - **[drift-analyzer](https://github.com/SuperInstance/drift-analyzer)** — Precision drift analyzer for constraint systems — which boat sinks first?
+- **[drift-probe](https://github.com/SuperInstance/drift-probe)**
 - **[drone-fleet-ternary](https://github.com/SuperInstance/drone-fleet-ternary)** — Autonomous drone fleet coordination via ternary decision-making, warp-vote consensus, and CRDT state
 - **[dry-dock](https://github.com/SuperInstance/dry-dock)** — Cocapn fleet crate: dry-dock
 - **[ds4](https://github.com/SuperInstance/ds4)** — DeepSeek 4 Flash local inference engine for Metal
@@ -1729,6 +1733,7 @@
 - **[garden-path](https://github.com/SuperInstance/garden-path)** — Decision tree pruning via garden metaphor
 - **[garden-seed](https://github.com/SuperInstance/garden-seed)** — Seed: Garden Seed
 - **[gardenlog-ai](https://github.com/SuperInstance/gardenlog-ai)** — TBD
+- **[gate-replay](https://github.com/SuperInstance/gate-replay)**
 - **[gauge](https://github.com/SuperInstance/gauge)**
 - **[gauss-markov](https://github.com/SuperInstance/gauss-markov)** — A Rust library for Gauss Markov
 - **[gc-pid-bridge](https://github.com/SuperInstance/gc-pid-bridge)** — Rust bridge between gc-intelligent.sh and ternary-pid — host-level disk PID controller
@@ -1772,6 +1777,7 @@
 - **[gitpp-rr-reader3](https://github.com/SuperInstance/gitpp-rr-reader3)** — Independent reading 3 of the git.pp fold spec (C99)
 - **[gitpp-rr-reader4](https://github.com/SuperInstance/gitpp-rr-reader4)** — Adversarial ambiguity audit of the git.pp spec
 - **[gitpp-rust](https://github.com/SuperInstance/gitpp-rust)** — git.pp fold on Rust: a 4th port written from DESIGN.md alone (doc-only discipline), passes the full 
+- **[gitpp-sheet](https://github.com/SuperInstance/gitpp-sheet)** — A git.pp fold as a spreadsheet with cell-level confidence, and the graph that shows where the confid
 - **[gitpp-v046-cases](https://github.com/SuperInstance/gitpp-v046-cases)** — Conformance cases for git.pp spec v0.4.6 clarified clauses
 - **[glyph-language](https://github.com/SuperInstance/glyph-language)** — 32 cognitive primitive glyphs — atomic vocabulary for agent cognition
 - **[glyphcast](https://github.com/SuperInstance/glyphcast)** — Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as 
@@ -1985,6 +1991,7 @@
 - **[intent-flux-bridge](https://github.com/SuperInstance/intent-flux-bridge)** — Experiment: maps natural-language GPU intent to Flux bytecode. Tests the pincher→flux-core synergy w
 - **[intent-inference](https://github.com/SuperInstance/intent-inference)** — Intent Inference Engine — reverse-engineers productive lane from user behavior. Part of Cocapn rever
 - **[intention-field-rs](https://github.com/SuperInstance/intention-field-rs)** — Self-Improving Band: intention-field-rs
+- **[intercontext-map](https://github.com/SuperInstance/intercontext-map)** — Kira the Cartographer: the cellular-first substrate as a graph. 48 nodes / 70 edges. Every node and 
 - **[interval-tree-rs](https://github.com/SuperInstance/interval-tree-rs)** — Interval tree data structure in pure Rust — O(log n) insertion, stabbing queries, range queries, ove
 - **[intuition](https://github.com/SuperInstance/intuition)** — Intuition — contrast-pair phantom verdict analysis, v-JEPA2 training
 - **[isa-v3-draft](https://github.com/SuperInstance/isa-v3-draft)** — FLUX ISA v3 Design Draft — trifold encoding for cloud/edge/compact modes
@@ -2010,6 +2017,7 @@
 - **[jev-gan](https://github.com/SuperInstance/jev-gan)** — The substrate GAN — JEV decides, JEPA predicts, multi-LLM plays producer/critic in a fully-observabl
 - **[jev-garden](https://github.com/SuperInstance/jev-garden)** — The living JEV training system — grows from quilt judgments, idle-compiles its ExoJ into weave artif
 - **[jev-ideation](https://github.com/SuperInstance/jev-ideation)** — Jev ideation: multiple models picking at the frontier concepts — the reptilian layer, floating gates
+- **[jev-lattice](https://github.com/SuperInstance/jev-lattice)**
 - **[jev-net](https://github.com/SuperInstance/jev-net)** — A neural network whose neurons are JEV calls — prism projection, hebbian weights, spawn-triggered it
 - **[jev-net-worker](https://github.com/SuperInstance/jev-net-worker)** — Hosted JEV neural net on Cloudflare — learns from every call, self-plays nightly, serves bootable le
 - **[jev-paint-quilt](https://github.com/SuperInstance/jev-paint-quilt)**
@@ -2413,6 +2421,7 @@
 - **[luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)** — AI creative exploration through lucid dreaming themed rooms. Generate poetry, fiction, music, and vi
 - **[luciddreamer-content](https://github.com/SuperInstance/luciddreamer-content)**
 - **[luciddreamer-os](https://github.com/SuperInstance/luciddreamer-os)** — Concept OS named Lucid Dreamer for OS development.
+- **[luciddreamer-py](https://github.com/SuperInstance/luciddreamer-py)** — Recovered source for @superinstance/luciddreamer - maritime intelligence that compiles soft model be
 - **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** — LucidDreamer vision module for SuperInstance dream-state agents
 - **[lucineer-com-site](https://github.com/SuperInstance/lucineer-com-site)**
 - **[lucineer-creative](https://github.com/SuperInstance/lucineer-creative)** — 🎨 MMX-powered creative asset pipeline — concept art, ambient music, and build previews for Lucineer'
@@ -2474,6 +2483,7 @@
 - **[midi-flux-bridge](https://github.com/SuperInstance/midi-flux-bridge)** — Bridge from tensor-midi timing to FLUX bytecode: conductor scheduling, swing timing, alignment verif
 - **[migrations](https://github.com/SuperInstance/migrations)** — Preserved workspace artifact
 - **[MineWright](https://github.com/SuperInstance/MineWright)** — The first AI that doesn't just play Minecraft — it *understands* Minecraft. Meet Mace MineWright, yo
+- **[minigate](https://github.com/SuperInstance/minigate)**
 - **[minimax-code](https://github.com/SuperInstance/minimax-code)** — Minimax game tree search for SuperInstance strategic reasoning
 - **[minimax-worker](https://github.com/SuperInstance/minimax-worker)** — Git-native minimax-worker: disposable machine, durable repo
 - **[mirror-recorder](https://github.com/SuperInstance/mirror-recorder)** — Mirror Recorder
@@ -2673,6 +2683,7 @@
 - **[oxide-tombstone](https://github.com/SuperInstance/oxide-tombstone)** — Tombstone-based deletion for GPU distributed data with ternary states. Lazy deletion, compaction, pu
 - **[oxide-workflow](https://github.com/SuperInstance/oxide-workflow)** — GPU kernel workflow orchestration with ternary step states. DAG execution, retry on failure, rollbac
 - **[paced-seam](https://github.com/SuperInstance/paced-seam)**
+- **[pacemaker](https://github.com/SuperInstance/pacemaker)**
 - **[packet-capture](https://github.com/SuperInstance/packet-capture)** — Rust crate: packet-capture
 - **[page-replace](https://github.com/SuperInstance/page-replace)** — Page replacement algorithm suite for memory management
 - **[palaver-math](https://github.com/SuperInstance/palaver-math)**
@@ -3417,6 +3428,7 @@
 - **[scummvm-arcade](https://github.com/SuperInstance/scummvm-arcade)**
 - **[scummvm-gui-design](https://github.com/SuperInstance/scummvm-gui-design)**
 - **[scummvm-prototype](https://github.com/SuperInstance/scummvm-prototype)** — First playable prototype — ScummVM-style agentic GUI. One room, one NPC, nine verbs.
+- **[sdk](https://github.com/SuperInstance/sdk)** — Conservation-law governance for AI agent fleets — the source of @superinstance/sdk, recovered from i
 - **[search-superinstance-ai](https://github.com/SuperInstance/search-superinstance-ai)** — Semantic search over SuperInstance repos — Cloudflare Worker + Workers AI + Vectorize
 - **[secret-scanner](https://github.com/SuperInstance/secret-scanner)** — Git history secret scanner — detect accidentally committed credentials across fleet repos
 - **[secret-share](https://github.com/SuperInstance/secret-share)** — Secret sharing cryptography library for SuperInstance
@@ -4243,6 +4255,7 @@
 - **[tropical-neural](https://github.com/SuperInstance/tropical-neural)** — Tropical geometry for neural networks — max-plus semiring, tropical polynomials, Newton polytopes, t
 - **[tropical-synth](https://github.com/SuperInstance/tropical-synth)** — 🔺 Sound design via tropical geometry — tropical polynomials map to ReLU networks, Newton polytopes s
 - **[trust-agent](https://github.com/SuperInstance/trust-agent)** — Trust Agent — standalone trust engine, OCap tokens, capability middleware
+- **[trust-ledger](https://github.com/SuperInstance/trust-ledger)**
 - **[tui-rs](https://github.com/SuperInstance/tui-rs)** — TUI framework for Rust - Terminal UI components, mouse support, cross-platform
 - **[turbovec](https://github.com/SuperInstance/turbovec)** — A vector index built on TurboQuant, written in Rust with Python bindings
 - **[turbovec-integration-ccc](https://github.com/SuperInstance/turbovec-integration-ccc)** — TurboVec integration for CCC — vector acceleration primitives for constraint computation
@@ -4278,6 +4291,7 @@
 - **[vibe-graph](https://github.com/SuperInstance/vibe-graph)** — Vibe-graph social network analysis for SuperInstance agents
 - **[vibe-world](https://github.com/SuperInstance/vibe-world)** — Vibe world project
 - **[ViMax](https://github.com/SuperInstance/ViMax)** — "ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)"
+- **[vision](https://github.com/SuperInstance/vision)**
 - **[vm-estate](https://github.com/SuperInstance/vm-estate)** — VM-Estate — distributed intelligence architecture. Each machine is a plot of land. Intelligence grow
 - **[vocabularies](https://github.com/SuperInstance/vocabularies)** — Preserved workspace artifact
 - **[voice-note-app](https://github.com/SuperInstance/voice-note-app)**
@@ -4963,6 +4977,7 @@
 - **[ternary-ga](https://github.com/SuperInstance/ternary-ga)** — Genetic algorithm toolkit for ternary genomes ({-1, 0, +1})
 - **[test-tool-extract](https://github.com/SuperInstance/test-tool-extract)** — test
 - **[tit-quilt](https://github.com/SuperInstance/tit-quilt)** — A terminal toolbox that outlives its terminal — the session is a graph, not a process. Quilt-native 
+- **[tool-judge](https://github.com/SuperInstance/tool-judge)** — A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa
 - **[ToolGuardian](https://github.com/SuperInstance/ToolGuardian)** — Reliable function calling with validation, retry, and monitoring for AI agents and LLM applications
 - **[tools](https://github.com/SuperInstance/tools)** — Preserved workspace artifact
 - **[tropical-attention-kernel](https://github.com/SuperInstance/tropical-attention-kernel)** — CUDA kernels: tropical (max-plus) attention and numerically-stable online-softmax attention, benchma
