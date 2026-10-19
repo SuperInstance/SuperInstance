@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-10-18 09:26 UTC
-**Total repos:** 5290
+**Generated:** 2026-10-19 10:39 UTC
+**Total repos:** 5296
 
 ## A2A
 
@@ -2039,6 +2039,7 @@
 - **[scheduler-agent](https://github.com/SuperInstance/scheduler-agent)** — Fleet task scheduling agent — priority queue, cost analysis, and distributed task orchestration for 
 - **[scheduling-rs](https://github.com/SuperInstance/scheduling-rs)** — Scheduling algorithms for real-world fleet and job management
 - **[schema-evolution](https://github.com/SuperInstance/schema-evolution)** — Cocapn fleet vessel
+- **[score-table](https://github.com/SuperInstance/score-table)** — A score table for the SuperInstance fleet: rows that declare their denominator, their pre-registered
 - **[screen-agent](https://github.com/SuperInstance/screen-agent)**
 - **[sdk](https://github.com/SuperInstance/sdk)** — Conservation-law governance for AI agent fleets — the source of @superinstance/sdk, recovered from i
 - **[secret-scanner](https://github.com/SuperInstance/secret-scanner)** — Git history secret scanner — detect accidentally committed credentials across fleet repos
@@ -2261,6 +2262,8 @@
 - **[wasserstein-agents](https://github.com/SuperInstance/wasserstein-agents)** — Wasserstein distance and optimal transport — Sinkhorn algorithm, agent distribution coordination, JK
 - **[wasserstein-agents-rs](https://github.com/SuperInstance/wasserstein-agents-rs)** — Multi-marginal optimal transport, sliced Wasserstein, and gradient flows for agent dynamics
 - **[watch-follow](https://github.com/SuperInstance/watch-follow)** — Watch-and-follow pattern for agent observation and learning
+- **[witness-anchor](https://github.com/SuperInstance/witness-anchor)** — THE fleet's out-of-band witness anchor -- a Cloudflare Worker that publishes signed heads and comput
+- **[witness-spec](https://github.com/SuperInstance/witness-spec)** — The fleet witness log with RFC 8785 canonicalisation, RFC 6962 domain separation, and a signed tree 
 - **[witness-topology](https://github.com/SuperInstance/witness-topology)** — Witness topology for multi-agent verification: witness complexes from point clouds, topological infe
 - **[workflow-engineer](https://github.com/SuperInstance/workflow-engineer)** — AI agent specialized in designing and automating software workflows.
 - **[workshop](https://github.com/SuperInstance/workshop)** — Cocapn fleet crate: workshop
@@ -3007,6 +3010,7 @@
 - **[api-orchestra](https://github.com/SuperInstance/api-orchestra)** — API Orchestra — multi-LLM creative chorus using ZAI, DeepInfra, Cloudflare, JEV as substrate walkers
 - **[api-versioner](https://github.com/SuperInstance/api-versioner)** — API version management — semantic versioning, deprecation warnings, migration guides
 - **[approximation-theory](https://github.com/SuperInstance/approximation-theory)** — Approximation theory in Rust — polynomial interpolation, splines, Chebyshev polynomials, Padé approx
+- **[arbiter](https://github.com/SuperInstance/arbiter)** — A blind adjudication: the entropy draws the order and commits to it BEFORE the judge is asked, and t
 - **[archive](https://github.com/SuperInstance/archive)** — Archived experiments, superseded repos, and completed research projects
 - **[archive-writer](https://github.com/SuperInstance/archive-writer)** — A Rust library for Archive Writer
 - **[arithmetic-code](https://github.com/SuperInstance/arithmetic-code)** — Arithmetic coding with adaptive frequency modeling — Rust compression library
@@ -3823,6 +3827,7 @@
 - **[jev-garden](https://github.com/SuperInstance/jev-garden)** — The living JEV training system — grows from quilt judgments, idle-compiles its ExoJ into weave artif
 - **[jev-harness](https://github.com/SuperInstance/jev-harness)** — A client for TypeSafe.ai Jev that cannot fail quietly — preflight contract checks, structured scorin
 - **[jev-ideation](https://github.com/SuperInstance/jev-ideation)** — Jev ideation: multiple models picking at the frontier concepts — the reptilian layer, floating gates
+- **[jev-lab](https://github.com/SuperInstance/jev-lab)** — A measured lab for TypeSafe.ai Jev: what it is good for, what it is not, and the controls that keep 
 - **[jev-lattice](https://github.com/SuperInstance/jev-lattice)**
 - **[jev-paint-quilt](https://github.com/SuperInstance/jev-paint-quilt)**
 - **[jev-quilt](https://github.com/SuperInstance/jev-quilt)** — JEV for quilt as understood output: cellular-first decision substrate — typed cells, hook-and-drop d
@@ -4572,6 +4577,7 @@
 - **[realm-ml](https://github.com/SuperInstance/realm-ml)** — Realm-specific claim verification: evidence-grounded verification for codebase claims, with the doma
 - **[realtime-core](https://github.com/SuperInstance/realtime-core)** — Realtime core infrastructure - WebRTC, WebSocket, and streaming primitives for real-time application
 - **[rebac-equipment](https://github.com/SuperInstance/rebac-equipment)** — Relationship-Based Access Control — Zanzibar model
+- **[receipts](https://github.com/SuperInstance/receipts)** — A slide show for a general audience: why a green badge means nothing, and what to ask instead. Every
 - **[recovered-copy-20260824-ACE-Step-1.5](https://github.com/SuperInstance/recovered-copy-20260824-ACE-Step-1.5)**
 - **[recovered-copy-20260824-base60-lattice](https://github.com/SuperInstance/recovered-copy-20260824-base60-lattice)**
 - **[recovered-copy-20260824-batten-spline](https://github.com/SuperInstance/recovered-copy-20260824-batten-spline)**

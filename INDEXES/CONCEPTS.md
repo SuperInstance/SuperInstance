@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-18 09:26 UTC
+**Generated:** 2026-10-19 10:39 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -2837,6 +2837,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [scheduler-agent](https://github.com/SuperInstance/scheduler-agent)
 - [scheduling-rs](https://github.com/SuperInstance/scheduling-rs)
 - [schema-evolution](https://github.com/SuperInstance/schema-evolution)
+- [score-table](https://github.com/SuperInstance/score-table)
 - [screen-agent](https://github.com/SuperInstance/screen-agent)
 - [scummvm-prototype](https://github.com/SuperInstance/scummvm-prototype)
 - [sdk](https://github.com/SuperInstance/sdk)
@@ -3090,6 +3091,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [wasserstein-agents-rs](https://github.com/SuperInstance/wasserstein-agents-rs)
 - [watch-follow](https://github.com/SuperInstance/watch-follow)
 - [whisper-sync](https://github.com/SuperInstance/whisper-sync)
+- [witness-anchor](https://github.com/SuperInstance/witness-anchor)
+- [witness-spec](https://github.com/SuperInstance/witness-spec)
 - [witness-topology](https://github.com/SuperInstance/witness-topology)
 - [workflow-engineer](https://github.com/SuperInstance/workflow-engineer)
 - [workshop](https://github.com/SuperInstance/workshop)
@@ -4089,6 +4092,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [api-orchestra](https://github.com/SuperInstance/api-orchestra)
 - [api-versioner](https://github.com/SuperInstance/api-versioner)
 - [approximation-theory](https://github.com/SuperInstance/approximation-theory)
+- [arbiter](https://github.com/SuperInstance/arbiter)
 - [archive](https://github.com/SuperInstance/archive)
 - [archive-writer](https://github.com/SuperInstance/archive-writer)
 - [arithmetic-code](https://github.com/SuperInstance/arithmetic-code)
@@ -4862,6 +4866,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [jev-garden](https://github.com/SuperInstance/jev-garden)
 - [jev-harness](https://github.com/SuperInstance/jev-harness)
 - [jev-ideation](https://github.com/SuperInstance/jev-ideation)
+- [jev-lab](https://github.com/SuperInstance/jev-lab)
 - [jev-lattice](https://github.com/SuperInstance/jev-lattice)
 - [jev-paint-quilt](https://github.com/SuperInstance/jev-paint-quilt)
 - [jev-quilt](https://github.com/SuperInstance/jev-quilt)
@@ -5581,6 +5586,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [realm-ml](https://github.com/SuperInstance/realm-ml)
 - [realtime-core](https://github.com/SuperInstance/realtime-core)
 - [rebac-equipment](https://github.com/SuperInstance/rebac-equipment)
+- [receipts](https://github.com/SuperInstance/receipts)
 - [recovered-copy-20260824-ACE-Step-1.5](https://github.com/SuperInstance/recovered-copy-20260824-ACE-Step-1.5)
 - [recovered-copy-20260824-DigitalTwin-RobotStudio-SmartComponent](https://github.com/SuperInstance/recovered-copy-20260824-DigitalTwin-RobotStudio-SmartComponent)
 - [recovered-copy-20260824-base60-lattice](https://github.com/SuperInstance/recovered-copy-20260824-base60-lattice)

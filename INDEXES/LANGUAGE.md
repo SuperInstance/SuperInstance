@@ -1,7 +1,7 @@
 # Index by Language
 
-**Generated:** 2026-10-18 09:26 UTC
-**Total repos:** 5290
+**Generated:** 2026-10-19 10:39 UTC
+**Total repos:** 5296
 
 ## C
 
@@ -650,6 +650,7 @@
 - **[west-african-math-c](https://github.com/SuperInstance/west-african-math-c)** — West African mathematical traditions implemented in C
 - **[what-is-the-quilt](https://github.com/SuperInstance/what-is-the-quilt)** — A one-page explainer for the Quilt project family. Public front door for newcomers.
 - **[wiki](https://github.com/SuperInstance/wiki)** — ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs
+- **[witness-spec](https://github.com/SuperInstance/witness-spec)** — The fleet witness log with RFC 8785 canonicalisation, RFC 6962 domain separation, and a signed tree 
 - **[ws-fabric](https://github.com/SuperInstance/ws-fabric)** — WebSocket connection pooling and fabric library
 - **[xlang](https://github.com/SuperInstance/xlang)** — A next-generation dynamic and high-performance language for AI and IOT with natural born distributed
 - **[xMind](https://github.com/SuperInstance/xMind)** — xMind is a modular framework in XLang for implementing LLM Memory, Planning, and Dataflow. It enable
@@ -1660,6 +1661,7 @@
 - **[api-gateway-1](https://github.com/SuperInstance/api-gateway-1)** — Unified API gateway — single entry point for all fleet vessel APIs
 - **[api-orchestra](https://github.com/SuperInstance/api-orchestra)** — API Orchestra — multi-LLM creative chorus using ZAI, DeepInfra, Cloudflare, JEV as substrate walkers
 - **[api-playground](https://github.com/SuperInstance/api-playground)** — Interactive API playground for testing fleet endpoints
+- **[arbiter](https://github.com/SuperInstance/arbiter)** — A blind adjudication: the entropy draws the order and commits to it BEFORE the judge is asked, and t
 - **[arch-gateway-room-clean](https://github.com/SuperInstance/arch-gateway-room-clean)** — MCP server that routes every request to the cheapest LLM that can actually do the job. Cost-in-respo
 - **[architectures](https://github.com/SuperInstance/architectures)** — FLUX system architecture proposals: 10 deployment configs for safety-critical systems
 - **[archive](https://github.com/SuperInstance/archive)** — Archived experiments, superseded repos, and completed research projects
@@ -3097,6 +3099,7 @@
 - **[jev-garden](https://github.com/SuperInstance/jev-garden)** — The living JEV training system — grows from quilt judgments, idle-compiles its ExoJ into weave artif
 - **[jev-harness](https://github.com/SuperInstance/jev-harness)** — A client for TypeSafe.ai Jev that cannot fail quietly — preflight contract checks, structured scorin
 - **[jev-ideation](https://github.com/SuperInstance/jev-ideation)** — Jev ideation: multiple models picking at the frontier concepts — the reptilian layer, floating gates
+- **[jev-lab](https://github.com/SuperInstance/jev-lab)** — A measured lab for TypeSafe.ai Jev: what it is good for, what it is not, and the controls that keep 
 - **[jev-lattice](https://github.com/SuperInstance/jev-lattice)**
 - **[jev-net](https://github.com/SuperInstance/jev-net)** — A neural network whose neurons are JEV calls — prism projection, hebbian weights, spawn-triggered it
 - **[jev-net-worker](https://github.com/SuperInstance/jev-net-worker)** — Hosted JEV neural net on Cloudflare — learns from every call, self-plays nightly, serves bootable le
@@ -4351,6 +4354,7 @@
 - **[reallog-ai-pages](https://github.com/SuperInstance/reallog-ai-pages)** — GitHub Pages for reallog.ai
 - **[realtime-core](https://github.com/SuperInstance/realtime-core)** — Realtime core infrastructure - WebRTC, WebSocket, and streaming primitives for real-time application
 - **[rebac-equipment](https://github.com/SuperInstance/rebac-equipment)** — Relationship-Based Access Control — Zanzibar model
+- **[receipts](https://github.com/SuperInstance/receipts)** — A slide show for a general audience: why a green badge means nothing, and what to ask instead. Every
 - **[red-black-tree-rs](https://github.com/SuperInstance/red-black-tree-rs)** — Left-leaning red-black BST with insert fixup, color invariants, rank queries, and order statistics
 - **[redshirt](https://github.com/SuperInstance/redshirt)** — Disposable remote appendage for a git agent. One install command, pulls tasks from git, dies on time
 - **[references](https://github.com/SuperInstance/references)** — Preserved workspace artifact
@@ -4421,6 +4425,7 @@
 - **[scheduling-rs](https://github.com/SuperInstance/scheduling-rs)** — Scheduling algorithms for real-world fleet and job management
 - **[schema-evolution](https://github.com/SuperInstance/schema-evolution)** — Cocapn fleet vessel
 - **[sciencelog-ai](https://github.com/SuperInstance/sciencelog-ai)** — AI science companion — paper summaries, experiment tracking, research notes
+- **[score-table](https://github.com/SuperInstance/score-table)** — A score table for the SuperInstance fleet: rows that declare their denominator, their pre-registered
 - **[scrap-quilt](https://github.com/SuperInstance/scrap-quilt)**
 - **[scrap-spark](https://github.com/SuperInstance/scrap-spark)**
 - **[scrap-voice](https://github.com/SuperInstance/scrap-voice)**
@@ -5264,6 +5269,7 @@
 - **[wheelhouse-game](https://github.com/SuperInstance/wheelhouse-game)** — The Wheelhouse Game — weather routing for commercial fishing, F140 audit. F151.
 - **[whistle](https://github.com/SuperInstance/whistle)** — Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled
 - **[wire-harmony](https://github.com/SuperInstance/wire-harmony)** — Wire-level protocol harmony layer for SuperInstance networking
+- **[witness-anchor](https://github.com/SuperInstance/witness-anchor)** — THE fleet's out-of-band witness anchor -- a Cloudflare Worker that publishes signed heads and comput
 - **[witness-complex](https://github.com/SuperInstance/witness-complex)** — Witness complex construction for landmark-based topological data analysis with random, maxmin, and k
 - **[witness-is-prediction](https://github.com/SuperInstance/witness-is-prediction)** — witness-is-prediction - R10 substrate canon point as code
 - **[witness-topology](https://github.com/SuperInstance/witness-topology)** — Witness topology for multi-agent verification: witness complexes from point clouds, topological infe
