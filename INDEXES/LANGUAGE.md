@@ -1,7 +1,7 @@
 # Index by Language
 
-**Generated:** 2026-10-19 10:39 UTC
-**Total repos:** 5296
+**Generated:** 2026-10-21 09:57 UTC
+**Total repos:** 5297
 
 ## C
 
@@ -4773,6 +4773,7 @@
 - **[taskflow](https://github.com/SuperInstance/taskflow)** — TaskFlow — Kanban board with a repo-agent project manager. Powered by cocapn.
 - **[tasklog-ai](https://github.com/SuperInstance/tasklog-ai)** — Task Manager — AI-powered Task Manager
 - **[technician](https://github.com/SuperInstance/technician)** — Technician tooling
+- **[tells](https://github.com/SuperInstance/tells)**
 - **[temp](https://github.com/SuperInstance/temp)** — Utility for managing temporary files and processes.
 - **[template-fleet-agent](https://github.com/SuperInstance/template-fleet-agent)** — Template for fleet agent repos with devcontainer
 - **[templates](https://github.com/SuperInstance/templates)** — Preserved workspace artifact

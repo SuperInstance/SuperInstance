@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-19 10:39 UTC
+**Generated:** 2026-10-21 09:57 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -5924,6 +5924,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tda-c](https://github.com/SuperInstance/tda-c)
 - [technician](https://github.com/SuperInstance/technician)
 - [technician-paradigm](https://github.com/SuperInstance/technician-paradigm)
+- [tells](https://github.com/SuperInstance/tells)
 - [temp](https://github.com/SuperInstance/temp)
 - [templates](https://github.com/SuperInstance/templates)
 - [temporal-compress](https://github.com/SuperInstance/temporal-compress)

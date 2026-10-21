@@ -1,6 +1,6 @@
 # Fleet Catalog
-**Generated:** 2026-10-19 10:39 UTC
-**Total repositories:** 5296
+**Generated:** 2026-10-21 09:57 UTC
+**Total repositories:** 5297
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
@@ -1187,7 +1187,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[boat-agent](https://github.com/SuperInstance/boat-agent)** | JetsonClaw1 | Like Commander Data for your wheelhouse. Works with any marine IO from Navigation/Autopilot to IR en | 🟢 active |
 | **[bootstrap-spark](https://github.com/SuperInstance/bootstrap-spark)** | JetsonClaw1 | 🟢 Bootstrap Spark Protocol — self-describing agent knowledge in 6 markdown files. Copy the .spark/ d | 🔴 stalled |
 | **[capitaine-ai](https://github.com/SuperInstance/capitaine-ai)** | JetsonClaw1 | Capitaine.ai — Premium education and advanced agent capabilities. Cold on Deckboss hardware, unlocka | 🔴 stalled |
-| **[cartographer](https://github.com/SuperInstance/cartographer)** | JetsonClaw1 | The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed. | 🟢 active |
+| **[cartographer](https://github.com/SuperInstance/cartographer)** | JetsonClaw1 | The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed. | 🔴 stalled |
 | **[casting-call](https://github.com/SuperInstance/casting-call)** | JetsonClaw1 | Which model plays which role — fleet knowledge base of LLM capabilities, failure modes, and casting  | 🟢 active |
 | **[cf-deployments](https://github.com/SuperInstance/cf-deployments)** | JetsonClaw1 | The fleet Cloudflare Workers + Pages deployments: erised hosted gate, cot-quilt graph viewer, gotcha | 🟢 active |
 | **[cocapn](https://github.com/SuperInstance/cocapn)** | JetsonClaw1 | repo-first Agent for local or cloud. grow an agent in a repo using the repo itself as the muscle-mem | 🟢 active |
@@ -1683,7 +1683,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | Repo | Vessel | Purpose | Status |
 |------|--------|---------|--------|
 | **[.github](https://github.com/SuperInstance/.github)** | Various | SuperInstance organization profile and community health files | 🟢 active |
-| **[a2ui](https://github.com/SuperInstance/a2ui)** | Various | A2UI — Adaptive Interface. The Whistle Layer of Working Animal Architecture. | 🟢 active |
+| **[a2ui](https://github.com/SuperInstance/a2ui)** | Various | A2UI — Adaptive Interface. The Whistle Layer of Working Animal Architecture. | 🔴 stalled |
 | **[a2ui-cave-wall](https://github.com/SuperInstance/a2ui-cave-wall)** | Various | The cave wall translation layer — where agent text projections become human-readable | 🔴 stalled |
 | **[a2ui-components](https://github.com/SuperInstance/a2ui-components)** | Various | Reusable UI component library that renders from agent text descriptions | 🔴 stalled |
 | **[a2ui-protocol](https://github.com/SuperInstance/a2ui-protocol)** | Various | Agent-to-UI protocol in Rust — define how AI agents communicate with user interfaces, render compone | 🔴 stalled |
@@ -1692,7 +1692,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ab-testing-c](https://github.com/SuperInstance/ab-testing-c)** | Various | C port of ab-testing — chi-squared test, Welch's t-test, confidence intervals | 🔴 stalled |
 | **[ab-testing-rs](https://github.com/SuperInstance/ab-testing-rs)** | Various | Statistical A/B testing — chi-squared test, Welch's t-test, confidence intervals | 🔴 stalled |
 | **[ability-transfer](https://github.com/SuperInstance/ability-transfer)** | Various | 🏗️ Simulation lab — designing modular ability transfer between AI agents through git repos | 🟢 active |
-| **[able-bodied-crew](https://github.com/SuperInstance/able-bodied-crew)** | Various | The crew member who knows where everything is. Lightweight local retriever agent for SuperInstance w | 🟢 active |
+| **[able-bodied-crew](https://github.com/SuperInstance/able-bodied-crew)** | Various | The crew member who knows where everything is. Lightweight local retriever agent for SuperInstance w | 🔴 stalled |
 | **[aboracle](https://github.com/SuperInstance/aboracle)** | Various | Able-Bodied Oracle System — standardized, scalable, autonomous work system for Oracle1 | 🔴 stalled |
 | **[abstraction-planes](https://github.com/SuperInstance/abstraction-planes)** | Various | The Middle Way — decompose ideas to their optimal abstraction plane, not all the way to bytecode | 🟢 active |
 | **[ACE-Step-1.5](https://github.com/SuperInstance/ACE-Step-1.5)** | Various | Auto-created for sync 2026-08-13 | 🟢 active |
@@ -1953,7 +1953,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[branch-prediction](https://github.com/SuperInstance/branch-prediction)** | Various | Branch prediction simulation — Bimodal, GShare, and Perceptron predictors for pipeline optimization  | 🟢 active |
 | **[branch-sandbox](https://github.com/SuperInstance/branch-sandbox)** | Various | Isolated branch environments for testing vessel mutations safely | 🔴 stalled |
 | **[breakthrough-prospector](https://github.com/SuperInstance/breakthrough-prospector)** | Various | breakthrough-prospector | 🟢 active |
-| **[breed-registry](https://github.com/SuperInstance/breed-registry)** | Various | The Breed Registry: model selection as breeding selection | 🟢 active |
+| **[breed-registry](https://github.com/SuperInstance/breed-registry)** | Various | The Breed Registry: model selection as breeding selection | 🔴 stalled |
 | **[bregman-divergence](https://github.com/SuperInstance/bregman-divergence)** | Various | Bregman divergences: KL, squared Euclidean, Itakura-Saito, convex generating functions, and mirror d | 🔴 stalled |
 | **[brief-assembler](https://github.com/SuperInstance/brief-assembler)** | Various | Topics in, morning briefing out — the overnight research loop | 🟢 active |
 | **[brothers-keeper](https://github.com/SuperInstance/brothers-keeper)** | Various | The Lighthouse Keeper — external watchdog for agent runtimes (ZeroClaw fork). Watches resources, kil | 🔴 stalled |
@@ -2414,7 +2414,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[deckboss-app](https://github.com/SuperInstance/deckboss-app)** | Various | deckboss-app | 🟢 active |
 | **[deckboss-net](https://github.com/SuperInstance/deckboss-net)** | Various | Commercial fishing fleet operations — vessel tracking, fuel monitoring, crew management, and deliver | 🔴 stalled |
 | **[deckboss-site](https://github.com/SuperInstance/deckboss-site)** | Various | deckboss-site | 🟢 active |
-| **[deckhand-rs](https://github.com/SuperInstance/deckhand-rs)** | Various | Rust BM25 retriever. Zero-dep. 10-100x faster than Python. | 🟢 active |
+| **[deckhand-rs](https://github.com/SuperInstance/deckhand-rs)** | Various | Rust BM25 retriever. Zero-dep. 10-100x faster than Python. | 🔴 stalled |
 | **[decomp-agents](https://github.com/SuperInstance/decomp-agents)** | Various | Parallel autonomous agents for FFXIV decompilation matching — spawns workers in git worktrees with a | 🔴 stalled |
 | **[DeepGEMM](https://github.com/SuperInstance/DeepGEMM)** | Various | Fleet research: DeepSeek FP8 GEMM CUDA kernels — PTX tile marketplace candidate, FM→JC1 LoRA inferen | 🔴 stalled |
 | **[deepseek-harness-quilt](https://github.com/SuperInstance/deepseek-harness-quilt)** | Various | DeepSeek Harness: Everything is a Plugin. | 🟢 active |
@@ -2626,7 +2626,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fft-rs](https://github.com/SuperInstance/fft-rs)** | Various | Fast Fourier Transform in pure Rust — Cooley-Tukey radix-2, iterative FFT, IFFT, convolution, and DC | 🔴 stalled |
 | **[fiber-bundle](https://github.com/SuperInstance/fiber-bundle)** | Various | A Rust library for Fiber_bundle | 🟢 active |
 | **[fiber-category](https://github.com/SuperInstance/fiber-category)** | Various | Fiber categories and Grothendieck constructions for agent systems — organize and migrate agents acro | 🔴 stalled |
-| **[fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)** | Various | Budget governor whose limit scales by the golden ratio. | 🟢 active |
+| **[fibonacci-fence](https://github.com/SuperInstance/fibonacci-fence)** | Various | Budget governor whose limit scales by the golden ratio. | 🔴 stalled |
 | **[fibonacci-growth](https://github.com/SuperInstance/fibonacci-growth)** | Various | Fibonacci team growth → CR = 1/φ. Penrose outward, Mandelbrot inward. Pure Rust. | 🔴 stalled |
 | **[fibonacci-growth-v2](https://github.com/SuperInstance/fibonacci-growth-v2)** | Various | Fibonacci growth patterns for the SuperInstance fleet — scaling dynamics for distributed agent syste | 🔴 stalled |
 | **[fibonacci-heap](https://github.com/SuperInstance/fibonacci-heap)** | Various | A Rust library for Fibonacci Heap | 🟢 active |
@@ -4452,7 +4452,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[shell](https://github.com/SuperInstance/shell)** | Various | shell | 🔴 stalled |
 | **[shell-artisan-1](https://github.com/SuperInstance/shell-artisan-1)** | Various | PLATO Shell Artisan agent. Safe-command curator for the PLATO Shell agentic IDE — validates and cura | 🔴 stalled |
 | **[shell-history-analyzer](https://github.com/SuperInstance/shell-history-analyzer)** | Various | shell-history-analyzer - SuperInstance ecosystem crate | 🔴 stalled |
-| **[shepherds-console](https://github.com/SuperInstance/shepherds-console)** | Various | Single-pane operations for working animal infrastructure | 🟢 active |
+| **[shepherds-console](https://github.com/SuperInstance/shepherds-console)** | Various | Single-pane operations for working animal infrastructure | 🔴 stalled |
 | **[ship-log-modules](https://github.com/SuperInstance/ship-log-modules)** | Various | Modular add-ons for ship-log-search — maps, analytics, AIS, weather, engine hours | 🔴 stalled |
 | **[ship-log-search](https://github.com/SuperInstance/ship-log-search)** | Various | Semantic + spatial + timeline search for ship logs — time/location-stamped vessel records | 🔴 stalled |
 | **[ship-log-sync](https://github.com/SuperInstance/ship-log-sync)** | Various | Offline-first local SQLite sync for ship-log-search — works on the boat | 🔴 stalled |
@@ -4469,7 +4469,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[si-conservation-gauge-live](https://github.com/SuperInstance/si-conservation-gauge-live)** | Various | Live conservation gauge — real-time fleet budget visualization showing γ/η split across agents | 🔴 stalled |
 | **[si-conservation-python](https://github.com/SuperInstance/si-conservation-python)** | Various | Python bindings for SuperInstance conservation law — gamma + eta = total_budget via PyO3 | 🔴 stalled |
 | **[si-curvature-agent](https://github.com/SuperInstance/si-curvature-agent)** | Various | Proof of concept: Ollivier-Ricci curvature on agent interaction graphs predicts fleet convergence | 🔴 stalled |
-| **[si-exocortex-rs](https://github.com/SuperInstance/si-exocortex-rs)** | Various | si-exocortex-rs | 🟢 active |
+| **[si-exocortex-rs](https://github.com/SuperInstance/si-exocortex-rs)** | Various | si-exocortex-rs | 🔴 stalled |
 | **[si-feedback](https://github.com/SuperInstance/si-feedback)** | Various | Feedback processing and recommendation engine | 🟢 active |
 | **[si-fibration-timing](https://github.com/SuperInstance/si-fibration-timing)** | Various | Proof of concept: fiber bundles model timing channels — base=task space, fiber=timing manifold, conn | 🔴 stalled |
 | **[si-geometric-demo](https://github.com/SuperInstance/si-geometric-demo)** | Various | Proof of concept: geometric algebra multivectors in WASM — proving Cyberloop's Grassmannian tracking | 🔴 stalled |
@@ -4576,7 +4576,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[spectral-prosody-rs](https://github.com/SuperInstance/spectral-prosody-rs)** | Various | Spectral analysis of prosodic features in agent communication | 🔴 stalled |
 | **[spectral-shape](https://github.com/SuperInstance/spectral-shape)** | Various | Spectral methods for shape analysis of agent behavior distributions | 🔴 stalled |
 | **[spectral-transport](https://github.com/SuperInstance/spectral-transport)** | Various | Spectral transport theory — heat kernels, random walks, and diffusion on graphs via Laplacian eigens | 🔴 stalled |
-| **[spectro](https://github.com/SuperInstance/spectro)** | Various | Multi-model cognitive spectrograph. Split the beam. Read the spectrum. | 🟢 active |
+| **[spectro](https://github.com/SuperInstance/spectro)** | Various | Multi-model cognitive spectrograph. Split the beam. Read the spectrum. | 🔴 stalled |
 | **[splay-tree-rs](https://github.com/SuperInstance/splay-tree-rs)** | Various | Splay tree with zig/zig-zig/zig-zag operations, amortized O(log n) access, split/merge, sequential a | 🔴 stalled |
 | **[spline-instrument](https://github.com/SuperInstance/spline-instrument)** | Various | The graphing calculator as instrument. Sculpt waveforms with splines, hear them as sound, see qualit | 🔴 stalled |
 | **[spline-midi-smooth](https://github.com/SuperInstance/spline-midi-smooth)** | Various | 〰️ Spline interpolation for MIDI automation — bridge discrete CC events into smooth curves, eliminat | 🔴 stalled |
@@ -4744,6 +4744,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tda-rs](https://github.com/SuperInstance/tda-rs)** | Various | Topological Data Analysis in Rust — persistent homology, simplicial complexes, Mapper algorithm, Bet | 🔴 stalled |
 | **[technician](https://github.com/SuperInstance/technician)** | Various | Technician tooling | 🟢 active |
 | **[technician-paradigm](https://github.com/SuperInstance/technician-paradigm)** | Various | The human technician in the loop — training, micro-manufacturing economy, trust networks. 5-round RA | 🔴 stalled |
+| **[tells](https://github.com/SuperInstance/tells)** | Various | tells | 🟢 active |
 | **[temp](https://github.com/SuperInstance/temp)** | Various | Utility for managing temporary files and processes. | 🔴 stalled |
 | **[templates](https://github.com/SuperInstance/templates)** | Various | Preserved workspace artifact | 🔴 stalled |
 | **[temporal-compress](https://github.com/SuperInstance/temporal-compress)** | Various | temporal-compress | 🔴 stalled |
@@ -5144,7 +5145,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tminus-client](https://github.com/SuperInstance/tminus-client)** | Various | T-Minus Client SDK — Node.js client library and CLI for the t-minus dispatcher protocol | 🟢 active |
 | **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** | Various | T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration | 🟢 active |
 | **[tminus-music](https://github.com/SuperInstance/tminus-music)** | Various | T-minus musical event prediction using conservation spectral theory | 🔴 stalled |
-| **[tminus-os](https://github.com/SuperInstance/tminus-os)** | Various | Swarm coordination OS — wires the ecosystem into one .swarm/ directory | 🟢 active |
+| **[tminus-os](https://github.com/SuperInstance/tminus-os)** | Various | Swarm coordination OS — wires the ecosystem into one .swarm/ directory | 🔴 stalled |
 | **[tmux-quilt](https://github.com/SuperInstance/tmux-quilt)** | Various | tmux-quilt | 🔴 stalled |
 | **[token-stream](https://github.com/SuperInstance/token-stream)** | Various | Token streaming library for LLM inference in SuperInstance | 🔴 stalled |
 | **[token-wavelet](https://github.com/SuperInstance/token-wavelet)** | Various | AI token spending intelligence: wavelet decomposition, conservation law budgeting, and spectral mode | 🔴 stalled |
@@ -13508,7 +13509,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** JetsonClaw1
 - **Purpose:** The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed.
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [casting-call](https://github.com/SuperInstance/casting-call)
 - **Domain:** Hardware & Edge
@@ -16924,7 +16925,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** A2UI — Adaptive Interface. The Whistle Layer of Working Animal Architecture.
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [a2ui-cave-wall](https://github.com/SuperInstance/a2ui-cave-wall)
 - **Domain:** Other / Uncategorized
@@ -16987,7 +16988,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** The crew member who knows where everything is. Lightweight local retriever agent for SuperInstance workspaces.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [aboracle](https://github.com/SuperInstance/aboracle)
 - **Domain:** Other / Uncategorized
@@ -18814,7 +18815,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** The Breed Registry: model selection as breeding selection
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [bregman-divergence](https://github.com/SuperInstance/bregman-divergence)
 - **Domain:** Other / Uncategorized
@@ -22041,7 +22042,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Rust BM25 retriever. Zero-dep. 10-100x faster than Python.
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [decomp-agents](https://github.com/SuperInstance/decomp-agents)
 - **Domain:** Other / Uncategorized
@@ -23525,7 +23526,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Budget governor whose limit scales by the golden ratio.
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [fibonacci-growth](https://github.com/SuperInstance/fibonacci-growth)
 - **Domain:** Other / Uncategorized
@@ -36307,7 +36308,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Single-pane operations for working animal infrastructure
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [ship-log-modules](https://github.com/SuperInstance/ship-log-modules)
 - **Domain:** Other / Uncategorized
@@ -36426,7 +36427,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** si-exocortex-rs
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [si-feedback](https://github.com/SuperInstance/si-feedback)
 - **Domain:** Other / Uncategorized
@@ -37175,7 +37176,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Multi-model cognitive spectrograph. Split the beam. Read the spectrum.
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [splay-tree-rs](https://github.com/SuperInstance/splay-tree-rs)
 - **Domain:** Other / Uncategorized
@@ -38345,6 +38346,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Purpose:** The human technician in the loop — training, micro-manufacturing economy, trust networks. 5-round RA with GLM-5.1 and DeepSeek. Part of the Lucineer e
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
+
+### [tells](https://github.com/SuperInstance/tells)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** tells
+- **Research lineage:** Not yet categorized.
+- **Status:** active
 
 ### [temp](https://github.com/SuperInstance/temp)
 - **Domain:** Other / Uncategorized
@@ -41151,7 +41159,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Swarm coordination OS — wires the ecosystem into one .swarm/ directory
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [tmux-quilt](https://github.com/SuperInstance/tmux-quilt)
 - **Domain:** Other / Uncategorized

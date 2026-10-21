@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-10-19 10:39 UTC
-**Total repos:** 5296
+**Generated:** 2026-10-21 09:57 UTC
+**Total repos:** 5297
 
 ## Ai
 
@@ -4641,6 +4641,7 @@
 - **[technician](https://github.com/SuperInstance/technician)** — Technician tooling
 - **[technician-paradigm](https://github.com/SuperInstance/technician-paradigm)** — The human technician in the loop — training, micro-manufacturing economy, trust networks. 5-round RA
 - **[telepathy-c](https://github.com/SuperInstance/telepathy-c)** — Pure C11 A2A message transport — bare-metal 1050-byte messages, mailbox, router, receipts
+- **[tells](https://github.com/SuperInstance/tells)**
 - **[temp](https://github.com/SuperInstance/temp)** — Utility for managing temporary files and processes.
 - **[template-fleet-agent](https://github.com/SuperInstance/template-fleet-agent)** — Template for fleet agent repos with devcontainer
 - **[templates](https://github.com/SuperInstance/templates)** — Preserved workspace artifact

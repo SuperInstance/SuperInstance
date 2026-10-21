@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-10-19 10:39 UTC
-**Total repos:** 5296
+**Generated:** 2026-10-21 09:57 UTC
+**Total repos:** 5297
 
 ## A2A
 
@@ -4933,6 +4933,7 @@
 - **[tda-c](https://github.com/SuperInstance/tda-c)**
 - **[technician](https://github.com/SuperInstance/technician)** — Technician tooling
 - **[technician-paradigm](https://github.com/SuperInstance/technician-paradigm)** — The human technician in the loop — training, micro-manufacturing economy, trust networks. 5-round RA
+- **[tells](https://github.com/SuperInstance/tells)**
 - **[temp](https://github.com/SuperInstance/temp)** — Utility for managing temporary files and processes.
 - **[templates](https://github.com/SuperInstance/templates)** — Preserved workspace artifact
 - **[temporal-compress](https://github.com/SuperInstance/temporal-compress)**
