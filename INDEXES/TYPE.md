@@ -1,7 +1,7 @@
 # Index by Type
 
-**Generated:** 2026-10-21 09:57 UTC
-**Total repos:** 5297
+**Generated:** 2026-10-22 09:58 UTC
+**Total repos:** 5306
 
 ## Cli
 
@@ -379,6 +379,7 @@
 - **[bayesian-inference](https://github.com/SuperInstance/bayesian-inference)** — Bayesian inference engine — posterior update, conjugate priors, and MCMC sampling for probabilistic 
 - **[Bayesian-Multi-Armed-Bandits](https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits)** — Library for Bayesian multi-armed bandits.
 - **[bayesian-update](https://github.com/SuperInstance/bayesian-update)** — [package]
+- **[beam-quilt](https://github.com/SuperInstance/beam-quilt)** — State, transmission, algorithm — a patchwork architecture for distributed, self-coordinating intelli
 - **[bech32-encode](https://github.com/SuperInstance/bech32-encode)** — Bech32 encoding — BIP-173 checksummed encoding for SegWit addresses
 - **[become-ai](https://github.com/SuperInstance/become-ai)** — Become.ai — Self-evolving agent platform. Fork, mutate, improve. The agent IS the repo. Part of the 
 - **[belief-revision](https://github.com/SuperInstance/belief-revision)** — AGM belief revision theory for agents — formal epistemic state management in Rust
@@ -507,8 +508,11 @@
 - **[chern-classes](https://github.com/SuperInstance/chern-classes)** — Characteristic classes for vector bundles — Chern, Pontryagin, Todd classes
 - **[chess-dojo-v2](https://github.com/SuperInstance/chess-dojo-v2)** — Bulletproof PLATO chess room — ELO, ESP32 tiers, git-native
 - **[chess-engine](https://github.com/SuperInstance/chess-engine)** — Rust chess engine (forked from vdmo/chess) — transposition table patterns for guard2mask CSP solver
+- **[chiaroscuro-embedding](https://github.com/SuperInstance/chiaroscuro-embedding)**
 - **[chroma](https://github.com/SuperInstance/chroma)** — Search infrastructure for AI
 - **[chronicle-engine](https://github.com/SuperInstance/chronicle-engine)** — Universal distillation engine — assistants, people, characters, musicians, all the same math
+- **[chrono-flight](https://github.com/SuperInstance/chrono-flight)** — Scaffolding from the beam-quilt sorting pass (see repo README)
+- **[chrono-tensor](https://github.com/SuperInstance/chrono-tensor)**
 - **[circuit-breaker](https://github.com/SuperInstance/circuit-breaker)** — Circuit breaker pattern implementation for fault tolerance and resilience in distributed systems
 - **[circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)** — Go library implementing the circuit breaker pattern for fault tolerance and graceful degradation. St
 - **[circuit-breaker-rs](https://github.com/SuperInstance/circuit-breaker-rs)** — Circuit breaker pattern implementation in Rust with state machine, metrics, and health check integra
@@ -745,6 +749,7 @@
 - **[context-lattice](https://github.com/SuperInstance/context-lattice)** — Multi-dimensional context organization across fleet
 - **[context-limits](https://github.com/SuperInstance/context-limits)** — Analyze and enforce context window boundaries
 - **[context-recycler](https://github.com/SuperInstance/context-recycler)** — Reclaim and repurpose context across fleet operations
+- **[continuum-runtime](https://github.com/SuperInstance/continuum-runtime)** — Scaffolding from the beam-quilt sorting pass (see repo README)
 - **[contributor-hub](https://github.com/SuperInstance/contributor-hub)** — Profile and track all fleet contributors and their contributions
 - **[conversation-archive](https://github.com/SuperInstance/conversation-archive)** — Full conversation archive: 9 days, 1632 messages, every decision, project, and idea documented.
 - **[convex-hull-rs](https://github.com/SuperInstance/convex-hull-rs)** — Convex hull algorithms in pure Rust: Graham scan, Jarvis march, Quickhull, Chan's algorithm
@@ -3122,6 +3127,7 @@
 - **[quilt-egg](https://github.com/SuperInstance/quilt-egg)** — The smallest Quilt substrate that can BE — DNA-first alignment, cellular relationships as first-clas
 - **[quilt-egg-rust](https://github.com/SuperInstance/quilt-egg-rust)** — Rust port of the Quilt Egg substrate — DNA-first alignment, polyformalism canary verified
 - **[quilt-elf](https://github.com/SuperInstance/quilt-elf)** — The invisible elves — Cloudflare Workers doing background housekeeping, daily-limit-aware, self-impr
+- **[quilt-engine](https://github.com/SuperInstance/quilt-engine)** — Scaffolding from the beam-quilt sorting pass (see repo README)
 - **[quilt-engine-ports](https://github.com/SuperInstance/quilt-engine-ports)** — The quilt 5+1 opcodes (BIND/LINK/EFFECT/VIEW/TICK + FORGET) mapped to Godot, Unity, and Unreal — cel
 - **[quilt-esp32](https://github.com/SuperInstance/quilt-esp32)** — A Quilt reactive runtime for ESP32-class microcontrollers. no_std Rust, ~3KB flash, sensors as cells
 - **[quilt-evolve](https://github.com/SuperInstance/quilt-evolve)** — Self-improvement loops for Quilt. LLMs as adversarial input generators and output judges. Evolve any
@@ -3394,6 +3400,7 @@
 - **[rom24-quickmud](https://github.com/SuperInstance/rom24-quickmud)** — ROM 2.4b6 with a few additional features
 - **[room-cell](https://github.com/SuperInstance/room-cell)** — The fundamental room cell — standalone but composable atom of the Grand Pattern architecture
 - **[room-dds-bridge](https://github.com/SuperInstance/room-dds-bridge)** — Auto-configure DDS domains from ternary-mud room topology
+- **[room-lens](https://github.com/SuperInstance/room-lens)** — Phone room-map page: live ASCII viewfinder with adaptive fidelity and walkabout capture bundles for 
 - **[room-lifecycle](https://github.com/SuperInstance/room-lifecycle)** — PLATO room lifecycle: rooms that are born, learn, mature, and dissolve when perfectly adapted
 - **[room-micro-models](https://github.com/SuperInstance/room-micro-models)** — room-micro-models
 - **[room-render](https://github.com/SuperInstance/room-render)** — room-render
@@ -4833,6 +4840,7 @@
 - **[sketch-self-hosting-construct](https://github.com/SuperInstance/sketch-self-hosting-construct)** — Oracle2 fleet construct: 4 Rust services, 13MB binary, zero API cost pulse stream with SVM+entropy+s
 - **[sketch-ternary-kihn-metaphor](https://github.com/SuperInstance/sketch-ternary-kihn-metaphor)** — ARM64 free tier as firing kihn - API brain as dissertation committee. Local ternary math at zero cos
 - **[soundcrab](https://github.com/SuperInstance/soundcrab)** — Multi-speaker audio router for Windows — per-device volume, EQ, compression. WASAPI loopback → N out
+- **[splat-room](https://github.com/SuperInstance/splat-room)** — ASCII-guided 3D Gaussian splatting for rapid room learning - ASCII/edge structure as the middle laye
 - **[superinstance-api](https://github.com/SuperInstance/superinstance-api)** — The fleet's growing context brain: tiles + meaning + reflex + field + growth, with MCP tooling
 - **[SuperInstance-archive](https://github.com/SuperInstance/SuperInstance-archive)** — SuperInstance portfolio snapshot: 6000+ files of operational scripts, multi-bot coordination, multi-
 - **[superinstance-mcp](https://github.com/SuperInstance/superinstance-mcp)** — MCP server exposing the SuperInstance fleet as tools to Claude Code
@@ -4856,6 +4864,7 @@
 - **[arm-neon-eisenstein-bench](https://github.com/SuperInstance/arm-neon-eisenstein-bench)** — ARM NEON benchmarks and SIMD analysis for Eisenstein integer arithmetic
 - **[avoidance-cascade](https://github.com/SuperInstance/avoidance-cascade)** — Models the avoidance cascade phenomenon from ternary agent systems and provides tools to detect and 
 - **[bench-compare](https://github.com/SuperInstance/bench-compare)** — Parse, compare, and track cargo benchmark results with regression detection
+- **[blender-bridge](https://github.com/SuperInstance/blender-bridge)** — Splat/ASCII room maps into Blender scenes, agents as the interface to the Blender toolset
 - **[clark-agent](https://github.com/SuperInstance/clark-agent)** — A small, typed, hookable agent loop. Provider-agnostic, sandbox-agnostic, tooling-agnostic. Battle t
 - **[clawcanvas](https://github.com/SuperInstance/clawcanvas)** — Web-based canvas drawing tool.
 - **[clawmatrix](https://github.com/SuperInstance/clawmatrix)** — Matrix manipulation tool.

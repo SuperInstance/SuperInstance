@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-21 09:57 UTC
+**Generated:** 2026-10-22 09:58 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1575,6 +1575,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [bering-sea-architecture](https://github.com/SuperInstance/bering-sea-architecture)
 - [beta-test-elena](https://github.com/SuperInstance/beta-test-elena)
 - [bid-engine](https://github.com/SuperInstance/bid-engine)
+- [blender-bridge](https://github.com/SuperInstance/blender-bridge)
 - [boat-agent](https://github.com/SuperInstance/boat-agent)
 - [boltzmann-agent](https://github.com/SuperInstance/boltzmann-agent)
 - [bootcamp](https://github.com/SuperInstance/bootcamp)
@@ -3197,6 +3198,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ai-writings-generation-plato](https://github.com/SuperInstance/ai-writings-generation-plato)
 - [arch-gateway-room-clean](https://github.com/SuperInstance/arch-gateway-room-clean)
 - [bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)
+- [blender-bridge](https://github.com/SuperInstance/blender-bridge)
 - [boat-agent](https://github.com/SuperInstance/boat-agent)
 - [businesslog-agent](https://github.com/SuperInstance/businesslog-agent)
 - [capitaine-agent](https://github.com/SuperInstance/capitaine-agent)
@@ -3675,6 +3677,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [recovered-copy-20260824-platos-shell](https://github.com/SuperInstance/recovered-copy-20260824-platos-shell)
 - [room-cell](https://github.com/SuperInstance/room-cell)
 - [room-dds-bridge](https://github.com/SuperInstance/room-dds-bridge)
+- [room-lens](https://github.com/SuperInstance/room-lens)
 - [room-lifecycle](https://github.com/SuperInstance/room-lifecycle)
 - [room-micro-models](https://github.com/SuperInstance/room-micro-models)
 - [room-render](https://github.com/SuperInstance/room-render)
@@ -3689,6 +3692,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [signal-chain](https://github.com/SuperInstance/signal-chain)
 - [smp-flux-bridge](https://github.com/SuperInstance/smp-flux-bridge)
 - [spacetime-plato](https://github.com/SuperInstance/spacetime-plato)
+- [splat-room](https://github.com/SuperInstance/splat-room)
 - [starter-shell](https://github.com/SuperInstance/starter-shell)
 - [studylog-agent](https://github.com/SuperInstance/studylog-agent)
 - [substrate-game-engine](https://github.com/SuperInstance/substrate-game-engine)
@@ -4132,6 +4136,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [bayesian-inference](https://github.com/SuperInstance/bayesian-inference)
 - [bayesian-update](https://github.com/SuperInstance/bayesian-update)
 - [bch-code](https://github.com/SuperInstance/bch-code)
+- [beam-quilt](https://github.com/SuperInstance/beam-quilt)
 - [bech32-encode](https://github.com/SuperInstance/bech32-encode)
 - [bench-compare](https://github.com/SuperInstance/bench-compare)
 - [bench-runner](https://github.com/SuperInstance/bench-runner)
@@ -4229,8 +4234,11 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [cheflog-ai](https://github.com/SuperInstance/cheflog-ai)
 - [chern-classes](https://github.com/SuperInstance/chern-classes)
 - [chiaroscuro](https://github.com/SuperInstance/chiaroscuro)
+- [chiaroscuro-embedding](https://github.com/SuperInstance/chiaroscuro-embedding)
 - [chroma](https://github.com/SuperInstance/chroma)
 - [chronicle-engine](https://github.com/SuperInstance/chronicle-engine)
+- [chrono-flight](https://github.com/SuperInstance/chrono-flight)
+- [chrono-tensor](https://github.com/SuperInstance/chrono-tensor)
 - [circuit-breaker](https://github.com/SuperInstance/circuit-breaker)
 - [circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)
 - [circuit-breaker-rs](https://github.com/SuperInstance/circuit-breaker-rs)
@@ -4368,6 +4376,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [container-runtime](https://github.com/SuperInstance/container-runtime)
 - [context-limits](https://github.com/SuperInstance/context-limits)
 - [context-serializer](https://github.com/SuperInstance/context-serializer)
+- [continuum-runtime](https://github.com/SuperInstance/continuum-runtime)
 - [conversation-archive](https://github.com/SuperInstance/conversation-archive)
 - [conversation-toolkit](https://github.com/SuperInstance/conversation-toolkit)
 - [convex-hull-rs](https://github.com/SuperInstance/convex-hull-rs)
@@ -5450,6 +5459,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-edge-ml](https://github.com/SuperInstance/quilt-edge-ml)
 - [quilt-edge-node](https://github.com/SuperInstance/quilt-edge-node)
 - [quilt-elf](https://github.com/SuperInstance/quilt-elf)
+- [quilt-engine](https://github.com/SuperInstance/quilt-engine)
 - [quilt-engine-ports](https://github.com/SuperInstance/quilt-engine-ports)
 - [quilt-esp32](https://github.com/SuperInstance/quilt-esp32)
 - [quilt-evolve](https://github.com/SuperInstance/quilt-evolve)
@@ -6353,6 +6363,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lau-room-acoustics](https://github.com/SuperInstance/lau-room-acoustics)
 - [plato-mythos](https://github.com/SuperInstance/plato-mythos)
 - [quality-gate-stream](https://github.com/SuperInstance/quality-gate-stream)
+- [splat-room](https://github.com/SuperInstance/splat-room)
 - [ternary-depth](https://github.com/SuperInstance/ternary-depth)
 
 ## Vessel

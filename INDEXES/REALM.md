@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-10-21 09:57 UTC
-**Total repos:** 5297
+**Generated:** 2026-10-22 09:58 UTC
+**Total repos:** 5306
 
 ## Ai
 
@@ -312,6 +312,7 @@
 - **[Bayesian-Multi-Armed-Bandits](https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits)** — Library for Bayesian multi-armed bandits.
 - **[bayesian-update](https://github.com/SuperInstance/bayesian-update)** — [package]
 - **[bch-code](https://github.com/SuperInstance/bch-code)** — BCH error-correcting codes — cyclic codes with configurable error correction capability for noisy ch
+- **[beam-quilt](https://github.com/SuperInstance/beam-quilt)** — State, transmission, algorithm — a patchwork architecture for distributed, self-coordinating intelli
 - **[bech32-encode](https://github.com/SuperInstance/bech32-encode)** — Bech32 encoding — BIP-173 checksummed encoding for SegWit addresses
 - **[become-ai](https://github.com/SuperInstance/become-ai)** — Become.ai — Self-evolving agent platform. Fork, mutate, improve. The agent IS the repo. Part of the 
 - **[belief-revision](https://github.com/SuperInstance/belief-revision)** — AGM belief revision theory for agents — formal epistemic state management in Rust
@@ -335,6 +336,7 @@
 - **[blake2-tree](https://github.com/SuperInstance/blake2-tree)** — BLAKE2 hash tree — parallelizable cryptographic hashing with Merkle tree authentication
 - **[blake3-hash](https://github.com/SuperInstance/blake3-hash)** — BLAKE3 cryptographic hash — tree-based, SIMD-accelerated, XOF mode
 - **[blame-tracker](https://github.com/SuperInstance/blame-tracker)** — Git blame tracker — maps code lines to commits with blame propagation across refactors
+- **[blender-bridge](https://github.com/SuperInstance/blender-bridge)** — Splat/ASCII room maps into Blender scenes, agents as the interface to the Blender toolset
 - **[blog-posts](https://github.com/SuperInstance/blog-posts)** — Technical blog posts on GPU proofs, constraint systems, and related topics
 - **[bloom-filter](https://github.com/SuperInstance/bloom-filter)** — Space-efficient probabilistic set membership — ~10 bits/element for 1% false positive rate
 - **[bloom-filter-extended](https://github.com/SuperInstance/bloom-filter-extended)** — Extended Bloom filter with counting support — deletable entries via counter arrays
@@ -478,8 +480,11 @@
 - **[chess-dojo-v2](https://github.com/SuperInstance/chess-dojo-v2)** — Bulletproof PLATO chess room — ELO, ESP32 tiers, git-native
 - **[chess-engine](https://github.com/SuperInstance/chess-engine)** — Rust chess engine (forked from vdmo/chess) — transposition table patterns for guard2mask CSP solver
 - **[chiaroscuro](https://github.com/SuperInstance/chiaroscuro)** — Real-time webcam-to-text rendering — characters are shapes, not pixels. Four doors: Mirror, Sculptor
+- **[chiaroscuro-embedding](https://github.com/SuperInstance/chiaroscuro-embedding)**
 - **[chroma](https://github.com/SuperInstance/chroma)** — Search infrastructure for AI
 - **[chronicle-engine](https://github.com/SuperInstance/chronicle-engine)** — Universal distillation engine — assistants, people, characters, musicians, all the same math
+- **[chrono-flight](https://github.com/SuperInstance/chrono-flight)** — Scaffolding from the beam-quilt sorting pass (see repo README)
+- **[chrono-tensor](https://github.com/SuperInstance/chrono-tensor)**
 - **[cicd-agent](https://github.com/SuperInstance/cicd-agent)** — Fleet CI/CD pipeline engine — git polling, test runner, webhook receiver, deployment
 - **[circuit-breaker](https://github.com/SuperInstance/circuit-breaker)** — Circuit breaker pattern implementation for fault tolerance and resilience in distributed systems
 - **[circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)** — Go library implementing the circuit breaker pattern for fault tolerance and graceful degradation. St
@@ -796,6 +801,7 @@
 - **[context-limits](https://github.com/SuperInstance/context-limits)** — Analyze and enforce context window boundaries
 - **[context-recycler](https://github.com/SuperInstance/context-recycler)** — Reclaim and repurpose context across fleet operations
 - **[context-serializer](https://github.com/SuperInstance/context-serializer)** — Serialize and deserialize context for transfer between vessels
+- **[continuum-runtime](https://github.com/SuperInstance/continuum-runtime)** — Scaffolding from the beam-quilt sorting pass (see repo README)
 - **[contributor-hub](https://github.com/SuperInstance/contributor-hub)** — Profile and track all fleet contributors and their contributions
 - **[conversation-archive](https://github.com/SuperInstance/conversation-archive)** — Full conversation archive: 9 days, 1632 messages, every decision, project, and idea documented.
 - **[conversation-toolkit](https://github.com/SuperInstance/conversation-toolkit)** — Toolkit for conversational AI.
@@ -3817,6 +3823,7 @@
 - **[quilt-egg](https://github.com/SuperInstance/quilt-egg)** — The smallest Quilt substrate that can BE — DNA-first alignment, cellular relationships as first-clas
 - **[quilt-egg-rust](https://github.com/SuperInstance/quilt-egg-rust)** — Rust port of the Quilt Egg substrate — DNA-first alignment, polyformalism canary verified
 - **[quilt-elf](https://github.com/SuperInstance/quilt-elf)** — The invisible elves — Cloudflare Workers doing background housekeeping, daily-limit-aware, self-impr
+- **[quilt-engine](https://github.com/SuperInstance/quilt-engine)** — Scaffolding from the beam-quilt sorting pass (see repo README)
 - **[quilt-engine-ports](https://github.com/SuperInstance/quilt-engine-ports)** — The quilt 5+1 opcodes (BIND/LINK/EFFECT/VIEW/TICK + FORGET) mapped to Godot, Unity, and Unreal — cel
 - **[quilt-esp32](https://github.com/SuperInstance/quilt-esp32)** — A Quilt reactive runtime for ESP32-class microcontrollers. no_std Rust, ~3KB flash, sensors as cells
 - **[quilt-evolve](https://github.com/SuperInstance/quilt-evolve)** — Self-improvement loops for Quilt. LLMs as adversarial input generators and output judges. Evolve any
@@ -4142,6 +4149,7 @@
 - **[rom24-quickmud](https://github.com/SuperInstance/rom24-quickmud)** — ROM 2.4b6 with a few additional features
 - **[room-cell](https://github.com/SuperInstance/room-cell)** — The fundamental room cell — standalone but composable atom of the Grand Pattern architecture
 - **[room-dds-bridge](https://github.com/SuperInstance/room-dds-bridge)** — Auto-configure DDS domains from ternary-mud room topology
+- **[room-lens](https://github.com/SuperInstance/room-lens)** — Phone room-map page: live ASCII viewfinder with adaptive fidelity and walkabout capture bundles for 
 - **[room-lifecycle](https://github.com/SuperInstance/room-lifecycle)** — PLATO room lifecycle: rooms that are born, learn, mature, and dissolve when perfectly adapted
 - **[room-micro-models](https://github.com/SuperInstance/room-micro-models)** — room-micro-models
 - **[room-render](https://github.com/SuperInstance/room-render)** — room-render
@@ -4422,6 +4430,7 @@
 - **[spectral-spreadsheet](https://github.com/SuperInstance/spectral-spreadsheet)** — The Second Moment — spreadsheet where formulas compute spectral graph quantities
 - **[spectral-transport](https://github.com/SuperInstance/spectral-transport)** — Spectral transport theory — heat kernels, random walks, and diffusion on graphs via Laplacian eigens
 - **[spectro](https://github.com/SuperInstance/spectro)** — Multi-model cognitive spectrograph. Split the beam. Read the spectrum.
+- **[splat-room](https://github.com/SuperInstance/splat-room)** — ASCII-guided 3D Gaussian splatting for rapid room learning - ASCII/edge structure as the middle laye
 - **[splay-tree-rs](https://github.com/SuperInstance/splay-tree-rs)** — Splay tree with zig/zig-zig/zig-zag operations, amortized O(log n) access, split/merge, sequential a
 - **[spline-instrument](https://github.com/SuperInstance/spline-instrument)** — The graphing calculator as instrument. Sculpt waveforms with splines, hear them as sound, see qualit
 - **[spline-midi-smooth](https://github.com/SuperInstance/spline-midi-smooth)** — 〰️ Spline interpolation for MIDI automation — bridge discrete CC events into smooth curves, eliminat

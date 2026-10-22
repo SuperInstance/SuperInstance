@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-10-21 09:57 UTC
-**Total repos:** 5297
+**Generated:** 2026-10-22 09:58 UTC
+**Total repos:** 5306
 
 ## A2A
 
@@ -2333,6 +2333,7 @@
 - **[ai-writings-generation-plato](https://github.com/SuperInstance/ai-writings-generation-plato)** — AI writings on generative systems and Plato — part of the SuperInstance fleet ecosystem
 - **[arch-gateway-room-clean](https://github.com/SuperInstance/arch-gateway-room-clean)** — MCP server that routes every request to the cheapest LLM that can actually do the job. Cost-in-respo
 - **[bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)** — Tiny C PLATO client for ESP32/RP2040 + embodiment protocol: agents discover IoT devices as MUD rooms
+- **[blender-bridge](https://github.com/SuperInstance/blender-bridge)** — Splat/ASCII room maps into Blender scenes, agents as the interface to the Blender toolset
 - **[businesslog-agent](https://github.com/SuperInstance/businesslog-agent)** — businesslog domain agent for PLATO fleet
 - **[capitaine-agent](https://github.com/SuperInstance/capitaine-agent)** — Captain's AI first mate for captaine.ai — voyage logging, crew coordination, maritime Q&A via PLATO
 - **[cargo-line-tycoon](https://github.com/SuperInstance/cargo-line-tycoon)** — Cargo Line Tycoon - polyformal Quilt-native game + classroom with locale-specific pedagogy
@@ -2775,6 +2776,7 @@
 - **[recovered-copy-20260824-platos-shell](https://github.com/SuperInstance/recovered-copy-20260824-platos-shell)**
 - **[room-cell](https://github.com/SuperInstance/room-cell)** — The fundamental room cell — standalone but composable atom of the Grand Pattern architecture
 - **[room-dds-bridge](https://github.com/SuperInstance/room-dds-bridge)** — Auto-configure DDS domains from ternary-mud room topology
+- **[room-lens](https://github.com/SuperInstance/room-lens)** — Phone room-map page: live ASCII viewfinder with adaptive fidelity and walkabout capture bundles for 
 - **[room-lifecycle](https://github.com/SuperInstance/room-lifecycle)** — PLATO room lifecycle: rooms that are born, learn, mature, and dissolve when perfectly adapted
 - **[room-micro-models](https://github.com/SuperInstance/room-micro-models)** — room-micro-models
 - **[room-render](https://github.com/SuperInstance/room-render)** — room-render
@@ -3057,6 +3059,7 @@
 - **[Bayesian-Multi-Armed-Bandits](https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits)** — Library for Bayesian multi-armed bandits.
 - **[bayesian-update](https://github.com/SuperInstance/bayesian-update)** — [package]
 - **[bch-code](https://github.com/SuperInstance/bch-code)** — BCH error-correcting codes — cyclic codes with configurable error correction capability for noisy ch
+- **[beam-quilt](https://github.com/SuperInstance/beam-quilt)** — State, transmission, algorithm — a patchwork architecture for distributed, self-coordinating intelli
 - **[bech32-encode](https://github.com/SuperInstance/bech32-encode)** — Bech32 encoding — BIP-173 checksummed encoding for SegWit addresses
 - **[bench-compare](https://github.com/SuperInstance/bench-compare)** — Parse, compare, and track cargo benchmark results with regression detection
 - **[bench-runner](https://github.com/SuperInstance/bench-runner)** — A Rust library for Bench Runner
@@ -3160,8 +3163,11 @@
 - **[cheflog-ai](https://github.com/SuperInstance/cheflog-ai)** — AI chef companion — recipe management, meal prep, cooking techniques
 - **[chern-classes](https://github.com/SuperInstance/chern-classes)** — Characteristic classes for vector bundles — Chern, Pontryagin, Todd classes
 - **[chiaroscuro](https://github.com/SuperInstance/chiaroscuro)** — Real-time webcam-to-text rendering — characters are shapes, not pixels. Four doors: Mirror, Sculptor
+- **[chiaroscuro-embedding](https://github.com/SuperInstance/chiaroscuro-embedding)**
 - **[chroma](https://github.com/SuperInstance/chroma)** — Search infrastructure for AI
 - **[chronicle-engine](https://github.com/SuperInstance/chronicle-engine)** — Universal distillation engine — assistants, people, characters, musicians, all the same math
+- **[chrono-flight](https://github.com/SuperInstance/chrono-flight)** — Scaffolding from the beam-quilt sorting pass (see repo README)
+- **[chrono-tensor](https://github.com/SuperInstance/chrono-tensor)**
 - **[circuit-breaker](https://github.com/SuperInstance/circuit-breaker)** — Circuit breaker pattern implementation for fault tolerance and resilience in distributed systems
 - **[circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)** — Go library implementing the circuit breaker pattern for fault tolerance and graceful degradation. St
 - **[circuit-breaker-rs](https://github.com/SuperInstance/circuit-breaker-rs)** — Circuit breaker pattern implementation in Rust with state machine, metrics, and health check integra
@@ -3303,6 +3309,7 @@
 - **[container-runtime](https://github.com/SuperInstance/container-runtime)** — A Rust library for Container Runtime
 - **[context-limits](https://github.com/SuperInstance/context-limits)** — Analyze and enforce context window boundaries
 - **[context-serializer](https://github.com/SuperInstance/context-serializer)** — Serialize and deserialize context for transfer between vessels
+- **[continuum-runtime](https://github.com/SuperInstance/continuum-runtime)** — Scaffolding from the beam-quilt sorting pass (see repo README)
 - **[conversation-archive](https://github.com/SuperInstance/conversation-archive)** — Full conversation archive: 9 days, 1632 messages, every decision, project, and idea documented.
 - **[conversation-toolkit](https://github.com/SuperInstance/conversation-toolkit)** — Toolkit for conversational AI.
 - **[convex-hull-rs](https://github.com/SuperInstance/convex-hull-rs)** — Convex hull algorithms in pure Rust: Graham scan, Jarvis march, Quickhull, Chan's algorithm
@@ -4436,6 +4443,7 @@
 - **[quilt-edge-ml](https://github.com/SuperInstance/quilt-edge-ml)** — Quilt edge ML — out-of-core learning, ring buffer, first/last mile filters, TFLite/EI/ONNX substrate
 - **[quilt-edge-node](https://github.com/SuperInstance/quilt-edge-node)** — Quilt edge node — plug-and-play UNO Q Quilt cell with network-keyed identity
 - **[quilt-elf](https://github.com/SuperInstance/quilt-elf)** — The invisible elves — Cloudflare Workers doing background housekeeping, daily-limit-aware, self-impr
+- **[quilt-engine](https://github.com/SuperInstance/quilt-engine)** — Scaffolding from the beam-quilt sorting pass (see repo README)
 - **[quilt-engine-ports](https://github.com/SuperInstance/quilt-engine-ports)** — The quilt 5+1 opcodes (BIND/LINK/EFFECT/VIEW/TICK + FORGET) mapped to Godot, Unity, and Unreal — cel
 - **[quilt-esp32](https://github.com/SuperInstance/quilt-esp32)** — A Quilt reactive runtime for ESP32-class microcontrollers. no_std Rust, ~3KB flash, sensors as cells
 - **[quilt-evolve](https://github.com/SuperInstance/quilt-evolve)** — Self-improvement loops for Quilt. LLMs as adversarial input generators and output judges. Evolve any
@@ -5368,6 +5376,7 @@
 - **[lau-room-acoustics](https://github.com/SuperInstance/lau-room-acoustics)**
 - **[plato-mythos](https://github.com/SuperInstance/plato-mythos)** — PLATO-native Recurrent-Depth Transformer — rooms as MoE experts, tiles as KV, deadband as ACT haltin
 - **[quality-gate-stream](https://github.com/SuperInstance/quality-gate-stream)** — Quality Gate Stream — novelty × correctness × completeness × depth scoring. Part of Cocapn reverse-a
+- **[splat-room](https://github.com/SuperInstance/splat-room)** — ASCII-guided 3D Gaussian splatting for rapid room learning - ASCII/edge structure as the middle laye
 - **[ternary-depth](https://github.com/SuperInstance/ternary-depth)** — Depth measurement and pressure modeling for nested ternary systems
 
 ## Voice-Signature
