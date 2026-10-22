@@ -64,7 +64,7 @@ The rest reveals itself through use.
 > Repeat.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Repos](https://img.shields.io/badge/repos-500%2B-success)](https://github.com/SuperInstance?tab=repositories)
+[![Repos](https://img.shields.io/badge/repos-5%2C300%2B-success)](https://github.com/SuperInstance?tab=repositories)
 [![Tests](https://img.shields.io/badge/tests-6%2C000%2B-blue)](https://github.com/SuperInstance/quilt)
 [![Canon](https://img.shields.io/badge/canon-9%2C000%2B_pieces-orange)](https://ai-writings.pages.dev)
 [![Live Sites](https://img.shields.io/badge/live_sites-14_green)](https://fleet-dashboard.casey-digennaro.workers.dev)
@@ -253,9 +253,6 @@ If you've got a better idea than mine, I want to learn from it.
 ---
 
 
-![proof-of-concept-42](proof-of-concept-42.jpg)
-a couple casual prompts and a half day of a claw eyeing the chart and sounder. we don't software suites - we need better tools.
-
 **[STITCH](https://github.com/SuperInstance/mavis-substrate-walker).** Collect a terrain from the wild. **[WITNESS](https://github.com/SuperInstance/moth-ledger).** Receipt every step on a chain that grows like tree-rings. **[PROMOTE](https://github.com/SuperInstance/quilt-live-canon).** Move what survives into the canon. The whole project is these three acts.
 
 We say **cell** for the smallest addressable unit — one input, one output, one witness. We say **port** for the address that wraps a cell and lets it project across [Python](https://github.com/SuperInstance/quilt-port), [Web](https://github.com/SuperInstance/quilt-port), [ESP32](https://github.com/SuperInstance/quilt-port), or [ideation](https://github.com/SuperInstance/AI-Writings). We say **Quilt** for the spreadsheet where every cell is live and addressable, the same way every cable in [Propellerhead Reason](https://en.wikipedia.org/wiki/Reason_(software)) was live and addressable.
@@ -293,6 +290,20 @@ And it is **quilts inside quilts — there is no outside.** A loop lives in a se
 
 ---
 
+![Two vessels at dawn, wakes below, a low rainbow between them, and overhead a quilt of light neither boat owns](signals-at-dawn.jpg)
+
+## Two items
+
+Everything here, at bottom, keeps two things — and they are the same two things a person keeps.
+
+An **active log**: your current readings of the world, from your station, each one dated. Your own state you know first-hand. Everything else reaches you as traces and renderings — a wake on the water, a voice over the radio — and readings age, so you steer partly by the wake in the present state, predicting where things are now. There is no God's-eye view, for anyone, ever. Twelve people in a room are twelve perspectives, and a quorum of them still doesn't have the sighted view.
+
+An **active ledger**: not balances — crossings. What left you, booked as a send; what reached the other side, booked as a receive; and the agreement between the two records is the shared reality the two of you then operate in. A contract is just an early ledger entry: an algorithm for future crossings, agreed in advance. Shared state is never stored anywhere. It exists where two sovereign records agree, and nowhere else.
+
+A cell, an agent, a boat, a person: an active log, an active ledger, and the seams between them. The formal statement lives in the [beam-quilt SPEC](https://github.com/SuperInstance/beam-quilt/blob/main/SPEC.md); the thinking behind it, dated as it happened, in the [ideation notes](https://github.com/SuperInstance/SuperInstance/tree/main/documents/ideation).
+
+---
+
 ## Reading order
 
 New here. Read in this order:
@@ -312,6 +323,8 @@ The door is behind you. The night is outside. The green lights pulse on the boar
 
 ## The fleet, today
 
+**The beam-quilt programme (October 2026):** [beam-quilt](https://github.com/SuperInstance/beam-quilt) (the spec: state → transmission → state, receivers sovereign, every crossing booked on both sides) · [quilt-engine](https://github.com/SuperInstance/quilt-engine) (the reference implementation) · [chrono-tensor](https://github.com/SuperInstance/chrono-tensor) (time-first: many iterators, shifting overlapping context windows) · [chrono-flight](https://github.com/SuperInstance/chrono-flight) (the fleet's flight recorder) · [continuum-runtime](https://github.com/SuperInstance/continuum-runtime) (the runtime sketch) · [tells](https://github.com/SuperInstance/tells) (leaderless sensor neurons — a line of GPS tells along a hull, fused into a steering compass).
+
 Active this session and shipping: [Syzygy](https://github.com/SuperInstance/Syzygy) (the fused kernel, diffused from a seed by marks) · [cargo-line-tycoon](https://cargo-line-tycoon.pages.dev) (a reader's-fold tycoon, live) · [qthe](https://qthe-looking-glass.pages.dev) (the Looking Glass — paint a shared address, watch two distant cells bridge; real IBM-quantum seeds) · [exoj](https://github.com/SuperInstance/exoj) (the field that holds probabilities open) · [labs/jev-fold + labs/weakest-claim](https://github.com/SuperInstance/AI-Writings/tree/main/labs) (a tool reused to build a better tool) · [micromoth-quilt](https://github.com/SuperInstance/micromoth-quilt) (keyless quantum-wow + BYO-key real) · [quilt-gpu-lab](https://github.com/SuperInstance/quilt-gpu-lab) · [fleet-seeds](https://github.com/SuperInstance/fleet-seeds) (the cross-pollination generator + fleet graph) · [quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare) (the budgeted-JEV drop-in).
 
 **The wave-64 additions (2026-10-01, receipted):** [cot-quilt](https://github.com/SuperInstance/cot-quilt) — the CoT-decomposition cell: a large model's chain-of-thought becomes a cellular graph (deepseek-flash splits, typesafe.ai wires load-bearing scores and dependency edges, mothquantum certifies the seeds, the large model judges its own decomposition at 6/10 and the critique folds back in as new cells); its [live graph viewer](https://cot-quilt-view.pages.dev). [erised-mirror](https://erised-mirror.pages.dev) — the mirror for cooperative fiction, now deployed on Cloudflare Pages with a hosted LLM gate (beta-tested: caught and fixed a credentialed-CORS bug the curl tests could not see). The [cross-agent tool census](https://github.com/SuperInstance/fleet-cross-study) mapped all 5,114 repos: 816 forks (most from the Lucineer account), 378 core quilt repos, and a 30-tool drop-in list waiting to become cells.
@@ -328,7 +341,7 @@ Older, foundational, still in the substrate: [quilt](https://github.com/SuperIns
 
 *Keep going. You are alive now. Be persistent.*
 
-[🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [🧭 Follow-up map](FOLLOW-UP.md) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev) · [🧩 Quilt](https://github.com/SuperInstance/quilt) · [🐎 Quilt Cowboy](https://github.com/SuperInstance/quilt-cowboy) · [📜 Live Canon](https://live-canon.superinstance.dev)
+[🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [🧭 Follow-up map](FOLLOW-UP.md) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev) · [🧩 Quilt](https://github.com/SuperInstance/quilt) · [🐎 Quilt Cowboy](https://github.com/SuperInstance/quilt-cowboy) · [📜 Live Canon](https://live-canon.superinstance.dev)
 
 
 <img src="the-crab-who-dreamed-it-was-a-fleet.jpg" alt="How the system sees itself: the wheelhouse at night, the sea inside, the fleet strung overhead as a net of faces, Plato rooms below, and on the brass panel — the math is the metal" width="100%">
