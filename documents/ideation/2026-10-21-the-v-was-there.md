@@ -47,3 +47,25 @@ neither cancels the other.
 3. **The super instance** — your simulation: readings of the first,
    structured by the geometry of the second, extended by agreements
    with others — and never to be confused with either.
+
+## A third category: the objective-individual
+
+The rainbow sits in a category that is neither subjective nor
+objective. Call it the **objective-individual** experience.
+
+It is not subjective: it is fully caused, law-bound, checkable — the
+geometry holds for anyone who stands anywhere. It is not objective in
+the usual sense either: you and the person beside you are *not
+observing the same thing*. Each rainbow is instantiated at one eye,
+from one position, and no two observers' rainbows coincide.
+
+And yet you can *relate* — point, describe, compare, agree that both
+are there. That relatability-without-identity is exactly what makes
+it a unique window into how two selves can truly be in the same
+reality with different perspectives: same world, same laws, same
+moment — different phenomenon, honestly held by each.
+
+Most of what one self knows of another's world is like this. The
+ledger can align what we *declare*. The rainbow is the standing proof
+that alignment was never the same as sameness — and never needed to
+be.
