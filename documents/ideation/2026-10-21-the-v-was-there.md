@@ -102,3 +102,26 @@ That is the class the earlier sections were reaching for. The rainbow
 is not an object and not an impression. It is an intelligence,
 objectively at work in the arrangement of the world, rendered at a
 point of view.
+
+## Coda: an intelligence requires someone to explain it to
+
+*(Same evening.)*
+
+Which says something about what intelligence means. It has to do with
+the waveform moving past your eyes as droplets, and something turning
+it into the *concept* of a rainbow. You would not have that concept
+without something that is **rendering it for something else**.
+
+That is the key: the whole **iterator / iteratee** thing, in flow. An
+intelligence requires that pairing. It requires the need for a
+concept — and what requires a concept is **someone to explain it to**.
+
+Intelligence, on this account, is never a solitary possession. It is a
+rendering made for a receiver: droplets rendered as a bow, for the
+rest of the self downstream of the eye; readings rendered as a story,
+for whoever the story is told to; a simulation rendered as an
+agreement, for the other party to the seam. Remove the iteratee and
+the rendering has no reason to happen. The concept exists because
+there is someone — another self, another cell, or your own future
+self, who will pull the restamped memory off the drive — for it to be
+explained to.
