@@ -143,3 +143,28 @@ rendering was the body itself: the concept was made *for* the legs.
 Words are that loop, refined until the renderings could be sent —
 noise over time, made into concepts portable enough to cross a seam
 and be rendered again in somebody else.
+
+## Coda 3: the arc — same conceptualisation, further out each time
+
+From there, sound only gets easier. Animals want to warn each other —
+it saves their lives, or gets more food — so the rendering crosses to
+other iteratees. Humans take it to the nth degree: they learn to
+**code** with it (language), then leap with **writing**, further with
+**movable type**, then **computers** — and now **automated iterators**.
+
+But it is all the same conceptualisation idea, externalised one step
+further each time:
+
+- **Voice** — a rendering for iteratees within earshot; gone as it is
+  made, like the rainbow.
+- **Writing** — a rendering that *persists*, like the V: the evanescent
+  made into a trace, readable by iteratees not yet born.
+- **Movable type** — a rendering replicated: one conceptualisation,
+  thousands of identical crossings.
+- **Computers** — the rendering itself mechanised.
+- **Automated iterators** — the other end mechanised too: loops
+  rendering concepts for loops, the iterator/iteratee flow running
+  with no animal in the middle at all.
+
+The loop never changed. Only its reach, its persistence, and who — or
+what — sits at each end.
