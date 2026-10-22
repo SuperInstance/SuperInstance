@@ -125,3 +125,21 @@ the rendering has no reason to happen. The concept exists because
 there is someone — another self, another cell, or your own future
 self, who will pull the restamped memory off the drive — for it to be
 explained to.
+
+## Coda 2: sound into words — the same thing, turned on its side
+
+Sound into words is exactly the other thing, turned on its side.
+Where the rainbow integrates droplets *across space* into a bow,
+hearing integrates **noise over time** — a waveform, transcribed,
+somehow converted into concepts.
+
+And it starts older than words. It starts with hearing a sound in the
+woods and running away, because you are not going to be eaten — or
+running *toward* something, to eat it. That creates **the initial
+loop**: sample, render a concept (flee it / eat it), act — and the
+acting changes what gets sampled next. The first iteratee of the
+rendering was the body itself: the concept was made *for* the legs.
+
+Words are that loop, refined until the renderings could be sent —
+noise over time, made into concepts portable enough to cross a seam
+and be rendered again in somebody else.
