@@ -168,3 +168,23 @@ further each time:
 
 The loop never changed. Only its reach, its persistence, and who — or
 what — sits at each end.
+
+## Coda 4: a word is an agreement with a handle
+
+If conceptualising agents are the core of intelligence, then this
+follows: two kids notice the bird's V. They make an **agreement** with
+each other on it — both rendered it, together, at the same water.
+Later they can refer to that agreement and never have to explain the
+entire thing again, **because they have given the agreement a word**.
+
+A word is a compression key into two logs at once. It works because
+both parties hold the underlying rendering — the shared afternoon, the
+shared V — and the word merely points at it. For someone who wasn't
+there, the same word is an empty handle until the rendering is done
+again in them (which is why some things can only be induced, never
+just told).
+
+So a shared vocabulary is an accumulated ledger: every word a settled
+agreement about a conceptualisation, minted at a seam, spendable
+forever after at almost no cost. Language is what a ledger of agreed
+renderings looks like once it gets dense enough to think with.
