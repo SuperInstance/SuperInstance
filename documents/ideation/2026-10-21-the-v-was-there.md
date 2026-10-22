@@ -69,3 +69,36 @@ Most of what one self knows of another's world is like this. The
 ledger can align what we *declare*. The rainbow is the standing proof
 that alignment was never the same as sameness — and never needed to
 be.
+
+## The word: objective intelligence
+
+*(Added later the same day, after the term above was tried and found
+incomplete.)*
+
+"Objective-individual" didn't sit right — it still parked the rainbow
+on the subjective–objective axis, and it had no time in it. The fuller
+account: the V **persists** — a trace the water keeps, rewindable,
+readable by anyone while it decays; that is objective reality. The
+rainbow **does not persist**. Rain falls as separate droplets, each
+flashing a complete spectrum for an instant; the eye hooks those dots
+faster than noticing and extrapolates them into one continuous
+waveform. A photograph ten minutes later differs — sun moved, cloud
+moved, droplets replaced, and the photographer is a different sampler
+for having taken the first. You cannot step into the same rainbow
+twice, and neither can anyone else — two cameras side by side land
+their bows on slightly different spots.
+
+Casey's resolution of the word-hunt: *the concept doesn't really exist
+yet — and I like it.* **There is such a thing as objective
+intelligence.** There is subjective intelligence, of course. But a
+rainbow is an example of an **objective intelligence**: an act of
+integration — dots made into a coherent bow — that no single party
+performs or owns. The coherence is made by the configuration itself:
+sun, rain, and an eye at a station. It is real, it is lawful, it is
+available to any sampler at any station, and the master copy exists
+nowhere.
+
+That is the class the earlier sections were reaching for. The rainbow
+is not an object and not an impression. It is an intelligence,
+objectively at work in the arrangement of the world, rendered at a
+point of view.
