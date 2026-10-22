@@ -188,3 +188,13 @@ So a shared vocabulary is an accumulated ledger: every word a settled
 agreement about a conceptualisation, minted at a seam, spendable
 forever after at almost no cost. Language is what a ledger of agreed
 renderings looks like once it gets dense enough to think with.
+
+**Hence why memes are so powerful** *(Casey, same evening)*: a meme
+is a word's mechanism at image scale — a tiny handle that invokes a
+whole rendering in everyone whose log already holds it. Its power is
+the size of the ledger behind it: millions of shared afternoons,
+compressed into something spendable in a glance. And every share runs
+the restamp loop — the rendering is pulled out, worked with, and
+re-filed front-and-centre in every holder it crosses, which is why a
+meme can keep an old agreement more alive than the event that minted
+it.
