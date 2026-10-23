@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-22 09:58 UTC
+**Generated:** 2026-10-23 09:51 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -2388,6 +2388,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [knowledge-agent](https://github.com/SuperInstance/knowledge-agent)
 - [kung-fu](https://github.com/SuperInstance/kung-fu)
 - [kungfu-ai](https://github.com/SuperInstance/kungfu-ai)
+- [lane-sheets](https://github.com/SuperInstance/lane-sheets)
 - [lau-a2a-protocol](https://github.com/SuperInstance/lau-a2a-protocol)
 - [lau-adinkra](https://github.com/SuperInstance/lau-adinkra)
 - [lau-affordance](https://github.com/SuperInstance/lau-affordance)

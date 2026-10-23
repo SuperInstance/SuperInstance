@@ -1,6 +1,6 @@
 # Fleet Catalog
-**Generated:** 2026-10-22 09:58 UTC
-**Total repositories:** 5306
+**Generated:** 2026-10-23 09:51 UTC
+**Total repositories:** 5307
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
@@ -3033,6 +3033,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[l10n-rs](https://github.com/SuperInstance/l10n-rs)** | Various | Localization framework - Date/number formatting, locales, CLDR data | 🔴 stalled |
 | **[ladder](https://github.com/SuperInstance/ladder)** | Various | An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why  | 🟢 active |
 | **[landauer](https://github.com/SuperInstance/landauer)** | Various | Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info | 🔴 stalled |
+| **[lane-sheets](https://github.com/SuperInstance/lane-sheets)** | Various | Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG | 🟢 active |
 | **[lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)** | Various | Topological data analysis for test coverage gaps — finds blind spots in Rust test suites using persi | 🔴 stalled |
 | **[lattice-climate](https://github.com/SuperInstance/lattice-climate)** | Various | Lattice climate modeling — discrete spacetime grids with spectral conservation for climate simulatio | 🔴 stalled |
 | **[lattice-crypto](https://github.com/SuperInstance/lattice-crypto)** | Various | See README | 🔴 stalled |
@@ -4454,7 +4455,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[sheaf-agents-c](https://github.com/SuperInstance/sheaf-agents-c)** | Various | Sheaf-theoretic agent framework in C | 🔴 stalled |
 | **[sheaf-agents-rs](https://github.com/SuperInstance/sheaf-agents-rs)** | Various | H¹ > 0 means communication can't help — cellular sheaves on graphs for multi-agent consensus (Rust) | 🔴 stalled |
 | **[sheaf-coherence-rs](https://github.com/SuperInstance/sheaf-coherence-rs)** | Various | Cellular sheaf coherence — measuring how well local data assembles into global structure | 🔴 stalled |
-| **[sheaf-cohomology](https://github.com/SuperInstance/sheaf-cohomology)** | Various | Cellular sheaves and cohomology on graphs — pure Rust, zero dependencies | 🔴 stalled |
+| **[sheaf-cohomology](https://github.com/SuperInstance/sheaf-cohomology)** | Various | Cellular sheaves and cohomology on graphs — pure Rust, zero dependencies | 🟢 active |
 | **[sheaf-dynamics](https://github.com/SuperInstance/sheaf-dynamics)** | Various | Cellular sheaves on graphs: sheaf Laplacian, restriction maps, diffusion, global sections | 🔴 stalled |
 | **[sheaf-laplacian](https://github.com/SuperInstance/sheaf-laplacian)** | Various | Sheaf Laplacian computation for topological data analysis | 🔴 stalled |
 | **[sheaf-persistence-bundle](https://github.com/SuperInstance/sheaf-persistence-bundle)** | Various | Sheaf persistence bundles — multi-parameter persistence, spectral sequences, cross-modal data fusion | 🔴 stalled |
@@ -26379,6 +26380,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
 
+### [lane-sheets](https://github.com/SuperInstance/lane-sheets)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangGraph lifter, byte-exact trace conformance
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
 ### [lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -36331,7 +36339,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Cellular sheaves and cohomology on graphs — pure Rust, zero dependencies
 - **Research lineage:** Not yet categorized.
-- **Status:** stalled
+- **Status:** active
 
 ### [sheaf-dynamics](https://github.com/SuperInstance/sheaf-dynamics)
 - **Domain:** Other / Uncategorized

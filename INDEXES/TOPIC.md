@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-10-22 09:58 UTC
-**Total repos:** 5306
+**Generated:** 2026-10-23 09:51 UTC
+**Total repos:** 5307
 
 ## A2A
 
@@ -1698,6 +1698,7 @@
 - **[knowledge-agent](https://github.com/SuperInstance/knowledge-agent)** — ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs
 - **[kung-fu](https://github.com/SuperInstance/kung-fu)** — I know Kung-Fu. Download skills directly into your AI agent's brain.
 - **[kungfu-ai](https://github.com/SuperInstance/kungfu-ai)** — Skill injection for repo-native agents — load what you need
+- **[lane-sheets](https://github.com/SuperInstance/lane-sheets)** — Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG
 - **[lau-agent-homeostasis](https://github.com/SuperInstance/lau-agent-homeostasis)** — Self-regulating control for agents — PID, bang-bang, threshold regulators, circadian rhythms, stress
 - **[lau-agent-lifecycle](https://github.com/SuperInstance/lau-agent-lifecycle)** — Categorical agent lifecycle — sunset as colimit, spawning as pullback, conservation via adjunction, 
 - **[lau-agent-organism](https://github.com/SuperInstance/lau-agent-organism)** — The agent the mathematics wants — thermodynamically closed, cohomologically self-aware, categoricall

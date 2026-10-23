@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-10-22 09:58 UTC
-**Total repos:** 5306
+**Generated:** 2026-10-23 09:51 UTC
+**Total repos:** 5307
 
 ## Ai
 
@@ -2469,6 +2469,7 @@
 - **[l10n-rs](https://github.com/SuperInstance/l10n-rs)** — Localization framework - Date/number formatting, locales, CLDR data
 - **[ladder](https://github.com/SuperInstance/ladder)** — An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why 
 - **[landauer](https://github.com/SuperInstance/landauer)** — Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info
+- **[lane-sheets](https://github.com/SuperInstance/lane-sheets)** — Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG
 - **[lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)** — Topological data analysis for test coverage gaps — finds blind spots in Rust test suites using persi
 - **[lattice-climate](https://github.com/SuperInstance/lattice-climate)** — Lattice climate modeling — discrete spacetime grids with spectral conservation for climate simulatio
 - **[lattice-crypto](https://github.com/SuperInstance/lattice-crypto)** — See README
