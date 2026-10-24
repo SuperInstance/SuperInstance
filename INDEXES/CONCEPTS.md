@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-23 09:51 UTC
+**Generated:** 2026-10-24 09:24 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -4136,6 +4136,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [bayesian-game](https://github.com/SuperInstance/bayesian-game)
 - [bayesian-inference](https://github.com/SuperInstance/bayesian-inference)
 - [bayesian-update](https://github.com/SuperInstance/bayesian-update)
+- [bc-thor](https://github.com/SuperInstance/bc-thor)
 - [bch-code](https://github.com/SuperInstance/bch-code)
 - [beam-quilt](https://github.com/SuperInstance/beam-quilt)
 - [bech32-encode](https://github.com/SuperInstance/bech32-encode)

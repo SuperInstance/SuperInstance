@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-10-23 09:51 UTC
-**Total repos:** 5307
+**Generated:** 2026-10-24 09:24 UTC
+**Total repos:** 5308
 
 ## A2A
 
@@ -3059,6 +3059,7 @@
 - **[bayesian-inference](https://github.com/SuperInstance/bayesian-inference)** — Bayesian inference engine — posterior update, conjugate priors, and MCMC sampling for probabilistic 
 - **[Bayesian-Multi-Armed-Bandits](https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits)** — Library for Bayesian multi-armed bandits.
 - **[bayesian-update](https://github.com/SuperInstance/bayesian-update)** — [package]
+- **[bc-thor](https://github.com/SuperInstance/bc-thor)** — Bridge Command ship simulator
 - **[bch-code](https://github.com/SuperInstance/bch-code)** — BCH error-correcting codes — cyclic codes with configurable error correction capability for noisy ch
 - **[beam-quilt](https://github.com/SuperInstance/beam-quilt)** — State, transmission, algorithm — a patchwork architecture for distributed, self-coordinating intelli
 - **[bech32-encode](https://github.com/SuperInstance/bech32-encode)** — Bech32 encoding — BIP-173 checksummed encoding for SegWit addresses

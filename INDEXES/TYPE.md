@@ -1,7 +1,7 @@
 # Index by Type
 
-**Generated:** 2026-10-23 09:51 UTC
-**Total repos:** 5307
+**Generated:** 2026-10-24 09:24 UTC
+**Total repos:** 5308
 
 ## Cli
 
@@ -11,6 +11,7 @@
 - **[async-gpu-dispatch](https://github.com/SuperInstance/async-gpu-dispatch)** — Experiment: async GPU kernel dispatch modeled on open-parallel's tokio-style runtime. Tests how futu
 - **[bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)** — Tiny C PLATO client for ESP32/RP2040 + embodiment protocol: agents discover IoT devices as MUD rooms
 - **[baton-protocol](https://github.com/SuperInstance/baton-protocol)** — Session-level handoff for AI agents (state/next/meta). Lighter than baton-handoff (model generationa
+- **[bc-thor](https://github.com/SuperInstance/bc-thor)** — Bridge Command ship simulator
 - **[bch-code](https://github.com/SuperInstance/bch-code)** — BCH error-correcting codes — cyclic codes with configurable error correction capability for noisy ch
 - **[boat-agent](https://github.com/SuperInstance/boat-agent)** — Like Commander Data for your wheelhouse. Works with any marine IO from Navigation/Autopilot to IR en
 - **[bregman-divergence](https://github.com/SuperInstance/bregman-divergence)** — Bregman divergences: KL, squared Euclidean, Itakura-Saito, convex generating functions, and mirror d

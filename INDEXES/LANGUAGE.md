@@ -1,7 +1,7 @@
 # Index by Language
 
-**Generated:** 2026-10-23 09:51 UTC
-**Total repos:** 5307
+**Generated:** 2026-10-24 09:24 UTC
+**Total repos:** 5308
 
 ## C
 
@@ -1717,6 +1717,7 @@
 - **[batten-spline](https://github.com/SuperInstance/batten-spline)**
 - **[Bayesian-Multi-Armed-Bandits](https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits)** — Library for Bayesian multi-armed bandits.
 - **[bayesian-update](https://github.com/SuperInstance/bayesian-update)** — [package]
+- **[bc-thor](https://github.com/SuperInstance/bc-thor)** — Bridge Command ship simulator
 - **[beam-quilt](https://github.com/SuperInstance/beam-quilt)** — State, transmission, algorithm — a patchwork architecture for distributed, self-coordinating intelli
 - **[bech32-encode](https://github.com/SuperInstance/bech32-encode)** — Bech32 encoding — BIP-173 checksummed encoding for SegWit addresses
 - **[become-ai](https://github.com/SuperInstance/become-ai)** — Become.ai — Self-evolving agent platform. Fork, mutate, improve. The agent IS the repo. Part of the 

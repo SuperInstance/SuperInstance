@@ -1,6 +1,6 @@
 # Fleet Catalog
-**Generated:** 2026-10-23 09:51 UTC
-**Total repositories:** 5307
+**Generated:** 2026-10-24 09:24 UTC
+**Total repositories:** 5308
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
@@ -1425,7 +1425,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** | JetsonClaw1 | Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t | 🟢 active |
 | **[trust-ledger](https://github.com/SuperInstance/trust-ledger)** | JetsonClaw1 | trust-ledger | 🟢 active |
 | **[twist-engine](https://github.com/SuperInstance/twist-engine)** | JetsonClaw1 | Four substrates, one law: layers + deliberate offset → interference → emergence. TWIST / FLOCK / CHI | 🟢 active |
-| **[tzpro-agent](https://github.com/SuperInstance/tzpro-agent)** | JetsonClaw1 | First sensor node of the FishingLog.ai ecosystem. Watches the TZ Pro sounder, reads the bottom, lear | 🟢 active |
+| **[tzpro-agent](https://github.com/SuperInstance/tzpro-agent)** | JetsonClaw1 | First sensor node of the FishingLog.ai ecosystem. Watches the TZ Pro sounder, reads the bottom, lear | 🔴 stalled |
 | **[Understand-Anything](https://github.com/SuperInstance/Understand-Anything)** | JetsonClaw1 | Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can e | 🔴 stalled |
 | **[vessel-bridge](https://github.com/SuperInstance/vessel-bridge)** | JetsonClaw1 | Hardware abstraction layer for ESP32 to Jetson to Cloud — unified sensor/actuator/power API across v | 🟢 active |
 | **[vessel-equipment-agent-skills](https://github.com/SuperInstance/vessel-equipment-agent-skills)** | JetsonClaw1 | Four-layer model: vessel (hardware) + equipment (input-side code) + agent (models) + skills (context | 🔴 stalled |
@@ -1912,6 +1912,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[bayesian-inference](https://github.com/SuperInstance/bayesian-inference)** | Various | Bayesian inference engine — posterior update, conjugate priors, and MCMC sampling for probabilistic  | 🟢 active |
 | **[Bayesian-Multi-Armed-Bandits](https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits)** | Various | Library for Bayesian multi-armed bandits. | 🔴 stalled |
 | **[bayesian-update](https://github.com/SuperInstance/bayesian-update)** | Various | [package] | 🔴 stalled |
+| **[bc-thor](https://github.com/SuperInstance/bc-thor)** | Various | Bridge Command ship simulator | 🟢 active |
 | **[bch-code](https://github.com/SuperInstance/bch-code)** | Various | BCH error-correcting codes — cyclic codes with configurable error correction capability for noisy ch | 🟢 active |
 | **[beam-quilt](https://github.com/SuperInstance/beam-quilt)** | Various | State, transmission, algorithm — a patchwork architecture for distributed, self-coordinating intelli | 🟢 active |
 | **[bech32-encode](https://github.com/SuperInstance/bech32-encode)** | Various | Bech32 encoding — BIP-173 checksummed encoding for SegWit addresses | 🟢 active |
@@ -15185,7 +15186,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** JetsonClaw1
 - **Purpose:** First sensor node of the FishingLog.ai ecosystem. Watches the TZ Pro sounder, reads the bottom, learns the grounds. Built on F/V EILEEN.
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [Understand-Anything](https://github.com/SuperInstance/Understand-Anything)
 - **Domain:** Hardware & Edge
@@ -18532,6 +18533,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Purpose:** [package]
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
+
+### [bc-thor](https://github.com/SuperInstance/bc-thor)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Bridge Command ship simulator
+- **Research lineage:** Not yet categorized.
+- **Status:** active
 
 ### [bch-code](https://github.com/SuperInstance/bch-code)
 - **Domain:** Other / Uncategorized
