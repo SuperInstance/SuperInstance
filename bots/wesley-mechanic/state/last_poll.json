@@ -1,5 +1,5 @@
 {
-  "fingerprint": "f7a9ac345541a036",
+  "fingerprint": "b56053dd2c509071",
   "layers": [
     {
       "detail": {
@@ -92,15 +92,15 @@
         "canon_scope_commit": "fleet-canon/graph.json=fb208c18a91b2edfce7793b43c40687a21747226;fleet-canon/tier1.txt=c4a2aa6dac8a409cbc878c4a4156d511dd02c61f;fleet-canon/CANON.schema.md=a6e2102dd0bb9be9fdb837158afb1a45ee0acd01;CATALOG.md=618c29d913f110a2e893cd67fc410a23825ec393",
         "canon_scope_subject": "Auto-index: regenerate all indexes (2026-10-24)",
         "canon_scope_ts": 1792833867,
-        "commit_count": "588",
-        "head": "159278a4d3fa7814a196adb4c1b807e65e3a892f",
+        "commit_count": "589",
+        "head": "c7a1e91d691d79867f47d16d8b8da07ba171f94f",
         "shallow": false
       },
-      "digest": "03c206b52f0fd3b8",
+      "digest": "748e3ef74dfcb38f",
       "layer": "H",
       "ok": true,
-      "source": "/tmp/canon-full @ 159278a4d3fa"
+      "source": "/tmp/canon-full @ c7a1e91d691d"
     }
   ],
-  "ts": 1792914933
+  "ts": 1792928208
 }
