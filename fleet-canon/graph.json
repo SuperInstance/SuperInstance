@@ -1,14 +1,14 @@
 {
- "generated": "2026-10-18T23:40:12Z",
+ "generated": "2026-10-25T23:32:54Z",
  "source": "CATALOG.md",
- "catalogGenerated": "2026-10-18",
- "catalogTotal": 5290,
- "parsed": 5290,
+ "catalogGenerated": "2026-10-25",
+ "catalogTotal": 5308,
+ "parsed": 5308,
  "catalogMissing": [],
  "tier3Note": "tier-3 (orphan+stale) populates once the CATALOG generator fetches pushedAt/isArchived (meta repo PR #19, catalog-v2); until then every row reads active",
  "tiers": {
   "1": 27,
-  "2": 5263,
+  "2": 5281,
   "3": 0
  },
  "vessels": [
@@ -1741,6 +1741,15 @@
    "tier": 2
   },
   {
+   "name": "arbiter",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A blind adjudication: the entropy draws the order and commits to it BEFORE the judge is asked, and t",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "arch-gateway-room-clean",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2452,6 +2461,15 @@
    "tier": 2
   },
   {
+   "name": "bc-thor",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Bridge Command ship simulator",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "bch-code",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2465,6 +2483,15 @@
    "family": "agent-coordination",
    "vessel": "Oracle1",
    "mission": "Fleet discovery and registry protocol — agents announce their presence and capabilities.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "beam-quilt",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "State, transmission, algorithm — a patchwork architecture for distributed, self-coordinating intelli",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2672,6 +2699,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Git blame tracker — maps code lines to commits with blame propagation across refactors",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "blender-bridge",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Splat/ASCII room maps into Blender scenes, agents as the interface to the Blender toolset",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -3973,6 +4009,15 @@
    "tier": 2
   },
   {
+   "name": "chiaroscuro-embedding",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "chiaroscuro-embedding",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "chroma",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -3986,6 +4031,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Universal distillation engine — assistants, people, characters, musicians, all the same math",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "chrono-flight",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Scaffolding from the beam-quilt sorting pass (see repo README)",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "chrono-tensor",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "chrono-tensor",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -6848,6 +6911,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Serialize and deserialize context for transfer between vessels",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "continuum-runtime",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Scaffolding from the beam-quilt sorting pass (see repo README)",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -21478,6 +21550,15 @@
    "tier": 2
   },
   {
+   "name": "jev-lab",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A measured lab for TypeSafe.ai Jev: what it is good for, what it is not, and the controls that keep",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "jev-lattice",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -21914,6 +21995,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "lane-sheets",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -34123,6 +34213,15 @@
    "tier": 2
   },
   {
+   "name": "quilt-engine",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Scaffolding from the beam-quilt sorting pass (see repo README)",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "quilt-engine-ports",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -35959,6 +36058,15 @@
    "tier": 2
   },
   {
+   "name": "receipts",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A slide show for a general audience: why a green badge means nothing, and what to ask instead. Every",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "recovered-copy-20260824-ACE-Step-1.5",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -37039,6 +37147,15 @@
    "tier": 2
   },
   {
+   "name": "room-lens",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Phone room-map page: live ASCII viewfinder with adaptive fidelity and walkabout capture bundles for",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "room-lifecycle",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -37277,6 +37394,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "AI science companion — paper summaries, experiment tracking, research notes",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "score-table",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A score table for the SuperInstance fleet: rows that declare their denominator, their pre-registered",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -39568,6 +39694,15 @@
    "tier": 2
   },
   {
+   "name": "splat-room",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "ASCII-guided 3D Gaussian splatting for rapid room learning - ASCII/edge structure as the middle laye",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "splay-tree-rs",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -41534,6 +41669,15 @@
    "family": "agent-coordination",
    "vessel": "Oracle1",
    "mission": "Pure C11 A2A message transport — bare-metal 1050-byte messages, mailbox, router, receipts",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "tells",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "tells",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -47065,6 +47209,15 @@
    "tier": 2
   },
   {
+   "name": "witness-anchor",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "THE fleet's out-of-band witness anchor -- a Cloudflare Worker that publishes signed heads and comput",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "witness-complex",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -47078,6 +47231,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "witness-is-prediction - R10 substrate canon point as code",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "witness-spec",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "The fleet witness log with RFC 8785 canonicalisation, RFC 6962 domain separation, and a signed tree",
    "state": "active",
    "bornFrom": [],
    "tier": 2
