@@ -1,0 +1,106 @@
+{
+  "fingerprint": "e730158e976fd7f5",
+  "layers": [
+    {
+      "detail": {
+        "catalogGenerated": "2026-10-18",
+        "catalogTotal": 5290,
+        "catalog_rows": 5308,
+        "generated": "2026-10-18T23:40:12Z",
+        "node_count": 5290,
+        "parsed": 5290,
+        "stale_repos": [
+          "arbiter",
+          "bc-thor",
+          "beam-quilt",
+          "blender-bridge",
+          "chiaroscuro-embedding",
+          "chrono-flight",
+          "chrono-tensor",
+          "continuum-runtime",
+          "jev-lab",
+          "lane-sheets",
+          "quilt-engine",
+          "receipts",
+          "room-lens",
+          "score-table",
+          "splat-room",
+          "tells",
+          "witness-anchor",
+          "witness-spec"
+        ],
+        "stale_vs_catalog": 18,
+        "tiers": {
+          "1": 27,
+          "2": 5263,
+          "3": 0
+        }
+      },
+      "digest": "2967e7d734d663a8",
+      "layer": "G",
+      "ok": true,
+      "source": "/tmp/canon-full/fleet-canon/graph.json"
+    },
+    {
+      "detail": {
+        "claims_missing": [],
+        "claims_read": 26,
+        "claims_unreadable": [
+          "AI-Writings"
+        ],
+        "read_via": {
+          "api": 0,
+          "mirror": 26
+        },
+        "states": {
+          "OpenConstruct": "active",
+          "Scrapcraft": "active",
+          "canon-claim": "active",
+          "canon-graph": "active",
+          "ccc-os": "active",
+          "cocapn-health": "active",
+          "cocapn-plato": "active",
+          "constraint-theory-core": "active",
+          "constraint-theory-math": "active",
+          "crab-trap-web": "active",
+          "duke-lab": "active",
+          "erised": "active",
+          "hebbian-router": "active",
+          "hermit": "active",
+          "pareto-tournament": "active",
+          "plato-portal": "active",
+          "quilt": "active",
+          "quilt-canon-cli": "active",
+          "quilt-cell": "active",
+          "quilt-live-canon": "active",
+          "quilt-studio": "active",
+          "sunset-ecosystem": "active",
+          "the-tap": "active",
+          "tidepool": "active",
+          "twist-engine": "active",
+          "vector-novelty": "active"
+        },
+        "tier1_count": 27
+      },
+      "digest": "438b44f0c73f6a20",
+      "layer": "C",
+      "ok": true,
+      "source": "tier1 roster (27 repos)"
+    },
+    {
+      "detail": {
+        "canon_scope_commit": "fleet-canon/graph.json=fb208c18a91b2edfce7793b43c40687a21747226;fleet-canon/tier1.txt=c4a2aa6dac8a409cbc878c4a4156d511dd02c61f;fleet-canon/CANON.schema.md=a6e2102dd0bb9be9fdb837158afb1a45ee0acd01;CATALOG.md=618c29d913f110a2e893cd67fc410a23825ec393",
+        "canon_scope_subject": "Auto-index: regenerate all indexes (2026-10-24)",
+        "canon_scope_ts": 1792833867,
+        "commit_count": "587",
+        "head": "82fae9433a3b767b799cfdd0eda752e1315b2321",
+        "shallow": false
+      },
+      "digest": "915b3c7b56869b54",
+      "layer": "H",
+      "ok": true,
+      "source": "/tmp/canon-full @ 82fae9433a3b"
+    }
+  ],
+  "ts": 1792914819
+}
