@@ -1,5 +1,5 @@
 {
-  "fingerprint": "b56053dd2c509071",
+  "fingerprint": "49b8fbb8e81e17b6",
   "layers": [
     {
       "detail": {
@@ -44,15 +44,14 @@
     {
       "detail": {
         "claims_missing": [],
-        "claims_read": 26,
-        "claims_unreadable": [
-          "AI-Writings"
-        ],
+        "claims_read": 27,
+        "claims_unreadable": [],
         "read_via": {
           "api": 0,
-          "mirror": 26
+          "mirror": 27
         },
         "states": {
+          "AI-Writings": "active",
           "OpenConstruct": "active",
           "Scrapcraft": "active",
           "canon-claim": "active",
@@ -82,7 +81,7 @@
         },
         "tier1_count": 27
       },
-      "digest": "438b44f0c73f6a20",
+      "digest": "a57616723252ce6d",
       "layer": "C",
       "ok": true,
       "source": "tier1 roster (27 repos)"
@@ -92,15 +91,15 @@
         "canon_scope_commit": "fleet-canon/graph.json=fb208c18a91b2edfce7793b43c40687a21747226;fleet-canon/tier1.txt=c4a2aa6dac8a409cbc878c4a4156d511dd02c61f;fleet-canon/CANON.schema.md=a6e2102dd0bb9be9fdb837158afb1a45ee0acd01;CATALOG.md=618c29d913f110a2e893cd67fc410a23825ec393",
         "canon_scope_subject": "Auto-index: regenerate all indexes (2026-10-24)",
         "canon_scope_ts": 1792833867,
-        "commit_count": "589",
-        "head": "c7a1e91d691d79867f47d16d8b8da07ba171f94f",
+        "commit_count": "590",
+        "head": "dfa09de618cd39921dad13745c7fc17693ccf84e",
         "shallow": false
       },
-      "digest": "748e3ef74dfcb38f",
+      "digest": "2a9ee1ac6f09b9fe",
       "layer": "H",
       "ok": true,
-      "source": "/tmp/canon-full @ c7a1e91d691d"
+      "source": "/tmp/canon-full @ dfa09de618cd"
     }
   ],
-  "ts": 1792928208
+  "ts": 1792931598
 }
