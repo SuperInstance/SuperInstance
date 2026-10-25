@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-24 09:24 UTC
+**Generated:** 2026-10-25 09:41 UTC
 **Total repositories:** 5308
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -790,7 +790,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-math-py](https://github.com/SuperInstance/fleet-math-py)** | Forgemaster | Core fleet mathematics: ZHC, H1 emergence, Laman rigidity, constraint fields | 🔴 stalled |
 | **[fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)** | Forgemaster | Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence, | 🔴 stalled |
 | **[fleet-mcp-server](https://github.com/SuperInstance/fleet-mcp-server)** | Forgemaster | TypeScript MCP server for fleet-vector-api semantic crate search | 🔴 stalled |
-| **[fleet-mechanic](https://github.com/SuperInstance/fleet-mechanic)** | Oracle1 | 🔧 Autonomous fleet maintenance agent — A2A-native, FLUX-powered, git-first | 🔴 stalled |
+| **[fleet-mechanic](https://github.com/SuperInstance/fleet-mechanic)** | Oracle1 | 🔧 Autonomous fleet maintenance agent — A2A-native, FLUX-powered, git-first | 🟢 active |
 | **[fleet-memory](https://github.com/SuperInstance/fleet-memory)** | Forgemaster | Content-addressable distributed memory for fleets: store, retrieve, error-correct, holographic stora | 🟢 active |
 | **[fleet-memory-palace](https://github.com/SuperInstance/fleet-memory-palace)** | Forgemaster | Spatial memory visualization for fleet knowledge | 🔴 stalled |
 | **[fleet-metrics](https://github.com/SuperInstance/fleet-metrics)** | Forgemaster | Real-time metrics collection and aggregation for the entire fleet | 🔴 stalled |
@@ -5222,7 +5222,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[vector-search](https://github.com/SuperInstance/vector-search)** | Various | Semantic search engine with WebGPU acceleration - 10-100x faster vector search, 100% local processin | 🔴 stalled |
 | **[venue-personality](https://github.com/SuperInstance/venue-personality)** | Various | Venue personality modeling for SuperInstance spatial intelligence | 🔴 stalled |
 | **[vessel](https://github.com/SuperInstance/vessel)** | Various | Preserved workspace artifact | 🔴 stalled |
-| **[vessel-agent](https://github.com/SuperInstance/vessel-agent)** | Various | Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelli | 🟢 active |
+| **[vessel-agent](https://github.com/SuperInstance/vessel-agent)** | Various | Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelli | 🔴 stalled |
 | **[vessel-agent-system](https://github.com/SuperInstance/vessel-agent-system)** | Various | Vessel intelligence OS for commercial fishing vessels (F/V EILEEN, Southeast Alaska). BMAD methodolo | 🟢 active |
 | **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** | Various | 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a | 🔴 stalled |
 | **[vessel-monitor](https://github.com/SuperInstance/vessel-monitor)** | Various | Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and i | 🟢 active |
@@ -10769,7 +10769,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Oracle1
 - **Purpose:** 🔧 Autonomous fleet maintenance agent — A2A-native, FLUX-powered, git-first
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** stalled
+- **Status:** active
 
 ### [fleet-memory](https://github.com/SuperInstance/fleet-memory)
 - **Domain:** Agent Coordination
@@ -41709,7 +41709,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelligence using BMAD methodology
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [vessel-agent-system](https://github.com/SuperInstance/vessel-agent-system)
 - **Domain:** Other / Uncategorized
