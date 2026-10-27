@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-10-26 10:53 UTC
-**Total repos:** 5308
+**Generated:** 2026-10-27 10:20 UTC
+**Total repos:** 5309
 
 ## Ai
 
@@ -4464,6 +4464,7 @@
 - **[step-back-operator](https://github.com/SuperInstance/step-back-operator)** — 🎣 Topological step-back operator β₁ = E - V + C — pattern detection in event networks. The intellige
 - **[step-back-topology](https://github.com/SuperInstance/step-back-topology)** — Step-Back Operator (β₁ = E - V + C) for topological data analysis and simplicial complexes
 - **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Bio-inspired indirect coordination — pheromone signals, trail following, swarm intelligence for dece
+- **[stitch](https://github.com/SuperInstance/stitch)** — A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a
 - **[stock-screener](https://github.com/SuperInstance/stock-screener)** — Quilt cellular visualizer design (tickers as cells, screener rules as routing edges, scans as route 
 - **[storage-guardian](https://github.com/SuperInstance/storage-guardian)** — Storage Guardian — duplicate detection, deduplication, budget enforcement, trend analysis, and alert
 - **[storyboard-engine](https://github.com/SuperInstance/storyboard-engine)** — Multi-model storyboard: director model plans, animator models execute

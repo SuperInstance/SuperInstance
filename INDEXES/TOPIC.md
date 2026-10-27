@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-10-26 10:53 UTC
-**Total repos:** 5308
+**Generated:** 2026-10-27 10:20 UTC
+**Total repos:** 5309
 
 ## A2A
 
@@ -2123,6 +2123,7 @@
 - **[spreadsheet-cells](https://github.com/SuperInstance/spreadsheet-cells)** — Spreadsheet cell architecture with oscillator/RNG for multi-agent fleet coordination
 - **[standalone-agent-scaffold](https://github.com/SuperInstance/standalone-agent-scaffold)** — Standalone agent scaffold — template for building autonomous agents
 - **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Bio-inspired indirect coordination — pheromone signals, trail following, swarm intelligence for dece
+- **[stitch](https://github.com/SuperInstance/stitch)** — A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a
 - **[strategy-ecology](https://github.com/SuperInstance/strategy-ecology)** — Models strategy species ecology in ternary agent populations using Lotka-Volterra dynamics
 - **[strategy-ecology-c](https://github.com/SuperInstance/strategy-ecology-c)** — C implementation of strategy species ecology for ternary agents
 - **[sunset-ecosystem](https://github.com/SuperInstance/sunset-ecosystem)** — Trinity-architecture agent ecosystem: ethos, pathos, logos. Agents sunset with dignity and seed the 

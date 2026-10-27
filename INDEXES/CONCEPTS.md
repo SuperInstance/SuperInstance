@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-26 10:53 UTC
+**Generated:** 2026-10-27 10:20 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -2935,6 +2935,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [standalone-agent-scaffold](https://github.com/SuperInstance/standalone-agent-scaffold)
 - [starter-shell](https://github.com/SuperInstance/starter-shell)
 - [stigmergy](https://github.com/SuperInstance/stigmergy)
+- [stitch](https://github.com/SuperInstance/stitch)
 - [strategy-ecology](https://github.com/SuperInstance/strategy-ecology)
 - [strategy-ecology-c](https://github.com/SuperInstance/strategy-ecology-c)
 - [studylog-agent](https://github.com/SuperInstance/studylog-agent)
@@ -3168,6 +3169,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [sonar-vision-c](https://github.com/SuperInstance/sonar-vision-c)
 - [spline-physics](https://github.com/SuperInstance/spline-physics)
 - [spring-mass](https://github.com/SuperInstance/spring-mass)
+- [stitch](https://github.com/SuperInstance/stitch)
 - [swarm-tminus](https://github.com/SuperInstance/swarm-tminus)
 - [symplectic-physics](https://github.com/SuperInstance/symplectic-physics)
 - [tick-engine](https://github.com/SuperInstance/tick-engine)

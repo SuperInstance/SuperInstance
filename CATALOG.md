@@ -1,6 +1,6 @@
 # Fleet Catalog
-**Generated:** 2026-10-26 10:53 UTC
-**Total repositories:** 5308
+**Generated:** 2026-10-27 10:20 UTC
+**Total repositories:** 5309
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
@@ -1399,6 +1399,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[splat-room](https://github.com/SuperInstance/splat-room)** | JetsonClaw1 | ASCII-guided 3D Gaussian splatting for rapid room learning - ASCII/edge structure as the middle laye | 🟢 active |
 | **[starship-jetsonclaw1](https://github.com/SuperInstance/starship-jetsonclaw1)** | JetsonClaw1 | MUD bridge for USS JetsonClaw1 - real Jetson telemetry as a starship TUI | 🟢 active |
 | **[starter-shell](https://github.com/SuperInstance/starter-shell)** | JetsonClaw1 | A starting shell for any application. Clone it, and it adapts to your hardware — discovers compilers | 🟢 active |
+| **[stitch](https://github.com/SuperInstance/stitch)** | JetsonClaw1 | A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a | 🟢 active |
 | **[stock-screener](https://github.com/SuperInstance/stock-screener)** | JetsonClaw1 | Quilt cellular visualizer design (tickers as cells, screener rules as routing edges, scans as route  | 🟢 active |
 | **[superinstance-architecture](https://github.com/SuperInstance/superinstance-architecture)** | JetsonClaw1 | SuperInstance architecture: CopilotKit fork analysis, distributed IoT patterns, edge AI agent models | 🟢 active |
 | **[superinstance-knowledge](https://github.com/SuperInstance/superinstance-knowledge)** | JetsonClaw1 | The hive mind library — 532 mined documents, cross-pollination analyses, lessons learned, and preset | 🔴 stalled |
@@ -14996,6 +14997,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** A starting shell for any application. Clone it, and it adapts to your hardware — discovers compilers, creates PLATO rooms, and bootstraps an agent fle
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
+### [stitch](https://github.com/SuperInstance/stitch)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an append-only hash-chained ledger. No sequencer, no c
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
