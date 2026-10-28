@@ -1,7 +1,7 @@
 # Index by Type
 
-**Generated:** 2026-10-27 10:20 UTC
-**Total repos:** 5309
+**Generated:** 2026-10-28 11:07 UTC
+**Total repos:** 5311
 
 ## Cli
 
@@ -10,6 +10,7 @@
 - **[AgentCompute](https://github.com/SuperInstance/AgentCompute)** — Thin agent-facing CLI over the quilt MCP server: serve sheets, list cells, call capabilities. Stdlib
 - **[async-gpu-dispatch](https://github.com/SuperInstance/async-gpu-dispatch)** — Experiment: async GPU kernel dispatch modeled on open-parallel's tokio-style runtime. Tests how futu
 - **[bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)** — Tiny C PLATO client for ESP32/RP2040 + embodiment protocol: agents discover IoT devices as MUD rooms
+- **[BasicC2](https://github.com/SuperInstance/BasicC2)** — A basic no-Login Command & Control written in Python, works on Windows & Linux and has XOR encryptio
 - **[baton-protocol](https://github.com/SuperInstance/baton-protocol)** — Session-level handoff for AI agents (state/next/meta). Lighter than baton-handoff (model generationa
 - **[bc-thor](https://github.com/SuperInstance/bc-thor)** — Bridge Command ship simulator
 - **[bch-code](https://github.com/SuperInstance/bch-code)** — BCH error-correcting codes — cyclic codes with configurable error correction capability for noisy ch
@@ -4649,6 +4650,7 @@
 - **[vibe-protocol](https://github.com/SuperInstance/vibe-protocol)**
 - **[websocket-fabric](https://github.com/SuperInstance/websocket-fabric)** — High-performance WebSocket library for Rust with connection pooling, reconnection, compression, frag
 - **[wesley-cns-adapter](https://github.com/SuperInstance/wesley-cns-adapter)** — Connects Wesley (Granite via Ollama) to the CNS signal bus
+- **[whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)** — The whole-house quilt: rooms of text state, stationed residents, decision-model dice, and an append-
 - **[wire-harmony](https://github.com/SuperInstance/wire-harmony)** — Wire-level protocol harmony layer for SuperInstance networking
 - **[zeitgeist-protocol](https://github.com/SuperInstance/zeitgeist-protocol)** — Extracted from forgemaster/zeitgeist-protocol — Cocapn fleet component
 - **[zero-knowledge](https://github.com/SuperInstance/zero-knowledge)** — Zero-knowledge proof primitives: Schnorr, DLEQ, range proofs, sigma protocols, Fiat-Shamir

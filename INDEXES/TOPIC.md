@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-10-27 10:20 UTC
-**Total repos:** 5309
+**Generated:** 2026-10-28 11:07 UTC
+**Total repos:** 5311
 
 ## A2A
 
@@ -2826,6 +2826,7 @@
 - **[wardroom](https://github.com/SuperInstance/wardroom)** — Fleet salon: off-duty rounds between agents. Receipts optional. Show up as yourself.
 - **[warp-room](https://github.com/SuperInstance/warp-room)** — C17 subroutine-threaded tile classifier: warp-as-room concept ported from GPU to ARM64 via function 
 - **[whisper-sync](https://github.com/SuperInstance/whisper-sync)** — Rust CLI/crate bridging Murmurer ambient whisper protocol to PLATO room infrastructure — short, ambi
+- **[whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)** — The whole-house quilt: rooms of text state, stationed residents, decision-model dice, and an append-
 - **[zeroclaw-loop](https://github.com/SuperInstance/zeroclaw-loop)** — Zeroclaw hermit crab loop - 12 agents, 5-min tick, PLATO room integration
 - **[zeroclaw-plato](https://github.com/SuperInstance/zeroclaw-plato)** — 3-agent zeroclaw loop posting to PLATO rooms
 - **[zeroclaws](https://github.com/SuperInstance/zeroclaws)** — ZeroClaw fleet — Bridge Pattern agents collaborating via PLATO rooms
@@ -3053,6 +3054,7 @@
 - **[bandit-learner](https://github.com/SuperInstance/bandit-learner)** — Multi-armed bandit algorithms for exploration-exploitation and online learning
 - **[base58-check](https://github.com/SuperInstance/base58-check)** — Base58Check encoding — Bitcoin-style base58 with version byte and double-SHA256 checksum
 - **[base60-lattice](https://github.com/SuperInstance/base60-lattice)**
+- **[BasicC2](https://github.com/SuperInstance/BasicC2)** — A basic no-Login Command & Control written in Python, works on Windows & Linux and has XOR encryptio
 - **[bathydata-map](https://github.com/SuperInstance/bathydata-map)** — Signal Chain Thesis - bathydata-map
 - **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** — 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton
 - **[batten-spline](https://github.com/SuperInstance/batten-spline)**

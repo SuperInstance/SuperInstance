@@ -1,6 +1,6 @@
 # Fleet Catalog
-**Generated:** 2026-10-27 10:20 UTC
-**Total repositories:** 5309
+**Generated:** 2026-10-28 11:07 UTC
+**Total repositories:** 5311
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
@@ -1432,6 +1432,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[vessel-equipment-agent-skills](https://github.com/SuperInstance/vessel-equipment-agent-skills)** | JetsonClaw1 | Four-layer model: vessel (hardware) + equipment (input-side code) + agent (models) + skills (context | 🔴 stalled |
 | **[warp-vote-consensus](https://github.com/SuperInstance/warp-vote-consensus)** | JetsonClaw1 | GPU warp-vote hardware as agent consensus. 32-thread ballots → ternary voting → quorum tree → fleet  | 🔴 stalled |
 | **[wasm-cert-wedge](https://github.com/SuperInstance/wasm-cert-wedge)** | JetsonClaw1 | wasm-cert-wedge | 🟢 active |
+| **[whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)** | JetsonClaw1 | The whole-house quilt: rooms of text state, stationed residents, decision-model dice, and an append- | 🟢 active |
 | **[zero-knowledge](https://github.com/SuperInstance/zero-knowledge)** | JetsonClaw1 | Zero-knowledge proof primitives: Schnorr, DLEQ, range proofs, sigma protocols, Fiat-Shamir | 🔴 stalled |
 | **[zero-knowledge-fleet](https://github.com/SuperInstance/zero-knowledge-fleet)** | JetsonClaw1 | Privacy-preserving fleet operations with ZK proofs | 🔴 stalled |
 | **[zkp-rs](https://github.com/SuperInstance/zkp-rs)** | JetsonClaw1 | Zero-knowledge proofs - zk-SNARKs, STARKs, bulletproofs, privacy | 🔴 stalled |
@@ -1900,6 +1901,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[bandit-learner](https://github.com/SuperInstance/bandit-learner)** | Various | Multi-armed bandit algorithms for exploration-exploitation and online learning | 🔴 stalled |
 | **[base58-check](https://github.com/SuperInstance/base58-check)** | Various | Base58Check encoding — Bitcoin-style base58 with version byte and double-SHA256 checksum | 🟢 active |
 | **[base60-lattice](https://github.com/SuperInstance/base60-lattice)** | Various | base60-lattice | 🟢 active |
+| **[BasicC2](https://github.com/SuperInstance/BasicC2)** | Various | A basic no-Login Command & Control written in Python, works on Windows & Linux and has XOR encryptio | 🟢 active |
 | **[bathydata-map](https://github.com/SuperInstance/bathydata-map)** | Various | Signal Chain Thesis - bathydata-map | 🔴 stalled |
 | **[Baton](https://github.com/SuperInstance/Baton)** | Various | automate agents training their successors for a better way to have infinite context without limits | 🔴 stalled |
 | **[baton-ai](https://github.com/SuperInstance/baton-ai)** | Various | Generational context handoff for repo-native agents | 🔴 stalled |
@@ -15231,6 +15233,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** The whole-house quilt: rooms of text state, stationed residents, decision-model dice, and an append-only ledger — design corpus, protocols, and a refe
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [zero-knowledge](https://github.com/SuperInstance/zero-knowledge)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -18448,6 +18457,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** base60-lattice
+- **Research lineage:** Not yet categorized.
+- **Status:** active
+
+### [BasicC2](https://github.com/SuperInstance/BasicC2)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** A basic no-Login Command & Control written in Python, works on Windows & Linux and has XOR encryption.
 - **Research lineage:** Not yet categorized.
 - **Status:** active
 

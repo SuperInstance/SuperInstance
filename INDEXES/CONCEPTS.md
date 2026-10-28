@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-27 10:20 UTC
+**Generated:** 2026-10-28 11:07 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -3730,6 +3730,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [wardroom](https://github.com/SuperInstance/wardroom)
 - [warp-room](https://github.com/SuperInstance/warp-room)
 - [whisper-sync](https://github.com/SuperInstance/whisper-sync)
+- [whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)
 - [zeroclaw-loop](https://github.com/SuperInstance/zeroclaw-loop)
 - [zeroclaw-plato](https://github.com/SuperInstance/zeroclaw-plato)
 - [zeroclaws](https://github.com/SuperInstance/zeroclaws)
@@ -3955,6 +3956,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [AutoData-old](https://github.com/SuperInstance/AutoData-old)
 - [Automatic-Type-Safe-IndexedDB](https://github.com/SuperInstance/Automatic-Type-Safe-IndexedDB)
 - [BMAD-METHOD](https://github.com/SuperInstance/BMAD-METHOD)
+- [BasicC2](https://github.com/SuperInstance/BasicC2)
 - [Bayesian-Multi-Armed-Bandits](https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits)
 - [Bend](https://github.com/SuperInstance/Bend)
 - [BusinessLog](https://github.com/SuperInstance/BusinessLog)

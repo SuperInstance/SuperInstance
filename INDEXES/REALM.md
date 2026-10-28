@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-10-27 10:20 UTC
-**Total repos:** 5309
+**Generated:** 2026-10-28 11:07 UTC
+**Total repos:** 5311
 
 ## Ai
 
@@ -298,6 +298,7 @@
 - **[barracks](https://github.com/SuperInstance/barracks)** — Cocapn barracks - agent accommodation system
 - **[base58-check](https://github.com/SuperInstance/base58-check)** — Base58Check encoding — Bitcoin-style base58 with version byte and double-SHA256 checksum
 - **[base60-lattice](https://github.com/SuperInstance/base60-lattice)**
+- **[BasicC2](https://github.com/SuperInstance/BasicC2)** — A basic no-Login Command & Control written in Python, works on Windows & Linux and has XOR encryptio
 - **[bathydata-map](https://github.com/SuperInstance/bathydata-map)** — Signal Chain Thesis - bathydata-map
 - **[Baton](https://github.com/SuperInstance/Baton)** — automate agents training their successors for a better way to have infinite context without limits
 - **[baton-ai](https://github.com/SuperInstance/baton-ai)** — Generational context handoff for repo-native agents
@@ -5266,6 +5267,7 @@
 - **[wheelhouse-game](https://github.com/SuperInstance/wheelhouse-game)** — The Wheelhouse Game — weather routing for commercial fishing, F140 audit. F151.
 - **[whisper-sync](https://github.com/SuperInstance/whisper-sync)** — Rust CLI/crate bridging Murmurer ambient whisper protocol to PLATO room infrastructure — short, ambi
 - **[whistle](https://github.com/SuperInstance/whistle)** — Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled
+- **[whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)** — The whole-house quilt: rooms of text state, stationed residents, decision-model dice, and an append-
 - **[wiki](https://github.com/SuperInstance/wiki)** — ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs
 - **[wire-harmony](https://github.com/SuperInstance/wire-harmony)** — Wire-level protocol harmony layer for SuperInstance networking
 - **[witness-anchor](https://github.com/SuperInstance/witness-anchor)** — THE fleet's out-of-band witness anchor -- a Cloudflare Worker that publishes signed heads and comput
