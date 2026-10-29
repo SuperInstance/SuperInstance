@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-28 11:07 UTC
+**Generated:** 2026-10-29 11:26 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -3950,6 +3950,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ActiveLog-MVP](https://github.com/SuperInstance/ActiveLog-MVP)
 - [ActiveLog-TechnicalRepo](https://github.com/SuperInstance/ActiveLog-TechnicalRepo)
 - [Asciipocalypse](https://github.com/SuperInstance/Asciipocalypse)
+- [AtariST-MIDIMaze-Source](https://github.com/SuperInstance/AtariST-MIDIMaze-Source)
 - [Auto-Backup-Compression-Encryption](https://github.com/SuperInstance/Auto-Backup-Compression-Encryption)
 - [Auto-Tuning-Engine](https://github.com/SuperInstance/Auto-Tuning-Engine)
 - [AutoData](https://github.com/SuperInstance/AutoData)
@@ -4001,6 +4002,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [MPC-Orchestration-Optimization](https://github.com/SuperInstance/MPC-Orchestration-Optimization)
 - [MakerLog](https://github.com/SuperInstance/MakerLog)
 - [MicroMoth-quilt](https://github.com/SuperInstance/MicroMoth-quilt)
+- [MidiMaze2](https://github.com/SuperInstance/MidiMaze2)
 - [MineWright](https://github.com/SuperInstance/MineWright)
 - [Mycelium](https://github.com/SuperInstance/Mycelium)
 - [NEXAH](https://github.com/SuperInstance/NEXAH)
@@ -4917,6 +4919,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ladder](https://github.com/SuperInstance/ladder)
 - [landauer](https://github.com/SuperInstance/landauer)
 - [lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)
+- [last-mile](https://github.com/SuperInstance/last-mile)
 - [lattice-climate](https://github.com/SuperInstance/lattice-climate)
 - [lattice-crypto](https://github.com/SuperInstance/lattice-crypto)
 - [lattice-crypto-rs](https://github.com/SuperInstance/lattice-crypto-rs)
@@ -5181,6 +5184,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [metal-sentinel](https://github.com/SuperInstance/metal-sentinel)
 - [micro-onnx](https://github.com/SuperInstance/micro-onnx)
 - [midden](https://github.com/SuperInstance/midden)
+- [midi-maze-js](https://github.com/SuperInstance/midi-maze-js)
 - [midi-temporal](https://github.com/SuperInstance/midi-temporal)
 - [migrations](https://github.com/SuperInstance/migrations)
 - [migrator-rs](https://github.com/SuperInstance/migrator-rs)
@@ -5845,6 +5849,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)
 - [studylog-ai-1](https://github.com/SuperInstance/studylog-ai-1)
 - [studylog-ai-pages](https://github.com/SuperInstance/studylog-ai-pages)
+- [stunt-car-racer-opengl](https://github.com/SuperInstance/stunt-car-racer-opengl)
 - [stunt-double](https://github.com/SuperInstance/stunt-double)
 - [style-dna](https://github.com/SuperInstance/style-dna)
 - [subleq-fabric](https://github.com/SuperInstance/subleq-fabric)

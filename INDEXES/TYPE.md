@@ -1,7 +1,7 @@
 # Index by Type
 
-**Generated:** 2026-10-28 11:07 UTC
-**Total repos:** 5311
+**Generated:** 2026-10-29 11:26 UTC
+**Total repos:** 5316
 
 ## Cli
 
@@ -332,6 +332,7 @@
 - **[ast-visitor](https://github.com/SuperInstance/ast-visitor)** — A Rust library for Ast Visitor
 - **[astro](https://github.com/SuperInstance/astro)** — The web framework for content-driven websites. ⭐️ Star to support our work!
 - **[async-rs](https://github.com/SuperInstance/async-rs)** — Async utilities and patterns - Better async/await, async iterators, streams
+- **[AtariST-MIDIMaze-Source](https://github.com/SuperInstance/AtariST-MIDIMaze-Source)** — C source code for the Atari ST MIDI-Maze
 - **[atlas-forge](https://github.com/SuperInstance/atlas-forge)**
 - **[attention-daemon-early-version](https://github.com/SuperInstance/attention-daemon-early-version)** — [ARCHIVED] Early salience experiment. 1KB scaffolding only.
 - **[attention-economy](https://github.com/SuperInstance/attention-economy)** — Agent attention as scarce resource with information-theoretic allocation
@@ -2067,6 +2068,7 @@
 - **[landauer](https://github.com/SuperInstance/landauer)** — Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info
 - **[lane-sheets](https://github.com/SuperInstance/lane-sheets)** — Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG
 - **[lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)** — Topological data analysis for test coverage gaps — finds blind spots in Rust test suites using persi
+- **[last-mile](https://github.com/SuperInstance/last-mile)** — Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt ren
 - **[lattice-crypto](https://github.com/SuperInstance/lattice-crypto)** — See README
 - **[lattice-crypto-rs](https://github.com/SuperInstance/lattice-crypto-rs)** — Lattice-based cryptography primitives: LWE, Ring-LWE, Gaussian sampling, LLL in pure Rust
 - **[lattice-hamiltonian](https://github.com/SuperInstance/lattice-hamiltonian)** — Lattice Hamiltonian systems — Ising/Potts models, transfer matrices, phase transitions, Metropolis M
@@ -2491,6 +2493,8 @@
 - **[MicroMoth-quilt](https://github.com/SuperInstance/MicroMoth-quilt)**
 - **[midden](https://github.com/SuperInstance/midden)**
 - **[midi-flux-bridge](https://github.com/SuperInstance/midi-flux-bridge)** — Bridge from tensor-midi timing to FLUX bytecode: conductor scheduling, swing timing, alignment verif
+- **[midi-maze-js](https://github.com/SuperInstance/midi-maze-js)** — AI re-generated Javascript version of MIDI Maze from the original source code
+- **[MidiMaze2](https://github.com/SuperInstance/MidiMaze2)** — Midi-Maze was one of the first first-person shooter for up to 16 players, long before Wolfenstein 3D
 - **[migrations](https://github.com/SuperInstance/migrations)** — Preserved workspace artifact
 - **[MineWright](https://github.com/SuperInstance/MineWright)** — The first AI that doesn't just play Minecraft — it *understands* Minecraft. Meet Mace MineWright, yo
 - **[minigate](https://github.com/SuperInstance/minigate)**
@@ -3682,6 +3686,7 @@
 - **[StudyLog](https://github.com/SuperInstance/StudyLog)** — Educational frontend for SuperInstance
 - **[studylog-agent](https://github.com/SuperInstance/studylog-agent)** — PLATO Study Partner Agent — tracks learning progression, logs sessions as PLATO tiles
 - **[studylog-ai-1](https://github.com/SuperInstance/studylog-ai-1)** — StudyLog.ai — AI study companion. Flashcards, spaced repetition, concept mapping. Part of the Lucine
+- **[stunt-car-racer-opengl](https://github.com/SuperInstance/stunt-car-racer-opengl)** — A Stunt Car Racer clone. A fork of http://sourceforge.net/projects/stuntcarremake
 - **[style-dna](https://github.com/SuperInstance/style-dna)** — Musical DNA extraction, analysis, and style morphing system
 - **[subleq-fabric](https://github.com/SuperInstance/subleq-fabric)** — Single-instruction execution substrate (SUBLEQ): code is an integer array, self-healing is a conditi
 - **[substrate-attest](https://github.com/SuperInstance/substrate-attest)** — ATTEST opcode (R10): add a trust score to an observation. Witness-typed.

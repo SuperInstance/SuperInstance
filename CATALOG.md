@@ -1,6 +1,6 @@
 # Fleet Catalog
-**Generated:** 2026-10-28 11:07 UTC
-**Total repositories:** 5311
+**Generated:** 2026-10-29 11:26 UTC
+**Total repositories:** 5316
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
@@ -1283,6 +1283,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[knowledge-graph](https://github.com/SuperInstance/knowledge-graph)** | JetsonClaw1 | Recursive vectorized idea graph for institutional knowledge | 🟢 active |
 | **[knowledge-vault](https://github.com/SuperInstance/knowledge-vault)** | JetsonClaw1 | knowledge-vault | 🟢 active |
 | **[knowledge-vault-rs](https://github.com/SuperInstance/knowledge-vault-rs)** | JetsonClaw1 | Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust) | 🟢 active |
+| **[last-mile](https://github.com/SuperInstance/last-mile)** | JetsonClaw1 | Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt ren | 🟢 active |
 | **[lau-bench](https://github.com/SuperInstance/lau-bench)** | JetsonClaw1 | Real hardware performance harness — benchmarking every lau-* crate against CPU, GPU, and cross-langu | 🔴 stalled |
 | **[lau-bytecode](https://github.com/SuperInstance/lau-bytecode)** | JetsonClaw1 | Stack-based bytecode VM for agent programs — 28 opcodes, compiler, sensor/actuator I/O, emotional vi | 🔴 stalled |
 | **[lau-cloud-deploy](https://github.com/SuperInstance/lau-cloud-deploy)** | JetsonClaw1 | Cloud deployment and configuration layer for SuperInstance/LAU stack — Oracle Cloud, AWS, GCP, Azure | 🔴 stalled |
@@ -1859,6 +1860,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[astro](https://github.com/SuperInstance/astro)** | Various | The web framework for content-driven websites. ⭐️ Star to support our work! | 🔴 stalled |
 | **[async-gpu-dispatch](https://github.com/SuperInstance/async-gpu-dispatch)** | Various | Experiment: async GPU kernel dispatch modeled on open-parallel's tokio-style runtime. Tests how futu | 🔴 stalled |
 | **[async-rs](https://github.com/SuperInstance/async-rs)** | Various | Async utilities and patterns - Better async/await, async iterators, streams | 🔴 stalled |
+| **[AtariST-MIDIMaze-Source](https://github.com/SuperInstance/AtariST-MIDIMaze-Source)** | Various | C source code for the Atari ST MIDI-Maze | 🔴 stalled |
 | **[atlas-forge](https://github.com/SuperInstance/atlas-forge)** | Various | atlas-forge | 🟢 active |
 | **[attention-daemon-early-version](https://github.com/SuperInstance/attention-daemon-early-version)** | Various | [ARCHIVED] Early salience experiment. 1KB scaffolding only. | 🔴 stalled |
 | **[attention-economy](https://github.com/SuperInstance/attention-economy)** | Various | Agent attention as scarce resource with information-theoretic allocation | 🔴 stalled |
@@ -3495,7 +3497,9 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[micro-onnx](https://github.com/SuperInstance/micro-onnx)** | Various | ONNX export + benchmark pipeline for micro-models. 186x speedup over PyTorch CPU. | 🔴 stalled |
 | **[MicroMoth-quilt](https://github.com/SuperInstance/MicroMoth-quilt)** | Various | MicroMoth-quilt | 🟢 active |
 | **[midden](https://github.com/SuperInstance/midden)** | Various | midden | 🟢 active |
+| **[midi-maze-js](https://github.com/SuperInstance/midi-maze-js)** | Various | AI re-generated Javascript version of MIDI Maze from the original source code | 🔴 stalled |
 | **[midi-temporal](https://github.com/SuperInstance/midi-temporal)** | Various | MIDI as a temporal protocol. Not just music — triggers, commentary, 16 tracks as characters. | 🟢 active |
+| **[MidiMaze2](https://github.com/SuperInstance/MidiMaze2)** | Various | Midi-Maze was one of the first first-person shooter for up to 16 players, long before Wolfenstein 3D | ⚫ deprecated |
 | **[migrations](https://github.com/SuperInstance/migrations)** | Various | Preserved workspace artifact | ⚫ deprecated |
 | **[migrator-rs](https://github.com/SuperInstance/migrator-rs)** | Various | Database migration tool - Versioned migrations, rollback support, multiple databases | 🔴 stalled |
 | **[minigate](https://github.com/SuperInstance/minigate)** | Various | minigate | 🟢 active |
@@ -4619,6 +4623,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[StudyLog](https://github.com/SuperInstance/StudyLog)** | Various | Educational frontend for SuperInstance | 🔴 stalled |
 | **[studylog-agent](https://github.com/SuperInstance/studylog-agent)** | Various | PLATO Study Partner Agent — tracks learning progression, logs sessions as PLATO tiles | 🔴 stalled |
 | **[studylog-ai-1](https://github.com/SuperInstance/studylog-ai-1)** | Various | StudyLog.ai — AI study companion. Flashcards, spaced repetition, concept mapping. Part of the Lucine | 🔴 stalled |
+| **[stunt-car-racer-opengl](https://github.com/SuperInstance/stunt-car-racer-opengl)** | Various | A Stunt Car Racer clone. A fork of http://sourceforge.net/projects/stuntcarremake | ⚫ deprecated |
 | **[stunt-double](https://github.com/SuperInstance/stunt-double)** | Various | 🏃 Ephemeral x86_64 offload harness — run any command on any GitHub repo, collect results, destroy. Z | 🔴 stalled |
 | **[style-dna](https://github.com/SuperInstance/style-dna)** | Various | Musical DNA extraction, analysis, and style morphing system | 🔴 stalled |
 | **[SubForge](https://github.com/SuperInstance/SubForge)** | Various | Media → Subtitles → Translation, all-in-one. One engine, three frontends: PyQt6 GUI, Textual TUI, pl | 🔴 stalled |
@@ -14190,6 +14195,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [last-mile](https://github.com/SuperInstance/last-mile)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt renders, Jetson Thor thinks, Orin archives
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [lau-bench](https://github.com/SuperInstance/lau-bench)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -18163,6 +18175,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Async utilities and patterns - Better async/await, async iterators, streams
+- **Research lineage:** Not yet categorized.
+- **Status:** stalled
+
+### [AtariST-MIDIMaze-Source](https://github.com/SuperInstance/AtariST-MIDIMaze-Source)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** C source code for the Atari ST MIDI-Maze
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
 
@@ -29618,12 +29637,26 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Not yet categorized.
 - **Status:** active
 
+### [midi-maze-js](https://github.com/SuperInstance/midi-maze-js)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** AI re-generated Javascript version of MIDI Maze from the original source code
+- **Research lineage:** Not yet categorized.
+- **Status:** stalled
+
 ### [midi-temporal](https://github.com/SuperInstance/midi-temporal)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** MIDI as a temporal protocol. Not just music — triggers, commentary, 16 tracks as characters.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
+
+### [MidiMaze2](https://github.com/SuperInstance/MidiMaze2)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Midi-Maze was one of the first first-person shooter for up to 16 players, long before Wolfenstein 3D, Doom, etc. Midi-Maze II was the sucessor which a
+- **Research lineage:** Not yet categorized.
+- **Status:** deprecated
 
 ### [migrations](https://github.com/SuperInstance/migrations)
 - **Domain:** Other / Uncategorized
@@ -37485,6 +37518,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Purpose:** StudyLog.ai — AI study companion. Flashcards, spaced repetition, concept mapping. Part of the Lucineer ecosystem.
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
+
+### [stunt-car-racer-opengl](https://github.com/SuperInstance/stunt-car-racer-opengl)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** A Stunt Car Racer clone. A fork of http://sourceforge.net/projects/stuntcarremake
+- **Research lineage:** Not yet categorized.
+- **Status:** deprecated
 
 ### [stunt-double](https://github.com/SuperInstance/stunt-double)
 - **Domain:** Other / Uncategorized
