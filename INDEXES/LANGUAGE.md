@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-10-29 11:26 UTC
+**Generated:** 2026-10-30 11:18 UTC
 **Total repos:** 5316
 
 ## C
@@ -3476,7 +3476,7 @@
 - **[luciddreamer-prototype](https://github.com/SuperInstance/luciddreamer-prototype)** — LucidDreamer.AI — prototype and research
 - **[luciddreamer-research](https://github.com/SuperInstance/luciddreamer-research)** — luciddreamer-research
 - **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** — LucidDreamer vision module for SuperInstance dream-state agents
-- **[Lucineer](https://github.com/SuperInstance/Lucineer)** — Project for Lucineer, likely a search engine tool.
+- **[Lucineer](https://github.com/SuperInstance/Lucineer)** — early ideas for a super app
 - **[lucineer-1](https://github.com/SuperInstance/lucineer-1)** — Cocapn fleet — 150+ autonomous vessels
 - **[lucineer-brain](https://github.com/SuperInstance/lucineer-brain)** — 🧮 Multi-model build intelligence — routes natural language through DeepInfra models to generate Robl
 - **[lucineer-com-site](https://github.com/SuperInstance/lucineer-com-site)**

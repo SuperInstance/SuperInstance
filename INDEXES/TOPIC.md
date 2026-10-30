@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-10-29 11:26 UTC
+**Generated:** 2026-10-30 11:18 UTC
 **Total repos:** 5316
 
 ## A2A
@@ -4091,7 +4091,7 @@
 - **[luciddreamer-prototype](https://github.com/SuperInstance/luciddreamer-prototype)** — LucidDreamer.AI — prototype and research
 - **[luciddreamer-py](https://github.com/SuperInstance/luciddreamer-py)** — Recovered source for @superinstance/luciddreamer - maritime intelligence that compiles soft model be
 - **[luciddreamer-research](https://github.com/SuperInstance/luciddreamer-research)** — luciddreamer-research
-- **[Lucineer](https://github.com/SuperInstance/Lucineer)** — Project for Lucineer, likely a search engine tool.
+- **[Lucineer](https://github.com/SuperInstance/Lucineer)** — early ideas for a super app
 - **[lucineer-brain](https://github.com/SuperInstance/lucineer-brain)** — 🧮 Multi-model build intelligence — routes natural language through DeepInfra models to generate Robl
 - **[lucineer-com](https://github.com/SuperInstance/lucineer-com)** — Structured lucid dream practice tool — evidence-based techniques, dream sign tracking, and progress 
 - **[lucineer-com-pages](https://github.com/SuperInstance/lucineer-com-pages)** — GitHub Pages for lucineer.com

@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-10-29 11:26 UTC
+**Generated:** 2026-10-30 11:18 UTC
 **Total repos:** 5316
 
 ## Cli
@@ -2435,6 +2435,7 @@
 - **[luciddreamer-os](https://github.com/SuperInstance/luciddreamer-os)** — Concept OS named Lucid Dreamer for OS development.
 - **[luciddreamer-py](https://github.com/SuperInstance/luciddreamer-py)** — Recovered source for @superinstance/luciddreamer - maritime intelligence that compiles soft model be
 - **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** — LucidDreamer vision module for SuperInstance dream-state agents
+- **[Lucineer](https://github.com/SuperInstance/Lucineer)** — early ideas for a super app
 - **[lucineer-com-site](https://github.com/SuperInstance/lucineer-com-site)**
 - **[lucineer-creative](https://github.com/SuperInstance/lucineer-creative)** — 🎨 MMX-powered creative asset pipeline — concept art, ambient music, and build previews for Lucineer'
 - **[lucineer-fleet-wiki](https://github.com/SuperInstance/lucineer-fleet-wiki)**
@@ -4942,7 +4943,6 @@
 - **[lau-graph-theory](https://github.com/SuperInstance/lau-graph-theory)** — Graph theory toolkit — traversals, shortest paths, MST, network flow, matching, spectral analysis, a
 - **[llvm-project](https://github.com/SuperInstance/llvm-project)** — The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 - **[logtensor](https://github.com/SuperInstance/logtensor)** — Geometric tensor transformers — missile-guidance-inspired attention mechanics and decomposition tool
-- **[Lucineer](https://github.com/SuperInstance/Lucineer)** — Project for Lucineer, likely a search engine tool.
 - **[lucineer-com](https://github.com/SuperInstance/lucineer-com)** — Structured lucid dream practice tool — evidence-based techniques, dream sign tracking, and progress 
 - **[lucineer-workspace](https://github.com/SuperInstance/lucineer-workspace)** — Lucineer workspace: process, decisions, and structured knowledge from the zero-shot visitor audit, t
 - **[makerlog-ai](https://github.com/SuperInstance/makerlog-ai)** — AI tools for tracking and analyzing Makerlog productivity.

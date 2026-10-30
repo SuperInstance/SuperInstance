@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-29 11:26 UTC
+**Generated:** 2026-10-30 11:18 UTC
 **Total repositories:** 5316
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -3424,7 +3424,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[luciddreamer-py](https://github.com/SuperInstance/luciddreamer-py)** | Various | Recovered source for @superinstance/luciddreamer - maritime intelligence that compiles soft model be | 🟢 active |
 | **[luciddreamer-research](https://github.com/SuperInstance/luciddreamer-research)** | Various | luciddreamer-research | 🟢 active |
 | **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** | Various | LucidDreamer vision module for SuperInstance dream-state agents | 🟢 active |
-| **[Lucineer](https://github.com/SuperInstance/Lucineer)** | Various | Project for Lucineer, likely a search engine tool. | 🔴 stalled |
+| **[Lucineer](https://github.com/SuperInstance/Lucineer)** | Various | early ideas for a super app | 🔴 stalled |
 | **[lucineer-brain](https://github.com/SuperInstance/lucineer-brain)** | Various | 🧮 Multi-model build intelligence — routes natural language through DeepInfra models to generate Robl | 🟢 active |
 | **[lucineer-com](https://github.com/SuperInstance/lucineer-com)** | Various | Structured lucid dream practice tool — evidence-based techniques, dream sign tracking, and progress  | 🔴 stalled |
 | **[lucineer-com-site](https://github.com/SuperInstance/lucineer-com-site)** | Various | lucineer-com-site | 🟢 active |
@@ -29129,7 +29129,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 ### [Lucineer](https://github.com/SuperInstance/Lucineer)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
-- **Purpose:** Project for Lucineer, likely a search engine tool.
+- **Purpose:** early ideas for a super app
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
 
