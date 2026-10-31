@@ -1,6 +1,6 @@
 # Fleet Catalog
-**Generated:** 2026-10-30 11:18 UTC
-**Total repositories:** 5316
+**Generated:** 2026-10-31 10:50 UTC
+**Total repositories:** 5318
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
@@ -2113,6 +2113,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[coff-parser](https://github.com/SuperInstance/coff-parser)** | Various | A Rust library for Coff Parser | 🔴 stalled |
 | **[cog-lab](https://github.com/SuperInstance/cog-lab)** | Various | The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf | 🟢 active |
 | **[cognitive-archaeology](https://github.com/SuperInstance/cognitive-archaeology)** | Various | Layered cognitive history with archaeological excavation — dig through strata of an agent's mind in  | 🔴 stalled |
+| **[cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)** | Various | A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world o | 🟢 active |
 | **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** | Various | Core cognitive processing engine. | 🟢 active |
 | **[coinlog-ai](https://github.com/SuperInstance/coinlog-ai)** | Various | CoinLog.ai — AI cryptocurrency portfolio tracker and market analyst. Part of the Lucineer ecosystem. | 🔴 stalled |
 | **[collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)** | Various | Quilt backend for Real-time collaborative drawing platform built with Java, JavaFX, TCP sockets, and | 🟢 active |
@@ -3357,7 +3358,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[liaison-agent](https://github.com/SuperInstance/liaison-agent)** | Various | Standalone liaison agent for fleet orchestration - handles escalation, tendering, and fleet bridge c | 🔴 stalled |
 | **[liath](https://github.com/SuperInstance/liath)** | Various | A programmable database that speaks Lua. Store data, run queries, build AI workflows. | 🔴 stalled |
 | **[libgdx](https://github.com/SuperInstance/libgdx)** | Various | Desktop/Android/HTML5/iOS Java game development framework | 🔴 stalled |
-| **[libpointmatcher](https://github.com/SuperInstance/libpointmatcher)** | Various | An Iterative Closest Point (ICP) library for 2D and 3D mapping in Robotics | 🔴 stalled |
+| **[libpointmatcher](https://github.com/SuperInstance/libpointmatcher)** | Various | An Iterative Closest Point (ICP) library for 2D and 3D mapping in Robotics | ⚫ deprecated |
 | **[license-compliance](https://github.com/SuperInstance/license-compliance)** | Various | CLI tool to check open-source license compatibility across dependency trees | 🔴 stalled |
 | **[lie-algebra](https://github.com/SuperInstance/lie-algebra)** | Various | Lie algebras in Rust — Lie brackets, structure constants, representations, root systems, Cartan suba | 🔴 stalled |
 | **[lighthouse](https://github.com/SuperInstance/lighthouse)** | Various | Fleet Lighthouse — unified health dashboard, alerting, diagnostics for Pelagic fleet | 🔴 stalled |
@@ -5290,6 +5291,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[what-is-the-quilt](https://github.com/SuperInstance/what-is-the-quilt)** | Various | A one-page explainer for the Quilt project family. Public front door for newcomers. | 🟢 active |
 | **[wheelhouse-game](https://github.com/SuperInstance/wheelhouse-game)** | Various | The Wheelhouse Game — weather routing for commercial fishing, F140 audit. F151. | 🟢 active |
 | **[whistle](https://github.com/SuperInstance/whistle)** | Various | Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled | 🔴 stalled |
+| **[why](https://github.com/SuperInstance/why)** | Various | Does this still deserve to exist? A justification-reachability engine — one question, two files, man | 🟢 active |
 | **[wiki](https://github.com/SuperInstance/wiki)** | Various | ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs | 🔴 stalled |
 | **[wire-harmony](https://github.com/SuperInstance/wire-harmony)** | Various | Wire-level protocol harmony layer for SuperInstance networking | 🔴 stalled |
 | **[witness-anchor](https://github.com/SuperInstance/witness-anchor)** | Various | THE fleet's out-of-band witness anchor -- a Cloudflare Worker that publishes signed heads and comput | 🟢 active |
@@ -19949,6 +19951,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** stalled
 
+### [cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world of processes, attention, scripts, and sleep.
+- **Research lineage:** Not yet categorized.
+- **Status:** active
+
 ### [CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -28662,7 +28671,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** An Iterative Closest Point (ICP) library for 2D and 3D mapping in Robotics
 - **Research lineage:** Not yet categorized.
-- **Status:** stalled
+- **Status:** deprecated
 
 ### [license-compliance](https://github.com/SuperInstance/license-compliance)
 - **Domain:** Other / Uncategorized
@@ -42187,6 +42196,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Purpose:** Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled commands.
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
+
+### [why](https://github.com/SuperInstance/why)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Does this still deserve to exist? A justification-reachability engine — one question, two files, many adapters.
+- **Research lineage:** Not yet categorized.
+- **Status:** active
 
 ### [wiki](https://github.com/SuperInstance/wiki)
 - **Domain:** Other / Uncategorized

@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-30 11:18 UTC
+**Generated:** 2026-10-31 10:50 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -4295,6 +4295,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [coev](https://github.com/SuperInstance/coev)
 - [coff-parser](https://github.com/SuperInstance/coff-parser)
 - [cog-lab](https://github.com/SuperInstance/cog-lab)
+- [cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)
 - [coinlog-ai](https://github.com/SuperInstance/coinlog-ai)
 - [collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)
 - [collective-inference](https://github.com/SuperInstance/collective-inference)
@@ -6341,6 +6342,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [what-is-the-quilt](https://github.com/SuperInstance/what-is-the-quilt)
 - [wheelhouse-game](https://github.com/SuperInstance/wheelhouse-game)
 - [whistle](https://github.com/SuperInstance/whistle)
+- [why](https://github.com/SuperInstance/why)
 - [wiki](https://github.com/SuperInstance/wiki)
 - [wire-harmony](https://github.com/SuperInstance/wire-harmony)
 - [witness-complex](https://github.com/SuperInstance/witness-complex)
