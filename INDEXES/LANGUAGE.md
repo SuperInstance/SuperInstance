@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-10-31 10:50 UTC
+**Generated:** 2026-11-01 11:47 UTC
 **Total repos:** 5318
 
 ## C
@@ -3146,7 +3146,7 @@
 - **[ladder](https://github.com/SuperInstance/ladder)** — An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why 
 - **[landauer](https://github.com/SuperInstance/landauer)** — Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info
 - **[lane-sheets](https://github.com/SuperInstance/lane-sheets)** — Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG
-- **[last-mile](https://github.com/SuperInstance/last-mile)** — Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt ren
+- **[last-mile](https://github.com/SuperInstance/last-mile)** — Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score
 - **[lattice-climate](https://github.com/SuperInstance/lattice-climate)** — Lattice climate modeling — discrete spacetime grids with spectral conservation for climate simulatio
 - **[lattice-crypto](https://github.com/SuperInstance/lattice-crypto)** — See README
 - **[lattice-hamiltonian](https://github.com/SuperInstance/lattice-hamiltonian)** — Lattice Hamiltonian systems — Ising/Potts models, transfer matrices, phase transitions, Metropolis M

@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-31 10:50 UTC
+**Generated:** 2026-11-01 11:47 UTC
 **Total repositories:** 5318
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -1283,7 +1283,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[knowledge-graph](https://github.com/SuperInstance/knowledge-graph)** | JetsonClaw1 | Recursive vectorized idea graph for institutional knowledge | 🟢 active |
 | **[knowledge-vault](https://github.com/SuperInstance/knowledge-vault)** | JetsonClaw1 | knowledge-vault | 🟢 active |
 | **[knowledge-vault-rs](https://github.com/SuperInstance/knowledge-vault-rs)** | JetsonClaw1 | Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust) | 🟢 active |
-| **[last-mile](https://github.com/SuperInstance/last-mile)** | JetsonClaw1 | Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt ren | 🟢 active |
 | **[lau-bench](https://github.com/SuperInstance/lau-bench)** | JetsonClaw1 | Real hardware performance harness — benchmarking every lau-* crate against CPU, GPU, and cross-langu | 🔴 stalled |
 | **[lau-bytecode](https://github.com/SuperInstance/lau-bytecode)** | JetsonClaw1 | Stack-based bytecode VM for agent programs — 28 opcodes, compiler, sensor/actuator I/O, emotional vi | 🔴 stalled |
 | **[lau-cloud-deploy](https://github.com/SuperInstance/lau-cloud-deploy)** | JetsonClaw1 | Cloud deployment and configuration layer for SuperInstance/LAU stack — Oracle Cloud, AWS, GCP, Azure | 🔴 stalled |
@@ -3042,6 +3041,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[landauer](https://github.com/SuperInstance/landauer)** | Various | Information thermodynamics — Landauer's principle computing the physical energy cost of erasing info | 🔴 stalled |
 | **[lane-sheets](https://github.com/SuperInstance/lane-sheets)** | Various | Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG | 🟢 active |
 | **[lapce-coverage-gap](https://github.com/SuperInstance/lapce-coverage-gap)** | Various | Topological data analysis for test coverage gaps — finds blind spots in Rust test suites using persi | 🔴 stalled |
+| **[last-mile](https://github.com/SuperInstance/last-mile)** | Various | Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score | 🟢 active |
 | **[lattice-climate](https://github.com/SuperInstance/lattice-climate)** | Various | Lattice climate modeling — discrete spacetime grids with spectral conservation for climate simulatio | 🔴 stalled |
 | **[lattice-crypto](https://github.com/SuperInstance/lattice-crypto)** | Various | See README | 🔴 stalled |
 | **[lattice-crypto-rs](https://github.com/SuperInstance/lattice-crypto-rs)** | Various | Lattice-based cryptography primitives: LWE, Ring-LWE, Gaussian sampling, LLL in pure Rust | 🔴 stalled |
@@ -14194,13 +14194,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust)
-- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
-
-### [last-mile](https://github.com/SuperInstance/last-mile)
-- **Domain:** Hardware & Edge
-- **Vessel:** JetsonClaw1
-- **Purpose:** Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt renders, Jetson Thor thinks, Orin archives
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
@@ -26453,6 +26446,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Purpose:** Topological data analysis for test coverage gaps — finds blind spots in Rust test suites using persistent homology
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
+
+### [last-mile](https://github.com/SuperInstance/last-mile)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score
+- **Research lineage:** Not yet categorized.
+- **Status:** active
 
 ### [lattice-climate](https://github.com/SuperInstance/lattice-climate)
 - **Domain:** Other / Uncategorized
