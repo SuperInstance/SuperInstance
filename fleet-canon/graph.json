@@ -1,14 +1,14 @@
 {
- "generated": "2026-10-25T23:32:54Z",
+ "generated": "2026-11-02T01:01:44Z",
  "source": "CATALOG.md",
- "catalogGenerated": "2026-10-25",
- "catalogTotal": 5308,
- "parsed": 5308,
+ "catalogGenerated": "2026-11-01",
+ "catalogTotal": 5318,
+ "parsed": 5318,
  "catalogMissing": [],
  "tier3Note": "tier-3 (orphan+stale) populates once the CATALOG generator fetches pushedAt/isArchived (meta repo PR #19, catalog-v2); until then every row reads active",
  "tiers": {
   "1": 27,
-  "2": 5281,
+  "2": 5291,
   "3": 0
  },
  "vessels": [
@@ -1903,6 +1903,15 @@
    "tier": 2
   },
   {
+   "name": "AtariST-MIDIMaze-Source",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "C source code for the Atari ST MIDI-Maze",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "atlas-forge",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -2339,6 +2348,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "base60-lattice",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "BasicC2",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A basic no-Login Command & Control written in Python, works on Windows & Linux and has XOR encryptio",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -5219,6 +5237,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Layered cognitive history with archaeological excavation — dig through strata of an agent's mind in",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "cognitive-ecology",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world o",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -22018,6 +22045,15 @@
    "tier": 2
   },
   {
+   "name": "last-mile",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "lattice-climate",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -25828,7 +25864,7 @@
    "name": "Lucineer",
    "family": "other-uncategorized",
    "vessel": "Various",
-   "mission": "Project for Lucineer, likely a search engine tool.",
+   "mission": "early ideas for a super app",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -26689,10 +26725,28 @@
    "tier": 2
   },
   {
+   "name": "midi-maze-js",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "AI re-generated Javascript version of MIDI Maze from the original source code",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "midi-temporal",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "MIDI as a temporal protocol. Not just music — triggers, commentary, 16 tracks as characters.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "MidiMaze2",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Midi-Maze was one of the first first-person shooter for up to 16 players, long before Wolfenstein 3D",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -39982,6 +40036,15 @@
    "tier": 2
   },
   {
+   "name": "stitch",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "stock-screener",
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
@@ -40121,6 +40184,15 @@
    "family": "sites",
    "vessel": "CCC",
    "mission": "GitHub Pages for studylog.ai",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "stunt-car-racer-opengl",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A Stunt Car Racer clone. A fork of http://sourceforge.net/projects/stuntcarremake",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -47186,6 +47258,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "whole-house-quilt",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "The whole-house quilt: rooms of text state, stationed residents, decision-model dice, and an append-",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "why",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Does this still deserve to exist? A justification-reachability engine — one question, two files, man",
    "state": "active",
    "bornFrom": [],
    "tier": 2
