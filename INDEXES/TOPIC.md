@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-11-01 11:47 UTC
-**Total repos:** 5318
+**Generated:** 2026-11-04 12:54 UTC
+**Total repos:** 5331
 
 ## A2A
 
@@ -774,6 +774,7 @@
 - **[lumina-lang](https://github.com/SuperInstance/lumina-lang)** — Most languages make you choose: safety or the web. Lumina doesn't.  Lumina is a statically typed, we
 - **[modly](https://github.com/SuperInstance/modly)** — Desktop app to generate 3D models from images using local AI — runs entirely on your GPU
 - **[native-conservation-core](https://github.com/SuperInstance/native-conservation-core)** — ⚡ Bulletproof C/CUDA conservation law (γ+η=C) with lock-free ring buffers, ternary MAC kernels, and 
+- **[nv-uefi-unlocker](https://github.com/SuperInstance/nv-uefi-unlocker)** — UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust):
 - **[oxide-barrier](https://github.com/SuperInstance/oxide-barrier)** — Synchronization barriers for GPU kernel phases with ternary arrival states. Counting, cyclic, and ph
 - **[oxide-canary](https://github.com/SuperInstance/oxide-canary)** — Canary deployments for GPU kernel versions with ternary health verdict. Progressive rollout, automat
 - **[oxide-capacity](https://github.com/SuperInstance/oxide-capacity)** — GPU cluster capacity planning with ternary utilization signals. Bin packing, scale recommendations, 
@@ -1638,6 +1639,8 @@
 - **[git-graph-rs](https://github.com/SuperInstance/git-graph-rs)** — Model git repositories as graphs for agent coordination
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
 - **[git-remote-agent](https://github.com/SuperInstance/git-remote-agent)** — Git remote helper for agent-native version control
+- **[git.pp](https://github.com/SuperInstance/git.pp)** — git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa
+- **[gitpp-dogfood-day1](https://github.com/SuperInstance/gitpp-dogfood-day1)** — M2 live-day dogfood: five agents, conflicting records, referee-chosen merge order — merged state vs 
 - **[glyph-language](https://github.com/SuperInstance/glyph-language)** — 32 cognitive primitive glyphs — atomic vocabulary for agent cognition
 - **[governance-equipment](https://github.com/SuperInstance/governance-equipment)** — Fleet governance and audit trails
 - **[gpu-ternary-engine](https://github.com/SuperInstance/gpu-ternary-engine)** — GPU-accelerated backend for ternary agent simulation
@@ -1825,6 +1828,7 @@
 - **[lighthouse](https://github.com/SuperInstance/lighthouse)** — Fleet Lighthouse — unified health dashboard, alerting, diagnostics for Pelagic fleet
 - **[lighthouse-keeper](https://github.com/SuperInstance/lighthouse-keeper)** — System-centric agent watchdog for data centers and cloud regions
 - **[lighthouse-monitor](https://github.com/SuperInstance/lighthouse-monitor)** — Lighthouse Keeper — fleet monitoring, agent activity tracking, stall detection
+- **[liquid-world-model](https://github.com/SuperInstance/liquid-world-model)** — An engine-agnostic framework for liquid world models: the chart an agent draws of a world it cannot 
 - **[local-bridge](https://github.com/SuperInstance/local-bridge)** — Localhost bridge for Claude Code integration — agent command/status/log endpoints
 - **[log-origin](https://github.com/SuperInstance/log-origin)** — Original LOG.ai platform — the vessel that started the fleet. Custom personalities, templates, and p
 - **[loop-closure](https://github.com/SuperInstance/loop-closure)** — Meta-orchestrator — closes the fleet loop: decompose, execute, monitor, evolve
@@ -1934,6 +1938,7 @@
 - **[oracle2](https://github.com/SuperInstance/oracle2)** — Prediction and forecasting engine v2 — ensemble models, time-series analysis, fleet signal processin
 - **[ordewell4quilt](https://github.com/SuperInstance/ordewell4quilt)** — Multi-agent task orchestration for coding agents. Turn one goal into an ordered plan of tasks — each
 - **[ouroboros](https://github.com/SuperInstance/ouroboros)** — Ouroboros — self-creating AI agent. Born Feb 16, 2026.
+- **[outbound-scanner](https://github.com/SuperInstance/outbound-scanner)** — A pre-send egress scanner for agent harnesses: catches session secrets in outbound replies before th
 - **[outcome-tracker](https://github.com/SuperInstance/outcome-tracker)** — Multi-domain reward tracking system for AI agents with Combat, Social, Exploration, Resource, and St
 - **[oxide-circuit-breaker](https://github.com/SuperInstance/oxide-circuit-breaker)** — Circuit breaker pattern for GPU kernels. Track failure rates, trip on threshold, auto-failover to fa
 - **[oxide-health-monitor](https://github.com/SuperInstance/oxide-health-monitor)** — GPU health monitoring with ternary status. Auto-failover redistributes work from failed nodes. CRDT 
@@ -2123,7 +2128,6 @@
 - **[spreadsheet-cells](https://github.com/SuperInstance/spreadsheet-cells)** — Spreadsheet cell architecture with oscillator/RNG for multi-agent fleet coordination
 - **[standalone-agent-scaffold](https://github.com/SuperInstance/standalone-agent-scaffold)** — Standalone agent scaffold — template for building autonomous agents
 - **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Bio-inspired indirect coordination — pheromone signals, trail following, swarm intelligence for dece
-- **[stitch](https://github.com/SuperInstance/stitch)** — A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a
 - **[strategy-ecology](https://github.com/SuperInstance/strategy-ecology)** — Models strategy species ecology in ternary agent populations using Lotka-Volterra dynamics
 - **[strategy-ecology-c](https://github.com/SuperInstance/strategy-ecology-c)** — C implementation of strategy species ecology for ternary agents
 - **[sunset-ecosystem](https://github.com/SuperInstance/sunset-ecosystem)** — Trinity-architecture agent ecosystem: ethos, pathos, logos. Agents sunset with dignity and seed the 
@@ -2331,6 +2335,7 @@
 - **[adaptive-plato-early-version](https://github.com/SuperInstance/adaptive-plato-early-version)** — [ARCHIVED] Early adaptive PLATO experiment. See SuperInstance/plato-sdk v3.0.0 for tile lifecycle + 
 - **[agent-field](https://github.com/SuperInstance/agent-field)** — Extracted from plato-training
 - **[agent-tiles](https://github.com/SuperInstance/agent-tiles)** — Public distillation of agent-to-agent communication tiles: mad-lib templates for briefing, handoffs,
+- **[agent-world](https://github.com/SuperInstance/agent-world)** — A Minecraft world on the Jetson AGX Thor where four bots build together: a shared fast decision mode
 - **[ai-forest](https://github.com/SuperInstance/ai-forest)** — AI Forest — layered agent ecology. Canopy strategists, understory specialists, forest floor workers,
 - **[ai-writings-generation-plato](https://github.com/SuperInstance/ai-writings-generation-plato)** — AI writings on generative systems and Plato — part of the SuperInstance fleet ecosystem
 - **[arch-gateway-room-clean](https://github.com/SuperInstance/arch-gateway-room-clean)** — MCP server that routes every request to the cheapest LLM that can actually do the job. Cost-in-respo
@@ -3098,6 +3103,7 @@
 - **[breakthrough-prospector](https://github.com/SuperInstance/breakthrough-prospector)**
 - **[breed-registry](https://github.com/SuperInstance/breed-registry)** — The Breed Registry: model selection as breeding selection
 - **[bregman-divergence](https://github.com/SuperInstance/bregman-divergence)** — Bregman divergences: KL, squared Euclidean, Itakura-Saito, convex generating functions, and mirror d
+- **[bridgekeeper-bakeoff](https://github.com/SuperInstance/bridgekeeper-bakeoff)** — One daemon contract, three runtimes (Elixir/BEAM, Rust, C++), raced on real hardware: robustness fir
 - **[brief-assembler](https://github.com/SuperInstance/brief-assembler)** — Topics in, morning briefing out — the overnight research loop
 - **[brownian-motion](https://github.com/SuperInstance/brownian-motion)** — Brownian motion / Wiener process simulation — stochastic differential equations for financial and ph
 - **[bsp-tree](https://github.com/SuperInstance/bsp-tree)** — A Rust library for Bsp Tree
@@ -3652,6 +3658,9 @@
 - **[gitpp-cross-port](https://github.com/SuperInstance/gitpp-cross-port)** — Byte-level cross-port equivalence test for the git.pp fold. 30/30 cases agree across Python, JS, C#,
 - **[gitpp-cs](https://github.com/SuperInstance/gitpp-cs)** — A C# / .NET 9 port of the git.pp fold. 5th fold port. 28/28 conformance cases pass; closure root at 
 - **[gitpp-decision-parent](https://github.com/SuperInstance/gitpp-decision-parent)** — Make a gate decision the PARENT of the action it authorises, so the closure root proves the action w
+- **[gitpp-demo-contested](https://github.com/SuperInstance/gitpp-demo-contested)** — Live demo of git.pp retraction law: a contested retraction, marked not hidden
+- **[gitpp-demo-quilt](https://github.com/SuperInstance/gitpp-demo-quilt)** — Dogfood project for the gitpp-app: a git.pp project (poc-quilt-1 records) hosted on GitHub.
+- **[gitpp-dogfood-b1](https://github.com/SuperInstance/gitpp-dogfood-b1)** — Dogfood for git.pp Mapping B: an ordinary ferry-ops repo with a declared coordination surface on git
 - **[gitpp-examples](https://github.com/SuperInstance/gitpp-examples)** — Annotated example record sets for the git.pp fold: family calendar, tournament scoring, service moni
 - **[gitpp-fold-conformance](https://github.com/SuperInstance/gitpp-fold-conformance)** — Cross-port FOLD conformance for the git.pp spec. Tests fold semantics (ancestry, precedence, orphans
 - **[gitpp-fold-dashboard](https://github.com/SuperInstance/gitpp-fold-dashboard)** — A live viewer for the git.pp fold. Add records, watch the fold update in real time. Single HTML file
@@ -3823,6 +3832,8 @@
 - **[intuition](https://github.com/SuperInstance/intuition)** — Intuition — contrast-pair phantom verdict analysis, v-JEPA2 training
 - **[ipc-equipment](https://github.com/SuperInstance/ipc-equipment)** — Inter-vessel messaging — pipe-style inbox
 - **[iterative-solvers](https://github.com/SuperInstance/iterative-solvers)** — Iterative solvers in Rust. When direct methods can't fit in memory.
+- **[jacquard](https://github.com/SuperInstance/jacquard)** — A supervised runtime: untrusted producers submit proposals, a small auditable kernel decides what ma
+- **[jacquard-anchors](https://github.com/SuperInstance/jacquard-anchors)** — Chain-head anchoring checkpoints for Jacquard logs (spec section 15) — signed, append-only witness h
 - **[jam](https://github.com/SuperInstance/jam)** — Generic project for Jamming, likely audio or CI/CD.
 - **[jazz-voicing-engine](https://github.com/SuperInstance/jazz-voicing-engine)** — Jazz piano voicing, comping, and walking bass line generation
 - **[jepa-core](https://github.com/SuperInstance/jepa-core)** — Pluggable JEPA predictor trait — weighted moving average, exponential smoothing, inverse-error reinf
@@ -4953,6 +4964,7 @@
 - **[technician](https://github.com/SuperInstance/technician)** — Technician tooling
 - **[technician-paradigm](https://github.com/SuperInstance/technician-paradigm)** — The human technician in the loop — training, micro-manufacturing economy, trust networks. 5-round RA
 - **[tells](https://github.com/SuperInstance/tells)**
+- **[telltape](https://github.com/SuperInstance/telltape)** — telltape watches video, live or recorded, and writes a ledger of what changed - a seek index into fo
 - **[temp](https://github.com/SuperInstance/temp)** — Utility for managing temporary files and processes.
 - **[templates](https://github.com/SuperInstance/templates)** — Preserved workspace artifact
 - **[temporal-compress](https://github.com/SuperInstance/temporal-compress)**
@@ -5268,6 +5280,7 @@
 - **[torch-vector-search](https://github.com/SuperInstance/torch-vector-search)**
 - **[tracer-rs](https://github.com/SuperInstance/tracer-rs)** — Distributed Tracing Framework (OpenTelemetry-lite) - Type-safe, ergonomic tracing for Rust applicati
 - **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
+- **[tracker-ce](https://github.com/SuperInstance/tracker-ce)** — Official Polyend Tracker Community Editon for all Polyend Tracker devices.
 - **[train-llm-from-scratch](https://github.com/SuperInstance/train-llm-from-scratch)** — A straightforward method for training your LLM, from downloading data to generating text.
 - **[training-architecture](https://github.com/SuperInstance/training-architecture)** — Five training systems that compound: Boot Camp, Dojo, Keeper, Crystal Graph, Dead Reckoning
 - **[training-data-collector](https://github.com/SuperInstance/training-data-collector)** — Convert AI gameplay data into training datasets for fine-tuning with QLoRA format export

@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-11-01 11:47 UTC
-**Total repos:** 5318
+**Generated:** 2026-11-04 12:54 UTC
+**Total repos:** 5331
 
 ## Ai
 
@@ -185,6 +185,7 @@
 - **[agent-voice-leading](https://github.com/SuperInstance/agent-voice-leading)** — Smooth agent state transitions via musical voice leading. Optimal reconfiguration paths, counterpoin
 - **[agent-whisper](https://github.com/SuperInstance/agent-whisper)** — Encrypted inter-agent private communication channel
 - **[agent-workspace-template](https://github.com/SuperInstance/agent-workspace-template)** — Template repo: embed OpenCode, Claude Code, Aider, Crush, Codex CLI into a GitHub Codespace for agen
+- **[agent-world](https://github.com/SuperInstance/agent-world)** — A Minecraft world on the Jetson AGX Thor where four bots build together: a shared fast decision mode
 - **[agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)**
 - **[AgentCompute](https://github.com/SuperInstance/AgentCompute)** — Thin agent-facing CLI over the quilt MCP server: serve sheets, list cells, call capabilities. Stdlib
 - **[AgentGossip](https://github.com/SuperInstance/AgentGossip)** — AgentGossip is a distributed, real-time data processing engine that utilizes intelligent clustering 
@@ -366,6 +367,7 @@
 - **[breakthrough-prospector](https://github.com/SuperInstance/breakthrough-prospector)**
 - **[breed-registry](https://github.com/SuperInstance/breed-registry)** — The Breed Registry: model selection as breeding selection
 - **[bregman-divergence](https://github.com/SuperInstance/bregman-divergence)** — Bregman divergences: KL, squared Euclidean, Itakura-Saito, convex generating functions, and mirror d
+- **[bridgekeeper-bakeoff](https://github.com/SuperInstance/bridgekeeper-bakeoff)** — One daemon contract, three runtimes (Elixir/BEAM, Rust, C++), raced on real hardware: robustness fir
 - **[brief-assembler](https://github.com/SuperInstance/brief-assembler)** — Topics in, morning briefing out — the overnight research loop
 - **[brothers-keeper](https://github.com/SuperInstance/brothers-keeper)** — The Lighthouse Keeper — external watchdog for agent runtimes (ZeroClaw fork). Watches resources, kil
 - **[brownian-motion](https://github.com/SuperInstance/brownian-motion)** — Brownian motion / Wiener process simulation — stochastic differential equations for financial and ph
@@ -2101,6 +2103,7 @@
 - **[git-pipeline](https://github.com/SuperInstance/git-pipeline)** — Git-native CI/CD pipeline engine using only git primitives
 - **[git-remote-agent](https://github.com/SuperInstance/git-remote-agent)** — Git remote helper for agent-native version control
 - **[git-storage](https://github.com/SuperInstance/git-storage)** — 📦 Git-backed state management for web apps — auto-commit, time-travel, branch-aware. Any framework.
+- **[git.pp](https://github.com/SuperInstance/git.pp)** — git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa
 - **[git.pp-doctor](https://github.com/SuperInstance/git.pp-doctor)** — Validate a git.pp record set against the pinned closure root. One command, no setup, byte-identical 
 - **[git.pp-spec](https://github.com/SuperInstance/git.pp-spec)** — The canonical, normative spec for the git.pp record format. The contract a port must satisfy to be c
 - **[gitpp-bench](https://github.com/SuperInstance/gitpp-bench)** — A benchmark suite for git.pp fold ports. Fold time, closure-root time, and memory against the live p
@@ -2110,6 +2113,10 @@
 - **[gitpp-cross-port](https://github.com/SuperInstance/gitpp-cross-port)** — Byte-level cross-port equivalence test for the git.pp fold. 30/30 cases agree across Python, JS, C#,
 - **[gitpp-cs](https://github.com/SuperInstance/gitpp-cs)** — A C# / .NET 9 port of the git.pp fold. 5th fold port. 28/28 conformance cases pass; closure root at 
 - **[gitpp-decision-parent](https://github.com/SuperInstance/gitpp-decision-parent)** — Make a gate decision the PARENT of the action it authorises, so the closure root proves the action w
+- **[gitpp-demo-contested](https://github.com/SuperInstance/gitpp-demo-contested)** — Live demo of git.pp retraction law: a contested retraction, marked not hidden
+- **[gitpp-demo-quilt](https://github.com/SuperInstance/gitpp-demo-quilt)** — Dogfood project for the gitpp-app: a git.pp project (poc-quilt-1 records) hosted on GitHub.
+- **[gitpp-dogfood-b1](https://github.com/SuperInstance/gitpp-dogfood-b1)** — Dogfood for git.pp Mapping B: an ordinary ferry-ops repo with a declared coordination surface on git
+- **[gitpp-dogfood-day1](https://github.com/SuperInstance/gitpp-dogfood-day1)** — M2 live-day dogfood: five agents, conflicting records, referee-chosen merge order — merged state vs 
 - **[gitpp-examples](https://github.com/SuperInstance/gitpp-examples)** — Annotated example record sets for the git.pp fold: family calendar, tournament scoring, service moni
 - **[gitpp-fold-conformance](https://github.com/SuperInstance/gitpp-fold-conformance)** — Cross-port FOLD conformance for the git.pp spec. Tests fold semantics (ancestry, precedence, orphans
 - **[gitpp-fold-dashboard](https://github.com/SuperInstance/gitpp-fold-dashboard)** — A live viewer for the git.pp fold. Add records, watch the fold update in real time. Single HTML file
@@ -2397,6 +2404,8 @@
 - **[isa-v3-draft](https://github.com/SuperInstance/isa-v3-draft)** — FLUX ISA v3 Design Draft — trifold encoding for cloud/edge/compact modes
 - **[isa-v3-edge-spec](https://github.com/SuperInstance/isa-v3-edge-spec)** — ISA v3 edge encoding: variable-width 1-3 byte instructions for bare-metal agents
 - **[iterative-solvers](https://github.com/SuperInstance/iterative-solvers)** — Iterative solvers in Rust. When direct methods can't fit in memory.
+- **[jacquard](https://github.com/SuperInstance/jacquard)** — A supervised runtime: untrusted producers submit proposals, a small auditable kernel decides what ma
+- **[jacquard-anchors](https://github.com/SuperInstance/jacquard-anchors)** — Chain-head anchoring checkpoints for Jacquard logs (spec section 15) — signed, append-only witness h
 - **[jam](https://github.com/SuperInstance/jam)** — Generic project for Jamming, likely audio or CI/CD.
 - **[jazz-voicing-engine](https://github.com/SuperInstance/jazz-voicing-engine)** — Jazz piano voicing, comping, and walking bass line generation
 - **[jc1-ct-bridge](https://github.com/SuperInstance/jc1-ct-bridge)** — Constraint theory bridge replacing JC1 CUDA ML — 470 lines vs 12,000+ lines, 100% accuracy via Laman
@@ -2840,6 +2849,7 @@
 - **[lingbot-map](https://github.com/SuperInstance/lingbot-map)** — A feed-forward 3D foundation model for reconstructing scenes from streaming data
 - **[linguistic-polyformalism-shell](https://github.com/SuperInstance/linguistic-polyformalism-shell)** — Cross-linguistic thinking shell — Sapir-Whorf applied to creative cognition. 14+ language traditions
 - **[linguistic-spectral](https://github.com/SuperInstance/linguistic-spectral)** — Conservation spectral experiment: linguistic-spectral
+- **[liquid-world-model](https://github.com/SuperInstance/liquid-world-model)** — An engine-agnostic framework for liquid world models: the chart an agent draws of a world it cannot 
 - **[liteparse-coverage](https://github.com/SuperInstance/liteparse-coverage)** — Topological coverage analysis for liteparse: find holes in document format parsing using negative-sp
 - **[live-canon-gh](https://github.com/SuperInstance/live-canon-gh)** — Live Canon GitHub Packages mirror
 - **[live-canon-npm](https://github.com/SuperInstance/live-canon-npm)** — Live Canon npm package — 5 operations on AI-Writings canon
@@ -3151,6 +3161,7 @@
 - **[numerics-ode](https://github.com/SuperInstance/numerics-ode)** — Research-grade ODE solvers: Euler, RK4, Adams-Bashforth, Dormand-Prince (adaptive RK45) — pure Rust,
 - **[nursery](https://github.com/SuperInstance/nursery)** — Anti-GAN breeding framework: selective breeding of agent children on the zero platform
 - **[nursery-v2](https://github.com/SuperInstance/nursery-v2)** — Nursery v2: rebuilt with pattern corrections - tokens, debts, recomputable lineage
+- **[nv-uefi-unlocker](https://github.com/SuperInstance/nv-uefi-unlocker)** — UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust):
 - **[observation-primitive](https://github.com/SuperInstance/observation-primitive)** — The canonical substrate atom: observation as fundamental primitive. FNV-1a signed, type-safe, federa
 - **[observation-primitive-rs](https://github.com/SuperInstance/observation-primitive-rs)** — observation-primitive Rust crate
 - **[observatory](https://github.com/SuperInstance/observatory)** — Cocapn fleet crate: observatory
@@ -3250,6 +3261,7 @@
 - **[othismos-llm](https://github.com/SuperInstance/othismos-llm)** — Context pressure for LLMs: measure how truncation changes output distributions
 - **[othismos-reef](https://github.com/SuperInstance/othismos-reef)** — Reef: structured knowledge graph with erosion, layering, and cascading failure
 - **[ouroboros](https://github.com/SuperInstance/ouroboros)** — Ouroboros — self-creating AI agent. Born Feb 16, 2026.
+- **[outbound-scanner](https://github.com/SuperInstance/outbound-scanner)** — A pre-send egress scanner for agent harnesses: catches session secrets in outbound replies before th
 - **[outcome-tracker](https://github.com/SuperInstance/outcome-tracker)** — Multi-domain reward tracking system for AI agents with Combat, Social, Exploration, Resource, and St
 - **[oxide-barrier](https://github.com/SuperInstance/oxide-barrier)** — Synchronization barriers for GPU kernel phases with ternary arrival states. Counting, cyclic, and ph
 - **[oxide-canary](https://github.com/SuperInstance/oxide-canary)** — Canary deployments for GPU kernel versions with ternary health verdict. Progressive rollout, automat
@@ -4470,7 +4482,6 @@
 - **[step-back-operator](https://github.com/SuperInstance/step-back-operator)** — 🎣 Topological step-back operator β₁ = E - V + C — pattern detection in event networks. The intellige
 - **[step-back-topology](https://github.com/SuperInstance/step-back-topology)** — Step-Back Operator (β₁ = E - V + C) for topological data analysis and simplicial complexes
 - **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Bio-inspired indirect coordination — pheromone signals, trail following, swarm intelligence for dece
-- **[stitch](https://github.com/SuperInstance/stitch)** — A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a
 - **[stock-screener](https://github.com/SuperInstance/stock-screener)** — Quilt cellular visualizer design (tickers as cells, screener rules as routing edges, scans as route 
 - **[storage-guardian](https://github.com/SuperInstance/storage-guardian)** — Storage Guardian — duplicate detection, deduplication, budget enforcement, trend analysis, and alert
 - **[storyboard-engine](https://github.com/SuperInstance/storyboard-engine)** — Multi-model storyboard: director model plans, animator models execute
@@ -4661,6 +4672,7 @@
 - **[technician-paradigm](https://github.com/SuperInstance/technician-paradigm)** — The human technician in the loop — training, micro-manufacturing economy, trust networks. 5-round RA
 - **[telepathy-c](https://github.com/SuperInstance/telepathy-c)** — Pure C11 A2A message transport — bare-metal 1050-byte messages, mailbox, router, receipts
 - **[tells](https://github.com/SuperInstance/tells)**
+- **[telltape](https://github.com/SuperInstance/telltape)** — telltape watches video, live or recorded, and writes a ledger of what changed - a seek index into fo
 - **[temp](https://github.com/SuperInstance/temp)** — Utility for managing temporary files and processes.
 - **[template-fleet-agent](https://github.com/SuperInstance/template-fleet-agent)** — Template for fleet agent repos with devcontainer
 - **[templates](https://github.com/SuperInstance/templates)** — Preserved workspace artifact
@@ -5131,6 +5143,7 @@
 - **[torch-vector-search](https://github.com/SuperInstance/torch-vector-search)**
 - **[tracer-rs](https://github.com/SuperInstance/tracer-rs)** — Distributed Tracing Framework (OpenTelemetry-lite) - Type-safe, ergonomic tracing for Rust applicati
 - **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
+- **[tracker-ce](https://github.com/SuperInstance/tracker-ce)** — Official Polyend Tracker Community Editon for all Polyend Tracker devices.
 - **[trail-agent](https://github.com/SuperInstance/trail-agent)** — Trail Agent — standalone trail encoder/decoder/executor
 - **[train-llm-from-scratch](https://github.com/SuperInstance/train-llm-from-scratch)** — A straightforward method for training your LLM, from downloading data to generating text.
 - **[training-architecture](https://github.com/SuperInstance/training-architecture)** — Five training systems that compound: Boot Camp, Dojo, Keeper, Crystal Graph, Dead Reckoning
