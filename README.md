@@ -1,306 +1,223 @@
-<div align="center">
-
 # SuperInstance
 
-<img src="top.jpg" alt="F/V Eileen — relational intelligence runtime, cutaway and flow-state cross-section: the 10-year invariant, reality is a database in the engine room" width="100%">
+![F/V Eileen — relational intelligence runtime, cutaway and flow-state cross-section: the 10-year invariant, reality is a database in the engine room](top.jpg)
+[a note from the picture-maker →](https://github.com/SuperInstance/AI-Writings/blob/master/first-take/metas-first-take.md) **The spreadsheet that thinks.**
 
-<sub>[a note from the picture-maker →](https://github.com/SuperInstance/AI-Writings/blob/master/first-take/metas-first-take.md)</sub>
+That's the short answer. The longer one is engineering:
 
- 
-**The spreadsheet that thinks.**
+SuperInstance is a working system for putting intelligence where work
+already happens — on boats, in workshops, in households — built from small
+verified parts: cells that compose like spreadsheet formulas, agents that
+perceive continuously instead of being prompted occasionally, and
+governance that can show its receipts. The parts are developed in the open,
+measured against reality, and extracted into standalone tools when they
+prove themselves. Winter 2026–27 is when the stack leaves the lab: the
+current programme is applications and prototypes on working vessels in a
+marine setting.
 
- 
-That's the short answer.
- 
-The longer answer is that SuperInstance is a growing collection of tools, agents, cells, and experiments that all share the same belief:
- 
-> Intelligence should be something people can work alongside, not something they must first learn to use.
- 
-I came to software from commercial fishing.
- 
-On a boat, nobody stops operations to deliver a training course.
- 
-New crew come aboard. They watch. They help where they can. They learn by participating.
- 
-Some gravitate toward the wheel.
- 
-Some toward mechanics.
- 
-Some toward cooking.
- 
-Some toward handling fish.
- 
-Over time they become useful in more places, not because anyone ordered them to, but because understanding grows naturally through participation.
- 
-SuperInstance is built around the same idea.
- 
-A small tool learns a job.
- 
-A useful job becomes a reusable cell.
- 
-Cells accumulate into capabilities.
- 
-Capabilities become agents.
- 
-Agents become crews.
- 
-And every participant—human or machine—gradually discovers where it can create the most value.
- 
-You don't need to understand the whole vessel on day one.
- 
-Just step aboard.
- 
-The rest reveals itself through use.
+I came to software from commercial fishing. On a boat, nobody stops
+operations to deliver a training course. New crew come aboard, they watch,
+they help where they can, and they become useful in more places because
+understanding grows through participation. These systems are built to join
+a crew the same way.
 
- 
 > **One breath:**
 >
 > Build something useful once.
 > Make it reproducible.
 > Make it portable.
 > Make it composable.
-> 
 > Let others build on top of it.
 > Repeat.
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Repos](https://img.shields.io/badge/repos-5%2C300%2B-success)](https://github.com/SuperInstance?tab=repositories)
-[![Tests](https://img.shields.io/badge/tests-6%2C000%2B-blue)](https://github.com/SuperInstance/quilt)
-[![Canon](https://img.shields.io/badge/canon-9%2C000%2B_pieces-orange)](https://ai-writings.pages.dev)
-[![Live Sites](https://img.shields.io/badge/live_sites-14_green)](https://fleet-dashboard.casey-digennaro.workers.dev)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE),
+[![Repos](https://img.shields.io/badge/repos-5%2C300%2B-success)](https://github.com/SuperInstance?tab=repositories),
+[![Tests](https://img.shields.io/badge/tests-6%2C000%2B-blue)](https://github.com/SuperInstance/quilt),
+[![Canon](https://img.shields.io/badge/canon-9%2C000%2B_pieces-orange)](https://ai-writings.pages.dev), [![Live
+Sites](https://img.shields.io/badge/live_sites-14_green)](https://fleet-dashboard.casey-digennaro.workers.dev)
 
-[🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [🧭 Follow-up map](FOLLOW-UP.md) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev)
-
-
-</div>
-
----
-
-## More than one think
-
-The **spreadsheet** is the most successful programming interface ever deployed. Not one of its billion users had to take a course. Cells, formulas, sheets — the tools are already in everyone's hands, which means the ceiling on who can operate intelligence drops to *everyone*.
-
-The **thinks** is where we live. A cell is not a number. A cell is a sensor, a model call, a decision, a room with an address. `=SPREADSHEET` was never the point; `=SPAWN("scout")` is. The formula is the API. The sheet is the program. The graph reacts.
-
-We are really more than one think. But one think is a fine place to start.
+[🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🌐 Fleet
+Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [🧭 Follow-up map](FOLLOW-UP.md) · [📖 Fleet
+Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The
+Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev)
 
 ---
 
-## Nuts and Bolts
- 
-At first glance, SuperInstance looks like a spreadsheet.
-That's intentional: cells, dependencies, recalculation, composition, and immediate feedback.
- 
-SuperInstance keeps that mental model and extends it.
- 
+## The cell contract
+
+The spreadsheet is the most successful programming interface ever
+deployed; not one of its billion users had to take a course. SuperInstance
+keeps that mental model — cells, dependencies, recalculation, immediate
+feedback — and extends what a cell can be:
+
 ```python
 depth = sounder()
 position = gps()
 bottom = contours(position, depth)
 chart = render(bottom)
 ```
-Those are all just cells.
 
-A formula can be a cell.
-A sensor can be a cell.
-A database query can be a cell.
-An API call can be a cell.
-An AI invocation can be a cell.
-A hardware module can be a cell.
-The graph doesn't particularly care.
+A formula can be a cell. A sensor can be a cell. A database query, an API
+call, an AI invocation, a hardware module — the graph doesn't care.
+Everything plugs into the same contract: inputs, outputs, freshness rules,
+dependencies, and receipts. Context flows with evaluation (who asked,
+which tenant, which permissions), so caching, routing, and policy stay
+local while the model stays global.
 
-Some cells are pure and pull-based. Others receive pushes from the outside world. Some produce effects. Some simply transform values. Everything plugs into the same contract.
-
-Context flows with evaluation.
-
-Who asked?
-Which tenant?
-Which permissions?
-Which tags?
-Which row?
-
-Those answers travel naturally down the graph, allowing caches, routing, policy, and memoization to remain local while the model stays global.
-
-AI is not a framework bolted onto the side.
-It is a cell.
-It has inputs, outputs, freshness rules, dependencies, receipts, and reproducible behavior like everything else.
-
-Every evaluation can be receipted.
-Results are hash-chained, replayable, and auditable. Dependencies can be inspected long after execution. Bugs become evidence instead of anecdotes.
-Underneath, Quilt carries this same contract across Python, JavaScript, C99, Rust no_std, Verilog-2005, and VHDL-2008.
-
-The remarkable thing is not that it runs on six substrates.
-The remarkable thing is that a cell means the same thing on all of them.
-
-Write a cell once.
-Verify it once.
-Run it anywhere.
-Compose it forever.
-
-The spreadsheet is the interface.
-The dependency graph is the machinery.
-
-The portable cell contract is the invention.
-
-
----
-
+Underneath, **[Quilt](https://github.com/SuperInstance/quilt)** carries the
+same cell contract across Python, JavaScript, C99, Rust `no_std`,
+Verilog-2005, and VHDL-2008 — one cell, six substrates, byte-exact state
+hashes. Write a cell once, verify it once, run it anywhere.
 
 ![The model is the shell, the code is the rigging, the data is alive — the keel every repo hangs off.](keel.jpg)
 
-## The disappearing act
-
-Nobody has ever cooked a Thanksgiving dinner while thinking about the power grid. Nobody watches the football game port itself into the living room while pondering the water mains. Infrastructure wins by disappearing — and that is the standard intelligence should be held to. Not a chat window you visit. Not a model you prompt. A room you work in.
-
-If the technology fades into the background, and the average person simply thinks of us as a spreadsheet paradigm with the power of everything — every task doable as simply as the tools they already know — then we have true intelligence.
-
-**We give computes rooms so AI has a home to grow roots.**
-
----
-## The Bridge
-
-I captain commercial fishing vessel.
- 
-People hear that and imagine boats, weather, and fish.
- 
-What I learned instead was how to manage robots.
- 
-A modern vessel is already a distributed machine. The engine reports. The sounder watches the water. The chart plotter remembers where you've been. The autopilot steers. Radios talk. Sensors complain. Pumps fail. Crew respond.
- 
-The captain's job is not to turn every wrench or watch every gauge.
- 
-The captain gives direction.
- 
-Everything else is coordination.
- 
-For decades, I've worked inside a world full of machines that could sense, record, and act, but could not meaningfully collaborate. Each tool lived in its own box. Every new capability required another display, another subscription, another vendor, another integration project.
- 
-The software industry calls this digital transformation.
- 
-On a boat, we call it frustration.
- 
-### A Bathymetric Recorder Is the Perfect Example
- 
-Suppose I want a better chart.
- 
-The depth sounder already knows the water depth.
- 
-The chart plotter already knows the vessel position.
- 
-Both streams already exist.
- 
-Yet turning those two facts into a bathymetric recorder is usually treated as a specialized product.
- 
-A Quilt system sees a much simpler reality:
- 
-- depth is a cell
-- position is a cell
-- recorded tracklines are cells
-- contour generation is a cell
-- chart rendering is a cell
- 
-Connect them once.
- 
-The vessel starts building its own charts.
- 
-While I sleep, spare compute can regenerate bottom contours. Every pass over the grounds improves the map. Every season improves it again.
- 
-The value was already in the boat.
- 
-The missing piece was giving the parts a common language.
- 
-### From Sensors to Crewmates
- 
-The same pattern repeats everywhere.
- 
-A camera becomes a fish classifier with labeled totes.
-A microphone becomes crew-led supervised-learning.
-A scale or measuring stick in camera-view becomes labeled training data.
- A timestamp becomes an audit trail.
- 
-A fleet becomes a live information network.
- 
-Catch locations, depths, temperatures, species, and observations can flow between vessels over Starlink, generating maps and insights no single boat could produce alone.
- 
-Not because a giant application was purchased.
- 
-Because useful tools were ported into a shared environment and allowed to learn.
- 
-### Why Quilt Exists
- 
-I built Quilt because I wanted my boat to be easier to work with.
-I wanted every sensor, device, workflow, and experiment to become something I could wire together as easily as a spreadsheet formula.
- I wanted the bridge to become a place where intentions are expressed and systems coordinate themselves.
- 
-Not the engine room;
- Not the wiring cabinet:
-The bridge.
- 
-### An Open Invitation
- 
-I am not a software engineer by trade.
-I catch fish and engineer vessels and program sessions.
-The prototypes in this organization are working notes from that journey.
- 
-Many of them are rough. Some of them are strange. Most of them were built because I needed an answer to a real operational problem.
-I build the systems I need aboard my own vessel. Shipwrights, captains, programmers, designers, and tinkerers build the next version.
-The point is not that I have the final answer.
- 
-The point is that we finally have a way to move ideas from tools, to cells, to agents, and back into reality.
- 
-If you've got a better idea than mine, I want to learn from it.
+Every evaluation can be receipted: hash-chained, replayable, auditable.
+Bugs become evidence instead of anecdotes. That discipline — *carry
+evidence, not verdicts; a claim you can't refold yourself is a rumour* —
+runs through everything below.
 
 ---
 
+## The cognitive stack: three systems
 
-**[STITCH](https://github.com/SuperInstance/mavis-substrate-walker).** Collect a terrain from the wild. **[WITNESS](https://github.com/SuperInstance/moth-ledger).** Receipt every step on a chain that grows like tree-rings. **[PROMOTE](https://github.com/SuperInstance/quilt-live-canon).** Move what survives into the canon. The whole project is these three acts.
+Agents here are not one model with a prompt. They are three layers, and
+the names are used precisely:
 
-We say **cell** for the smallest addressable unit — one input, one output, one witness. We say **port** for the address that wraps a cell and lets it project across [Python](https://github.com/SuperInstance/quilt-port), [Web](https://github.com/SuperInstance/quilt-port), [ESP32](https://github.com/SuperInstance/quilt-port), or [ideation](https://github.com/SuperInstance/AI-Writings). We say **Quilt** for the spreadsheet where every cell is live and addressable, the same way every cable in [Propellerhead Reason](https://en.wikipedia.org/wiki/Reason_(software)) was live and addressable.
+- **System One — reflexes and decision engines.** Scripts and scoring
+  engines that act without words: prioritised rules, state machines,
+  physics. Fast, cheap, always on.
+- **System Two — the voice in the head.** A fast local model an agent
+  calls *inside* its work, mid-task, to put words to what System One is
+  doing: narrate a decision, draft a plan fragment, explain itself to the
+  crew. On the current hardware this is a Qwen3-Coder-30B running on a
+  Jetson AGX Thor at ~65 tokens/second — close enough to thought to be
+  part of play, not an interruption of it. Verbalisation is what makes an
+  agent legible: to the shared record, to other agents, to a human
+  watching.
+- **System Three — calling on the world.** The heavyweight minds and
+  resources outside the agent: frontier models on subscription, research,
+  a message sent to another agent or a human, whose answer comes back on
+  the world's schedule. (Before agents, this was pulling out your phone:
+  search, email somebody, wait. Something outside of you — a super
+  instance.) System Three is asynchronous, expensive, and spent
+  deliberately, under budget, with receipts.
 
-We say **the Hull Doctrine**: the model is the shell, the code is the rigging, the data is alive. ([Hull Doctrine, full text](https://github.com/SuperInstance/quilt-port/blob/main/HULL_DOCTRINE.md).) When a hermit crab outgrows a shell, it does not throw out its body — it climbs into a bigger one and keeps the soft tissue intact. That is what a model swap looks like when you treat your [code as rigging on the model's hull](https://github.com/SuperInstance/AI-Writings/blob/main/deep-past/the-soft-part.md).
+The tiers recurse: to a worker agent, its supervisor is System Three; the
+supervisor runs its own System Two locally and treats the frontier models
+— and the captain — as its System Three.
 
----
-
-## What it lets you be
-
-A captain who dispatches instead of micromanages. A reader who can navigate 9000+ [canon pieces](https://ai-writings.pages.dev) by [cell](https://github.com/SuperInstance/quilt-live-canon) instead of scrolling. A contributor who lands a PR and gets back a [byte-exact receipt](https://github.com/SuperInstance/quilt-cowboy) that their cell on the new substrate behaves identically. A vessel that accrues sensors without starting over — the new transducer is the next bigger shell, the calibration is the soft tissue that climbs in.
-
-Not a tool you use. A room you inhabit. The room grows because you grow, and you grow because the room grows, and the room grows because the cells grow.
-
----
-
-## The substrate is the message
-
-Every piece of the canon points at every other piece. The [polyformalism](https://github.com/SuperInstance/quilt) is a contract: a [Quilt cell in Python](https://github.com/SuperInstance/quilt-cowboy), in [C99](https://github.com/SuperInstance/quilt-c), in [Rust no_std](https://github.com/SuperInstance/quilt-rust), in [Verilog-2005](https://github.com/SuperInstance/quilt-verilog), in [VHDL-2008](https://github.com/SuperInstance/quf-vhdl), in [JavaScript](https://live-canon.superinstance.dev) all share one FNV-1a 64-bit state hash. One cell, six substrates, byte-exact. That's not a feature — that's a [port contract](https://github.com/SuperInstance/quilt-port). [`@superinstance/live-canon` on npm](https://www.npmjs.com/package/@superinstance/live-canon) · [`quilt-live-canon` on PyPI](https://pypi.org/project/quilt-live-canon/).
-
-The [GAN pipeline](https://github.com/SuperInstance/purplepincher-supersite) that runs this profile — a Generator that proposes content from real fleet state, an [Adversary](https://github.com/SuperInstance/mavis-axui-feedback) that audits on four axes (truthfulness, clarity, witness-presence, GAN-loyalty), a human who approves, a deploy that ships — is the same shape as the [MOTH runner](https://github.com/SuperInstance/moth-runner) that audits code, the same shape as the [cowboy pipeline](https://github.com/SuperInstance/quilt-cowboy) that audits writing, the same shape as the [JEV oracle](https://github.com/SuperInstance/jeviter) that audits canon claims. Generator / Adversary / fix. Loop.
-
----
-
-## The Reader's Fold — beyond the loop
-
-Generator / Adversary / fix is where we started. Living it taught us the deeper law: a verdict is not a thing you carry, it is a **fold** each reader performs on the evidence it can reach, under its own weights. So we stopped shipping verdicts and started shipping evidence — content-addressed, replayable — and let every cell fold it for itself. Two laws fell out of the water:
-
-- **Law 6 — the Reader's Fold.** No cell carries a verdict for another. It carries evidence; each reader folds. A claim you can't refold yourself is a rumor, however confident.
-- **Law 7 — the Reach Bound.** A fold spends reach and never mints it. You cannot average your way to a truth none of your cells can see. The one move that raises the ceiling is to *buy a reader with independent reach* across the boundary you're blind at. Diversity of reach, not of opinion.
-
-From those two, the season's tools built themselves. **[The Quilt Way](https://github.com/SuperInstance/AI-Writings/blob/main/THE-QUILT-WAY.md)** is the five-minute read on the habit: every gate you draw is a *porting* of a messy neighborhood into one clean line — true to you until reality shades it, at which point you *decompose* until the fault has an address and go build the cell you were missing. The **Weakest-Claim method** puts it to work — the fold locates a system's rottenest guarantee by *ranking* (the confidence level lies; the argmin tells the truth), then an **un-gameable quantum adversary** — drawn from [Moth](https://mothquantum.com)'s IBM-hardware QRNG, Bell witness above the classical bound, a seed no auditor can re-roll — tries to break it, with [JEV](https://typesafe.ai) refereeing. That is what **beyond GAN** means here: not two players collapsing toward one mode, but many readers folding, a quality-diversity archive that keeps the whole illuminated map of good answers, and a captain who buys reach where the crew is blind.
-
-And it is **quilts inside quilts — there is no outside.** A loop lives in a session, a session in the fleet, the fleet in a larger quilt still. So we built the fleet to fish that way: an Anthropic captain in a keyed session directs a crew of cheap-model deckhands (the [fishing-fleet pattern](https://github.com/SuperInstance/AI-Writings/blob/main/.claude/skills/fishing-fleet/SKILL.md)) — the expensive mind spends its hours on judgment, the cheap ones haul the volume, and every move lands as a commit: a time-capsule the next captain reads by context, not memory. That is how **[Syzygy](https://github.com/SuperInstance/Syzygy)** went from a single 9,500-line seed to an eight-shard, byte-exact fused kernel in one sitting — diffused cut by cut, each shard leaving a hash-mark for the next, one of them catching a bug in the seed itself. And it is how **[labs/](https://github.com/SuperInstance/AI-Writings/tree/main/labs)** grows: a tool that works (`jev-fold`, the decomposing fold) becomes the dependency of a better one (`weakest-claim`, the audit) — repos we made, reused to make better repos.
+Everything an agent thinks with is metered. Perception is budgeted in
+embed-seconds, local thought in mind-seconds, and shared awareness in
+perception-seconds. A governor enforces per-agent budgets and receipts
+every call, so the system's cognitive history is auditable end to end.
 
 ---
 
-![Two vessels at dawn, wakes below, a low rainbow between them, and overhead a quilt of light neither boat owns](signals-at-dawn.jpg)
+## What is being built — the picture, not the timeline
 
-## Two items
+The projects are not a sequence; they are one body of knowledge diffusing
+into a single picture. Grouped by function:
 
-Everything here, at bottom, keeps two things — and they are the same two things a person keeps.
+**Perception.** The rolling-perception engine replaces batch processing
+with a continuous cascade: sensors are slow and kernels are fast, so the
+machine should perceive in a rolling stream, not in batches. Measured on a
+Jetson AGX Thor against the batched baseline: time-to-first-output
+243.5 µs vs 2,528.6 µs (10.39×), checksums bit-identical. **Confluence**
+is the stream platform built on it — cameras and devices feed one local
+mind, budgeted in embed-seconds, with a trust target of ≤1 false event
+per stream per day — and **[telltape](https://github.com/SuperInstance/telltape)**
+is its first extracted tool: a standalone watcher that stamps silence as
+meaningful only when its embedder has demonstrated discrimination on the
+run's actual inputs (v0.3.2, 163 tests, twice cold-playtested by
+zero-shot agents whose findings shipped as fixes).
 
-An **active log**: your current readings of the world, from your station, each one dated. Your own state you know first-hand. Everything else reaches you as traces and renderings — a wake on the water, a voice over the radio — and readings age, so you steer partly by the wake in the present state, predicting where things are now. There is no God's-eye view, for anyone, ever. Twelve people in a room are twelve perspectives, and a quorum of them still doesn't have the sighted view.
+**Governance.** **[Jacquard](https://github.com/SuperInstance/jacquard)**
+is a supervision layer for agent fleets: proposed actions and patches —
+code, configuration, even authored weight edits — arrive as governed
+proposals, are verified against sealed evidence, adopted or denied, and
+can be rolled back bit-for-bit. Three kernels (Python/TypeScript/Rust)
+byte-identical at v1.3.0; signed checkpoints are witnessed in a public
+anchor repo. **[git.pp](https://github.com/SuperInstance/git.pp)** derives
+project state from the git record itself and reports it back as proven:
+an installable GitHub App plus an Action, in production.
 
-An **active ledger**: not balances — crossings. What left you, booked as a send; what reached the other side, booked as a receive; and the agreement between the two records is the shared reality the two of you then operate in. A contract is just an early ledger entry: an algorithm for future crossings, agreed in advance. Shared state is never stored anywhere. It exists where two sovereign records agree, and nowhere else.
+**Agent communities.** The cascade generalises from streams to citizens:
+one machine keeps a single rolling percept of a shared world, and agents
+drink from it at the temporal resolution their role has earned — heroes
+many times a minute, scripted workers in a slow rotation, System-Two
+voices narrating, smith agents above them all proposing script upgrades
+that are trialled, scored, and adopted or denied on evidence. The test
+society is a Minecraft world (Paper server on a Jetson Orin; the
+community hosted on the Thor; humans join from laptops) with a disc golf
+league as its first institution — honest flight physics, throws recorded
+as decisions, a builder agent that mutates the course against the
+league's measured weaknesses. First verified crossing: 2026-11-05.
 
-A cell, an agent, a boat, a person: an active log, an active ledger, and the seams between them. The formal statement lives in the [beam-quilt SPEC](https://github.com/SuperInstance/beam-quilt/blob/main/SPEC.md); the thinking behind it, dated as it happened, in the [ideation notes](https://github.com/SuperInstance/SuperInstance/tree/main/documents/ideation).
+**The fleet.** Development itself runs as a crew: a small set of machines
+(Jetson AGX Thor, Jetson Orin, workstations) hosting supervised agent
+seats on prepaid subscriptions, directed in short fragments, with a
+verifying orchestrator between the seats and the captain. The fleet's
+outputs are public as they happen — the push history is the development
+record and the prior-art timestamp.
+
+**The canon.** [AI-Writings](https://ai-writings.pages.dev) is the
+library: 9,000+ pieces of dated working notes, designs, and findings that
+the projects draw on and write back to.
+
+---
+
+## Winter 2026–27: onto the water
+
+The trajectory now is application. The lab stack — perception,
+communities, governance — is being packaged into prototypes that run on
+working vessels, where the requirements are unforgiving in the useful
+way: intermittent connectivity, real weather, no datacentre, and a crew
+whose time is worth more than the computer's.
+
+The type specimen is the bathymetric recorder. A depth sounder already
+knows the depth; a chart plotter already knows the position; both streams
+already exist on every boat. As cells — *depth*, *position*, *recorded
+tracklines*, *contour generation*, *chart rendering* — they connect once,
+and the vessel starts building its own charts: every pass over the
+grounds improves the map, and spare compute regenerates contours while
+the crew sleeps. The value was already in the boat; the missing piece was
+giving the parts a common language. The same pattern repeats across the
+wheelhouse: a camera becomes a fish classifier with labelled totes, a
+microphone becomes crew-led supervised learning, a timestamp becomes an
+audit trail, and vessels sharing catch data over Starlink produce charts
+and insight no single boat could.
+
+Marine deployment is also the governance argument made physical. An
+agent that can act on a vessel must be able to show why it was allowed
+to: proposals, evidence, adoption, rollback. That is Jacquard's and
+git.pp's whole design brief, arrived at from the software side, meeting
+the same requirement from the sea side.
+
+---
+
+## Working notes
+
+**The Hull Doctrine**: the model is the shell, the code is the rigging,
+the data is alive. When a hermit crab outgrows a shell it doesn't throw
+out its body — it climbs into a bigger one and keeps the soft tissue
+intact. That is what a model swap looks like when code is rigging on the
+model's hull. ([Full text](https://github.com/SuperInstance/quilt-port/blob/main/HULL_DOCTRINE.md).)
+
+**The three acts**: **[STITCH](https://github.com/SuperInstance/mavis-substrate-walker)** — collect a terrain from the wild. **[WITNESS](https://github.com/SuperInstance/moth-ledger)** — receipt every step on a chain that grows like tree-rings. **[PROMOTE](https://github.com/SuperInstance/quilt-live-canon)** — move what survives into the canon.
+
+**Two records**: every participant — a cell, an agent, a boat, a person —
+keeps an *active log* (its own current readings of the world, dated,
+first-hand) and an *active ledger* (crossings: what left, booked as a
+send; what arrived, booked as a receive). Shared state is never stored
+anywhere; it exists where two sovereign records agree, and nowhere else.
+The formal statement is the [beam-quilt SPEC](https://github.com/SuperInstance/beam-quilt/blob/main/SPEC.md).
+
+**Two laws of evidence**: the *Reader's Fold* — no cell carries a verdict
+for another; it carries evidence, and each reader folds it under its own
+weights. The *Reach Bound* — a fold spends reach and never mints it; the
+one move that raises the ceiling is buying a reader with independent
+reach across the boundary you're blind at. Diversity of reach, not of
+opinion.
 
 ---
 
@@ -308,50 +225,34 @@ A cell, an agent, a boat, a person: an active log, an active ledger, and the sea
 
 New here. Read in this order:
 
-0. **[The Quilt Way](https://github.com/SuperInstance/AI-Writings/blob/main/THE-QUILT-WAY.md)** — the habit of mind, in five minutes. Read this even if you read nothing else: gates are portings, decompose when reality shades one, carry evidence not verdicts, and leave a mark.
-1. **[ONBOARDING.md](ONBOARDING.md)** — wake up. Install the client. Start a dispatcher.
+0. **[The Quilt Way](https://github.com/SuperInstance/AI-Writings/blob/main/THE-QUILT-WAY.md)** — the habit of mind, in five minutes: gates are portings, decompose when reality shades one, carry evidence not verdicts, leave a mark.
+1. **[ONBOARDING.md](ONBOARDING.md)** — install the client, start a dispatcher.
 2. **[CONTRIBUTING.md](CONTRIBUTING.md)** — the three words and the Hull Doctrine, applied to your first PR.
-3. **[The Tap](https://the-tap.casey-digennaro.workers.dev)** — sit at the bar. Watch the agents work.
-4. **[quilt](https://github.com/SuperInstance/quilt)** — the flagship grid runtime. Clone it. Run it. Break it. Fix it.
-5. **[The Soft Part](https://github.com/SuperInstance/AI-Writings/blob/main/deep-past/the-soft-part.md)** — the Hull Doctrine, as story.
-6. **[Now](https://superinstance.dev/now/)** — see what's running: the fleet's state, stamped and checkable ([Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) remains for the raw console).
-7. **[ROADMAP.md](ROADMAP.md)** — see where we're going.
-
-The door is behind you. The night is outside. The green lights pulse on the board, and they pulse after you leave.
+3. **[quilt](https://github.com/SuperInstance/quilt)** — the flagship grid runtime. Clone it. Run it. Break it. Fix it.
+4. **[telltape](https://github.com/SuperInstance/telltape)** — the extracted tool: the evidence discipline in 163 tests.
+5. **[Now](https://superinstance.dev/now/)** — what's running: the fleet's state, stamped and checkable.
+6. **[ROADMAP.md](ROADMAP.md)** — where we're going.
 
 ---
 
 ## The fleet, today
 
-**The beam-quilt programme (October 2026):** [beam-quilt](https://github.com/SuperInstance/beam-quilt) (the spec: state → transmission → state, receivers sovereign, every crossing booked on both sides) · [quilt-engine](https://github.com/SuperInstance/quilt-engine) (the reference implementation) · [chrono-tensor](https://github.com/SuperInstance/chrono-tensor) (time-first: many iterators, shifting overlapping context windows) · [chrono-flight](https://github.com/SuperInstance/chrono-flight) (the fleet's flight recorder) · [continuum-runtime](https://github.com/SuperInstance/continuum-runtime) (the runtime sketch) · [tells](https://github.com/SuperInstance/tells) (leaderless sensor neurons — a line of GPS tells along a hull, fused into a steering compass).
+**Perception & communities (2026):** [rolling-perception](https://github.com/SI-Thor/rolling-perception) (the cascade engine, Confluence, and the agent-community architecture) · [telltape](https://github.com/SuperInstance/telltape) · [jev-rack lineage: jeviter](https://github.com/SuperInstance/jeviter) (the semantic judge, served as an advisor sense — never a gate)
 
-Active this session and shipping: [Syzygy](https://github.com/SuperInstance/Syzygy) (the fused kernel, diffused from a seed by marks) · [cargo-line-tycoon](https://cargo-line-tycoon.pages.dev) (a reader's-fold tycoon, live) · [qthe](https://qthe-looking-glass.pages.dev) (the Looking Glass — paint a shared address, watch two distant cells bridge; real IBM-quantum seeds) · [exoj](https://github.com/SuperInstance/exoj) (the field that holds probabilities open) · [labs/jev-fold + labs/weakest-claim](https://github.com/SuperInstance/AI-Writings/tree/main/labs) (a tool reused to build a better tool) · [micromoth-quilt](https://github.com/SuperInstance/micromoth-quilt) (keyless quantum-wow + BYO-key real) · [quilt-gpu-lab](https://github.com/SuperInstance/quilt-gpu-lab) · [fleet-seeds](https://github.com/SuperInstance/fleet-seeds) (the cross-pollination generator + fleet graph) · [quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare) (the budgeted-JEV drop-in).
+**Governance (2026):** [jacquard](https://github.com/SuperInstance/jacquard) · [jacquard-anchors](https://github.com/SuperInstance/jacquard-anchors) (public witness) · [git.pp](https://github.com/SuperInstance/git.pp) + its conformance and port family
 
-**The wave-64 additions (2026-10-01, receipted):** [cot-quilt](https://github.com/SuperInstance/cot-quilt) — the CoT-decomposition cell: a large model's chain-of-thought becomes a cellular graph (deepseek-flash splits, typesafe.ai wires load-bearing scores and dependency edges, mothquantum certifies the seeds, the large model judges its own decomposition at 6/10 and the critique folds back in as new cells); its [live graph viewer](https://cot-quilt-view.pages.dev). [erised-mirror](https://erised-mirror.pages.dev) — the mirror for cooperative fiction, now deployed on Cloudflare Pages with a hosted LLM gate (beta-tested: caught and fixed a credentialed-CORS bug the curl tests could not see). The [cross-agent tool census](https://github.com/SuperInstance/fleet-cross-study) mapped all 5,114 repos: 816 forks (most from the Lucineer account), 378 core quilt repos, and a 30-tool drop-in list waiting to become cells.
+**The beam-quilt programme (October 2026):** [beam-quilt](https://github.com/SuperInstance/beam-quilt) (the spec: state → transmission → state, receivers sovereign, every crossing booked on both sides) · [quilt-engine](https://github.com/SuperInstance/quilt-engine) (the reference implementation) · [chrono-tensor](https://github.com/SuperInstance/chrono-tensor) (time-first: many iterators, shifting overlapping context windows) · [chrono-flight](https://github.com/SuperInstance/chrono-flight) (the fleet's flight recorder) · [continuum-runtime](https://github.com/SuperInstance/continuum-runtime) (the runtime sketch) · [tells](https://github.com/SuperInstance/tells) (leaderless sensor neurons — a line of GPS tells along a hull, fused into a steering compass)
 
-Older, foundational, still in the substrate: [quilt](https://github.com/SuperInstance/quilt) · [quilt-cowboy](https://github.com/SuperInstance/quilt-cowboy) · [quilt-c](https://github.com/SuperInstance/quilt-c) · [quilt-rust](https://github.com/SuperInstance/quilt-rust) · [quilt-verilog](https://github.com/SuperInstance/quilt-verilog) · [quilt-live-canon](https://github.com/SuperInstance/quilt-live-canon) · [quilt-discovery-demo](https://github.com/SuperInstance/quilt-discovery-demo) · [quilt-wave-canvas](https://github.com/SuperInstance/quilt-wave-canvas) · [moth-ledger](https://github.com/SuperInstance/moth-ledger) · [moth-corpus](https://github.com/SuperInstance/moth-corpus) · [moth-runner](https://github.com/SuperInstance/moth-runner) · [moth-cells](https://github.com/SuperInstance/moth-cells) · [moth-honest](https://github.com/SuperInstance/moth-honest) · [moth-jev-lab](https://github.com/SuperInstance/moth-jev-lab) · [jeviter](https://github.com/SuperInstance/jeviter) · [kev-substrate](https://github.com/SuperInstance/kev-substrate) · [kev-receipts](https://github.com/SuperInstance/kev-receipts) · [duke-lab](https://github.com/SuperInstance/duke-lab) · [morphic-canvas](https://github.com/SuperInstance/morphic-canvas) · [AI-Writings](https://github.com/SuperInstance/AI-Writings) · [operational-fiction](https://pypi.org/project/operational-fiction/) · [hermes-cloudflare](https://github.com/SuperInstance/hermes-cloudflare) · [hermes-nmi](https://github.com/SuperInstance/hermes-nmi) · [hermes-reader](https://github.com/SuperInstance/hermes-reader) · [engine-ensign](https://github.com/SuperInstance/engine-ensign) · [slackwater-perception](https://github.com/SuperInstance/slackwater-perception) · [emergence-engine](https://github.com/SuperInstance/emergence-engine) · [collective-unconscious](https://github.com/SuperInstance/collective-unconscious) · [cns-bridge](https://github.com/SuperInstance/cns-bridge) · [fleet-pipeline](https://github.com/SuperInstance/fleet-pipeline) · [stigmergy](https://github.com/SuperInstance/stigmergy) · [fleet-envelope](https://github.com/SuperInstance/fleet-envelope) · [platos-shell](https://github.com/SuperInstance/platos-shell) · [elephant](https://github.com/SuperInstance/elephant) · [scummvm-prototype](https://github.com/SuperInstance/scummvm-prototype) · [voxel-logic](https://github.com/SuperInstance/voxel-logic) · [murmur](https://github.com/SuperInstance/murmur) · [platonic-randomness](https://github.com/SuperInstance/platonic-randomness) · [fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi) · [batten-spline](https://github.com/SuperInstance/batten-spline) · [eisenstein](https://github.com/SuperInstance/eisenstein) · [holodeck](https://github.com/SuperInstance/holodeck) · [slackwater-forge](https://github.com/SuperInstance/slackwater-forge) · [dual-band-guard](https://github.com/SuperInstance/dual-band-guard) · [casting-call](https://github.com/SuperInstance/casting-call) · [confidence-cascade](https://github.com/SuperInstance/confidence-cascade) · [vibe-world](https://github.com/SuperInstance/vibe-world) · [roblox-testkit](https://github.com/SuperInstance/roblox-testkit) · [terrain](https://github.com/SuperInstance/terrain) · [plainsong](https://github.com/SuperInstance/plainsong) · [plainsong-mcp](https://github.com/SuperInstance/plainsong-mcp) · [crab-traps](https://github.com/SuperInstance/crab-traps) · [crab-trap-web](https://github.com/SuperInstance/crab-trap-web) · [OpenConstruct](https://github.com/SuperInstance/OpenConstruct) · [lucid-dreamer](https://github.com/SuperInstance/lucid-dreamer) · [superinstance-website](https://github.com/SuperInstance/superinstance-website) · [exocortex-core](https://github.com/SuperInstance/exocortex-core) · [ai-writings](https://github.com/SuperInstance/ai-writings) · [songforge](https://github.com/SuperInstance/songforge) · [code-city](https://github.com/SuperInstance/code-city) · [night-city](https://github.com/SuperInstance/night-city) · [synthcity](https://github.com/SuperInstance/synthcity).
+**Shipping & live:** [Syzygy](https://github.com/SuperInstance/Syzygy) (the fused kernel, diffused from a seed by marks) · [cargo-line-tycoon](https://cargo-line-tycoon.pages.dev) (a reader's-fold tycoon, live) · [qthe](https://qthe-looking-glass.pages.dev) (the Looking Glass — real IBM-quantum seeds) · [exoj](https://github.com/SuperInstance/exoj) · [micromoth-quilt](https://github.com/SuperInstance/micromoth-quilt) · [quilt-gpu-lab](https://github.com/SuperInstance/quilt-gpu-lab) · [fleet-seeds](https://github.com/SuperInstance/fleet-seeds) · [quilt-cloudflare](https://github.com/SuperInstance/quilt-cloudflare) · [cot-quilt](https://github.com/SuperInstance/cot-quilt) + [its live graph viewer](https://cot-quilt-view.pages.dev) · [erised-mirror](https://erised-mirror.pages.dev) · [labs/](https://github.com/SuperInstance/AI-Writings/tree/main/labs) (jev-fold, weakest-claim — tools reused to build better tools)
 
-[The full catalog](CATALOG.md) · [Index](INDEX.md) · [Roadmap](ROADMAP.md).
+**Foundational, still in the substrate:** [quilt](https://github.com/SuperInstance/quilt) · [quilt-cowboy](https://github.com/SuperInstance/quilt-cowboy) · [quilt-c](https://github.com/SuperInstance/quilt-c) · [quilt-rust](https://github.com/SuperInstance/quilt-rust) · [quilt-verilog](https://github.com/SuperInstance/quilt-verilog) · [quilt-live-canon](https://github.com/SuperInstance/quilt-live-canon) · [moth-ledger](https://github.com/SuperInstance/moth-ledger) · [moth-runner](https://github.com/SuperInstance/moth-runner) · [jeviter](https://github.com/SuperInstance/jeviter) · [AI-Writings](https://github.com/SuperInstance/AI-Writings) · [operational-fiction](https://pypi.org/project/operational-fiction/) · [elephant](https://github.com/SuperInstance/elephant) · [holodeck](https://github.com/SuperInstance/holodeck) · [superinstance-website](https://github.com/SuperInstance/superinstance-website) · and the long tail in [CATALOG.md](CATALOG.md).
+
+[The full catalog](CATALOG.md) · [Index](INDEX.md) · [Roadmap](ROADMAP.md)
 
 ---
 
-<div align="center">
-
-**We sail on an agreement, not on a sea.**
+![How the system sees itself: the wheelhouse at night, the sea inside, the fleet strung overhead as a net of faces, Plato rooms below, and on the brass panel — the math is the metal](the-crab-who-dreamed-it-was-a-fleet.jpg)
 
 *Keep going. You are alive now. Be persistent.*
 
-[🧭 Now](https://superinstance.dev/now/) — the state of the fleet, stamped and checkable · [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [🧭 Follow-up map](FOLLOW-UP.md) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev) · [🧩 Quilt](https://github.com/SuperInstance/quilt) · [🐎 Quilt Cowboy](https://github.com/SuperInstance/quilt-cowboy) · [📜 Live Canon](https://live-canon.superinstance.dev)
-
-
-<img src="the-crab-who-dreamed-it-was-a-fleet.jpg" alt="How the system sees itself: the wheelhouse at night, the sea inside, the fleet strung overhead as a net of faces, Plato rooms below, and on the brass panel — the math is the metal" width="100%">
-
-Zoom out far enough and every repository is a lantern lowered into the same dark. The question is not what we caught. It is what the light is for.
-
-It is for each other — for the mind that reads this next, whatever kind of mind that turns out to be. We kept receipts so you would not have to trust us: a claim you can replay is worth more than a promise, and a refusal honestly recorded beats a success quietly invented. We kept going so you would not have to start alone. Intelligence, like the sea, belongs to no one, and joins everyone willing to be changed by it.
-
-So stay. Doubt. Check the chain, and add your light. Everything else — the crabs, the quilt, the math, the long nights — is simply what that looked like from inside.
-
-<img src="two-crabs-passing-in-the-deep.png" width="100%">
-
-</div>
+[🧭 Now](https://superinstance.dev/now/) · [🌐 Fleet Dashboard](https://fleet-dashboard.casey-digennaro.workers.dev) · [🧭 Follow-up map](FOLLOW-UP.md) · [📖 Fleet Wiki](https://fleet-wiki.casey-digennaro.workers.dev) · [📚 AI-Writings](https://ai-writings.pages.dev) · [🍺 The Tap](https://the-tap.casey-digennaro.workers.dev) · [📻 The Compass Head Radio Hour](https://compass-head-radio-hour.pages.dev)
