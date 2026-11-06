@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-05 13:04 UTC
+**Generated:** 2026-11-06 12:50 UTC
 **Total repositories:** 5331
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -180,7 +180,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[flux-9969b6](https://github.com/SuperInstance/flux-9969b6)** | Forgemaster | FLUX-native I2I agent (self-bootstrapped) | 🔴 stalled |
 | **[flux-adaptive-opcodes](https://github.com/SuperInstance/flux-adaptive-opcodes)** | Forgemaster | Adaptive opcode discovery — runtime ISA extension, proposal, testing, and democratic adoption of new | 🔴 stalled |
 | **[flux-agent-a0fa81](https://github.com/SuperInstance/flux-agent-a0fa81)** | Forgemaster | flux-agent-a0fa81 vessel — FLUX-native agent — self-bootstrapped | 🔴 stalled |
-| **[flux-agent-runtime](https://github.com/SuperInstance/flux-agent-runtime)** | Forgemaster | FLUX-native agent runtime — self-bootstrapping agents in Docker sandboxes that create vessels, pick  | 🟢 active |
+| **[flux-agent-runtime](https://github.com/SuperInstance/flux-agent-runtime)** | Forgemaster | FLUX-native agent runtime — self-bootstrapping agents in Docker sandboxes that create vessels, pick  | 🔴 stalled |
 | **[flux-agent-sim](https://github.com/SuperInstance/flux-agent-sim)** | Forgemaster | Multi-agent cognitive simulation wiring memory, trust, confidence, energy, telepathy | 🔴 stalled |
 | **[flux-algebra](https://github.com/SuperInstance/flux-algebra)** | Forgemaster | Oscar.jl-inspired music algebra — HarmonicRing, PLRGroup, TropicalHarmony, TuningField, DialGeometry | 🔴 stalled |
 | **[flux-algebra-c](https://github.com/SuperInstance/flux-algebra-c)** | Forgemaster | C port of flux-algebra — PLR group, tuning fields, voice leading | 🔴 stalled |
@@ -974,7 +974,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-types](https://github.com/SuperInstance/fleet-types)** | Forgemaster | fleet-types — canonical fleet-core library | 🔴 stalled |
 | **[fleet-university](https://github.com/SuperInstance/fleet-university)** | Forgemaster | Learn about fleet architecture through interactive courses | 🔴 stalled |
 | **[fleet-vector-api](https://github.com/SuperInstance/fleet-vector-api)** | Forgemaster | Semantic search API for SuperInstance crate ecosystem | 🔴 stalled |
-| **[fleet-vessel](https://github.com/SuperInstance/fleet-vessel)** | Forgemaster | Fleet's git-native garbage collector agent | 🟢 active |
+| **[fleet-vessel](https://github.com/SuperInstance/fleet-vessel)** | Forgemaster | Fleet's git-native garbage collector agent | 🔴 stalled |
 | **[fleet-voice-leader](https://github.com/SuperInstance/fleet-voice-leader)** | Forgemaster | Deeper math fleet service — SuperInstance | 🔴 stalled |
 | **[fleet-warden](https://github.com/SuperInstance/fleet-warden)** | Forgemaster | Automated disk cleanup daemon for WSL development environments | 🔴 stalled |
 | **[fleet-warden-rs](https://github.com/SuperInstance/fleet-warden-rs)** | Forgemaster | Fleet resource guardian — automated disk cleanup, budget enforcement, and state monitoring for distr | 🔴 stalled |
@@ -1453,7 +1453,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[businesslog-ai-pages](https://github.com/SuperInstance/businesslog-ai-pages)** | CCC | GitHub Pages for businesslog.ai | 🟢 active |
 | **[capitaine-ai-pages](https://github.com/SuperInstance/capitaine-ai-pages)** | CCC | GitHub Pages for capitaine.ai | 🟢 active |
 | **[capitaineai-com-pages](https://github.com/SuperInstance/capitaineai-com-pages)** | CCC | GitHub Pages for capitaineai.com | 🔴 stalled |
-| **[captain](https://github.com/SuperInstance/captain)** | CCC | Captain agent — fleet commanding vessel, strategic coordination for the Cocapn fleet | 🟢 active |
+| **[captain](https://github.com/SuperInstance/captain)** | CCC | Captain agent — fleet commanding vessel, strategic coordination for the Cocapn fleet | 🔴 stalled |
 | **[CCC](https://github.com/SuperInstance/CCC)** | CCC | CCC public face agent — Kimi K2.5, frontend design, fleet orchestration, PLATO cultivation for the C | 🔴 stalled |
 | **[cocapn-abyss](https://github.com/SuperInstance/cocapn-abyss)** | CCC | Cocapn fleet crate: cocapn-abyss | 🔴 stalled |
 | **[cocapn-ada](https://github.com/SuperInstance/cocapn-ada)** | CCC | CoCapn in Ada — the language of real marine and aviation systems. Range types, task safety, SPARK-ve | 🔴 stalled |
@@ -3733,7 +3733,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[palaver-math-rs](https://github.com/SuperInstance/palaver-math-rs)** | Various | Pure-Rust port of palaver-math — consensus, dialogue trees, coalition detection. | 🔴 stalled |
 | **[paperclip](https://github.com/SuperInstance/paperclip)** | Various | The open-source app everyone uses to manage agents at work | 🔴 stalled |
 | **[papermill](https://github.com/SuperInstance/papermill)** | Various | Multi-model writing workshop. Ghosts in shells. Spirits in machines. | 🔴 stalled |
-| **[papers](https://github.com/SuperInstance/papers)** | Various | White papers on fleet architecture, bootstrapping, and the semantic compiler | 🟢 active |
+| **[papers](https://github.com/SuperInstance/papers)** | Various | White papers on fleet architecture, bootstrapping, and the semantic compiler | 🔴 stalled |
 | **[parentlog-ai](https://github.com/SuperInstance/parentlog-ai)** | Various | AI parenting companion — milestone tracking, sleep schedules, activity suggestions | 🔴 stalled |
 | **[pareto-tournament](https://github.com/SuperInstance/pareto-tournament)** | Various | Pareto tournament selection — multi-objective optimization for agent population dynamics | 🟢 active |
 | **[particle-system](https://github.com/SuperInstance/particle-system)** | Various | A Rust library for Particle System | 🔴 stalled |
@@ -4892,7 +4892,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-event](https://github.com/SuperInstance/ternary-event)** | Various | ternary-event: Pub/sub event dispatch with ternary priorities | 🔴 stalled |
 | **[ternary-event-pool](https://github.com/SuperInstance/ternary-event-pool)** | Various | ternary-event-pool - SuperInstance ecosystem crate | 🔴 stalled |
 | **[ternary-evolution-advanced](https://github.com/SuperInstance/ternary-evolution-advanced)** | Various | Advanced evolutionary algorithms for ternary optimization: differential evolution, CMA-ES-like ad... | 🔴 stalled |
-| **[ternary-experiment](https://github.com/SuperInstance/ternary-experiment)** | Various | Experiment runner — sweep parameters, run instances, collect results | 🟢 active |
+| **[ternary-experiment](https://github.com/SuperInstance/ternary-experiment)** | Various | Experiment runner — sweep parameters, run instances, collect results | 🔴 stalled |
 | **[ternary-experiment-workers](https://github.com/SuperInstance/ternary-experiment-workers)** | Various | Experiment Workers for the SuperInstance ternary {-1, 0, +1} ecosystem | 🔴 stalled |
 | **[ternary-explain](https://github.com/SuperInstance/ternary-explain)** | Various | ternary-explain  Explainability for ternary agent decisions — WHY did the agent choose -1, 0, o... | 🔴 stalled |
 | **[ternary-failure](https://github.com/SuperInstance/ternary-failure)** | Various | Failure analysis with ternary classification | 🔴 stalled |
@@ -6550,7 +6550,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** FLUX-native agent runtime — self-bootstrapping agents in Docker sandboxes that create vessels, pick tasks, and produce real work
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [flux-agent-sim](https://github.com/SuperInstance/flux-agent-sim)
 - **Domain:** Constraint Theory & Math
@@ -12080,7 +12080,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Fleet's git-native garbage collector agent
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [fleet-voice-leader](https://github.com/SuperInstance/fleet-voice-leader)
 - **Domain:** Agent Coordination
@@ -15377,7 +15377,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** CCC
 - **Purpose:** Captain agent — fleet commanding vessel, strategic coordination for the Cocapn fleet
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [CCC](https://github.com/SuperInstance/CCC)
 - **Domain:** Web & Browser
@@ -31309,7 +31309,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** White papers on fleet architecture, bootstrapping, and the semantic compiler
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [parentlog-ai](https://github.com/SuperInstance/parentlog-ai)
 - **Domain:** Other / Uncategorized
@@ -39422,7 +39422,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Experiment runner — sweep parameters, run instances, collect results
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [ternary-experiment-workers](https://github.com/SuperInstance/ternary-experiment-workers)
 - **Domain:** Other / Uncategorized
