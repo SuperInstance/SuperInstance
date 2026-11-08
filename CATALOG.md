@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-07 11:37 UTC
+**Generated:** 2026-11-08 11:50 UTC
 **Total repositories:** 5331
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -2603,7 +2603,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[exotica_nlopt_solver](https://github.com/SuperInstance/exotica_nlopt_solver)** | Various | NLopt-based motion solvers for the EXOTica framework — optimization-based inverse kinematics for rob | 🔴 stalled |
 | **[experience-pipeline](https://github.com/SuperInstance/experience-pipeline)** | Various | Training data pipeline from git history — experience primitives, local LoRA, fleet federated aggrega | 🔴 stalled |
 | **[experiment-wheel](https://github.com/SuperInstance/experiment-wheel)** | Various | experiment-wheel | 🟢 active |
-| **[experiments](https://github.com/SuperInstance/experiments)** | Various | Experimental prototypes and explorations for the SuperInstance ecosystem | 🟢 active |
+| **[experiments](https://github.com/SuperInstance/experiments)** | Various | Experimental prototypes and explorations for the SuperInstance ecosystem | 🔴 stalled |
 | **[exponential-family](https://github.com/SuperInstance/exponential-family)** | Various | Exponential family distributions: sufficient statistics, natural parameters, log-partition functions | 🔴 stalled |
 | **[expr-bytecode](https://github.com/SuperInstance/expr-bytecode)** | Various | A Rust library for Expr Bytecode | 🟢 active |
 | **[expr-eval](https://github.com/SuperInstance/expr-eval)** | Various | A Rust library for Expr Eval | 🟢 active |
@@ -3360,7 +3360,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[lau-worldgen](https://github.com/SuperInstance/lau-worldgen)** | Various | LAU procedural world generation engine | 🔴 stalled |
 | **[lawlog-ai](https://github.com/SuperInstance/lawlog-ai)** | Various | AI legal companion — contract analysis, legal research, compliance tracking | 🔴 stalled |
 | **[laya4quilt](https://github.com/SuperInstance/laya4quilt)** | Various | laya4quilt | 🟢 active |
-| **[lever-runner](https://github.com/SuperInstance/lever-runner)** | Various | Post-inference command executor. A token-lean AI operator that runs pre-approved shell commands by i | 🟢 active |
+| **[lever-runner](https://github.com/SuperInstance/lever-runner)** | Various | Post-inference command executor. A token-lean AI operator that runs pre-approved shell commands by i | 🔴 stalled |
 | **[lever-runner-carapace](https://github.com/SuperInstance/lever-runner-carapace)** | Various | Shell runner for lever — multi-agent orchestration with ternary control signals. | 🔴 stalled |
 | **[lever-runner-synthesis](https://github.com/SuperInstance/lever-runner-synthesis)** | Various | Deep synthesis: how SuperInstance math crates enhance lever-runner's post-inference loop | 🔴 stalled |
 | **[lexical-substrate](https://github.com/SuperInstance/lexical-substrate)** | Various | lexical-substrate | 🟢 active |
@@ -3400,7 +3400,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[log-origin](https://github.com/SuperInstance/log-origin)** | Various | Original LOG.ai platform — the vessel that started the fleet. Custom personalities, templates, and p | 🔴 stalled |
 | **[LOG-Tensor](https://github.com/SuperInstance/LOG-Tensor)** | Various | Logging utility for Tensor operations and debugging. | 🔴 stalled |
 | **[logic-foundations](https://github.com/SuperInstance/logic-foundations)** | Various | Logic foundations in Rust. From propositions to proofs. | 🔴 stalled |
-| **[logtensor](https://github.com/SuperInstance/logtensor)** | Various | Geometric tensor transformers — missile-guidance-inspired attention mechanics and decomposition tool | 🟢 active |
+| **[logtensor](https://github.com/SuperInstance/logtensor)** | Various | Geometric tensor transformers — missile-guidance-inspired attention mechanics and decomposition tool | 🔴 stalled |
 | **[loom-core](https://github.com/SuperInstance/loom-core)** | Various | The Divergent Logic Foundry, standalone: a GAN over logic itself — breed maximally-divergent, proven | 🟢 active |
 | **[loom-weave](https://github.com/SuperInstance/loom-weave)** | Various | 0.1.0 | 🔴 stalled |
 | **[loom-weaver](https://github.com/SuperInstance/loom-weaver)** | Various | loom-weaver | 🔴 stalled |
@@ -23399,7 +23399,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Experimental prototypes and explorations for the SuperInstance ecosystem
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [exponential-family](https://github.com/SuperInstance/exponential-family)
 - **Domain:** Other / Uncategorized
@@ -28698,7 +28698,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Post-inference command executor. A token-lean AI operator that runs pre-approved shell commands by intent, not by tool schemas.
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [lever-runner-carapace](https://github.com/SuperInstance/lever-runner-carapace)
 - **Domain:** Other / Uncategorized
@@ -28978,7 +28978,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Geometric tensor transformers — missile-guidance-inspired attention mechanics and decomposition tools
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [loom-core](https://github.com/SuperInstance/loom-core)
 - **Domain:** Other / Uncategorized
