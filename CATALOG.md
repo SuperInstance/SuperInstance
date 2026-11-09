@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-08 11:50 UTC
+**Generated:** 2026-11-09 13:45 UTC
 **Total repositories:** 5331
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -2619,7 +2619,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[failure-atlas](https://github.com/SuperInstance/failure-atlas)** | Various | Comprehensive failure taxonomy and recovery — technical/human/ecosystem failure classification and p | 🔴 stalled |
 | **[failure-detector](https://github.com/SuperInstance/failure-detector)** | Various | Phi accrual failure detector for distributed systems — statistical heartbeat analysis used in Cassan | 🔴 stalled |
 | **[falcon-7b-tools](https://github.com/SuperInstance/falcon-7b-tools)** | Various | A Rust library for Falcon 7b Tools | 🟢 active |
-| **[falcon-hash](https://github.com/SuperInstance/falcon-hash)** | Various | Falcon hash: FNV-1a rolling hash and hash combiner utilities | 🔴 stalled |
+| **[falcon-hash](https://github.com/SuperInstance/falcon-hash)** | Various | Falcon hash: FNV-1a rolling hash and hash combiner utilities | ⚫ deprecated |
 | **[fallback-strategy](https://github.com/SuperInstance/fallback-strategy)** | Various | A Rust library for Fallback Strategy | 🟢 active |
 | **[farmerlog-ai](https://github.com/SuperInstance/farmerlog-ai)** | Various | AI farming companion — crop planning, weather tracking, yield optimization | 🔴 stalled |
 | **[fastc-core-regex](https://github.com/SuperInstance/fastc-core-regex)** | Various | Minimal regex engine for fastC — Thompson NFA, no backreferences, linear-time matching. Part of the  | 🔴 stalled |
@@ -23511,7 +23511,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Falcon hash: FNV-1a rolling hash and hash combiner utilities
 - **Research lineage:** Not yet categorized.
-- **Status:** stalled
+- **Status:** deprecated
 
 ### [fallback-strategy](https://github.com/SuperInstance/fallback-strategy)
 - **Domain:** Other / Uncategorized
