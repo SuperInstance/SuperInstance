@@ -1,14 +1,14 @@
 {
- "generated": "2026-11-02T01:01:44Z",
+ "generated": "2026-11-09T01:13:33Z",
  "source": "CATALOG.md",
- "catalogGenerated": "2026-11-01",
- "catalogTotal": 5318,
- "parsed": 5318,
+ "catalogGenerated": "2026-11-08",
+ "catalogTotal": 5331,
+ "parsed": 5331,
  "catalogMissing": [],
  "tier3Note": "tier-3 (orphan+stale) populates once the CATALOG generator fetches pushedAt/isArchived (meta repo PR #19, catalog-v2); until then every row reads active",
  "tiers": {
   "1": 27,
-  "2": 5291,
+  "2": 5304,
   "3": 0
  },
  "vessels": [
@@ -1322,6 +1322,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Template repo: embed OpenCode, Claude Code, Aider, Crush, Codex CLI into a GitHub Codespace for agen",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "agent-world",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "A Minecraft world on the Jetson AGX Thor where four bots build together: a shared fast decision mode",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -2969,6 +2978,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Bregman divergences: KL, squared Euclidean, Itakura-Saito, convex generating functions, and mirror d",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "bridgekeeper-bakeoff",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "One daemon contract, three runtimes (Elixir/BEAM, Rust, C++), raced on real hardware: robustness fir",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -18661,6 +18679,15 @@
    "tier": 2
   },
   {
+   "name": "git.pp",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "git.pp-doctor",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -18737,6 +18764,42 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Make a gate decision the PARENT of the action it authorises, so the closure root proves the action w",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-demo-contested",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Live demo of git.pp retraction law: a contested retraction, marked not hidden",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-demo-quilt",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Dogfood project for the gitpp-app: a git.pp project (poc-quilt-1 records) hosted on GitHub.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-dogfood-b1",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Dogfood for git.pp Mapping B: an ordinary ferry-ops repo with a declared coordination surface on git",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "gitpp-dogfood-day1",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "M2 live-day dogfood: five agents, conflicting records, referee-chosen merge order — merged state vs",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -21329,6 +21392,24 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Iterative solvers in Rust. When direct methods can't fit in memory.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "jacquard",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A supervised runtime: untrusted producers submit proposals, a small auditable kernel decides what ma",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "jacquard-anchors",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Chain-head anchoring checkpoints for Jacquard logs (spec section 15) — signed, append-only witness h",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -25330,6 +25411,15 @@
    "tier": 2
   },
   {
+   "name": "liquid-world-model",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "An engine-agnostic framework for liquid world models: the chart an agent draws of a world it cannot",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "liteparse-coverage",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -28129,6 +28219,15 @@
    "tier": 2
   },
   {
+   "name": "nv-uefi-unlocker",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust):",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "observation-primitive",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -29015,6 +29114,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Ouroboros — self-creating AI agent. Born Feb 16, 2026.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "outbound-scanner",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "A pre-send egress scanner for agent harnesses: catches session secrets in outbound replies before th",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -40036,15 +40144,6 @@
    "tier": 2
   },
   {
-   "name": "stitch",
-   "family": "hardware-edge",
-   "vessel": "JetsonClaw1",
-   "mission": "A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a",
-   "state": "active",
-   "bornFrom": [],
-   "tier": 2
-  },
-  {
    "name": "stock-screener",
    "family": "hardware-edge",
    "vessel": "JetsonClaw1",
@@ -41750,6 +41849,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "tells",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "telltape",
+   "family": "hardware-edge",
+   "vessel": "JetsonClaw1",
+   "mission": "telltape watches video, live or recorded, and writes a ledger of what changed - a seek index into fo",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -45980,6 +46088,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "tracker-ce",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Official Polyend Tracker Community Editon for all Polyend Tracker devices.",
    "state": "active",
    "bornFrom": [],
    "tier": 2
