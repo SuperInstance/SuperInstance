@@ -1,7 +1,7 @@
 # Index by Language
 
-**Generated:** 2026-11-09 13:45 UTC
-**Total repos:** 5331
+**Generated:** 2026-11-11 12:33 UTC
+**Total repos:** 5338
 
 ## C
 
@@ -1657,6 +1657,7 @@
 - **[ai-writings-vectorizer](https://github.com/SuperInstance/ai-writings-vectorizer)**
 - **[aider](https://github.com/SuperInstance/aider)** — aider is AI pair programming in your terminal
 - **[AIR](https://github.com/SuperInstance/AIR)** — Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interact
+- **[air-architecture](https://github.com/SuperInstance/air-architecture)** — # Air Architecture
 - **[AllBeads](https://github.com/SuperInstance/AllBeads)** — A Boss Repository Architecture for Multi-Repo AI Agent Orchestration
 - **[allocator-rs](https://github.com/SuperInstance/allocator-rs)** — Memory allocation strategies - Pool allocators, arena allocators, custom allocators
 - **[amd-bf16-tools](https://github.com/SuperInstance/amd-bf16-tools)** — BF16 numerical tools with benchmarks — testing AMD Ryzen AI BF16 acceleration hypothesis
@@ -1855,6 +1856,7 @@
 - **[Claude-PRISM-CF](https://github.com/SuperInstance/Claude-PRISM-CF)** — Cloudflare implementation of PRISM.
 - **[Claude-prism-local-json](https://github.com/SuperInstance/Claude-prism-local-json)** — Local JSON version of PRISM.
 - **[Claude_Baton](https://github.com/SuperInstance/Claude_Baton)** — Generational context handoff for Claude Code. Seamless, auditable, infinite-context agents that ship
+- **[claudeflare-archive](https://github.com/SuperInstance/claudeflare-archive)** — # Claudeflare Research Docs Archive
 - **[claw-extensions](https://github.com/SuperInstance/claw-extensions)**
 - **[claw-in-plato](https://github.com/SuperInstance/claw-in-plato)** — PLATO-native agent living in a Docker container. Its only I/O is tiles. Telegram bridge for direct h
 - **[clawcanvas](https://github.com/SuperInstance/clawcanvas)** — Web-based canvas drawing tool.
@@ -1944,8 +1946,10 @@
 - **[codex-budget-guard](https://github.com/SuperInstance/codex-budget-guard)** — Budget enforcement for Codex CLI — daily/weekly/monthly token limits, phase detection, auto-throttle
 - **[coding-3d](https://github.com/SuperInstance/coding-3d)** — Repository test sur AI-Factory
 - **[cog-lab](https://github.com/SuperInstance/cog-lab)** — The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf
+- **[cognitemill](https://github.com/SuperInstance/cognitemill)** — # Cognitemill
 - **[cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)** — A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world o
 - **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
+- **[cognitivemell](https://github.com/SuperInstance/cognitivemell)** — Recovered project content
 - **[coinlog-ai](https://github.com/SuperInstance/coinlog-ai)** — CoinLog.ai — AI cryptocurrency portfolio tracker and market analyst. Part of the Lucineer ecosystem.
 - **[collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)** — Quilt backend for Real-time collaborative drawing platform built with Java, JavaFX, TCP sockets, and
 - **[collective-ai](https://github.com/SuperInstance/collective-ai)** — Extracted from plato-training
@@ -2200,6 +2204,7 @@
 - **[dial-space-explorer](https://github.com/SuperInstance/dial-space-explorer)** — Dial-Space Explorer — 3D interactive map of musical traditions in parameter space
 - **[dial-theory-rs](https://github.com/SuperInstance/dial-theory-rs)** — Cultural dial positions for agent personality — theoretical spectrums, traditions, clustering, and e
 - **[dicebear-quilt](https://github.com/SuperInstance/dicebear-quilt)** — DiceBear is an avatar library for designers and developers. 🌍
+- **[diff-shepherd](https://github.com/SuperInstance/diff-shepherd)** — # 🐑 Diff Shepherd
 - **[differential-regression](https://github.com/SuperInstance/differential-regression)** — Regression testing for specification patches using behavioral ledgers
 - **[diffie-hellman-rs](https://github.com/SuperInstance/diffie-hellman-rs)** — Diffie-Hellman key exchange over finite fields with well-known group parameters
 - **[dify-budget-watchdog](https://github.com/SuperInstance/dify-budget-watchdog)** — API budget enforcement for Dify workflows — set budgets, auto-downgrade models when you're close.
@@ -3497,6 +3502,7 @@
 - **[lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)** — Captain agent — vessel command and fleet leadership protocol
 - **[lucineer-fleet-wiki](https://github.com/SuperInstance/lucineer-fleet-wiki)**
 - **[lucineer-memory](https://github.com/SuperInstance/lucineer-memory)** — 🧠 Persistent memory system for Lucineer — D1 database, Vectorize index, cross-session recall
+- **[lucineer-minecraft](https://github.com/SuperInstance/lucineer-minecraft)** — # Lucineer Minecraft Mod - Data Pack
 - **[lucineer-relay](https://github.com/SuperInstance/lucineer-relay)** — ⚡ Cloudflare Worker relay between Roblox and OpenClaw for Lucineer
 - **[lucineer-roblox](https://github.com/SuperInstance/lucineer-roblox)** — 🎮 Lucineer Roblox client — Lua modules for in-game AI companion with live build execution
 - **[Lucineer-Stem-quest](https://github.com/SuperInstance/Lucineer-Stem-quest)** — STEM learning quest framework by Lucineer
@@ -4734,6 +4740,7 @@
 - **[superinstance-knowledge](https://github.com/SuperInstance/superinstance-knowledge)** — The hive mind library — 532 mined documents, cross-pollination analyses, lessons learned, and preset
 - **[superinstance-lab](https://github.com/SuperInstance/superinstance-lab)** — SuperInstance lab wave-67 (pushed by push_all.sh)
 - **[superinstance-mcp](https://github.com/SuperInstance/superinstance-mcp)** — MCP server exposing the SuperInstance fleet as tools to Claude Code
+- **[superinstance-planning](https://github.com/SuperInstance/superinstance-planning)** — # SuperInstance Planning Documents
 - **[superinstance-polyformalism-harness](https://github.com/SuperInstance/superinstance-polyformalism-harness)** — Unified harness for the 7-port polyformalism fleet — byte-exact canary verification
 - **[superinstance-protocol](https://github.com/SuperInstance/superinstance-protocol)** — Hybrid Bottle wire protocol — JSON envelope + msgpack payload with ternary conservation auditing for
 - **[superinstance-runtime](https://github.com/SuperInstance/superinstance-runtime)**

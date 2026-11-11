@@ -1,7 +1,7 @@
 # Index by Type
 
-**Generated:** 2026-11-09 13:45 UTC
-**Total repos:** 5331
+**Generated:** 2026-11-11 12:33 UTC
+**Total repos:** 5338
 
 ## Cli
 
@@ -309,6 +309,7 @@
 - **[ai-writings-vectorizer](https://github.com/SuperInstance/ai-writings-vectorizer)**
 - **[aider](https://github.com/SuperInstance/aider)** — aider is AI pair programming in your terminal
 - **[AIR](https://github.com/SuperInstance/AIR)** — Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interact
+- **[air-architecture](https://github.com/SuperInstance/air-architecture)** — # Air Architecture
 - **[albanese-variety](https://github.com/SuperInstance/albanese-variety)** — Albanese variety computation in algebraic geometry — the universal morphism target to an abelian var
 - **[algebraic-geometry](https://github.com/SuperInstance/algebraic-geometry)** — Algebraic geometry in Rust — varieties, ideals, Groebner bases, affine and projective spaces, polyno
 - **[algtop-rs](https://github.com/SuperInstance/algtop-rs)** — Algebraic topology in Rust. Homology, cohomology, and the shape of spaces.
@@ -606,9 +607,11 @@
 - **[coev](https://github.com/SuperInstance/coev)** — Adversarial coevolution engine with champion-integrity auditing. Zero-dep Node. Extracted from pong-
 - **[coff-parser](https://github.com/SuperInstance/coff-parser)** — A Rust library for Coff Parser
 - **[cog-lab](https://github.com/SuperInstance/cog-lab)** — The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf
+- **[cognitemill](https://github.com/SuperInstance/cognitemill)** — # Cognitemill
 - **[cognitive-archaeology](https://github.com/SuperInstance/cognitive-archaeology)** — Layered cognitive history with archaeological excavation — dig through strata of an agent's mind in 
 - **[cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)** — A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world o
 - **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
+- **[cognitivemell](https://github.com/SuperInstance/cognitivemell)** — Recovered project content
 - **[cohomology-ring](https://github.com/SuperInstance/cohomology-ring)** — Cohomology rings and operations in Rust — cup product, Bockstein, Steenrod squares for algebraic top
 - **[coinlog-ai](https://github.com/SuperInstance/coinlog-ai)** — CoinLog.ai — AI cryptocurrency portfolio tracker and market analyst. Part of the Lucineer ecosystem.
 - **[collective-ai](https://github.com/SuperInstance/collective-ai)** — Extracted from plato-training
@@ -993,6 +996,7 @@
 - **[diff-myers](https://github.com/SuperInstance/diff-myers)** — A Rust library for Diff Myers
 - **[diff-patch](https://github.com/SuperInstance/diff-patch)** — A Rust library for Diff Patch
 - **[diff-patience](https://github.com/SuperInstance/diff-patience)** — A Rust library for Diff Patience
+- **[diff-shepherd](https://github.com/SuperInstance/diff-shepherd)** — # 🐑 Diff Shepherd
 - **[diff-three-way](https://github.com/SuperInstance/diff-three-way)** — A Rust library for Diff Three Way
 - **[differential-regression](https://github.com/SuperInstance/differential-regression)** — Regression testing for specification patches using behavioral ledgers
 - **[diffie-hellman-rs](https://github.com/SuperInstance/diffie-hellman-rs)** — Diffie-Hellman key exchange over finite fields with well-known group parameters
@@ -2449,6 +2453,7 @@
 - **[lucineer-creative](https://github.com/SuperInstance/lucineer-creative)** — 🎨 MMX-powered creative asset pipeline — concept art, ambient music, and build previews for Lucineer'
 - **[lucineer-fleet-wiki](https://github.com/SuperInstance/lucineer-fleet-wiki)**
 - **[lucineer-memory](https://github.com/SuperInstance/lucineer-memory)** — 🧠 Persistent memory system for Lucineer — D1 database, Vectorize index, cross-session recall
+- **[lucineer-minecraft](https://github.com/SuperInstance/lucineer-minecraft)** — # Lucineer Minecraft Mod - Data Pack
 - **[lucineer-relay](https://github.com/SuperInstance/lucineer-relay)** — ⚡ Cloudflare Worker relay between Roblox and OpenClaw for Lucineer
 - **[Lucineer-Stem-quest](https://github.com/SuperInstance/Lucineer-Stem-quest)** — STEM learning quest framework by Lucineer
 - **[lucineer-system](https://github.com/SuperInstance/lucineer-system)** — ⚒️ Lucineer — persistent AI game-building companion. Lives in Roblox, browser, and Godot. Remembers 
@@ -3749,6 +3754,7 @@
 - **[superinstance-lab](https://github.com/SuperInstance/superinstance-lab)** — SuperInstance lab wave-67 (pushed by push_all.sh)
 - **[superinstance-live](https://github.com/SuperInstance/superinstance-live)** — DAW-agnostic session controller for SuperInstance constraint music systems.
 - **[superinstance-math](https://github.com/SuperInstance/superinstance-math)** — Pure-Python math libraries for ML engineers — information geometry, optimal transport, persistent ho
+- **[superinstance-planning](https://github.com/SuperInstance/superinstance-planning)** — # SuperInstance Planning Documents
 - **[superinstance-polyformalism-harness](https://github.com/SuperInstance/superinstance-polyformalism-harness)** — Unified harness for the 7-port polyformalism fleet — byte-exact canary verification
 - **[superinstance-runtime](https://github.com/SuperInstance/superinstance-runtime)**
 - **[SuperInstance-SDK1](https://github.com/SuperInstance/SuperInstance-SDK1)** — Software development kit for SuperInstance v1
@@ -4435,6 +4441,7 @@
 - **[canon-recs](https://github.com/SuperInstance/canon-recs)** — Recommend papers related to a topic or to a paper. Combines claim() and ghost() on the Live Canon.
 - **[cartographer](https://github.com/SuperInstance/cartographer)** — The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed.
 - **[cellular-automata-rs](https://github.com/SuperInstance/cellular-automata-rs)** — Research-grade Rust crate
+- **[claudeflare-archive](https://github.com/SuperInstance/claudeflare-archive)** — # Claudeflare Research Docs Archive
 - **[complex-rs](https://github.com/SuperInstance/complex-rs)** — Research-grade complex-rs library in pure Rust
 - **[conservation-docs](https://github.com/SuperInstance/conservation-docs)** — Research documentation for the Conservation Spectral Framework — papers, proofs, manifestos
 - **[conservation-papers](https://github.com/SuperInstance/conservation-papers)** — Publication-ready research papers on conservation spectral analysis

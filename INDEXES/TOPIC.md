@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-11-09 13:45 UTC
-**Total repos:** 5331
+**Generated:** 2026-11-11 12:33 UTC
+**Total repos:** 5338
 
 ## A2A
 
@@ -3002,6 +3002,7 @@
 - **[ai-writings-vectorizer](https://github.com/SuperInstance/ai-writings-vectorizer)**
 - **[aider](https://github.com/SuperInstance/aider)** — aider is AI pair programming in your terminal
 - **[AIR](https://github.com/SuperInstance/AIR)** — Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interact
+- **[air-architecture](https://github.com/SuperInstance/air-architecture)** — # Air Architecture
 - **[albanese-variety](https://github.com/SuperInstance/albanese-variety)** — Albanese variety computation in algebraic geometry — the universal morphism target to an abelian var
 - **[algebra-explorer](https://github.com/SuperInstance/algebra-explorer)** — An interactive demo of the 4-move pipeline as algebra (F156). R ∘ D ∘ C ∘ L. Each move is a button. 
 - **[algebraic-geometry](https://github.com/SuperInstance/algebraic-geometry)** — Algebraic geometry in Rust — varieties, ideals, Groebner bases, affine and projective spaces, polyno
@@ -3188,6 +3189,7 @@
 - **[claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)** — Claude Code workhorse vessel with experience journal and task delegation
 - **[Claude-PRISM-CF](https://github.com/SuperInstance/Claude-PRISM-CF)** — Cloudflare implementation of PRISM.
 - **[Claude-prism-local-json](https://github.com/SuperInstance/Claude-prism-local-json)** — Local JSON version of PRISM.
+- **[claudeflare-archive](https://github.com/SuperInstance/claudeflare-archive)** — # Claudeflare Research Docs Archive
 - **[claw](https://github.com/SuperInstance/claw)** — A simple Claw engine for cellular logic in spreadsheet instances within a superinstance/spreadsheet-
 - **[claw-extensions](https://github.com/SuperInstance/claw-extensions)**
 - **[clawcanvas](https://github.com/SuperInstance/clawcanvas)** — Web-based canvas drawing tool.
@@ -3231,8 +3233,10 @@
 - **[coev](https://github.com/SuperInstance/coev)** — Adversarial coevolution engine with champion-integrity auditing. Zero-dep Node. Extracted from pong-
 - **[coff-parser](https://github.com/SuperInstance/coff-parser)** — A Rust library for Coff Parser
 - **[cog-lab](https://github.com/SuperInstance/cog-lab)** — The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf
+- **[cognitemill](https://github.com/SuperInstance/cognitemill)** — # Cognitemill
 - **[cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)** — A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world o
 - **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
+- **[cognitivemell](https://github.com/SuperInstance/cognitivemell)** — Recovered project content
 - **[coinlog-ai](https://github.com/SuperInstance/coinlog-ai)** — CoinLog.ai — AI cryptocurrency portfolio tracker and market analyst. Part of the Lucineer ecosystem.
 - **[collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)** — Quilt backend for Real-time collaborative drawing platform built with Java, JavaFX, TCP sockets, and
 - **[collective-inference](https://github.com/SuperInstance/collective-inference)** — collective-inference
@@ -3412,6 +3416,7 @@
 - **[diff-myers](https://github.com/SuperInstance/diff-myers)** — A Rust library for Diff Myers
 - **[diff-patch](https://github.com/SuperInstance/diff-patch)** — A Rust library for Diff Patch
 - **[diff-patience](https://github.com/SuperInstance/diff-patience)** — A Rust library for Diff Patience
+- **[diff-shepherd](https://github.com/SuperInstance/diff-shepherd)** — # 🐑 Diff Shepherd
 - **[diff-three-way](https://github.com/SuperInstance/diff-three-way)** — A Rust library for Diff Three Way
 - **[differential-regression](https://github.com/SuperInstance/differential-regression)** — Regression testing for specification patches using behavioral ledgers
 - **[diffie-hellman-rs](https://github.com/SuperInstance/diffie-hellman-rs)** — Diffie-Hellman key exchange over finite fields with well-known group parameters
@@ -4110,6 +4115,7 @@
 - **[lucineer-com-site](https://github.com/SuperInstance/lucineer-com-site)**
 - **[lucineer-creative](https://github.com/SuperInstance/lucineer-creative)** — 🎨 MMX-powered creative asset pipeline — concept art, ambient music, and build previews for Lucineer'
 - **[lucineer-memory](https://github.com/SuperInstance/lucineer-memory)** — 🧠 Persistent memory system for Lucineer — D1 database, Vectorize index, cross-session recall
+- **[lucineer-minecraft](https://github.com/SuperInstance/lucineer-minecraft)** — # Lucineer Minecraft Mod - Data Pack
 - **[lucineer-relay](https://github.com/SuperInstance/lucineer-relay)** — ⚡ Cloudflare Worker relay between Roblox and OpenClaw for Lucineer
 - **[lucineer-roblox](https://github.com/SuperInstance/lucineer-roblox)** — 🎮 Lucineer Roblox client — Lua modules for in-game AI companion with live build execution
 - **[Lucineer-Stem-quest](https://github.com/SuperInstance/Lucineer-Stem-quest)** — STEM learning quest framework by Lucineer
@@ -4907,6 +4913,7 @@
 - **[superinstance-hdc-core](https://github.com/SuperInstance/superinstance-hdc-core)**
 - **[superinstance-lab](https://github.com/SuperInstance/superinstance-lab)** — SuperInstance lab wave-67 (pushed by push_all.sh)
 - **[superinstance-math](https://github.com/SuperInstance/superinstance-math)** — Pure-Python math libraries for ML engineers — information geometry, optimal transport, persistent ho
+- **[superinstance-planning](https://github.com/SuperInstance/superinstance-planning)** — # SuperInstance Planning Documents
 - **[superinstance-runtime](https://github.com/SuperInstance/superinstance-runtime)**
 - **[SuperInstance-SDK1](https://github.com/SuperInstance/SuperInstance-SDK1)** — Software development kit for SuperInstance v1
 - **[superinstance-spreadsheet](https://github.com/SuperInstance/superinstance-spreadsheet)** — Excel, but alive. Every cell is a tiny intelligence. Every sort is natural selection.

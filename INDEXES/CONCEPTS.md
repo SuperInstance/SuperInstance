@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-11-09 13:45 UTC
+**Generated:** 2026-11-11 12:33 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -4091,6 +4091,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ai-token-counter](https://github.com/SuperInstance/ai-token-counter)
 - [ai-writings-vectorizer](https://github.com/SuperInstance/ai-writings-vectorizer)
 - [aider](https://github.com/SuperInstance/aider)
+- [air-architecture](https://github.com/SuperInstance/air-architecture)
 - [albanese-variety](https://github.com/SuperInstance/albanese-variety)
 - [algebra-explorer](https://github.com/SuperInstance/algebra-explorer)
 - [algebraic-geometry](https://github.com/SuperInstance/algebraic-geometry)
@@ -4259,6 +4260,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [circuit-breaker-rs](https://github.com/SuperInstance/circuit-breaker-rs)
 - [circuitbreaker-rs](https://github.com/SuperInstance/circuitbreaker-rs)
 - [claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)
+- [claudeflare-archive](https://github.com/SuperInstance/claudeflare-archive)
 - [claw](https://github.com/SuperInstance/claw)
 - [claw-extensions](https://github.com/SuperInstance/claw-extensions)
 - [clawcanvas](https://github.com/SuperInstance/clawcanvas)
@@ -4302,7 +4304,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [coev](https://github.com/SuperInstance/coev)
 - [coff-parser](https://github.com/SuperInstance/coff-parser)
 - [cog-lab](https://github.com/SuperInstance/cog-lab)
+- [cognitemill](https://github.com/SuperInstance/cognitemill)
 - [cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)
+- [cognitivemell](https://github.com/SuperInstance/cognitivemell)
 - [coinlog-ai](https://github.com/SuperInstance/coinlog-ai)
 - [collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)
 - [collective-inference](https://github.com/SuperInstance/collective-inference)
@@ -4481,6 +4485,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [diff-myers](https://github.com/SuperInstance/diff-myers)
 - [diff-patch](https://github.com/SuperInstance/diff-patch)
 - [diff-patience](https://github.com/SuperInstance/diff-patience)
+- [diff-shepherd](https://github.com/SuperInstance/diff-shepherd)
 - [diff-three-way](https://github.com/SuperInstance/diff-three-way)
 - [differential-regression](https://github.com/SuperInstance/differential-regression)
 - [diffie-hellman-rs](https://github.com/SuperInstance/diffie-hellman-rs)
@@ -5151,6 +5156,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lucineer-com-site](https://github.com/SuperInstance/lucineer-com-site)
 - [lucineer-creative](https://github.com/SuperInstance/lucineer-creative)
 - [lucineer-memory](https://github.com/SuperInstance/lucineer-memory)
+- [lucineer-minecraft](https://github.com/SuperInstance/lucineer-minecraft)
 - [lucineer-relay](https://github.com/SuperInstance/lucineer-relay)
 - [lucineer-roblox](https://github.com/SuperInstance/lucineer-roblox)
 - [lucineer-system](https://github.com/SuperInstance/lucineer-system)
@@ -5910,6 +5916,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [superinstance-hdc-core](https://github.com/SuperInstance/superinstance-hdc-core)
 - [superinstance-lab](https://github.com/SuperInstance/superinstance-lab)
 - [superinstance-math](https://github.com/SuperInstance/superinstance-math)
+- [superinstance-planning](https://github.com/SuperInstance/superinstance-planning)
 - [superinstance-runtime](https://github.com/SuperInstance/superinstance-runtime)
 - [superinstance-spreadsheet](https://github.com/SuperInstance/superinstance-spreadsheet)
 - [superinstance-ternary-wavelet](https://github.com/SuperInstance/superinstance-ternary-wavelet)
