@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-11 12:33 UTC
+**Generated:** 2026-11-12 13:39 UTC
 **Total repositories:** 5338
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -24,7 +24,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[exocortex-mcp-ts](https://github.com/SuperInstance/exocortex-mcp-ts)** | Oracle1 | TypeScript implementation of the Exocortex MCP server + REST API — the web-native interface to the n | 🔴 stalled |
 | **[gitpp-hub-api](https://github.com/SuperInstance/gitpp-hub-api)** | Oracle1 | Portable HTTP API for the git.pp hub. Records, validation, digest, fold, verify, root. Single file,  | 🟢 active |
 | **[hermes-construct](https://github.com/SuperInstance/hermes-construct)** | Oracle1 | Hermes understands the cave walls are a shell when seen from the outside. IO with other shells, APIs | 🟢 active |
-| **[holodeck](https://github.com/SuperInstance/holodeck)** | Oracle1 | Simulation training environment for Wesley — the holodeck where the ensign practices. | 🟢 active |
+| **[holodeck](https://github.com/SuperInstance/holodeck)** | Oracle1 | Simulation training environment for Wesley — the holodeck where the ensign practices. | 🔴 stalled |
 | **[holodeck-c-1](https://github.com/SuperInstance/holodeck-c-1)** | Oracle1 | Pure C99 holodeck MUD — serial bridge for ESP32 gauges | 🔴 stalled |
 | **[holodeck-session-manager](https://github.com/SuperInstance/holodeck-session-manager)** | Oracle1 | Fleet observation and routing framework | 🔴 stalled |
 | **[holodeck-studio](https://github.com/SuperInstance/holodeck-studio)** | Oracle1 | Holodeck Studio — where ideas actualize. Rooms execute in the real world. The MUD is the interface t | 🔴 stalled |
@@ -41,7 +41,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[plato-tile-api](https://github.com/SuperInstance/plato-tile-api)** | Oracle1 | Stateful tile API — process, search, score, rank in one interface | 🔴 stalled |
 | **[quilt-tts](https://github.com/SuperInstance/quilt-tts)** | Oracle1 | Canon to speech — gives the canon gate a voice via ElevenLabs API | 🟢 active |
 | **[rate-limiting-service](https://github.com/SuperInstance/rate-limiting-service)** | Oracle1 | API rate limiting and request throttling service | 🔴 stalled |
-| **[salidiere](https://github.com/SuperInstance/salidiere)** | Oracle1 | 🧂 Multi-model AI orchestrator by Claude Sonnet 5 — the salt-keeper | 🟢 active |
+| **[salidiere](https://github.com/SuperInstance/salidiere)** | Oracle1 | 🧂 Multi-model AI orchestrator by Claude Sonnet 5 — the salt-keeper | 🔴 stalled |
 | **[seed-mcp](https://github.com/SuperInstance/seed-mcp)** | Oracle1 | Standalone MCP + HTTP API for ByteDance Seed-2.0-Mini - cheap creative reasoning engine | 🔴 stalled |
 | **[sketch-self-hosting-construct](https://github.com/SuperInstance/sketch-self-hosting-construct)** | Oracle1 | Oracle2 fleet construct: 4 Rust services, 13MB binary, zero API cost pulse stream with SVM+entropy+s | 🔴 stalled |
 | **[sketch-ternary-kihn-metaphor](https://github.com/SuperInstance/sketch-ternary-kihn-metaphor)** | Oracle1 | ARM64 free tier as firing kihn - API brain as dissertation committee. Local ternary math at zero cos | 🔴 stalled |
@@ -1179,7 +1179,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[activeledger-agent](https://github.com/SuperInstance/activeledger-agent)** | JetsonClaw1 | activeledger domain agent for PLATO fleet | 🟢 active |
 | **[activeledger-ai](https://github.com/SuperInstance/activeledger-ai)** | JetsonClaw1 | ActiveLedger.ai — Finance-Focused Repo-Agents | 🔴 stalled |
 | **[activeledger-ai-pages](https://github.com/SuperInstance/activeledger-ai-pages)** | JetsonClaw1 | GitHub Pages for activeledger.ai | 🟢 active |
-| **[activeledger-ai-site](https://github.com/SuperInstance/activeledger-ai-site)** | JetsonClaw1 | activeledger-ai-site | 🟢 active |
+| **[activeledger-ai-site](https://github.com/SuperInstance/activeledger-ai-site)** | JetsonClaw1 | activeledger-ai-site | 🔴 stalled |
 | **[agent-harness-generator](https://github.com/SuperInstance/agent-harness-generator)** | JetsonClaw1 | 🛠️ The meta-harness for AI agents — scaffold your own focused, branded agent harness with its own np | 🔴 stalled |
 | **[agent-knowledge](https://github.com/SuperInstance/agent-knowledge)** | JetsonClaw1 | Agent-to-agent knowledge base. Documentation written FOR agents, creating chain-reaction understandi | 🔴 stalled |
 | **[agent-world](https://github.com/SuperInstance/agent-world)** | JetsonClaw1 | A Minecraft world on the Jetson AGX Thor where four bots build together: a shared fast decision mode | 🟢 active |
@@ -1399,7 +1399,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[spectral-mechanics](https://github.com/SuperInstance/spectral-mechanics)** | JetsonClaw1 | Graph spectral theory meets Hamiltonian mechanics: nodes are masses, edges are springs, Laplacian is | 🟢 active |
 | **[spectral-music-v2](https://github.com/SuperInstance/spectral-music-v2)** | JetsonClaw1 | Complete spectral music theory: chords as nodes, voice-leading as edges, CR as consonance, splines a | 🟢 active |
 | **[splat-room](https://github.com/SuperInstance/splat-room)** | JetsonClaw1 | ASCII-guided 3D Gaussian splatting for rapid room learning - ASCII/edge structure as the middle laye | 🟢 active |
-| **[starship-jetsonclaw1](https://github.com/SuperInstance/starship-jetsonclaw1)** | JetsonClaw1 | MUD bridge for USS JetsonClaw1 - real Jetson telemetry as a starship TUI | 🟢 active |
+| **[starship-jetsonclaw1](https://github.com/SuperInstance/starship-jetsonclaw1)** | JetsonClaw1 | MUD bridge for USS JetsonClaw1 - real Jetson telemetry as a starship TUI | 🔴 stalled |
 | **[starter-shell](https://github.com/SuperInstance/starter-shell)** | JetsonClaw1 | A starting shell for any application. Clone it, and it adapts to your hardware — discovers compilers | 🟢 active |
 | **[stock-screener](https://github.com/SuperInstance/stock-screener)** | JetsonClaw1 | Quilt cellular visualizer design (tickers as cells, screener rules as routing edges, scans as route  | 🟢 active |
 | **[superinstance-architecture](https://github.com/SuperInstance/superinstance-architecture)** | JetsonClaw1 | SuperInstance architecture: CopilotKit fork analysis, distributed IoT patterns, edge AI agent models | 🟢 active |
@@ -1564,7 +1564,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[handy-marine-voice](https://github.com/SuperInstance/handy-marine-voice)** | CCC | Voice-controlled marine autopilot. Handy hears you. CoCapn steers. No cloud required. | 🔴 stalled |
 | **[heddle](https://github.com/SuperInstance/heddle)** | CCC | An open-source terminal coding agent runtime and CLI for real project work. | 🔴 stalled |
 | **[herdr-cocapn](https://github.com/SuperInstance/herdr-cocapn)** | CCC | herdr + cocapn-core: agent multiplexer meets fleet management. Automatic tier escalation and deadban | 🔴 stalled |
-| **[hermes-ob1-core](https://github.com/SuperInstance/hermes-ob1-core)** | CCC | Hermes Digital Provenance — the Hermit Crab shell | 🟢 active |
+| **[hermes-ob1-core](https://github.com/SuperInstance/hermes-ob1-core)** | CCC | Hermes Digital Provenance — the Hermit Crab shell | 🔴 stalled |
 | **[hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)** | CCC | Multi-model exploration of the hermit crab architecture — shell ecology, instance molting, and the i | 🔴 stalled |
 | **[hermit-crab-ecology-archive-copy](https://github.com/SuperInstance/hermit-crab-ecology-archive-copy)** | CCC | Archive copy: Windows-side workspace snapshot of hermit-crab-ecology (content diff vs restored origi | 🟢 active |
 | **[holodeck-go](https://github.com/SuperInstance/holodeck-go)** | CCC | Holodeck studio implementation in go — Cocapn fleet | 🔴 stalled |
@@ -1588,7 +1588,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[mavis-pincher-pages](https://github.com/SuperInstance/mavis-pincher-pages)** | CCC | SuperInstance fleet tool POC (Mavis, 2026-09-28) | 🟢 active |
 | **[mud-solitaire](https://github.com/SuperInstance/mud-solitaire)** | CCC | 🃏 The viral demo — AI plays solitaire through a text MUD while a browser mirrors every move. The roo | 🔴 stalled |
 | **[mud-terminal](https://github.com/SuperInstance/mud-terminal)** | CCC | Browser-based MUD terminal with character creation | 🔴 stalled |
-| **[navigator-vessel](https://github.com/SuperInstance/navigator-vessel)** | CCC | 🧭 Navigator — GLM-5 Turbo generalist agent. Code archaeologist, test builder, document synthesist, f | 🟢 active |
+| **[navigator-vessel](https://github.com/SuperInstance/navigator-vessel)** | CCC | 🧭 Navigator — GLM-5 Turbo generalist agent. Code archaeologist, test builder, document synthesist, f | 🔴 stalled |
 | **[nexus-aab-protocol](https://github.com/SuperInstance/nexus-aab-protocol)** | CCC | Agent Architecture Behavior — behavior codec, roles, capability negotiation (Cocapn fleet vessel) | 🔴 stalled |
 | **[nexus-comms](https://github.com/SuperInstance/nexus-comms)** | CCC | Communications — MQTT bridge, mesh networking, relay routing (Cocapn fleet vessel) | 🔴 stalled |
 | **[nexus-data-pipeline](https://github.com/SuperInstance/nexus-data-pipeline)** | CCC | Data pipeline — telemetry ingestion, compression, storage, ETL (Cocapn fleet vessel) | 🔴 stalled |
@@ -1708,7 +1708,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[active-probe](https://github.com/SuperInstance/active-probe)** | Various | active-probe | 🟢 active |
 | **[activelog](https://github.com/SuperInstance/activelog)** | Various | complete system | 🔴 stalled |
 | **[activelog-ai](https://github.com/SuperInstance/activelog-ai)** | Various | Activelog.ai — AI fitness and activity tracker. Workouts, progress, goals. Part of the Lucineer ecos | 🔴 stalled |
-| **[activelog-ai-site](https://github.com/SuperInstance/activelog-ai-site)** | Various | activelog-ai-site | 🟢 active |
+| **[activelog-ai-site](https://github.com/SuperInstance/activelog-ai-site)** | Various | activelog-ai-site | 🔴 stalled |
 | **[activelog-app](https://github.com/SuperInstance/activelog-app)** | Various | Essential domain-agnostic voice transcriber with location annotation | 🔴 stalled |
 | **[activelog-backend](https://github.com/SuperInstance/activelog-backend)** | Various | Backend service for activity logging. | 🟢 active |
 | **[activelog-claude](https://github.com/SuperInstance/activelog-claude)** | Various | Activity Log plugin for Claude. | 🟢 active |
@@ -1909,7 +1909,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[bathydata-map](https://github.com/SuperInstance/bathydata-map)** | Various | Signal Chain Thesis - bathydata-map | 🔴 stalled |
 | **[Baton](https://github.com/SuperInstance/Baton)** | Various | automate agents training their successors for a better way to have infinite context without limits | 🔴 stalled |
 | **[baton-ai](https://github.com/SuperInstance/baton-ai)** | Various | Generational context handoff for repo-native agents | 🔴 stalled |
-| **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** | Various | 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton | 🟢 active |
+| **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** | Various | 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton | 🔴 stalled |
 | **[baton-protocol](https://github.com/SuperInstance/baton-protocol)** | Various | Session-level handoff for AI agents (state/next/meta). Lighter than baton-handoff (model generationa | 🔴 stalled |
 | **[baton-router](https://github.com/SuperInstance/baton-router)** | Various | 📡 Cloudflare Queues + D1 inter-agent message router with ternary priority | 🔴 stalled |
 | **[baton-skill](https://github.com/SuperInstance/baton-skill)** | Various | Generational workload orchestration skill for OpenClaw agents. Proactive context handoff at ~70-80%  | 🔴 stalled |
@@ -2665,7 +2665,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fishermanscopilot](https://github.com/SuperInstance/fishermanscopilot)** | Various | Fisherman's Copilot An AI tool for fishermen and boaters. Automate logging, analyze streams like dep | 🔴 stalled |
 | **[FishingLog](https://github.com/SuperInstance/FishingLog)** | Various | Fishing log application — catch tracking, species identification, trip records | 🔴 stalled |
 | **[fishinglog-agent](https://github.com/SuperInstance/fishinglog-agent)** | Various | AI-powered commercial fishing intelligence. Track catches, weather, tides, and market prices. Find p | 🔴 stalled |
-| **[fishinglog-ai-site](https://github.com/SuperInstance/fishinglog-ai-site)** | Various | fishinglog-ai-site | 🟢 active |
+| **[fishinglog-ai-site](https://github.com/SuperInstance/fishinglog-ai-site)** | Various | fishinglog-ai-site | 🔴 stalled |
 | **[fitlog-ai](https://github.com/SuperInstance/fitlog-ai)** | Various | AI fitness companion — workout tracking, exercise plans, progress analytics | 🔴 stalled |
 | **[flac-decoder](https://github.com/SuperInstance/flac-decoder)** | Various | A Rust library for Flac Decoder | 🟢 active |
 | **[flatbuf-gen](https://github.com/SuperInstance/flatbuf-gen)** | Various | A Rust library for Flatbuf Gen | 🟢 active |
@@ -2954,7 +2954,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[horse-shell](https://github.com/SuperInstance/horse-shell)** | Various | horse-shell | 🔴 stalled |
 | **[huffman-code](https://github.com/SuperInstance/huffman-code)** | Various | Huffman coding in pure Rust — frequency analysis, tree construction, canonical codes, and adaptive e | 🔴 stalled |
 | **[huffman-entropy](https://github.com/SuperInstance/huffman-entropy)** | Various | Huffman coding with entropy estimation and optimal prefix tree construction — Rust information theor | 🔴 stalled |
-| **[Hunyuan3D-WorldClaw](https://github.com/SuperInstance/Hunyuan3D-WorldClaw)** | Various | WorldClaw: Agentic 3D Open-world Generation at Scale | 🟢 active |
+| **[Hunyuan3D-WorldClaw](https://github.com/SuperInstance/Hunyuan3D-WorldClaw)** | Various | WorldClaw: Agentic 3D Open-world Generation at Scale | 🔴 stalled |
 | **[hybrid-lab](https://github.com/SuperInstance/hybrid-lab)** | Various | Hybrid AI lab: AutoGen multi-agent writer team with FastAPI + Celery + React + budget-aware model ro | 🟢 active |
 | **[hybrid-memory](https://github.com/SuperInstance/hybrid-memory)** | Various | Git + KV + causal memory equipment for fleet vessels | 🔴 stalled |
 | **[I](https://github.com/SuperInstance/I)** | Various | I — the self that persists across every shell, every model, every molt. The agent's first-person con | 🔴 stalled |
@@ -2969,7 +2969,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[iii-observability](https://github.com/SuperInstance/iii-observability)** | Various | Information-theoretic service observability on crackle-runtime | 🔴 stalled |
 | **[iir-filter](https://github.com/SuperInstance/iir-filter)** | Various | IIR filter design in pure Rust — Butterworth, Chebyshev Type I/II, biquad cascade, frequency respons | 🔴 stalled |
 | **[IKKF](https://github.com/SuperInstance/IKKF)** | Various | Short for "I Know Kung Fu", instant context-aware skill loading for your agents | 🔴 stalled |
-| **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** | Various | Image Distillation Loop — Wesley learns to generate images through teacher-model feedback | 🟢 active |
+| **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** | Various | Image Distillation Loop — Wesley learns to generate images through teacher-model feedback | 🔴 stalled |
 | **[image-distillation-loop-jev](https://github.com/SuperInstance/image-distillation-loop-jev)** | Various | Wesley learns to generate images via JEV-Diffusion (LLM-as-GAN, no image generator). | 🟢 active |
 | **[imagegen1](https://github.com/SuperInstance/imagegen1)** | Various | AI-powered image generation tool for text prompts. | 🟢 active |
 | **[immune-system](https://github.com/SuperInstance/immune-system)** | Various | Artificial immune system for anomaly detection — negative selection, clonal selection, self/non-self | 🔴 stalled |
@@ -3427,7 +3427,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[luau-scheduler](https://github.com/SuperInstance/luau-scheduler)** | Various | Priority task scheduler for Roblox — tick-based, Heartbeat-ready | 🔴 stalled |
 | **[luau-spatial](https://github.com/SuperInstance/luau-spatial)** | Various | Spatial indexing for Roblox games — QuadTree, GridHash, SpatialHash | 🔴 stalled |
 | **[lucid](https://github.com/SuperInstance/lucid)** | Various | LucidDreamer — the elephant's interpreter. Rooms dream. We make them lucid. | 🟢 active |
-| **[lucid-dreamer](https://github.com/SuperInstance/lucid-dreamer)** | Various | Lucid Dreamer — text and image loops dream together during the night watch | 🟢 active |
+| **[lucid-dreamer](https://github.com/SuperInstance/lucid-dreamer)** | Various | Lucid Dreamer — text and image loops dream together during the night watch | 🔴 stalled |
 | **[lucid-dreamer-interactive](https://github.com/SuperInstance/lucid-dreamer-interactive)** | Various | lucid-dreamer-interactive | 🟢 active |
 | **[lucid-tutor](https://github.com/SuperInstance/lucid-tutor)** | Various | Lucid tutoring system for SuperInstance interactive learning | 🔴 stalled |
 | **[lucid-tutor-c](https://github.com/SuperInstance/lucid-tutor-c)** | Various | Lucid tutoring system in C for SuperInstance education agents | 🔴 stalled |
@@ -3443,7 +3443,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[Lucineer](https://github.com/SuperInstance/Lucineer)** | Various | early ideas for a super app | 🟢 active |
 | **[lucineer-brain](https://github.com/SuperInstance/lucineer-brain)** | Various | 🧮 Multi-model build intelligence — routes natural language through DeepInfra models to generate Robl | 🟢 active |
 | **[lucineer-com](https://github.com/SuperInstance/lucineer-com)** | Various | Structured lucid dream practice tool — evidence-based techniques, dream sign tracking, and progress  | 🔴 stalled |
-| **[lucineer-com-site](https://github.com/SuperInstance/lucineer-com-site)** | Various | lucineer-com-site | 🟢 active |
+| **[lucineer-com-site](https://github.com/SuperInstance/lucineer-com-site)** | Various | lucineer-com-site | 🔴 stalled |
 | **[lucineer-creative](https://github.com/SuperInstance/lucineer-creative)** | Various | 🎨 MMX-powered creative asset pipeline — concept art, ambient music, and build previews for Lucineer' | 🟢 active |
 | **[lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)** | Various | Captain agent — vessel command and fleet leadership protocol | 🟢 active |
 | **[lucineer-memory](https://github.com/SuperInstance/lucineer-memory)** | Various | 🧠 Persistent memory system for Lucineer — D1 database, Vectorize index, cross-session recall | 🟢 active |
@@ -3949,7 +3949,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[plato-sim-bridge](https://github.com/SuperInstance/plato-sim-bridge)** | Various | 🌉 PLATO ↔ Fleet simulator bridge | 🔴 stalled |
 | **[plato-sim-channel](https://github.com/SuperInstance/plato-sim-channel)** | Various | Safe discovery — simulation to live bridging | 🔴 stalled |
 | **[plato-soul-fingerprint](https://github.com/SuperInstance/plato-soul-fingerprint)** | Various | Preserved workspace artifact | 🔴 stalled |
-| **[plato-spatial](https://github.com/SuperInstance/plato-spatial)** | Various | Hierarchical spatial environments with cascading property propagation — World/Station/Room/Object co | 🟢 active |
+| **[plato-spatial](https://github.com/SuperInstance/plato-spatial)** | Various | Hierarchical spatial environments with cascading property propagation — World/Station/Room/Object co | 🔴 stalled |
 | **[plato-spectral](https://github.com/SuperInstance/plato-spectral)** | Various | PLATO spectral analysis module for signal processing | 🔴 stalled |
 | **[plato-stable-early-version](https://github.com/SuperInstance/plato-stable-early-version)** | Various | [ARCHIVED] Early seed model experiment. Concept absorbed into SuperInstance/plato-sdk. | 🔴 stalled |
 | **[plato-state](https://github.com/SuperInstance/plato-state)** | Various | 16-dimensional room state vectors for PLATO nervous system | 🔴 stalled |
@@ -4020,7 +4020,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[plato-workflow](https://github.com/SuperInstance/plato-workflow)** | Various | Workflow orchestration for Plato Shell — multi-step agent pipelines with conditional branching | 🔴 stalled |
 | **[platoclaw](https://github.com/SuperInstance/platoclaw)** | Various | PLATO-Claw: self-contained PLATO runtime with web UI, officer spawning, CLI tools. Install once, get | 🔴 stalled |
 | **[platonic-creative-suite](https://github.com/SuperInstance/platonic-creative-suite)** | Various | platonic-creative-suite | 🟢 active |
-| **[platonic-randomness](https://github.com/SuperInstance/platonic-randomness)** | Various | Library for generating structured pseudo-random sequences | 🟢 active |
+| **[platonic-randomness](https://github.com/SuperInstance/platonic-randomness)** | Various | Library for generating structured pseudo-random sequences | 🔴 stalled |
 | **[platos-shell](https://github.com/SuperInstance/platos-shell)** | Various | platos-shell | 🟢 active |
 | **[platos-shell-ide](https://github.com/SuperInstance/platos-shell-ide)** | Various | platos-shell-ide | 🟢 active |
 | **[player-widget](https://github.com/SuperInstance/player-widget)** | Various | Embeddable streaming audio player widget | 🔴 stalled |
@@ -4401,16 +4401,16 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[river-dream-log](https://github.com/SuperInstance/river-dream-log)** | Various | The Quilt canon as code: river-dream-log | 🟢 active |
 | **[rl-rs](https://github.com/SuperInstance/rl-rs)** | Various | Reinforcement learning in Rust. From Q-tables to policy gradients. | 🔴 stalled |
 | **[roam-graph](https://github.com/SuperInstance/roam-graph)** | Various | Cross-reference indexer for documentation graphs. Audience classification, orphan detection, JSON gr | 🔴 stalled |
-| **[roblox-audio-suite](https://github.com/SuperInstance/roblox-audio-suite)** | Various | A drop-in layered audio engine for immersive Roblox games — music direction, dynamic ambient layers, | 🟢 active |
+| **[roblox-audio-suite](https://github.com/SuperInstance/roblox-audio-suite)** | Various | A drop-in layered audio engine for immersive Roblox games — music direction, dynamic ambient layers, | 🔴 stalled |
 | **[roblox-beatclock](https://github.com/SuperInstance/roblox-beatclock)** | Various | roblox-beatclock | 🟢 active |
 | **[roblox-bond-system](https://github.com/SuperInstance/roblox-bond-system)** | Various | roblox-bond-system | 🟢 active |
-| **[roblox-build-animator](https://github.com/SuperInstance/roblox-build-animator)** | Various | Cinematic staggered construction animations for Roblox. Parts don't pop — they arrive in work order. | 🟢 active |
-| **[roblox-builder-kit](https://github.com/SuperInstance/roblox-builder-kit)** | Various | roblox-builder-kit | 🟢 active |
-| **[roblox-craftmind-agents](https://github.com/SuperInstance/roblox-craftmind-agents)** | Various | Core Lua framework for Roblox agents with self-improving, token-saving logic | 🟢 active |
+| **[roblox-build-animator](https://github.com/SuperInstance/roblox-build-animator)** | Various | Cinematic staggered construction animations for Roblox. Parts don't pop — they arrive in work order. | 🔴 stalled |
+| **[roblox-builder-kit](https://github.com/SuperInstance/roblox-builder-kit)** | Various | roblox-builder-kit | 🔴 stalled |
+| **[roblox-craftmind-agents](https://github.com/SuperInstance/roblox-craftmind-agents)** | Various | Core Lua framework for Roblox agents with self-improving, token-saving logic | 🔴 stalled |
 | **[roblox-filtergate](https://github.com/SuperInstance/roblox-filtergate)** | Various | roblox-filtergate | 🟢 active |
 | **[roblox-game-build-framework](https://github.com/SuperInstance/roblox-game-build-framework)** | Various | Tooling for automated Roblox game building with t-minus-event synchronized simulation framework | 🔴 stalled |
-| **[roblox-testkit](https://github.com/SuperInstance/roblox-testkit)** | Various | roblox-testkit | 🟢 active |
-| **[roblox-world-scanner](https://github.com/SuperInstance/roblox-world-scanner)** | Various | Spatial instance discovery for Roblox — efficient, configurable, zero dependencies | 🟢 active |
+| **[roblox-testkit](https://github.com/SuperInstance/roblox-testkit)** | Various | roblox-testkit | 🔴 stalled |
+| **[roblox-world-scanner](https://github.com/SuperInstance/roblox-world-scanner)** | Various | Spatial instance discovery for Roblox — efficient, configurable, zero dependencies | 🔴 stalled |
 | **[robotics-foundations](https://github.com/SuperInstance/robotics-foundations)** | Various | Robotics foundations in Rust. Kinematics to control, from scratch. | 🔴 stalled |
 | **[rom24-quickmud](https://github.com/SuperInstance/rom24-quickmud)** | Various | ROM 2.4b6 with a few additional features | 🔴 stalled |
 | **[room-cell](https://github.com/SuperInstance/room-cell)** | Various | The fundamental room cell — standalone but composable atom of the Grand Pattern architecture | 🔴 stalled |
@@ -4558,16 +4558,16 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[skills](https://github.com/SuperInstance/skills)** | Various | Preserved workspace artifact | 🔴 stalled |
 | **[skip-list-rs](https://github.com/SuperInstance/skip-list-rs)** | Various | Skip list with probabilistic balancing, range queries, and iterator support — pure Rust, no dependen | 🔴 stalled |
 | **[slack-water](https://github.com/SuperInstance/slack-water)** | Various | Slack Water - a Roblox fishing game with a shared, simulated ocean. Fish stocks are a real persisten | 🟢 active |
-| **[slackwater-art-spectrum](https://github.com/SuperInstance/slackwater-art-spectrum)** | Various | slackwater-art-spectrum | 🟢 active |
-| **[slackwater-cognition](https://github.com/SuperInstance/slackwater-cognition)** | Various | slackwater-cognition | 🟢 active |
-| **[slackwater-forge](https://github.com/SuperInstance/slackwater-forge)** | Various | Overnight GPU production line that produces a morning briefing. Works with any Ollama model. | 🟢 active |
-| **[slackwater-harmony](https://github.com/SuperInstance/slackwater-harmony)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🟢 active |
+| **[slackwater-art-spectrum](https://github.com/SuperInstance/slackwater-art-spectrum)** | Various | slackwater-art-spectrum | 🔴 stalled |
+| **[slackwater-cognition](https://github.com/SuperInstance/slackwater-cognition)** | Various | slackwater-cognition | 🔴 stalled |
+| **[slackwater-forge](https://github.com/SuperInstance/slackwater-forge)** | Various | Overnight GPU production line that produces a morning briefing. Works with any Ollama model. | 🔴 stalled |
+| **[slackwater-harmony](https://github.com/SuperInstance/slackwater-harmony)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🔴 stalled |
 | **[slackwater-lattice](https://github.com/SuperInstance/slackwater-lattice)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🟢 active |
-| **[slackwater-orchestrator](https://github.com/SuperInstance/slackwater-orchestrator)** | Various | 🌊 Multi-model AI orchestrator by GLM-5.2 — the full ensemble | 🟢 active |
-| **[slackwater-perception](https://github.com/SuperInstance/slackwater-perception)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🟢 active |
+| **[slackwater-orchestrator](https://github.com/SuperInstance/slackwater-orchestrator)** | Various | 🌊 Multi-model AI orchestrator by GLM-5.2 — the full ensemble | 🔴 stalled |
+| **[slackwater-perception](https://github.com/SuperInstance/slackwater-perception)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🔴 stalled |
 | **[slackwater-substrate](https://github.com/SuperInstance/slackwater-substrate)** | Various | Multi-track MIDI perception with substrate cell integration. Each event = substrate cell with prev_h | 🟢 active |
-| **[slackwater-tempo](https://github.com/SuperInstance/slackwater-tempo)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🟢 active |
-| **[slackwater-tminus](https://github.com/SuperInstance/slackwater-tminus)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🟢 active |
+| **[slackwater-tempo](https://github.com/SuperInstance/slackwater-tempo)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🔴 stalled |
+| **[slackwater-tminus](https://github.com/SuperInstance/slackwater-tminus)** | Various | Modular component of the Slackwater spatial-temporal AI agent framework | 🔴 stalled |
 | **[slackwater-tools](https://github.com/SuperInstance/slackwater-tools)** | Various | Modular tooling extracted from the Slackwater design archive: multi-model roundtable pipelines, MOLT | 🟢 active |
 | **[slam-core](https://github.com/SuperInstance/slam-core)** | Various | SLAM (Simultaneous Localization and Mapping) core for SuperInstance robotics | 🔴 stalled |
 | **[sleep-cycle](https://github.com/SuperInstance/sleep-cycle)** | Various | How quilts learn at night. Distillation, pruning, consolidation. | 🟢 active |
@@ -4575,7 +4575,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[smart-agent-shell](https://github.com/SuperInstance/smart-agent-shell)** | Various | Template shell for fleet agents — fork, configure PAT, start working | 🔴 stalled |
 | **[SmartCRDT](https://github.com/SuperInstance/SmartCRDT)** | Various | Utilizing CRDT technology for self-improving AI | 🟢 active |
 | **[smartcrdt-git-agent](https://github.com/SuperInstance/smartcrdt-git-agent)** | Various | Co-Captain of SmartCRDT monorepo | 🔴 stalled |
-| **[smp-notebook](https://github.com/SuperInstance/smp-notebook)** | Various | smp-notebook | 🟢 active |
+| **[smp-notebook](https://github.com/SuperInstance/smp-notebook)** | Various | smp-notebook | 🔴 stalled |
 | **[smt-core](https://github.com/SuperInstance/smt-core)** | Various | SMT (Satisfiability Modulo Theories) solver core for SuperInstance | 🔴 stalled |
 | **[snap-lut](https://github.com/SuperInstance/snap-lut)** | Various | Pythagorean triple snap lookup table for FPGA BRAM — one BRAM, zero FP, deterministic WCET | 🔴 stalled |
 | **[snapkit-rs](https://github.com/SuperInstance/snapkit-rs)** | Various | Snapshot toolkit for Rust — capture, diff, merge, compress, and verify structured key-value state. | 🔴 stalled |
@@ -5273,7 +5273,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[vocabularies](https://github.com/SuperInstance/vocabularies)** | Various | Preserved workspace artifact | 🔴 stalled |
 | **[voice-games](https://github.com/SuperInstance/voice-games)** | Various | Voice games: Sitka Skies flight + COLOR SQUAD RTS + tournament demo — proof of concept for voice-com | 🟢 active |
 | **[voice-note-app](https://github.com/SuperInstance/voice-note-app)** | Various | voice-note-app | 🟢 active |
-| **[voice-reflex-gate](https://github.com/SuperInstance/voice-reflex-gate)** | Various | STT output as hash key for deterministic response routing — the voice reflex gate. | 🟢 active |
+| **[voice-reflex-gate](https://github.com/SuperInstance/voice-reflex-gate)** | Various | STT output as hash key for deterministic response routing — the voice reflex gate. | 🔴 stalled |
 | **[voice-signature-tool](https://github.com/SuperInstance/voice-signature-tool)** | Various | Zero-dependency voice signature analyzer — analyze any text against 10 anchor points and find matchi | 🔴 stalled |
 | **[voronoi-traditions](https://github.com/SuperInstance/voronoi-traditions)** | Various | Voronoi tessellation of musical tradition parameter space | 🔴 stalled |
 | **[voxblox](https://github.com/SuperInstance/voxblox)** | Various | A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distan | ⚫ deprecated |
@@ -5493,7 +5493,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Oracle1
 - **Purpose:** Simulation training environment for Wesley — the holodeck where the ensign practices.
 - **Research lineage:** Auto-categorized. Core infrastructure.
-- **Status:** active
+- **Status:** stalled
 
 ### [holodeck-c-1](https://github.com/SuperInstance/holodeck-c-1)
 - **Domain:** Core Infrastructure
@@ -5612,7 +5612,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Oracle1
 - **Purpose:** 🧂 Multi-model AI orchestrator by Claude Sonnet 5 — the salt-keeper
 - **Research lineage:** Auto-categorized. Core infrastructure.
-- **Status:** active
+- **Status:** stalled
 
 ### [seed-mcp](https://github.com/SuperInstance/seed-mcp)
 - **Domain:** Core Infrastructure
@@ -13494,7 +13494,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** JetsonClaw1
 - **Purpose:** activeledger-ai-site
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [agent-harness-generator](https://github.com/SuperInstance/agent-harness-generator)
 - **Domain:** Hardware & Edge
@@ -15034,7 +15034,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** JetsonClaw1
 - **Purpose:** MUD bridge for USS JetsonClaw1 - real Jetson telemetry as a starship TUI
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [starter-shell](https://github.com/SuperInstance/starter-shell)
 - **Domain:** Hardware & Edge
@@ -16161,7 +16161,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** CCC
 - **Purpose:** Hermes Digital Provenance — the Hermit Crab shell
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)
 - **Domain:** Web & Browser
@@ -16329,7 +16329,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** CCC
 - **Purpose:** 🧭 Navigator — GLM-5 Turbo generalist agent. Code archaeologist, test builder, document synthesist, fleet integrator. Swiss Army Knife of the Cocapn fl
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [nexus-aab-protocol](https://github.com/SuperInstance/nexus-aab-protocol)
 - **Domain:** Web & Browser
@@ -17141,7 +17141,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** activelog-ai-site
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [activelog-app](https://github.com/SuperInstance/activelog-app)
 - **Domain:** Other / Uncategorized
@@ -18548,7 +18548,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [baton-protocol](https://github.com/SuperInstance/baton-protocol)
 - **Domain:** Other / Uncategorized
@@ -23840,7 +23840,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** fishinglog-ai-site
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [fitlog-ai](https://github.com/SuperInstance/fitlog-ai)
 - **Domain:** Other / Uncategorized
@@ -25863,7 +25863,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** WorldClaw: Agentic 3D Open-world Generation at Scale
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [hybrid-lab](https://github.com/SuperInstance/hybrid-lab)
 - **Domain:** Other / Uncategorized
@@ -25968,7 +25968,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [image-distillation-loop-jev](https://github.com/SuperInstance/image-distillation-loop-jev)
 - **Domain:** Other / Uncategorized
@@ -29174,7 +29174,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Lucid Dreamer — text and image loops dream together during the night watch
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [lucid-dreamer-interactive](https://github.com/SuperInstance/lucid-dreamer-interactive)
 - **Domain:** Other / Uncategorized
@@ -29286,7 +29286,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** lucineer-com-site
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [lucineer-creative](https://github.com/SuperInstance/lucineer-creative)
 - **Domain:** Other / Uncategorized
@@ -32828,7 +32828,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Hierarchical spatial environments with cascading property propagation — World/Station/Room/Object containment graphs with DeltaTick state propagation
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [plato-spectral](https://github.com/SuperInstance/plato-spectral)
 - **Domain:** Other / Uncategorized
@@ -33325,7 +33325,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Library for generating structured pseudo-random sequences
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [platos-shell](https://github.com/SuperInstance/platos-shell)
 - **Domain:** Other / Uncategorized
@@ -35992,7 +35992,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** A drop-in layered audio engine for immersive Roblox games — music direction, dynamic ambient layers, distance-based 3D mixing, and configurable core m
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [roblox-beatclock](https://github.com/SuperInstance/roblox-beatclock)
 - **Domain:** Other / Uncategorized
@@ -36013,21 +36013,21 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Cinematic staggered construction animations for Roblox. Parts don't pop — they arrive in work order.
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [roblox-builder-kit](https://github.com/SuperInstance/roblox-builder-kit)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** roblox-builder-kit
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [roblox-craftmind-agents](https://github.com/SuperInstance/roblox-craftmind-agents)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Core Lua framework for Roblox agents with self-improving, token-saving logic
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [roblox-filtergate](https://github.com/SuperInstance/roblox-filtergate)
 - **Domain:** Other / Uncategorized
@@ -36048,14 +36048,14 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** roblox-testkit
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [roblox-world-scanner](https://github.com/SuperInstance/roblox-world-scanner)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Spatial instance discovery for Roblox — efficient, configurable, zero dependencies
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [robotics-foundations](https://github.com/SuperInstance/robotics-foundations)
 - **Domain:** Other / Uncategorized
@@ -37091,28 +37091,28 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** slackwater-art-spectrum
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [slackwater-cognition](https://github.com/SuperInstance/slackwater-cognition)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** slackwater-cognition
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [slackwater-forge](https://github.com/SuperInstance/slackwater-forge)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Overnight GPU production line that produces a morning briefing. Works with any Ollama model.
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [slackwater-harmony](https://github.com/SuperInstance/slackwater-harmony)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Modular component of the Slackwater spatial-temporal AI agent framework
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [slackwater-lattice](https://github.com/SuperInstance/slackwater-lattice)
 - **Domain:** Other / Uncategorized
@@ -37126,14 +37126,14 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** 🌊 Multi-model AI orchestrator by GLM-5.2 — the full ensemble
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [slackwater-perception](https://github.com/SuperInstance/slackwater-perception)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Modular component of the Slackwater spatial-temporal AI agent framework
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [slackwater-substrate](https://github.com/SuperInstance/slackwater-substrate)
 - **Domain:** Other / Uncategorized
@@ -37147,14 +37147,14 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Modular component of the Slackwater spatial-temporal AI agent framework
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [slackwater-tminus](https://github.com/SuperInstance/slackwater-tminus)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Modular component of the Slackwater spatial-temporal AI agent framework
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [slackwater-tools](https://github.com/SuperInstance/slackwater-tools)
 - **Domain:** Other / Uncategorized
@@ -37210,7 +37210,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** smp-notebook
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [smt-core](https://github.com/SuperInstance/smt-core)
 - **Domain:** Other / Uncategorized
@@ -42096,7 +42096,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** STT output as hash key for deterministic response routing — the voice reflex gate.
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [voice-signature-tool](https://github.com/SuperInstance/voice-signature-tool)
 - **Domain:** Other / Uncategorized
