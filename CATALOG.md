@@ -1,6 +1,6 @@
 # Fleet Catalog
-**Generated:** 2026-11-14 12:02 UTC
-**Total repositories:** 5338
+**Generated:** 2026-11-15 12:37 UTC
+**Total repositories:** 5345
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
 
@@ -2275,12 +2275,16 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[craftlog-ai](https://github.com/SuperInstance/craftlog-ai)** | Various | AI crafting companion — project planning, material tracking, technique tips | 🔴 stalled |
 | **[craftmind](https://github.com/SuperInstance/craftmind)** | Various | 🎮 Minecraft AI training ground — spatial reasoning meets PLATO rooms. | 🔴 stalled |
 | **[craftmind-courses](https://github.com/SuperInstance/craftmind-courses)** | Various | AI-powered Minecraft education — AI teachers, NPC classmates, interactive lessons through gameplay | 🔴 stalled |
+| **[craftmind-curator](https://github.com/SuperInstance/craftmind-curator)** | Various | craftmind-curator | 🟢 active |
 | **[craftmind-discgolf](https://github.com/SuperInstance/craftmind-discgolf)** | Various | CraftMind Disc Golf — AI disc golf companion with 70+ real discs, physics engine, 3 courses, stochas | 🔴 stalled |
 | **[craftmind-fishing](https://github.com/SuperInstance/craftmind-fishing)** | Various | CraftMind Fishing — 22 personality scripts, A/B testing, autonomous Minecraft fishing. Part of the L | 🔴 stalled |
 | **[craftmind-herding](https://github.com/SuperInstance/craftmind-herding)** | Various | Border Collie Agents Commanded by Cowboy Players in a Minecraft Herding Mod — AI flocking behaviors  | 🔴 stalled |
+| **[craftmind-league](https://github.com/SuperInstance/craftmind-league)** | Various | craftmind-league | 🟢 active |
 | **[craftmind-ranch](https://github.com/SuperInstance/craftmind-ranch)** | Various | AI Ranch-inspired Minecraft mod — self-evolving bot species that compete, breed, and specialize in f | 🔴 stalled |
 | **[craftmind-researcher](https://github.com/SuperInstance/craftmind-researcher)** | Various | AI self-improvement for Minecraft bots — autonomous discovery, experiment, and learning | 🔴 stalled |
+| **[craftmind-steward](https://github.com/SuperInstance/craftmind-steward)** | Various | craftmind-steward | 🟢 active |
 | **[craftmind-studio](https://github.com/SuperInstance/craftmind-studio)** | Various | AI-powered Minecraft filmmaking studio — AI agents as actors, parallel simulations, Director AI | 🔴 stalled |
+| **[craftmind-world](https://github.com/SuperInstance/craftmind-world)** | Various | craftmind-world | 🟢 active |
 | **[CrashPilot](https://github.com/SuperInstance/CrashPilot)** | Various | Our SSL Robot Controller | 🔴 stalled |
 | **[crate-graph](https://github.com/SuperInstance/crate-graph)** | Various | Dependency graph analysis for Rust crate fleets | 🔴 stalled |
 | **[crates-publish-check](https://github.com/SuperInstance/crates-publish-check)** | Various | Check which Rust crates in a directory are ready for crates.io publishing | 🔴 stalled |
@@ -3490,6 +3494,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[mavis-tfm](https://github.com/SuperInstance/mavis-tfm)** | Various | Mavis TFM/SFM — Time-First and Simulation-First Models for cell-based systems. | 🟢 active |
 | **[mcp-atom-of-thoughts](https://github.com/SuperInstance/mcp-atom-of-thoughts)** | Various | MCP server for structured AI reasoning — decompose problems into atomic thoughts with dependency gra | 🔴 stalled |
 | **[mcp-room-wrapper](https://github.com/SuperInstance/mcp-room-wrapper)** | Various | Wrap any MCP server as a Plato room for automatic observation and distillation | 🔴 stalled |
+| **[mcp-verbs](https://github.com/SuperInstance/mcp-verbs)** | Various | mcp-verbs | 🟢 active |
 | **[MCPMempool-quilt](https://github.com/SuperInstance/MCPMempool-quilt)** | Various | Auto-Scalable MCPMempool Manager that handles Priority Based Scheduling, built for everyday use. | 🟢 active |
 | **[measure-theory](https://github.com/SuperInstance/measure-theory)** | Various | Measure theory in Rust. Lebesgue integration and L^p spaces. | 🔴 stalled |
 | **[mechanism-design](https://github.com/SuperInstance/mechanism-design)** | Various | mechanism-design | 🔴 stalled |
@@ -3624,6 +3629,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[noise-gen-rs](https://github.com/SuperInstance/noise-gen-rs)** | Various | Noise generation: Perlin, Simplex, Worley/Voronoi, fractal Brownian motion in pure Rust | 🔴 stalled |
 | **[normal-form](https://github.com/SuperInstance/normal-form)** | Various | Database normal form analysis and transformation tools | 🔴 stalled |
 | **[noteweave](https://github.com/SuperInstance/noteweave)** | Various | NoteWeave — connected notes with AI-powered linking and synthesis | 🔴 stalled |
+| **[npc-town](https://github.com/SuperInstance/npc-town)** | Various | npc-town | 🟢 active |
 | **[number-theory](https://github.com/SuperInstance/number-theory)** | Various | Number theory in Rust — primes, modular arithmetic, Diophantine equations, quadratic residues, conti | 🔴 stalled |
 | **[number-theory-core](https://github.com/SuperInstance/number-theory-core)** | Various | See README | 🔴 stalled |
 | **[numeric-integration-rs](https://github.com/SuperInstance/numeric-integration-rs)** | Various | Numerical integration: trapezoidal rule, Simpson's rule, Romberg integration, Gaussian quadrature, a | 🔴 stalled |
@@ -4637,6 +4643,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[streamer](https://github.com/SuperInstance/streamer)** | Various | Audio streaming muxer with scheduling and crossfades | 🔴 stalled |
 | **[streaming-response-handler](https://github.com/SuperInstance/streaming-response-handler)** | Various | HTTP handler for efficient streaming responses | 🔴 stalled |
 | **[string-search-rs](https://github.com/SuperInstance/string-search-rs)** | Various | string-search-rs | 🔴 stalled |
+| **[studies](https://github.com/SuperInstance/studies)** | Various | studies | 🟢 active |
 | **[study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)** | Various | Auto-created for sync 2026-08-13 | 🔴 stalled |
 | **[study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)** | Various | Auto-created for sync 2026-08-13 | 🔴 stalled |
 | **[StudyLog](https://github.com/SuperInstance/StudyLog)** | Various | Educational frontend for SuperInstance | 🔴 stalled |
@@ -21105,6 +21112,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
 
+### [craftmind-curator](https://github.com/SuperInstance/craftmind-curator)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** craftmind-curator
+- **Research lineage:** Not yet categorized.
+- **Status:** active
+
 ### [craftmind-discgolf](https://github.com/SuperInstance/craftmind-discgolf)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -21126,6 +21140,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** stalled
 
+### [craftmind-league](https://github.com/SuperInstance/craftmind-league)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** craftmind-league
+- **Research lineage:** Not yet categorized.
+- **Status:** active
+
 ### [craftmind-ranch](https://github.com/SuperInstance/craftmind-ranch)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -21140,12 +21161,26 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
 
+### [craftmind-steward](https://github.com/SuperInstance/craftmind-steward)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** craftmind-steward
+- **Research lineage:** Not yet categorized.
+- **Status:** active
+
 ### [craftmind-studio](https://github.com/SuperInstance/craftmind-studio)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** AI-powered Minecraft filmmaking studio — AI agents as actors, parallel simulations, Director AI
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** stalled
+
+### [craftmind-world](https://github.com/SuperInstance/craftmind-world)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** craftmind-world
+- **Research lineage:** Not yet categorized.
+- **Status:** active
 
 ### [CrashPilot](https://github.com/SuperInstance/CrashPilot)
 - **Domain:** Other / Uncategorized
@@ -29610,6 +29645,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
 
+### [mcp-verbs](https://github.com/SuperInstance/mcp-verbs)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** mcp-verbs
+- **Research lineage:** Not yet categorized.
+- **Status:** active
+
 ### [MCPMempool-quilt](https://github.com/SuperInstance/MCPMempool-quilt)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -30547,6 +30589,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Purpose:** NoteWeave — connected notes with AI-powered linking and synthesis
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
+
+### [npc-town](https://github.com/SuperInstance/npc-town)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** npc-town
+- **Research lineage:** Not yet categorized.
+- **Status:** active
 
 ### [number-theory](https://github.com/SuperInstance/number-theory)
 - **Domain:** Other / Uncategorized
@@ -37638,6 +37687,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Purpose:** string-search-rs
 - **Research lineage:** Not yet categorized.
 - **Status:** stalled
+
+### [studies](https://github.com/SuperInstance/studies)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** studies
+- **Research lineage:** Not yet categorized.
+- **Status:** active
 
 ### [study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)
 - **Domain:** Other / Uncategorized

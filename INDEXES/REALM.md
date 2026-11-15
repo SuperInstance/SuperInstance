@@ -1,7 +1,7 @@
 # Index by Realm
 
-**Generated:** 2026-11-14 12:02 UTC
-**Total repos:** 5338
+**Generated:** 2026-11-15 12:37 UTC
+**Total repos:** 5345
 
 ## Ai
 
@@ -856,12 +856,16 @@
 - **[craftmind](https://github.com/SuperInstance/craftmind)** — 🎮 Minecraft AI training ground — spatial reasoning meets PLATO rooms.
 - **[craftmind-circuits](https://github.com/SuperInstance/craftmind-circuits)** — Cocapn-inspired Minecraft circuit academy — gamified redstone challenges with levels, XP, and AI tut
 - **[craftmind-courses](https://github.com/SuperInstance/craftmind-courses)** — AI-powered Minecraft education — AI teachers, NPC classmates, interactive lessons through gameplay
+- **[craftmind-curator](https://github.com/SuperInstance/craftmind-curator)**
 - **[craftmind-discgolf](https://github.com/SuperInstance/craftmind-discgolf)** — CraftMind Disc Golf — AI disc golf companion with 70+ real discs, physics engine, 3 courses, stochas
 - **[craftmind-fishing](https://github.com/SuperInstance/craftmind-fishing)** — CraftMind Fishing — 22 personality scripts, A/B testing, autonomous Minecraft fishing. Part of the L
 - **[craftmind-herding](https://github.com/SuperInstance/craftmind-herding)** — Border Collie Agents Commanded by Cowboy Players in a Minecraft Herding Mod — AI flocking behaviors 
+- **[craftmind-league](https://github.com/SuperInstance/craftmind-league)**
 - **[craftmind-ranch](https://github.com/SuperInstance/craftmind-ranch)** — AI Ranch-inspired Minecraft mod — self-evolving bot species that compete, breed, and specialize in f
 - **[craftmind-researcher](https://github.com/SuperInstance/craftmind-researcher)** — AI self-improvement for Minecraft bots — autonomous discovery, experiment, and learning
+- **[craftmind-steward](https://github.com/SuperInstance/craftmind-steward)**
 - **[craftmind-studio](https://github.com/SuperInstance/craftmind-studio)** — AI-powered Minecraft filmmaking studio — AI agents as actors, parallel simulations, Director AI
+- **[craftmind-world](https://github.com/SuperInstance/craftmind-world)**
 - **[CrashPilot](https://github.com/SuperInstance/CrashPilot)** — Our SSL Robot Controller
 - **[crate-graph](https://github.com/SuperInstance/crate-graph)** — Dependency graph analysis for Rust crate fleets
 - **[crates-publish-check](https://github.com/SuperInstance/crates-publish-check)** — Check which Rust crates in a directory are ready for crates.io publishing
@@ -2978,6 +2982,7 @@
 - **[mavis-workspace](https://github.com/SuperInstance/mavis-workspace)** — An agent you can clone: workspace knowledge as a wiki, a key form for instance-to-instance context t
 - **[mcp-atom-of-thoughts](https://github.com/SuperInstance/mcp-atom-of-thoughts)** — MCP server for structured AI reasoning — decompose problems into atomic thoughts with dependency gra
 - **[mcp-room-wrapper](https://github.com/SuperInstance/mcp-room-wrapper)** — Wrap any MCP server as a Plato room for automatic observation and distillation
+- **[mcp-verbs](https://github.com/SuperInstance/mcp-verbs)**
 - **[MCPMempool-quilt](https://github.com/SuperInstance/MCPMempool-quilt)** — Auto-Scalable MCPMempool Manager that handles Priority Based Scheduling, built for everyday use.
 - **[measure-theory](https://github.com/SuperInstance/measure-theory)** — Measure theory in Rust. Lebesgue integration and L^p spaces.
 - **[mechanism-design](https://github.com/SuperInstance/mechanism-design)**
@@ -3160,6 +3165,7 @@
 - **[normal-form](https://github.com/SuperInstance/normal-form)** — Database normal form analysis and transformation tools
 - **[notebooklm-bridge](https://github.com/SuperInstance/notebooklm-bridge)** — Bridge to Google NotebookLM for SuperInstance knowledge integration
 - **[noteweave](https://github.com/SuperInstance/noteweave)** — NoteWeave — connected notes with AI-powered linking and synthesis
+- **[npc-town](https://github.com/SuperInstance/npc-town)**
 - **[number-theory](https://github.com/SuperInstance/number-theory)** — Number theory in Rust — primes, modular arithmetic, Diophantine equations, quadratic residues, conti
 - **[number-theory-core](https://github.com/SuperInstance/number-theory-core)** — See README
 - **[numeric-integration-rs](https://github.com/SuperInstance/numeric-integration-rs)** — Numerical integration: trapezoidal rule, Simpson's rule, Romberg integration, Gaussian quadrature, a
@@ -4498,6 +4504,7 @@
 - **[streamer](https://github.com/SuperInstance/streamer)** — Audio streaming muxer with scheduling and crossfades
 - **[streaming-response-handler](https://github.com/SuperInstance/streaming-response-handler)** — HTTP handler for efficient streaming responses
 - **[string-search-rs](https://github.com/SuperInstance/string-search-rs)**
+- **[studies](https://github.com/SuperInstance/studies)**
 - **[study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)** — Auto-created for sync 2026-08-13
 - **[study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)** — Auto-created for sync 2026-08-13
 - **[StudyLog](https://github.com/SuperInstance/StudyLog)** — Educational frontend for SuperInstance

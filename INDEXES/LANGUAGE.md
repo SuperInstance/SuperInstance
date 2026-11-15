@@ -1,7 +1,7 @@
 # Index by Language
 
-**Generated:** 2026-11-14 12:02 UTC
-**Total repos:** 5338
+**Generated:** 2026-11-15 12:37 UTC
+**Total repos:** 5345
 
 ## C
 
@@ -2099,11 +2099,15 @@
 - **[craftlog-ai](https://github.com/SuperInstance/craftlog-ai)** — AI crafting companion — project planning, material tracking, technique tips
 - **[craftmind](https://github.com/SuperInstance/craftmind)** — 🎮 Minecraft AI training ground — spatial reasoning meets PLATO rooms.
 - **[craftmind-circuits](https://github.com/SuperInstance/craftmind-circuits)** — Cocapn-inspired Minecraft circuit academy — gamified redstone challenges with levels, XP, and AI tut
+- **[craftmind-curator](https://github.com/SuperInstance/craftmind-curator)**
 - **[craftmind-fishing](https://github.com/SuperInstance/craftmind-fishing)** — CraftMind Fishing — 22 personality scripts, A/B testing, autonomous Minecraft fishing. Part of the L
 - **[craftmind-herding](https://github.com/SuperInstance/craftmind-herding)** — Border Collie Agents Commanded by Cowboy Players in a Minecraft Herding Mod — AI flocking behaviors 
+- **[craftmind-league](https://github.com/SuperInstance/craftmind-league)**
 - **[craftmind-ranch](https://github.com/SuperInstance/craftmind-ranch)** — AI Ranch-inspired Minecraft mod — self-evolving bot species that compete, breed, and specialize in f
 - **[craftmind-researcher](https://github.com/SuperInstance/craftmind-researcher)** — AI self-improvement for Minecraft bots — autonomous discovery, experiment, and learning
+- **[craftmind-steward](https://github.com/SuperInstance/craftmind-steward)**
 - **[craftmind-studio](https://github.com/SuperInstance/craftmind-studio)** — AI-powered Minecraft filmmaking studio — AI agents as actors, parallel simulations, Director AI
+- **[craftmind-world](https://github.com/SuperInstance/craftmind-world)**
 - **[CrashPilot](https://github.com/SuperInstance/CrashPilot)** — Our SSL Robot Controller
 - **[crdt-core](https://github.com/SuperInstance/crdt-core)** — Distributed systems primitive
 - **[CRDT_Research](https://github.com/SuperInstance/CRDT_Research)** — CRDT-Based Intra-Chip Communication for AI Workloads
@@ -3542,6 +3546,7 @@
 - **[mavis-tap-pulse](https://github.com/SuperInstance/mavis-tap-pulse)** — Tap pulse: generates canon via chord-validated 3-voice pulses. Encapsulates the taps creative-break 
 - **[mavis-tfm](https://github.com/SuperInstance/mavis-tfm)** — Mavis TFM/SFM — Time-First and Simulation-First Models for cell-based systems.
 - **[mavis-tile-pipeline](https://github.com/SuperInstance/mavis-tile-pipeline)** — Tile pipeline: discrete knowledge tiles for canon. PLATO pattern ported to Quilt — 8 stages from imp
+- **[mcp-verbs](https://github.com/SuperInstance/mcp-verbs)**
 - **[MCPMempool-quilt](https://github.com/SuperInstance/MCPMempool-quilt)** — Auto-Scalable MCPMempool Manager that handles Priority Based Scheduling, built for everyday use.
 - **[mechanism-design](https://github.com/SuperInstance/mechanism-design)**
 - **[meilisearch](https://github.com/SuperInstance/meilisearch)** — A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.
@@ -3677,6 +3682,7 @@
 - **[normal-form](https://github.com/SuperInstance/normal-form)** — Database normal form analysis and transformation tools
 - **[notebooklm-bridge](https://github.com/SuperInstance/notebooklm-bridge)** — Bridge to Google NotebookLM for SuperInstance knowledge integration
 - **[noteweave](https://github.com/SuperInstance/noteweave)** — NoteWeave — connected notes with AI-powered linking and synthesis
+- **[npc-town](https://github.com/SuperInstance/npc-town)**
 - **[number-theory-core](https://github.com/SuperInstance/number-theory-core)** — See README
 - **[numeric-integration-rs](https://github.com/SuperInstance/numeric-integration-rs)** — Numerical integration: trapezoidal rule, Simpson's rule, Romberg integration, Gaussian quadrature, a
 - **[nursery](https://github.com/SuperInstance/nursery)** — Anti-GAN breeding framework: selective breeding of agent children on the zero platform
@@ -4675,6 +4681,7 @@
 - **[streamer](https://github.com/SuperInstance/streamer)** — Audio streaming muxer with scheduling and crossfades
 - **[streaming-response-handler](https://github.com/SuperInstance/streaming-response-handler)** — HTTP handler for efficient streaming responses
 - **[string-search-rs](https://github.com/SuperInstance/string-search-rs)**
+- **[studies](https://github.com/SuperInstance/studies)**
 - **[StudyLog](https://github.com/SuperInstance/StudyLog)** — Educational frontend for SuperInstance
 - **[studylog-agent](https://github.com/SuperInstance/studylog-agent)** — PLATO Study Partner Agent — tracks learning progression, logs sessions as PLATO tiles
 - **[studylog-ai-1](https://github.com/SuperInstance/studylog-ai-1)** — StudyLog.ai — AI study companion. Flashcards, spaced repetition, concept mapping. Part of the Lucine

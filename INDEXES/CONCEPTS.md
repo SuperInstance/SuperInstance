@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-11-14 12:02 UTC
+**Generated:** 2026-11-15 12:37 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -4424,9 +4424,13 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [craftlog-ai](https://github.com/SuperInstance/craftlog-ai)
 - [craftmind-circuits](https://github.com/SuperInstance/craftmind-circuits)
 - [craftmind-courses](https://github.com/SuperInstance/craftmind-courses)
+- [craftmind-curator](https://github.com/SuperInstance/craftmind-curator)
 - [craftmind-fishing](https://github.com/SuperInstance/craftmind-fishing)
+- [craftmind-league](https://github.com/SuperInstance/craftmind-league)
 - [craftmind-ranch](https://github.com/SuperInstance/craftmind-ranch)
 - [craftmind-researcher](https://github.com/SuperInstance/craftmind-researcher)
+- [craftmind-steward](https://github.com/SuperInstance/craftmind-steward)
+- [craftmind-world](https://github.com/SuperInstance/craftmind-world)
 - [crates-publish-check](https://github.com/SuperInstance/crates-publish-check)
 - [creative-engine-c](https://github.com/SuperInstance/creative-engine-c)
 - [creative-engine-rust](https://github.com/SuperInstance/creative-engine-rust)
@@ -5184,6 +5188,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [mavis-substrate-walker](https://github.com/SuperInstance/mavis-substrate-walker)
 - [mavis-tfm](https://github.com/SuperInstance/mavis-tfm)
 - [mcp-atom-of-thoughts](https://github.com/SuperInstance/mcp-atom-of-thoughts)
+- [mcp-verbs](https://github.com/SuperInstance/mcp-verbs)
 - [measure-theory](https://github.com/SuperInstance/measure-theory)
 - [mechanism-design](https://github.com/SuperInstance/mechanism-design)
 - [meilisearch](https://github.com/SuperInstance/meilisearch)
@@ -5284,6 +5289,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [normal-form](https://github.com/SuperInstance/normal-form)
 - [notebooklm-bridge](https://github.com/SuperInstance/notebooklm-bridge)
 - [noteweave](https://github.com/SuperInstance/noteweave)
+- [npc-town](https://github.com/SuperInstance/npc-town)
 - [number-theory](https://github.com/SuperInstance/number-theory)
 - [number-theory-core](https://github.com/SuperInstance/number-theory-core)
 - [numeric-integration-rs](https://github.com/SuperInstance/numeric-integration-rs)
@@ -5864,6 +5870,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [streamer](https://github.com/SuperInstance/streamer)
 - [streaming-response-handler](https://github.com/SuperInstance/streaming-response-handler)
 - [string-search-rs](https://github.com/SuperInstance/string-search-rs)
+- [studies](https://github.com/SuperInstance/studies)
 - [study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)
 - [study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)
 - [studylog-ai-1](https://github.com/SuperInstance/studylog-ai-1)
