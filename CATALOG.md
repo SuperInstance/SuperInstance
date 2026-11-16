@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-15 12:37 UTC
+**Generated:** 2026-11-16 13:29 UTC
 **Total repositories:** 5345
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -1827,7 +1827,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** | Various | Creative writing, essays, and philosophical explorations from the Exocortex project | 🟢 active |
 | **[ai-writings-generation-plato](https://github.com/SuperInstance/ai-writings-generation-plato)** | Various | AI writings on generative systems and Plato — part of the SuperInstance fleet ecosystem | 🔴 stalled |
 | **[ai-writings-medium-is-math](https://github.com/SuperInstance/ai-writings-medium-is-math)** | Various | AI writings exploring the medium-as-mathematics thesis — SuperInstance fleet ecosystem | 🔴 stalled |
-| **[ai-writings-vectorizer](https://github.com/SuperInstance/ai-writings-vectorizer)** | Various | ai-writings-vectorizer | 🟢 active |
+| **[ai-writings-vectorizer](https://github.com/SuperInstance/ai-writings-vectorizer)** | Various | ai-writings-vectorizer | 🔴 stalled |
 | **[AIR](https://github.com/SuperInstance/AIR)** | Various | Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interact | 🔴 stalled |
 | **[air-architecture](https://github.com/SuperInstance/air-architecture)** | Various | # Air Architecture | 🟢 active |
 | **[albanese-variety](https://github.com/SuperInstance/albanese-variety)** | Various | Albanese variety computation in algebraic geometry — the universal morphism target to an abelian var | 🟢 active |
@@ -17981,7 +17981,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** ai-writings-vectorizer
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [AIR](https://github.com/SuperInstance/AIR)
 - **Domain:** Other / Uncategorized
