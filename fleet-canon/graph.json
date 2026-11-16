@@ -1,14 +1,14 @@
 {
- "generated": "2026-11-09T01:13:33Z",
+ "generated": "2026-11-16T01:23:35Z",
  "source": "CATALOG.md",
- "catalogGenerated": "2026-11-08",
- "catalogTotal": 5331,
- "parsed": 5331,
+ "catalogGenerated": "2026-11-15",
+ "catalogTotal": 5345,
+ "parsed": 5345,
  "catalogMissing": [],
  "tier3Note": "tier-3 (orphan+stale) populates once the CATALOG generator fetches pushedAt/isArchived (meta repo PR #19, catalog-v2); until then every row reads active",
  "tiers": {
   "1": 27,
-  "2": 5304,
+  "2": 5318,
   "3": 0
  },
  "vessels": [
@@ -1529,6 +1529,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interact",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "air-architecture",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "# Air Architecture",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -4216,6 +4225,15 @@
    "tier": 2
   },
   {
+   "name": "claudeflare-archive",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "# Claudeflare Research Docs Archive",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "claw",
    "family": "agent-coordination",
    "vessel": "Forgemaster",
@@ -5251,6 +5269,15 @@
    "tier": 2
   },
   {
+   "name": "cognitemill",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "# Cognitemill",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "cognitive-archaeology",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -5273,6 +5300,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Core cognitive processing engine.",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "cognitivemell",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "Recovered project content",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -7375,6 +7411,15 @@
    "tier": 2
   },
   {
+   "name": "craftmind-curator",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "craftmind-curator",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "craftmind-discgolf",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -7402,6 +7447,15 @@
    "tier": 2
   },
   {
+   "name": "craftmind-league",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "craftmind-league",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "craftmind-ranch",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -7420,10 +7474,28 @@
    "tier": 2
   },
   {
+   "name": "craftmind-steward",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "craftmind-steward",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "craftmind-studio",
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "AI-powered Minecraft filmmaking studio — AI agents as actors, parallel simulations, Director AI",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "craftmind-world",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "craftmind-world",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -9629,6 +9701,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "A Rust library for Diff Patience",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "diff-shepherd",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "# 🐑 Diff Shepherd",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -26041,6 +26122,15 @@
    "tier": 2
   },
   {
+   "name": "lucineer-minecraft",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "# Lucineer Minecraft Mod - Data Pack",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "lucineer-relay",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -26513,6 +26603,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "Wrap any MCP server as a Plato room for automatic observation and distillation",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "mcp-verbs",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "mcp-verbs",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -28151,6 +28250,15 @@
    "family": "other-uncategorized",
    "vessel": "Various",
    "mission": "NoteWeave — connected notes with AI-powered linking and synthesis",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "npc-town",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "npc-town",
    "state": "active",
    "bornFrom": [],
    "tier": 2
@@ -40234,6 +40342,15 @@
    "tier": 2
   },
   {
+   "name": "studies",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "studies",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
    "name": "study-smartcomponent",
    "family": "other-uncategorized",
    "vessel": "Various",
@@ -40958,6 +41075,15 @@
    "family": "agent-coordination",
    "vessel": "Forgemaster",
    "mission": "Automatically Deconstruct logic into Spread Sheet Tiles and Cells, Instances Interconnected w/ Origi",
+   "state": "active",
+   "bornFrom": [],
+   "tier": 2
+  },
+  {
+   "name": "superinstance-planning",
+   "family": "other-uncategorized",
+   "vessel": "Various",
+   "mission": "# SuperInstance Planning Documents",
    "state": "active",
    "bornFrom": [],
    "tier": 2
