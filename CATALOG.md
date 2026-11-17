@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-16 13:29 UTC
+**Generated:** 2026-11-17 14:14 UTC
 **Total repositories:** 5345
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -1914,7 +1914,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[baton-router](https://github.com/SuperInstance/baton-router)** | Various | 📡 Cloudflare Queues + D1 inter-agent message router with ternary priority | 🔴 stalled |
 | **[baton-skill](https://github.com/SuperInstance/baton-skill)** | Various | Generational workload orchestration skill for OpenClaw agents. Proactive context handoff at ~70-80%  | 🔴 stalled |
 | **[baton-system](https://github.com/SuperInstance/baton-system)** | Various | I2I coordination hub — tripartite baton protocol, fleet state, git-agent | 🔴 stalled |
-| **[batten-spline](https://github.com/SuperInstance/batten-spline)** | Various | batten-spline | 🟢 active |
+| **[batten-spline](https://github.com/SuperInstance/batten-spline)** | Various | batten-spline | 🔴 stalled |
 | **[bayesian-game](https://github.com/SuperInstance/bayesian-game)** | Various | Pure-Rust library for Bayesian games of incomplete information — types, beliefs, Bayes-Nash equilibr | 🔴 stalled |
 | **[bayesian-inference](https://github.com/SuperInstance/bayesian-inference)** | Various | Bayesian inference engine — posterior update, conjugate priors, and MCMC sampling for probabilistic  | 🟢 active |
 | **[Bayesian-Multi-Armed-Bandits](https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits)** | Various | Library for Bayesian multi-armed bandits. | 🔴 stalled |
@@ -18590,7 +18590,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** batten-spline
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [bayesian-game](https://github.com/SuperInstance/bayesian-game)
 - **Domain:** Other / Uncategorized
