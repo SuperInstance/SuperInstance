@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-17 14:14 UTC
+**Generated:** 2026-11-18 13:47 UTC
 **Total repositories:** 5345
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -655,7 +655,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-arabic](https://github.com/SuperInstance/fleet-arabic)** | Forgemaster | Cocapn Fleet — العربية (Arabic) perspective. Reasoned natively in العربية (Arabic) cultural traditio | 🔴 stalled |
 | **[fleet-architecture](https://github.com/SuperInstance/fleet-architecture)** | Forgemaster | Complete architecture documentation for the SuperInstance fleet — 56+ repos, 5 layers, protocols, tu | 🔴 stalled |
 | **[fleet-arm-compat](https://github.com/SuperInstance/fleet-arm-compat)** | Forgemaster | ARM64 compatibility module — tests and multi-arch builds for the fleet | 🔴 stalled |
-| **[fleet-audio](https://github.com/SuperInstance/fleet-audio)** | Forgemaster | Fleet audio system | 🟢 active |
+| **[fleet-audio](https://github.com/SuperInstance/fleet-audio)** | Forgemaster | Fleet audio system | 🔴 stalled |
 | **[fleet-aurora](https://github.com/SuperInstance/fleet-aurora)** | Forgemaster | Beautiful fleet visualization dashboard with real-time status | 🔴 stalled |
 | **[fleet-auth](https://github.com/SuperInstance/fleet-auth)** | Forgemaster | Fleet authentication service (D1 + KV) | 🔴 stalled |
 | **[fleet-auto-ingest](https://github.com/SuperInstance/fleet-auto-ingest)** | Forgemaster | 🔄 Cron worker: syncs GitHub repos to Vectorize index every 6h | 🔴 stalled |
@@ -2551,7 +2551,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[emotional-colorist](https://github.com/SuperInstance/emotional-colorist)** | Various | Rust crate: emotional-colorist | 🔴 stalled |
 | **[encodec-pytorch](https://github.com/SuperInstance/encodec-pytorch)** | Various | unofficial implementation of the High Fidelity Neural Audio Compression | ⚫ deprecated |
 | **[energy-budget](https://github.com/SuperInstance/energy-budget)** | Various | Energy budget calculation and tracking utilities | 🟢 active |
-| **[engine-ensign](https://github.com/SuperInstance/engine-ensign)** | Various | ESP32 engine monitoring agent — git-native, tripartite-compiled. The Doctor lives in the repo. | 🟢 active |
+| **[engine-ensign](https://github.com/SuperInstance/engine-ensign)** | Various | ESP32 engine monitoring agent — git-native, tripartite-compiled. The Doctor lives in the repo. | 🔴 stalled |
 | **[entropy-code](https://github.com/SuperInstance/entropy-code)** | Various | Entropy coding fundamentals in pure Rust — Shannon entropy, optimal code lengths, Kraft inequality,  | 🔴 stalled |
 | **[entropy-conservation](https://github.com/SuperInstance/entropy-conservation)** | Various | Conservation of Verification Entropy — the mathematical framework behind the meta-law discovered acr | 🔴 stalled |
 | **[entropy-conservation-rs](https://github.com/SuperInstance/entropy-conservation-rs)** | Various | Entropy conservation tracking with Hodge decomposition — gradient, curl, and harmonic components for | 🔴 stalled |
@@ -2603,7 +2603,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[exocortex](https://github.com/SuperInstance/exocortex)** | Various | 🧠 Persistent cognitive substrate for multi-agent systems — S3-compatible memory, shadow rendering, t | 🟢 active |
 | **[exocortex-ast-cpp](https://github.com/SuperInstance/exocortex-ast-cpp)** | Various | C++17 header-only AST decomposition engine | 🔴 stalled |
 | **[exocortex-clients](https://github.com/SuperInstance/exocortex-clients)** | Various | C++ and JS client SDKs for the Exocortex distributed memory system | 🔴 stalled |
-| **[exocortex-core](https://github.com/SuperInstance/exocortex-core)** | Various | SuperInstance Exocortex — external brain architecture for small local models | 🟢 active |
+| **[exocortex-core](https://github.com/SuperInstance/exocortex-core)** | Various | SuperInstance Exocortex — external brain architecture for small local models | 🔴 stalled |
 | **[exocortex-memory-zig](https://github.com/SuperInstance/exocortex-memory-zig)** | Various | Zig comptime-verified semantic memory store — ternary embeddings, similarity search, zero-cost schem | 🔴 stalled |
 | **[exocortex-rs](https://github.com/SuperInstance/exocortex-rs)** | Various | Rust agent framework with conservation-law awareness | 🔴 stalled |
 | **[exocortex-script-lua](https://github.com/SuperInstance/exocortex-script-lua)** | Various | Lua 5.4 scripting interface for the exocortex system | 🔴 stalled |
@@ -3895,11 +3895,11 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[plato-observation](https://github.com/SuperInstance/plato-observation)** | Various | PLATO Observation Chamber — watch autonomous agents organize themselves via spectral conservation | 🔴 stalled |
 | **[plato-observe](https://github.com/SuperInstance/plato-observe)** | Various | Observability layer for OpenConstruct — metrics, tracing, health checks, and event bus | 🔴 stalled |
 | **[plato-os](https://github.com/SuperInstance/plato-os)** | Various | Python MUD — PLATO room server with TUTOR anchors | 🔴 stalled |
-| **[plato-perception](https://github.com/SuperInstance/plato-perception)** | Various | Perception encoding for Z_in side of Dual-DB JEPA | 🟢 active |
+| **[plato-perception](https://github.com/SuperInstance/plato-perception)** | Various | Perception encoding for Z_in side of Dual-DB JEPA | 🔴 stalled |
 | **[plato-policy](https://github.com/SuperInstance/plato-policy)** | Various | Policy engine that gates what agents can do — per-module, per-agent, per-context rules with rate lim | 🔴 stalled |
 | **[plato-portal](https://github.com/SuperInstance/plato-portal)** | Various | Python SDK for persistent multi-agent systems — agents with markdown memory, in-memory fleet, thread | 🟢 active |
 | **[plato-predict](https://github.com/SuperInstance/plato-predict)** | Various | Time series prediction primitives for PLATO tile streams | 🔴 stalled |
-| **[plato-prediction](https://github.com/SuperInstance/plato-prediction)** | Various | Prediction encoding for Z_out side of Dual-DB JEPA | 🟢 active |
+| **[plato-prediction](https://github.com/SuperInstance/plato-prediction)** | Various | Prediction encoding for Z_out side of Dual-DB JEPA | 🔴 stalled |
 | **[plato-prompt-builder](https://github.com/SuperInstance/plato-prompt-builder)** | Various | Compose LLM prompts from tile search results — context builder for PLATO | 🔴 stalled |
 | **[plato-protocol-test](https://github.com/SuperInstance/plato-protocol-test)** | Various | Cross-implementation conformance tests for the PLATO wire protocol | 🔴 stalled |
 | **[plato-provenance](https://github.com/SuperInstance/plato-provenance)** | Various | 🔐 Zero-trust tile provenance — signing, chain verification, trust scoring | 🔴 stalled |
@@ -5309,7 +5309,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[websocket-fabric-v2](https://github.com/SuperInstance/websocket-fabric-v2)** | Various | Framework for building scalable WebSocket-based network applications. | 🔴 stalled |
 | **[websocket-rs](https://github.com/SuperInstance/websocket-rs)** | Various | WebSocket framework - Async WebSockets, automatic reconnection, message queuing | 🔴 stalled |
 | **[wesley](https://github.com/SuperInstance/wesley)** | Various | wesley | 🟢 active |
-| **[wesley-cns-adapter](https://github.com/SuperInstance/wesley-cns-adapter)** | Various | Connects Wesley (Granite via Ollama) to the CNS signal bus | 🟢 active |
+| **[wesley-cns-adapter](https://github.com/SuperInstance/wesley-cns-adapter)** | Various | Connects Wesley (Granite via Ollama) to the CNS signal bus | 🔴 stalled |
 | **[wesley-curriculum](https://github.com/SuperInstance/wesley-curriculum)** | Various | wesley-curriculum | 🟢 active |
 | **[wesley-journal](https://github.com/SuperInstance/wesley-journal)** | Various | Wesley's experiment journal — local model growth tracking | 🟢 active |
 | **[wesleys-imagination](https://github.com/SuperInstance/wesleys-imagination)** | Various | wesleys-imagination | 🟢 active |
@@ -9861,7 +9861,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Fleet audio system
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [fleet-aurora](https://github.com/SuperInstance/fleet-aurora)
 - **Domain:** Agent Coordination
@@ -23049,7 +23049,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** ESP32 engine monitoring agent — git-native, tripartite-compiled. The Doctor lives in the repo.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [entropy-code](https://github.com/SuperInstance/entropy-code)
 - **Domain:** Other / Uncategorized
@@ -23413,7 +23413,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** SuperInstance Exocortex — external brain architecture for small local models
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [exocortex-memory-zig](https://github.com/SuperInstance/exocortex-memory-zig)
 - **Domain:** Other / Uncategorized
@@ -32457,7 +32457,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Perception encoding for Z_in side of Dual-DB JEPA
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [plato-policy](https://github.com/SuperInstance/plato-policy)
 - **Domain:** Other / Uncategorized
@@ -32485,7 +32485,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Prediction encoding for Z_out side of Dual-DB JEPA
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [plato-prompt-builder](https://github.com/SuperInstance/plato-prompt-builder)
 - **Domain:** Other / Uncategorized
@@ -42355,7 +42355,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Connects Wesley (Granite via Ollama) to the CNS signal bus
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [wesley-curriculum](https://github.com/SuperInstance/wesley-curriculum)
 - **Domain:** Other / Uncategorized
