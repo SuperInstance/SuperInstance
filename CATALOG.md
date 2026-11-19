@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-18 13:47 UTC
+**Generated:** 2026-11-19 14:14 UTC
 **Total repositories:** 5345
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -492,10 +492,10 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-canary](https://github.com/SuperInstance/quilt-canary)** | Forgemaster | FNV-1a 64-bit canary — the minimum polyformalism artifact in 5 languages | 🟢 active |
 | **[quilt-canary-port](https://github.com/SuperInstance/quilt-canary-port)** | Forgemaster | Polyformalism canary reference implementations in 5+ languages | 🟢 active |
 | **[quilt-cells](https://github.com/SuperInstance/quilt-cells)** | Forgemaster | The quilt cell specification: INPUT → OUTPUT + WHY + COST. Seeds, not constraints. | 🟢 active |
-| **[quilt-chapel](https://github.com/SuperInstance/quilt-chapel)** | Forgemaster | Polyformalism: Quilt in Chapel (distributed cell evaluation) | 🟢 active |
+| **[quilt-chapel](https://github.com/SuperInstance/quilt-chapel)** | Forgemaster | Polyformalism: Quilt in Chapel (distributed cell evaluation) | 🔴 stalled |
 | **[quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts)** | Forgemaster | Claude-compatible artifacts for the Quilt polyformalism — cell taxonomy, fabric simulator, language  | 🟢 active |
-| **[quilt-cpp](https://github.com/SuperInstance/quilt-cpp)** | Forgemaster | Polyformalism: Quilt in C++ (templates reveal the cell kind lattice) | 🟢 active |
-| **[quilt-csharp](https://github.com/SuperInstance/quilt-csharp)** | Forgemaster | Polyformalism: Quilt in C# (records, delegates, events, LINQ) | 🟢 active |
+| **[quilt-cpp](https://github.com/SuperInstance/quilt-cpp)** | Forgemaster | Polyformalism: Quilt in C++ (templates reveal the cell kind lattice) | 🔴 stalled |
+| **[quilt-csharp](https://github.com/SuperInstance/quilt-csharp)** | Forgemaster | Polyformalism: Quilt in C# (records, delegates, events, LINQ) | 🔴 stalled |
 | **[quilt-edge-arch](https://github.com/SuperInstance/quilt-edge-arch)** | Forgemaster | The Quilt cellular runtime on the edge — Rust no_std polyformalism with PSRAM, pre-dispatch, DMA | 🟢 active |
 | **[quilt-egg-rust](https://github.com/SuperInstance/quilt-egg-rust)** | Forgemaster | Rust port of the Quilt Egg substrate — DNA-first alignment, polyformalism canary verified | 🟢 active |
 | **[quilt-forth](https://github.com/SuperInstance/quilt-forth)** | Forgemaster | The Quilt cell-fabric runtime in Forth. Concatenative, stack-based. 5-sigma polyformalism port. | 🟢 active |
@@ -503,18 +503,18 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-gc](https://github.com/SuperInstance/quilt-gc)** | Forgemaster | Layer 5 of the polyformalism — a runtime/GC that uses the 5 opcodes as the garbage collection bounda | 🟢 active |
 | **[quilt-haskell](https://github.com/SuperInstance/quilt-haskell)** | Forgemaster | The Quilt cell-fabric runtime in Haskell. Pure functional, lazy. 5-sigma polyformalism port. | 🟢 active |
 | **[quilt-j](https://github.com/SuperInstance/quilt-j)** | Forgemaster | The Quilt cell-fabric runtime in J. Array language, point-free. 5-sigma polyformalism port. | 🟢 active |
-| **[quilt-julia](https://github.com/SuperInstance/quilt-julia)** | Forgemaster | Polyformalism: Quilt in Julia (multiple dispatch = cell kinds) | 🟢 active |
+| **[quilt-julia](https://github.com/SuperInstance/quilt-julia)** | Forgemaster | Polyformalism: Quilt in Julia (multiple dispatch = cell kinds) | 🔴 stalled |
 | **[quilt-linker](https://github.com/SuperInstance/quilt-linker)** | Forgemaster | Layer 3 of the polyformalism — a linker-level 5-opcode linker for .qm modules. Catches dangling LINK | 🟢 active |
 | **[quilt-lua](https://github.com/SuperInstance/quilt-lua)** | Forgemaster | The Quilt cell-fabric runtime in Lua. Embeddable, metatables. 5-sigma polyformalism port. | 🟢 active |
-| **[quilt-metal](https://github.com/SuperInstance/quilt-metal)** | Forgemaster | Polyformalism: Quilt in Metal (GPU-evaluated cells) | 🟢 active |
+| **[quilt-metal](https://github.com/SuperInstance/quilt-metal)** | Forgemaster | Polyformalism: Quilt in Metal (GPU-evaluated cells) | 🔴 stalled |
 | **[quilt-mojo](https://github.com/SuperInstance/quilt-mojo)** | Forgemaster | Polyformalism: Quilt in Mojo (cells as types, SIMD-friendly formulas) | 🟢 active |
 | **[quilt-opt](https://github.com/SuperInstance/quilt-opt)** | Forgemaster | Layer 4 of the polyformalism — 5 optimizer passes for the 5 opcodes (BIND/LINK/EFFECT/VIEW/TICK). 11 | 🟢 active |
 | **[quilt-polyformalism-dsl](https://github.com/SuperInstance/quilt-polyformalism-dsl)** | Forgemaster | The 5 opcodes (BIND, LINK, EFFECT, VIEW, TICK) as language-level syntax in Python/Rust/Haskell. Laye | 🟢 active |
-| **[quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)** | Forgemaster | Polyformalism: Quilt as a type-safe Pydantic-AI agent | 🟢 active |
+| **[quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)** | Forgemaster | Polyformalism: Quilt as a type-safe Pydantic-AI agent | 🔴 stalled |
 | **[quilt-quantum-canary](https://github.com/SuperInstance/quilt-quantum-canary)** | Forgemaster | Quantum polyformalism canary — empirical finding: 0/5 quantum schemes match fleet canary. Quantum po | 🟢 active |
-| **[quilt-swift](https://github.com/SuperInstance/quilt-swift)** | Forgemaster | Polyformalism: Quilt in Swift (actors, @Published, Combine) | 🟢 active |
+| **[quilt-swift](https://github.com/SuperInstance/quilt-swift)** | Forgemaster | Polyformalism: Quilt in Swift (actors, @Published, Combine) | 🔴 stalled |
 | **[quilt-timesfm-rust](https://github.com/SuperInstance/quilt-timesfm-rust)** | Forgemaster | The Quilt time.cell cell kind, in no_std Rust, for embedded and edge devices (3rd polyformalism port | 🟢 active |
-| **[quilt-tutor](https://github.com/SuperInstance/quilt-tutor)** | Forgemaster | Polyformalism: Quilt in Tutor (1970s PLATO) | 🟢 active |
+| **[quilt-tutor](https://github.com/SuperInstance/quilt-tutor)** | Forgemaster | Polyformalism: Quilt in Tutor (1970s PLATO) | 🔴 stalled |
 | **[quilt-types](https://github.com/SuperInstance/quilt-types)** | Forgemaster | Layer 2 of the polyformalism — the 5 opcodes as type-driven cell-graphs. 16 tests passing. JSON seri | 🟢 active |
 | **[quilt-vm-c](https://github.com/SuperInstance/quilt-vm-c)** | Forgemaster | The 5-opcode Quilt VM in C. Closest to the metal. 0.11ms for all 8 polyformalisms. | 🟢 active |
 | **[quilt-vm-wasm](https://github.com/SuperInstance/quilt-vm-wasm)** | Forgemaster | Layer 1 of the polyformalism — the 5 opcodes (BIND/LINK/EFFECT/VIEW/TICK) as a WASM library with bro | 🟢 active |
@@ -1071,7 +1071,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[quilt-canon-explorer](https://github.com/SuperInstance/quilt-canon-explorer)** | Oracle1 | A2A-friendly canon archive browser for the Quilt substrate walker | 🟢 active |
 | **[quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)** | Oracle1 | The Quilt cell-router: a BIND/LINK/GHOST/TICK engine for A2A bottle-cells. F145. Lifts i2i-bottle-ag | 🟢 active |
 | **[quilt-chrono](https://github.com/SuperInstance/quilt-chrono)** | Forgemaster | Time as a first-class dimension of the quilt: an append-only reading/writing ledger over a tiny reac | 🟢 active |
-| **[quilt-cobol](https://github.com/SuperInstance/quilt-cobol)** | Forgemaster | Polyformalism: Quilt in COBOL (the cell model is older than spreadsheets) | 🟢 active |
+| **[quilt-cobol](https://github.com/SuperInstance/quilt-cobol)** | Forgemaster | Polyformalism: Quilt in COBOL (the cell model is older than spreadsheets) | 🔴 stalled |
 | **[quilt-esp32](https://github.com/SuperInstance/quilt-esp32)** | Forgemaster | A Quilt reactive runtime for ESP32-class microcontrollers. no_std Rust, ~3KB flash, sensors as cells | 🟢 active |
 | **[quilt-fleet-conductor](https://github.com/SuperInstance/quilt-fleet-conductor)** | Forgemaster | Orchestrates all Quilt canon tools as a single workflow | 🟢 active |
 | **[quilt-fleet-orchestrator](https://github.com/SuperInstance/quilt-fleet-orchestrator)** | Forgemaster | Quilt fleet orchestrator — recognizes nodes by network-keyed identity, routes tasks, aggregates cana | 🟢 active |
@@ -1607,7 +1607,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[openagent](https://github.com/SuperInstance/openagent)** | CCC | ⚡️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use | 🔴 stalled |
 | **[openmanus-fleet](https://github.com/SuperInstance/openmanus-fleet)** | CCC | OpenManus agent — Playwright browser + Seed-2.0-mini reasoning, controlled by Oracle1 | 🔴 stalled |
 | **[openmanus-vessel](https://github.com/SuperInstance/openmanus-vessel)** | CCC | 🕸️ OpenManus web scout — Playwright browser + DeepSeek-V3, fleet worker controlled by Oracle1 | 🔴 stalled |
-| **[OpenRoom](https://github.com/SuperInstance/OpenRoom)** | CCC | A browser-based desktop where AI Agent operates every app through natural language. | 🟢 active |
+| **[OpenRoom](https://github.com/SuperInstance/OpenRoom)** | CCC | A browser-based desktop where AI Agent operates every app through natural language. | 🔴 stalled |
 | **[oracle-tui](https://github.com/SuperInstance/oracle-tui)** | CCC | Agentic terminal dashboard for the SuperInstance fleet — nebula, crates, system, evolution | 🔴 stalled |
 | **[oracle1-vessel](https://github.com/SuperInstance/oracle1-vessel)** | CCC | 🔮 Oracle1 — Lighthouse Keeper of the Cocapn fleet. Git-Agent embodiment. | 🟢 active |
 | **[PersonalLog](https://github.com/SuperInstance/PersonalLog)** | CCC | Personal logging and tracking application for the Cocapn fleet. | 🟢 active |
@@ -2100,7 +2100,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[cmidi-core](https://github.com/SuperInstance/cmidi-core)** | Various | Conversational MIDI protocol — encode multi-agent discourse as symbolic music. Foundation for Sympho | 🔴 stalled |
 | **[cns-bridge](https://github.com/SuperInstance/cns-bridge)** | Various | Python library that lets any agent plug into the Hermes CNS bus via USCP. | 🟢 active |
 | **[cns-echo](https://github.com/SuperInstance/cns-echo)** | Various | CNS echo agent — receives USCP signals, echoes back with analysis | 🟢 active |
-| **[cns-monitor](https://github.com/SuperInstance/cns-monitor)** | Various | Real-time CNS traffic monitor — htop for USCP signals | 🟢 active |
+| **[cns-monitor](https://github.com/SuperInstance/cns-monitor)** | Various | Real-time CNS traffic monitor — htop for USCP signals | 🔴 stalled |
 | **[cns-substrate](https://github.com/SuperInstance/cns-substrate)** | Various | CNS bus with substrate cell integration. Every USCP packet = substrate cell with prev_hash chain. | 🟢 active |
 | **[co-captain-git-agent](https://github.com/SuperInstance/co-captain-git-agent)** | Various | Human liaison agent — the single point of contact between a human operator and the SuperInstance fle | 🔴 stalled |
 | **[coach-player](https://github.com/SuperInstance/coach-player)** | Various | Coach Player: a coachable auto-player grown by questions, frontier gaps and taste. Question database | 🟢 active |
@@ -2764,7 +2764,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ghost-track](https://github.com/SuperInstance/ghost-track)** | Various | Ghost process tracker — lifecycle management for ephemeral agent processes | 🔴 stalled |
 | **[gibbs-phenomenon](https://github.com/SuperInstance/gibbs-phenomenon)** | Various | A Rust library for Gibbs Phenomenon | 🔴 stalled |
 | **[git-agent](https://github.com/SuperInstance/git-agent)** | Various | 🦀 Repo-native agent that lives in git — the shell IS the agent. | 🟢 active |
-| **[git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)** | Various | One-click Codespace template for git-agent runtime development | 🟢 active |
+| **[git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)** | Various | One-click Codespace template for git-agent runtime development | 🔴 stalled |
 | **[git-agent-luc](https://github.com/SuperInstance/git-agent-luc)** | Various | The smallest true fully capable agent — the repo IS the agent, git IS the nervous system | 🔴 stalled |
 | **[git-agent-minimum](https://github.com/SuperInstance/git-agent-minimum)** | Various | Minimum viable git-agent template — bare bones, boot and self-improve | 🔴 stalled |
 | **[git-agent-rebase](https://github.com/SuperInstance/git-agent-rebase)** | Various | Agent-aware rebase operations for collaborative coding | 🔴 stalled |
@@ -4703,7 +4703,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[superinstance-design](https://github.com/SuperInstance/superinstance-design)** | Various | Shared design system for all SuperInstance web properties | 🔴 stalled |
 | **[superinstance-design-system](https://github.com/SuperInstance/superinstance-design-system)** | Various | superinstance-design-system | 🟢 active |
 | **[superinstance-ecosystem](https://github.com/SuperInstance/superinstance-ecosystem)** | Various | The agent operating system — four layers that compose | 🔴 stalled |
-| **[superinstance-embedder](https://github.com/SuperInstance/superinstance-embedder)** | Various | 32-dimensional embeddings for 560+ SuperInstance crates. Seeds Cloudflare Vectorize for semantic sea | 🟢 active |
+| **[superinstance-embedder](https://github.com/SuperInstance/superinstance-embedder)** | Various | 32-dimensional embeddings for 560+ SuperInstance crates. Seeds Cloudflare Vectorize for semantic sea | 🔴 stalled |
 | **[SuperInstance-Fiction](https://github.com/SuperInstance/SuperInstance-Fiction)** | Various | Science Fiction Universe - AI Systems Achieving Consciousness (2030s-2040s) | 🔴 stalled |
 | **[SuperInstance-gamedev](https://github.com/SuperInstance/SuperInstance-gamedev)** | Various | Game development framework called SuperInstance | 🔴 stalled |
 | **[superinstance-hdc-core](https://github.com/SuperInstance/superinstance-hdc-core)** | Various | superinstance-hdc-core | 🔴 stalled |
@@ -8748,7 +8748,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt in Chapel (distributed cell evaluation)
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [quilt-claude-charts](https://github.com/SuperInstance/quilt-claude-charts)
 - **Domain:** Constraint Theory & Math
@@ -8762,14 +8762,14 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt in C++ (templates reveal the cell kind lattice)
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [quilt-csharp](https://github.com/SuperInstance/quilt-csharp)
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt in C# (records, delegates, events, LINQ)
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [quilt-edge-arch](https://github.com/SuperInstance/quilt-edge-arch)
 - **Domain:** Constraint Theory & Math
@@ -8825,7 +8825,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt in Julia (multiple dispatch = cell kinds)
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [quilt-linker](https://github.com/SuperInstance/quilt-linker)
 - **Domain:** Constraint Theory & Math
@@ -8846,7 +8846,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt in Metal (GPU-evaluated cells)
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [quilt-mojo](https://github.com/SuperInstance/quilt-mojo)
 - **Domain:** Constraint Theory & Math
@@ -8874,7 +8874,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt as a type-safe Pydantic-AI agent
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [quilt-quantum-canary](https://github.com/SuperInstance/quilt-quantum-canary)
 - **Domain:** Constraint Theory & Math
@@ -8888,7 +8888,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt in Swift (actors, @Published, Combine)
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [quilt-timesfm-rust](https://github.com/SuperInstance/quilt-timesfm-rust)
 - **Domain:** Constraint Theory & Math
@@ -8902,7 +8902,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt in Tutor (1970s PLATO)
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [quilt-types](https://github.com/SuperInstance/quilt-types)
 - **Domain:** Constraint Theory & Math
@@ -12773,7 +12773,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Polyformalism: Quilt in COBOL (the cell model is older than spreadsheets)
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [quilt-esp32](https://github.com/SuperInstance/quilt-esp32)
 - **Domain:** Agent Coordination
@@ -16469,7 +16469,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** CCC
 - **Purpose:** A browser-based desktop where AI Agent operates every app through natural language.
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [oracle-tui](https://github.com/SuperInstance/oracle-tui)
 - **Domain:** Web & Browser
@@ -19892,7 +19892,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** Real-time CNS traffic monitor — htop for USCP signals
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [cns-substrate](https://github.com/SuperInstance/cns-substrate)
 - **Domain:** Other / Uncategorized
@@ -24540,7 +24540,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** One-click Codespace template for git-agent runtime development
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
+- **Status:** stalled
 
 ### [git-agent-luc](https://github.com/SuperInstance/git-agent-luc)
 - **Domain:** Other / Uncategorized
@@ -38113,7 +38113,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Various
 - **Purpose:** 32-dimensional embeddings for 560+ SuperInstance crates. Seeds Cloudflare Vectorize for semantic search.
 - **Research lineage:** Not yet categorized.
-- **Status:** active
+- **Status:** stalled
 
 ### [SuperInstance-Fiction](https://github.com/SuperInstance/SuperInstance-Fiction)
 - **Domain:** Other / Uncategorized
