@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-11-19 14:14 UTC
+**Generated:** 2026-11-20 13:57 UTC
 **Total repos:** 5345
 
 ## A2A
